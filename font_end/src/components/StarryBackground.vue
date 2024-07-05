@@ -1,8 +1,8 @@
 <template>
   <div class="starry-background">
     <video autoplay muted loop id="background-video">
-      <source src="/ÐÇ¿Õ.mp4" type="video/mp4" />
-      ÄúµÄä¯ÀÀÆ÷²»Ö§³ÖÊÓÆµ±êÇ©¡£
+      <source src="/æ˜Ÿç©º.mp4" type="video/mp4" />
+      æ‚¨çš„æµè§ˆå™¨ä¸æ”¯æŒè§†é¢‘æ ‡ç­¾ã€‚
     </video>
   </div>
 </template>
