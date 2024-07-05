@@ -1,4 +1,4 @@
-# font_end
+# xjtu_writer
 
 ## Project setup
 ```
