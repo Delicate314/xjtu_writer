@@ -47,6 +47,10 @@ async def login(name:str,password:str,form_data: OAuth2PasswordRequestForm = Dep
     message = "登录成功"
     return {message}
 
+@app.post("/apis/model/change", tags=["模型切换"],summary="用户向服务器发送模型切换请求")
+async def change_model(model:str):
+    message = "模型切换成功"
+    return {message}
 
 @app.post("/apis/write_request", tags=["AI写小说"],summary="用户向服务器发送AI写小说请求")
 async def ai_write_novel(contents:str ):
@@ -58,35 +62,32 @@ async def ai_answer_question(question:str):
     response = ai02.call_with_messages(question)
     return response
 
-@app.get("/apis/items/get_user", response_model=schemas.Item, tags=["获取用户信息"],summary="获取用户信息")
-def read_item(item_id: int, db: Session = Depends(get_db)):
+@app.get("/apis/items/get_user/{user_id}", response_model=schemas.Item, tags=["获取用户信息"],summary="获取用户信息")
+async def read_item(item_id: int, db: Session = Depends(get_db)):
     db_item = crud.get_item(db, item_id=item_id)
     if db_item is None:
         raise HTTPException(status_code=404, detail="Item not found")
     return db_item
 
 @app.get("/apis/items/get_user/all", response_model=schemas.Item, tags=["获取用户信息"],summary="获取所有用户信息")
-def read_items(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
+async def read_items(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
     items = crud.get_items(db, skip=skip, limit=limit)
     return items
 
 @app.delete("/apis/items/{item_id}", tags=["删除用户"],summary="删除用户信息")
-def delete_item(item_id: int, db: Session = Depends(get_db)):
-    db_item = crud.get_item(db, item_id=item_id)
-    if db_item is None:
-        raise HTTPException(status_code=404, detail="Item not found")
-    crud.delete_item(db, item_id=item_id)
+async def delete_item(item_id: int, db: Session = Depends(get_db)):
+    
     return {"message": "Item deleted successfully"}
 
 @app.get("/apis/novels/get",  tags=["获取小说信息"],summary="获取小说")
-def read_novel(novel_id: int, db: Session = Depends(get_db)):
+async def read_novel(novel_id: int, db: Session = Depends(get_db)):
     db_novel = crud.get_novel(db, novel_id=novel_id)
     if db_novel is None:
         raise HTTPException(status_code=404, detail="Novel not found")
     return db_novel
 
 @app.get("/apis/novels/get/rank", tags=["获取小说信息"],summary="获取小说排行")
-def get_rank():
+async def get_rank():
     message = "获取小说排行成功"
     return {message}
 
@@ -107,12 +108,12 @@ def update_novel_views(novel_id: int, db: Session = Depends(get_db)):
     return {"message": "Novel views updated successfully"}
 
 @app.get("/apis/logs/login", tags=["获取日志"],summary="获取登录日志")
-def get_login_logs():
+async def get_login_logs():
     message = "获取登录日志成功"
     return {message}
 
 @app.get("/apis/logs/register", tags=["获取日志"],summary="获取注册日志")
-def get_register_logs():
+async def get_register_logs():
     message = "获取注册日志成功"
     return {message}
 
