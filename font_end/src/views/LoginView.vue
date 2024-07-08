@@ -4,6 +4,7 @@
     <input type="text" placeholder="用户名" v-model="username">
     <input type="password" placeholder="密码" v-model="password">
     <button @click="login">Login</button>
+    <button @click="register">Register</button>
   </div>
 </template>
 
@@ -20,7 +21,16 @@ export default {
     login() {
       console.log('Logging in', this.username);
       // Add your login logic here
+      this.$router.push('/Home')
+      
     },
+    register() {
+      //console.log('Logging in', this.username);
+      // Add your login logic here
+      this.$router.push('/register')
+      
+    },
+
   },
 };
 </script>
@@ -42,4 +52,5 @@ button {
 button:hover {
   background-color: #0056b3;
 }
+
 </style>

@@ -22,6 +22,7 @@ export default {
     register() {
       console.log('Registering', this.username);
       // Add your register logic here
+      this.$router.push('/')
     },
   },
 };

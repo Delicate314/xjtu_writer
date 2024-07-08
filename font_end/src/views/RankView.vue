@@ -1,12 +1,10 @@
 <template>
-  <div class="home-container">
-    <StarryBackground />
-    <h1 class="gradient-text">欢迎来到XJTU小说家！</h1>
+    <div class="rank-view">
     <router-link to="/search" class="link">搜索小说</router-link> |
     <router-link to="/write" class="link">小说续写</router-link> |
-    <router-link to="/Home" class="link">推荐</router-link> |
+    <router-link to="/Home" class="link">推荐</router-link>|
     <router-link to="/Rank" class="link">小说排行</router-link>
-    <h2 class="title">小说排名</h2>
+        <h2 class="title">小说排名</h2>
         <table>
             <thead>
                 <tr>
@@ -41,83 +39,18 @@
                     <td>novel-3-description</td>
             </tbody>
         </table>
-  </div>
+    </div>
 </template>
 
 <script>
-import StarryBackground from '../components/StarryBackground.vue';
-import Element from '../components/Element.vue';
-
+import { RouterLink } from 'vue-router';
 
 export default {
-  name: 'Home',
-  components: {
-    StarryBackground,
-    Element
-  },
+    name: 'RankView',
 };
 </script>
 
-<style>
-.home-container {
-  position: relative;
-  z-index: 1;
-}
-
-h1 {
-  margin-top: 20px;
-  font-size: 2em;
-  background: linear-gradient(90deg, white 25%, transparent 25%) repeat-x;
-  background-size: 200% 100%;
-  animation: gradient 10s linear infinite;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 200% 0;
-  }
-  100% {
-    background-position: -200% 0;
-  }
-}
-
-.link {
-  text-decoration: none;
-  top:0;
-  left:0;
-  color: #007bff;
-  margin: 0 10px;
-  padding: 5px 10px;
-  border: 2px solid #007bff;
-  border-radius: 15px;
-  display: inline-block;
-  transition: all 0.3s ease;
-  position: relative;
-}
-
-.link:hover {
-  color: #fff;
-  background-color: #007bff;
-  animation: jelly 0.5s;
-}
-
-@keyframes jelly {
-  0%, 100% {
-    transform: scale(1, 1);
-  }
-  25% {
-    transform: scale(0.9, 1.1);
-  }
-  50% {
-    transform: scale(1.1, 0.9);
-  }
-  75% {
-    transform: scale(0.95, 1.05);
-  }
-
-}
+<style scoped>
 .rank-view {
     max-width: 800px;
     margin: 0 auto;
@@ -144,5 +77,24 @@ td {
 
 th {
     background-color: #f2f2f2;
+}
+.link {
+  text-decoration: none;
+  top:0;
+  left:0;
+  color: #007bff;
+  margin: 0 10px;
+  padding: 5px 10px;
+  border: 2px solid #007bff;
+  border-radius: 15px;
+  display: inline-block;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.link:hover {
+  color: #fff;
+  background-color: #007bff;
+  animation: jelly 0.5s;
 }
 </style>
