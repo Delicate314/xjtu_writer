@@ -127,7 +127,11 @@ h1 {
     height: 0px;
     text-align: center;
     margin-bottom: 60px;
-    color: aqua;
+    color: white;
+}
+
+td {
+    color: white;
 }
 
 table {
