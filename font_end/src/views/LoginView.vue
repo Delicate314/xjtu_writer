@@ -22,13 +22,13 @@ export default {
       console.log('Logging in', this.username);
       // Add your login logic here
       this.$router.push('/Home')
-      
+
     },
     register() {
       //console.log('Logging in', this.username);
       // Add your login logic here
       this.$router.push('/register')
-      
+
     },
 
   },
@@ -42,6 +42,7 @@ input {
   padding: 10px;
   margin: 10px auto;
 }
+
 button {
   padding: 10px 20px;
   background-color: #007bff;
@@ -49,8 +50,8 @@ button {
   border: none;
   cursor: pointer;
 }
+
 button:hover {
   background-color: #0056b3;
 }
-
 </style>

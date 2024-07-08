@@ -1,9 +1,8 @@
 <template>
   <div>
-    <router-link to="/search" class="link">搜索小说</router-link> |
-    <router-link to="/write" class="link">小说续写</router-link> |
-    <router-link to="/Home" class="link">推荐</router-link>|
-    <router-link to="/Rank" class="link">小说排行</router-link>
+    <router-link :key="index" :to="item.path" v-for="(item, index) in $router.options.routes">
+      <span class="link" v-if="item.meta.isShow">{{ item.meta.name }}</span>
+    </router-link>
     <h2>搜索小说</h2>
     <input type="text" placeholder="请输入小说名" v-model="query">
     <button @click="search">Search</button>
@@ -33,6 +32,7 @@ input {
   width: 200px;
   margin-right: 10px;
 }
+
 button {
   padding: 10px 20px;
   background-color: #007bff;
@@ -40,13 +40,15 @@ button {
   border: none;
   cursor: pointer;
 }
+
 button:hover {
   background-color: #0056b3;
 }
+
 .link {
   text-decoration: none;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   color: #007bff;
   margin: 0 10px;
   padding: 5px 10px;

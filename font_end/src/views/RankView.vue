@@ -1,9 +1,8 @@
 <template>
     <div class="rank-view">
-    <router-link to="/search" class="link">搜索小说</router-link> |
-    <router-link to="/write" class="link">小说续写</router-link> |
-    <router-link to="/Home" class="link">推荐</router-link>|
-    <router-link to="/Rank" class="link">小说排行</router-link>
+        <router-link :key="index" :to="item.path" v-for="(item, index) in $router.options.routes">
+            <span class="link" v-if="item.meta.isShow">{{ item.meta.name }}</span>
+        </router-link>
         <h2 class="title">小说排名</h2>
         <table>
             <thead>
@@ -16,27 +15,27 @@
                 </tr>
             </thead>
             <tbody>
-                    <td>index=1</td>
-                    <router-link :to="'/Novel'">
-                        <td>novel-1-title</td>
-                    </router-link>
-                    <td>novel-1-author</td>
-                    <td>novel-1-popularity</td>
-                    <td>novel-1-description</td> 
+                <td>index=1</td>
+                <router-link :to="'/Novel'">
+                    <td>novel-1-title</td>
+                </router-link>
+                <td>novel-1-author</td>
+                <td>novel-1-popularity</td>
+                <td>novel-1-description</td>
             </tbody>
             <tbody>
-                    <td>index=2</td>
-                    <td>novel-2-title</td>
-                    <td>novel-2-author</td>
-                    <td>novel-2-popularity</td>
-                    <td>novel-2-description</td> 
+                <td>index=2</td>
+                <td>novel-2-title</td>
+                <td>novel-2-author</td>
+                <td>novel-2-popularity</td>
+                <td>novel-2-description</td>
             </tbody>
             <tbody>
-                    <td>index=3</td>
-                    <td>novel-3-title</td>
-                    <td>novel-3-author</td>
-                    <td>novel-3-popularity</td>
-                    <td>novel-3-description</td>
+                <td>index=3</td>
+                <td>novel-3-title</td>
+                <td>novel-3-author</td>
+                <td>novel-3-popularity</td>
+                <td>novel-3-description</td>
             </tbody>
         </table>
     </div>
@@ -56,7 +55,7 @@ export default {
     margin: 0 auto;
 }
 
-.title{
+.title {
     height: 0px;
     text-align: center;
     margin-bottom: 60px;
@@ -78,23 +77,24 @@ td {
 th {
     background-color: #f2f2f2;
 }
+
 .link {
-  text-decoration: none;
-  top:0;
-  left:0;
-  color: #007bff;
-  margin: 0 10px;
-  padding: 5px 10px;
-  border: 2px solid #007bff;
-  border-radius: 15px;
-  display: inline-block;
-  transition: all 0.3s ease;
-  position: relative;
+    text-decoration: none;
+    top: 0;
+    left: 0;
+    color: #007bff;
+    margin: 0 10px;
+    padding: 5px 10px;
+    border: 2px solid #007bff;
+    border-radius: 15px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    position: relative;
 }
 
 .link:hover {
-  color: #fff;
-  background-color: #007bff;
-  animation: jelly 0.5s;
+    color: #fff;
+    background-color: #007bff;
+    animation: jelly 0.5s;
 }
 </style>

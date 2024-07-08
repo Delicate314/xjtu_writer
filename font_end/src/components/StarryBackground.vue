@@ -1,7 +1,7 @@
 <template>
   <div class="starry-background">
     <video autoplay muted loop id="background-video">
-      <source src="/星空.mp4" type="video/mp4" />
+      <source src="/stars.mp4" type="video/mp4" />
       您的浏览器不支持视频标签。
     </video>
   </div>
