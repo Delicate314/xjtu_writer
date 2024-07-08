@@ -65,6 +65,11 @@ def read_item(item_id: int, db: Session = Depends(get_db)):
         raise HTTPException(status_code=404, detail="Item not found")
     return db_item
 
+@app.get("/apis/items/get_user/all", response_model=schemas.Item, tags=["获取用户信息"],summary="获取所有用户信息")
+def read_items(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
+    items = crud.get_items(db, skip=skip, limit=limit)
+    return items
+
 @app.delete("/apis/items/{item_id}", tags=["删除用户"],summary="删除用户信息")
 def delete_item(item_id: int, db: Session = Depends(get_db)):
     db_item = crud.get_item(db, item_id=item_id)
@@ -79,10 +84,16 @@ def read_novel(novel_id: int, db: Session = Depends(get_db)):
     if db_novel is None:
         raise HTTPException(status_code=404, detail="Novel not found")
     return db_novel
+
 @app.get("/apis/novels/get/rank", tags=["获取小说信息"],summary="获取小说排行")
 def get_rank():
     message = "获取小说排行成功"
     return {message}
+
+@app.post("/apis/novels/create", tags=["创建小说"],summary="数据库中插入小说")
+async def create_novel(novel: int, db: Session = Depends(get_db)):
+    return "小说创建成功"
+
 @app.delete("/apis/novels/delete/{novel_id}", tags=["删除小说"],summary="删除小说")
 def delete_novel(novel_id: int, db: Session = Depends(get_db)):
     db_novel = crud.get_novel(db, novel_id=novel_id)
@@ -94,4 +105,14 @@ def delete_novel(novel_id: int, db: Session = Depends(get_db)):
 @app.post("/apis/novels/update/views", tags=["更新小说"],summary="更新小说浏览量")
 def update_novel_views(novel_id: int, db: Session = Depends(get_db)):
     return {"message": "Novel views updated successfully"}
+
+@app.get("/apis/logs/login", tags=["获取日志"],summary="获取登录日志")
+def get_login_logs():
+    message = "获取登录日志成功"
+    return {message}
+
+@app.get("/apis/logs/register", tags=["获取日志"],summary="获取注册日志")
+def get_register_logs():
+    message = "获取注册日志成功"
+    return {message}
 
