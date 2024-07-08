@@ -2,7 +2,7 @@ from http import HTTPStatus
 import dashscope
 
 dashscope.api_key="sk-c90ade95a2b940229e0ac9f35430dc1b"
-start = "续写小说："
+start = "续写小说,字数越多越好:"
 def call_with_messages(contents:str):
     messages = [{'role': 'system', 'content': 'You are a professional novel writer.'},
                 {'role': 'user', 'content': f'{start}{contents}'}]
