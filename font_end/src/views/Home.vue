@@ -5,10 +5,6 @@
     <router-link  :key="index" :to="item.path" v-for="(item,index) in $router.options.routes"   >
       <span class="link" v-if="item.meta.isShow">{{ item.meta.name }}</span>
     </router-link>
-    <!-- <router-link to="/Home" class="link">主页</router-link> |
-    <router-link to="/search" class="link">搜索小说</router-link> |
-    <router-link to="/write" class="link">小说续写</router-link> |
-    <router-link to="/Rank" class="link">小说排行</router-link> -->
     <h2 class="title">小说排名</h2>
     <table>
       <thead>

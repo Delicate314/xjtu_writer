@@ -5,11 +5,8 @@
     </router-link>
     <h2>XJTU AI-Writer</h2>
     <textarea placeholder="续写你的小说~" v-model="content"></textarea>
-    <button @click="write" class='save'>提交</button>
-    <button @click="save" class='genshin'>元神</button>
-    <button @click="save" class='genshit'>明朝</button>
-    <button @click="save" class='genshil'>巴萨</button>
-    <button @click="save" class='shit'>詹姆斯</button>
+    <button @click="save" class='save'>提交</button>
+    
   </div>
 </template>
 
@@ -82,6 +79,7 @@ button:hover {
   position: absolute;
   top: 300px;
   left: 727px;
+
 }
 
 .genshil {

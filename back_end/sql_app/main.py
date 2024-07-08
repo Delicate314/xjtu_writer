@@ -1,15 +1,22 @@
 from fastapi import Depends, FastAPI, HTTPException, UploadFile, status
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from sqlalchemy.orm import Session
 from fastapi.staticfiles import StaticFiles
-from . import crud, models, schemas, ai01, ai02
+from . import crud, schemas, ai01, ai02, login_and_rigister, models
 from .database import SessionLocal, engine
 
-models.Base.metadata.create_all(bind=engine)
+
+
 
 app = FastAPI()
-
-
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # 允许所有源
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 # Dependency
 def get_db():
     db = SessionLocal()
@@ -20,32 +27,17 @@ def get_db():
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 
-async def get_current_user(token: str = Depends(oauth2_scheme), db: Session = Depends(get_db)):
-    dbuser = crud.get_user_by_email(db, token)
-    if not dbuser:
-        raise HTTPException(
-            status_code=status.HTTP_401_UNAUTHORIZED,
-            detail="Invalid authentication credentials",
-            headers={"WWW-Authenticate": "Bearer"},
-        )
-    return dbuser
-
-
-async def get_current_active_user(current_user: models.User = Depends(get_current_user)):
-    if current_user==None:
-        raise HTTPException(status_code=400, detail="Inactive user")
-    return current_user
 
 
 @app.post("/apis/register",tags=["用户注册"],summary="用户注册")
-async def login(name:str,password:str):
-    message = "注册成功"
-    return {message}
+async def login(user_register: models.UserRegister):
+    message = login_and_rigister.register(user_register)
+    return message
 
 @app.post("/apis/login", tags=["用户登录"],summary="用户向服务器发送登录请求")
-async def login(name:str,password:str,form_data: OAuth2PasswordRequestForm = Depends(), db: Session = Depends(get_db)):
-    message = "登录成功"
-    return {message}
+async def login(user_login: models.UserLogin):
+    message = login_and_rigister.login(user_login)
+    return message
 
 @app.post("/apis/model/change", tags=["模型切换"],summary="用户向服务器发送模型切换请求")
 async def change_model(model:str):

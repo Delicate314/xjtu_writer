@@ -39,7 +39,7 @@ export default new Router({
             path: '/write',
             component: WriteView,
             meta: {
-                name: '写文章',
+                name: '写小说',
                 isShow: true
             },
         },
@@ -72,7 +72,7 @@ export default new Router({
             component: NovelDetail,
             meta: {
                 name: '小说详情',
-                isShow: true
+                isShow: false
             },
         },
     ],

@@ -31,6 +31,8 @@ body {
   color: #2c3e50;
   margin-top: 60px;
   position: relative;
-  overflow:hidden;
+  overflow: hidden;
+  border-radius: 15px; /* ’‚¿ÔÃÌº”‘≤Ω« */
 }
+
 </style>

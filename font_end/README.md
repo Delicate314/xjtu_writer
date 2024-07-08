@@ -22,3 +22,6 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### 解决本地ip跨域问题
+https://fastapi.tiangolo.com/zh/tutorial/cors/
