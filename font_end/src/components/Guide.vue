@@ -1,10 +1,9 @@
 <template>
-    <div class="head">
-        <router-link to="/search" class="link">搜索小说</router-link> 
-        <router-link to="/write" class="link">AI创作</router-link> 
-        <router-link to="/login" class="link">用户登录</router-link> 
-        <router-link to="/register" class="link">用户注册</router-link> 
-        <router-link to="/rank" class="link">小说排名</router-link>
+    <div>
+      <router-link to="/search" class="link">搜索小说</router-link> |
+      <router-link to="/write" class="link">小说续写</router-link> |
+      <router-link to="/Home" class="link">推荐</router-link> |
+      <router-link to="/Rank" class="link">小说排行</router-link>
     </div>
 </template>
 
@@ -17,12 +16,6 @@ export default {
 
 <style>
 
-.head{
-    background-color: #B3C0D1;
-    color: #333;
-    text-align: center;
-    line-height: 100px;
-}
 
 .link {
   text-decoration: none;

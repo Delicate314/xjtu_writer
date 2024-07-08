@@ -7,7 +7,7 @@
     <router-link to="/Home" class="link">推荐</router-link> |
     <router-link to="/Rank" class="link">小说排行</router-link>
     <h2 class="title">小说排名</h2>
-        <table>
+        <table class="rank_home">
             <thead>
                 <tr>
                     <th>排名</th>
@@ -19,7 +19,7 @@
             </thead>
             <tbody>
                     <td>index=1</td>
-                    <router-link :to="'/Novel'">
+                    <router-link class="novel_name":to="'/Novel'">
                         <td>novel-1-title</td>
                     </router-link>
                     <td>novel-1-author</td>
@@ -97,6 +97,12 @@ h1 {
   position: relative;
 }
 
+.novel_name {
+  color: #007bff;
+  font-weight: bold;
+  display: inline-block;
+}
+
 .link:hover {
   color: #fff;
   background-color: #007bff;
@@ -121,6 +127,7 @@ h1 {
 .rank-view {
     max-width: 800px;
     margin: 0 auto;
+    margin: 50px;
 }
 
 .title{
@@ -130,16 +137,13 @@ h1 {
     color: white;
 }
 
-td {
-    color: white;
+.rank_home {
+    color: rgb(200, 255, 255);
+    width: 70%;
+    margin: 0 auto;
+
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-th,
 td {
     padding: 8px;
     text-align: left;
@@ -147,6 +151,6 @@ td {
 }
 
 th {
-    background-color: #f2f2f2;
+    background-color: #03535647;
 }
 </style>

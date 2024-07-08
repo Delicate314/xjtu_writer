@@ -1,44 +1,46 @@
 <template>
-    <div class="rank-view">
-    <router-link to="/search" class="link">搜索小说</router-link> |
-    <router-link to="/write" class="link">小说续写</router-link> |
-    <router-link to="/Home" class="link">推荐</router-link>|
-    <router-link to="/Rank" class="link">小说排行</router-link>
-        <h2 class="title">小说排名</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>排名</th>
-                    <th>书名</th>
-                    <th>作者</th>
-                    <th>热度</th>
-                    <th>简介</th>
-                </tr>
-            </thead>
-            <tbody>
-                    <td>index=1</td>
-                    <router-link :to="'/Novel'">
-                        <td>novel-1-title</td>
-                    </router-link>
-                    <td>novel-1-author</td>
-                    <td>novel-1-popularity</td>
-                    <td>novel-1-description</td> 
-            </tbody>
-            <tbody>
-                    <td>index=2</td>
-                    <td>novel-2-title</td>
-                    <td>novel-2-author</td>
-                    <td>novel-2-popularity</td>
-                    <td>novel-2-description</td> 
-            </tbody>
-            <tbody>
-                    <td>index=3</td>
-                    <td>novel-3-title</td>
-                    <td>novel-3-author</td>
-                    <td>novel-3-popularity</td>
-                    <td>novel-3-description</td>
-            </tbody>
-        </table>
+    <div>
+        <div class="rank-view">
+        <router-link to="/search" class="link">搜索小说</router-link> |
+        <router-link to="/write" class="link">小说续写</router-link> |
+        <router-link to="/Home" class="link">推荐</router-link>|
+        <router-link to="/Rank" class="link">小说排行</router-link>
+            <h2 class="title">小说排名</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>排名</th>
+                        <th>书名</th>
+                        <th>作者</th>
+                        <th>热度</th>
+                        <th>简介</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        <td>index=1</td>
+                        <router-link :to="'/Novel'">
+                            <td>novel-1-title</td>
+                        </router-link>
+                        <td>novel-1-author</td>
+                        <td>novel-1-popularity</td>
+                        <td>novel-1-description</td> 
+                </tbody>
+                <tbody>
+                        <td>index=2</td>
+                        <td>novel-2-title</td>
+                        <td>novel-2-author</td>
+                        <td>novel-2-popularity</td>
+                        <td>novel-2-description</td> 
+                </tbody>
+                <tbody>
+                        <td>index=3</td>
+                        <td>novel-3-title</td>
+                        <td>novel-3-author</td>
+                        <td>novel-3-popularity</td>
+                        <td>novel-3-description</td>
+                </tbody>
+            </table>
+        </div>
     </div>
 </template>
 
@@ -51,6 +53,13 @@ export default {
 </script>
 
 <style scoped>
+.background {
+    background: url("~@/assets/rank-background.png") center center no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;
+}
+
 .rank-view {
     max-width: 800px;
     margin: 0 auto;
@@ -76,7 +85,7 @@ td {
 }
 
 th {
-    background-color: #f2f2f2;
+    background-color: #c28797;
 }
 .link {
   text-decoration: none;
