@@ -1,18 +1,29 @@
 <template>
-  <div>
-    <router-link :key="index" :to="item.path" v-for="(item, index) in $router.options.routes">
-      <span class="link" v-if="item.meta.isShow">{{ item.meta.name }}</span>
-    </router-link>
-    <h2>XJTU AI-Writer</h2>
-    <textarea class="input-box" placeholder="续写你的小说~" v-model="content"></textarea>
-    <textarea class="input-box" placeholder="请输入你的问题~" v-model="question"></textarea>
-    <div class="button-container">
-      <button @click="write">续写</button>
-      <button @click="answer">提问</button>
+  <div class="background">
+    <div>
+      <router-link :key="index" :to="item.path" v-for="(item, index) in $router.options.routes">
+        <span class="link" v-if="item.meta.isShow">{{ item.meta.name }}</span>
+      </router-link>
     </div>
-    <p v-if="isLoading" class="loading-text">请耐心等待...</p>
-    <textarea class="output-box" v-model="generatedContent" readonly placeholder="生成的文本将在此显示"></textarea>
-    <textarea class="output-box" v-model="answerContent" readonly placeholder="生成的回答将在此显示"></textarea>
+    <textarea class="input-box" placeholder="续写你的小说~" v-model="content"></textarea>
+    <div>
+      <button @click="write">续写</button>
+      <button @click="upload">发布</button>
+      <p v-if="write_isLoading" class="loading-text">请耐心等待...</p>
+    </div>
+    <div>
+      <textarea class="output-box" v-model="generatedContent" readonly placeholder="生成的文本将在此显示"></textarea>
+    </div>
+    <div>
+      <textarea class="question-box" placeholder="请输入你的问题~" v-model="question"></textarea>
+      <div>
+        <button @click="answer">提问</button>
+        <p v-if="write_isLoading" class="loading-text">请耐心等待...</p>
+      </div>
+    </div>
+    <div>
+      <textarea class="output-box" v-model="answerContent" readonly placeholder="生成的回答将在此显示"></textarea>
+    </div>
   </div>
 </template>
 
@@ -27,13 +38,14 @@ export default {
       generatedContent: '',
       answerContent: '',
       question: '',  // 新增问题输入框数据
-      isLoading: false, // 状态变量
+      write_isLoading: false, // 状态变量
+      answer_isLoading: false,
     };
   },
   methods: {
     async write() {
       console.log('提交', this.content);
-      this.isLoading = true; // 显示加载提示
+      this.write_isLoading = true; // 显示加载提示
       try {
         const requestData = {
           contents: this.content,
@@ -54,12 +66,12 @@ export default {
         }
         this.generatedContent = "生成文本时出错，请稍后再试。";
       } finally {
-        this.isLoading = false; // 隐藏加载提示
+        this.write_isLoading = false; // 隐藏加载提示
       }
     },
     async answer() {
       console.log('提交', this.question);
-      this.isLoading = true; // 显示加载提示
+      this.answer_isLoading = true; // 显示加载提示
       try {
         const requestData = {
           question: this.question  // 将问题添加到请求数据中
@@ -79,7 +91,29 @@ export default {
         }
         this.generatedContent = "生成文本时出错，请稍后再试。";
       } finally {
-        this.isLoading = false; // 隐藏加载提示
+        this.answer_isLoading = false; // 隐藏加载提示
+      }
+    },
+    async upload() {
+      console.log('上传', this.content);
+      this.write_isLoading = true; // 显示加载提示
+      try {
+        const requestData = {
+          contents: this.content,
+        };
+        console.log('Request Data:', requestData);
+
+      }
+      catch (error) {
+        console.error("Error generating text:", error);
+        if (error.response) {
+          console.error("Response Data:", error.response.data);
+          console.error("Response Status:", error.response.status);
+          console.error("Response Headers:", error.response.headers);
+        }
+        this.generatedContent = "生成文本时出错，请稍后再试。";
+      } finally {
+        this.write_isLoading = false; // 隐藏加载提示
       }
     },
   },
@@ -87,12 +121,21 @@ export default {
 </script>
 
 <style>
-body {
-  margin-top: 20px; /* 设置页面顶部的全局上边距 */
+.background {
+  background-image: url('@/assets/write_background.jpg');
+  background-size: cover;
+  /* 设置背景图片大小以覆盖容器 */
+  background-repeat: no-repeat;
+  /* 防止背景图片重复 */
+  background-position: center;
+  /* 背景图片居中显示 */
+  opacity: 0.8;
+  position: relative;
+
 }
 
 textarea {
-  width: 300px;
+  width: 800px;
   height: 150px;
   padding: 10px;
   margin-top: 10px;
@@ -102,6 +145,8 @@ textarea {
   font-size: 16px;
   resize: none;
   margin: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  /* 设置文本框背景透明度 */
 }
 
 textarea.input-box {
@@ -110,8 +155,8 @@ textarea.input-box {
 }
 
 textarea.question-box {
-  width: 300px;
-  height: 100px;
+  width: 800px;
+  height: 20px;
   padding: 10px;
   border: 2px solid #007bff;
   border-radius: 10px;
@@ -123,12 +168,13 @@ textarea.question-box {
 }
 
 textarea.output-box {
-  width: 400px;
+  width: 800px;
   /* 增大宽度 */
   height: 200px;
   /* 增大高度 */
   margin-top: 20px;
-  background-color: #f5f5f5;
+  background-color: rgba(255, 255, 255, 0.9);
+  /* 设置文本框背景透明度 */
   cursor: not-allowed;
 }
 
@@ -136,6 +182,7 @@ textarea.output-box {
   display: flex;
   justify-content: center;
   margin-top: 10px;
+
 }
 
 button {
@@ -147,12 +194,12 @@ button {
   border-radius: 20px;
   /* 圆角 */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  transition: background-color 0.8s ease, box-shadow 0.3s ease;
   margin: 0 10px;
 }
 
 button:hover {
-  background-color: #1f72f7;
+  background-color: #000000;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
@@ -165,14 +212,16 @@ button:hover {
 
 .link {
   text-decoration: none;
+  background-color: #ffffff;
   color: #007bff;
   margin: 0 10px;
-  padding: 5px 10px;
-  border: 2px solid #007bff;
+  padding: 5px 20px;
+  border: 2px solid #aa9393;
   border-radius: 15px;
   display: inline-block;
   transition: all 0.3s ease;
   position: relative;
+  opacity: 0.5;
 }
 
 .link:hover {
@@ -180,7 +229,4 @@ button:hover {
   background-color: #007bff;
   animation: jelly 0.5s;
 }
-
-
-
 </style>

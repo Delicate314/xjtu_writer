@@ -12,7 +12,7 @@ export default {
   components: {
     StarryBackground,
   },
-  };
+};
 </script>
 
 <style>
@@ -23,6 +23,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -32,7 +33,7 @@ body {
   margin-top: 0px;
   position: relative;
   overflow: hidden;
-  border-radius: 15px; /* 这里添加圆角 */
+  border-radius: 15px;
+  /* 这里添加圆角 */
 }
-
 </style>
