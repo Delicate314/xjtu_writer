@@ -1,28 +1,33 @@
 <template>
-  <div class="login-container">
-    <el-card class="login-card" shadow="hover">
-      <div class="title-container">
-        <h2 class="login-title">用户登录</h2>
-      </div>
-      <el-form :model="form" status-icon :rules="rules" ref="form">
-        <el-form-item prop="username">
-          <el-input v-model="form.username" placeholder="用户名"></el-input>
-        </el-form-item>
-        <el-form-item prop="password">
-          <el-input type="password" v-model="form.password" placeholder="密码"></el-input>
-        </el-form-item>
-        <el-form-item>
-          <el-button type="primary" @click="login">登录</el-button>
-        </el-form-item>
-        <el-divider>或</el-divider>
-        <el-form-item>
-          <el-button type="success" @click="register">注册</el-button>
-        </el-form-item>
-      </el-form>
-      <div class="extra-options">
-        <el-button type="text" @click="forgotPassword">忘记密码?</el-button>
-      </div>
-    </el-card>
+  <div class="login-background">
+    <div class="header-title">
+      <h1 class="main-title">XJTU AI-Writer</h1>
+    </div>
+    <div class="login-container">
+      <el-card class="login-card" shadow="hover">
+        <div class="title-container">
+          <h2 class="login-title">用户登录</h2>
+        </div>
+        <el-form :model="form" status-icon :rules="rules" ref="form">
+          <el-form-item prop="username">
+            <el-input v-model="form.username" placeholder="用户名"></el-input>
+          </el-form-item>
+          <el-form-item prop="password">
+            <el-input type="password" v-model="form.password" placeholder="密码"></el-input>
+          </el-form-item>
+          <el-form-item>
+            <el-button type="primary" @click="login">登录</el-button>
+          </el-form-item>
+          <el-divider>或</el-divider>
+          <el-form-item>
+            <el-button type="success" @click="register">注册</el-button>
+          </el-form-item>
+        </el-form>
+        <div class="extra-options">
+          <el-button type="text" @click="forgotPassword">忘记密码?</el-button>
+        </div>
+      </el-card>
+    </div>
   </div>
 </template>
 
@@ -53,7 +58,7 @@ export default {
       this.$refs.form.validate(async (valid) => {
         if (valid) {
           try {
-            const response = await axios.post('http://localhost:8000/apis/login/', {
+            const response = await axios.post('http://localhost:8000/login/', {
               user_name: this.form.username,
               user_pwd: this.form.password,
             });
@@ -86,17 +91,18 @@ export default {
 </script>
 
 <style>
-.login-container {
+.login-background {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   height: 100vh;
   background: linear-gradient(135deg, #2c3e50, #3498db);
   position: relative;
   overflow: hidden;
 }
 
-.login-container::before {
+.login-background::before {
   content: '';
   position: absolute;
   top: -50%;
@@ -108,11 +114,34 @@ export default {
   z-index: 1;
 }
 
+.header-title {
+  position: absolute;
+  top: 5%;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+}
+
+.main-title {
+  font-size: 48px;
+  background: -webkit-linear-gradient(135deg, #3f87a6, #ebf8e1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
 .login-card {
   width: 400px;
   padding: 20px;
-  position: relative;
-  z-index: 2;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.8);
@@ -167,5 +196,12 @@ export default {
 
 .el-form-item input:focus {
   background: rgba(255, 255, 255, 1);
+}
+</style>
+
+<style scoped>
+/* 使用深度选择器覆盖父样式 */
+#app >>> .login-container {
+  margin-top: 0;
 }
 </style>
