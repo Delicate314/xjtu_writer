@@ -58,7 +58,7 @@ export default {
       this.$refs.form.validate(async (valid) => {
         if (valid) {
           try {
-            const response = await axios.post('http://localhost:8000/login/', {
+            const response = await axios.post('http://localhost:8000/apis/login/', {
               user_name: this.form.username,
               user_pwd: this.form.password,
             });
@@ -201,7 +201,7 @@ export default {
 
 <style scoped>
 /* 使用深度选择器覆盖父样式 */
-#app >>> .login-container {
+#app>>>.login-container {
   margin-top: 0;
 }
 </style>

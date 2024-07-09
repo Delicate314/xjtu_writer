@@ -18,10 +18,10 @@ class UserRegister(BaseModel):  # 继承BaseModel类，方便正则表达式检�
 
     @field_validator("user_pwd")  # 检查密码
     def user_pwd_must(cls, value):
-        r = '^(?:(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])).{5,10}$'
+        r = '^(?:(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])).{5,20}$'
         result = re.match(r, value)
         if result is None:
-            raise ValueError('要求6-10位密码，含有数字、大小写字母!')
+            raise ValueError('要求6-20位密码，含有数字、大小写字母!')
         return value
 
 class UserLogin(BaseModel):

@@ -49,10 +49,11 @@ export default {
       this.$refs.form.validate(async (valid) => {
         if (valid) {
           try {
-            const response = await axios.post('http://localhost:8000/register/', {
+            const response = await axios.post('http://localhost:8000/apis/register/', {
               user_name: this.form.username,
               user_pwd: this.form.password,
             });
+            console.log(response);
             if (response.data.success) {
               this.$message.success('注册成功');
               this.$router.push('/login');
