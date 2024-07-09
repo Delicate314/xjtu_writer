@@ -5,14 +5,14 @@
     </router-link>
     <h2>XJTU AI-Writer</h2>
     <textarea class="input-box" placeholder="续写你的小说~" v-model="content"></textarea>
-    <textarea class="question-box" placeholder="请输入你的问题~" v-model="question"></textarea>
+    <textarea class="input-box" placeholder="请输入你的问题~" v-model="question"></textarea>
     <div class="button-container">
       <button @click="write">续写</button>
       <button @click="answer">提问</button>
     </div>
     <p v-if="isLoading" class="loading-text">请耐心等待...</p>
     <textarea class="output-box" v-model="generatedContent" readonly placeholder="生成的文本将在此显示"></textarea>
-    <textarea class="output-box" v-model="answerContent" readonly placeholder="生成的文本将在此显示"></textarea>
+    <textarea class="output-box" v-model="answerContent" readonly placeholder="生成的回答将在此显示"></textarea>
   </div>
 </template>
 
@@ -87,6 +87,10 @@ export default {
 </script>
 
 <style>
+body {
+  margin-top: 20px; /* 设置页面顶部的全局上边距 */
+}
+
 textarea {
   width: 300px;
   height: 150px;
@@ -97,6 +101,7 @@ textarea {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   font-size: 16px;
   resize: none;
+  margin: 20px;
 }
 
 textarea.input-box {
@@ -175,4 +180,7 @@ button:hover {
   background-color: #007bff;
   animation: jelly 0.5s;
 }
+
+
+
 </style>
