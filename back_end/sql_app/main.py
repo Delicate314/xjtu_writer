@@ -5,10 +5,13 @@ from sqlalchemy.orm import Session
 from fastapi.staticfiles import StaticFiles
 from . import crud, schemas, ai01, ai02, login_and_rigister, models
 from .database import SessionLocal, engine
+from pydantic import BaseModel
 
-
-
-
+class Write_request(BaseModel):
+    contents: str
+class Answer_request(BaseModel):
+    question: str
+    
 app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
@@ -45,12 +48,14 @@ async def change_model(model:str):
     return {message}
 
 @app.post("/apis/write_request", tags=["AI写小说"],summary="用户向服务器发送AI写小说请求")
-async def ai_write_novel(contents:str ):
+async def ai_write_novel(contents:Write_request ):
+    contents = contents.contents
     response = ai01.call_with_messages(contents)
     return response
 
 @app.post("/apis/answer_request", response_model=str , tags=["AI回答问题"],summary="用户向服务器发送让AI回答问题的请求")
-async def ai_answer_question(question:str):
+async def ai_answer_question(question:Answer_request):
+    question = question.question
     response = ai02.call_with_messages(question)
     return response
 
