@@ -3,9 +3,15 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from sqlalchemy.orm import Session
 from fastapi.staticfiles import StaticFiles
-from . import crud, schemas, ai01, ai02, login_and_rigister, models
+from . import  ai01, ai02, login_and_rigister, models
 from .database import SessionLocal, engine
 from pydantic import BaseModel
+from .file_option import *
+import shutil
+import os
+from .search_novel import *
+DIR = "/home/xjtu_writer/xjtu_writer/novel"
+
 
 class Write_request(BaseModel):
     contents: str
@@ -64,7 +70,7 @@ async def read_item(item_id: int, db: Session = Depends(get_db)):
     
     return "1111"
 
-@app.get("/apis/items/get_user/all", response_model=schemas.Item, tags=["获取用户信息"],summary="获取所有用户信息")
+@app.get("/apis/items/get_user/all",  tags=["获取用户信息"],summary="获取所有用户信息")
 async def read_items(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
     
     return "123"
@@ -107,3 +113,40 @@ async def get_register_logs():
     message = "获取注册日志成功"
     return {message}
 
+@app.get(path="/apis/search", summary = ["搜索小说"], description="""
+        可以通过用户id、小说id、小说关键字查询小说.\n
+        func = 0: 通过关键字查询\n
+        func = 1: 通过小说id查询\n
+        func = 2: 通过作者id查询\n
+        func = 其他:\n
+        返回值：\n
+        status_code: 0表示正确，1表示错误\n""", tags=["用户"])
+async def search_novel(func: int, input: str):
+    match func:
+        case 0:#通过关键字查询
+            return {"status_code": 0 ,"result":search_novel_by_keyword(input)}
+        case 1:#通过小说id查询
+            return {"status_code": 0 ,"result":search_novel_by_novel_id(input)}
+        case 2:#通过作者id查询
+            return {"status_code": 0 ,"result":search_novel_by_writer_id(input)}
+        case _:#返回状态为1，说明查询失败
+            return {"status_code": 1 ,"result":[]}
+
+@app.post("/apis/uploadfile", tags = ["上传文件"], summary="用户上传文件")
+async def create_upload_file(file: UploadFile, novel_title: str, user_id: str):
+    #判断文件类型，只支持txt文件
+    if file.content_type != "text/plain":
+        raise HTTPException(status_code=400, detail="Invalid file type. Only .txt files are allowed.")
+    
+    # Check file extension
+    if not file.filename.endswith(".txt"):
+        raise HTTPException(status_code=400, detail="Invalid file extension. Only .txt files are allowed.")
+    #将文件插入数据库，并获取小说id
+    novel_id = insert_novel_to_sql(user_id = user_id, novel_title = novel_title, novel_path = DIR)
+    if novel_id == None:
+        raise HTTPException(status_code=400, detail="insert failed, the novel id is none")
+    file_path = os.path.join(DIR, str(novel_id) + ".txt")
+    with open(file_path, "wb") as f:
+        shutil.copyfileobj(file.file, f)
+    
+    return {"filename": file.filename, "file_type": file.content_type}

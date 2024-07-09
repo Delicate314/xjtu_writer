@@ -27,3 +27,5 @@ class UserRegister(BaseModel):  # 继承BaseModel类，方便正则表达式检�
 class UserLogin(BaseModel):
     user_name: str
     user_pwd: str
+    
+    
