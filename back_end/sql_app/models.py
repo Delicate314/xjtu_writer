@@ -1,26 +1,29 @@
-from sqlalchemy import Boolean, Column, ForeignKey, Integer, String
-from sqlalchemy.orm import relationship
-
-from .database import Base
+import pymysql
+from fastapi import FastAPI, HTTPException
+from pydantic import BaseModel, Field, field_validator
+import re
 
 # 建表
-class User(Base):
-    __tablename__ = "users"
+class UserRegister(BaseModel):  # 继承BaseModel类，方便正则表达式检查
+    user_name: str
+    user_pwd: str
 
-    id = Column(Integer, primary_key=True)
-    email = Column(String, unique=True, index=True)
-    password = Column(String)
-    is_active = Column(Boolean, default=True)
+    @field_validator("user_name")  # 检查用户名
+    def user_name_must(cls, value):
+        r = '^[a-zA-Z\d]{1,20}$'
+        result = re.match(r, value)
+        if result is None:
+            raise ValueError('要求为1-20位字母、数字的组合！')
+        return value
 
-    items = relationship("Item", back_populates="owner")
+    @field_validator("user_pwd")  # 检查密码
+    def user_pwd_must(cls, value):
+        r = '^(?:(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])).{5,20}$'
+        result = re.match(r, value)
+        if result is None:
+            raise ValueError('要求6-20位密码，含有数字、大小写字母!')
+        return value
 
-
-class Item(Base):
-    __tablename__ = "items"
-
-    id = Column(Integer, primary_key=True)
-    title = Column(String, index=True)
-    description = Column(String, index=True)
-    owner_id = Column(Integer, ForeignKey("users.id"))
-
-    owner = relationship("User", back_populates="items")
+class UserLogin(BaseModel):
+    user_name: str
+    user_pwd: str
