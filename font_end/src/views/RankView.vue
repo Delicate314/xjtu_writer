@@ -1,5 +1,6 @@
 <template>
-    <div class="rank-view">
+    <div class="rank_background">
+        <h1 class="gradient-text">Welcome to XJTU-AI Writer! :)</h1>
         <router-link :key="index" :to="item.path" v-for="(item, index) in $router.options.routes">
             <span class="link" v-if="item.meta.isShow">{{ item.meta.name }}</span>
         </router-link>
@@ -50,6 +51,18 @@ export default {
 </script>
 
 <style scoped>
+.rank_background {
+    background-image: url('@/assets/rank_background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    opacity: 1.0;
+    position: relative;
+    margin: 0px;
+}
+
 .rank-view {
     max-width: 800px;
     margin: 0 auto;

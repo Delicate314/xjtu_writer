@@ -20,7 +20,7 @@ def insert_novel_to_sql(user_id, novel_title, novel_path, novel_description = No
         cursor.execute(sql, values)
         db.commit()
         novel_id = cursor.lastrowid
-    except mysql.connector.Error as err:
+    except pymysql.Error as err:
         print(f"Error: {err}")
         db.rollback()
         return None

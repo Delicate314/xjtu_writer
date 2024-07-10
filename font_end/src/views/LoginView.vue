@@ -198,10 +198,3 @@ export default {
   background: rgba(255, 255, 255, 1);
 }
 </style>
-
-<style scoped>
-/* 使用深度选择器覆盖父样式 */
-#app>>>.login-container {
-  margin-top: 0;
-}
-</style>

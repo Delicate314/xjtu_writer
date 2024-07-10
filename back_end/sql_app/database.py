@@ -1,19 +1,11 @@
-from sqlalchemy import create_engine
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker
+import pymysql
 
-username = 'user01'
-password = '20030704Liwan'
-host = '114.55.130.178'  # 例如：'localhost' 或 '127.0.0.1'
-port = '3306'  # 通常是 3306
-
-database = 'novel_ai'
-SQLALCHEMY_DATABASE_URL = "sqlite:///./sql_app.db"
-# SQLALCHEMY_DATABASE_URL = "postgresql://user:password@postgresserver/db"
-
-engine = create_engine(
-    SQLALCHEMY_DATABASE_URL, connect_args={"check_same_thread": False}
-)
-SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
-
-Base = declarative_base()
+def connect_db():
+    db = pymysql.connect(
+        host="114.55.130.178",  # MySQL服务器地址
+        user="user01",  # 用户名
+        password="20030704Liwan",  # 密码
+        database="novel_ai",
+        port=3306  # 数据库端口
+    )
+    return db

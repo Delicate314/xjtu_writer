@@ -44,14 +44,6 @@ export default new Router({
             },
         },
         {
-            path: '/login',
-            component: LoginView,
-            meta: {
-                name: '登录',
-                isShow: false
-            },
-        },
-        {
             path: '/register',
             component: RegisterView,
             meta: {

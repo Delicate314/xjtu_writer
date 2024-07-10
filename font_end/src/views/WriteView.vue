@@ -1,15 +1,18 @@
 <template>
   <div class="background">
+    <h1 class="gradient-text">Welcome to XJTU AI-Writer! :)</h1>
     <div>
       <router-link :key="index" :to="item.path" v-for="(item, index) in $router.options.routes">
         <span class="link" v-if="item.meta.isShow">{{ item.meta.name }}</span>
       </router-link>
     </div>
-    <textarea class="input-box" placeholder="续写你的小说~" v-model="content"></textarea>
+    <textarea class="input-box" placeholder="演绎你的故事~,如:小明今天去扔垃圾,结果摔在了水坑里/一个勇者斗恶龙的故事" v-model="content"></textarea>
     <div>
-      <button @click="write">续写</button>
+      <button @click="write">创作</button>
       <button @click="upload">发布</button>
-      <p v-if="write_isLoading" class="loading-text">请耐心等待...</p>
+      <p v-if="write_isLoading" class="loading-text">
+        请耐心等待... >.< <span class="loading-spinner"></span>
+      </p>
     </div>
     <div>
       <textarea class="output-box" v-model="generatedContent" readonly placeholder="生成的文本将在此显示"></textarea>
@@ -18,7 +21,10 @@
       <textarea class="question-box" placeholder="请输入你的问题~" v-model="question"></textarea>
       <div>
         <button @click="answer">提问</button>
-        <p v-if="write_isLoading" class="loading-text">请耐心等待...</p>
+        <button @click="transit">转至输入</button>
+        <p v-if="answer_isLoading" class="loading-text">
+          请耐心等待... >.< <span class="loading-spinner"></span>
+        </p>
       </div>
     </div>
     <div>
@@ -116,6 +122,10 @@ export default {
         this.write_isLoading = false; // 隐藏加载提示
       }
     },
+    transit() {
+      this.content = this.generatedContent;
+      this.generatedContent = '';
+    },
   },
 };
 </script>
@@ -129,13 +139,36 @@ export default {
   /* 防止背景图片重复 */
   background-position: center;
   /* 背景图片居中显示 */
-  opacity: 0.8;
+  opacity: 1.0;
   position: relative;
+  margin: 0px;
+}
 
+@keyframes gradient {
+  0% {
+    background-position: 150% 0;
+  }
+  100% {
+    background-position: -150% 0;
+  }
+}
+
+h1 {
+  font-size: 2em;
+  background: linear-gradient(90deg, #ffffff 25%, #0309c2 50%, #5a315d 75%);
+  background-size: 150% 100%;
+  animation: gradient 10s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0px;
+  padding: 10px 10px;
+  font-weight: bold;
 }
 
 textarea {
-  width: 800px;
+  width: 1000px;
   height: 150px;
   padding: 10px;
   margin-top: 10px;
@@ -155,7 +188,7 @@ textarea.input-box {
 }
 
 textarea.question-box {
-  width: 800px;
+  width: 1000px;
   height: 20px;
   padding: 10px;
   border: 2px solid #007bff;
@@ -168,7 +201,7 @@ textarea.question-box {
 }
 
 textarea.output-box {
-  width: 800px;
+  width: 1000px;
   /* 增大宽度 */
   height: 200px;
   /* 增大高度 */
@@ -185,6 +218,7 @@ textarea.output-box {
 
 }
 
+/* 提交等按钮 */
 button {
   padding: 10px 20px;
   background-color: #0088f7;
@@ -193,35 +227,72 @@ button {
   cursor: pointer;
   border-radius: 20px;
   /* 圆角 */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(6, 0, 125, 0.1);
   transition: background-color 0.8s ease, box-shadow 0.3s ease;
   margin: 0 10px;
+  font-weight: bold;
 }
 
 button:hover {
-  background-color: #000000;
+  background-color: #1667f3;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .loading-text {
+  position: relative;
+  /* 将容器设为相对定位 */
   text-align: center;
-  color: #ff0000;
-  font-size: 16px;
+  /* 右对齐文字和加载圈 */
+  color: #ffffff;
+  font-size: 20px;
   margin-top: 10px;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  text-shadow: 1px 1px 2px #888888;
 }
+
+.loading-spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #ffffff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+  position: absolute;
+  /* 将加载圈设为绝对定位 */
+  top: 0%;
+  /* 垂直居中 */
+  left: 100%;
+  /* 距离右侧边界 */
+  transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
 
 .link {
   text-decoration: none;
   background-color: #ffffff;
   color: #007bff;
-  margin: 0 10px;
-  padding: 5px 20px;
+  margin: 10px 10px;
+  padding: 5px 15px;
   border: 2px solid #aa9393;
   border-radius: 15px;
   display: inline-block;
   transition: all 0.3s ease;
   position: relative;
-  opacity: 0.5;
+  opacity: 0.7;
+  font-size: 15px;
+  font-family: "微软雅黑";
+  font-weight: bold; /* 或者使用其他数值来调整粗细程度 */
 }
 
 .link:hover {
