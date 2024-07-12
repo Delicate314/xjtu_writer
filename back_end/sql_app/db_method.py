@@ -1,5 +1,5 @@
 from .connect_sql import get_cursor,get_db
-import mysql.connector
+import pymysql
 
 def get_user_info(id: int, name: str):
     cursor = get_cursor()
@@ -52,7 +52,7 @@ def change_pwd(user_id:int, user_name:str, new_password:str):
         cursor.execute(sql_update_query, (new_password, user_name))
         # 提交事务
         db.commit()
-    except mysql.connector.Error as error:
+    except pymysql.Error as error:
         print("f")
         return (False, error)
 

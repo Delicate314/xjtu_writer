@@ -1,4 +1,4 @@
-import mysql.connector
+import pymysql
 import json
 
 #将字典列表转成元组列表，在转换成json格式
@@ -22,7 +22,7 @@ def tuples_to_json(str_keys, tuples):
 
 # 连接到 MySQL 数据库
 def create_connection():
-    return mysql.connector.connect(
+    return pymysql.connect(
         host="114.55.130.178",  # MySQL服务器地址
         user="user01",   # 用户名
         password="20030704Liwan",  # 密码

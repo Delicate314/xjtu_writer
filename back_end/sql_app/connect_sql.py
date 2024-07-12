@@ -1,7 +1,7 @@
-import mysql.connector
+import pymysql
 
 # 创建数据库连接
-db = mysql.connector.connect(
+db = pymysql.connect(
     host="114.55.130.178",  # MySQL服务器地址
     user="user01",
     password="20030704Liwan",  # 密码
