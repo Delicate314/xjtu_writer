@@ -102,20 +102,29 @@ export default {
           console.error("Response Status:", error.response.status);
           console.error("Response Headers:", error.response.headers);
         }
-        this.generatedContent = "生成文本时出错，请稍后再试。";
+        alert("上传出错，请稍后再试。");
       } finally {
-        this.answer_isLoading = false;
+        alert("上传成功！")
       }
     },
     async upload() {
       console.log('上传', this.content);
       this.write_isLoading = true;
       try {
+        const novelTitle = prompt("请输入小说标题：");
+        if (!novelTitle) {
+          console.error('未输入小说标题');
+          return;
+        }
+
         const requestData = {
-          contents: this.content,
+          novel: this.generatedContent,
+          novel_title: novelTitle,
         };
         console.log('Request Data:', requestData);
-        
+
+        const response = await axios.post("http://121.36.55.149:80/apis/novel/releaseNovel", requestData);
+        console.log('上传成功', response);
       }
       catch (error) {
         console.error("Error generating text:", error);
@@ -124,7 +133,7 @@ export default {
           console.error("Response Status:", error.response.status);
           console.error("Response Headers:", error.response.headers);
         }
-        this.generatedContent = "生成文本时出错，请稍后再试。";
+        
       } finally {
         this.write_isLoading = false;
       }

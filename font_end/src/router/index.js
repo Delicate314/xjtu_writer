@@ -7,6 +7,7 @@ import LoginView from '@/views/LoginView.vue';
 import RegisterView from '@/views/RegisterView.vue';
 import RankView from '@/views/RankView.vue'
 import NovelDetail from '@/views/NovelDetail.vue'
+import Admin from '@/views/backend_views/admin_home.vue'
 
 Vue.use(Router);
 
@@ -22,7 +23,7 @@ export default new Router({
         },
         {
             path: '/',
-            component: Home,
+            component: LoginView,
             meta: {
                 name: '登录',
                 isShow: false
@@ -82,5 +83,13 @@ export default new Router({
                 background:'novel-background.png'
             },
         },
+        {
+            path: '/Admin',
+            component: Admin,
+            meta: {
+                name: '用户管理页面',
+                isShow: false,
+            },
+        }
     ],
 });

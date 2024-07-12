@@ -134,7 +134,36 @@ async def search_novel(input : SearchNovel):
             return {"status_code": 0, "result":search_novel_by_writer_name(input)}
         case _:#返回状态为1，说明查询失败
             return {"status_code": 1 ,"result":[]}
+
+async def view_count_add_one(novel_id: str):
+    sql_select = "SELECT novel_viewcount FROM novel_info WHERE novel_id = %s"
+    sql_update = "UPDATE novel_info SET novel_viewcount = novel_viewcount + 1 WHERE novel_id = %s"
+    
+    db = create_connection()
+    try:
+        cursor = db.cursor()
         
+        # 查询小说是否存在
+        cursor.execute(sql_select, (novel_id,))
+        result = cursor.fetchone()
+        
+        if not result:
+            raise HTTPException(status_code=404, detail="Novel not found")
+        
+        # 更新 view_count
+        cursor.execute(sql_update, (novel_id,))
+        db.commit()
+        
+        # 获取新的 view_count
+        new_view_count = result[0] + 1
+    except pymysql.Error as err:
+        db.rollback()
+        raise HTTPException(status_code=500, detail=f"An error occurred: {err}")
+    finally:
+        cursor.close()
+        db.close()
+    
+    return {"novel_id": novel_id, "new_view_count": new_view_count}
         
 async def show_file(input: GetNovel):
     novel_id = input.novel_id
@@ -185,6 +214,7 @@ async def show_file(input: GetNovel):
         "total_lines": total_lines,
         "content": content
     }
+    view_count_add_one(novel_id)
     return JSONResponse(response)
 
 

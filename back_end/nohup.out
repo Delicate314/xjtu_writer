@@ -1,0 +1,454 @@
+INFO:     Will watch for changes in these directories: ['/home/xjtu_writer_2/xjtu_writer/back_end']
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [21423] using WatchFiles
+INFO:     Started server process [21426]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:34488 - "GET /docs HTTP/1.0" 200 OK
+INFO:     127.0.0.1:34500 - "GET /openapi.json HTTP/1.0" 200 OK
+INFO:     127.0.0.1:58692 - "GET /docs HTTP/1.0" 200 OK
+INFO:     127.0.0.1:51852 - "GET /apis/register/ HTTP/1.0" 307 Temporary Redirect
+INFO:     127.0.0.1:51868 - "GET /apis/register HTTP/1.0" 405 Method Not Allowed
+INFO:     127.0.0.1:59972 - "GET /docs HTTP/1.0" 200 OK
+INFO:     127.0.0.1:45172 - "GET /docs HTTP/1.0" 200 OK
+INFO:     127.0.0.1:39870 - "GET /docs HTTP/1.0" 200 OK
+INFO:     127.0.0.1:41574 - "GET /openapi.json HTTP/1.0" 200 OK
+INFO:     127.0.0.1:36656 - "GET /docs HTTP/1.0" 200 OK
+INFO:     127.0.0.1:59094 - "GET /openapi.json HTTP/1.0" 200 OK
+INFO:     127.0.0.1:49044 - "GET /docs HTTP/1.0" 200 OK
+INFO:     127.0.0.1:37352 - "GET /openapi.json HTTP/1.0" 200 OK
+INFO:     127.0.0.1:37358 - "GET /docs HTTP/1.0" 200 OK
+INFO:     127.0.0.1:54192 - "GET /docs HTTP/1.0" 200 OK
+INFO:     127.0.0.1:43646 - "GET /openapi.json HTTP/1.0" 200 OK
+INFO:     127.0.0.1:50700 - "GET /apis/rank/1 HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:58458 - "GET /apis/rank HTTP/1.0" 405 Method Not Allowed
+INFO:     127.0.0.1:49724 - "GET /docs HTTP/1.0" 200 OK
+INFO:     127.0.0.1:49728 - "GET /openapi.json HTTP/1.0" 200 OK
+INFO:     127.0.0.1:37514 - "POST /apis/novel/releaseNovel HTTP/1.0" 401 Unauthorized
+INFO:     127.0.0.1:38218 - "POST /apis/rank HTTP/1.0" 200 OK
+{'sub': 'Delicat'}
+{'sub': 'Delicat', 'exp': datetime.datetime(2024, 7, 12, 13, 22, 21, 177841, tzinfo=datetime.timezone.utc)}
+INFO:     127.0.0.1:50602 - "POST /apis/login HTTP/1.0" 200 OK
+Error: (1366, "Incorrect integer value: 'Delicat' for column 'user_id' at row 1")
+INFO:     127.0.0.1:35170 - "POST /apis/novel/releaseNovel HTTP/1.0" 400 Bad Request
+Error: (1366, "Incorrect integer value: 'Delicat' for column 'user_id' at row 1")
+INFO:     127.0.0.1:55656 - "POST /apis/novel/releaseNovel HTTP/1.0" 400 Bad Request
+Error: (1366, "Incorrect integer value: 'Delicat' for column 'user_id' at row 1")
+INFO:     127.0.0.1:36524 - "POST /apis/novel/releaseNovel HTTP/1.0" 400 Bad Request
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [21426]
+Process SpawnProcess-2:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/local/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/_subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/server.py", line 60, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/local/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "uvloop/loop.pyx", line 1517, in uvloop.loop.Loop.run_until_complete
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/server.py", line 67, in serve
+    config.load()
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/config.py", line 477, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/importer.py", line 21, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/xjtu_writer_2/xjtu_writer/back_end/./sql_app/main.py", line 91
+    async 
+          ^
+SyntaxError: invalid syntax
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+INFO:     Started server process [467]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [467]
+INFO:     Started server process [477]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [477]
+INFO:     Started server process [496]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [496]
+INFO:     Started server process [507]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [507]
+INFO:     Started server process [566]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [566]
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+INFO:     Started server process [593]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:35352 - "POST /apis/novel/releaseNovel HTTP/1.0" 401 Unauthorized
+INFO:     127.0.0.1:41950 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:41960 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 401 Unauthorized
+INFO:     127.0.0.1:41974 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:51878 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:51888 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 401 Unauthorized
+INFO:     127.0.0.1:52244 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 401 Unauthorized
+INFO:     127.0.0.1:52252 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [593]
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+INFO:     Started server process [815]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:38360 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [815]
+INFO:     Started server process [850]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:34172 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:34180 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 401 Unauthorized
+INFO:     127.0.0.1:34192 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:43766 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [850]
+INFO:     Started server process [889]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:49776 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:49784 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 401 Unauthorized
+INFO:     127.0.0.1:49786 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:49794 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:49810 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 401 Unauthorized
+INFO:     127.0.0.1:49820 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:49828 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:58668 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:58670 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:33906 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 401 Unauthorized
+INFO:     127.0.0.1:33914 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:33928 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:33936 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 401 Unauthorized
+INFO:     127.0.0.1:33950 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:33966 - "GET /apis/admin/getusers?offset=10&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:33980 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [889]
+INFO:     Started server process [992]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:48148 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:48152 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 401 Unauthorized
+INFO:     127.0.0.1:48158 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:48168 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 401 Unauthorized
+INFO:     127.0.0.1:48182 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:51438 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 401 Unauthorized
+INFO:     127.0.0.1:51446 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:60706 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 401 Unauthorized
+INFO:     127.0.0.1:60720 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:50282 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 401 Unauthorized
+INFO:     127.0.0.1:50296 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:33182 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 401 Unauthorized
+INFO:     127.0.0.1:33198 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [992]
+INFO:     Started server process [1150]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:45552 - "POST /apis/novel/releaseNovel HTTP/1.0" 401 Unauthorized
+{'sub': 'Delicat'}
+{'sub': 'Delicat', 'exp': datetime.datetime(2024, 7, 12, 13, 37, 6, 573136, tzinfo=datetime.timezone.utc)}
+INFO:     127.0.0.1:36324 - "POST /apis/login HTTP/1.0" 200 OK
+Error: (1366, "Incorrect integer value: 'Delicat' for column 'user_id' at row 1")
+INFO:     127.0.0.1:52422 - "POST /apis/novel/releaseNovel HTTP/1.0" 400 Bad Request
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1150]
+INFO:     Started server process [1273]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:56166 - "GET /docs HTTP/1.0" 200 OK
+INFO:     127.0.0.1:56178 - "GET /openapi.json HTTP/1.0" 200 OK
+{'sub': 'Delicat'}
+{'sub': 'Delicat', 'exp': datetime.datetime(2024, 7, 12, 13, 39, 4, 602602, tzinfo=datetime.timezone.utc)}
+INFO:     127.0.0.1:42346 - "POST /apis/login HTTP/1.0" 200 OK
+INFO:     127.0.0.1:39482 - "POST /apis/novel/releaseNovel HTTP/1.0" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/protocols/http/httptools_impl.py", line 419, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/venv/lib/python3.10/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/venv/lib/python3.10/site-packages/starlette/applications.py", line 123, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/venv/lib/python3.10/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/venv/lib/python3.10/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/venv/lib/python3.10/site-packages/starlette/middleware/cors.py", line 93, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/home/venv/lib/python3.10/site-packages/starlette/middleware/cors.py", line 148, in simple_response
+    await self.app(scope, receive, send)
+  File "/home/venv/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 65, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/home/venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/venv/lib/python3.10/site-packages/starlette/routing.py", line 756, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/venv/lib/python3.10/site-packages/starlette/routing.py", line 776, in app
+    await route.handle(scope, receive, send)
+  File "/home/venv/lib/python3.10/site-packages/starlette/routing.py", line 297, in handle
+    await self.app(scope, receive, send)
+  File "/home/venv/lib/python3.10/site-packages/starlette/routing.py", line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/home/venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/venv/lib/python3.10/site-packages/starlette/routing.py", line 72, in app
+    response = await func(request)
+  File "/home/venv/lib/python3.10/site-packages/fastapi/routing.py", line 269, in app
+    solved_result = await solve_dependencies(
+  File "/home/venv/lib/python3.10/site-packages/fastapi/dependencies/utils.py", line 600, in solve_dependencies
+    solved = await call(**sub_values)
+  File "/home/xjtu_writer_2/xjtu_writer/back_end/./sql_app/main.py", line 127, in get_current_user_id
+    user_id = user_info['user_id']  # 或者 user_info[0]，具体取决于查询结果的结构
+TypeError: tuple indices must be integers or slices, not str
+INFO:     127.0.0.1:33636 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:33652 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 401 Unauthorized
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1273]
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+INFO:     Started server process [1363]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:51212 - "GET /docs HTTP/1.0" 200 OK
+INFO:     127.0.0.1:51220 - "GET /openapi.json HTTP/1.0" 200 OK
+INFO:     127.0.0.1:51232 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:51240 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 401 Unauthorized
+INFO:     127.0.0.1:35698 - "POST /apis/login HTTP/1.0" 400 Bad Request
+INFO:     127.0.0.1:35712 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 401 Unauthorized
+INFO:     127.0.0.1:35726 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:55108 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:55122 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 401 Unauthorized
+{'sub': 'Delicat'}
+{'sub': 'Delicat', 'exp': datetime.datetime(2024, 7, 12, 13, 41, 36, 472971, tzinfo=datetime.timezone.utc)}
+INFO:     127.0.0.1:55138 - "POST /apis/login HTTP/1.0" 200 OK
+INFO:     127.0.0.1:48488 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:48502 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 401 Unauthorized
+INFO:     127.0.0.1:48516 - "POST /apis/novel/releaseNovel HTTP/1.0" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/protocols/http/httptools_impl.py", line 419, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/venv/lib/python3.10/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/venv/lib/python3.10/site-packages/starlette/applications.py", line 123, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/venv/lib/python3.10/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/venv/lib/python3.10/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/venv/lib/python3.10/site-packages/starlette/middleware/cors.py", line 93, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/home/venv/lib/python3.10/site-packages/starlette/middleware/cors.py", line 148, in simple_response
+    await self.app(scope, receive, send)
+  File "/home/venv/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 65, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/home/venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/venv/lib/python3.10/site-packages/starlette/routing.py", line 756, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/venv/lib/python3.10/site-packages/starlette/routing.py", line 776, in app
+    await route.handle(scope, receive, send)
+  File "/home/venv/lib/python3.10/site-packages/starlette/routing.py", line 297, in handle
+    await self.app(scope, receive, send)
+  File "/home/venv/lib/python3.10/site-packages/starlette/routing.py", line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/home/venv/lib/python3.10/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/venv/lib/python3.10/site-packages/starlette/routing.py", line 72, in app
+    response = await func(request)
+  File "/home/venv/lib/python3.10/site-packages/fastapi/routing.py", line 278, in app
+    raw_response = await run_endpoint_function(
+  File "/home/venv/lib/python3.10/site-packages/fastapi/routing.py", line 191, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/xjtu_writer_2/xjtu_writer/back_end/./sql_app/main.py", line 237, in release_novel
+    return await novel_option.release_novel(novel, user_id, novel_title)
+  File "/home/xjtu_writer_2/xjtu_writer/back_end/./sql_app/novel_option.py", line 265, in release_novel
+    user_dir = os.path.join(DIR, user_id)
+  File "/usr/local/lib/python3.10/posixpath.py", line 90, in join
+    genericpath._check_arg_types('join', a, *p)
+  File "/usr/local/lib/python3.10/genericpath.py", line 152, in _check_arg_types
+    raise TypeError(f'{funcname}() argument must be str, bytes, or '
+TypeError: join() argument must be str, bytes, or os.PathLike object, not 'int'
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1363]
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+Process SpawnProcess-20:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/local/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/_subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/server.py", line 60, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/local/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "uvloop/loop.pyx", line 1517, in uvloop.loop.Loop.run_until_complete
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/server.py", line 67, in serve
+    config.load()
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/config.py", line 477, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/importer.py", line 21, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/xjtu_writer_2/xjtu_writer/back_end/./sql_app/main.py", line 129
+    user_id = (str)user_id
+               ^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+INFO:     Started server process [1498]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:39828 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 401 Unauthorized
+INFO:     127.0.0.1:39842 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:46788 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:46804 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 401 Unauthorized
+INFO:     127.0.0.1:46812 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:46824 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 401 Unauthorized
+INFO:     127.0.0.1:39478 - "GET /apis/admin/getusernovel?user_id=1 HTTP/1.0" 401 Unauthorized
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1498]
+Process SpawnProcess-22:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/local/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/_subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/server.py", line 60, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/local/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "uvloop/loop.pyx", line 1517, in uvloop.loop.Loop.run_until_complete
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/server.py", line 67, in serve
+    config.load()
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/config.py", line 477, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/importer.py", line 21, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/xjtu_writer_2/xjtu_writer/back_end/./sql_app/main.py", line 128
+    user_id = str(user_info['user_id']  # 使用列名访问字段
+                 
+SyntaxError: '(' was never closed
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+INFO:     Started server process [1533]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:43734 - "GET /docs HTTP/1.0" 200 OK
+INFO:     127.0.0.1:43742 - "GET /openapi.json HTTP/1.0" 200 OK
+{'sub': 'Delicat'}
+{'sub': 'Delicat', 'exp': datetime.datetime(2024, 7, 12, 13, 45, 4, 226625, tzinfo=datetime.timezone.utc)}
+INFO:     127.0.0.1:42828 - "POST /apis/login HTTP/1.0" 200 OK
+INFO:     127.0.0.1:57278 - "POST /apis/novel/releaseNovel HTTP/1.0" 200 OK
+INFO:     127.0.0.1:52784 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 401 Unauthorized
+INFO:     127.0.0.1:52792 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:47604 - "OPTIONS /apis/admin/deleteuser?user_id=18&user_name=test11111 HTTP/1.0" 200 OK
+INFO:     127.0.0.1:47614 - "DELETE /apis/admin/deleteuser?user_id=18&user_name=test11111 HTTP/1.0" 401 Unauthorized
+INFO:     127.0.0.1:47616 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:47630 - "GET /apis/admin/getusers?offset=10&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:40230 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:40544 - "POST /apis/uploadfile HTTP/1.0" 200 OK
+INFO:     127.0.0.1:50696 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:50706 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 401 Unauthorized

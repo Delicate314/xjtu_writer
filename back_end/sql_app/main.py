@@ -88,6 +88,47 @@ async def get_current_user(token: str = Depends(oauth2_scheme)):
         raise credentials_exception
     return username
 
+async def get_current_user_id(token: str = Depends(oauth2_scheme)):    
+    credentials_exception = HTTPException(
+        status_code=status.HTTP_401_UNAUTHORIZED,
+        detail="Could not validate credentials",
+        headers={"WWW-Authenticate": "Bearer"},
+    )
+    try:
+        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        username: str = payload.get("sub")
+        if username is None:
+            raise credentials_exception
+    except InvalidTokenError:
+        raise credentials_exception
+    
+    db = pymysql.connect(
+        host="114.55.130.178",  # MySQL服务器地址
+        user="user01",  # 用户名
+        password="20030704Liwan",  # 密码
+        database="novel_ai",
+        port=3306,  # 数据库端口
+        cursorclass=pymysql.cursors.DictCursor  # 使用DictCursor
+    )
+    
+    cursor = db.cursor()
+    sql_select = "SELECT * FROM user_info WHERE user_name = %s;"
+    value = (username,)
+    cursor.execute(sql_select, value)
+    
+    user_info = cursor.fetchone()  # 获取查询结果
+    
+    cursor.close()  # 关闭游标
+    db.close()  # 关闭数据库连接
+    
+    if user_info is None:
+        raise credentials_exception
+    
+    # 假设你想获取 user_info 中的某个字段，比如 user_id
+    user_id = str(user_info['user_id'])  # 使用列名访问字段
+    
+    return user_id
+
 
 @app.post("/apis/register",tags=["用户注册"],summary="用户注册")
 async def register(user_register: models.UserRegister):
@@ -107,7 +148,7 @@ DIR = "/home/xjtu_writer/xjtu_writer/novel"
 async def upload_file(
     file: UploadFile = File(...),
     novel_title: str = Form(...),
-    user_id: str = Depends(get_current_user)
+    user_id: str = Depends(get_current_user_id)
 ):
     return await novel_option.upload_file(file, novel_title, user_id)
 
@@ -136,9 +177,14 @@ async def show_file(input: novel_option.GetNovel):
 async def search_novel(input : novel_option.SearchNovel):
     return await novel_option.search_novel(input)
 
-@app.get("/apis/rank", tags=["获取排行榜"], summary="获取排行榜，输入参数index", description="index为1表示排行1-10，为2表示排行11-20，以此类推")
+class rank_input(BaseModel):
+    index : int
+
+@app.post("/apis/rank", tags=["获取排行榜"], summary="获取排行榜，输入参数index", description="index为1表示排行1-10，为2表示排行11-20，以此类推")
 #async def rank(index: int, user: str = Depends(get_current_user)):
-async def rank(index: int, user: str = Form(...)):
+async def rank(input: rank_input):
+
+    index = input.index
     db = pymysql.connect(
         host="114.55.130.178",  # MySQL服务器地址
         user="user01",  # 用户名
@@ -185,7 +231,7 @@ async def import_file(
           """)
 async def release_novel(
     novel: str = Form(...),
-    user_id: str = Depends(get_current_user),
+    user_id: str = Depends(get_current_user_id),
     novel_title: str = Form(...)
 ):
     return await novel_option.release_novel(novel, user_id, novel_title)
@@ -218,7 +264,7 @@ def is_valid_password(password: str) -> bool:
 
     return True
 
-@app.post("/admin/changepwd", tags=['超级用户权限'], summary='修改Admin密码',
+@app.post("/apis/admin/changepwd", tags=['超级用户权限'], summary='修改Admin密码',
           description='需要旧密码和新密码，仅能修改超级用户的密码')
 async def admin_change_password(user_password: str, user_newpassword: str):
     # 调用数据库方法获取管理员信息
@@ -258,7 +304,7 @@ async def admin_change_password(user_password: str, user_newpassword: str):
 
     return {"message": "修改密码成功"}
 
-@app.get("/admin/getNovel",tags=['超级用户权限'], summary='得到搜索目标或所有小说信息',
+@app.get("/apis/admin/getNovel",tags=['超级用户权限'], summary='得到搜索目标或所有小说信息',
          description="""
 参数说明:\n
     --offset:偏移量 & row_count:一次得到的总行数\n
@@ -305,7 +351,7 @@ async def admin_get_all_novel(offset: int, row_count: int, order_by='novel_id', 
             detail=f"An error occurred while fetching novel information: {str(e)}"
         )
 
-@app.get("/admin/getusers",tags=['超级用户权限'], summary='得到搜索目标或所有用户信息',
+@app.get("/apis/admin/getusers",tags=['超级用户权限'], summary='得到搜索目标或所有用户信息',
          description="""
 参数说明:\n
     --offset:偏移量 & row_count:一次得到的总行数\n
@@ -345,7 +391,7 @@ async def admin_get_all_user(offset: int, row_count: int, order_by='user_id', or
             detail=f"An error occurred while fetching novel information: {str(e)}"
         )
 
-@app.delete("/admin/deleteuser",tags=['超级用户权限'], summary='删除用户', description="""
+@app.delete("/apis/admin/deleteuser",tags=['超级用户权限'], summary='删除用户', description="""
 参数说明:\n
     --user_id:需要删除的用户id\n
     --user_name:需要删除的用户名\n
@@ -365,7 +411,7 @@ async def admin_delete_user(user_name: str, user_id: str = Depends(get_current_u
         )
     return {'message': msg}
 
-@app.delete("/admin/deletenovel", tags=['超级用户权限'], summary='删除小说', description="""
+@app.delete("/apis/admin/deletenovel", tags=['超级用户权限'], summary='删除小说', description="""
 参数说明:\n
     --novel_id:需要删除的小说id\n
     --novel_title:需要删除的小说名\n
@@ -384,7 +430,7 @@ async def admin_delete_novel(novel_id: int, novel_title: str):
         )
     return {'message': msg}
 
-@app.post("/admin/resetpassword",tags=['超级用户权限'], summary='重置用户密码', description="""
+@app.post("/apis/admin/resetpassword",tags=['超级用户权限'], summary='重置用户密码', description="""
 参数说明:\n
     --user_id:用户id\n
     --user_name:用户名\n
@@ -399,7 +445,7 @@ async def admin_reset_password(user_name: str, user_id: str = Depends(get_curren
         )
     return {'message': m}
 
-@app.get("/admin/getusernovel", tags=['超级用户权限'], summary='查找某个用户发布的小说', description="""
+@app.get("/apis/admin/getusernovel", tags=['超级用户权限'], summary='查找某个用户发布的小说', description="""
 参数说明:
     user_id:用户名
 返回:小说""")

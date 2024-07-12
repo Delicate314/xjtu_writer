@@ -58,11 +58,18 @@ export default {
       this.$refs.form.validate(async (valid) => {
         if (valid) {
           try {
-            const response = await axios.post('http://121.36.55.149:80/apis/login/', {
-              user_name: this.form.username,
-              user_pwd: this.form.password,
-            });
-            if (response.data.success) {
+            const params = new URLSearchParams();
+            params.append('username', this.form.username);
+            params.append('password', this.form.password);
+
+            const response = await axios.post('http://121.36.55.149/apis/login/', params);
+
+            console.log("response: ", response.data);
+            window.sessionStorage.setItem('token', response.data.access_token);
+            if (response.data.is_admin == 1) {
+              this.$message.success('进入管理员系统');
+              this.$router.push('/Admin');
+            } else if (response.data.success) {
               this.$message.success('登录成功');
               this.$router.push('/Home');
             } else {
