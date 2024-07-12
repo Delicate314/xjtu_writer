@@ -179,14 +179,15 @@ async def import_file(
 ):
     return await novel_option.import_file(file, user_id)
 
-@app.post(path="/apis/releaseNovel", tags=["发布小说"], description="""
+@app.post(path="/apis/novel/releaseNovel", tags=["发布小说"], description="""
           \n用户上传小说，str\n
           """)
 async def release_novel(
     novel: str = Form(...),
-    user_id: str = Form(...)
+    user_id: str = Form(...),
+    novel_title: str = Form(...)
 ):
-    return await novel_option.import_file(file, user_id)
+    return await novel_option.release_novel(novel, user_id, novel_title)
 
 @app.post("/apis/write_request", tags=["AI写小说"],summary="用户向服务器发送AI写小说请求")
 async def ai_write_novel(contents:Write_request ):

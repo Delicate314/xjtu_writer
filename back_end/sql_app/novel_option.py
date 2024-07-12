@@ -230,4 +230,22 @@ def delete_novel(novel_id: int, novel_name: str):
     return (2, "小说删除成功")
 
 
-def release_novel(novel: str, user_id: str):
+async def release_novel(novel: str, user_id: str, novel_title : str):
+    # 创建用户目录，如果不存在的话
+    user_dir = os.path.join(DIR, user_id)
+    if not os.path.exists(user_dir):
+        os.makedirs(user_dir)
+
+    # 将小说插入数据库，并获取小说id
+    novel_id = insert_novel_to_sql(user_id=user_id, novel_title=novel_title, novel_path=user_dir)
+    if novel_id is None:
+        raise HTTPException(status_code=400, detail="Insert failed, the novel id is none")
+
+    # 生成文件路径
+    file_path = os.path.join(user_dir, f"{novel_id}.txt")
+
+    # 保存小说内容到文件
+    with open(file_path, "w", encoding="utf-8") as f:
+        f.write(novel)
+
+    return {"file_path": file_path, "novel_id": novel_id}
