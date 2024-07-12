@@ -115,7 +115,7 @@ export default {
           contents: this.content,
         };
         console.log('Request Data:', requestData);
-
+        
       }
       catch (error) {
         console.error("Error generating text:", error);

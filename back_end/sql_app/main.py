@@ -175,7 +175,7 @@ async def change_model(model:str):
           直接返回文件内容\n""")
 async def import_file(
     file: UploadFile = File(...),
-    user_id: str = Form(...)
+    user_id: str = Depends(get_current_user)
 ):
     return await novel_option.import_file(file, user_id)
 
@@ -184,7 +184,7 @@ async def import_file(
           """)
 async def release_novel(
     novel: str = Form(...),
-    user_id: str = Form(...),
+    user_id: str = Depends(get_current_user),
     novel_title: str = Form(...)
 ):
     return await novel_option.release_novel(novel, user_id, novel_title)
@@ -349,7 +349,8 @@ async def admin_get_all_user(offset: int, row_count: int, order_by='user_id', or
     --user_id:需要删除的用户id\n
     --user_name:需要删除的用户名\n
 """)
-async def admin_delete_user(user_id: int, user_name: str):
+async def admin_delete_user(user_name: str, user_id: str = Depends(get_current_user)):
+    user_id = int(user_id)
     (s, msg) = db_method.delete_user(user_id=user_id, user_name=user_name)
     if s == 0:
         raise HTTPException(
@@ -387,7 +388,8 @@ async def admin_delete_novel(novel_id: int, novel_title: str):
     --user_id:用户id\n
     --user_name:用户名\n
 """)
-async def admin_reset_password(user_id: int, user_name: str):
+async def admin_reset_password(user_name: str, user_id: str = Depends(get_current_user)):
+    user_id = int(user_id)
     (s, m) = db_method.reset_password(user_id, user_name)
     if not s:
         raise HTTPException(
@@ -400,7 +402,7 @@ async def admin_reset_password(user_id: int, user_name: str):
 参数说明:
     user_id:用户名
 返回:小说""")
-async def admin_get_user_novel(user_id: int):
+async def admin_get_user_novel(user_id: str = Depends(get_current_user)):
     try:
         rows = db_method.get_user_novel(user_id)
 

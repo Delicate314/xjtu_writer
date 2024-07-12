@@ -39,7 +39,6 @@ import axios from 'axios';
 import Background from '../components/Background.vue';
 import Guide from '../components/Guide.vue';
 
-
 export default {
   name: 'SearchView',
   components: {
@@ -149,9 +148,11 @@ export default {
           }
         });
         console.log('文件上传成功', response.data);
+        alert('文件上传成功');
         // 这里可以添加上传成功后的逻辑
       } catch (error) {
         console.error('文件上传失败', error);
+        alert('文件上传失败');
       }
     }
   },
@@ -194,12 +195,16 @@ h2 {
   /* 设置背景颜色并添加透明度 */
   border-radius: 10px;
   /* 设置圆角 */
-  padding: 20px;
+  padding: 10px;
   /* 设置内边距 */
   margin-top: 20px;
   /* 设置上边距 */
   text-align: left;
   /* 左对齐 */
+  width: 300px;
+  /* 设置较小的宽度 */
+  margin: 0 auto;
+  /* 使元素水平居中 */
 }
 
 .result-box ul {
@@ -212,7 +217,7 @@ h2 {
 .result-box li {
   padding: 10px 0;
   /* 设置上下内边距 */
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #000000;
   /* 设置下边框 */
 }
 
@@ -237,5 +242,9 @@ h2 {
   border-radius: 5px;
   font-size: 20px;
   color: #333;
+  width: 300px;
+  /* 设置较小的宽度 */
+  margin: 0 auto;
+  /* 使元素水平居中 */
 }
 </style>
