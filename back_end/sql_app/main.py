@@ -107,7 +107,7 @@ DIR = "/home/xjtu_writer/xjtu_writer/novel"
 async def upload_file(
     file: UploadFile = File(...),
     novel_title: str = Form(...),
-    user_id: str = Form(...)
+    user_id: str = Depends(get_current_user)
 ):
     return await novel_option.upload_file(file, novel_title, user_id)
 
@@ -136,8 +136,9 @@ async def show_file(input: novel_option.GetNovel):
 async def search_novel(input : novel_option.SearchNovel):
     return await novel_option.search_novel(input)
 
-@app.get("/apis/rank/{index}", tags=["获取排行榜"], summary="获取排行榜，输入参数index", description="index为1表示排行1-10，为2表示排行11-20，以此类推")
-async def rank(index: int, user: str = Depends(get_current_user)):
+@app.get("/apis/rank", tags=["获取排行榜"], summary="获取排行榜，输入参数index", description="index为1表示排行1-10，为2表示排行11-20，以此类推")
+#async def rank(index: int, user: str = Depends(get_current_user)):
+async def rank(index: int, user: str = Form(...)):
     db = pymysql.connect(
         host="114.55.130.178",  # MySQL服务器地址
         user="user01",  # 用户名

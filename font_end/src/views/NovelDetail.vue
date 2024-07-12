@@ -45,12 +45,12 @@ export default {
     },
     methods: {
         async ask() {
-            console.log('Asking:', this.question);
             try {
                 const requestData = {
-                    question: this.question  // 将问题添加到请求数据中
+                    question: this.question,  // 将问题添加到请求数据中
+                    context: this.novel.content
                 };
-                //console.log('Request Data:', requestData);
+                console.log('Request Data:', requestData);
                 const response = await this.$axios.post("http://121.36.55.149:80/apis/answer_request", requestData);
                 console.log('Response:', response);
                 this.answer = response.data;
