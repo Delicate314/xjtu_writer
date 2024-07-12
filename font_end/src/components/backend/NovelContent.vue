@@ -2,7 +2,7 @@
     <el-dialog :visible.sync="visible" title="小说内容" @close="handleClose">
         <div v-if="loading">正在加载小说内容...</div>
         <div v-else-if="error">{{ error }}</div>
-        <div v-else><pre>{{ novelContent }}</pre></div>
+        <div v-else><pre v-html="novelContent"></pre></div>
         <span slot="footer" class="dialog-footer">
             <el-button type="primary" @click="downloadNovel">下载链接</el-button>
         </span>

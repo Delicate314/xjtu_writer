@@ -212,17 +212,17 @@ async def rank(input: rank_input):
     db.close()
     return result
 
-@app.post("/apis/model/change", tags=["模型切换"],summary="用户向服务器发送模型切换请求")
-async def change_model(model:str):
-    message = "模型切换成功"
-    return {message}
+# @app.post("/apis/model/change", tags=["模型切换"],summary="用户向服务器发送模型切换请求")
+# async def change_model(model:str):
+#     message = "模型切换成功"
+#     return {message}
 
 @app.post(path="/apis/importNovel", tags=["导入小说"], description="""
           \n用户上传文件\n
           直接返回文件内容\n""")
 async def import_file(
     file: UploadFile = File(...),
-    user_id: str = Depends(get_current_user)
+    user_id: str = Depends(get_current_user_id)
 ):
     return await novel_option.import_file(file, user_id)
 

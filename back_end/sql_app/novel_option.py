@@ -214,7 +214,7 @@ async def show_file(input: GetNovel):
         "total_lines": total_lines,
         "content": content
     }
-    view_count_add_one(novel_id)
+    await view_count_add_one(novel_id)
     return JSONResponse(response)
 
 
