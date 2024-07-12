@@ -7,6 +7,7 @@ import LoginView from '@/views/LoginView.vue';
 import RegisterView from '@/views/RegisterView.vue';
 import RankView from '@/views/RankView.vue'
 import NovelDetail from '@/views/NovelDetail.vue'
+
 Vue.use(Router);
 
 export default new Router({
@@ -21,7 +22,7 @@ export default new Router({
         },
         {
             path: '/',
-            component: LoginView,
+            component: Home,
             meta: {
                 name: '登录',
                 isShow: false
@@ -32,7 +33,8 @@ export default new Router({
             component: SearchView,
             meta: {
                 name: '搜索',
-                isShow: true
+                isShow: true,
+                background:'search-background.jpg'
             },
         },
         {
@@ -40,7 +42,17 @@ export default new Router({
             component: WriteView,
             meta: {
                 name: '写小说',
-                isShow: true
+                isShow: true,
+                background:'writing-background.jpg'
+            },
+        },
+        {
+            path: '/login',
+            component: LoginView,
+            meta: {
+                name: '登录',
+                isShow: false,
+                background:'login-background.png'
             },
         },
         {
@@ -48,7 +60,8 @@ export default new Router({
             component: RegisterView,
             meta: {
                 name: '注册',
-                isShow: false
+                isShow: false,
+                background:'register-background.png'
             },
         },
         {
@@ -56,7 +69,8 @@ export default new Router({
             component: RankView,
             meta: {
                 name: '排行榜',
-                isShow: true
+                isShow: true,
+                background:'rank-background.png'
             },
         },
         {
@@ -64,7 +78,8 @@ export default new Router({
             component: NovelDetail,
             meta: {
                 name: '小说详情',
-                isShow: false
+                isShow: false,
+                background:'novel-background.png'
             },
         },
     ],

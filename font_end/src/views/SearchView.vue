@@ -1,9 +1,7 @@
 <template>
-  <div class="search_background">
-    <h1 class="gradient-text">Welcome to XJTU AI-Writer! :)</h1>
-    <router-link :key="index" :to="item.path" v-for="(item, index) in $router.options.routes">
-      <span class="link" v-if="item.meta.isShow">{{ item.meta.name }}</span>
-    </router-link>
+  <div class="top">
+    <Background />
+    <Guide />
     <h2 class="link1">搜索小说</h2>
     <input type="text" placeholder="请输入搜索对象" v-model="query" @input="updateDisplay" class="rounded-input">
     <select v-model="queryType" class="rounded-select">
@@ -11,62 +9,100 @@
       <option value="1">小说id</option>
       <option value="2">作者id</option>
     </select>
-    <button class='search rounded-button' @click="search">Search</button>
-    <div>{{ response }}</div>
-    <h2 class="link1">上传文件</h2>
-    <button @click="uploadFile" class='upload rounded-button'>上传文件</button>
-    <input type="file" @change="handleFileUpload" />
-
-    <div class="search_background">
-      <h1 class="gradient-text">Welcome to XJTU AI-Writer! :)</h1>
-      <router-link :key="index" :to="item.path" v-for="(item, index) in $router.options.routes">
-        <span class="link" v-if="item.meta.isShow">{{ item.meta.name }}</span>
-      </router-link>
-      <h2 class="link1">搜索小说</h2>
-      <input type="text" placeholder="请输入搜索对象" v-model="query" @input="updateDisplay" class="rounded-input">
-      <select v-model="queryType" class="rounded-select">
-        <option value="0">关键字</option>
-        <option value="1">小说id</option>
-        <option value="2">作者id</option>
-      </select>
-      <button class='search rounded-button' @click="search">Search</button>
-      <div>{{ response }}</div>
-      <h2 class="link1">上传文件</h2>
-      <button @click="uploadFile" class='upload rounded-button'>上传文件</button>
-      <input type="file" @change="handleFileUpload" />
-
+    <button class="search rounded-button" @click="search">Search</button>
+    <div v-if="response.result.length > 0" class="result-box">
+      <h3>搜索结果：</h3>
+      <ul>
+        <li v-for="item in response.result" :key="item.novel_id">
+          <p>
+            {{ item.novel_title }} - {{ item.user_name }}
+            <button class="search rounded-button" @click="download(item.novel_id, item.novel_title)">download</button>
+          </p>
+        </li>
+      </ul>
     </div>
+    <div v-else>
+      <p>暂无结果</p>
+    </div>
+    <h2 class="link1">上传文件</h2>
+    <input type="file" @change="handleFileUpload" />
+    <div v-if="selectedFile" class="file-info">
+      <p>已选择文件：{{ selectedFile.name }}</p>
+    </div>
+    <button @click="uploadFile" class="upload rounded-button">上传文件</button>
+  </div>
 </template>
 
 <script>
 import StarryBackground from '../components/StarryBackground.vue';
 import axios from 'axios';
-import StarryBackground from '../components/StarryBackground.vue';
-import axios from 'axios';
+import Background from '../components/Background.vue';
+import Guide from '../components/Guide.vue';
+
+
 export default {
   name: 'SearchView',
   components: {
     StarryBackground,
-  },
-  components: {
-    StarryBackground,
+    Background,
+    Guide,
   },
   data() {
     return {
       query: '',
       queryType: '0', // 默认选择关键字
       displayText: '',
-      response: [],
+      response: {
+        result: []
+      }, // 确保response默认是一个包含result数组的对象
       selectedFile: null,
-      type: 0
-      queryType: '0', // 默认选择关键字
-      displayText: '',
-      response: [],
-      selectedFile: null,
-      type: 0
+      novelTitle: '', // 新增的小说标题字段
+      userId: '', // 新增的用户ID字段
+      type: 0,
     };
   },
   methods: {
+    fetchWithTimeout(url, options, timeout = 10000) {
+            return Promise.race([
+                fetch(url, options),
+                new Promise((_, reject) =>
+                    setTimeout(() => reject(new Error('请求超时')), timeout)
+                )
+            ]);
+        },
+    async download(nid,ntitle) {
+            try {
+                const response = await this.fetchWithTimeout(
+                'http://121.36.55.149/apis/downloadfile',
+                {
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        novel_id: String(nid)
+                    })
+                }
+                );
+                if (response.status === 200) {
+                    const blob = await response.blob();
+                    const downloadUrl = window.URL.createObjectURL(blob);
+                    const link = document.createElement('a');
+                    link.href = downloadUrl;
+                    link.download = `${ntitle}.txt`; 
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                    window.URL.revokeObjectURL(downloadUrl);
+                } else {
+                    this.error = '获取下载链接失败';
+                }
+            } catch (error) {
+                console.error('Error fetching download link:', error);
+                this.error = '获取下载链接时发生错误';
+            }
+        },
     async search() {
       event.preventDefault();
       console.log('Searching for', this.query, 'with type', this.queryType);
@@ -89,9 +125,13 @@ export default {
     },
     handleFileUpload(event) {
       this.selectedFile = event.target.files[0];
+      if (this.selectedFile) {
+        this.novelTitle = this.selectedFile.name;
+        // this.userId = localStorage.getItem('token') || '';
+      }
     },
     // 上传文件到服务器
-    uploadFile() {
+    async uploadFile() {
       if (!this.selectedFile) {
         console.error('没有选择文件');
         return;
@@ -99,110 +139,91 @@ export default {
 
       const formData = new FormData();
       formData.append('file', this.selectedFile);
+      formData.append('novel_title', this.novelTitle);
+      formData.append('user_id', 1);
 
-      const requestBody = {
-        func: this.type,
-        file: formData
-      };
-    },
+      try {
+        const response = await axios.post('http://121.36.55.149/apis/uploadfile', formData, {
+          headers: {
+            'Content-Type': 'multipart/form-data'
+          }
+        });
+        console.log('文件上传成功', response.data);
+        // 这里可以添加上传成功后的逻辑
+      } catch (error) {
+        console.error('文件上传失败', error);
+      }
+    }
   },
 };
 </script>
 
 <style>
-.search_background {
-  background-image: url('@/assets/search_background.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100vh;
-  width: 100%;
-  opacity: 1.0;
-  position: relative;
-  margin: 0px;
-}
-
 input.rounded-input,
 select.rounded-select,
 button.rounded-button {
-  .search_background {
-    background-image: url('@/assets/search_background.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
-    width: 100%;
-    opacity: 1.0;
-    position: relative;
-    margin: 0px;
-  }
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+  /* 设置圆角 */
+}
 
-  input.rounded-input,
-  select.rounded-select,
-  button.rounded-button {
-    padding: 10px;
-    margin-right: 10px;
-    border-radius: 10px;
-    /* 设置圆角 */
-    border-radius: 10px;
-    /* 设置圆角 */
-  }
+button.rounded-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
 
-  button.rounded-button {
+button.rounded-button:hover {
+  background-color: #0056b3;
+}
 
-    button.rounded-button {
-      padding: 10px 20px;
-      background-color: #007bff;
-      color: #fff;
-      border: none;
-      cursor: pointer;
-    }
+h2 {
+  font-size: 1.5em;
+  /* 调整字体大小 */
+  margin-bottom: 20px;
+  /* 调整下边距 */
+  color: #007bff;
+  /* 设置字体颜色 */
+}
 
-    button.rounded-button:hover {
+.result-box {
+  background-color: rgba(255, 255, 255, 0.8); /* 设置背景颜色并添加透明度 */
+  border-radius: 10px; /* 设置圆角 */
+  padding: 20px; /* 设置内边距 */
+  margin-top: 20px; /* 设置上边距 */
+  text-align: left; /* 左对齐 */
+}
 
-      button.rounded-button:hover {
-        background-color: #0056b3;
-      }
+.result-box ul {
+  list-style: none; /* 去除列表样式 */
+  padding: 0; /* 去除内边距 */
+}
 
-      h2 {
-        font-size: 1.5em;
-        /* 调整字体大小 */
-        margin-bottom: 20px;
-        /* 调整下边距 */
-        color: #007bff;
-        /* 设置字体颜色 */
-      }
+.result-box li {
+  padding: 10px 0; /* 设置上下内边距 */
+  border-bottom: 1px solid #ccc; /* 设置下边框 */
+}
 
+.result-box li:last-child {
+  border-bottom: none; /* 去除最后一个元素的下边框 */
+}
 
+.result-box p {
+  margin: 0; /* 去除段落的默认外边距 */
+  font-size: 1em; /* 调整字体大小 */
+  color: #333; /* 设置字体颜色 */
+}
 
-      h2 {
-        font-size: 1.5em;
-        /* 调整字体大小 */
-        margin-bottom: 20px;
-        /* 调整下边距 */
-        color: #007bff;
-        /* 设置字体颜色 */
-      }
+.file-info {
+  margin-top: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1em;
+  color: #333;
+}
 
-
-      .link {
-        text-decoration: none;
-        top: 0;
-        left: 0;
-        top: 0;
-        left: 0;
-        color: #007bff;
-        margin: 0 10px;
-        padding: 5px 10px;
-        border: 2px solid #007bff;
-        border-radius: 15px;
-        display: inline-block;
-        transition: all 0.3s ease;
-        position: relative;
-      }
-
-      .link:hover {
-        color: #fff;
-        background-color: #007bff;
-        animation: jelly 0.5s;
-      }</style>
+</style>
