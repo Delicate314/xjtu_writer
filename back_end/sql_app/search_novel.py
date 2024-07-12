@@ -1,4 +1,4 @@
-import pymysql
+import mysql.connector
 import json
 
 #将字典列表转成元组列表，在转换成json格式
@@ -22,14 +22,12 @@ def tuples_to_json(str_keys, tuples):
 
 # 连接到 MySQL 数据库
 def create_connection():
-    db = pymysql.connect(
+    return mysql.connector.connect(
         host="114.55.130.178",  # MySQL服务器地址
-        user="user01",  # 用户名
+        user="user01",   # 用户名
         password="20030704Liwan",  # 密码
-        database="novel_ai",
-        port=3306  # 数据库端口
+        database="novel_ai"  # 数据库名称
     )
-    return db
 
 
 #查询所有小说名和小说描述中包含keyword的小说
@@ -56,6 +54,8 @@ def search_novel_by_keyword(keyword):
         cursor = db.cursor()
         cursor.execute(sql, values)
         result = cursor.fetchall()
+        if(len(result) == 0):
+            return []
         result = tuples_to_json(["novel_id", "user_id", "novel_title", "novel_description", "novel_path", "novel_viewcount", "user_name"], result)
         return result
     finally:
@@ -85,6 +85,8 @@ def search_novel_by_novel_id(writer_id):
         cursor = db.cursor()
         cursor.execute(sql, values)
         result = cursor.fetchall()
+        if(len(result) == 0):
+            return []
         result = tuples_to_json(["novel_id", "user_id", "novel_title", "novel_description", "novel_path", "novel_viewcount", "user_name"], result)
     finally:
         db.close()
@@ -113,6 +115,8 @@ def search_novel_by_writer_name(writer_name):
         cursor = db.cursor()
         cursor.execute(sql, values)
         result = cursor.fetchall()
+        if(len(result) == 0):
+            return []
         result = tuples_to_json(["novel_id", "user_id", "novel_title", "novel_description", "novel_path", "novel_viewcount", "user_name"], result)
     finally:
         db.close()
@@ -141,6 +145,8 @@ def search_novel_by_writer_id(writer_id):
         cursor = db.cursor()
         cursor.execute(sql, values)
         result = cursor.fetchall()
+        if(len(result) == 0):
+            return []
         result = tuples_to_json(["novel_id", "user_id", "novel_title", "novel_description", "novel_path", "novel_viewcount", "user_name"], result)
     finally:
         db.close()

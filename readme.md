@@ -4,7 +4,7 @@
 cd /home
 source venv/bin/activate
 ### 启动命令
-cd /home/demoAPI
+cd /home/xjtu_writer/xjtu_writer/back_end
 uvicorn sql_app.main:app --reload --port 8000
 ### 在浏览器访问云服务器上的文档
 http://121.36.55.149/docs
