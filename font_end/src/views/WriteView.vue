@@ -8,6 +8,8 @@
     <div>
       <button @click="write">创作</button>
       <button @click="upload">发布</button>
+      <button @click="import_novel">导入</button>
+      <input type="file" ref="fileInput" @change="handleFileChange" style="display: none;">
       <p v-if="write_isLoading" class="loading-text">
         请耐心等待... >.< <span class="loading-spinner"></span>
       </p>
@@ -47,15 +49,15 @@ export default {
       content: '',
       generatedContent: '',
       answerContent: '',
-      question: '',  // 新增问题输入框数据
-      write_isLoading: false, // 状态变量
+      question: '',
+      write_isLoading: false,
       answer_isLoading: false,
     };
   },
   methods: {
     async write() {
       console.log('提交', this.content);
-      this.write_isLoading = true; // 显示加载提示
+      this.write_isLoading = true;
       try {
         const requestData = {
           contents: this.content,
@@ -76,15 +78,16 @@ export default {
         }
         this.generatedContent = "生成文本时出错，请稍后再试。";
       } finally {
-        this.write_isLoading = false; // 隐藏加载提示
+        this.write_isLoading = false;
       }
     },
     async answer() {
       console.log('提交', this.question);
-      this.answer_isLoading = true; // 显示加载提示
+      this.answer_isLoading = true;
       try {
         const requestData = {
-          question: this.question  // 将问题添加到请求数据中
+          question: this.question,
+          context: this.generatedContent
         };
         console.log('Request Data:', requestData);
 
@@ -101,12 +104,12 @@ export default {
         }
         this.generatedContent = "生成文本时出错，请稍后再试。";
       } finally {
-        this.answer_isLoading = false; // 隐藏加载提示
+        this.answer_isLoading = false;
       }
     },
     async upload() {
       console.log('上传', this.content);
-      this.write_isLoading = true; // 显示加载提示
+      this.write_isLoading = true;
       try {
         const requestData = {
           contents: this.content,
@@ -123,13 +126,26 @@ export default {
         }
         this.generatedContent = "生成文本时出错，请稍后再试。";
       } finally {
-        this.write_isLoading = false; // 隐藏加载提示
+        this.write_isLoading = false;
       }
     },
     transit() {
       this.content = this.generatedContent;
       this.generatedContent = '';
     },
+    import_novel() {
+      this.$refs.fileInput.click();
+    },
+    handleFileChange(event) {
+      const file = event.target.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = (e) => {
+          this.content = e.target.result;
+        };
+        reader.readAsText(file);
+      }
+    }
   },
 };
 </script>
@@ -151,12 +167,10 @@ textarea {
   resize: none;
   margin: 20px;
   background-color: rgba(255, 255, 255, 0.9);
-  /* 设置文本框背景透明度 */
 }
 
 textarea.input-box {
   margin-bottom: 10px;
-  /* 调整输入框之间的间距 */
   font-size: 20px;
 }
 
@@ -170,17 +184,13 @@ textarea.question-box {
   font-size: 20px;
   resize: none;
   margin-top: 10px;
-  /* 问题输入框与提交按钮之间的间距 */
 }
 
 textarea.output-box {
   width: 1200px;
-  /* 增大宽度 */
   height: 200px;
-  /* 增大高度 */
   margin-top: 20px;
   background-color: rgba(255, 255, 255, 0.9);
-  /* 设置文本框背景透明度 */
   cursor: not-allowed;
   font-size: 20px;
 }
@@ -189,10 +199,8 @@ textarea.output-box {
   display: flex;
   justify-content: center;
   margin-top: 10px;
-
 }
 
-/* 提交等按钮 */
 button {
   padding: 10px 20px;
   background-color: #0088f7;
@@ -200,7 +208,6 @@ button {
   border: none;
   cursor: pointer;
   border-radius: 20px;
-  /* 圆角 */
   box-shadow: 0 4px 8px rgba(6, 0, 125, 0.1);
   transition: background-color 0.8s ease, box-shadow 0.3s ease;
   margin: 0 10px;
@@ -215,9 +222,7 @@ button:hover {
 
 .loading-text {
   position: relative;
-  /* 将容器设为相对定位 */
   text-align: center;
-  /* 右对齐文字和加载圈 */
   color: #ffffff;
   font-size: 20px;
   margin-top: 10px;
@@ -233,11 +238,8 @@ button:hover {
   height: 20px;
   animation: spin 1s linear infinite;
   position: absolute;
-  /* 将加载圈设为绝对定位 */
   top: 0%;
-  /* 垂直居中 */
   left: 100%;
-  /* 距离右侧边界 */
   transform: translate(-50%, -50%);
 }
 

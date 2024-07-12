@@ -2,3 +2,7 @@ dashscope==1.20.1
 fastapi==0.111.0
 pydantic==2.8.2
 SQLAlchemy==2.0.31
+PyMySQL==1.1.1
+passlib == 1.7.4
+PyJWT==2.8.0
+mysql_connector_repackaged==0.3.1

@@ -16,6 +16,7 @@ class Write_request(BaseModel):
     contents: str
 class Answer_request(BaseModel):
     question: str
+    context: str
 
 
 
@@ -28,6 +29,7 @@ class Write_request(BaseModel):
     contents: str
 class Answer_request(BaseModel):
     question: str
+    context: str
     
 app = FastAPI()
 app.add_middleware(
@@ -122,10 +124,6 @@ async def download_file(input: novel_option.Novel):
 async def show_file(input: novel_option.GetNovel):
     return await novel_option.show_file(input)
 
-class SearchNovel(BaseModel):
-    func: str
-    input: str
-
 @app.post(path="/apis/search", summary = "搜索小说", description="""
          可以通过作者id、作者名、小说id、小说关键字查询小说.\n
          func = 0: 通过关键字查询(对小说名和小说简介进行部分匹配)\n
@@ -138,8 +136,8 @@ class SearchNovel(BaseModel):
 async def search_novel(input : novel_option.SearchNovel):
     return await novel_option.search_novel(input)
 
-@app.get("/apis/rank/{index}",tags=["获取排行榜"],summary="获取排行榜，输入参数index",description="index为1表示排行1-10，为2表示排行11-20，以此类推")
-async def rank(index:int,user:str=Depends(get_current_user)):
+@app.get("/apis/rank/{index}", tags=["获取排行榜"], summary="获取排行榜，输入参数index", description="index为1表示排行1-10，为2表示排行11-20，以此类推")
+async def rank(index: int, user: str = Depends(get_current_user)):
     db = pymysql.connect(
         host="114.55.130.178",  # MySQL服务器地址
         user="user01",  # 用户名
@@ -147,13 +145,24 @@ async def rank(index:int,user:str=Depends(get_current_user)):
         database="novel_ai",
         port=3306  # 数据库端口
     )
-    cursor = db.cursor()
-    select_rank_sql="select novel_title,user_id from novel_info  order by novel_viewcount DESC limit %s,10 "
-    value=index*10-10
-    # print(value)
-    cursor.execute(select_rank_sql,value)
-    result=cursor.fetchall()
-    # print(result)
+    cursor = db.cursor(pymysql.cursors.DictCursor)  # 使用字典游标
+    select_rank_sql = """
+    SELECT
+        novel_info.novel_id,
+        novel_info.novel_title,
+        novel_info.user_id,
+        novel_info.novel_viewcount,
+        user_info.user_name
+    FROM novel_info
+    JOIN user_info ON novel_info.user_id = user_info.user_id
+    ORDER BY novel_info.novel_viewcount DESC
+    LIMIT %s, 10
+    """
+    offset = (index - 1) * 10
+    cursor.execute(select_rank_sql, (offset,))
+    result = cursor.fetchall()
+    cursor.close()
+    db.close()
     return result
 
 @app.post("/apis/model/change", tags=["模型切换"],summary="用户向服务器发送模型切换请求")
@@ -170,6 +179,15 @@ async def import_file(
 ):
     return await novel_option.import_file(file, user_id)
 
+@app.post(path="/apis/releaseNovel", tags=["发布小说"], description="""
+          \n用户上传小说，str\n
+          """)
+async def release_novel(
+    novel: str = Form(...),
+    user_id: str = Form(...)
+):
+    return await novel_option.import_file(file, user_id)
+
 @app.post("/apis/write_request", tags=["AI写小说"],summary="用户向服务器发送AI写小说请求")
 async def ai_write_novel(contents:Write_request ):
     contents = contents.contents
@@ -178,8 +196,9 @@ async def ai_write_novel(contents:Write_request ):
 
 @app.post("/apis/answer_request", response_model=str , tags=["AI回答问题"],summary="用户向服务器发送让AI回答问题的请求")
 async def ai_answer_question(question:Answer_request):
-    question = question.question
-    response = ai02.call_with_messages(question)
+    question1 = question.question
+    context = question.context
+    response = ai02.call_with_messages(question1,context)
     return response
 
 def is_valid_password(password: str) -> bool:

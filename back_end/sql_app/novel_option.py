@@ -228,3 +228,6 @@ def delete_novel(novel_id: int, novel_name: str):
             cursor.close()  # 确保关闭游标
     
     return (2, "小说删除成功")
+
+
+def release_novel(novel: str, user_id: str):
