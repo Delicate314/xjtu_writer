@@ -2,6 +2,8 @@ from fastapi import Depends, FastAPI, HTTPException, UploadFile, status, Query, 
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from fastapi.responses import FileResponse, JSONResponse
+from jwt import InvalidTokenError
+import jwt
 from sqlalchemy.orm import Session
 from fastapi.staticfiles import StaticFiles
 from . import schemas, ai01, ai02, login_and_rigister, models
@@ -11,6 +13,14 @@ import urllib.parse
 import logging
 from .file_option import *
 from .search_novel import *
+import pymysql
+from datetime import timedelta,timezone,datetime
+
+
+SECRET_KEY = "09d25e094faa6ca2556c818166b7a9563b93f7099f6f0f4caa6cf63b88e8d3e7"     #密钥
+ALGORITHM = "HS256"
+ACCESS_TOKEN_EXPIRE_MINUTES = 1          #这是token有效期，这里表示1分组，如果超过这个时间，需要重新登录，先设置为1方便测试
+
 
 # 配置日志记录
 logging.basicConfig(level=logging.INFO)
@@ -37,17 +47,78 @@ def get_db():
     finally:
         db.close()
 
-oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 
 
 
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl="apis/login")     #在登录的那个路径下会给oauth2_scheme赋值
+'''
+get_current_user函数是用来登陆后，如果用户想要进行其他操作，这个时候，用这个函数，它会验证token是否有效、token是否过期，返回为user_id，方便
+后续使用。此外，如果某些功能需要登陆后才能使用，那么必须使用这个函数进行判断，使用方法只需要在原来的基础上，增加一个参数，例如：
+以获取排行榜为例：
+原来为：
+async def rank(index:int):
+修改后：
+async def rank(index:int,user:str=Depends(get_current_user)):
+多加了user:str=Depends(get_current_user)，其余函数一样
+'''
+async def get_current_user(token: str = Depends(oauth2_scheme)):    
+    credentials_exception = HTTPException(
+        status_code=status.HTTP_401_UNAUTHORIZED,
+        detail="Could not validate credentials",
+        headers={"WWW-Authenticate": "Bearer"},
+    )
+    try:
+        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        # print(payload)
+        username: str = payload.get("sub")
+        if username is None:
+            raise credentials_exception
+        #  token_data = TokenData(username=username)
+    except InvalidTokenError:
+        # print("111")
+        raise credentials_exception
+    db = pymysql.connect(
+        host="114.55.130.178",  # MySQL服务器地址
+        user="user01",  # 用户名
+        password="20030704Liwan",  # 密码
+        database="novel_ai",
+        port=3306  # 数据库端口
+    )
+    # print(Header())
+    cursor = db.cursor()
+    sql_select="SELECT * FROM user_info WHERE user_name= %s;"
+    value=(username,)
+    result=cursor.execute(sql_select,value)
+    # user = get_user(fake_users_db, username=token_data.username)
+    cursor.close()  # 关闭游标
+    db.close()  # 关闭数据库连接
+    if result ==0:
+        raise credentials_exception
+    return username
+@app.get("/apis/rank/{index}",tags=["获取排行榜"],summary="获取排行榜，输入参数index",description="index为1表示排行1-10，为2表示排行11-20，以此类推")
+async def rank(index:int,user:str=Depends(get_current_user)):
+    db = pymysql.connect(
+        host="114.55.130.178",  # MySQL服务器地址
+        user="user01",  # 用户名
+        password="20030704Liwan",  # 密码
+        database="novel_ai",
+        port=3306  # 数据库端口
+    )
+    cursor = db.cursor()
+    select_rank_sql="select novel_title,user_id from novel_info  order by novel_viewcount DESC limit %s,10 "
+    value=index*10-10
+    # print(value)
+    cursor.execute(select_rank_sql,value)
+    result=cursor.fetchall()
+    # print(result)
+    return result
 @app.post("/apis/register",tags=["用户注册"],summary="用户注册")
 async def register(user_register: models.UserRegister):
     message = login_and_rigister.register(user_register)
     return message
 
-@app.post("/apis/login", tags=["用户登录"],summary="用户向服务器发送登录请求")
-async def login(user_login: models.UserLogin):
+@app.post("/apis/login", tags=["用户登录"],summary="用户向服务器发送登录请求")  
+async def login(user_login: OAuth2PasswordRequestForm= Depends()):
     message = login_and_rigister.login(user_login)
     return message
 
