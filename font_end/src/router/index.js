@@ -7,6 +7,8 @@ import LoginView from '@/views/LoginView.vue';
 import RegisterView from '@/views/RegisterView.vue';
 import RankView from '@/views/RankView.vue'
 import NovelDetail from '@/views/NovelDetail.vue'
+import admin_home from '@/views/backend_views/admin_home.vue'
+
 Vue.use(Router);
 
 export default new Router({
@@ -24,6 +26,14 @@ export default new Router({
             component: LoginView,
             meta: {
                 name: '登录',
+                isShow: false
+            },
+        },
+        {
+            path: '/Admin',
+            component: admin_home,
+            meta: {
+                name: '后台',
                 isShow: false
             },
         },

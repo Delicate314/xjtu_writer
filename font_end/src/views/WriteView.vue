@@ -58,7 +58,7 @@ export default {
         };
         console.log('Request Data:', requestData);
 
-        const response = await axios.post("http://127.0.0.1:8000/apis/write_request", requestData);
+        const response = await axios.post("http://121.36.55.149/apis/write_request", requestData);
         console.log('Response:', response);
 
         this.generatedContent = response.data;
@@ -84,7 +84,7 @@ export default {
         };
         console.log('Request Data:', requestData);
 
-        const response = await axios.post("http://127.0.0.1:8000/apis/answer_request", requestData);
+        const response = await axios.post("http://121.36.55.149/apis/answer_request", requestData);
         console.log('Response:', response);
         this.answerContent = response.data;
       }
@@ -148,6 +148,7 @@ export default {
   0% {
     background-position: 150% 0;
   }
+
   100% {
     background-position: -150% 0;
   }
@@ -168,7 +169,7 @@ h1 {
 }
 
 textarea {
-  width: 1000px;
+  width: 1200px;
   height: 150px;
   padding: 10px;
   margin-top: 10px;
@@ -185,23 +186,24 @@ textarea {
 textarea.input-box {
   margin-bottom: 10px;
   /* 调整输入框之间的间距 */
+  font-size: 20px;
 }
 
 textarea.question-box {
-  width: 1000px;
+  width: 1200px;
   height: 20px;
   padding: 10px;
   border: 2px solid #007bff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  font-size: 16px;
+  font-size: 20px;
   resize: none;
   margin-top: 10px;
   /* 问题输入框与提交按钮之间的间距 */
 }
 
 textarea.output-box {
-  width: 1000px;
+  width: 1200px;
   /* 增大宽度 */
   height: 200px;
   /* 增大高度 */
@@ -209,6 +211,7 @@ textarea.output-box {
   background-color: rgba(255, 255, 255, 0.9);
   /* 设置文本框背景透明度 */
   cursor: not-allowed;
+  font-size: 20px;
 }
 
 .button-container {
@@ -231,6 +234,7 @@ button {
   transition: background-color 0.8s ease, box-shadow 0.3s ease;
   margin: 0 10px;
   font-weight: bold;
+  font-size: 18px;
 }
 
 button:hover {
@@ -290,9 +294,10 @@ button:hover {
   transition: all 0.3s ease;
   position: relative;
   opacity: 0.7;
-  font-size: 15px;
+  font-size: 20px;
   font-family: "微软雅黑";
-  font-weight: bold; /* 或者使用其他数值来调整粗细程度 */
+  font-weight: bold;
+  /* 或者使用其他数值来调整粗细程度 */
 }
 
 .link:hover {

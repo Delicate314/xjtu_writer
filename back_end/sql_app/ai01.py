@@ -13,7 +13,7 @@ def call_with_messages(contents:str):
         result_format='message',  # 将返回结果格式设置为 message
     )
     if response.status_code == HTTPStatus.OK:
-        print(response)
+        # print(response)
         return response['output']['choices'][0]['message']['content']
     else:
         print('Request id: %s, Status code: %s, error code: %s, error message: %s' % (

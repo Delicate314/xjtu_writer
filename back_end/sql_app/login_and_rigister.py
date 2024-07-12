@@ -76,7 +76,7 @@ def login(user_login: UserLogin):
     db.close()  # 关闭数据库连接
 
     if result is None:
-        raise HTTPException(status_code=400, detail="用户名或密码错误！")
+        raise HTTPException(status_code=400, detail="网络出现问题，请重试!")
     
     stored_password = result[0]
     if user_login.user_pwd != stored_password:

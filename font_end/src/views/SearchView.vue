@@ -72,18 +72,10 @@ export default {
       const formData = new FormData();
       formData.append('file', this.selectedFile);
 
-      fetch('你的服务器端点', {
-        method: 'POST',
-        body: formData,
-      })
-        .then(response => response.json())
-        .then(data => {
-          console.log('文件上传成功', data);
-          // 这里可以添加上传成功后的逻辑
-        })
-        .catch(error => {
-          console.error('文件上传失败', error);
-        });
+      const requestBody = {
+        func: this.type,
+        file: formData
+      };
     },
   },
 };

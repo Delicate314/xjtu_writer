@@ -2,7 +2,7 @@
   <div class="home-container">
     <StarryBackground />
     <h1 class="gradient-text">Welcome to XJTU AI-Writer! :)</h1>
-    <router-link :key="index" :to="item.path" v-for="(item, index) in $router.options.routes" >
+    <router-link :key="index" :to="item.path" v-for="(item, index) in $router.options.routes">
       <span class="link" v-if="item.meta.isShow">{{ item.meta.name }}</span>
     </router-link>
     <div class="rank-view">
@@ -79,6 +79,7 @@ export default {
   0% {
     background-position: 150% 0;
   }
+
   100% {
     background-position: -150% 0;
   }

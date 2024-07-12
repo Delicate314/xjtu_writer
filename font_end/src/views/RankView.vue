@@ -92,22 +92,26 @@ th {
 }
 
 .link {
-    text-decoration: none;
-    top: 0;
-    left: 0;
-    color: #007bff;
-    margin: 0 10px;
-    padding: 5px 10px;
-    border: 2px solid #007bff;
-    border-radius: 15px;
-    display: inline-block;
-    transition: all 0.3s ease;
-    position: relative;
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #007bff;
+  margin: 10px 10px;
+  padding: 5px 15px;
+  border: 2px solid #aa9393;
+  border-radius: 15px;
+  display: inline-block;
+  transition: all 0.3s ease;
+  position: relative;
+  opacity: 0.7;
+  font-size: 20px;
+  font-family: "微软雅黑";
+  font-weight: bold;
+  /* 或者使用其他数值来调整粗细程度 */
 }
 
 .link:hover {
-    color: #fff;
-    background-color: #007bff;
-    animation: jelly 0.5s;
+  color: #fff;
+  background-color: #007bff;
+  animation: jelly 0.5s;
 }
 </style>
