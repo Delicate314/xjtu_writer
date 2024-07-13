@@ -4,31 +4,32 @@
     <div class="top">
       <Guide />
     </div>
-    <textarea class="input-box" placeholder="演绎你的故事~,如:小明今天去扔垃圾,结果摔在了水坑里/一个勇者斗恶龙的故事" v-model="content"></textarea>
+    <textarea class="input-box" placeholder="演绎你的故事(๑•́ ₃ •̀๑)ｴｰ,如:小明今天去扔垃圾,结果摔在了水坑里/一个勇者斗恶龙的故事"
+      v-model="content"></textarea>
     <div>
       <button @click="write">创作</button>
-      <button @click="upload">发布</button>
-      <button @click="import_novel">导入</button>
+      <button @click="upload">发布到社区</button>
+      <button @click="import_novel">导入本地文章</button>
       <input type="file" ref="fileInput" @change="handleFileChange" style="display: none;">
       <p v-if="write_isLoading" class="loading-text">
         请耐心等待... >.< <span class="loading-spinner"></span>
       </p>
     </div>
     <div>
-      <textarea class="output-box" v-model="generatedContent" readonly placeholder="生成的文本将在此显示"></textarea>
+      <textarea class="output-box" v-model="generatedContent" readonly placeholder="生成的文章将在此显示(o´∀`o)"></textarea>
     </div>
     <div>
-      <textarea class="question-box" placeholder="请输入你的问题~" v-model="question"></textarea>
+      <textarea class="question-box" placeholder="针对上面的文章，输入你的问题~" v-model="question"></textarea>
       <div>
         <button @click="answer">提问</button>
-        <button @click="transit">转至输入</button>
+        <button @click="transit">将文本转至输入</button>
         <p v-if="answer_isLoading" class="loading-text">
           请耐心等待... >.< <span class="loading-spinner"></span>
         </p>
       </div>
     </div>
     <div>
-      <textarea class="output-box" v-model="answerContent" readonly placeholder="生成的回答将在此显示"></textarea>
+      <textarea class="output-box" v-model="answerContent" readonly placeholder="生成的回答将在此显示(o´∀`o)"></textarea>
     </div>
   </div>
 </template>
@@ -52,6 +53,7 @@ export default {
       question: '',
       write_isLoading: false,
       answer_isLoading: false,
+      novel_title: '',
     };
   },
   methods: {
@@ -102,42 +104,41 @@ export default {
           console.error("Response Status:", error.response.status);
           console.error("Response Headers:", error.response.headers);
         }
-        alert("上传出错，请稍后再试。");
-      } finally {
-        alert("上传成功！")
+        alert("网络出错，请稍后再试。");
       }
     },
     async upload() {
-      console.log('上传', this.content);
-      this.write_isLoading = true;
       try {
-        const novelTitle = prompt("请输入小说标题：");
-        if (!novelTitle) {
+        this.novel_title = prompt("请输入小说标题：");
+        if (this.novel_title == '') {
           console.error('未输入小说标题');
           return;
         }
-
-        const requestData = {
-          novel: this.generatedContent,
-          novel_title: novelTitle,
-        };
-        console.log('Request Data:', requestData);
-
-        const response = await axios.post("http://121.36.55.149:80/apis/novel/releaseNovel", requestData);
-        console.log('上传成功', response);
+        console.log(this.novel_title);
       }
       catch (error) {
-        console.error("Error generating text:", error);
-        if (error.response) {
-          console.error("Response Data:", error.response.data);
-          console.error("Response Status:", error.response.status);
-          console.error("Response Headers:", error.response.headers);
-        }
-        
-      } finally {
-        this.write_isLoading = false;
+        console.error('标题输入失败');
+      }
+      console.log('发布');
+      const formData = new FormData();
+      formData.append('novel', this.generatedContent);
+      formData.append('novel_title', this.novel_title);
+      try {
+        const response = await axios.post('http://121.36.55.149/apis/novel/releaseNovel', formData, {
+          headers: {
+            'Content-Type': 'multipart/form-data'
+          }
+        })
+        // 这里可以添加上传成功后的逻辑*
+        alert('发布成功')
+      }
+      catch (error) {
+        console.error('发布失败', error);
+        console.log('response')
+        alert('发布失败，请重试');
       }
     },
+
     transit() {
       this.content = this.generatedContent;
       this.generatedContent = '';

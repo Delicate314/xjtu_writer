@@ -13,6 +13,13 @@ Vue.prototype.$axios = axios
 Vue.config.productionTip = false;
 Vue.use(ElementUI);
 
+axios.interceptors.request.use(config => {
+  console.log(config);
+  config.headers.Authorization = window.sessionStorage.getItem('token');
+  // 在最后必须return config
+  return config;
+});
+
 new Vue({
   router:router,
   el: '#app',

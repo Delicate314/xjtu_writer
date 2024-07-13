@@ -22,7 +22,7 @@ class Answer_request(BaseModel):
 
 SECRET_KEY = "09d25e094faa6ca2556c818166b7a9563b93f7099f6f0f4caa6cf63b88e8d3e7"     #密钥
 ALGORITHM = "HS256"
-ACCESS_TOKEN_EXPIRE_MINUTES = 1          #这是token有效期，这里表示1分组，如果超过这个时间，需要重新登录，先设置为1方便测试
+ACCESS_TOKEN_EXPIRE_MINUTES = 100          #这是token有效期，这里表示1分组，如果超过这个时间，需要重新登录，先设置为1方便测试
 
 
 class Write_request(BaseModel):
@@ -153,7 +153,7 @@ async def upload_file(
     return await novel_option.upload_file(file, novel_title, user_id)
 
 @app.post(path="/apis/downloadfile", tags=["下载文件"], summary="下载小说文件")
-async def download_file(input: novel_option.Novel):
+async def download_file(input: novel_option.Novel, user:str=Depends(get_current_user)):
     return await novel_option.download_file(input)
 
 @app.post(path="/apis/getNovel", tags=["获取小说内容"],
@@ -162,7 +162,7 @@ async def download_file(input: novel_option.Novel):
          可以自己上传文件测试\n
          输入为小说id、获取的页数、获取的页大小\n
          这里的页大小指的是行数""")
-async def show_file(input: novel_option.GetNovel):
+async def show_file(input: novel_option.GetNovel, user:str=Depends(get_current_user)):
     return await novel_option.show_file(input)
 
 @app.post(path="/apis/search", summary = "搜索小说", description="""
@@ -174,7 +174,7 @@ async def show_file(input: novel_option.GetNovel):
          func = 其他:\n
          返回值：\n
          status_code: 0表示正确，1表示错误\n""", tags=["搜索"])
-async def search_novel(input : novel_option.SearchNovel):
+async def search_novel(input : novel_option.SearchNovel ,user:str=Depends(get_current_user)):
     return await novel_option.search_novel(input)
 
 class rank_input(BaseModel):
@@ -182,7 +182,7 @@ class rank_input(BaseModel):
 
 @app.post("/apis/rank", tags=["获取排行榜"], summary="获取排行榜，输入参数index", description="index为1表示排行1-10，为2表示排行11-20，以此类推")
 #async def rank(index: int, user: str = Depends(get_current_user)):
-async def rank(input: rank_input):
+async def rank(input: rank_input ,user:str=Depends(get_current_user)):
 
     index = input.index
     db = pymysql.connect(

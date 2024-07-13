@@ -2,7 +2,9 @@
     <el-dialog :visible.sync="visible" title="小说内容" @close="handleClose">
         <div v-if="loading">正在加载小说内容...</div>
         <div v-else-if="error">{{ error }}</div>
-        <div v-else><pre v-html="novelContent"></pre></div>
+        <div v-else>
+            <pre v-html="novelContent"></pre>
+        </div>
         <span slot="footer" class="dialog-footer">
             <el-button type="primary" @click="downloadNovel">下载链接</el-button>
         </span>
@@ -10,6 +12,7 @@
 </template>
 
 <script>
+import axios from 'axios';
 export default {
     props: {
         visible: {
@@ -57,24 +60,32 @@ export default {
             this.loading = true;
             this.error = '';
             try {
-                const response = await this.fetchWithTimeout(
-                'http://121.36.55.149/apis/getNovel',
-                {
-                    method: 'POST',
-                    headers: {
-                        'Accept': 'application/json',
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({
-                        novel_id: this.novelId,
-                        page: 1,
-                        page_size: 10
-                    })
-                }
-                );
-                const data = await response.json();
-                if (data.content) {
-                    this.novelContent = data.content;
+                const requestData = {
+                    novel_id: this.novelId,
+                    page: 1,
+                    page_size: 10
+                };
+                console.log('Request Data:', requestData);
+                const data = await axios.post("http://121.36.55.149/apis/getNovel", requestData);
+                console.log('Response:', data);
+                // const response = await this.fetchWithTimeout(
+                // 'http://121.36.55.149/apis/getNovel',
+                // {
+                //     method: 'POST',
+                //     headers: {
+                //         'Accept': 'application/json',
+                //         'Content-Type': 'application/json'
+                //     },
+                //     body: JSON.stringify({
+                //         novel_id: this.novelId,
+                //         page: 1,
+                //         page_size: 10
+                //     })
+                // }
+                // );
+                // const data = await response.json();
+                if (data.data.content) {
+                    this.novelContent = data.data.content;
                 } else {
                     this.error = '获取小说内容失败';
                 }
@@ -88,24 +99,24 @@ export default {
         async downloadNovel() {
             try {
                 const response = await this.fetchWithTimeout(
-                'http://121.36.55.149/apis/downloadfile',
-                {
-                    method: 'POST',
-                    headers: {
-                        'Accept': 'application/json',
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({
-                        novel_id: String(this.novelId)
-                    })
-                }
+                    'http://121.36.55.149/apis/downloadfile',
+                    {
+                        method: 'POST',
+                        headers: {
+                            'Accept': 'application/json',
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            novel_id: String(this.novelId)
+                        })
+                    }
                 );
                 if (response.status === 200) {
                     const blob = await response.blob();
                     const downloadUrl = window.URL.createObjectURL(blob);
                     const link = document.createElement('a');
                     link.href = downloadUrl;
-                    link.download = `${this.novelName}.txt`; 
+                    link.download = `${this.novelName}.txt`;
                     document.body.appendChild(link);
                     link.click();
                     document.body.removeChild(link);
@@ -125,8 +136,11 @@ export default {
 <style scoped>
 pre {
     white-space: pre-wrap;
-    word-break: break-word; /* 可选，增加此行以在长单词或URL时也进行换行 */
-    text-align: left; /* 左对齐 */
-    text-indent: 2em; /* 首行缩进两个字符长度 */
+    word-break: break-word;
+    /* 可选，增加此行以在长单词或URL时也进行换行 */
+    text-align: left;
+    /* 左对齐 */
+    text-indent: 2em;
+    /* 首行缩进两个字符长度 */
 }
 </style>
