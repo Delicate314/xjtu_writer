@@ -10,10 +10,20 @@
         </div>
         <el-form :model="form" status-icon :rules="rules" ref="form">
           <el-form-item prop="username">
-            <el-input v-model="form.username" placeholder="用户名"></el-input>
+            <el-input
+              v-model="form.username"
+              placeholder="用户名"
+              @keyup.enter.native="focusPasswordInput"
+            ></el-input>
           </el-form-item>
           <el-form-item prop="password">
-            <el-input type="password" v-model="form.password" placeholder="密码"></el-input>
+            <el-input
+              ref="password"
+              type="password"
+              v-model="form.password"
+              placeholder="密码"
+              @keyup.enter.native="login"
+            ></el-input>
           </el-form-item>
           <el-form-item>
             <el-button type="primary" @click="login">登录</el-button>
@@ -54,6 +64,9 @@ export default {
     };
   },
   methods: {
+    focusPasswordInput() {
+      this.$refs.password.focus();
+    },
     async login() {
       this.$refs.form.validate(async (valid) => {
         if (valid) {
@@ -65,8 +78,8 @@ export default {
             const response = await axios.post('http://121.36.55.149/apis/login/', params);
 
             console.log("response: ", response.data);
-            const token=`Bearer ${response.data.access_token}`; 
-            window.sessionStorage.setItem('token',token)
+            const token = `Bearer ${response.data.access_token}`;
+            window.sessionStorage.setItem('token', token);
             if (response.data.is_admin == 1) {
               this.$message.success('进入管理员系统');
               this.$router.push('/Admin');
