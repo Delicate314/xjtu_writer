@@ -1,5 +1,7 @@
 from .connect_sql import get_cursor,get_db
 import pymysql
+from . import search_novel
+from . import novel_option
 
 def get_user_info(id: int, name: str):
     cursor = get_cursor()
@@ -130,6 +132,10 @@ def get_novel_count(search_target='all'):
 def delete_user(user_id:int, user_name:str):
     try:
         cursor = get_cursor()  # 获取数据库游标
+        #删除该用户所有小说
+        user_novels = get_user_novel(user_id)
+        for novel in user_novels:
+            novel_option.delete_novel(novel[0], novel[2])
         # 执行删除操作
         delete_sql = "DELETE FROM user_info WHERE user_id = %s AND user_name = %s"
         cursor.execute(delete_sql, (user_id, user_name))
@@ -137,10 +143,10 @@ def delete_user(user_id:int, user_name:str):
         if not cursor.rowcount:
             return (0, '用户未找到或不存在')
         # 提交事务
-        cursor._connection.commit()
+        cursor.connection.commit()
 
     except Exception as e:
-        cursor._connection.rollback()  # 回滚事务
+        cursor.connection.rollback()  # 回滚事务
         return (1, f"An error occurred while deleting the user: {str(e)}")
 
     finally:
@@ -158,10 +164,10 @@ def delete_novel(novel_id:int, novel_name:str):
         if not cursor.rowcount:
             return (0, '小说未找到或不存在')
         # 提交事务
-        cursor._connection.commit()
+        cursor.connection.commit()
 
     except Exception as e:
-        cursor._connection.rollback()  # 回滚事务
+        cursor.connection.rollback()  # 回滚事务
         return (1, f"An error occurred while deleting the user: {str(e)}")
 
     finally:

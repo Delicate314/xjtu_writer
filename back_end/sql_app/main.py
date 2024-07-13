@@ -396,7 +396,7 @@ async def admin_get_all_user(offset: int, row_count: int, order_by='user_id', or
     --user_id:需要删除的用户id\n
     --user_name:需要删除的用户名\n
 """)
-async def admin_delete_user(user_name: str, user_id: str = Depends(get_current_user)):
+async def admin_delete_user(user_name: str, user_id: str):
     user_id = int(user_id)
     (s, msg) = db_method.delete_user(user_id=user_id, user_name=user_name)
     if s == 0:
@@ -417,7 +417,7 @@ async def admin_delete_user(user_name: str, user_id: str = Depends(get_current_u
     --novel_title:需要删除的小说名\n
 """)
 async def admin_delete_novel(novel_id: int, novel_title: str):
-    (s, msg) = db_method.delete_novel(novel_id, novel_title)
+    (s, msg) = novel_option.delete_novel(novel_id, novel_title)
     if s == 0:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
@@ -435,7 +435,7 @@ async def admin_delete_novel(novel_id: int, novel_title: str):
     --user_id:用户id\n
     --user_name:用户名\n
 """)
-async def admin_reset_password(user_name: str, user_id: str = Depends(get_current_user)):
+async def admin_reset_password(user_name: str, user_id: str):
     user_id = int(user_id)
     (s, m) = db_method.reset_password(user_id, user_name)
     if not s:
@@ -449,7 +449,7 @@ async def admin_reset_password(user_name: str, user_id: str = Depends(get_curren
 参数说明:
     user_id:用户名
 返回:小说""")
-async def admin_get_user_novel(user_id: str = Depends(get_current_user)):
+async def admin_get_user_novel(user_id: str):
     try:
         rows = db_method.get_user_novel(user_id)
 
