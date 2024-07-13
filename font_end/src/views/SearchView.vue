@@ -2,6 +2,109 @@
   <div class="top">
     <Background />
     <Guide />
+    
+    <!-- 引入搜索组件 -->
+    <SearchNovel />
+
+    <!-- 引入文件上传组件 -->
+    <UploadFile />
+  </div>
+</template>
+
+<script>
+import Background from '../components/Background.vue';
+import Guide from '../components/Guide.vue';
+import SearchNovel from '../components/SearchNovel.vue';
+import UploadFile from '../components/UploadFile.vue';
+
+export default {
+  name: 'SearchView',
+  components: {
+    Background,
+    Guide,
+    SearchNovel,
+    UploadFile
+  },
+};
+</script>
+
+<style>
+/* 全局样式 */
+input.rounded-input,
+select.rounded-select,
+button.rounded-button {
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 10px; /* 设置圆角 */
+}
+
+button.rounded-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button.rounded-button:hover {
+  background-color: #0056b3;
+}
+
+h2.link1 {
+  font-size: 1.5em; /* 调整字体大小 */
+  margin-bottom: 20px; /* 调整下边距 */
+  color: #007bff; /* 设置字体颜色 */
+}
+
+.result-box {
+  background-color: rgba(255, 255, 255, 0.8); /* 设置背景颜色并添加透明度 */
+  border-radius: 10px; /* 设置圆角 */
+  padding: 10px; /* 设置内边距 */
+  margin-top: 20px; /* 设置上边距 */
+  text-align: left; /* 左对齐 */
+  width: 300px; /* 设置较小的宽度 */
+  margin: 0 auto; /* 使元素水平居中 */
+}
+
+.result-box ul {
+  list-style: none; /* 去除列表样式 */
+  padding: 0; /* 去除内边距 */
+}
+
+.result-box li {
+  padding: 10px 0; /* 设置上下内边距 */
+  border-bottom: 1px solid #000000; /* 设置下边框 */
+}
+
+.result-box li:last-child {
+  border-bottom: none; /* 去除最后一个元素的下边框 */
+}
+
+.result-box p {
+  margin: 0; /* 去除段落的默认外边距 */
+  font-size: 1em; /* 调整字体大小 */
+  color: #333; /* 设置字体颜色 */
+}
+
+.file-info {
+  margin-top: 10px;
+  background-color: rgba(255, 255, 255, 0.8); /* 设置背景颜色并添加透明度 */
+  padding: 10px; /* 设置内边距 */
+  border-radius: 5px; /* 设置圆角 */
+  font-size: 20px; /* 设置字体大小 */
+  color: #333; /* 设置字体颜色 */
+  width: 300px; /* 设置较小的宽度 */
+  margin: 0 auto; /* 使元素水平居中 */
+}
+</style>
+
+
+
+
+<!-- <template>
+  <div class="top">
+    <Background />
+    <Guide />
     <h2 class="link1">搜索小说</h2>
     <input type="text" placeholder="请输入搜索对象" v-model="query" @input="updateDisplay" @keyup.enter="search" class="rounded-input">
     <select v-model="queryType" class="rounded-select">
@@ -38,6 +141,8 @@ import axios from 'axios';
 import Background from '../components/Background.vue';
 import Guide from '../components/Guide.vue';
 import { MessageBox } from 'element-ui';
+import SearchNovel from '../components/SearchNovel.vue';
+import uploadFile from '../components/UploadFile.vue';
 
 export default {
   name: 'SearchView',
@@ -45,6 +150,8 @@ export default {
     StarryBackground,
     Background,
     Guide,
+    SearchNovel,
+    uploadFile
   },
   data() {
     return {
@@ -286,4 +393,4 @@ h2 {
   margin: 0 auto;
   /* 使元素水平居中 */
 }
-</style>
+</style> -->
