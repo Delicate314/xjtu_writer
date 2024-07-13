@@ -1,12 +1,12 @@
 <template>
     <div class="rank-view">
-        <h2 class="title">Rankings</h2>
+        <h2 class="title">Ranking</h2>
         <ul>
-            <li v-for="(item, index) in rankings" :key="index">
-                <span class="rank">{{ item.rank }}</span>
-                <span class="novel">{{ item.novel }}</span>
-                <span class="author">By {{ item.author }}</span>
-                <span class="popularity">热度{{ item.popularity }}</span>
+            <li v-for="(item, index) in filteredRankings" :key="index">
+                <span class="rank">{{ index+1 }}</span>
+                <span class="novel">{{ item.novel_title }}</span>
+                <span class="author">By {{ item.user_name }}</span>
+                <span class="popularity">热度{{ item.novel_viewcount }}</span>
             </li>
         </ul>
     </div>
@@ -14,16 +14,36 @@
 
 <script>
 export default {
+    name: 'RankView',
     data() {
         return {
-            rankings: [
-                { rank: 1,novel:"novel 1", author: "Author 1", popularity: 99 },
-                { rank: 2,novel:"novel 2", author: "Author 2", popularity: 90 },
-                { rank: 3,novel:"novel 3",author: "Author 3", popularity: 80 },
-                // Add more ranking items here
-            ],
+            rankings: [],
         };
     },
+    computed: {
+        filteredRankings() {
+        // 过滤 rankings 数组，只返回索引 0 到 2 的元素
+        return this.rankings.filter((_, index) => index >= 0 && index < 3);
+        }
+    },
+    mounted() {
+        this.get_homeRank();
+    },
+    method:{
+        async get_homeRank() {
+            console.log('Fetching novel rank...');
+            try {
+                const params={
+                    index:1,
+                };
+                const response = await this.$axios.get('https://121.36.55.149:80/apis/rank',params);
+                this.rankings = response.data;
+                console.log('Rank:', rankings);
+            } catch (error) {
+                console.error('Error fetching novel rank:', error);
+            }
+        }
+    }
 };
 </script>
 

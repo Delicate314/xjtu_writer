@@ -28,26 +28,60 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 /* 全局样式 */
-input.rounded-input,
-select.rounded-select,
-button.rounded-button {
-  padding: 10px;
+input.rounded-input
+{
+  padding: 13px 20px;
   margin-right: 10px;
-  border-radius: 10px; /* 设置圆角 */
+  border-radius: 10px;
+  border: 3px solid #112d4e;
+  font-size: 15px;
 }
 
-button.rounded-button {
+select.rounded-select{
   padding: 10px 20px;
-  background-color: #007bff;
+  margin-right: 10px;
+  border-radius: 10px;
+  border: 3px solid #112d4e;
+  font-family: '微软雅黑';
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.file-load{
+  padding: 13px 20px;
+  margin-right: 10px;
+  border-radius: 10px;
+  border: 3px solid #112d4e;
+  font-size: 15px;
+}
+
+
+button.rounded-button {
+  padding: 13px 30px;
+  background-color: #112d4e;
   color: #fff;
+  font-family: '微软雅黑';
+  font-weight: bold;
+  font-size: 16px;
   border: none;
   cursor: pointer;
+  margin-right: 10px;
+  border-radius: 10px;
 }
 
 button.rounded-button:hover {
   background-color: #0056b3;
+}
+
+h2 {
+  font-size: 1.5em;
+  /* 调整字体大小 */
+  margin-bottom: 20px;
+  /* 调整下边距 */
+  color: #007bff;
+  /* 设置字体颜色 */
 }
 
 h2.link1 {

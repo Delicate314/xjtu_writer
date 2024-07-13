@@ -1,6 +1,6 @@
 <template>
     <div>
-            <div class="rank-view">
+            <div class="top">
                 <Background />
                 <Guide />
                 <h2 class="title">小说排名</h2>
@@ -10,9 +10,9 @@
                             <th class="rank-top">排名</th>
                             <th>书名</th>
                             <th>作者</th>
-                            <th>热度</th>
-                            <th class="rank-bottom">简介</th>
+                            <th class="rank-bottom">热度</th>
                         </tr>
+                    <!--
                     </thead>
                     <tbody class="rank-item">
                             <td>index=1</td>
@@ -21,17 +21,24 @@
                         </router-link>
                         <td>novel-1-author</td>
                         <td>novel-1-popularity</td>
-                        <td>novel-1-description</td>
-                    </tbody>
+                    </tbody> -->
+                    </thead>
                     <tbody class="rank-item">
-                        <td>index=2</td>
+                            <td>index=1</td>
                         <router-link :to="'/Novel'" class="item-link">
-                        <td>novel-2-title</td>
+                            <td>novel-1-title</td>
                         </router-link>
-                        <td>novel-2-author</td>
-                        <td>novel-2-popularity</td>
-                        <td>novel-2-description</td>
+                        <td>novel-1-author</td>
+                        <td>novel-1-popularity</td>
                     </tbody>
+                        <tbody v-for="(item, index) in novels" :key="index" class="rank-item">
+                            <td>{{ index+1  }}</td>
+                            <router-link :to="`/Novel?id=${item.novel_id}`" class="item-link">
+                                <td>{{ item.novel_title }}</td>
+                            </router-link>
+                            <td>{{ item.user_name}}</td>
+                            <td>{{ item.novel_viewcount }}</td>
+                        </tbody>
                 </table>
             </div>
         <div>
@@ -63,11 +70,31 @@ export default {
             novels: [],
         };
     },
+    mounted() {
+        this.getRank();
+    },
+    methods: {
+        async getRank() {
+            console.log('Fetching novel rank...');
+            try {
+                const params={
+                    index:1,
+                };
+                // console.log('Params:', params);
+                const response = await this.$axios.post('http://121.36.55.149:80/apis/rank',params);
+                // console.log('Rank:', response);
+                this.novels = response.data;
+                console.log('Novels:', this.novels);
+            } catch (error) {
+                console.error('Error fetching novel rank:', error);
+            }
+        }
+    }
 };
 </script>
 
 <style scoped>
-.rank-view {
+.top{
     max-width: 1000px;
     margin-top: 20px;
     margin: 0 auto;
@@ -125,29 +152,5 @@ td {
     margin: 20px;
 }
 
-/*.rank{
-    padding: 10px 18px;
-    color:#eeeeee;
-    text-align: left;
-    border-bottom: 1px solid #110202;
-    background-color: #393e46;
-}
-
-.author{
-    padding: 18px;
-    color:#eeeeee;
-    text-align: left;
-    border-bottom: 1px solid #110202;
-    background-color: #393e46;
-}
-
-.popularity{
-    padding: 18px;
-    color:#eeeeee;
-    text-align: left;
-    border-bottom: 1px solid #110202;
-    background-color: #393e46;
-}
-*/
 </style>
 </style>
