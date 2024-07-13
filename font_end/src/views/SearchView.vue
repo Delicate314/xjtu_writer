@@ -3,7 +3,7 @@
     <Background />
     <Guide />
     <h2 class="link1">搜索小说</h2>
-    <input type="text" placeholder="请输入搜索对象" v-model="query" @input="updateDisplay" class="rounded-input">
+    <input type="text" placeholder="请输入搜索对象" v-model="query" @input="updateDisplay" @keyup.enter="search" class="rounded-input">
     <select v-model="queryType" class="rounded-select">
       <option v-for="(option, index) in searchOptions" :value="index" :key="index">{{ option.label }}</option>
     </select>
@@ -141,8 +141,8 @@ export default {
       event.preventDefault();
       console.log('Searching for', this.query, 'with type', this.queryType);
       const requestBody = {
-        func: this.queryType,
-        input: this.query
+        func: String(this.queryType),
+        input: String(this.query)
       };
       try {
         const response = await axios.post('http://121.36.55.149/apis/search', requestBody);
