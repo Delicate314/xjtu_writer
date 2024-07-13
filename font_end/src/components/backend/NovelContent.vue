@@ -92,6 +92,7 @@ export default {
           link.click();
           document.body.removeChild(link);
           window.URL.revokeObjectURL(downloadUrl);
+          this.$message.success('下载完成');
         } else {
           this.error = '获取下载链接失败';
         }

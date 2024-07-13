@@ -1551,3 +1551,75 @@ INFO:     127.0.0.1:44310 - "OPTIONS /apis/login HTTP/1.0" 200 OK
 {'sub': 'hou'}
 {'sub': 'hou', 'exp': datetime.datetime(2024, 7, 13, 8, 22, 17, 593532, tzinfo=datetime.timezone.utc)}
 INFO:     127.0.0.1:44322 - "POST /apis/login HTTP/1.0" 200 OK
+INFO:     127.0.0.1:57664 - "GET /apis/admin/getNovel HTTP/1.0" 422 Unprocessable Entity
+INFO:     127.0.0.1:36460 - "GET /docs HTTP/1.0" 200 OK
+INFO:     127.0.0.1:36470 - "GET /openapi.json HTTP/1.0" 200 OK
+INFO:     127.0.0.1:39286 - "OPTIONS /apis/search HTTP/1.0" 200 OK
+INFO:     127.0.0.1:39296 - "POST /apis/search HTTP/1.0" 200 OK
+INFO:     127.0.0.1:48694 - "OPTIONS /apis/search HTTP/1.0" 200 OK
+INFO:     127.0.0.1:48696 - "POST /apis/search HTTP/1.0" 422 Unprocessable Entity
+INFO:     127.0.0.1:48702 - "OPTIONS /apis/search HTTP/1.0" 200 OK
+INFO:     127.0.0.1:48706 - "POST /apis/search HTTP/1.0" 422 Unprocessable Entity
+INFO:     127.0.0.1:50516 - "OPTIONS /apis/search HTTP/1.0" 200 OK
+INFO:     127.0.0.1:50526 - "POST /apis/search HTTP/1.0" 422 Unprocessable Entity
+INFO:     127.0.0.1:50540 - "OPTIONS /apis/search HTTP/1.0" 200 OK
+INFO:     127.0.0.1:50552 - "POST /apis/search HTTP/1.0" 422 Unprocessable Entity
+INFO:     127.0.0.1:54468 - "GET /docs HTTP/1.0" 200 OK
+INFO:     127.0.0.1:54484 - "GET /openapi.json HTTP/1.0" 200 OK
+INFO:     127.0.0.1:34706 - "GET /docs HTTP/1.0" 200 OK
+INFO:     127.0.0.1:34720 - "GET /openapi.json HTTP/1.0" 200 OK
+INFO:     127.0.0.1:50792 - "POST /apis/login/ HTTP/1.0" 307 Temporary Redirect
+{'sub': 'Delicat'}
+{'sub': 'Delicat', 'exp': datetime.datetime(2024, 7, 13, 8, 33, 51, 489533, tzinfo=datetime.timezone.utc)}
+INFO:     127.0.0.1:50808 - "POST /apis/login HTTP/1.0" 200 OK
+INFO:     127.0.0.1:57646 - "POST /apis/write_request HTTP/1.0" 200 OK
+INFO:     127.0.0.1:48362 - "POST /apis/novel/releaseNovel HTTP/1.0" 422 Unprocessable Entity
+INFO:     127.0.0.1:59608 - "POST /apis/write_request HTTP/1.0" 200 OK
+INFO:     127.0.0.1:43120 - "POST /apis/login/ HTTP/1.0" 307 Temporary Redirect
+{'sub': 'delicat'}
+{'sub': 'delicat', 'exp': datetime.datetime(2024, 7, 13, 8, 36, 38, 902946, tzinfo=datetime.timezone.utc)}
+INFO:     127.0.0.1:43122 - "POST /apis/login HTTP/1.0" 200 OK
+INFO:     127.0.0.1:42070 - "POST /apis/search HTTP/1.0" 200 OK
+INFO:     127.0.0.1:42074 - "POST /apis/downloadfile HTTP/1.0" 401 Unauthorized
+INFO:     127.0.0.1:58830 - "GET /docs HTTP/1.0" 200 OK
+INFO:     127.0.0.1:58836 - "GET /openapi.json HTTP/1.0" 200 OK
+INFO:     127.0.0.1:33668 - "POST /apis/login/ HTTP/1.0" 307 Temporary Redirect
+{'sub': 'Delicat'}
+{'sub': 'Delicat', 'exp': datetime.datetime(2024, 7, 13, 8, 40, 43, 511196, tzinfo=datetime.timezone.utc)}
+INFO:     127.0.0.1:33680 - "POST /apis/login HTTP/1.0" 200 OK
+INFO:     127.0.0.1:32942 - "POST /apis/uploadfile HTTP/1.0" 200 OK
+INFO:     127.0.0.1:38762 - "POST /apis/search HTTP/1.0" 200 OK
+INFO:     127.0.0.1:38768 - "POST /apis/downloadfile HTTP/1.0" 200 OK
+INFO:     127.0.0.1:45792 - "GET /docs HTTP/1.0" 200 OK
+INFO:     127.0.0.1:45800 - "GET /openapi.json HTTP/1.0" 200 OK
+INFO:     127.0.0.1:45894 - "POST /apis/downloadfile HTTP/1.0" 200 OK
+INFO:     127.0.0.1:47264 - "POST /apis/login/ HTTP/1.0" 307 Temporary Redirect
+{'sub': 'Delicat'}
+{'sub': 'Delicat', 'exp': datetime.datetime(2024, 7, 13, 8, 43, 37, 749878, tzinfo=datetime.timezone.utc)}
+INFO:     127.0.0.1:47270 - "POST /apis/login HTTP/1.0" 200 OK
+INFO:     127.0.0.1:47274 - "POST /apis/search HTTP/1.0" 200 OK
+INFO:     127.0.0.1:35560 - "POST /apis/downloadfile HTTP/1.0" 200 OK
+INFO:     127.0.0.1:35564 - "POST /apis/downloadfile HTTP/1.0" 200 OK
+INFO:     127.0.0.1:35574 - "POST /apis/downloadfile HTTP/1.0" 200 OK
+INFO:     127.0.0.1:34276 - "POST /apis/login/ HTTP/1.0" 307 Temporary Redirect
+{'sub': 'delicat'}
+{'sub': 'delicat', 'exp': datetime.datetime(2024, 7, 13, 8, 45, 19, 483090, tzinfo=datetime.timezone.utc)}
+INFO:     127.0.0.1:34286 - "POST /apis/login HTTP/1.0" 200 OK
+INFO:     127.0.0.1:51266 - "POST /apis/uploadfile HTTP/1.0" 200 OK
+INFO:     127.0.0.1:57518 - "POST /apis/write_request HTTP/1.0" 200 OK
+INFO:     127.0.0.1:44084 - "POST /apis/novel/releaseNovel HTTP/1.0" 200 OK
+INFO:     127.0.0.1:46108 - "POST /apis/login/ HTTP/1.0" 307 Temporary Redirect
+{'sub': 'delicat'}
+{'sub': 'delicat', 'exp': datetime.datetime(2024, 7, 13, 8, 47, 20, 344530, tzinfo=datetime.timezone.utc)}
+INFO:     127.0.0.1:46114 - "POST /apis/login HTTP/1.0" 200 OK
+INFO:     127.0.0.1:54384 - "POST /apis/write_request HTTP/1.0" 200 OK
+INFO:     127.0.0.1:57092 - "POST /apis/novel/releaseNovel HTTP/1.0" 200 OK
+INFO:     127.0.0.1:57458 - "OPTIONS /apis/search HTTP/1.0" 200 OK
+INFO:     127.0.0.1:57472 - "POST /apis/search HTTP/1.0" 200 OK
+INFO:     127.0.0.1:57476 - "POST /apis/answer_request HTTP/1.0" 200 OK
+INFO:     127.0.0.1:59532 - "OPTIONS /apis/search HTTP/1.0" 200 OK
+INFO:     127.0.0.1:59538 - "POST /apis/search HTTP/1.0" 200 OK
+INFO:     127.0.0.1:51298 - "POST /apis/getNovel/ HTTP/1.0" 307 Temporary Redirect
+INFO:     127.0.0.1:51314 - "POST /apis/getNovel HTTP/1.0" 200 OK
+INFO:     127.0.0.1:56040 - "GET /docs HTTP/1.0" 200 OK
+INFO:     127.0.0.1:56046 - "GET /openapi.json HTTP/1.0" 200 OK
