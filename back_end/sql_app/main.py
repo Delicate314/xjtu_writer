@@ -249,6 +249,8 @@ async def ai_answer_question(question:Answer_request):
     response = ai02.call_with_messages(question1,context)
     return response
 
+
+
 def is_valid_password(password: str) -> bool:
     # 检查长度
     if len(password) < 6 or len(password) > 20:
