@@ -5,9 +5,7 @@
     <h2 class="link1">搜索小说</h2>
     <input type="text" placeholder="请输入搜索对象" v-model="query" @input="updateDisplay" class="rounded-input">
     <select v-model="queryType" class="rounded-select">
-      <option value="0">关键字</option>
-      <option value="1">小说id</option>
-      <option value="2">作者id</option>
+      <option v-for="(option, index) in searchOptions" :value="index" :key="index">{{ option.label }}</option>
     </select>
     <button class="search rounded-button" @click="search">Search</button>
     <div v-if="response.result.length > 0" class="result-box">
@@ -58,6 +56,12 @@ export default {
       novelTitle: '', // 新增的小说标题字段
       userId: '', // 新增的用户ID字段
       type: 0,
+      searchOptions: [
+        { label: '关键字', value: '0' },
+        { label: '小说id', value: '1' },
+        { label: '作者id', value: '2' },
+        { label: '作者名', value: '3' }
+      ]
     };
   },
   methods: {
@@ -89,7 +93,7 @@ export default {
           const downloadUrl = window.URL.createObjectURL(blob);
           const link = document.createElement('a');
           link.href = downloadUrl;
-          link.download = `${ntitle}.txt`;
+          link.download = `${ntitle}.txt`; // 注意这里需要加上反引号 ` 符号
           document.body.appendChild(link);
           link.click();
           document.body.removeChild(link);
@@ -158,6 +162,7 @@ export default {
   },
 };
 </script>
+
 
 <style>
 input.rounded-input,
