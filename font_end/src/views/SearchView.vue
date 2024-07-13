@@ -16,7 +16,8 @@
         <li v-for="item in response.result" :key="item.novel_id">
           <p>
             {{ item.novel_title }} - {{ item.user_name }}
-            <button class="search rounded-button" @click="download(item.novel_id, item.novel_title)">download</button>
+            <button class="search rounded-button"
+              @click="downloadNovel(item.novel_id, item.novel_title)">download</button>
           </p>
         </li>
       </ul>
@@ -24,7 +25,7 @@
     <div v-else>
       <p>暂无结果</p>
     </div>
-    <h2 class="link1">上传文件</h2>
+    <h2 class="link1">上传小说到社区</h2>
     <input type="file" @change="handleFileUpload" />
     <div v-if="selectedFile" class="file-info">
       <p>已选择文件：{{ selectedFile.name }}</p>
@@ -38,6 +39,7 @@ import StarryBackground from '../components/StarryBackground.vue';
 import axios from 'axios';
 import Background from '../components/Background.vue';
 import Guide from '../components/Guide.vue';
+import { MessageBox } from 'element-ui';
 
 export default {
   name: 'SearchView',
@@ -69,37 +71,66 @@ export default {
         )
       ]);
     },
-    async download(nid, ntitle) {
+    // async download(nid, ntitle) {
+    //   try {
+    //     const response = await this.fetchWithTimeout(
+    //       'http://121.36.55.149/apis/downloadfile',
+    //       {
+    //         method: 'POST',
+    //         headers: {
+    //           'Accept': 'application/json',
+    //           'Content-Type': 'application/json'
+    //         },
+    //         body: JSON.stringify({
+    //           novel_id: String(nid)
+    //         })
+    //       }
+    //     );
+    //     if (response.status === 200) {
+    //       const blob = await response.blob();
+    //       const downloadUrl = window.URL.createObjectURL(blob);
+    //       const link = document.createElement('a');
+    //       link.href = downloadUrl;
+    //       link.download = `${ntitle}.txt`;
+    //       document.body.appendChild(link);
+    //       link.click();
+    //       document.body.removeChild(link);
+    //       window.URL.revokeObjectURL(downloadUrl);
+    //     } else {
+    //       this.error = '获取下载链接失败';
+    //     }
+    //   } catch (error) {
+    //     console.error('Error fetching download link:', error);
+    //     this.error = '获取下载链接时发生错误';
+    //   }
+    // },
+    async downloadNovel(nid, ntitle) {
       try {
-        const response = await this.fetchWithTimeout(
-          'http://121.36.55.149/apis/downloadfile',
-          {
-            method: 'POST',
-            headers: {
-              'Accept': 'application/json',
-              'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-              novel_id: String(nid)
-            })
-          }
-        );
+        const requestData = {
+          novel_id: String(nid)
+        };
+        const response = await axios.post("http://121.36.55.149/apis/downloadfile", requestData);
         if (response.status === 200) {
-          const blob = await response.blob();
+          const blob = new Blob([response.data], { type: 'text/plain' });
           const downloadUrl = window.URL.createObjectURL(blob);
           const link = document.createElement('a');
           link.href = downloadUrl;
-          link.download = `${ntitle}.txt`;
+          link.download = `${nid, ntitle}.txt`;
           document.body.appendChild(link);
           link.click();
           document.body.removeChild(link);
           window.URL.revokeObjectURL(downloadUrl);
+          this.$message.success('下载完成');
         } else {
           this.error = '获取下载链接失败';
         }
       } catch (error) {
         console.error('Error fetching download link:', error);
         this.error = '获取下载链接时发生错误';
+        MessageBox.alert(`获取下载链接时发生错误`, '错误', {
+          confirmButtonText: '确定',
+          type: 'error',
+        });
       }
     },
     async search() {
@@ -148,11 +179,14 @@ export default {
           }
         });
         console.log('文件上传成功', response.data);
-        alert('文件上传成功');
+        this.$message.success('文件上传成功');
         // 这里可以添加上传成功后的逻辑
       } catch (error) {
         console.error('文件上传失败', error);
-        alert('文件上传失败');
+        MessageBox.alert(`文件上传失败`, '错误', {
+          confirmButtonText: '确定',
+          type: 'error',
+        });
       }
     }
   },

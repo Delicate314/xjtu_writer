@@ -109,7 +109,7 @@ export default {
     },
     async upload() {
       try {
-        this.novel_title = prompt("请输入小说标题：");
+        this.novel_title = prompt("给文章起一个标题吧٩(๑`^´๑)۶：");
         if (this.novel_title == '') {
           console.error('未输入小说标题');
           return;
@@ -130,7 +130,7 @@ export default {
           }
         })
         // 这里可以添加上传成功后的逻辑*
-        alert('发布成功')
+        this.$message.success('发布成功');
       }
       catch (error) {
         console.error('发布失败', error);
