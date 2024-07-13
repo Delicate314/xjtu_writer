@@ -1,7 +1,7 @@
 # 后端
 python = 3.10
 ## 配置虚拟环境
-pip install -r requirements.txt
+pip install -r requirements.txt -i https://mirrors.aliyun.com/pypi/simple/
 
 ## 进入虚拟环境
 cd /home
