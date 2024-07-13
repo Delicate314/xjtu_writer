@@ -12,7 +12,7 @@
                 <h2 class="head">标题：{{ novel.novel_title }}</h2>
                 <h3 class="footer">作者：{{ novel.writer_name }}</h3>
                 <p class="footer">点击量：{{ novel.view_count }}</p>
-                <p class="main">{{ novel.content }}</p>
+                <textarea class="main" v-model="novel.content"></textarea>
                 <textarea placeholder="向AI提问" v-model="question" class="footer_ask"></textarea>
                 <button @click="ask" class='footer_commit'>提交</button>
                 <textarea class="footer_answer" v-model="answer" readonly placeholder="生成的回答将在此显示"></textarea>
@@ -45,12 +45,12 @@ export default {
     },
     methods: {
         async ask() {
+            console.log('Asking:', this.question);
             try {
                 const requestData = {
-                    question: this.question,  // 将问题添加到请求数据中
-                    context: this.novel.content
+                    question: this.question  // 将问题添加到请求数据中
                 };
-                console.log('Request Data:', requestData);
+                //console.log('Request Data:', requestData);
                 const response = await this.$axios.post("http://121.36.55.149:80/apis/answer_request", requestData);
                 console.log('Response:', response);
                 this.answer = response.data;
@@ -64,13 +64,12 @@ export default {
             console.log('Fetching novel data...');
             try {
                 const params = {
-                    novel_id: 1,
+                    novel_id: Number(this.$route.query.id),
                     page: 1,
-                    page_size: 2
+                    page_size: 10
                 };
-
+                // console.log('Params:', params);
                 const response = await this.$axios.post('http://121.36.55.149:80/apis/getNovel/', params);
-                //console.log('Novel11111 data:', response);
                 this.novel = response.data;
                 console.log('Novel:', this.novel);
             } catch (error) {
@@ -153,14 +152,15 @@ export default {
     text-align: center;
     line-height: 40px;
     font-size: medium;
+    font-weight: bold;
     width: 900px;
-
-    order: 2px solid #e84545;
+    height: 100px;
+    border: 2px solid #2b2e4a;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-size: 16px;
     resize: none;
-    margin: 20px;
+    margin: 5px;
 }
 
 .info {
