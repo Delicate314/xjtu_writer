@@ -1,6 +1,6 @@
 import pymysql
 import json
-from connect_sql import get_db
+from .connect_sql import get_db
 
 #将字典列表转成元组列表，在转换成json格式
 def tuples_to_json(str_keys, tuples):  
