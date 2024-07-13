@@ -1,5 +1,6 @@
 import pymysql
 import json
+from connect_sql import get_db
 
 #将字典列表转成元组列表，在转换成json格式
 def tuples_to_json(str_keys, tuples):  
@@ -20,16 +21,6 @@ def tuples_to_json(str_keys, tuples):
     result = json.loads(result)
     return result 
 
-# 连接到 MySQL 数据库
-def create_connection():
-    return pymysql.connect(
-        host="114.55.130.178",  # MySQL服务器地址
-        user="user01",   # 用户名
-        password="20030704Liwan",  # 密码
-        database="novel_ai"  # 数据库名称
-    )
-
-
 #查询所有小说名和小说描述中包含keyword的小说
 def search_novel_by_keyword(keyword):
     sql = """
@@ -48,7 +39,7 @@ def search_novel_by_keyword(keyword):
         n.novel_description LIKE %s;
     """
     values = (f"%{keyword}%", f"%{keyword}%")
-    db = create_connection()
+    db = get_db()
     try:
         # 创建游标对象，用于执行SQL查询
         cursor = db.cursor()
@@ -79,7 +70,7 @@ def search_novel_by_novel_id(writer_id):
         n.novel_id = %s;
     """
     values = (writer_id,)
-    db = create_connection()
+    db = get_db()
     try:
         # 创建游标对象，用于执行SQL查询
         cursor = db.cursor()
@@ -109,7 +100,7 @@ def search_novel_by_writer_name(writer_name):
         LOWER(u.user_name) LIKE LOWER(%s)
     """
     values = (f"%{writer_name}%",)
-    db = create_connection()
+    db = get_db()
     try:
         # 创建游标对象，用于执行SQL查询
         cursor = db.cursor()
@@ -139,7 +130,7 @@ def search_novel_by_writer_id(writer_id):
         n.user_id = %s;
     """
     values = (writer_id,)
-    db = create_connection()
+    db = get_db()
     try:
         # 创建游标对象，用于执行SQL查询
         cursor = db.cursor()
