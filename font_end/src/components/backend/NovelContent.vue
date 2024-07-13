@@ -63,7 +63,7 @@ export default {
                 const requestData = {
                     novel_id: this.novelId,
                     page: 1,
-                    page_size: 10
+                    page_size: 100
                 };
                 console.log('Request Data:', requestData);
                 const data = await axios.post("http://121.36.55.149/apis/getNovel", requestData);
@@ -98,21 +98,16 @@ export default {
         },
         async downloadNovel() {
             try {
-                const response = await this.fetchWithTimeout(
-                    'http://121.36.55.149/apis/downloadfile',
-                    {
-                        method: 'POST',
-                        headers: {
-                            'Accept': 'application/json',
-                            'Content-Type': 'application/json'
-                        },
-                        body: JSON.stringify({
-                            novel_id: String(this.novelId)
-                        })
-                    }
-                );
+                const requestData = {
+                    novel_id: String(this.novelId)
+                };
+                console.log('request', requestData);
+                const response = await axios.post("http://121.36.55.149/apis/downloadfile", requestData);
+                console.log(response);
+
                 if (response.status === 200) {
-                    const blob = await response.blob();
+                    // Create a Blob from the response data
+                    const blob = new Blob([response.data], { type: 'text/plain' });
                     const downloadUrl = window.URL.createObjectURL(blob);
                     const link = document.createElement('a');
                     link.href = downloadUrl;
@@ -129,6 +124,7 @@ export default {
                 this.error = '获取下载链接时发生错误';
             }
         }
+
     }
 };
 </script>
