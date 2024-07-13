@@ -6,6 +6,8 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 import jwt
 from datetime import timedelta,timezone,datetime
+from .connect_sql import get_db
+
 SECRET_KEY = "09d25e094faa6ca2556c818166b7a9563b93f7099f6f0f4caa6cf63b88e8d3e7"
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 100
@@ -35,13 +37,7 @@ def create_access_token(data: dict, expires_delta: timedelta | None = None):
 
 # @app.post("/register")
 def register(user_register: UserRegister):
-    db = pymysql.connect(
-        host="114.55.130.178",  # MySQL服务器地址
-        user="user01",  # 用户名
-        password="20030704Liwan",  # 密码
-        database="novel_ai",
-        port=3306  # 数据库端口
-    )
+    db = get_db()
 
     cursor = db.cursor()
     sql_check = "SELECT * FROM user_info WHERE user_name = %s;"  # 检查注册是否重复
@@ -73,13 +69,7 @@ def register(user_register: UserRegister):
 
 # @app.post("/login")
 def login(user_login: OAuth2PasswordRequestForm= Depends()):
-    db = pymysql.connect(
-        host="114.55.130.178",  # MySQL服务器地址
-        user="user01",  # 用户名
-        password="20030704Liwan",  # 密码
-        database="novel_ai",
-        port=3306  # 数据库端口
-    )
+    db = get_db()
 
     cursor = db.cursor()
     sql_check = "SELECT user_password FROM user_info WHERE user_name = %s;"
@@ -134,13 +124,7 @@ def login(user_login: OAuth2PasswordRequestForm= Depends()):
 
 # # @app.post("/register")
 # def register(user_register: UserRegister):
-#     db = pymysql.connect(
-#         host="114.55.130.178",  # MySQL服务器地址
-#         user="user01",  # 用户名
-#         password="20030704Liwan",  # 密码
-#         database="novel_ai",
-#         port=3306  # 数据库端口
-#     )
+#     db = get_db()
 
 #     cursor = db.cursor()
 #     sql_check = "SELECT * FROM user_info WHERE user_name = %s;"  # 检查注册是否重复
@@ -168,13 +152,7 @@ def login(user_login: OAuth2PasswordRequestForm= Depends()):
 
 # # @app.post("/login")
 # def login(user_login: UserLogin):
-#     db = pymysql.connect(
-#         host="114.55.130.178",  # MySQL服务器地址
-#         user="user01",  # 用户名
-#         password="20030704Liwan",  # 密码
-#         database="novel_ai",
-#         port=3306  # 数据库端口
-#     )
+#     db = get_db()
 
 #     cursor = db.cursor()
 #     sql_check = "SELECT user_password FROM user_info WHERE user_name = %s;"

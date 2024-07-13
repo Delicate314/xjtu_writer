@@ -69,13 +69,7 @@ async def get_current_user(token: str = Depends(oauth2_scheme)):
     except InvalidTokenError:
         # print("111")
         raise credentials_exception
-    db = pymysql.connect(
-        host="114.55.130.178",  # MySQL服务器地址
-        user="user01",  # 用户名
-        password="20030704Liwan",  # 密码
-        database="novel_ai",
-        port=3306  # 数据库端口
-    )
+    db = get_db()
     # print(Header())
     cursor = db.cursor()
     sql_select="SELECT * FROM user_info WHERE user_name= %s;"
@@ -102,14 +96,7 @@ async def get_current_user_id(token: str = Depends(oauth2_scheme)):
     except InvalidTokenError:
         raise credentials_exception
     
-    db = pymysql.connect(
-        host="114.55.130.178",  # MySQL服务器地址
-        user="user01",  # 用户名
-        password="20030704Liwan",  # 密码
-        database="novel_ai",
-        port=3306,  # 数据库端口
-        cursorclass=pymysql.cursors.DictCursor  # 使用DictCursor
-    )
+    db = get_db()
     
     cursor = db.cursor()
     sql_select = "SELECT * FROM user_info WHERE user_name = %s;"
@@ -125,7 +112,7 @@ async def get_current_user_id(token: str = Depends(oauth2_scheme)):
         raise credentials_exception
     
     # 假设你想获取 user_info 中的某个字段，比如 user_id
-    user_id = str(user_info['user_id'])  # 使用列名访问字段
+    user_id = str(user_info[0])  # 使用列名访问字段
     
     return user_id
 
@@ -185,13 +172,7 @@ class rank_input(BaseModel):
 async def rank(input: rank_input ,user:str=Depends(get_current_user)):
 
     index = input.index
-    db = pymysql.connect(
-        host="114.55.130.178",  # MySQL服务器地址
-        user="user01",  # 用户名
-        password="20030704Liwan",  # 密码
-        database="novel_ai",
-        port=3306  # 数据库端口
-    )
+    db = get_db()
     cursor = db.cursor(pymysql.cursors.DictCursor)  # 使用字典游标
     select_rank_sql = """
     SELECT
@@ -248,6 +229,8 @@ async def ai_answer_question(question:Answer_request):
     context = question.context
     response = ai02.call_with_messages(question1,context)
     return response
+
+
 
 def is_valid_password(password: str) -> bool:
     # 检查长度

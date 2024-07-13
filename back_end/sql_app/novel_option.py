@@ -26,7 +26,7 @@ def insert_novel_to_sql(user_id, novel_title, novel_path, novel_description = No
     INSERT INTO novel_info (user_id, novel_title, novel_path, novel_description)
     VALUES (%s, %s, %s, %s);
     """
-    db = create_connection()
+    db = get_db()
     novel_id = None
     try:
         cursor = db.cursor()
@@ -139,7 +139,7 @@ async def view_count_add_one(novel_id: str):
     sql_select = "SELECT novel_viewcount FROM novel_info WHERE novel_id = %s"
     sql_update = "UPDATE novel_info SET novel_viewcount = novel_viewcount + 1 WHERE novel_id = %s"
     
-    db = create_connection()
+    db = get_db()
     try:
         cursor = db.cursor()
         
@@ -226,7 +226,8 @@ def delete_novel(novel_id: int, novel_name: str):
             return (0, '小说文件未找到或不存在')
         
         user_id = result[0]["user_id"]
-        cursor = get_cursor()  # 获取数据库游标
+        db = get_db()
+        cursor = get_cursor(db)
         
         # 执行删除操作
         delete_sql = "DELETE FROM novel_info WHERE novel_id = %s AND novel_title = %s"
@@ -256,6 +257,7 @@ def delete_novel(novel_id: int, novel_name: str):
     finally:
         if cursor:
             cursor.close()  # 确保关闭游标
+        db.close()
     
     return (2, "小说删除成功")
 

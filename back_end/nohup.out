@@ -1419,3 +1419,135 @@ WARNING:  WatchFiles detected changes in 'sql_app/db_method.py'. Reloading...
 INFO:     Started server process [10872]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
+INFO:     127.0.0.1:60886 - "POST /apis/login/ HTTP/1.0" 307 Temporary Redirect
+{'sub': 'admin'}
+{'sub': 'admin', 'exp': datetime.datetime(2024, 7, 13, 7, 59, 57, 942352, tzinfo=datetime.timezone.utc)}
+INFO:     127.0.0.1:60896 - "POST /apis/login HTTP/1.0" 200 OK
+INFO:     127.0.0.1:60902 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:60908 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:60910 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
+INFO:     127.0.0.1:60662 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:60670 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
+INFO:     127.0.0.1:60678 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
+INFO:     127.0.0.1:60686 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:43784 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
+INFO:     127.0.0.1:43786 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:50574 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
+INFO:     127.0.0.1:50576 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:50586 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:50594 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
+INFO:     127.0.0.1:50596 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:48290 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:48302 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
+INFO:     127.0.0.1:48308 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:48316 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
+INFO:     127.0.0.1:48736 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
+INFO:     127.0.0.1:48746 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:48758 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
+INFO:     127.0.0.1:48760 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:42798 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
+INFO:     127.0.0.1:42800 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:48584 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
+INFO:     127.0.0.1:48590 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:48596 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
+INFO:     127.0.0.1:48604 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:52514 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:52518 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
+INFO:     127.0.0.1:52530 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:39734 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
+INFO:     127.0.0.1:39750 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:39764 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:39768 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
+INFO:     127.0.0.1:39772 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:39780 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:39790 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
+INFO:     127.0.0.1:39804 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:37580 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
+INFO:     127.0.0.1:37596 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:41260 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:41276 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
+INFO:     127.0.0.1:41284 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:41294 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
+INFO:     127.0.0.1:41300 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:59770 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:59772 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
+INFO:     127.0.0.1:38524 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:38536 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
+INFO:     127.0.0.1:48720 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:48722 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
+INFO:     127.0.0.1:34812 - "GET /apis/admin/getusers?offset=0&row_count=30&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:34814 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:34826 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:34828 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:34838 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
+INFO:     127.0.0.1:34842 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:34856 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:34858 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
+INFO:     127.0.0.1:50162 - "GET /apis/admin/getusernovel?user_id=1 HTTP/1.0" 200 OK
+INFO:     127.0.0.1:58942 - "OPTIONS /apis/login/ HTTP/1.0" 200 OK
+INFO:     127.0.0.1:58958 - "POST /apis/login/ HTTP/1.0" 307 Temporary Redirect
+INFO:     127.0.0.1:58966 - "OPTIONS /apis/login HTTP/1.0" 200 OK
+INFO:     127.0.0.1:58976 - "POST /apis/login HTTP/1.0" 400 Bad Request
+INFO:     127.0.0.1:49838 - "OPTIONS /apis/login/ HTTP/1.0" 200 OK
+INFO:     127.0.0.1:49852 - "POST /apis/login/ HTTP/1.0" 307 Temporary Redirect
+INFO:     127.0.0.1:49864 - "OPTIONS /apis/login HTTP/1.0" 200 OK
+{'sub': 'admin'}
+{'sub': 'admin', 'exp': datetime.datetime(2024, 7, 13, 8, 9, 15, 631369, tzinfo=datetime.timezone.utc)}
+INFO:     127.0.0.1:49874 - "POST /apis/login HTTP/1.0" 200 OK
+INFO:     127.0.0.1:41792 - "POST /apis/login/ HTTP/1.0" 307 Temporary Redirect
+{'sub': 'admin'}
+{'sub': 'admin', 'exp': datetime.datetime(2024, 7, 13, 8, 11, 1, 150175, tzinfo=datetime.timezone.utc)}
+INFO:     127.0.0.1:41806 - "POST /apis/login HTTP/1.0" 200 OK
+INFO:     127.0.0.1:41808 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
+INFO:     127.0.0.1:41814 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:41830 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:41842 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
+INFO:     127.0.0.1:41846 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:53094 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:53104 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
+INFO:     127.0.0.1:53116 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:53130 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:53142 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
+INFO:     127.0.0.1:53156 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:52866 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:43646 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
+INFO:     127.0.0.1:43650 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:46728 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:46738 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
+INFO:     127.0.0.1:39596 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
+INFO:     127.0.0.1:39602 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:39606 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:39614 - "GET /apis/admin/getNovel?offset=10&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:34794 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:34800 - "GET /apis/admin/getNovel?offset=10&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:34804 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:34820 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
+INFO:     127.0.0.1:34822 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:51998 - "GET /docs HTTP/1.0" 200 OK
+INFO:     127.0.0.1:52006 - "GET /openapi.json HTTP/1.0" 200 OK
+INFO:     127.0.0.1:34472 - "OPTIONS /apis/login/ HTTP/1.0" 200 OK
+INFO:     127.0.0.1:34486 - "POST /apis/login/ HTTP/1.0" 307 Temporary Redirect
+INFO:     127.0.0.1:34500 - "OPTIONS /apis/login HTTP/1.0" 200 OK
+INFO:     127.0.0.1:34512 - "POST /apis/login HTTP/1.0" 400 Bad Request
+INFO:     127.0.0.1:50130 - "OPTIONS /apis/login/ HTTP/1.0" 200 OK
+INFO:     127.0.0.1:50146 - "POST /apis/login/ HTTP/1.0" 307 Temporary Redirect
+INFO:     127.0.0.1:50152 - "OPTIONS /apis/login HTTP/1.0" 200 OK
+{'sub': 'admin'}
+{'sub': 'admin', 'exp': datetime.datetime(2024, 7, 13, 8, 18, 26, 568406, tzinfo=datetime.timezone.utc)}
+INFO:     127.0.0.1:50168 - "POST /apis/login HTTP/1.0" 200 OK
+INFO:     127.0.0.1:56498 - "GET /docs HTTP/1.0" 200 OK
+INFO:     127.0.0.1:43996 - "OPTIONS /apis/login/ HTTP/1.0" 200 OK
+INFO:     127.0.0.1:44012 - "POST /apis/login/ HTTP/1.0" 307 Temporary Redirect
+INFO:     127.0.0.1:44018 - "OPTIONS /apis/login HTTP/1.0" 200 OK
+{'sub': 'admin'}
+{'sub': 'admin', 'exp': datetime.datetime(2024, 7, 13, 8, 21, 6, 564647, tzinfo=datetime.timezone.utc)}
+INFO:     127.0.0.1:44030 - "POST /apis/login HTTP/1.0" 200 OK
+INFO:     127.0.0.1:44034 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:44042 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
+INFO:     127.0.0.1:44048 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:44280 - "OPTIONS /apis/login/ HTTP/1.0" 200 OK
+INFO:     127.0.0.1:44294 - "POST /apis/login/ HTTP/1.0" 307 Temporary Redirect
+INFO:     127.0.0.1:44310 - "OPTIONS /apis/login HTTP/1.0" 200 OK
+{'sub': 'hou'}
+{'sub': 'hou', 'exp': datetime.datetime(2024, 7, 13, 8, 22, 17, 593532, tzinfo=datetime.timezone.utc)}
+INFO:     127.0.0.1:44322 - "POST /apis/login HTTP/1.0" 200 OK
