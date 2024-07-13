@@ -112,7 +112,7 @@ async def get_current_user_id(token: str = Depends(oauth2_scheme)):
         raise credentials_exception
     
     # 假设你想获取 user_info 中的某个字段，比如 user_id
-    user_id = str(user_info['user_id'])  # 使用列名访问字段
+    user_id = str(user_info[0])  # 使用列名访问字段
     
     return user_id
 

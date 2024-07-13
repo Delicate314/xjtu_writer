@@ -4,16 +4,19 @@ from . import search_novel
 from . import novel_option
 
 def get_user_info(id: int, name: str):
-    cursor = get_cursor()
+    db = get_db()
+    cursor = get_cursor(db)
     sql = "SELECT * FROM user_info WHERE user_name='Admin'"
     cursor.execute(sql)
     rows = cursor.fetchall()
     cursor.close()
+    db.close()
     return rows
 
 
 def get_all_user_info(one_length=0, offset=-1, order_by='user_id', order_way='asc', search_target='all'):
-    cursor = get_cursor()
+    db = get_db()
+    cursor = get_cursor(db)
 
     # Validate order_way to prevent SQL injection
     order_way = order_way.lower()
@@ -42,12 +45,13 @@ def get_all_user_info(one_length=0, offset=-1, order_by='user_id', order_way='as
 
     rows = cursor.fetchall()
     cursor.close()
+    db.close()
     return rows
 
 def change_pwd(user_id:int, user_name:str, new_password:str):
     try:
-        cursor = get_cursor()
         db = get_db()
+        cursor = get_cursor(db)
         # 准备 SQL 更新语句
         sql_update_query = "UPDATE user_info SET user_password = %s WHERE user_name = %s"
         # 执行更新操作
@@ -61,11 +65,13 @@ def change_pwd(user_id:int, user_name:str, new_password:str):
     finally:
         print("t")
         cursor.close()
+        db.close()
         return (True,"success")
 
 
 def get_all_novel_info(one_length=0, offset=-1, order_by='novel_id', order_way='asc', search_target='all'):
-    cursor = get_cursor()
+    db = get_db()
+    cursor = get_cursor(db)
     order_way = order_way.lower()
     if order_way not in ['asc', 'desc']:
         order_way = 'asc'
@@ -90,6 +96,7 @@ def get_all_novel_info(one_length=0, offset=-1, order_by='novel_id', order_way='
 
     rows = cursor.fetchall()
     cursor.close()
+    db.close()
     return rows
 
 def get_user_count(search_target='all'):
@@ -103,7 +110,8 @@ def get_user_count(search_target='all'):
         else:
             search = "AND user_name LIKE %s"
             search_params = [f"%{search_target}%"]
-    cursor = get_cursor()
+    db = get_db()
+    cursor = get_cursor(db)
     sql = f"SELECT count(*) FROM user_info WHERE user_name<>'Admin' {search}"
     cursor.execute(sql, search_params)
     rows = cursor.fetchall()[0]
@@ -122,16 +130,19 @@ def get_novel_count(search_target='all'):
             search = "WHERE novel_title LIKE %s"
             search_params = [f"%{search_target}%"]
 
-    cursor = get_cursor()
+    db = get_db()
+    cursor = get_cursor(db)
     sql = f"SELECT count(*) FROM novel_info  {search}"
     cursor.execute(sql, search_params)
     count = cursor.fetchone()[0]  # 获取计数值
     cursor.close()
+    db.close()
     return count
 
 def delete_user(user_id:int, user_name:str):
     try:
-        cursor = get_cursor()  # 获取数据库游标
+        db = get_db()
+        cursor = get_cursor(db)  # 获取数据库游标
         #删除该用户所有小说
         user_novels = get_user_novel(user_id)
         for novel in user_novels:
@@ -151,12 +162,14 @@ def delete_user(user_id:int, user_name:str):
 
     finally:
         cursor.close()  # 确保关闭游标
+        db.close()
 
     return (2, "用户删除成功")
 
 def delete_novel(novel_id:int, novel_name:str):
     try:
-        cursor = get_cursor()  # 获取数据库游标
+        db = get_db()
+        cursor = get_cursor(db)  # 获取数据库游标
         # 执行删除操作
         delete_sql = "DELETE FROM novel_info WHERE novel_id = %s AND novel_title = %s"
         cursor.execute(delete_sql, (novel_id, novel_name))
@@ -172,13 +185,15 @@ def delete_novel(novel_id:int, novel_name:str):
 
     finally:
         cursor.close()  # 确保关闭游标
+        db.close()
 
     return (2, "小说删除成功")
 
 def reset_password(user_id: int, user_name: str):
     try:
         default_password = '123456Ab'
-        cursor = get_cursor()
+        db = get_db()
+        cursor = get_cursor(db)
         # 查找用户并更新密码的SQL语句
         sql = "UPDATE user_info SET user_password=%s WHERE user_id=%s AND user_name=%s"
         # 执行SQL语句
@@ -189,13 +204,14 @@ def reset_password(user_id: int, user_name: str):
         return (False, f"发生错误{e}")
     finally:
         cursor.close()
+        db.close()
 
 def get_user_novel(user_id:int):
-    cursor = get_cursor()
+    db = get_db()
+    cursor = get_cursor(db)
     query = "SELECT * FROM novel_info WHERE user_id = %s"
     cursor.execute(query, (user_id,))
     novels = cursor.fetchall()
     cursor.close()
+    db.close()
     return novels
-
-
