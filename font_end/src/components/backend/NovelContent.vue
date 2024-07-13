@@ -1,142 +1,129 @@
 <template>
-    <el-dialog :visible.sync="visible" title="小说内容" @close="handleClose">
-        <div v-if="loading">正在加载小说内容...</div>
-        <div v-else-if="error">{{ error }}</div>
-        <div v-else>
-            <pre v-html="novelContent"></pre>
-        </div>
-        <span slot="footer" class="dialog-footer">
-            <el-button type="primary" @click="downloadNovel">下载链接</el-button>
-        </span>
+    <el-dialog :visible.sync="visible" title="小说内容" @close="handleClose" width="80%">
+      <div v-if="loading">正在加载小说内容...</div>
+      <div v-else-if="error">{{ error }}</div>
+      <div v-else>
+        <pre class="custom-text" v-html="formattedContent"></pre>
+      </div>
+      <span slot="footer" class="dialog-footer">
+        <el-button type="primary" @click="downloadNovel" class="download-button">下载链接</el-button>
+      </span>
     </el-dialog>
-</template>
+  </template>
+  
 
 <script>
 import axios from 'axios';
 export default {
-    props: {
-        visible: {
-            type: Boolean,
-            required: true
-        },
-        novelId: {
-            type: Number,
-            required: true
-        },
-        novelName: {
-            type: String,
-            required: true
-        }
+  props: {
+    visible: {
+      type: Boolean,
+      required: true
     },
-    data() {
-        return {
-            novelContent: '',
-            loading: false,
-            error: '',
-            url_api: '127.0.0.1:8000',
-            url_serve: '121.36.55.149/apis'
-        };
+    novelId: {
+      type: Number,
+      required: true
     },
-    watch: {
-        visible(newVal) {
-            if (newVal) {
-                this.fetchNovelContent();
-            }
-        }
-    },
-    methods: {
-        handleClose() {
-            this.$emit('update:visible', false);
-        },
-        fetchWithTimeout(url, options, timeout = 10000) {
-            return Promise.race([
-                fetch(url, options),
-                new Promise((_, reject) =>
-                    setTimeout(() => reject(new Error('请求超时')), timeout)
-                )
-            ]);
-        },
-        async fetchNovelContent() {
-            this.loading = true;
-            this.error = '';
-            try {
-                const requestData = {
-                    novel_id: this.novelId,
-                    page: 1,
-                    page_size: 100
-                };
-                console.log('Request Data:', requestData);
-                const data = await axios.post("http://121.36.55.149/apis/getNovel", requestData);
-                console.log('Response:', data);
-                // const response = await this.fetchWithTimeout(
-                // 'http://121.36.55.149/apis/getNovel',
-                // {
-                //     method: 'POST',
-                //     headers: {
-                //         'Accept': 'application/json',
-                //         'Content-Type': 'application/json'
-                //     },
-                //     body: JSON.stringify({
-                //         novel_id: this.novelId,
-                //         page: 1,
-                //         page_size: 10
-                //     })
-                // }
-                // );
-                // const data = await response.json();
-                if (data.data.content) {
-                    this.novelContent = data.data.content;
-                } else {
-                    this.error = '获取小说内容失败';
-                }
-            } catch (error) {
-                console.error('Error fetching novel content:', error);
-                this.error = '获取小说内容时发生错误';
-            } finally {
-                this.loading = false;
-            }
-        },
-        async downloadNovel() {
-            try {
-                const requestData = {
-                    novel_id: String(this.novelId)
-                };
-                console.log('request', requestData);
-                const response = await axios.post("http://121.36.55.149/apis/downloadfile", requestData);
-                console.log(response);
-
-                if (response.status === 200) {
-                    // Create a Blob from the response data
-                    const blob = new Blob([response.data], { type: 'text/plain' });
-                    const downloadUrl = window.URL.createObjectURL(blob);
-                    const link = document.createElement('a');
-                    link.href = downloadUrl;
-                    link.download = `${this.novelName}.txt`;
-                    document.body.appendChild(link);
-                    link.click();
-                    document.body.removeChild(link);
-                    window.URL.revokeObjectURL(downloadUrl);
-                } else {
-                    this.error = '获取下载链接失败';
-                }
-            } catch (error) {
-                console.error('Error fetching download link:', error);
-                this.error = '获取下载链接时发生错误';
-            }
-        }
-
+    novelName: {
+      type: String,
+      required: true
     }
+  },
+  data() {
+    return {
+      novelContent: '',
+      loading: false,
+      error: '',
+      url_api: '127.0.0.1:8000',
+      url_serve: '121.36.55.149/apis'
+    };
+  },
+  computed: {
+    formattedContent() {
+      return this.novelContent.replace(/\n/g, '<br/>');
+    }
+  },
+  watch: {
+    visible(newVal) {
+      if (newVal) {
+        this.fetchNovelContent();
+      }
+    }
+  },
+  methods: {
+    handleClose() {
+      this.$emit('update:visible', false);
+    },
+    async fetchNovelContent() {
+      this.loading = true;
+      this.error = '';
+      try {
+        const requestData = {
+          novel_id: this.novelId,
+          page: 1,
+          page_size: 100
+        };
+        const data = await axios.post("http://121.36.55.149/apis/getNovel", requestData);
+        if (data.data.content) {
+          this.novelContent = data.data.content;
+        } else {
+          this.error = '获取小说内容失败';
+        }
+      } catch (error) {
+        console.error('Error fetching novel content:', error);
+        this.error = '获取小说内容时发生错误';
+      } finally {
+        this.loading = false;
+      }
+    },
+    async downloadNovel() {
+      try {
+        const requestData = {
+          novel_id: String(this.novelId)
+        };
+        const response = await axios.post("http://121.36.55.149/apis/downloadfile", requestData);
+        if (response.status === 200) {
+          const blob = new Blob([response.data], { type: 'text/plain' });
+          const downloadUrl = window.URL.createObjectURL(blob);
+          const link = document.createElement('a');
+          link.href = downloadUrl;
+          link.download = `${this.novelName}.txt`;
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+          window.URL.revokeObjectURL(downloadUrl);
+        } else {
+          this.error = '获取下载链接失败';
+        }
+      } catch (error) {
+        console.error('Error fetching download link:', error);
+        this.error = '获取下载链接时发生错误';
+      }
+    }
+  }
 };
+
 </script>
 
 <style scoped>
-pre {
-    white-space: pre-wrap;
-    word-break: break-word;
-    /* 可选，增加此行以在长单词或URL时也进行换行 */
-    text-align: left;
-    /* 左对齐 */
-    text-indent: 2em;
-    /* 首行缩进两个字符长度 */
+.custom-text {
+  font-size: medium;
+  white-space: pre-wrap;
+  word-break: break-word;
+  text-align: left;
+  text-indent: 2em;
+  line-height: 1.6; /* 设置行高，增加可读性 */
+  padding: 10px; /* 增加内边距，防止文字贴边 */
+  font-family: 'Microsoft YaHei', sans-serif; /* 设置字体 */
+  color: #333; /* 设置文本颜色 */
+}
+
+.dialog-footer {
+  display: flex;
+  justify-content: center; /* 水平居中对齐 */
+}
+
+.download-button {
+  max-width: 200px;
 }
 </style>

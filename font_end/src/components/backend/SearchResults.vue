@@ -4,36 +4,37 @@
     <el-table
       :data="tableData"
       style="width: 100%"
-      max-height="650px"
+      max-height="640px"
       :default-sort = "{prop: 'user_id', order: 'ascending'}"
       @sort-change="handleSortChange">
       <el-table-column fixed sortable prop="user_id" label="用户id" width="200"></el-table-column>
       <el-table-column sortable prop="user_name" label="用户名" width="200"></el-table-column>
-      <el-table-column prop="CreateAt" label="注册时间" width="190"></el-table-column>
       <el-table-column prop="UpdatedAt" label="最近更新时间" width="190"></el-table-column>
       <el-table-column fixed="right" label="操作" width="280">
         <template slot-scope="scope">
           <el-popconfirm
+            popper-class="my-popconfirm"
             confirm-button-text="确定"
             cancel-button-text="取消"
-            icon="el-icon-info"
+            icon="el-icon-delete"
             icon-color="red"
             title="此操作无法撤销，确定删除该用户？"
             @confirm="deleteRow(scope.$index, tableData)">
-            <el-button slot="reference" type="danger" size="small" style="max-width: 80px">删除用户</el-button>
+            <el-button slot="reference" type="danger" size="small" style="max-width: 80px; margin-right: 10px;">删除用户</el-button>
           </el-popconfirm>
-          <el-button class="button" type="primary" size="small"
+          <el-button style="max-width: 80px; margin-right: 10px;" type="primary" size="small"
             @click.native.prevent="detailRow(scope.$index, tableData)">
             详细信息
           </el-button>
           <el-popconfirm
+            popper-class="my-popconfirm"
             confirm-button-text="确定"
             cancel-button-text="取消"
             icon="el-icon-info"
             icon-color="green"
             title="是否重置该用户的密码？"
             @confirm="resetPassword(scope.$index, tableData)">
-            <el-button class="button" slot="reference" type="success" size="small">重置密码</el-button>
+            <el-button style="max-width: 80px;" slot="reference" type="success" size="small">重置密码</el-button>
           </el-popconfirm>
         </template>
       </el-table-column>
@@ -162,49 +163,86 @@ export default {
       try {
         const response = await this.$axios.delete(`http://${this.url_api}/admin/deleteuser?user_id=${uid}&user_name=${uname}`);
         console.log('删除成功:', response.data.message);
-      } catch (error) {
+        Message.success({
+          message:'删除用户成功',
+          duration:3000
+        })
+      } 
+      catch (error) {
+        const error_info='';
         if (error.response) {
           if (error.response.status === 404) {
+            error_info='用户未找到或不存在';
             console.error('用户未找到或不存在');
           } else if (error.response.status === 500) {
+            error_info='服务器内部错误';
             console.error('服务器内部错误');
           } else {
+            error_info=`未知错误:${error.response.detail}`
             console.error('未知错误:', error.response.detail);
           }
         } else {
+          error_info=`请求失败:${ error.detail}`
           console.error('请求失败:', error.detail);
         }
+        Message.error({
+          message:`删除用户失败${error_info}`,
+          duration:3000
+        })
       }
     },
     async resetpwd({ uid, uname }) {
       try {
-        const response = await this.$axios.post(`http://${this.url_api}/admin/resetpassword?user_id=${uid}&user_name=${uname}`);
+        const response = await this.$axios.post(`http://${this.url_api}/admin/resetpassword?user_name=${uname}&user_id=${uid}`);
         console.log('密码重置成功:', response.data.message);
         Message.success({
           message: `${response.data.message}`,
           duration: 3000
         });
-      } catch (error) {
+      } 
+      catch (error) {
+        const error_info='';
         if (error.response) {
           if (error.response.status === 404) {
+            error_info = '用户未找到或不存在';
             console.error('用户未找到或不存在');
           } else if (error.response.status === 500) {
+            error_info ='服务器内部错误'
             console.error('服务器内部错误');
           } else {
+            error_info =`未知错误: ${error.response.detail}`;
             console.error('未知错误:', error.response.detail);
           }
         } else {
+          error_info =`请求失败: ${error.detail}`;
           console.error('请求失败:', error.detail);
         }
+        Message.error({
+          message:`重置密码失败${error_info}`,
+          duration:3000
+        })
       }
     }
   }
 };
 </script>
 
-<style scoped>
+<style> 
 .button {
   max-width: 80px;
   margin-left: 10px;
 }
+
+.my-popconfirm .el-popper {
+  font-size: 14px;
+}
+.my-popconfirm .el-popconfirm__main {
+  margin: 10px 0 13px;
+}
+.my-popconfirm .el-button--mini {
+  height: 30px;
+  width: 45px;
+  padding: 2px 6px;
+}
+
 </style>

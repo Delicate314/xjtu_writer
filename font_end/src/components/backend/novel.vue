@@ -67,6 +67,7 @@ export default {
 }
 
 .search {
+  min-width: 400px;
   display: flex;
   align-items: center;
 }
@@ -76,6 +77,7 @@ export default {
 }
 
 .search-button {
+  max-width: 90px;
   height: 40px;
   margin-left: 10px;
 }

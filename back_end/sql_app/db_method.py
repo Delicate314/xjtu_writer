@@ -5,7 +5,7 @@ from . import novel_option
 
 def get_user_info(id: int, name: str):
     cursor = get_cursor()
-    sql = "SELECT * FROM user_info WHERE user_name='Admin'"
+    sql = "SELECT * FROM user_info WHERE user_name='admin'"
     cursor.execute(sql)
     rows = cursor.fetchall()
     cursor.close()
@@ -34,10 +34,10 @@ def get_all_user_info(one_length=0, offset=-1, order_by='user_id', order_way='as
 
     # Build SQL query based on offset and one_length
     if offset == -1 or one_length == 0:
-        sql = f"SELECT * FROM user_info WHERE user_name<>'Admin' {search} ORDER BY {order_by} {order_way}"
+        sql = f"SELECT * FROM user_info WHERE user_name<>'admin' {search} ORDER BY {order_by} {order_way}"
         cursor.execute(sql, search_params)
     else:
-        sql = f"SELECT * FROM user_info WHERE user_name<>'Admin' {search} ORDER BY {order_by} {order_way} LIMIT %s OFFSET %s"
+        sql = f"SELECT * FROM user_info WHERE user_name<>'admin' {search} ORDER BY {order_by} {order_way} LIMIT %s OFFSET %s"
         cursor.execute(sql, search_params + [one_length, offset])
 
     rows = cursor.fetchall()
@@ -104,7 +104,7 @@ def get_user_count(search_target='all'):
             search = "AND user_name LIKE %s"
             search_params = [f"%{search_target}%"]
     cursor = get_cursor()
-    sql = f"SELECT count(*) FROM user_info WHERE user_name<>'Admin' {search}"
+    sql = f"SELECT count(*) FROM user_info WHERE user_name<>'admin' {search}"
     cursor.execute(sql, search_params)
     rows = cursor.fetchall()[0]
     return rows
@@ -183,7 +183,7 @@ def reset_password(user_id: int, user_name: str):
         sql = "UPDATE user_info SET user_password=%s WHERE user_id=%s AND user_name=%s"
         # 执行SQL语句
         cursor.execute(sql, (default_password, user_id, user_name))
-        cursor._connection.commit()
+        cursor.connection.commit()
         return (True, f"用户 {user_name} 的密码已被重置为 {default_password}")
     except Exception as e:
         return (False, f"发生错误{e}")

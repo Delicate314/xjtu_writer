@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import SearchResults from "@/components/backend/SearchResults"; 
+import SearchResults from "@/components/backend/SearchResults";
 
 export default {
   name: "UserManage",
@@ -62,6 +62,7 @@ export default {
 }
 
 .search {
+  min-width: 400px;
   display: flex;
   align-items: center;
 }
@@ -71,7 +72,16 @@ export default {
 }
 
 .search-button {
-  height: 40px; 
+  max-width: 90px;
+  height: 40px;
   margin-left: 10px;
+}
+
+.table-container {
+  display: flex;
+  justify-content: center;
+  /* 水平居中 */
+  height: 100%;
+  /* 确保容器高度占满可用空间 */
 }
 </style>

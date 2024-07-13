@@ -22,7 +22,7 @@
       <textarea class="question-box" placeholder="针对上面的文章，输入你的问题~" v-model="question"></textarea>
       <div>
         <button @click="answer">提问</button>
-        <button @click="transit">将文本转至输入</button>
+        <button @click="transit">将生成文本转至输入</button>
         <p v-if="answer_isLoading" class="loading-text">
           请耐心等待... >.< <span class="loading-spinner"></span>
         </p>

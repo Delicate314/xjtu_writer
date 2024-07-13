@@ -272,7 +272,7 @@ async def admin_change_password(user_password: str, user_newpassword: str):
     if not Admin:
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,
-            detail="未知数据库错误"
+            detail="数据库错误"
         )
     old_password = Admin[0][2]
 
@@ -282,11 +282,11 @@ async def admin_change_password(user_password: str, user_newpassword: str):
             detail="密码错误"
         )
 
-    if not is_valid_password(user_newpassword):
-        raise HTTPException(
-            status_code=status.HTTP_400_BAD_REQUEST,
-            detail="新密码格式错误, 要求6-20位密码，含有数字、大小写字母!"
-        )
+#    if not is_valid_password(user_newpassword):
+#      raise HTTPException(
+#            status_code=status.HTTP_400_BAD_REQUEST,
+#            detail="新密码格式错误, 要求6-20位密码，含有数字、大小写字母!"
+#        )
 
     try:
         (success, info) = db_method.change_pwd(0, 'Admin', user_newpassword)
