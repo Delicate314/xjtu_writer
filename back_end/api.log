@@ -526,3 +526,43 @@
 2024-07-14 13:16:23,511 - log_requests - line:46 - INFO - rid=PGNZV9 start request path=/apis/user/ownInfo
 2024-07-14 13:16:24,235 - getOwnInfo - line:231 - DEBUG - ((21, 'hou', 'hou', 0),)
 2024-07-14 13:16:24,236 - log_requests - line:53 - INFO - rid=PGNZV9 completed_in=724.37ms status_code=200
+2024-07-14 13:16:47,148 - log_requests - line:46 - INFO - rid=OMYM9Q start request path=/apis/login
+2024-07-14 13:16:47,148 - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-14 13:16:47,149 - callback - line:623 - DEBUG - Calling on_field_name with data[0:10]
+2024-07-14 13:16:47,149 - callback - line:623 - DEBUG - Calling on_field_data with data[11:19]
+2024-07-14 13:16:47,149 - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-14 13:16:47,149 - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-14 13:16:47,149 - callback - line:623 - DEBUG - Calling on_field_name with data[20:28]
+2024-07-14 13:16:47,149 - callback - line:623 - DEBUG - Calling on_field_data with data[29:33]
+2024-07-14 13:16:47,149 - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-14 13:16:47,150 - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-14 13:16:47,150 - callback - line:623 - DEBUG - Calling on_field_name with data[34:42]
+2024-07-14 13:16:47,150 - callback - line:623 - DEBUG - Calling on_field_data with data[43:51]
+2024-07-14 13:16:47,150 - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-14 13:16:47,150 - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-14 13:16:47,455 - log_requests - line:53 - INFO - rid=OMYM9Q completed_in=307.23ms status_code=200
+2024-07-14 13:16:51,149 - log_requests - line:46 - INFO - rid=P774IK start request path=/apis/user/ownInfo
+2024-07-14 13:16:51,838 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-14 13:16:51,839 - log_requests - line:53 - INFO - rid=P774IK completed_in=689.36ms status_code=200
+2024-07-14 13:17:29,326 - log_requests - line:46 - INFO - rid=G6S9DO start request path=/apis/login/
+2024-07-14 13:17:29,327 - log_requests - line:53 - INFO - rid=G6S9DO completed_in=0.31ms status_code=200
+2024-07-14 13:17:29,350 - log_requests - line:46 - INFO - rid=GP8NYT start request path=/apis/login/
+2024-07-14 13:17:29,351 - log_requests - line:53 - INFO - rid=GP8NYT completed_in=0.56ms status_code=307
+2024-07-14 13:17:29,373 - log_requests - line:46 - INFO - rid=Q9YM3H start request path=/apis/login
+2024-07-14 13:17:29,373 - log_requests - line:53 - INFO - rid=Q9YM3H completed_in=0.31ms status_code=200
+2024-07-14 13:17:29,397 - log_requests - line:46 - INFO - rid=65BRO3 start request path=/apis/login
+2024-07-14 13:17:29,397 - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-14 13:17:29,398 - callback - line:623 - DEBUG - Calling on_field_name with data[0:8]
+2024-07-14 13:17:29,398 - callback - line:623 - DEBUG - Calling on_field_data with data[9:13]
+2024-07-14 13:17:29,398 - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-14 13:17:29,398 - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-14 13:17:29,398 - callback - line:623 - DEBUG - Calling on_field_name with data[14:22]
+2024-07-14 13:17:29,398 - callback - line:623 - DEBUG - Calling on_field_data with data[23:31]
+2024-07-14 13:17:29,399 - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-14 13:17:29,399 - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-14 13:17:29,699 - log_requests - line:53 - INFO - rid=65BRO3 completed_in=302.41ms status_code=200
+2024-07-14 13:17:29,732 - log_requests - line:46 - INFO - rid=7V74KS start request path=/apis/user/ownInfo
+2024-07-14 13:17:29,733 - log_requests - line:53 - INFO - rid=7V74KS completed_in=0.32ms status_code=200
+2024-07-14 13:17:29,754 - log_requests - line:46 - INFO - rid=V5GSX5 start request path=/apis/user/ownInfo
+2024-07-14 13:17:30,460 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-14 13:17:30,462 - log_requests - line:53 - INFO - rid=V5GSX5 completed_in=707.26ms status_code=200
