@@ -167,3 +167,222 @@
 2024-07-14 12:59:33,310 - log_requests - line:53 - INFO - rid=CE4VH3 completed_in=0.60ms status_code=307
 2024-07-14 12:59:33,662 - log_requests - line:46 - INFO - rid=Z5MKZS start request path=/apis/getNovel
 2024-07-14 12:59:34,568 - log_requests - line:53 - INFO - rid=Z5MKZS completed_in=905.10ms status_code=200
+2024-07-14 13:00:17,057 - log_requests - line:46 - INFO - rid=FWM3WF start request path=/apis/getNovel/
+2024-07-14 13:00:17,059 - log_requests - line:53 - INFO - rid=FWM3WF completed_in=0.62ms status_code=307
+2024-07-14 13:00:17,410 - log_requests - line:46 - INFO - rid=VS4IHZ start request path=/apis/getNovel
+2024-07-14 13:00:18,293 - log_requests - line:53 - INFO - rid=VS4IHZ completed_in=882.00ms status_code=200
+2024-07-14 13:04:29,189 - log_requests - line:46 - INFO - rid=MECQMB start request path=/apis/uploadfile
+2024-07-14 13:04:29,191 - callback - line:626 - DEBUG - Calling on_part_begin with no data
+2024-07-14 13:04:29,191 - callback - line:623 - DEBUG - Calling on_header_field with data[42:61]
+2024-07-14 13:04:29,192 - callback - line:623 - DEBUG - Calling on_header_value with data[63:130]
+2024-07-14 13:04:29,192 - callback - line:626 - DEBUG - Calling on_header_end with no data
+2024-07-14 13:04:29,193 - callback - line:623 - DEBUG - Calling on_header_field with data[132:144]
+2024-07-14 13:04:29,193 - callback - line:623 - DEBUG - Calling on_header_value with data[146:156]
+2024-07-14 13:04:29,193 - callback - line:626 - DEBUG - Calling on_header_end with no data
+2024-07-14 13:04:29,194 - callback - line:626 - DEBUG - Calling on_headers_finished with no data
+2024-07-14 13:04:29,195 - callback - line:623 - DEBUG - Calling on_part_data with data[160:508]
+2024-07-14 13:04:29,195 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,197 - callback - line:623 - DEBUG - Calling on_part_data with data[510:42008]
+2024-07-14 13:04:29,197 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,199 - callback - line:623 - DEBUG - Calling on_part_data with data[42010:96355]
+2024-07-14 13:04:29,200 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,201 - callback - line:623 - DEBUG - Calling on_part_data with data[96357:116545]
+2024-07-14 13:04:29,201 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,202 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,202 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,203 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,204 - callback - line:623 - DEBUG - Calling on_part_data with data[116553:130279]
+2024-07-14 13:04:29,204 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,205 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,205 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,206 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,206 - callback - line:623 - DEBUG - Calling on_part_data with data[130287:130288]
+2024-07-14 13:04:29,208 - callback - line:623 - DEBUG - Calling on_part_data with data[0:1906]
+2024-07-14 13:04:29,208 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,209 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,209 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,210 - callback - line:623 - DEBUG - Calling on_part_data with data[1912:3314]
+2024-07-14 13:04:29,210 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,211 - callback - line:623 - DEBUG - Calling on_part_data with data[3316:10467]
+2024-07-14 13:04:29,211 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,212 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,212 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,213 - callback - line:623 - DEBUG - Calling on_part_data with data[10473:19033]
+2024-07-14 13:04:29,214 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,214 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,215 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,215 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,216 - callback - line:623 - DEBUG - Calling on_part_data with data[19041:40083]
+2024-07-14 13:04:29,217 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,218 - callback - line:623 - DEBUG - Calling on_part_data with data[40085:65399]
+2024-07-14 13:04:29,219 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,219 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,220 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,220 - callback - line:623 - DEBUG - Calling on_part_data with data[65405:74137]
+2024-07-14 13:04:29,221 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,222 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,222 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,223 - callback - line:623 - DEBUG - Calling on_part_data with data[74143:75588]
+2024-07-14 13:04:29,223 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,224 - callback - line:623 - DEBUG - Calling on_part_data with data[75590:106404]
+2024-07-14 13:04:29,225 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,226 - callback - line:623 - DEBUG - Calling on_part_data with data[106406:148851]
+2024-07-14 13:04:29,227 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,227 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,228 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,229 - callback - line:623 - DEBUG - Calling on_part_data with data[148857:152706]
+2024-07-14 13:04:29,229 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,230 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,230 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,232 - callback - line:623 - DEBUG - Calling on_part_data with data[152712:224583]
+2024-07-14 13:04:29,233 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,234 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,234 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,235 - callback - line:623 - DEBUG - Calling on_part_data with data[224589:228080]
+2024-07-14 13:04:29,235 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,236 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,236 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,237 - callback - line:623 - DEBUG - Calling on_part_data with data[228086:237182]
+2024-07-14 13:04:29,237 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,238 - callback - line:623 - DEBUG - Calling on_part_data with data[237184:246429]
+2024-07-14 13:04:29,239 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,239 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,240 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,241 - callback - line:623 - DEBUG - Calling on_part_data with data[246435:251956]
+2024-07-14 13:04:29,241 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,242 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,242 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,243 - callback - line:623 - DEBUG - Calling on_part_data with data[251962:256000]
+2024-07-14 13:04:29,245 - callback - line:623 - DEBUG - Calling on_part_data with data[0:37374]
+2024-07-14 13:04:29,245 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,246 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,246 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,247 - callback - line:623 - DEBUG - Calling on_part_data with data[37380:61771]
+2024-07-14 13:04:29,248 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,250 - callback - line:623 - DEBUG - Calling on_part_data with data[61773:122044]
+2024-07-14 13:04:29,250 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,251 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,251 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,252 - callback - line:623 - DEBUG - Calling on_part_data with data[122050:122240]
+2024-07-14 13:04:29,253 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,253 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,254 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,254 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,255 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,255 - callback - line:623 - DEBUG - Calling on_part_data with data[0:2]
+2024-07-14 13:04:29,256 - callback - line:626 - DEBUG - Calling on_part_end with no data
+2024-07-14 13:04:29,256 - callback - line:626 - DEBUG - Calling on_part_begin with no data
+2024-07-14 13:04:29,257 - callback - line:623 - DEBUG - Calling on_header_field with data[122296:122315]
+2024-07-14 13:04:29,258 - callback - line:623 - DEBUG - Calling on_header_value with data[122317:122346]
+2024-07-14 13:04:29,258 - callback - line:626 - DEBUG - Calling on_header_end with no data
+2024-07-14 13:04:29,259 - callback - line:626 - DEBUG - Calling on_headers_finished with no data
+2024-07-14 13:04:29,259 - callback - line:623 - DEBUG - Calling on_part_data with data[122350:122382]
+2024-07-14 13:04:29,260 - callback - line:626 - DEBUG - Calling on_part_end with no data
+2024-07-14 13:04:29,260 - callback - line:626 - DEBUG - Calling on_part_begin with no data
+2024-07-14 13:04:29,261 - callback - line:623 - DEBUG - Calling on_header_field with data[122426:122445]
+2024-07-14 13:04:29,261 - callback - line:623 - DEBUG - Calling on_header_value with data[122447:122472]
+2024-07-14 13:04:29,262 - callback - line:626 - DEBUG - Calling on_header_end with no data
+2024-07-14 13:04:29,262 - callback - line:626 - DEBUG - Calling on_headers_finished with no data
+2024-07-14 13:04:29,263 - callback - line:623 - DEBUG - Calling on_part_data with data[122476:122477]
+2024-07-14 13:04:29,264 - callback - line:626 - DEBUG - Calling on_part_end with no data
+2024-07-14 13:04:29,264 - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-14 13:04:29,804 - log_requests - line:53 - INFO - rid=MECQMB completed_in=614.93ms status_code=200
+2024-07-14 13:04:34,840 - log_requests - line:46 - INFO - rid=HX08G3 start request path=/apis/rank
+2024-07-14 13:04:35,383 - log_requests - line:53 - INFO - rid=HX08G3 completed_in=542.17ms status_code=200
+2024-07-14 13:04:43,368 - log_requests - line:46 - INFO - rid=TOL3SA start request path=/apis/rank
+2024-07-14 13:04:43,859 - log_requests - line:53 - INFO - rid=TOL3SA completed_in=490.58ms status_code=200
+2024-07-14 13:06:03,825 - log_requests - line:46 - INFO - rid=DTPWWU start request path=/apis/rank
+2024-07-14 13:06:04,293 - log_requests - line:53 - INFO - rid=DTPWWU completed_in=468.20ms status_code=200
+2024-07-14 13:06:06,491 - log_requests - line:46 - INFO - rid=NVU9KC start request path=/apis/getNovel/
+2024-07-14 13:06:06,492 - log_requests - line:53 - INFO - rid=NVU9KC completed_in=0.64ms status_code=307
+2024-07-14 13:06:06,836 - log_requests - line:46 - INFO - rid=077JQC start request path=/apis/getNovel
+2024-07-14 13:06:07,629 - log_requests - line:53 - INFO - rid=077JQC completed_in=791.95ms status_code=200
+2024-07-14 13:06:24,754 - log_requests - line:46 - INFO - rid=OQ1IKC start request path=/apis/login/
+2024-07-14 13:06:24,755 - log_requests - line:53 - INFO - rid=OQ1IKC completed_in=0.55ms status_code=307
+2024-07-14 13:06:25,115 - log_requests - line:46 - INFO - rid=574XQN start request path=/apis/login
+2024-07-14 13:06:25,116 - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-14 13:06:25,117 - callback - line:623 - DEBUG - Calling on_field_name with data[0:8]
+2024-07-14 13:06:25,117 - callback - line:623 - DEBUG - Calling on_field_data with data[9:16]
+2024-07-14 13:06:25,117 - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-14 13:06:25,117 - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-14 13:06:25,118 - callback - line:623 - DEBUG - Calling on_field_name with data[17:25]
+2024-07-14 13:06:25,118 - callback - line:623 - DEBUG - Calling on_field_data with data[26:33]
+2024-07-14 13:06:25,118 - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-14 13:06:25,118 - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-14 13:06:25,419 - log_requests - line:53 - INFO - rid=574XQN completed_in=303.66ms status_code=200
+2024-07-14 13:06:27,922 - log_requests - line:46 - INFO - rid=0I2EL5 start request path=/apis/rank
+2024-07-14 13:06:28,392 - log_requests - line:53 - INFO - rid=0I2EL5 completed_in=469.64ms status_code=200
+2024-07-14 13:06:29,726 - log_requests - line:46 - INFO - rid=KF2XTK start request path=/apis/getNovel/
+2024-07-14 13:06:29,727 - log_requests - line:53 - INFO - rid=KF2XTK completed_in=0.60ms status_code=307
+2024-07-14 13:06:30,090 - log_requests - line:46 - INFO - rid=RMRQC3 start request path=/apis/getNovel
+2024-07-14 13:06:30,897 - log_requests - line:53 - INFO - rid=RMRQC3 completed_in=807.15ms status_code=200
+2024-07-14 13:06:32,564 - log_requests - line:46 - INFO - rid=IS5Y3S start request path=/apis/rank
+2024-07-14 13:06:33,045 - log_requests - line:53 - INFO - rid=IS5Y3S completed_in=480.08ms status_code=200
+2024-07-14 13:06:34,087 - log_requests - line:46 - INFO - rid=5GNKWD start request path=/apis/getNovel/
+2024-07-14 13:06:34,089 - log_requests - line:53 - INFO - rid=5GNKWD completed_in=0.59ms status_code=307
+2024-07-14 13:06:34,786 - log_requests - line:46 - INFO - rid=1O6A9G start request path=/apis/getNovel
+2024-07-14 13:06:35,630 - log_requests - line:53 - INFO - rid=1O6A9G completed_in=843.28ms status_code=200
+2024-07-14 13:06:38,888 - log_requests - line:46 - INFO - rid=E78JAO start request path=/apis/rank
+2024-07-14 13:06:39,384 - log_requests - line:53 - INFO - rid=E78JAO completed_in=495.50ms status_code=200
+2024-07-14 13:06:42,097 - log_requests - line:46 - INFO - rid=LL6NY3 start request path=/apis/getNovel/
+2024-07-14 13:06:42,098 - log_requests - line:53 - INFO - rid=LL6NY3 completed_in=0.64ms status_code=307
+2024-07-14 13:06:42,439 - log_requests - line:46 - INFO - rid=ABMUUQ start request path=/apis/getNovel
+2024-07-14 13:06:43,228 - log_requests - line:53 - INFO - rid=ABMUUQ completed_in=788.68ms status_code=200
+2024-07-14 13:06:44,091 - log_requests - line:46 - INFO - rid=XBANP0 start request path=/apis/rank
+2024-07-14 13:06:44,557 - log_requests - line:53 - INFO - rid=XBANP0 completed_in=466.06ms status_code=200
+2024-07-14 13:06:55,200 - log_requests - line:46 - INFO - rid=4S3TRT start request path=/apis/rank
+2024-07-14 13:06:55,201 - log_requests - line:53 - INFO - rid=4S3TRT completed_in=0.35ms status_code=200
+2024-07-14 13:06:55,227 - log_requests - line:46 - INFO - rid=IAWBT1 start request path=/apis/rank
+2024-07-14 13:06:55,682 - log_requests - line:53 - INFO - rid=IAWBT1 completed_in=454.92ms status_code=200
+2024-07-14 13:07:26,062 - log_requests - line:46 - INFO - rid=0IXHQI start request path=/apis/login/
+2024-07-14 13:07:26,063 - log_requests - line:53 - INFO - rid=0IXHQI completed_in=0.60ms status_code=307
+2024-07-14 13:07:26,088 - log_requests - line:46 - INFO - rid=HHGAU0 start request path=/apis/login
+2024-07-14 13:07:26,090 - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-14 13:07:26,090 - callback - line:623 - DEBUG - Calling on_field_name with data[0:8]
+2024-07-14 13:07:26,090 - callback - line:623 - DEBUG - Calling on_field_data with data[9:12]
+2024-07-14 13:07:26,091 - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-14 13:07:26,091 - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-14 13:07:26,092 - callback - line:623 - DEBUG - Calling on_field_name with data[13:21]
+2024-07-14 13:07:26,092 - callback - line:623 - DEBUG - Calling on_field_data with data[22:25]
+2024-07-14 13:07:26,092 - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-14 13:07:26,093 - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-14 13:07:26,384 - log_requests - line:53 - INFO - rid=HHGAU0 completed_in=295.45ms status_code=200
+2024-07-14 13:07:26,385 - log_requests - line:46 - INFO - rid=49469E start request path=/apis/login/
+2024-07-14 13:07:26,387 - log_requests - line:53 - INFO - rid=49469E completed_in=1.08ms status_code=307
+2024-07-14 13:07:27,462 - log_requests - line:46 - INFO - rid=MGZWSD start request path=/apis/login
+2024-07-14 13:07:27,463 - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-14 13:07:27,463 - callback - line:623 - DEBUG - Calling on_field_name with data[0:8]
+2024-07-14 13:07:27,463 - callback - line:623 - DEBUG - Calling on_field_data with data[9:16]
+2024-07-14 13:07:27,463 - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-14 13:07:27,463 - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-14 13:07:27,464 - callback - line:623 - DEBUG - Calling on_field_name with data[17:25]
+2024-07-14 13:07:27,464 - callback - line:623 - DEBUG - Calling on_field_data with data[26:33]
+2024-07-14 13:07:27,464 - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-14 13:07:27,464 - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-14 13:07:27,795 - log_requests - line:53 - INFO - rid=MGZWSD completed_in=332.85ms status_code=200
+2024-07-14 13:07:31,399 - log_requests - line:46 - INFO - rid=GLNTBF start request path=/apis/rank
+2024-07-14 13:07:31,864 - log_requests - line:53 - INFO - rid=GLNTBF completed_in=463.44ms status_code=200
+2024-07-14 13:07:35,064 - log_requests - line:46 - INFO - rid=Z9ESUO start request path=/apis/getNovel/
+2024-07-14 13:07:35,065 - log_requests - line:53 - INFO - rid=Z9ESUO completed_in=0.59ms status_code=307
+2024-07-14 13:07:35,424 - log_requests - line:46 - INFO - rid=NKL45C start request path=/apis/getNovel
+2024-07-14 13:07:36,235 - log_requests - line:53 - INFO - rid=NKL45C completed_in=810.49ms status_code=200
+2024-07-14 13:08:21,604 - log_requests - line:46 - INFO - rid=22SYWX start request path=/apis/getNovel/
+2024-07-14 13:08:21,605 - log_requests - line:53 - INFO - rid=22SYWX completed_in=0.58ms status_code=307
+2024-07-14 13:08:21,982 - log_requests - line:46 - INFO - rid=319PMF start request path=/apis/getNovel
+2024-07-14 13:08:22,775 - log_requests - line:53 - INFO - rid=319PMF completed_in=792.59ms status_code=200
+2024-07-14 13:08:26,310 - log_requests - line:46 - INFO - rid=BO3SI5 start request path=/apis/rank
+2024-07-14 13:08:26,764 - log_requests - line:53 - INFO - rid=BO3SI5 completed_in=453.02ms status_code=200
+2024-07-14 13:08:32,546 - log_requests - line:46 - INFO - rid=TJ1GJJ start request path=/apis/getNovel/
+2024-07-14 13:08:32,548 - log_requests - line:53 - INFO - rid=TJ1GJJ completed_in=0.64ms status_code=307
+2024-07-14 13:08:32,901 - log_requests - line:46 - INFO - rid=D3FHVL start request path=/apis/getNovel
+2024-07-14 13:08:33,639 - log_requests - line:53 - INFO - rid=D3FHVL completed_in=737.23ms status_code=200
+2024-07-14 13:08:44,239 - log_requests - line:46 - INFO - rid=5R5GMT start request path=/apis/rank
+2024-07-14 13:08:44,721 - log_requests - line:53 - INFO - rid=5R5GMT completed_in=481.71ms status_code=200
+2024-07-14 13:08:45,904 - log_requests - line:46 - INFO - rid=RIFBU1 start request path=/apis/getNovel/
+2024-07-14 13:08:45,905 - log_requests - line:53 - INFO - rid=RIFBU1 completed_in=0.59ms status_code=307
+2024-07-14 13:08:46,260 - log_requests - line:46 - INFO - rid=LQ2ALW start request path=/apis/getNovel
+2024-07-14 13:08:47,154 - log_requests - line:53 - INFO - rid=LQ2ALW completed_in=894.00ms status_code=200
+2024-07-14 13:08:50,772 - log_requests - line:46 - INFO - rid=X73T7C start request path=/apis/getNovel/
+2024-07-14 13:08:50,773 - log_requests - line:53 - INFO - rid=X73T7C completed_in=0.60ms status_code=307
+2024-07-14 13:08:51,128 - log_requests - line:46 - INFO - rid=KI8N6W start request path=/apis/getNovel
+2024-07-14 13:08:52,004 - log_requests - line:53 - INFO - rid=KI8N6W completed_in=874.97ms status_code=200

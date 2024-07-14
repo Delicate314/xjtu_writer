@@ -59,7 +59,7 @@ export default {
     },
     computed: {
         formattedContent() {
-            return this.novel.content(/\n/g, '<br/>');
+            return this.novel.content;
         }
     },
     methods: {
