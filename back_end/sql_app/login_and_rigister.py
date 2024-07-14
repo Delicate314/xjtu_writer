@@ -1,9 +1,6 @@
-import pymysql
-from fastapi import FastAPI, HTTPException,Depends
-from pydantic import BaseModel, Field, field_validator
-import re
-from fastapi.middleware.cors import CORSMiddleware
-from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
+from fastapi import HTTPException,Depends
+from pydantic import BaseModel
+from fastapi.security import OAuth2PasswordRequestForm
 import jwt
 from datetime import timedelta,timezone,datetime
 from .connect_sql import get_db
