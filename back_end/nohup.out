@@ -2378,3 +2378,9 @@ INFO:     127.0.0.1:39608 - "POST /apis/rank HTTP/1.0" 200 OK
 INFO:     127.0.0.1:42316 - "POST /apis/rank HTTP/1.0" 200 OK
 INFO:     127.0.0.1:42320 - "POST /apis/rank HTTP/1.0" 200 OK
 INFO:     127.0.0.1:49204 - "POST /apis/rank HTTP/1.0" 200 OK
+INFO:     Will watch for changes in these directories: ['/home/xjtu_writer_2/xjtu_writer/back_end']
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [21190] using WatchFiles
+INFO:     Started server process [21195]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.

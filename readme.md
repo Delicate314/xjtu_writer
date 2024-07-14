@@ -4,7 +4,7 @@
 cd /home
 source venv/bin/activate
 ### 启动命令
-cd /home/xjtu_writer/xjtu_writer/back_end
+cd /home/xjtu_writer_2/xjtu_writer/back_end
 uvicorn sql_app.main:app --reload --port 8000
 后台启动
 nohup uvicorn sql_app.main:app --reload --port 8000 &
