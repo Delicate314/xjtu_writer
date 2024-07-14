@@ -516,3 +516,13 @@
 2024-07-14 13:14:50,080 - log_requests - line:46 - INFO - rid=3RNQ1I start request path=/apis/user/ownInfo
 2024-07-14 13:14:50,734 - getOwnInfo - line:231 - DEBUG - ((21, 'hou', 'hou', 0),)
 2024-07-14 13:14:50,735 - log_requests - line:53 - INFO - rid=3RNQ1I completed_in=655.11ms status_code=200
+2024-07-14 13:15:51,894 - log_requests - line:46 - INFO - rid=FVEKE0 start request path=/apis/user/ownInfo
+2024-07-14 13:15:51,895 - log_requests - line:53 - INFO - rid=FVEKE0 completed_in=0.33ms status_code=200
+2024-07-14 13:15:51,922 - log_requests - line:46 - INFO - rid=Y4EFOV start request path=/apis/user/ownInfo
+2024-07-14 13:15:52,621 - getOwnInfo - line:231 - DEBUG - ((21, 'hou', 'hou', 0),)
+2024-07-14 13:15:52,622 - log_requests - line:53 - INFO - rid=Y4EFOV completed_in=699.62ms status_code=200
+2024-07-14 13:16:23,476 - log_requests - line:46 - INFO - rid=SW695G start request path=/apis/user/ownInfo
+2024-07-14 13:16:23,477 - log_requests - line:53 - INFO - rid=SW695G completed_in=0.35ms status_code=200
+2024-07-14 13:16:23,511 - log_requests - line:46 - INFO - rid=PGNZV9 start request path=/apis/user/ownInfo
+2024-07-14 13:16:24,235 - getOwnInfo - line:231 - DEBUG - ((21, 'hou', 'hou', 0),)
+2024-07-14 13:16:24,236 - log_requests - line:53 - INFO - rid=PGNZV9 completed_in=724.37ms status_code=200
