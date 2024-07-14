@@ -134,7 +134,7 @@ body {
 .novel-detail-container {
     display: flex;
     justify-content: center;
-    margin: 20px;
+    margin: 30px;
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -202,6 +202,7 @@ body {
     border-radius: 8px;
     border: 1px solid #ccc;
     font-family: 'Arial', sans-serif;
+    font-size: 18px;
 }
 
 .footer_ask,
