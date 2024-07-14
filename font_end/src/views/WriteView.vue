@@ -7,6 +7,7 @@
     <textarea class="input-box" placeholder="演绎你的故事(๑•́ ₃ •̀๑)ｴｰ,如:小明今天去扔垃圾,结果摔在了水坑里/一个勇者斗恶龙的故事"
       v-model="content"></textarea>
     <div>
+      <button @click="clear">清空</button>
       <button @click="write">创作</button>
       <button @click="upload">发布到社区</button>
       <button @click="import_novel">导入本地文章</button>
@@ -96,6 +97,7 @@ export default {
         const response = await axios.post("http://121.36.55.149:80/apis/answer_request", requestData);
         console.log('Response:', response);
         this.answerContent = response.data;
+        this.answer_isLoading = false;
       }
       catch (error) {
         console.error("Error generating text:", error);
@@ -142,6 +144,9 @@ export default {
     transit() {
       this.content = this.generatedContent;
       this.generatedContent = '';
+    },
+    clear() {
+      this.content = '';
     },
     import_novel() {
       this.$refs.fileInput.click();
@@ -260,6 +265,31 @@ button:hover {
 
   100% {
     transform: rotate(360deg);
+  }
+}
+
+/* Add media queries for smaller screens */
+@media (max-width: 768px) {
+  textarea {
+    width: 85%;
+    font-size: 14px;
+  }
+
+  button {
+    width: 50%;
+    margin: 10px 0;
+    font-size: 16px;
+  }
+
+  textarea.input-box,
+  textarea.question-box,
+  textarea.output-box {
+    height: 100px;
+    width: 85%;
+  }
+
+  textarea.output-box {
+    height: 150px;
   }
 }
 </style>

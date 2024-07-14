@@ -51,20 +51,24 @@ export default {
           try {
             const response = await axios.post('http://121.36.55.149:80/apis/register/', {
               user_name: this.form.username,
-              user_pwd: this.form.password,
+              user_pwd: String(this.form.password),
             });
             console.log(response);
             if (response.data.success) {
               this.$message.success('注册成功');
               this.$router.push('/login');
             } else {
-              MessageBox.alert(`注册失败: ${response.data.detail}`, '错误', {
+              MessageBox.alert(`注册失败: ${response.data.msg}`, '错误', {
                 confirmButtonText: '确定',
                 type: 'error',
               });
             }
           } catch (error) {
-            MessageBox.alert(`注册失败，请重试！`, '错误', {
+            // MessageBox.alert(`注册失败，请重试！`, '错误', {
+            //   confirmButtonText: '确定',
+            //   type: 'error',
+            // });
+            MessageBox.alert(`密码需要在6-20位且包含数字、大小写字母!`, '注册失败', {
               confirmButtonText: '确定',
               type: 'error',
             });
@@ -157,5 +161,30 @@ export default {
 
 .el-form-item input:focus {
   background: rgba(255, 255, 255, 1);
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+  .register-card {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .register-title {
+    font-size: 20px;
+  }
+
+  .el-button,
+  .el-form-item input {
+    font-size: 14px;
+  }
+
+  .el-form-item {
+    margin-bottom: 15px;
+  }
+
+  .extra-options {
+    justify-content: center;
+  }
 }
 </style>

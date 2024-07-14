@@ -10,20 +10,11 @@
         </div>
         <el-form :model="form" status-icon :rules="rules" ref="form">
           <el-form-item prop="username">
-            <el-input
-              v-model="form.username"
-              placeholder="用户名"
-              @keyup.enter.native="focusPasswordInput"
-            ></el-input>
+            <el-input v-model="form.username" placeholder="用户名" @keyup.enter.native="focusPasswordInput"></el-input>
           </el-form-item>
           <el-form-item prop="password">
-            <el-input
-              ref="password"
-              type="password"
-              v-model="form.password"
-              placeholder="密码"
-              @keyup.enter.native="login"
-            ></el-input>
+            <el-input ref="password" type="password" v-model="form.password" placeholder="密码"
+              @keyup.enter.native="login"></el-input>
           </el-form-item>
           <el-form-item>
             <el-button type="primary" @click="login">登录</el-button>
@@ -217,5 +208,34 @@ export default {
 
 .el-form-item input:focus {
   background: rgba(255, 255, 255, 1);
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+  .main-title {
+    font-size: 36px;
+  }
+
+  .login-card {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .login-title {
+    font-size: 20px;
+  }
+
+  .el-button,
+  .el-form-item input {
+    font-size: 14px;
+  }
+
+  .el-form-item {
+    margin-bottom: 15px;
+  }
+
+  .extra-options {
+    justify-content: center;
+  }
 }
 </style>

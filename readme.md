@@ -8,8 +8,11 @@ cd /home/xjtu_writer_2/xjtu_writer/back_end
 uvicorn sql_app.main:app --reload --port 8000
 后台启动
 nohup uvicorn sql_app.main:app --reload --port 8000 &
+nohup npm run serve &
+exit(一定要运行，否则关闭终端后还是没了)
 后台停止
 lsof -i:8000
+lsof -i:8080
 kill -9  进程号PID
 ### 在浏览器访问云服务器上的文档
 http://121.36.55.149/docs
