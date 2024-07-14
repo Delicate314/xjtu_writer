@@ -7,6 +7,7 @@
     <textarea class="input-box" placeholder="演绎你的故事(๑•́ ₃ •̀๑)ｴｰ,如:小明今天去扔垃圾,结果摔在了水坑里/一个勇者斗恶龙的故事"
       v-model="content"></textarea>
     <div>
+      <button @click="clear">清空</button>
       <button @click="write">创作</button>
       <button @click="upload">发布到社区</button>
       <button @click="import_novel">导入本地文章</button>
@@ -144,6 +145,9 @@ export default {
       this.content = this.generatedContent;
       this.generatedContent = '';
     },
+    clear() {
+      this.content = '';
+    },
     import_novel() {
       this.$refs.fileInput.click();
     },
@@ -270,6 +274,7 @@ button:hover {
     width: 85%;
     font-size: 14px;
   }
+
   button {
     width: 50%;
     margin: 10px 0;
