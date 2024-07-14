@@ -10,7 +10,7 @@
                     <h2 class="head">标题：{{ novel.novel_title }}</h2>
                     <h3 class="footer">作者：{{ novel.writer_name }}</h3>
                     <p class="footer">点击量：{{ novel.view_count }}</p>
-                    <textarea class="main" v-model="novel.content"></textarea>
+                    <textarea class="main" v-html="formattedContent"></textarea>
                 </div>
                 <div class="pagination">
                     <button @click="prevPage" :disabled="page === 1">上一页</button>
@@ -23,7 +23,7 @@
                 </div>
             </div>
             <div class="novel-detail-right" v-if="showAISection">
-                <textarea placeholder="向AI提问" v-model="question" class="footer_ask"></textarea>
+                <textarea placeholder="针对文章内容向AI提问" v-model="question" class="footer_ask"></textarea>
                 <button @click="ask" class='footer_commit'>提问</button>
                 <textarea class="footer_answer" v-model="answer" readonly placeholder="生成的回答将在此显示"></textarea>
             </div>
@@ -56,6 +56,11 @@ export default {
     },
     mounted() {
         this.getnovel();
+    },
+    computed: {
+        formattedContent() {
+            return this.novel.content(/\n/g, '<br/>');
+        }
     },
     methods: {
         async ask() {
@@ -144,14 +149,18 @@ body {
 .novel-detail-left {
     flex: 3;
     margin-right: 20px;
-    transition: margin-right 0.3s ease; /* 添加过渡效果 */
+    transition: margin-right 0.3s ease;
+    /* 添加过渡效果 */
 }
 
 .novel-detail-right {
     flex: 1;
-    transition: opacity 0.3s ease; /* 添加过渡效果 */
-    opacity: 0; /* 默认隐藏 */
-    pointer-events: none; /* 默认不可交互 */
+    transition: opacity 0.3s ease;
+    /* 添加过渡效果 */
+    opacity: 0;
+    /* 默认隐藏 */
+    pointer-events: none;
+    /* 默认不可交互 */
 }
 
 .novel-detail-container.shifted .novel-detail-left {
@@ -159,15 +168,18 @@ body {
 }
 
 .novel-detail-container.shifted .novel-detail-right {
-    opacity: 1; /* 显示AI部分 */
-    pointer-events: auto; /* 可交互 */
+    opacity: 1;
+    /* 显示AI部分 */
+    pointer-events: auto;
+    /* 可交互 */
 }
 
 .info {
     margin-bottom: 20px;
 }
 
-.head, .footer {
+.head,
+.footer {
     margin: 10px 0;
     color: #333;
 }
@@ -192,7 +204,8 @@ body {
     font-family: 'Arial', sans-serif;
 }
 
-.footer_ask, .footer_answer {
+.footer_ask,
+.footer_answer {
     width: 100%;
     height: 100px;
     margin: 10px 0;

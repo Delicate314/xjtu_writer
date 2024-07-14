@@ -57,3 +57,113 @@
 2024-07-14 11:46:45,565 - log_requests - line:44 - INFO - rid=GINJ5V start request path=/apis/user/deleteNovel
 2024-07-14 11:46:46,470 - delete_novel - line:233 - DEBUG - file_path = /home/xjtu_writer/xjtu_writer/novel/1/36.txt
 2024-07-14 11:46:46,470 - log_requests - line:51 - INFO - rid=GINJ5V completed_in=904.81ms status_code=500
+2024-07-14 12:43:58,416 - log_requests - line:46 - INFO - rid=DVBJ2V start request path=/docs
+2024-07-14 12:43:58,417 - log_requests - line:53 - INFO - rid=DVBJ2V completed_in=0.73ms status_code=200
+2024-07-14 12:43:58,878 - log_requests - line:46 - INFO - rid=34SWR3 start request path=/openapi.json
+2024-07-14 12:43:58,908 - log_requests - line:53 - INFO - rid=34SWR3 completed_in=29.07ms status_code=200
+2024-07-14 12:46:34,286 - log_requests - line:46 - INFO - rid=IC8GV1 start request path=/apis/login/
+2024-07-14 12:46:34,286 - log_requests - line:53 - INFO - rid=IC8GV1 completed_in=0.57ms status_code=307
+2024-07-14 12:46:34,644 - log_requests - line:46 - INFO - rid=SA4QYW start request path=/apis/login
+2024-07-14 12:46:34,645 - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-14 12:46:34,646 - callback - line:623 - DEBUG - Calling on_field_name with data[0:8]
+2024-07-14 12:46:34,647 - callback - line:623 - DEBUG - Calling on_field_data with data[9:16]
+2024-07-14 12:46:34,647 - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-14 12:46:34,648 - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-14 12:46:34,648 - callback - line:623 - DEBUG - Calling on_field_name with data[17:25]
+2024-07-14 12:46:34,649 - callback - line:623 - DEBUG - Calling on_field_data with data[26:33]
+2024-07-14 12:46:34,649 - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-14 12:46:34,650 - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-14 12:46:34,927 - log_requests - line:53 - INFO - rid=SA4QYW completed_in=282.68ms status_code=200
+2024-07-14 12:46:41,728 - log_requests - line:46 - INFO - rid=ACLE34 start request path=/apis/search
+2024-07-14 12:46:42,199 - log_requests - line:53 - INFO - rid=ACLE34 completed_in=470.11ms status_code=200
+2024-07-14 12:46:45,759 - log_requests - line:46 - INFO - rid=64QHQ5 start request path=/apis/rank
+2024-07-14 12:46:46,255 - log_requests - line:53 - INFO - rid=64QHQ5 completed_in=495.76ms status_code=200
+2024-07-14 12:47:17,459 - log_requests - line:46 - INFO - rid=4VNXU2 start request path=/apis/search
+2024-07-14 12:47:17,950 - log_requests - line:53 - INFO - rid=4VNXU2 completed_in=490.20ms status_code=200
+2024-07-14 12:49:08,712 - log_requests - line:46 - INFO - rid=7957OI start request path=/apis/rank
+2024-07-14 12:49:09,234 - log_requests - line:53 - INFO - rid=7957OI completed_in=521.37ms status_code=200
+2024-07-14 12:49:12,173 - log_requests - line:46 - INFO - rid=XIQJ5T start request path=/apis/rank
+2024-07-14 12:49:12,627 - log_requests - line:53 - INFO - rid=XIQJ5T completed_in=453.37ms status_code=200
+2024-07-14 12:49:16,717 - log_requests - line:46 - INFO - rid=5V26Q3 start request path=/apis/rank
+2024-07-14 12:49:17,177 - log_requests - line:53 - INFO - rid=5V26Q3 completed_in=459.42ms status_code=200
+2024-07-14 12:49:20,047 - log_requests - line:46 - INFO - rid=KWLDWP start request path=/apis/getNovel/
+2024-07-14 12:49:20,048 - log_requests - line:53 - INFO - rid=KWLDWP completed_in=0.64ms status_code=307
+2024-07-14 12:49:20,385 - log_requests - line:46 - INFO - rid=F6X7Z8 start request path=/apis/getNovel
+2024-07-14 12:49:21,155 - log_requests - line:53 - INFO - rid=F6X7Z8 completed_in=769.24ms status_code=200
+2024-07-14 12:49:30,032 - log_requests - line:46 - INFO - rid=K80MYK start request path=/apis/getNovel/
+2024-07-14 12:49:30,034 - log_requests - line:53 - INFO - rid=K80MYK completed_in=0.63ms status_code=307
+2024-07-14 12:49:30,346 - log_requests - line:46 - INFO - rid=GEZ0P7 start request path=/apis/getNovel
+2024-07-14 12:49:31,118 - log_requests - line:53 - INFO - rid=GEZ0P7 completed_in=771.22ms status_code=200
+2024-07-14 12:49:33,780 - log_requests - line:46 - INFO - rid=JX7Q5T start request path=/apis/getNovel/
+2024-07-14 12:49:33,782 - log_requests - line:53 - INFO - rid=JX7Q5T completed_in=0.62ms status_code=307
+2024-07-14 12:49:34,106 - log_requests - line:46 - INFO - rid=MZ5DDJ start request path=/apis/getNovel
+2024-07-14 12:49:34,935 - log_requests - line:53 - INFO - rid=MZ5DDJ completed_in=829.13ms status_code=200
+2024-07-14 12:49:36,452 - log_requests - line:46 - INFO - rid=8JBUHL start request path=/apis/getNovel/
+2024-07-14 12:49:36,454 - log_requests - line:53 - INFO - rid=8JBUHL completed_in=0.65ms status_code=307
+2024-07-14 12:49:36,780 - log_requests - line:46 - INFO - rid=3DLJBQ start request path=/apis/getNovel
+2024-07-14 12:49:37,549 - log_requests - line:53 - INFO - rid=3DLJBQ completed_in=768.06ms status_code=200
+2024-07-14 12:49:39,134 - log_requests - line:46 - INFO - rid=XI168T start request path=/apis/getNovel/
+2024-07-14 12:49:39,135 - log_requests - line:53 - INFO - rid=XI168T completed_in=0.62ms status_code=307
+2024-07-14 12:49:39,467 - log_requests - line:46 - INFO - rid=YN69BV start request path=/apis/getNovel
+2024-07-14 12:49:40,275 - log_requests - line:53 - INFO - rid=YN69BV completed_in=807.85ms status_code=200
+2024-07-14 12:50:33,977 - log_requests - line:46 - INFO - rid=B3XZY7 start request path=/apis/getNovel/
+2024-07-14 12:50:33,977 - log_requests - line:53 - INFO - rid=B3XZY7 completed_in=0.58ms status_code=307
+2024-07-14 12:50:34,303 - log_requests - line:46 - INFO - rid=ACLJ8Z start request path=/apis/getNovel
+2024-07-14 12:50:35,042 - log_requests - line:53 - INFO - rid=ACLJ8Z completed_in=738.27ms status_code=200
+2024-07-14 12:51:16,474 - log_requests - line:46 - INFO - rid=NVX2FB start request path=/apis/getNovel/
+2024-07-14 12:51:16,475 - log_requests - line:53 - INFO - rid=NVX2FB completed_in=0.58ms status_code=307
+2024-07-14 12:51:16,800 - log_requests - line:46 - INFO - rid=3PJC7H start request path=/apis/getNovel
+2024-07-14 12:51:17,528 - log_requests - line:53 - INFO - rid=3PJC7H completed_in=727.56ms status_code=200
+2024-07-14 12:51:19,919 - log_requests - line:46 - INFO - rid=RYNGRY start request path=/apis/getNovel/
+2024-07-14 12:51:19,920 - log_requests - line:53 - INFO - rid=RYNGRY completed_in=0.61ms status_code=307
+2024-07-14 12:51:20,242 - log_requests - line:46 - INFO - rid=0F4X02 start request path=/apis/getNovel
+2024-07-14 12:51:21,060 - log_requests - line:53 - INFO - rid=0F4X02 completed_in=817.32ms status_code=200
+2024-07-14 12:53:49,739 - log_requests - line:46 - INFO - rid=ZQA9F4 start request path=/apis/getNovel/
+2024-07-14 12:53:49,741 - log_requests - line:53 - INFO - rid=ZQA9F4 completed_in=0.63ms status_code=307
+2024-07-14 12:53:50,260 - log_requests - line:46 - INFO - rid=6KLXMZ start request path=/apis/getNovel
+2024-07-14 12:53:51,063 - log_requests - line:53 - INFO - rid=6KLXMZ completed_in=801.80ms status_code=200
+2024-07-14 12:54:06,535 - log_requests - line:46 - INFO - rid=2H8SBP start request path=/apis/getNovel/
+2024-07-14 12:54:06,536 - log_requests - line:53 - INFO - rid=2H8SBP completed_in=0.89ms status_code=307
+2024-07-14 12:54:06,854 - log_requests - line:46 - INFO - rid=AQZB3O start request path=/apis/getNovel
+2024-07-14 12:54:07,635 - log_requests - line:53 - INFO - rid=AQZB3O completed_in=780.83ms status_code=200
+2024-07-14 12:54:10,060 - log_requests - line:46 - INFO - rid=Q9KRBI start request path=/apis/getNovel/
+2024-07-14 12:54:10,061 - log_requests - line:53 - INFO - rid=Q9KRBI completed_in=0.59ms status_code=307
+2024-07-14 12:54:10,382 - log_requests - line:46 - INFO - rid=FNVPAM start request path=/apis/getNovel
+2024-07-14 12:54:11,239 - log_requests - line:53 - INFO - rid=FNVPAM completed_in=856.46ms status_code=200
+2024-07-14 12:59:12,120 - log_requests - line:46 - INFO - rid=R2REXR start request path=/apis/login/
+2024-07-14 12:59:12,121 - log_requests - line:53 - INFO - rid=R2REXR completed_in=0.76ms status_code=307
+2024-07-14 12:59:12,502 - log_requests - line:46 - INFO - rid=1062N3 start request path=/apis/login
+2024-07-14 12:59:12,503 - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-14 12:59:12,504 - callback - line:623 - DEBUG - Calling on_field_name with data[0:8]
+2024-07-14 12:59:12,504 - callback - line:623 - DEBUG - Calling on_field_data with data[9:16]
+2024-07-14 12:59:12,504 - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-14 12:59:12,505 - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-14 12:59:12,505 - callback - line:623 - DEBUG - Calling on_field_name with data[17:25]
+2024-07-14 12:59:12,506 - callback - line:623 - DEBUG - Calling on_field_data with data[26:33]
+2024-07-14 12:59:12,506 - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-14 12:59:12,506 - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-14 12:59:12,811 - log_requests - line:53 - INFO - rid=1062N3 completed_in=308.67ms status_code=200
+2024-07-14 12:59:15,886 - log_requests - line:46 - INFO - rid=82GC95 start request path=/apis/rank
+2024-07-14 12:59:16,354 - log_requests - line:53 - INFO - rid=82GC95 completed_in=467.81ms status_code=200
+2024-07-14 12:59:17,232 - log_requests - line:46 - INFO - rid=SEUDMP start request path=/apis/getNovel/
+2024-07-14 12:59:17,233 - log_requests - line:53 - INFO - rid=SEUDMP completed_in=0.62ms status_code=307
+2024-07-14 12:59:17,596 - log_requests - line:46 - INFO - rid=9GZ8MZ start request path=/apis/getNovel
+2024-07-14 12:59:18,336 - log_requests - line:53 - INFO - rid=9GZ8MZ completed_in=740.01ms status_code=200
+2024-07-14 12:59:21,934 - log_requests - line:46 - INFO - rid=PKZZC5 start request path=/apis/getNovel/
+2024-07-14 12:59:21,935 - log_requests - line:53 - INFO - rid=PKZZC5 completed_in=0.60ms status_code=307
+2024-07-14 12:59:22,286 - log_requests - line:46 - INFO - rid=7V1XLW start request path=/apis/getNovel
+2024-07-14 12:59:23,081 - log_requests - line:53 - INFO - rid=7V1XLW completed_in=794.67ms status_code=200
+2024-07-14 12:59:24,060 - log_requests - line:46 - INFO - rid=8WESL4 start request path=/apis/getNovel/
+2024-07-14 12:59:24,061 - log_requests - line:53 - INFO - rid=8WESL4 completed_in=0.62ms status_code=307
+2024-07-14 12:59:24,411 - log_requests - line:46 - INFO - rid=ULFV26 start request path=/apis/getNovel
+2024-07-14 12:59:25,181 - log_requests - line:53 - INFO - rid=ULFV26 completed_in=769.95ms status_code=200
+2024-07-14 12:59:26,463 - log_requests - line:46 - INFO - rid=JA3JQS start request path=/apis/rank
+2024-07-14 12:59:26,933 - log_requests - line:53 - INFO - rid=JA3JQS completed_in=468.90ms status_code=200
+2024-07-14 12:59:28,957 - log_requests - line:46 - INFO - rid=YEVBG6 start request path=/apis/getNovel/
+2024-07-14 12:59:28,958 - log_requests - line:53 - INFO - rid=YEVBG6 completed_in=0.60ms status_code=307
+2024-07-14 12:59:29,690 - log_requests - line:46 - INFO - rid=OL8173 start request path=/apis/getNovel
+2024-07-14 12:59:30,584 - log_requests - line:53 - INFO - rid=OL8173 completed_in=894.18ms status_code=200
+2024-07-14 12:59:33,308 - log_requests - line:46 - INFO - rid=CE4VH3 start request path=/apis/getNovel/
+2024-07-14 12:59:33,310 - log_requests - line:53 - INFO - rid=CE4VH3 completed_in=0.60ms status_code=307
+2024-07-14 12:59:33,662 - log_requests - line:46 - INFO - rid=Z5MKZS start request path=/apis/getNovel
+2024-07-14 12:59:34,568 - log_requests - line:53 - INFO - rid=Z5MKZS completed_in=905.10ms status_code=200

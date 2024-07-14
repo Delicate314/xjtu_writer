@@ -17,7 +17,7 @@
             <tr>
               <th>小说标题</th>
               <th>作者名</th>
-              <th>操作</th>
+              <th>下载</th>
             </tr>
           </thead>
           <tbody>
