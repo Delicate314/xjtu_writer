@@ -9,6 +9,7 @@ uvicorn sql_app.main:app --reload --port 8000
 后台启动
 nohup uvicorn sql_app.main:app --reload --port 8000 &
 nohup npm run serve &
+exit(一定要运行，否则关闭终端后还是没了)
 后台停止
 lsof -i:8000
 lsof -i:8080
