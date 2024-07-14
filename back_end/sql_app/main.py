@@ -217,13 +217,13 @@ async def release_novel(
 ):
     return await novel_option.release_novel(novel, user_id, novel_title)
 
-@app.post("/apis/write_request", tags=["AI写小说"],summary="用户向服务器发送AI写小说请求")
+@app.post("/apis/write_request", tags=["AI操作"],summary="用户向服务器发送AI写小说请求")
 async def ai_write_novel(contents:Write_request ):
     contents = contents.contents
     response = ai01.call_with_messages(contents)
     return response
 
-@app.post("/apis/answer_request", response_model=str , tags=["AI回答问题"],summary="用户向服务器发送让AI回答问题的请求")
+@app.post("/apis/answer_request", response_model=str , tags=["AI操作"],summary="用户向服务器发送让AI回答问题的请求")
 async def ai_answer_question(question:Answer_request):
     question1 = question.question
     context = question.context

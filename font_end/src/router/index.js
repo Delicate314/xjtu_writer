@@ -35,7 +35,7 @@ export default new Router({
             meta: {
                 name: '搜索',
                 isShow: true,
-                background:'search-background.jpg'
+                background: 'search-background.png'
             },
         },
         {
@@ -44,7 +44,7 @@ export default new Router({
             meta: {
                 name: '写小说',
                 isShow: true,
-                background:'writing-background.jpg'
+                background: 'writing-background.jpg'
             },
         },
         {
@@ -53,7 +53,7 @@ export default new Router({
             meta: {
                 name: '登录',
                 isShow: false,
-                background:'login-background.png'
+                background: 'login-background.png'
             },
         },
         {
@@ -62,7 +62,7 @@ export default new Router({
             meta: {
                 name: '注册',
                 isShow: false,
-                background:'register-background.png'
+                background: 'register-background.png'
             },
         },
         {
@@ -71,7 +71,7 @@ export default new Router({
             meta: {
                 name: '排行榜',
                 isShow: true,
-                background:'rank-background.png'
+                background: 'rank-background.png'
             },
         },
         {
@@ -80,7 +80,7 @@ export default new Router({
             meta: {
                 name: '小说详情',
                 isShow: false,
-                background:'novel-background.png'
+                background: 'novel-background.png'
             },
         },
         {
