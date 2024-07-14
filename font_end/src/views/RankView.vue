@@ -102,12 +102,20 @@ export default {
 }
 
 .title {
-    height: 0px;
     text-align: center;
-    margin-bottom: 100px;
-    color: white;
+    /* 文本居中 */
+    margin-bottom: 20px;
+    /* 调整底部间距 */
+    color: #ffffff;
+    /* 白色文字 */
     font-family: 'Courier New', Courier, monospace;
+    /* 使用 Courier New 字体 */
     font-size: 40px;
+    /* 字体大小 */
+    padding: 10px;
+    /* 背景色 */
+    border-radius: 10px;
+    /* 圆角 */
 }
 
 .item-link {
@@ -126,7 +134,7 @@ th {
     font-size: 20px;
     padding: 10px 8px;
     text-align: center;
-    background-color: #007bff;
+    background-color: #57a8ff;
 }
 
 .rank-top {

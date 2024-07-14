@@ -11,6 +11,7 @@ nohup uvicorn sql_app.main:app --reload --port 8000 &
 nohup npm run serve &
 后台停止
 lsof -i:8000
+lsof -i:8080
 kill -9  进程号PID
 ### 在浏览器访问云服务器上的文档
 http://121.36.55.149/docs

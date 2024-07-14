@@ -2784,3 +2784,20 @@ INFO:     127.0.0.1:54128 - "POST /apis/search HTTP/1.0" 200 OK
 INFO:     127.0.0.1:47144 - "POST /apis/search HTTP/1.0" 200 OK
 INFO:     127.0.0.1:54674 - "POST /apis/search HTTP/1.0" 200 OK
 INFO:     127.0.0.1:55406 - "POST /apis/search HTTP/1.0" 200 OK
+INFO:     127.0.0.1:36488 - "POST /apis/rank HTTP/1.0" 200 OK
+INFO:     127.0.0.1:46768 - "POST /apis/rank HTTP/1.0" 200 OK
+INFO:     127.0.0.1:38756 - "POST /apis/rank HTTP/1.0" 200 OK
+INFO:     127.0.0.1:46660 - "GET /docs HTTP/1.0" 200 OK
+INFO:     127.0.0.1:46668 - "GET /openapi.json HTTP/1.0" 200 OK
+INFO:     127.0.0.1:50444 - "POST /apis/login/ HTTP/1.0" 307 Temporary Redirect
+{'sub': 'delicat'}
+{'sub': 'delicat', 'exp': datetime.datetime(2024, 7, 14, 4, 46, 46, 110801, tzinfo=datetime.timezone.utc)}
+INFO:     127.0.0.1:50448 - "POST /apis/login HTTP/1.0" 200 OK
+INFO:     127.0.0.1:50806 - "POST /apis/rank HTTP/1.0" 200 OK
+INFO:     127.0.0.1:44034 - "POST /apis/rank HTTP/1.0" 200 OK
+INFO:     127.0.0.1:38988 - "POST /apis/rank HTTP/1.0" 200 OK
+INFO:     127.0.0.1:34418 - "POST /apis/rank HTTP/1.0" 200 OK
+INFO:     127.0.0.1:53854 - "POST /apis/rank HTTP/1.0" 200 OK
+INFO:     127.0.0.1:53862 - "POST /apis/rank HTTP/1.0" 200 OK
+INFO:     127.0.0.1:53878 - "POST /apis/getNovel/ HTTP/1.0" 307 Temporary Redirect
+INFO:     127.0.0.1:53894 - "POST /apis/getNovel HTTP/1.0" 200 OK
