@@ -2801,3 +2801,13 @@ INFO:     127.0.0.1:53854 - "POST /apis/rank HTTP/1.0" 200 OK
 INFO:     127.0.0.1:53862 - "POST /apis/rank HTTP/1.0" 200 OK
 INFO:     127.0.0.1:53878 - "POST /apis/getNovel/ HTTP/1.0" 307 Temporary Redirect
 INFO:     127.0.0.1:53894 - "POST /apis/getNovel HTTP/1.0" 200 OK
+INFO:     127.0.0.1:42836 - "POST /apis/login/ HTTP/1.0" 307 Temporary Redirect
+{'sub': 'delicat'}
+{'sub': 'delicat', 'exp': datetime.datetime(2024, 7, 14, 5, 8, 40, 367122, tzinfo=datetime.timezone.utc)}
+INFO:     127.0.0.1:42850 - "POST /apis/login HTTP/1.0" 200 OK
+INFO:     127.0.0.1:57470 - "POST /apis/rank HTTP/1.0" 200 OK
+INFO:     127.0.0.1:45164 - "POST /apis/getNovel/ HTTP/1.0" 307 Temporary Redirect
+INFO:     127.0.0.1:45168 - "POST /apis/getNovel HTTP/1.0" 200 OK
+INFO:     127.0.0.1:45170 - "POST /apis/getNovel/ HTTP/1.0" 307 Temporary Redirect
+INFO:     127.0.0.1:45178 - "POST /apis/getNovel HTTP/1.0" 200 OK
+INFO:     127.0.0.1:45188 - "POST /apis/rank HTTP/1.0" 200 OK
