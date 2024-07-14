@@ -4,15 +4,25 @@
         <div class="top">
             <Guide_novel class="guide" />
         </div>
-        <div class="novel-detail">
-            <div class="png-aside">
-                <img src="~@/assets/cover.png" alt="A Tale of Two Cities">
+        <div class="novel-detail-container" :class="{ 'shifted': showAISection }">
+            <div class="novel-detail-left">
+                <div class="info">
+                    <h2 class="head">标题：{{ novel.novel_title }}</h2>
+                    <h3 class="footer">作者：{{ novel.writer_name }}</h3>
+                    <p class="footer">点击量：{{ novel.view_count }}</p>
+                    <textarea class="main" v-model="novel.content"></textarea>
+                </div>
+                <div class="pagination">
+                    <button @click="prevPage" :disabled="page === 1">上一页</button>
+                    <button @click="nextPage">下一页</button>
+                    <label for="pageSize">每页显示:</label>
+                    <input type="number" v-model.number="pageSize" @change="updatePageSize" min="1" id="pageSize" />
+                    <button @click="toggleAISection" class="toggle-button">
+                        {{ showAISection ? '隐藏AI提问' : '显示AI提问' }}
+                    </button>
+                </div>
             </div>
-            <div class="info">
-                <h2 class="head">标题：{{ novel.novel_title }}</h2>
-                <h3 class="footer">作者：{{ novel.writer_name }}</h3>
-                <p class="footer">点击量：{{ novel.view_count }}</p>
-                <textarea class="main" v-model="novel.content"></textarea>
+            <div class="novel-detail-right" v-if="showAISection">
                 <textarea placeholder="向AI提问" v-model="question" class="footer_ask"></textarea>
                 <button @click="ask" class='footer_commit'>提交</button>
                 <textarea class="footer_answer" v-model="answer" readonly placeholder="生成的回答将在此显示"></textarea>
@@ -38,6 +48,9 @@ export default {
             novel: {},
             question: '',
             answer: '',
+            page: 1,
+            pageSize: 50,
+            showAISection: false
         };
     },
     mounted() {
@@ -48,9 +61,9 @@ export default {
             console.log('Asking:', this.question);
             try {
                 const requestData = {
-                    question: this.question  // 将问题添加到请求数据中
+                    question: String(this.question),
+                    context: String(this.novel.content)
                 };
-                //console.log('Request Data:', requestData);
                 const response = await this.$axios.post("http://121.36.55.149:80/apis/answer_request", requestData);
                 console.log('Response:', response);
                 this.answer = response.data;
@@ -65,155 +78,185 @@ export default {
             try {
                 const params = {
                     novel_id: Number(this.$route.query.id),
-                    page: 1,
-                    page_size: 10
+                    page: this.page,
+                    page_size: this.pageSize
                 };
-                // console.log('Params:', params);
                 const response = await this.$axios.post('http://121.36.55.149:80/apis/getNovel/', params);
                 this.novel = response.data;
                 console.log('Novel:', this.novel);
             } catch (error) {
                 console.error('Error fetching novel data:', error);
             }
+        },
+        nextPage() {
+            this.page++;
+            this.getnovel();
+        },
+        prevPage() {
+            if (this.page > 1) {
+                this.page--;
+                this.getnovel();
+            }
+        },
+        updatePageSize() {
+            this.page = 1;
+            this.getnovel();
+        },
+        toggleAISection() {
+            this.showAISection = !this.showAISection;
         }
     }
 }
 </script>
-
 <style scoped>
-.top {
-    display: block;
-    align-items: center;
-    height: 50px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.guide {
-    color: red;
-}
-
-.novel-detail {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.png-aside {
-    background-color: #D3DCE6;
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
     color: #333;
-    text-align: center;
-    height: 570px;
-    width: 474px;
-    /*wait for being changed*/
+    margin: 0;
+    padding: 0;
 }
 
-.head {
-    font-family: "微软雅黑";
-    font-weight: bold;
-    background-color: #2b2e4a;
-    color: #fff;
-    text-align: center;
-    line-height: 50px;
-    width: 900px;
-    height: 50px;
-    margin: 0%;
-    align-items: center;
-
-    border: 2px solid #2b2e4a;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    font-size: 16px;
-    resize: none;
+.novel-detail-container {
+    display: flex;
+    justify-content: center;
     margin: 20px;
-}
-
-.footer {
-    background-color: #903749;
-    color: #fff;
-    text-align: center;
-    line-height: 50px;
-    width: 900px;
-    height: 50px;
-
-    border: 2px solid #903749;
+    background: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    font-size: 16px;
-    resize: none;
-    margin: 20px;
+    padding: 20px;
+    transition: all 0.3s ease;
 }
 
-.main {
-    background-color: #e84545;
-    color: #fff;
-    text-align: center;
-    line-height: 40px;
-    font-size: medium;
-    font-weight: bold;
-    width: 900px;
-    height: 100px;
-    border: 2px solid #2b2e4a;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    font-size: 16px;
-    resize: none;
-    margin: 5px;
+.novel-detail-container.shifted {
+    justify-content: space-between;
+}
+
+.novel-detail-left {
+    flex: 3;
+    margin-right: 20px;
+    transition: margin-right 0.3s ease; /* 添加过渡效果 */
+}
+
+.novel-detail-right {
+    flex: 1;
+    transition: opacity 0.3s ease; /* 添加过渡效果 */
+    opacity: 0; /* 默认隐藏 */
+    pointer-events: none; /* 默认不可交互 */
+}
+
+.novel-detail-container.shifted .novel-detail-left {
+    margin-right: 0;
+}
+
+.novel-detail-container.shifted .novel-detail-right {
+    opacity: 1; /* 显示AI部分 */
+    pointer-events: auto; /* 可交互 */
 }
 
 .info {
-    text-align: center;
+    margin-bottom: 20px;
 }
 
-.footer_ask {
-    display: block;
-    width: 900px;
-    height: 16px;
+.head, .footer {
+    margin: 10px 0;
+    color: #333;
+}
+
+.head {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.footer {
+    font-size: 1em;
+    color: #666;
+}
+
+.main {
+    width: 100%;
+    height: 450px;
+    margin: 10px 0;
     padding: 10px;
-    margin: 10px auto;
-    background-color: #2b2e4a;
-    color: #fff;
-    margin-top: 10px;
-
-    border: 2px solid #e84545;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    font-size: 16px;
-    resize: none;
-    margin: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-family: 'Arial', sans-serif;
 }
 
+.footer_ask, .footer_answer {
+    width: 100%;
+    height: 100px;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-family: 'Arial', sans-serif;
+}
 
 .footer_commit {
-    font-size: 20px;
-    padding: 5px 20px;
-    background-color: #2b2e4a;
-    color: #fff;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
 
-    border: 2px solid #2b2e4a;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    font-size: 18px;
-    resize: none;
+.footer_commit:hover {
+    background-color: #0056b3;
 }
 
 .footer_answer {
-    display: block;
-    width: 900px;
-    height: 90px;
-    padding: 10px;
-    margin: 10px auto;
-    background-color: #2b2e4a;
-    color: #fff;
-    margin-top: 10px;
+    height: 150px;
+}
 
-    border: 2px solid #e84545;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.pagination {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.pagination button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.pagination button:hover {
+    background: #f0f0f0;
+}
+
+.pagination input {
+    width: 60px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.toggle-button {
+    display: block;
+    margin: 20px 0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #28a745;
+    color: #000000;
     font-size: 16px;
-    resize: none;
-    margin: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-left: 20px;
+}
+
+.toggle-button:hover {
+    background-color: #e3a704;
 }
 </style>
