@@ -35,7 +35,7 @@ export default new Router({
             meta: {
                 name: '搜索',
                 isShow: true,
-                background: 'search-background.png'
+                background: 'writing-background.jpg'
             },
         },
         {
@@ -71,7 +71,7 @@ export default new Router({
             meta: {
                 name: '排行榜',
                 isShow: true,
-                background: 'rank-background.png'
+                background: 'writing-background.jpg'
             },
         },
         {
@@ -80,7 +80,7 @@ export default new Router({
             meta: {
                 name: '小说详情',
                 isShow: false,
-                background: 'novel-background.png'
+                background: 'writing-background.jpg'
             },
         },
         {

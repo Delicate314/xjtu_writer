@@ -2669,3 +2669,76 @@ INFO:     127.0.0.1:37502 - "POST /apis/rank HTTP/1.0" 422 Unprocessable Entity
 INFO:     127.0.0.1:51362 - "POST /apis/rank HTTP/1.0" 422 Unprocessable Entity
 INFO:     127.0.0.1:42018 - "POST /apis/rank HTTP/1.0" 200 OK
 INFO:     127.0.0.1:52232 - "POST /apis/search HTTP/1.0" 200 OK
+WARNING:  WatchFiles detected changes in 'sql_app/login_and_rigister.py', 'sql_app/file_option.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [22113]
+Process SpawnProcess-4:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/local/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/_subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/server.py", line 60, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/local/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "uvloop/loop.pyx", line 1517, in uvloop.loop.Loop.run_until_complete
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/server.py", line 67, in serve
+    config.load()
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/config.py", line 477, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/importer.py", line 24, in import_from_string
+    raise exc from None
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/importer.py", line 21, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/xjtu_writer_2/xjtu_writer/back_end/./sql_app/main.py", line 9, in <module>
+    from .file_option import *
+ModuleNotFoundError: No module named 'sql_app.file_option'
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+INFO:     Started server process [24884]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:48972 - "GET /docs HTTP/1.0" 200 OK
+INFO:     127.0.0.1:37360 - "GET /docs HTTP/1.0" 200 OK
+INFO:     127.0.0.1:48468 - "POST /apis/login/ HTTP/1.0" 307 Temporary Redirect
+INFO:     127.0.0.1:45786 - "POST /apis/login/ HTTP/1.0" 307 Temporary Redirect
+{'sub': 'Delicat'}
+{'sub': 'Delicat', 'exp': datetime.datetime(2024, 7, 14, 4, 1, 39, 845425, tzinfo=datetime.timezone.utc)}
+INFO:     127.0.0.1:45798 - "POST /apis/login HTTP/1.0" 200 OK
+INFO:     127.0.0.1:38786 - "POST /apis/search HTTP/1.0" 200 OK
+INFO:     127.0.0.1:38802 - "POST /apis/downloadfile HTTP/1.0" 200 OK
+INFO:     127.0.0.1:36460 - "POST /apis/uploadfile HTTP/1.0" 200 OK
+INFO:     127.0.0.1:53114 - "POST /apis/rank HTTP/1.0" 200 OK
+INFO:     127.0.0.1:53122 - "POST /apis/getNovel/ HTTP/1.0" 307 Temporary Redirect
+INFO:     127.0.0.1:53130 - "POST /apis/getNovel HTTP/1.0" 200 OK
+INFO:     127.0.0.1:50534 - "POST /apis/getNovel/ HTTP/1.0" 307 Temporary Redirect
+INFO:     127.0.0.1:50540 - "POST /apis/getNovel HTTP/1.0" 200 OK
+INFO:     127.0.0.1:51908 - "POST /apis/getNovel/ HTTP/1.0" 307 Temporary Redirect
+INFO:     127.0.0.1:51918 - "POST /apis/getNovel HTTP/1.0" 200 OK
+INFO:     127.0.0.1:51928 - "POST /apis/rank HTTP/1.0" 200 OK
+INFO:     127.0.0.1:35390 - "POST /apis/getNovel/ HTTP/1.0" 307 Temporary Redirect
+INFO:     127.0.0.1:35402 - "POST /apis/getNovel HTTP/1.0" 200 OK
+INFO:     127.0.0.1:53768 - "POST /apis/getNovel/ HTTP/1.0" 307 Temporary Redirect
+INFO:     127.0.0.1:53782 - "POST /apis/getNovel HTTP/1.0" 200 OK
+INFO:     127.0.0.1:60804 - "POST /apis/getNovel/ HTTP/1.0" 307 Temporary Redirect
+INFO:     127.0.0.1:60818 - "POST /apis/getNovel HTTP/1.0" 200 OK
+INFO:     127.0.0.1:48044 - "POST /apis/rank HTTP/1.0" 200 OK
+INFO:     127.0.0.1:54824 - "POST /apis/rank HTTP/1.0" 200 OK
+INFO:     127.0.0.1:48956 - "POST /apis/rank HTTP/1.0" 200 OK
+INFO:     127.0.0.1:41434 - "POST /apis/rank HTTP/1.0" 200 OK
+INFO:     127.0.0.1:49160 - "POST /apis/rank HTTP/1.0" 200 OK
+INFO:     127.0.0.1:40668 - "POST /apis/rank HTTP/1.0" 200 OK
+INFO:     127.0.0.1:33834 - "POST /apis/rank HTTP/1.0" 200 OK

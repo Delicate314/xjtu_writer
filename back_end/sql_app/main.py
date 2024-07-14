@@ -6,7 +6,7 @@ import jwt
 from . import ai01, ai02, login_and_rigister, models, db_method, novel_option
 from pydantic import BaseModel
 import re
-from .file_option import *
+
 from .search_novel import *
 
 import pymysql
