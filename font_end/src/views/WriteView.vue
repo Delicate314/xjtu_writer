@@ -96,6 +96,7 @@ export default {
         const response = await axios.post("http://121.36.55.149:80/apis/answer_request", requestData);
         console.log('Response:', response);
         this.answerContent = response.data;
+        this.answer_isLoading = false;
       }
       catch (error) {
         console.error("Error generating text:", error);
@@ -260,6 +261,30 @@ button:hover {
 
   100% {
     transform: rotate(360deg);
+  }
+}
+
+/* Add media queries for smaller screens */
+@media (max-width: 768px) {
+  textarea {
+    width: 85%;
+    font-size: 14px;
+  }
+  button {
+    width: 50%;
+    margin: 10px 0;
+    font-size: 16px;
+  }
+
+  textarea.input-box,
+  textarea.question-box,
+  textarea.output-box {
+    height: 100px;
+    width: 85%;
+  }
+
+  textarea.output-box {
+    height: 150px;
   }
 }
 </style>

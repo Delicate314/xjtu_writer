@@ -13,7 +13,7 @@
                 <h3 class="footer">作者：{{ novel.writer_name }}</h3>
                 <p class="footer">点击量：{{ novel.view_count }}</p>
                 <textarea class="main" v-model="novel.content"></textarea>
-                <textarea placeholder="向AI提问" v-model="question" class="footer_ask"></textarea>
+                <textarea placeholder="针对文章内容向AI提问" v-model="question" class="footer_ask"></textarea>
                 <button @click="ask" class='footer_commit'>提问</button>
                 <textarea class="footer_answer" v-model="answer" readonly placeholder="生成的回答将在此显示"></textarea>
             </div>
@@ -108,6 +108,7 @@ export default {
     justify-content: center;
     gap: 20px;
     margin-top: 20px;
+    flex-wrap: wrap;
 }
 
 .png-aside {
@@ -116,7 +117,7 @@ export default {
     text-align: center;
     height: 570px;
     width: 474px;
-    /*wait for being changed*/
+    /* 等待修改 */
 }
 
 .head {
@@ -128,7 +129,7 @@ export default {
     line-height: 50px;
     width: 900px;
     height: 50px;
-    margin: 0%;
+    margin: 0;
     align-items: center;
 
     border: 2px solid #2b2e4a;
@@ -194,7 +195,6 @@ export default {
     margin: 20px;
 }
 
-
 .footer_commit {
     font-size: 20px;
     padding: 5px 20px;
@@ -224,5 +224,40 @@ export default {
     font-size: 16px;
     resize: none;
     margin: 20px;
+}
+
+/* 媒体查询 */
+@media (max-width: 768px) {
+    .novel-detail {
+        flex-direction: column;
+    }
+
+    .png-aside {
+        height: auto;
+        width: 90%;
+    }
+
+    .head,
+    .footer,
+    .main,
+    .footer_ask,
+    .footer_answer {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .footer_commit {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .head,
+    .footer,
+    .main,
+    .footer_ask,
+    .footer_answer,
+    .footer_commit {
+        font-size: 14px;
+    }
 }
 </style>

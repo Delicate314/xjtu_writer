@@ -110,7 +110,8 @@ def get_user_count(search_target='all'):
         else:
             search = "AND user_name LIKE %s"
             search_params = [f"%{search_target}%"]
-    cursor = get_cursor()
+    db=get_db()
+    cursor = get_cursor(db)
     sql = f"SELECT count(*) FROM user_info WHERE user_name<>'Admin' {search}"
     cursor.execute(sql, search_params)
     rows = cursor.fetchall()[0]

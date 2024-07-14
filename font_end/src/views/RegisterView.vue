@@ -158,4 +158,29 @@ export default {
 .el-form-item input:focus {
   background: rgba(255, 255, 255, 1);
 }
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+  .register-card {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .register-title {
+    font-size: 20px;
+  }
+
+  .el-button,
+  .el-form-item input {
+    font-size: 14px;
+  }
+
+  .el-form-item {
+    margin-bottom: 15px;
+  }
+
+  .extra-options {
+    justify-content: center;
+  }
+}
 </style>
