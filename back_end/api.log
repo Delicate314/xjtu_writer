@@ -1,0 +1,59 @@
+2024-07-14 11:24:19,171 - main - log_requests - line:44 - INFO - rid=QK3MVL start request path=/docs
+2024-07-14 11:24:19,174 - main - log_requests - line:51 - INFO - rid=QK3MVL completed_in=0.00ms status_code=200
+2024-07-14 11:24:21,180 - main - log_requests - line:44 - INFO - rid=DQW6XN start request path=/openapi.json
+2024-07-14 11:24:21,190 - main - log_requests - line:51 - INFO - rid=DQW6XN completed_in=8.17ms status_code=200
+2024-07-14 11:26:54,212 - main - log_requests - line:44 - INFO - rid=39AEVO start request path=/apis/login
+2024-07-14 11:26:54,644 - main - log_requests - line:51 - INFO - rid=39AEVO completed_in=432.21ms status_code=200
+2024-07-14 11:27:20,383 - main - log_requests - line:44 - INFO - rid=R1LI6T start request path=/apis/user/ownInfo
+2024-07-14 11:27:21,308 - main - log_requests - line:51 - INFO - rid=R1LI6T completed_in=923.91ms status_code=500
+2024-07-14 11:28:40,686 - log_requests - line:44 - INFO - rid=MFDPA1 start request path=/docs
+2024-07-14 11:28:40,701 - log_requests - line:51 - INFO - rid=MFDPA1 completed_in=0.00ms status_code=200
+2024-07-14 11:28:40,781 - log_requests - line:44 - INFO - rid=Y7ZRTT start request path=/openapi.json
+2024-07-14 11:28:40,791 - log_requests - line:51 - INFO - rid=Y7ZRTT completed_in=9.56ms status_code=200
+2024-07-14 11:29:40,488 - log_requests - line:44 - INFO - rid=OWPIY9 start request path=/docs
+2024-07-14 11:29:40,488 - log_requests - line:51 - INFO - rid=OWPIY9 completed_in=0.00ms status_code=200
+2024-07-14 11:29:40,556 - log_requests - line:44 - INFO - rid=E9O4AU start request path=/openapi.json
+2024-07-14 11:29:40,574 - log_requests - line:51 - INFO - rid=E9O4AU completed_in=18.77ms status_code=200
+2024-07-14 11:29:41,994 - log_requests - line:44 - INFO - rid=E75V0J start request path=/docs
+2024-07-14 11:29:41,994 - log_requests - line:51 - INFO - rid=E75V0J completed_in=0.00ms status_code=200
+2024-07-14 11:29:42,029 - log_requests - line:44 - INFO - rid=D2I2D4 start request path=/openapi.json
+2024-07-14 11:29:42,030 - log_requests - line:51 - INFO - rid=D2I2D4 completed_in=1.00ms status_code=200
+2024-07-14 11:29:59,722 - log_requests - line:44 - INFO - rid=439H16 start request path=/apis/login
+2024-07-14 11:29:59,722 - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-14 11:29:59,722 - callback - line:623 - DEBUG - Calling on_field_name with data[0:10]
+2024-07-14 11:29:59,722 - callback - line:623 - DEBUG - Calling on_field_data with data[11:19]
+2024-07-14 11:29:59,722 - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-14 11:29:59,722 - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-14 11:29:59,722 - callback - line:623 - DEBUG - Calling on_field_name with data[20:28]
+2024-07-14 11:29:59,722 - callback - line:623 - DEBUG - Calling on_field_data with data[29:33]
+2024-07-14 11:29:59,722 - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-14 11:29:59,722 - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-14 11:29:59,722 - callback - line:623 - DEBUG - Calling on_field_name with data[34:42]
+2024-07-14 11:29:59,722 - callback - line:623 - DEBUG - Calling on_field_data with data[43:51]
+2024-07-14 11:29:59,722 - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-14 11:29:59,722 - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-14 11:30:00,123 - log_requests - line:51 - INFO - rid=439H16 completed_in=401.31ms status_code=200
+2024-07-14 11:30:07,155 - log_requests - line:44 - INFO - rid=BFQ7LT start request path=/apis/user/ownInfo
+2024-07-14 11:30:07,800 - getOwnInfo - line:212 - DEBUG - ((1, 1, '±≥”∞', None, '/home/xjtu_writer/xjtu_writer/novel/1', 106), (2, 1, 'Œ‰∂Ø«¨¿§', None, '/home/xjtu_writer/xjtu_writer/novel/1', 49), (5, 1, '«Ï”‡ƒÍ', None, '/home/xjtu_writer/xjtu_writer/novel/1', 3), (25, 1, '±≥”∞2', None, '/home/xjtu_writer/xjtu_writer/novel/1', 1), (34, 1, 'test.txt', None, '/home/xjtu_writer/xjtu_writer/novel/1', 0), (35, 1, '2.txt', None, '/home/xjtu_writer/xjtu_writer/novel/1', 1), (36, 1, 'beijing', None, '/home/xjtu_writer/xjtu_writer/novel/1', 0), (37, 1, 'location.txt', None, '/home/xjtu_writer/xjtu_writer/novel/1', 5), (38, 1, 'location.txt', None, '/home/xjtu_writer/xjtu_writer/novel/1', 0), (39, 1, 'hhhh', None, '/home/xjtu_writer/xjtu_writer/novel/1', 0), (41, 1, 'bad tag.txt', None, '/home/xjtu_writer/xjtu_writer/novel/1', 1), (54, 1, '2.txt', None, '/home/xjtu_writer/xjtu_writer/novel/1', 0))
+2024-07-14 11:30:08,118 - getOwnInfo - line:234 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-14 11:30:08,119 - log_requests - line:51 - INFO - rid=BFQ7LT completed_in=962.99ms status_code=500
+2024-07-14 11:30:47,093 - log_requests - line:44 - INFO - rid=V28C5F start request path=/apis/user/ownInfo
+2024-07-14 11:30:52,955 - getOwnInfo - line:212 - DEBUG - ((1, 1, '±≥”∞', None, '/home/xjtu_writer/xjtu_writer/novel/1', 106), (2, 1, 'Œ‰∂Ø«¨¿§', None, '/home/xjtu_writer/xjtu_writer/novel/1', 49), (5, 1, '«Ï”‡ƒÍ', None, '/home/xjtu_writer/xjtu_writer/novel/1', 3), (25, 1, '±≥”∞2', None, '/home/xjtu_writer/xjtu_writer/novel/1', 1), (34, 1, 'test.txt', None, '/home/xjtu_writer/xjtu_writer/novel/1', 0), (35, 1, '2.txt', None, '/home/xjtu_writer/xjtu_writer/novel/1', 1), (36, 1, 'beijing', None, '/home/xjtu_writer/xjtu_writer/novel/1', 0), (37, 1, 'location.txt', None, '/home/xjtu_writer/xjtu_writer/novel/1', 5), (38, 1, 'location.txt', None, '/home/xjtu_writer/xjtu_writer/novel/1', 0), (39, 1, 'hhhh', None, '/home/xjtu_writer/xjtu_writer/novel/1', 0), (41, 1, 'bad tag.txt', None, '/home/xjtu_writer/xjtu_writer/novel/1', 1), (54, 1, '2.txt', None, '/home/xjtu_writer/xjtu_writer/novel/1', 0))
+2024-07-14 11:30:53,303 - getOwnInfo - line:234 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-14 11:30:53,318 - log_requests - line:51 - INFO - rid=V28C5F completed_in=6224.96ms status_code=200
+2024-07-14 11:32:53,771 - log_requests - line:44 - INFO - rid=1V00DQ start request path=/apis/user/deleteNovel
+2024-07-14 11:32:57,768 - log_requests - line:51 - INFO - rid=1V00DQ completed_in=3997.00ms status_code=500
+2024-07-14 11:38:00,099 - log_requests - line:44 - INFO - rid=HXR8I1 start request path=/apis/user/deleteNovel
+2024-07-14 11:38:01,113 - log_requests - line:51 - INFO - rid=HXR8I1 completed_in=1012.64ms status_code=500
+2024-07-14 11:41:18,337 - log_requests - line:44 - INFO - rid=JD51G9 start request path=/apis/user/ownInfo
+2024-07-14 11:41:19,275 - getOwnInfo - line:229 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-14 11:41:19,275 - log_requests - line:51 - INFO - rid=JD51G9 completed_in=938.51ms status_code=200
+2024-07-14 11:41:47,337 - log_requests - line:44 - INFO - rid=NFKIBN start request path=/apis/user/deleteNovel
+2024-07-14 11:42:54,057 - log_requests - line:44 - INFO - rid=YP5UAT start request path=/apis/user/deleteNovel
+2024-07-14 11:42:54,958 - log_requests - line:51 - INFO - rid=YP5UAT completed_in=900.96ms status_code=500
+2024-07-14 11:44:04,409 - log_requests - line:44 - INFO - rid=A8KR96 start request path=/apis/user/deleteNovel
+2024-07-14 11:44:05,322 - delete_novel - line:233 - DEBUG - file_path = /home/xjtu_writer/xjtu_writer/novel\1\36.txt
+2024-07-14 11:44:05,322 - log_requests - line:51 - INFO - rid=A8KR96 completed_in=913.06ms status_code=500
+2024-07-14 11:46:45,565 - log_requests - line:44 - INFO - rid=GINJ5V start request path=/apis/user/deleteNovel
+2024-07-14 11:46:46,470 - delete_novel - line:233 - DEBUG - file_path = /home/xjtu_writer/xjtu_writer/novel/1/36.txt
+2024-07-14 11:46:46,470 - log_requests - line:51 - INFO - rid=GINJ5V completed_in=904.81ms status_code=500

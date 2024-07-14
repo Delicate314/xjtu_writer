@@ -104,6 +104,8 @@ def login(user_login: OAuth2PasswordRequestForm= Depends()):
         "success": True,
         "access_token": access_token, "token_type": "bearer"
     }
+
+
 # import pymysql
 # from fastapi import FastAPI, HTTPException
 # from pydantic import BaseModel, Field, field_validator

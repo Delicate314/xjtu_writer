@@ -205,6 +205,16 @@ def reset_password(user_id: int, user_name: str):
         cursor.close()
         db.close()
 
+def get_user_info(user_id: int):
+    db = get_db()
+    cursor = get_cursor(db)
+    query = "SELECT * FROM user_info WHERE user_id = %s"
+    cursor.execute(query, (user_id,))
+    user_info = cursor.fetchall()
+    cursor.close()
+    db.close()
+    return user_info
+
 def get_user_novel(user_id:int):
     db = get_db()
     cursor = get_cursor(db)

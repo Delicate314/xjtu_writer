@@ -7,6 +7,7 @@ from fastapi.responses import FileResponse, JSONResponse
 
 from .search_novel import *
 from .connect_sql import *
+from .log_set import logger
 
 class Novel(BaseModel):
     novel_id: str
@@ -219,14 +220,24 @@ async def show_file(input: GetNovel):
 
 
 def delete_novel(novel_id: int, novel_name: str):
+    db = get_db()
     cursor = None
     try:
         result = search_novel_by_novel_id(str(novel_id))
         if not result:
             return (0, '小说文件未找到或不存在')
-        
         user_id = result[0]["user_id"]
-        db = get_db()
+        
+        # 生成文件路径
+        file_path = DIR + "/" + str(user_id) + "/" + str(novel_id) + ".txt"
+        logger.debug(f"file_path = {file_path}")
+        # 删除文件
+        if os.path.exists(file_path):
+            os.remove(file_path)
+        else:
+            return (1, "文件未找到")
+
+
         cursor = get_cursor(db)
         
         # 执行删除操作
@@ -240,15 +251,6 @@ def delete_novel(novel_id: int, novel_name: str):
         # 提交事务
         cursor.connection.commit()
 
-        # 生成文件路径
-        user_dir = os.path.join(DIR, str(user_id))
-        file_path = os.path.join(user_dir, f"{novel_id}.txt")
-        
-        # 删除文件
-        if os.path.exists(file_path):
-            os.remove(file_path)
-        else:
-            return (1, "文件未找到")
     except Exception as e:
         if cursor:
             cursor.connection.rollback()  # 回滚事务

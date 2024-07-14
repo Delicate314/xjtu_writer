@@ -1,15 +1,13 @@
 from fastapi import Depends, FastAPI, HTTPException, UploadFile, status, Form, File
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
-from jwt import InvalidTokenError
-import jwt
-from . import ai01, ai02, login_and_rigister, models, db_method, novel_option
 from pydantic import BaseModel
-import re
-from .file_option import *
+
+import jwt, random, string, time, re, pymysql
+from . import ai01, ai02, login_and_rigister, models, db_method, novel_option
+from .log_set import logger
 from .search_novel import *
 
-import pymysql
 
 
 class Write_request(BaseModel):
@@ -39,6 +37,20 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+@app.middleware("http")
+async def log_requests(request, call_next):
+    idem = ''.join(random.choices(string.ascii_uppercase + string.digits, k=6))
+    logger.info(f"rid={idem} start request path={request.url.path}")
+    start_time = time.time()
+    
+    response = await call_next(request)
+    
+    process_time = (time.time() - start_time) * 1000
+    formatted_process_time = '{0:.2f}'.format(process_time)
+    logger.info(f"rid={idem} completed_in={formatted_process_time}ms status_code={response.status_code}")
+    
+    return response
 
 
 
@@ -192,6 +204,57 @@ async def rank(input: rank_input ,user:str=Depends(get_current_user)):
     cursor.close()
     db.close()
     return result
+
+@app.post("/apis/user/ownInfo", tags=["获取个人信息"], summary="获取个人信息和所有小说", description="获取个人信息和所有小说")
+async def getOwnInfo(user_id : str=Depends(get_current_user_id)):
+    try:
+        rows = db_method.get_user_novel(user_id)
+        count = 0
+        data = []
+
+        for row in rows:
+            count+=1
+            row_data = {
+                'novel_id': row[0],
+                'user_id': row[1],
+                'novel_title': row[2],
+                'novel_description': row[3],
+                'UpdatedAt': '-' if len(row) < 7 else row[6],
+                'novel_viewcount': row[5]
+            }
+            data.append(row_data)
+
+        
+        user_info = db_method.get_user_info(user_id)
+        logger.debug(user_info)
+
+        user_info = {
+            'user_id': user_info[0][0],
+            'user_name': user_info[0][1],
+            'user_password': user_info[0][2]
+        }
+        return {"user_info": user_info, "novel": data, "count": count}
+
+    except Exception as e:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"An error occurred while fetching novel information: {str(e)}"
+        )
+
+@app.post("/apis/user/deleteNovel", tags=["删除个人小说"])
+async def deleteOwnNovel(novel_id: int, novel_title: str, user_id : str = Depends(get_current_user_id)):
+    (s, msg) = novel_option.delete_novel(novel_id, novel_title)
+    if s == 0:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=msg
+        )
+    if s == 1:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=msg
+        )
+    return {'message': msg}
 
 # @app.post("/apis/model/change", tags=["模型切换"],summary="用户向服务器发送模型切换请求")
 # async def change_model(model:str):
