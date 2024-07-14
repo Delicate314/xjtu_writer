@@ -23,14 +23,14 @@
                         <td>novel-1-popularity</td>
                     </tbody> -->
                     </thead>
-                    <tbody class="rank-item">
+                    <!-- <tbody class="rank-item">
                             <td>index=1</td>
                         <router-link :to="'/Novel'" class="item-link">
                             <td>novel-1-title</td>
                         </router-link>
                         <td>novel-1-author</td>
                         <td>novel-1-popularity</td>
-                    </tbody>
+                    </tbody> -->
                         <tbody v-for="(item, index) in novels" :key="index" class="rank-item">
                             <td>{{ index+1  }}</td>
                             <router-link :to="`/Novel?id=${item.novel_id}`" class="item-link">

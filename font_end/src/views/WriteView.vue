@@ -84,7 +84,7 @@ export default {
       }
     },
     async answer() {
-      console.log('提交', this.question);
+      console.log('提问', this.question);
       this.answer_isLoading = true;
       try {
         const requestData = {

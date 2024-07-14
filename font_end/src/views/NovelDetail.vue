@@ -14,7 +14,7 @@
                 <p class="footer">点击量：{{ novel.view_count }}</p>
                 <textarea class="main" v-model="novel.content"></textarea>
                 <textarea placeholder="向AI提问" v-model="question" class="footer_ask"></textarea>
-                <button @click="ask" class='footer_commit'>提交</button>
+                <button @click="ask" class='footer_commit'>提问</button>
                 <textarea class="footer_answer" v-model="answer" readonly placeholder="生成的回答将在此显示"></textarea>
             </div>
         </div>
@@ -25,6 +25,7 @@
 import Background from '@/components/Background.vue';
 import Guide_novel from '@/components/Guide_novel.vue';
 import Guide from '@/components/Guide.vue';
+import axios from 'axios';
 
 export default {
     name: 'NovelDetail',
@@ -45,19 +46,27 @@ export default {
     },
     methods: {
         async ask() {
-            console.log('Asking:', this.question);
+            console.log('提问', this.question);
+            this.answer_isLoading = true;
             try {
                 const requestData = {
-                    question: this.question  // 将问题添加到请求数据中
+                    question: this.question,
+                    context: this.novel.content
                 };
-                //console.log('Request Data:', requestData);
-                const response = await this.$axios.post("http://121.36.55.149:80/apis/answer_request", requestData);
+                console.log('Request Data:', requestData);
+
+                const response = await axios.post("http://121.36.55.149:80/apis/answer_request", requestData);
                 console.log('Response:', response);
                 this.answer = response.data;
             }
             catch (error) {
                 console.error("Error generating text:", error);
-                this.answer = "生成文本时出错，请稍后再试。";
+                if (error.response) {
+                    console.error("Response Data:", error.response.data);
+                    console.error("Response Status:", error.response.status);
+                    console.error("Response Headers:", error.response.headers);
+                }
+                alert("网络出错，请稍后再试。");
             }
         },
         async getnovel() {
