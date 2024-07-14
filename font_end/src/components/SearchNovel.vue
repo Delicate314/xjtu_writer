@@ -121,7 +121,7 @@ export default {
 }
 
 .result-box {
-  width: 30%;
+  width: 100%;
   /* 宽度占满父容器 */
   max-height: 300px;
   /* 最大高度 */
@@ -136,7 +136,7 @@ export default {
 }
 
 .result-list table {
-  width: 50%;
+  width: 100%;
   /* 表格宽度占满父容器 */
   border-collapse: collapse;
   /* 边框合并 */

@@ -2753,3 +2753,6 @@ INFO:     127.0.0.1:56252 - "POST /apis/rank HTTP/1.0" 200 OK
 INFO:     127.0.0.1:56268 - "POST /apis/getNovel/ HTTP/1.0" 307 Temporary Redirect
 INFO:     127.0.0.1:56272 - "POST /apis/getNovel HTTP/1.0" 200 OK
 INFO:     127.0.0.1:56274 - "POST /apis/rank HTTP/1.0" 200 OK
+INFO:     127.0.0.1:51534 - "POST /apis/search HTTP/1.0" 200 OK
+INFO:     127.0.0.1:48990 - "POST /apis/search HTTP/1.0" 200 OK
+INFO:     127.0.0.1:41466 - "POST /apis/search HTTP/1.0" 200 OK
