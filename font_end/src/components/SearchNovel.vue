@@ -7,7 +7,7 @@
       <select v-model="queryType" class="rounded-select">
         <option v-for="(option, index) in searchOptions" :value="option.value" :key="index">{{ option.label }}</option>
       </select>
-      <button class="search rounded-button" @click="search">Search</button>
+      <button class="rounded-button" @click="search">Search</button>
     </div>
 
     <div class="result-box">
@@ -186,5 +186,96 @@ export default {
   /* 字体颜色 */
   font-size: 1.2em;
   /* 字体大小 */
+}
+
+input.rounded-input {
+  padding: 13px 20px;
+  margin-right: 10px;
+  border-radius: 10px;
+  border: 3px solid #112d4e;
+  font-size: 15px;
+}
+
+select.rounded-select {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border-radius: 10px;
+  border: 3px solid #112d4e;
+  font-family: '微软雅黑';
+  font-size: 15px;
+  font-weight: 800;
+}
+
+button.rounded-button {
+  padding: 10px 20px;
+  background-color: #0088f7;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(6, 0, 125, 0.1);
+  transition: background-color 0.8s ease, box-shadow 0.3s ease;
+  margin: 0 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+button.rounded-button:hover {
+  background-color: #0056b3;
+}
+
+
+h2.link1 {
+  font-size: 1.5em;
+  /* 调整字体大小 */
+  margin-bottom: 20px;
+  /* 调整下边距 */
+  color: #0a0a0a;
+  /* 设置字体颜色 */
+}
+
+.result-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  /* 设置背景颜色并添加透明度 */
+  border-radius: 10px;
+  /* 设置圆角 */
+  padding: 10px;
+  /* 设置内边距 */
+  margin-top: 20px;
+  /* 设置上边距 */
+  text-align: left;
+  /* 左对齐 */
+  width: 300px;
+  /* 设置较小的宽度 */
+  margin: 0 auto;
+  /* 使元素水平居中 */
+}
+
+.result-box ul {
+  list-style: none;
+  /* 去除列表样式 */
+  padding: 0;
+  /* 去除内边距 */
+}
+
+.result-box li {
+  padding: 10px 0;
+  /* 设置上下内边距 */
+  border-bottom: 1px solid #000000;
+  /* 设置下边框 */
+}
+
+.result-box li:last-child {
+  border-bottom: none;
+  /* 去除最后一个元素的下边框 */
+}
+
+.result-box p {
+  margin: 0;
+  /* 去除段落的默认外边距 */
+  font-size: 1em;
+  /* 调整字体大小 */
+  color: #333;
+  /* 设置字体颜色 */
 }
 </style>
