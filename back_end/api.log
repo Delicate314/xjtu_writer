@@ -57,3 +57,21 @@
 2024-07-14 11:46:45,565 - log_requests - line:44 - INFO - rid=GINJ5V start request path=/apis/user/deleteNovel
 2024-07-14 11:46:46,470 - delete_novel - line:233 - DEBUG - file_path = /home/xjtu_writer/xjtu_writer/novel/1/36.txt
 2024-07-14 11:46:46,470 - log_requests - line:51 - INFO - rid=GINJ5V completed_in=904.81ms status_code=500
+2024-07-14 12:26:09,912 - log_requests - line:44 - INFO - rid=UIOHDR start request path=/docs
+2024-07-14 12:26:09,912 - log_requests - line:51 - INFO - rid=UIOHDR completed_in=0.00ms status_code=200
+2024-07-14 12:26:09,981 - log_requests - line:44 - INFO - rid=GA23L5 start request path=/openapi.json
+2024-07-14 12:26:09,990 - log_requests - line:51 - INFO - rid=GA23L5 completed_in=9.05ms status_code=200
+2024-07-14 13:08:41,116 - log_requests - line:46 - INFO - rid=PC712P start request path=/s/user/ownInfo
+2024-07-14 13:08:41,117 - log_requests - line:53 - INFO - rid=PC712P completed_in=0.00ms status_code=404
+2024-07-14 13:09:02,932 - log_requests - line:46 - INFO - rid=UW3T6D start request path=/s/user/ownInfo
+2024-07-14 13:09:02,933 - log_requests - line:53 - INFO - rid=UW3T6D completed_in=1.13ms status_code=404
+2024-07-14 13:09:28,924 - log_requests - line:46 - INFO - rid=YPQNB5 start request path=/s/user/ownInfo
+2024-07-14 13:09:28,924 - log_requests - line:53 - INFO - rid=YPQNB5 completed_in=0.00ms status_code=404
+2024-07-14 13:09:46,140 - log_requests - line:46 - INFO - rid=R4SND2 start request path=/s/user/ownInfo
+2024-07-14 13:09:46,140 - log_requests - line:53 - INFO - rid=R4SND2 completed_in=0.00ms status_code=404
+2024-07-14 13:09:51,707 - log_requests - line:46 - INFO - rid=RG2FIR start request path=/s/user/ownInfo
+2024-07-14 13:09:51,707 - log_requests - line:53 - INFO - rid=RG2FIR completed_in=0.00ms status_code=404
+2024-07-14 15:08:18,643 - log_requests - line:46 - INFO - rid=XDPBI7 start request path=/docs
+2024-07-14 15:08:18,648 - log_requests - line:53 - INFO - rid=XDPBI7 completed_in=3.04ms status_code=200
+2024-07-14 15:08:18,718 - log_requests - line:46 - INFO - rid=ANXE5P start request path=/openapi.json
+2024-07-14 15:08:18,742 - log_requests - line:53 - INFO - rid=ANXE5P completed_in=23.58ms status_code=200
