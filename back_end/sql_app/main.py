@@ -5,9 +5,11 @@ from pydantic import BaseModel
 
 import jwt, random, string, time, re, pymysql
 from . import ai01, ai02, login_and_rigister, models, db_method, novel_option
-from .log_set import logger
-from .search_novel import *
+from pydantic import BaseModel
+import re
 
+from .search_novel import *
+from .log_set import logger
 
 
 class Write_request(BaseModel):
