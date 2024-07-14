@@ -2811,3 +2811,150 @@ INFO:     127.0.0.1:45168 - "POST /apis/getNovel HTTP/1.0" 200 OK
 INFO:     127.0.0.1:45170 - "POST /apis/getNovel/ HTTP/1.0" 307 Temporary Redirect
 INFO:     127.0.0.1:45178 - "POST /apis/getNovel HTTP/1.0" 200 OK
 INFO:     127.0.0.1:45188 - "POST /apis/rank HTTP/1.0" 200 OK
+INFO:     127.0.0.1:57270 - "POST /apis/login/ HTTP/1.0" 307 Temporary Redirect
+{'sub': 'Delicat'}
+{'sub': 'Delicat', 'exp': datetime.datetime(2024, 7, 14, 5, 18, 40, 692707, tzinfo=datetime.timezone.utc)}
+INFO:     127.0.0.1:57284 - "POST /apis/login HTTP/1.0" 200 OK
+INFO:     127.0.0.1:42914 - "POST /apis/rank HTTP/1.0" 200 OK
+INFO:     127.0.0.1:58964 - "POST /apis/login/ HTTP/1.0" 307 Temporary Redirect
+{'sub': 'Delicat'}
+{'sub': 'Delicat', 'exp': datetime.datetime(2024, 7, 14, 5, 19, 40, 970511, tzinfo=datetime.timezone.utc)}
+INFO:     127.0.0.1:58974 - "POST /apis/login HTTP/1.0" 200 OK
+INFO:     127.0.0.1:58466 - "POST /apis/rank HTTP/1.0" 200 OK
+INFO:     127.0.0.1:58468 - "POST /apis/rank HTTP/1.0" 200 OK
+INFO:     127.0.0.1:36058 - "POST /apis/login/ HTTP/1.0" 307 Temporary Redirect
+{'sub': 'admin'}
+{'sub': 'admin', 'exp': datetime.datetime(2024, 7, 14, 5, 20, 6, 568817, tzinfo=datetime.timezone.utc)}
+INFO:     127.0.0.1:36066 - "POST /apis/login HTTP/1.0" 200 OK
+INFO:     127.0.0.1:36072 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
+INFO:     127.0.0.1:36086 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:57278 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:57290 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
+INFO:     127.0.0.1:57300 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:44494 - "GET /docs HTTP/1.0" 200 OK
+INFO:     127.0.0.1:44504 - "GET /openapi.json HTTP/1.0" 200 OK
+INFO:     127.0.0.1:51474 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
+INFO:     127.0.0.1:51482 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:39620 - "GET /apis/admin/getusernovel?user_id=16 HTTP/1.0" 200 OK
+INFO:     127.0.0.1:39634 - "POST /apis/login/ HTTP/1.0" 307 Temporary Redirect
+{'sub': 'Delicat'}
+{'sub': 'Delicat', 'exp': datetime.datetime(2024, 7, 14, 5, 22, 19, 618026, tzinfo=datetime.timezone.utc)}
+INFO:     127.0.0.1:39638 - "POST /apis/login HTTP/1.0" 200 OK
+INFO:     127.0.0.1:39648 - "GET /apis/admin/getusers?offset=10&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:48048 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:48050 - "GET /apis/admin/getusers?offset=0&row_count=15&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:51042 - "GET /apis/admin/getusers?offset=0&row_count=20&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:51058 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:40422 - "GET /apis/admin/getusers?offset=0&row_count=15&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:40428 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:38286 - "GET /apis/admin/getusers?offset=0&row_count=15&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:38298 - "POST /apis/login/ HTTP/1.0" 307 Temporary Redirect
+{'sub': 'Delicat'}
+{'sub': 'Delicat', 'exp': datetime.datetime(2024, 7, 14, 5, 23, 3, 732419, tzinfo=datetime.timezone.utc)}
+INFO:     127.0.0.1:38302 - "POST /apis/login HTTP/1.0" 200 OK
+INFO:     127.0.0.1:43896 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:43898 - "POST /apis/getNovel HTTP/1.0" 200 OK
+INFO:     127.0.0.1:50510 - "POST /apis/getNovel HTTP/1.0" 200 OK
+INFO:     127.0.0.1:51362 - "POST /apis/getNovel HTTP/1.0" 200 OK
+INFO:     127.0.0.1:38978 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:38980 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
+INFO:     127.0.0.1:41166 - "POST /apis/search HTTP/1.0" 200 OK
+INFO:     127.0.0.1:60422 - "GET /apis/admin/getusers?offset=0&row_count=15&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:46946 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:50170 - "POST /apis/rank HTTP/1.0" 200 OK
+INFO:     127.0.0.1:35700 - "POST /apis/register/ HTTP/1.0" 307 Temporary Redirect
+INFO:     127.0.0.1:35712 - "POST /apis/register HTTP/1.0" 422 Unprocessable Entity
+INFO:     127.0.0.1:44296 - "POST /apis/register/ HTTP/1.0" 307 Temporary Redirect
+INFO:     127.0.0.1:44306 - "POST /apis/register HTTP/1.0" 422 Unprocessable Entity
+INFO:     127.0.0.1:55550 - "POST /apis/register/ HTTP/1.0" 307 Temporary Redirect
+INFO:     127.0.0.1:55560 - "POST /apis/register HTTP/1.0" 422 Unprocessable Entity
+INFO:     127.0.0.1:60550 - "POST /apis/register/ HTTP/1.0" 307 Temporary Redirect
+INFO:     127.0.0.1:60562 - "POST /apis/register HTTP/1.0" 200 OK
+INFO:     127.0.0.1:56748 - "POST /apis/login/ HTTP/1.0" 307 Temporary Redirect
+{'sub': 'Delicat'}
+{'sub': 'Delicat', 'exp': datetime.datetime(2024, 7, 14, 5, 30, 34, 621393, tzinfo=datetime.timezone.utc)}
+INFO:     127.0.0.1:56762 - "POST /apis/login HTTP/1.0" 200 OK
+INFO:     127.0.0.1:38488 - "POST /apis/register/ HTTP/1.0" 307 Temporary Redirect
+INFO:     127.0.0.1:32950 - "POST /apis/register HTTP/1.0" 200 OK
+INFO:     127.0.0.1:54172 - "POST /apis/register/ HTTP/1.0" 307 Temporary Redirect
+INFO:     127.0.0.1:54176 - "POST /apis/register HTTP/1.0" 200 OK
+INFO:     127.0.0.1:50218 - "POST /apis/register/ HTTP/1.0" 307 Temporary Redirect
+INFO:     127.0.0.1:50222 - "POST /apis/register HTTP/1.0" 422 Unprocessable Entity
+INFO:     127.0.0.1:50228 - "POST /apis/register/ HTTP/1.0" 307 Temporary Redirect
+INFO:     127.0.0.1:50230 - "POST /apis/register HTTP/1.0" 422 Unprocessable Entity
+INFO:     127.0.0.1:52632 - "GET /docs HTTP/1.0" 200 OK
+INFO:     127.0.0.1:52634 - "GET /openapi.json HTTP/1.0" 200 OK
+INFO:     127.0.0.1:53198 - "POST /apis/register/ HTTP/1.0" 307 Temporary Redirect
+INFO:     127.0.0.1:53208 - "POST /apis/register HTTP/1.0" 422 Unprocessable Entity
+INFO:     127.0.0.1:53212 - "POST /apis/register/ HTTP/1.0" 307 Temporary Redirect
+INFO:     127.0.0.1:53224 - "POST /apis/register HTTP/1.0" 422 Unprocessable Entity
+INFO:     127.0.0.1:51612 - "POST /apis/register/ HTTP/1.0" 307 Temporary Redirect
+INFO:     127.0.0.1:51622 - "POST /apis/register HTTP/1.0" 422 Unprocessable Entity
+INFO:     127.0.0.1:33768 - "POST /apis/register/ HTTP/1.0" 307 Temporary Redirect
+INFO:     127.0.0.1:33772 - "POST /apis/register HTTP/1.0" 200 OK
+INFO:     127.0.0.1:40020 - "POST /apis/register HTTP/1.0" 422 Unprocessable Entity
+INFO:     127.0.0.1:52504 - "POST /apis/register/ HTTP/1.0" 307 Temporary Redirect
+INFO:     127.0.0.1:52514 - "POST /apis/register HTTP/1.0" 200 OK
+INFO:     127.0.0.1:50398 - "POST /apis/login/ HTTP/1.0" 307 Temporary Redirect
+{'sub': 'yc'}
+{'sub': 'yc', 'exp': datetime.datetime(2024, 7, 14, 5, 34, 4, 481003, tzinfo=datetime.timezone.utc)}
+INFO:     127.0.0.1:50410 - "POST /apis/login HTTP/1.0" 200 OK
+INFO:     127.0.0.1:50386 - "POST /apis/rank HTTP/1.0" 200 OK
+INFO:     127.0.0.1:36942 - "OPTIONS /apis/getNovel/ HTTP/1.0" 200 OK
+INFO:     127.0.0.1:34772 - "POST /apis/getNovel/ HTTP/1.0" 307 Temporary Redirect
+INFO:     127.0.0.1:34776 - "OPTIONS /apis/getNovel HTTP/1.0" 200 OK
+INFO:     127.0.0.1:34788 - "POST /apis/getNovel HTTP/1.0" 401 Unauthorized
+INFO:     127.0.0.1:38948 - "OPTIONS /apis/login/ HTTP/1.0" 200 OK
+INFO:     127.0.0.1:38952 - "POST /apis/login/ HTTP/1.0" 307 Temporary Redirect
+INFO:     127.0.0.1:38960 - "OPTIONS /apis/login HTTP/1.0" 200 OK
+{'sub': 'hou'}
+{'sub': 'hou', 'exp': datetime.datetime(2024, 7, 14, 5, 38, 6, 278264, tzinfo=datetime.timezone.utc)}
+INFO:     127.0.0.1:38976 - "POST /apis/login HTTP/1.0" 200 OK
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [24884]
+INFO:     Started server process [7714]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [7714]
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+INFO:     Started server process [7719]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:41604 - "POST /apis/register HTTP/1.0" 422 Unprocessable Entity
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [7719]
+INFO:     Started server process [7724]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [7724]
+INFO:     Started server process [7745]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:50584 - "OPTIONS /apis/login/ HTTP/1.0" 200 OK
+INFO:     127.0.0.1:50600 - "POST /apis/login/ HTTP/1.0" 307 Temporary Redirect
+INFO:     127.0.0.1:50612 - "OPTIONS /apis/login HTTP/1.0" 200 OK
+{'sub': 'admin'}
+{'sub': 'admin', 'exp': datetime.datetime(2024, 7, 14, 5, 40, 39, 877592, tzinfo=datetime.timezone.utc)}
+INFO:     127.0.0.1:50616 - "POST /apis/login HTTP/1.0" 200 OK
+INFO:     127.0.0.1:50624 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:50640 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
+INFO:     127.0.0.1:50650 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+INFO:     127.0.0.1:39130 - "GET /apis/admin/getusernovel?user_id=1 HTTP/1.0" 200 OK
+INFO:     127.0.0.1:59212 - "POST /apis/register/ HTTP/1.0" 307 Temporary Redirect
+INFO:     127.0.0.1:59224 - "POST /apis/register HTTP/1.0" 422 Unprocessable Entity
+INFO:     127.0.0.1:60598 - "POST /apis/register/ HTTP/1.0" 307 Temporary Redirect
+INFO:     127.0.0.1:60614 - "POST /apis/register HTTP/1.0" 200 OK

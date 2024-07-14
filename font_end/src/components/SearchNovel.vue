@@ -278,4 +278,20 @@ h2.link1 {
   color: #333;
   /* 设置字体颜色 */
 }
+
+@media (min-width: 600px) {
+
+  /* Adjust for larger screens if needed */
+  .search-form {
+    flex-wrap: nowrap;
+    /* Prevent wrapping on larger screens */
+  }
+
+  .result-box {
+    width: 60%;
+    /* Adjust width for larger screens */
+    margin: 20px auto;
+    /* Center align on larger screens */
+  }
+}
 </style>
