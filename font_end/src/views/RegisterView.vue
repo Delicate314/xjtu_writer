@@ -11,6 +11,9 @@
         <el-form-item prop="password">
           <el-input type="password" v-model="form.password" placeholder="密码"></el-input>
         </el-form-item>
+        <el-form-item prop="confirmPassword">
+          <el-input type="password" v-model="form.confirmPassword" placeholder="确认密码"></el-input>
+        </el-form-item>
         <el-form-item>
           <el-button type="primary" @click="register">注册</el-button>
         </el-form-item>
@@ -33,6 +36,7 @@ export default {
       form: {
         username: '',
         password: '',
+        confirmPassword: ''
       },
       rules: {
         username: [
@@ -40,35 +44,60 @@ export default {
         ],
         password: [
           { required: true, message: '请输入密码', trigger: 'blur' },
+          { validator: this.validatePassword, trigger: 'blur' },
+        ],
+        confirmPassword: [
+          { required: true, message: '请再次输入密码', trigger: 'blur' },
+          { validator: this.validateConfirmPassword, trigger: 'blur' },
         ],
       },
     };
   },
   methods: {
+    validatePassword(rule, value, callback) {
+      const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{6,20}$/;
+      if (!value) {
+        callback(new Error('请输入6到20位的大小写字母和数字组合的密码'));
+      } else if (!passwordPattern.test(value)) {
+        callback(new Error('密码必须是6到20位的大小写字母和数字组合'));
+      } else {
+        callback();
+      }
+    },
+    validateConfirmPassword(rule, value, callback) {
+      if (value !== this.form.password) {
+        callback(new Error('两次输入的密码不一致'));
+      } else {
+        callback();
+      }
+    },
     async register() {
       this.$refs.form.validate(async (valid) => {
         if (valid) {
           try {
             const response = await axios.post('http://121.36.55.149:80/apis/register/', {
               user_name: this.form.username,
-              user_pwd: String(this.form.password),
+              user_pwd: this.form.password,
             });
             console.log(response);
             if (response.data.success) {
               this.$message.success('注册成功');
-              this.$router.push('/login');
-            } else {
-              MessageBox.alert(`注册失败: ${response.data.msg}`, '错误', {
+              this.$router.push('/');
+            }
+            else if (response.data.msg == '用户名重复！') {
+              MessageBox.alert(`注册失败: 用户名重复！`, '错误', {
+                confirmButtonText: '确定',
+                type: 'error',
+              })
+            }
+            else {
+              MessageBox.alert(`注册失败: ${response.data.detail}`, '错误', {
                 confirmButtonText: '确定',
                 type: 'error',
               });
             }
           } catch (error) {
-            // MessageBox.alert(`注册失败，请重试！`, '错误', {
-            //   confirmButtonText: '确定',
-            //   type: 'error',
-            // });
-            MessageBox.alert(`密码需要在6-20位且包含数字、大小写字母!`, '注册失败', {
+            MessageBox.alert(`注册失败，请重试！`, '错误', {
               confirmButtonText: '确定',
               type: 'error',
             });
@@ -77,13 +106,13 @@ export default {
       });
     },
     goToLogin() {
-      this.$router.push('/login');
+      this.$router.push('/');
     },
   },
 };
 </script>
 
-<style scoped>
+<style>
 .register-container {
   display: flex;
   justify-content: center;
