@@ -81,9 +81,9 @@ export default {
     },
     async checkAdmin() {
       try {
-        const response = await axios.post("http://121.36.55.149:80//apis/user/is_admin");
+        const response = await axios.post("http://121.36.55.149:80/apis/user/is_admin");
         console.log(response);
-        if (response.data.user_isadmin !== '1') {
+        if (response.data.user_isadmin === '0') {
           this.$router.push('/login');
         }
       } catch (error) {
