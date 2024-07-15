@@ -14,15 +14,17 @@ export default {
 
 </script>
 
-<style>
+<style scoped>
 .link {
   font-size: 20px;
+  font-weight: bold;
   text-decoration: none;
   color: #fff;
+  box-shadow: 0 4px 8px rgba(6, 0, 125, 0.1);
   margin: 0 35px;
   padding: 5px 20px;
-  border: 5px solid #393e46;
   border-radius: 15px;
+  border: 2px solid #eeeeee;
   display: inline-block;
   transition: all 0.3s ease;
   position: relative;
@@ -76,27 +78,5 @@ h1 {
     transform: scale(0.95, 1.05);
   }
 
-}
-
-@media (max-width: 768px) {
-  .link {
-    font-size: 20px;
-    text-decoration: none;
-    color: #fff;
-    margin: 0 35px;
-    padding: 5px 20px;
-    border: 5px solid #393e46;
-    border-radius: 15px;
-    display: inline-block;
-    transition: all 0.3s ease;
-    position: relative;
-    width: 20%;
-  }
-
-  .link:hover {
-    color: #fff;
-    background-color: #007bff;
-    animation: jelly 0.5s;
-  }
 }
 </style>

@@ -104,7 +104,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .login-background {
   display: flex;
   flex-direction: column;

@@ -5,10 +5,10 @@
             <table>
                 <thead>
                     <tr>
-                        <th>小说标题</th>
+                        <th class="rank-top">小说标题</th>
                         <th>浏览次数</th>
                         <th>更新时间</th>
-                        <th>操作</th>
+                        <th class="rank-bottom">操作</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -87,7 +87,7 @@ export default {
 .novels {
     margin: 30px auto;
     background-color: #f5f5f5;
-    padding: 20px;
+    padding: 10px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -102,6 +102,26 @@ export default {
 .novel-list {
     /* 设置整个表格的最大高度 */
     overflow: hidden;
+}
+
+.rank-top {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.rank-bottom {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.rank-top {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.rank-bottom {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
 table {
