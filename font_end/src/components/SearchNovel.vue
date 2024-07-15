@@ -203,7 +203,7 @@ select.rounded-select {
   border: 3px solid #112d4e;
   font-family: '微软雅黑';
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 button.rounded-button {
