@@ -2,7 +2,9 @@
   <div class="home-container">
     <StarryBackground />
     <Guide />
-    <Home_rank />
+    <RankTable />
+    <UserInfo />
+    <!-- <UserNovel /> -->
   </div>
 </template>
 
@@ -10,7 +12,9 @@
 import StarryBackground from '../components/StarryBackground.vue';
 import Element from '../components/Element.vue';
 import Guide from '../components/Guide.vue';
-import Home_rank from '@/components/Home_rank.vue';
+import RankTable from '@/components/RankTable.vue';
+import UserInfo from '@/components/UserInfo.vue';
+import UserNovel from '@/components/UserNovel.vue';
 
 export default {
   name: 'Home',
@@ -18,7 +22,9 @@ export default {
     StarryBackground,
     Element,
     Guide,
-    Home_rank,
+    RankTable,
+    UserInfo,
+    //UserNovel,
   },
 };
 </script>
@@ -27,5 +33,8 @@ export default {
 .home-container {
   position: relative;
   z-index: 1;
+  display: block;
+  justify-content: center;
+  /* 让内部元素水平居中 */
 }
 </style>
