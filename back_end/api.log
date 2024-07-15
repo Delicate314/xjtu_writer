@@ -1,137 +1,31 @@
-2024-07-15 18:49:02,455 - main.py - log_requests - line:46 - INFO - rid=5V1UJT start request path=/apis/login/
-2024-07-15 18:49:02,456 - main.py - log_requests - line:53 - INFO - rid=5V1UJT completed_in=0.79ms status_code=307
-2024-07-15 18:49:02,486 - main.py - log_requests - line:46 - INFO - rid=K08925 start request path=/apis/login
-2024-07-15 18:49:02,487 - multipart.py - callback - line:626 - DEBUG - Calling on_field_start with no data
-2024-07-15 18:49:02,487 - multipart.py - callback - line:623 - DEBUG - Calling on_field_name with data[0:8]
-2024-07-15 18:49:02,487 - multipart.py - callback - line:623 - DEBUG - Calling on_field_data with data[9:16]
-2024-07-15 18:49:02,488 - multipart.py - callback - line:626 - DEBUG - Calling on_field_end with no data
-2024-07-15 18:49:02,488 - multipart.py - callback - line:626 - DEBUG - Calling on_field_start with no data
-2024-07-15 18:49:02,488 - multipart.py - callback - line:623 - DEBUG - Calling on_field_name with data[17:25]
-2024-07-15 18:49:02,489 - multipart.py - callback - line:623 - DEBUG - Calling on_field_data with data[26:33]
-2024-07-15 18:49:02,489 - multipart.py - callback - line:626 - DEBUG - Calling on_field_end with no data
-2024-07-15 18:49:02,489 - multipart.py - callback - line:626 - DEBUG - Calling on_end with no data
-2024-07-15 18:49:02,784 - main.py - log_requests - line:53 - INFO - rid=K08925 completed_in=297.83ms status_code=200
-2024-07-15 18:49:02,848 - main.py - log_requests - line:46 - INFO - rid=W1WE3Z start request path=/apis/user/ownInfo
-2024-07-15 18:49:03,513 - main.py - getOwnInfo - line:313 - DEBUG - ((15, 'Delicat', 'Zcj1234', 0),)
-2024-07-15 18:49:03,515 - main.py - log_requests - line:46 - INFO - rid=3FFNOF start request path=/apis/user/ownInfo
-2024-07-15 18:49:04,199 - main.py - getOwnInfo - line:313 - DEBUG - ((15, 'Delicat', 'Zcj1234', 0),)
-2024-07-15 18:49:04,200 - main.py - log_requests - line:53 - INFO - rid=W1WE3Z completed_in=1351.69ms status_code=200
-2024-07-15 18:49:04,201 - main.py - log_requests - line:53 - INFO - rid=3FFNOF completed_in=685.72ms status_code=200
-2024-07-15 18:49:12,849 - main.py - log_requests - line:46 - INFO - rid=Q7HRPQ start request path=/apis/rank
-2024-07-15 18:49:13,326 - main.py - log_requests - line:53 - INFO - rid=Q7HRPQ completed_in=476.84ms status_code=200
-2024-07-15 18:49:15,285 - main.py - log_requests - line:46 - INFO - rid=HMLVGW start request path=/apis/user/ownInfo
-2024-07-15 18:49:16,021 - main.py - getOwnInfo - line:313 - DEBUG - ((15, 'Delicat', 'Zcj1234', 0),)
-2024-07-15 18:49:16,023 - main.py - log_requests - line:53 - INFO - rid=HMLVGW completed_in=737.26ms status_code=200
-2024-07-15 18:49:16,023 - main.py - log_requests - line:46 - INFO - rid=H6QESM start request path=/apis/user/ownInfo
-2024-07-15 18:49:16,756 - main.py - getOwnInfo - line:313 - DEBUG - ((15, 'Delicat', 'Zcj1234', 0),)
-2024-07-15 18:49:16,758 - main.py - log_requests - line:53 - INFO - rid=H6QESM completed_in=733.93ms status_code=200
-2024-07-15 18:49:18,789 - main.py - log_requests - line:46 - INFO - rid=5EK2T4 start request path=//apis/user/is_admin
-2024-07-15 18:49:18,791 - main.py - log_requests - line:53 - INFO - rid=5EK2T4 completed_in=0.74ms status_code=404
-2024-07-15 18:50:03,610 - main.py - log_requests - line:46 - INFO - rid=Q9IBEC start request path=//apis/user/is_admin
-2024-07-15 18:50:03,611 - main.py - log_requests - line:53 - INFO - rid=Q9IBEC completed_in=0.73ms status_code=404
-2024-07-15 18:50:33,830 - main.py - log_requests - line:46 - INFO - rid=XTBBDV start request path=/apis/login/
-2024-07-15 18:50:33,831 - main.py - log_requests - line:53 - INFO - rid=XTBBDV completed_in=0.56ms status_code=307
-2024-07-15 18:50:33,861 - main.py - log_requests - line:46 - INFO - rid=F1GDTY start request path=/apis/login
-2024-07-15 18:50:33,862 - multipart.py - callback - line:626 - DEBUG - Calling on_field_start with no data
-2024-07-15 18:50:33,862 - multipart.py - callback - line:623 - DEBUG - Calling on_field_name with data[0:8]
-2024-07-15 18:50:33,863 - multipart.py - callback - line:623 - DEBUG - Calling on_field_data with data[9:14]
-2024-07-15 18:50:33,863 - multipart.py - callback - line:626 - DEBUG - Calling on_field_end with no data
-2024-07-15 18:50:33,863 - multipart.py - callback - line:626 - DEBUG - Calling on_field_start with no data
-2024-07-15 18:50:33,863 - multipart.py - callback - line:623 - DEBUG - Calling on_field_name with data[15:23]
-2024-07-15 18:50:33,864 - multipart.py - callback - line:623 - DEBUG - Calling on_field_data with data[24:29]
-2024-07-15 18:50:33,864 - multipart.py - callback - line:626 - DEBUG - Calling on_field_end with no data
-2024-07-15 18:50:33,864 - multipart.py - callback - line:626 - DEBUG - Calling on_end with no data
-2024-07-15 18:50:34,214 - main.py - log_requests - line:53 - INFO - rid=F1GDTY completed_in=352.27ms status_code=200
-2024-07-15 18:50:34,275 - main.py - log_requests - line:46 - INFO - rid=3V3P3L start request path=//apis/user/is_admin
-2024-07-15 18:50:34,276 - main.py - log_requests - line:53 - INFO - rid=3V3P3L completed_in=0.73ms status_code=404
-2024-07-15 18:50:57,146 - main.py - log_requests - line:46 - INFO - rid=OB18XG start request path=/apis/login/
-2024-07-15 18:50:57,147 - main.py - log_requests - line:53 - INFO - rid=OB18XG completed_in=0.56ms status_code=307
-2024-07-15 18:50:57,174 - main.py - log_requests - line:46 - INFO - rid=45C1R1 start request path=/apis/login
-2024-07-15 18:50:57,175 - multipart.py - callback - line:626 - DEBUG - Calling on_field_start with no data
-2024-07-15 18:50:57,175 - multipart.py - callback - line:623 - DEBUG - Calling on_field_name with data[0:8]
-2024-07-15 18:50:57,175 - multipart.py - callback - line:623 - DEBUG - Calling on_field_data with data[9:14]
-2024-07-15 18:50:57,175 - multipart.py - callback - line:626 - DEBUG - Calling on_field_end with no data
-2024-07-15 18:50:57,176 - multipart.py - callback - line:626 - DEBUG - Calling on_field_start with no data
-2024-07-15 18:50:57,176 - multipart.py - callback - line:623 - DEBUG - Calling on_field_name with data[15:23]
-2024-07-15 18:50:57,176 - multipart.py - callback - line:623 - DEBUG - Calling on_field_data with data[24:29]
-2024-07-15 18:50:57,176 - multipart.py - callback - line:626 - DEBUG - Calling on_field_end with no data
-2024-07-15 18:50:57,177 - multipart.py - callback - line:626 - DEBUG - Calling on_end with no data
-2024-07-15 18:50:57,519 - main.py - log_requests - line:53 - INFO - rid=45C1R1 completed_in=344.53ms status_code=200
-2024-07-15 18:50:57,575 - main.py - log_requests - line:46 - INFO - rid=UCOJ7F start request path=//apis/user/is_admin
-2024-07-15 18:50:57,577 - main.py - log_requests - line:53 - INFO - rid=UCOJ7F completed_in=0.74ms status_code=404
-2024-07-15 18:51:50,460 - main.py - log_requests - line:46 - INFO - rid=2FK8DX start request path=/docs
-2024-07-15 18:51:50,460 - main.py - log_requests - line:53 - INFO - rid=2FK8DX completed_in=0.47ms status_code=200
-2024-07-15 18:51:50,730 - main.py - log_requests - line:46 - INFO - rid=M6ZA1L start request path=/openapi.json
-2024-07-15 18:51:50,761 - main.py - log_requests - line:53 - INFO - rid=M6ZA1L completed_in=30.14ms status_code=200
-2024-07-15 18:51:58,611 - main.py - log_requests - line:46 - INFO - rid=JEO3Y3 start request path=/apis/login
-2024-07-15 18:51:58,612 - multipart.py - callback - line:626 - DEBUG - Calling on_field_start with no data
-2024-07-15 18:51:58,612 - multipart.py - callback - line:623 - DEBUG - Calling on_field_name with data[0:10]
-2024-07-15 18:51:58,612 - multipart.py - callback - line:623 - DEBUG - Calling on_field_data with data[11:19]
-2024-07-15 18:51:58,612 - multipart.py - callback - line:626 - DEBUG - Calling on_field_end with no data
-2024-07-15 18:51:58,613 - multipart.py - callback - line:626 - DEBUG - Calling on_field_start with no data
-2024-07-15 18:51:58,613 - multipart.py - callback - line:623 - DEBUG - Calling on_field_name with data[20:28]
-2024-07-15 18:51:58,613 - multipart.py - callback - line:623 - DEBUG - Calling on_field_data with data[29:34]
-2024-07-15 18:51:58,613 - multipart.py - callback - line:626 - DEBUG - Calling on_field_end with no data
-2024-07-15 18:51:58,614 - multipart.py - callback - line:626 - DEBUG - Calling on_field_start with no data
-2024-07-15 18:51:58,614 - multipart.py - callback - line:623 - DEBUG - Calling on_field_name with data[35:43]
-2024-07-15 18:51:58,614 - multipart.py - callback - line:623 - DEBUG - Calling on_field_data with data[44:49]
-2024-07-15 18:51:58,614 - multipart.py - callback - line:626 - DEBUG - Calling on_field_end with no data
-2024-07-15 18:51:58,615 - multipart.py - callback - line:626 - DEBUG - Calling on_end with no data
-2024-07-15 18:51:59,001 - main.py - log_requests - line:53 - INFO - rid=JEO3Y3 completed_in=389.66ms status_code=200
-2024-07-15 18:52:02,759 - main.py - log_requests - line:46 - INFO - rid=8O788M start request path=/apis/user/is_admin
-2024-07-15 18:52:02,973 - main.py - log_requests - line:53 - INFO - rid=8O788M completed_in=213.86ms status_code=200
-2024-07-15 18:52:15,663 - main.py - log_requests - line:46 - INFO - rid=VT4ECJ start request path=/apis/login/
-2024-07-15 18:52:15,663 - main.py - log_requests - line:53 - INFO - rid=VT4ECJ completed_in=0.56ms status_code=307
-2024-07-15 18:52:15,690 - main.py - log_requests - line:46 - INFO - rid=TRCU26 start request path=/apis/login
-2024-07-15 18:52:15,691 - multipart.py - callback - line:626 - DEBUG - Calling on_field_start with no data
-2024-07-15 18:52:15,691 - multipart.py - callback - line:623 - DEBUG - Calling on_field_name with data[0:8]
-2024-07-15 18:52:15,692 - multipart.py - callback - line:623 - DEBUG - Calling on_field_data with data[9:14]
-2024-07-15 18:52:15,692 - multipart.py - callback - line:626 - DEBUG - Calling on_field_end with no data
-2024-07-15 18:52:15,692 - multipart.py - callback - line:626 - DEBUG - Calling on_field_start with no data
-2024-07-15 18:52:15,692 - multipart.py - callback - line:623 - DEBUG - Calling on_field_name with data[15:23]
-2024-07-15 18:52:15,692 - multipart.py - callback - line:623 - DEBUG - Calling on_field_data with data[24:29]
-2024-07-15 18:52:15,692 - multipart.py - callback - line:626 - DEBUG - Calling on_field_end with no data
-2024-07-15 18:52:15,692 - multipart.py - callback - line:626 - DEBUG - Calling on_end with no data
-2024-07-15 18:52:15,975 - main.py - log_requests - line:53 - INFO - rid=TRCU26 completed_in=284.01ms status_code=200
-2024-07-15 18:52:16,037 - main.py - log_requests - line:46 - INFO - rid=0RMOPO start request path=//apis/user/is_admin
-2024-07-15 18:52:16,038 - main.py - log_requests - line:53 - INFO - rid=0RMOPO completed_in=0.73ms status_code=404
-2024-07-15 18:52:36,094 - main.py - log_requests - line:46 - INFO - rid=AF8EO5 start request path=/docs
-2024-07-15 18:52:36,095 - main.py - log_requests - line:53 - INFO - rid=AF8EO5 completed_in=0.44ms status_code=200
-2024-07-15 18:52:36,342 - main.py - log_requests - line:46 - INFO - rid=4UA7QB start request path=/openapi.json
-2024-07-15 18:52:36,343 - main.py - log_requests - line:53 - INFO - rid=4UA7QB completed_in=0.99ms status_code=200
-2024-07-15 18:52:43,589 - main.py - log_requests - line:46 - INFO - rid=9GBW9R start request path=/apis/login/
-2024-07-15 18:52:43,590 - main.py - log_requests - line:53 - INFO - rid=9GBW9R completed_in=0.58ms status_code=307
-2024-07-15 18:52:43,617 - main.py - log_requests - line:46 - INFO - rid=TY9HRI start request path=/apis/login
-2024-07-15 18:52:43,618 - multipart.py - callback - line:626 - DEBUG - Calling on_field_start with no data
-2024-07-15 18:52:43,618 - multipart.py - callback - line:623 - DEBUG - Calling on_field_name with data[0:8]
-2024-07-15 18:52:43,618 - multipart.py - callback - line:623 - DEBUG - Calling on_field_data with data[9:14]
-2024-07-15 18:52:43,618 - multipart.py - callback - line:626 - DEBUG - Calling on_field_end with no data
-2024-07-15 18:52:43,618 - multipart.py - callback - line:626 - DEBUG - Calling on_field_start with no data
-2024-07-15 18:52:43,619 - multipart.py - callback - line:623 - DEBUG - Calling on_field_name with data[15:23]
-2024-07-15 18:52:43,619 - multipart.py - callback - line:623 - DEBUG - Calling on_field_data with data[24:29]
-2024-07-15 18:52:43,619 - multipart.py - callback - line:626 - DEBUG - Calling on_field_end with no data
-2024-07-15 18:52:43,619 - multipart.py - callback - line:626 - DEBUG - Calling on_end with no data
-2024-07-15 18:52:43,927 - main.py - log_requests - line:53 - INFO - rid=TY9HRI completed_in=309.29ms status_code=200
-2024-07-15 18:52:43,991 - main.py - log_requests - line:46 - INFO - rid=B9Y2IE start request path=/apis/user/is_admin
-2024-07-15 18:52:44,243 - main.py - log_requests - line:53 - INFO - rid=B9Y2IE completed_in=252.22ms status_code=200
-2024-07-15 18:53:08,491 - main.py - log_requests - line:46 - INFO - rid=TX5DNZ start request path=/apis/login/
-2024-07-15 18:53:08,492 - main.py - log_requests - line:53 - INFO - rid=TX5DNZ completed_in=0.56ms status_code=307
-2024-07-15 18:53:08,519 - main.py - log_requests - line:46 - INFO - rid=CZHX0Z start request path=/apis/login
-2024-07-15 18:53:08,520 - multipart.py - callback - line:626 - DEBUG - Calling on_field_start with no data
-2024-07-15 18:53:08,520 - multipart.py - callback - line:623 - DEBUG - Calling on_field_name with data[0:8]
-2024-07-15 18:53:08,520 - multipart.py - callback - line:623 - DEBUG - Calling on_field_data with data[9:16]
-2024-07-15 18:53:08,520 - multipart.py - callback - line:626 - DEBUG - Calling on_field_end with no data
-2024-07-15 18:53:08,520 - multipart.py - callback - line:626 - DEBUG - Calling on_field_start with no data
-2024-07-15 18:53:08,521 - multipart.py - callback - line:623 - DEBUG - Calling on_field_name with data[17:25]
-2024-07-15 18:53:08,521 - multipart.py - callback - line:623 - DEBUG - Calling on_field_data with data[26:33]
-2024-07-15 18:53:08,521 - multipart.py - callback - line:626 - DEBUG - Calling on_field_end with no data
-2024-07-15 18:53:08,521 - multipart.py - callback - line:626 - DEBUG - Calling on_end with no data
-2024-07-15 18:53:08,846 - main.py - log_requests - line:53 - INFO - rid=CZHX0Z completed_in=326.37ms status_code=200
-2024-07-15 18:53:08,905 - main.py - log_requests - line:46 - INFO - rid=75FVBI start request path=/apis/user/ownInfo
-2024-07-15 18:53:09,624 - main.py - getOwnInfo - line:313 - DEBUG - ((15, 'Delicat', 'Zcj1234', 0),)
-2024-07-15 18:53:09,626 - main.py - log_requests - line:46 - INFO - rid=2FPTFU start request path=/apis/user/ownInfo
-2024-07-15 18:53:10,369 - main.py - getOwnInfo - line:313 - DEBUG - ((15, 'Delicat', 'Zcj1234', 0),)
-2024-07-15 18:53:10,371 - main.py - log_requests - line:53 - INFO - rid=75FVBI completed_in=1465.22ms status_code=200
-2024-07-15 18:53:10,371 - main.py - log_requests - line:53 - INFO - rid=2FPTFU completed_in=745.39ms status_code=200
-2024-07-15 18:53:12,115 - main.py - log_requests - line:46 - INFO - rid=9JVPZW start request path=/apis/user/is_admin
-2024-07-15 18:53:12,356 - main.py - log_requests - line:53 - INFO - rid=9JVPZW completed_in=240.71ms status_code=200
+2024-07-15 19:02:54,180 - multipart.py - callback - line:623 - DEBUG - Calling on_part_data with data[0:256000]
+2024-07-15 19:02:54,182 - multipart.py - callback - line:623 - DEBUG - Calling on_part_data with data[0:63589]
+2024-07-15 19:02:54,182 - multipart.py - callback - line:626 - DEBUG - Calling on_part_end with no data
+2024-07-15 19:02:54,182 - multipart.py - callback - line:626 - DEBUG - Calling on_part_begin with no data
+2024-07-15 19:02:54,183 - multipart.py - callback - line:623 - DEBUG - Calling on_header_field with data[63633:63652]
+2024-07-15 19:02:54,183 - multipart.py - callback - line:623 - DEBUG - Calling on_header_value with data[63654:63683]
+2024-07-15 19:02:54,183 - multipart.py - callback - line:626 - DEBUG - Calling on_header_end with no data
+2024-07-15 19:02:54,183 - multipart.py - callback - line:626 - DEBUG - Calling on_headers_finished with no data
+2024-07-15 19:02:54,183 - multipart.py - callback - line:623 - DEBUG - Calling on_part_data with data[63687:63699]
+2024-07-15 19:02:54,184 - multipart.py - callback - line:626 - DEBUG - Calling on_part_end with no data
+2024-07-15 19:02:54,184 - multipart.py - callback - line:626 - DEBUG - Calling on_part_begin with no data
+2024-07-15 19:02:54,184 - multipart.py - callback - line:623 - DEBUG - Calling on_header_field with data[63743:63762]
+2024-07-15 19:02:54,184 - multipart.py - callback - line:623 - DEBUG - Calling on_header_value with data[63764:63789]
+2024-07-15 19:02:54,184 - multipart.py - callback - line:626 - DEBUG - Calling on_header_end with no data
+2024-07-15 19:02:54,184 - multipart.py - callback - line:626 - DEBUG - Calling on_headers_finished with no data
+2024-07-15 19:02:54,184 - multipart.py - callback - line:623 - DEBUG - Calling on_part_data with data[63793:63794]
+2024-07-15 19:02:54,185 - multipart.py - callback - line:626 - DEBUG - Calling on_part_end with no data
+2024-07-15 19:02:54,185 - multipart.py - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-15 19:02:54,658 - main.py - log_requests - line:53 - INFO - rid=VBRDA7 completed_in=483.42ms status_code=200
+2024-07-15 19:02:57,731 - main.py - log_requests - line:46 - INFO - rid=284WFG start request path=/apis/user/ownInfo
+2024-07-15 19:02:58,456 - main.py - getOwnInfo - line:313 - DEBUG - ((25, 'RudyC', 'Zcj1234', 0),)
+2024-07-15 19:02:58,457 - main.py - log_requests - line:53 - INFO - rid=284WFG completed_in=725.87ms status_code=200
+2024-07-15 19:02:58,457 - main.py - log_requests - line:46 - INFO - rid=M80H3T start request path=/apis/user/ownInfo
+2024-07-15 19:02:59,148 - main.py - getOwnInfo - line:313 - DEBUG - ((25, 'RudyC', 'Zcj1234', 0),)
+2024-07-15 19:02:59,149 - main.py - log_requests - line:53 - INFO - rid=M80H3T completed_in=692.00ms status_code=200
+2024-07-15 19:03:03,080 - main.py - log_requests - line:46 - INFO - rid=D5UG4K start request path=/apis/user/deleteNovel
+2024-07-15 19:03:03,738 - novel_option.py - delete_novel - line:233 - DEBUG - file_path = /home/xjtu_writer/xjtu_writer/novel/25/95.txt
+2024-07-15 19:03:03,804 - main.py - log_requests - line:53 - INFO - rid=D5UG4K completed_in=723.76ms status_code=200
+2024-07-15 19:03:05,245 - main.py - log_requests - line:46 - INFO - rid=J2N263 start request path=/apis/user/ownInfo
+2024-07-15 19:03:05,950 - main.py - getOwnInfo - line:313 - DEBUG - ((25, 'RudyC', 'Zcj1234', 0),)
+2024-07-15 19:03:05,951 - main.py - log_requests - line:53 - INFO - rid=J2N263 completed_in=705.07ms status_code=200

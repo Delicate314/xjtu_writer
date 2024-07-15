@@ -1,7 +1,10 @@
 <template>
     <div class="novels">
         <h2>我的小说</h2>
-        <div class="novel-list">
+        <div v-if="novel_count === 0" class="no-novels-message">
+            你还没有小说哦，去搜索页面上传或者写小说页面创作后上传把！！！
+        </div>
+        <div v-else class="novel-list">
             <table>
                 <thead>
                     <tr>

@@ -77,7 +77,7 @@ export default {
         this.dialogVisible = false; // 关闭对话框
       } catch (error) {
         console.error('文件上传失败', error);
-        MessageBox.alert(`文件上传失败`, '错误', {
+        MessageBox.alert(`文件上传失败,仅支持.txt格式`, '错误', {
           confirmButtonText: '确定',
           type: 'error',
         });
