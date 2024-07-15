@@ -664,3 +664,57 @@
 2024-07-15 10:09:17,751 - log_requests - line:53 - INFO - rid=GJE5JD completed_in=0.31ms status_code=200
 2024-07-15 10:09:18,172 - log_requests - line:46 - INFO - rid=9KLFPJ start request path=/apis/rank
 2024-07-15 10:09:18,650 - log_requests - line:53 - INFO - rid=9KLFPJ completed_in=477.77ms status_code=200
+2024-07-15 10:10:28,539 - log_requests - line:46 - INFO - rid=EMRKSB start request path=/apis/uploadfile
+2024-07-15 10:10:28,540 - callback - line:626 - DEBUG - Calling on_part_begin with no data
+2024-07-15 10:10:28,540 - callback - line:623 - DEBUG - Calling on_header_field with data[42:61]
+2024-07-15 10:10:28,540 - callback - line:623 - DEBUG - Calling on_header_value with data[63:130]
+2024-07-15 10:10:28,540 - callback - line:626 - DEBUG - Calling on_header_end with no data
+2024-07-15 10:10:28,540 - callback - line:623 - DEBUG - Calling on_header_field with data[132:144]
+2024-07-15 10:10:28,541 - callback - line:623 - DEBUG - Calling on_header_value with data[146:217]
+2024-07-15 10:10:28,541 - callback - line:626 - DEBUG - Calling on_header_end with no data
+2024-07-15 10:10:28,541 - callback - line:626 - DEBUG - Calling on_headers_finished with no data
+2024-07-15 10:10:28,541 - callback - line:623 - DEBUG - Calling on_part_data with data[221:15083]
+2024-07-15 10:10:28,542 - callback - line:626 - DEBUG - Calling on_part_end with no data
+2024-07-15 10:10:28,542 - callback - line:626 - DEBUG - Calling on_part_begin with no data
+2024-07-15 10:10:28,542 - callback - line:623 - DEBUG - Calling on_header_field with data[15127:15146]
+2024-07-15 10:10:28,542 - callback - line:623 - DEBUG - Calling on_header_value with data[15148:15177]
+2024-07-15 10:10:28,542 - callback - line:626 - DEBUG - Calling on_header_end with no data
+2024-07-15 10:10:28,542 - callback - line:626 - DEBUG - Calling on_headers_finished with no data
+2024-07-15 10:10:28,543 - callback - line:623 - DEBUG - Calling on_part_data with data[15181:15213]
+2024-07-15 10:10:28,543 - callback - line:626 - DEBUG - Calling on_part_end with no data
+2024-07-15 10:10:28,543 - callback - line:626 - DEBUG - Calling on_part_begin with no data
+2024-07-15 10:10:28,543 - callback - line:623 - DEBUG - Calling on_header_field with data[15257:15276]
+2024-07-15 10:10:28,544 - callback - line:623 - DEBUG - Calling on_header_value with data[15278:15303]
+2024-07-15 10:10:28,544 - callback - line:626 - DEBUG - Calling on_header_end with no data
+2024-07-15 10:10:28,544 - callback - line:626 - DEBUG - Calling on_headers_finished with no data
+2024-07-15 10:10:28,544 - callback - line:623 - DEBUG - Calling on_part_data with data[15307:15308]
+2024-07-15 10:10:28,544 - callback - line:626 - DEBUG - Calling on_part_end with no data
+2024-07-15 10:10:28,544 - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-15 10:10:28,768 - log_requests - line:53 - INFO - rid=EMRKSB completed_in=229.35ms status_code=400
+2024-07-15 10:10:30,635 - log_requests - line:46 - INFO - rid=VYVORC start request path=/apis/uploadfile
+2024-07-15 10:10:30,636 - callback - line:626 - DEBUG - Calling on_part_begin with no data
+2024-07-15 10:10:30,637 - callback - line:623 - DEBUG - Calling on_header_field with data[42:61]
+2024-07-15 10:10:30,637 - callback - line:623 - DEBUG - Calling on_header_value with data[63:130]
+2024-07-15 10:10:30,637 - callback - line:626 - DEBUG - Calling on_header_end with no data
+2024-07-15 10:10:30,637 - callback - line:623 - DEBUG - Calling on_header_field with data[132:144]
+2024-07-15 10:10:30,637 - callback - line:623 - DEBUG - Calling on_header_value with data[146:217]
+2024-07-15 10:10:30,638 - callback - line:626 - DEBUG - Calling on_header_end with no data
+2024-07-15 10:10:30,638 - callback - line:626 - DEBUG - Calling on_headers_finished with no data
+2024-07-15 10:10:30,638 - callback - line:623 - DEBUG - Calling on_part_data with data[221:15083]
+2024-07-15 10:10:30,639 - callback - line:626 - DEBUG - Calling on_part_end with no data
+2024-07-15 10:10:30,639 - callback - line:626 - DEBUG - Calling on_part_begin with no data
+2024-07-15 10:10:30,639 - callback - line:623 - DEBUG - Calling on_header_field with data[15127:15146]
+2024-07-15 10:10:30,639 - callback - line:623 - DEBUG - Calling on_header_value with data[15148:15177]
+2024-07-15 10:10:30,639 - callback - line:626 - DEBUG - Calling on_header_end with no data
+2024-07-15 10:10:30,639 - callback - line:626 - DEBUG - Calling on_headers_finished with no data
+2024-07-15 10:10:30,640 - callback - line:623 - DEBUG - Calling on_part_data with data[15181:15213]
+2024-07-15 10:10:30,640 - callback - line:626 - DEBUG - Calling on_part_end with no data
+2024-07-15 10:10:30,640 - callback - line:626 - DEBUG - Calling on_part_begin with no data
+2024-07-15 10:10:30,640 - callback - line:623 - DEBUG - Calling on_header_field with data[15257:15276]
+2024-07-15 10:10:30,640 - callback - line:623 - DEBUG - Calling on_header_value with data[15278:15303]
+2024-07-15 10:10:30,640 - callback - line:626 - DEBUG - Calling on_header_end with no data
+2024-07-15 10:10:30,641 - callback - line:626 - DEBUG - Calling on_headers_finished with no data
+2024-07-15 10:10:30,641 - callback - line:623 - DEBUG - Calling on_part_data with data[15307:15308]
+2024-07-15 10:10:30,641 - callback - line:626 - DEBUG - Calling on_part_end with no data
+2024-07-15 10:10:30,641 - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-15 10:10:30,905 - log_requests - line:53 - INFO - rid=VYVORC completed_in=268.89ms status_code=400
