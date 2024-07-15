@@ -180,12 +180,12 @@ export default {
 .no-results {
   text-align: center;
   /* 文本居中 */
-  margin-top: 20px;
-  /* 上边距 */
   color: #ffffff;
   /* 字体颜色 */
   font-size: 1.2em;
   /* 字体大小 */
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 input.rounded-input {
