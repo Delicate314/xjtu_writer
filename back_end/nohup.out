@@ -23554,3 +23554,158 @@ Traceback (most recent call last):
 fastapi.exceptions.ResponseValidationError: 1 validation errors:
   {'type': 'string_type', 'loc': ('response',), 'msg': 'Input should be a valid string', 'input': GenerationResponse(status_code=400, request_id='fb9fd0b9-52ac-9e22-82c9-428f701a01c0', code='InvalidParameter', message='Range of input length should be [1, 6000]', output=None, usage=None)}
 
+2024-07-15 18:25:47,701 - log_requests - line:46 - INFO - rid=LCTQZZ start request path=/apis/rank
+2024-07-15 18:25:48,132 - log_requests - line:53 - INFO - rid=LCTQZZ completed_in=430.79ms status_code=200
+INFO:     127.0.0.1:53358 - "POST /apis/rank HTTP/1.0" 200 OK
+2024-07-15 18:25:52,517 - log_requests - line:46 - INFO - rid=I8ROIX start request path=/apis/rank
+2024-07-15 18:25:53,011 - log_requests - line:53 - INFO - rid=I8ROIX completed_in=493.46ms status_code=200
+INFO:     127.0.0.1:53364 - "POST /apis/rank HTTP/1.0" 200 OK
+2024-07-15 18:25:54,801 - log_requests - line:46 - INFO - rid=WSOUED start request path=/apis/getNovel/
+2024-07-15 18:25:54,802 - log_requests - line:53 - INFO - rid=WSOUED completed_in=0.56ms status_code=307
+INFO:     127.0.0.1:50584 - "POST /apis/getNovel/ HTTP/1.0" 307 Temporary Redirect
+2024-07-15 18:25:55,141 - log_requests - line:46 - INFO - rid=AQ63YF start request path=/apis/getNovel
+2024-07-15 18:25:55,896 - log_requests - line:53 - INFO - rid=AQ63YF completed_in=755.10ms status_code=200
+INFO:     127.0.0.1:50588 - "POST /apis/getNovel HTTP/1.0" 200 OK
+2024-07-15 18:26:25,384 - log_requests - line:46 - INFO - rid=AEHA49 start request path=/apis/getNovel/
+2024-07-15 18:26:25,385 - log_requests - line:53 - INFO - rid=AEHA49 completed_in=0.55ms status_code=307
+INFO:     127.0.0.1:44022 - "POST /apis/getNovel/ HTTP/1.0" 307 Temporary Redirect
+2024-07-15 18:26:25,726 - log_requests - line:46 - INFO - rid=3809RB start request path=/apis/getNovel
+2024-07-15 18:26:26,477 - log_requests - line:53 - INFO - rid=3809RB completed_in=751.27ms status_code=200
+INFO:     127.0.0.1:44028 - "POST /apis/getNovel HTTP/1.0" 200 OK
+2024-07-15 18:26:39,138 - log_requests - line:46 - INFO - rid=Q658XA start request path=/apis/rank
+2024-07-15 18:26:39,585 - log_requests - line:53 - INFO - rid=Q658XA completed_in=446.44ms status_code=200
+INFO:     127.0.0.1:44532 - "POST /apis/rank HTTP/1.0" 200 OK
+2024-07-15 18:26:42,744 - log_requests - line:46 - INFO - rid=O00ENJ start request path=/apis/getNovel/
+2024-07-15 18:26:42,745 - log_requests - line:53 - INFO - rid=O00ENJ completed_in=0.55ms status_code=307
+INFO:     127.0.0.1:44542 - "POST /apis/getNovel/ HTTP/1.0" 307 Temporary Redirect
+2024-07-15 18:26:43,091 - log_requests - line:46 - INFO - rid=LTRGPK start request path=/apis/getNovel
+2024-07-15 18:26:43,880 - log_requests - line:53 - INFO - rid=LTRGPK completed_in=788.17ms status_code=200
+INFO:     127.0.0.1:44546 - "POST /apis/getNovel HTTP/1.0" 200 OK
+2024-07-15 18:26:51,857 - log_requests - line:46 - INFO - rid=PG71MR start request path=/apis/rank
+2024-07-15 18:26:52,317 - log_requests - line:53 - INFO - rid=PG71MR completed_in=459.92ms status_code=200
+INFO:     127.0.0.1:43430 - "POST /apis/rank HTTP/1.0" 200 OK
+2024-07-15 18:27:10,605 - log_requests - line:46 - INFO - rid=0O8HKS start request path=/apis/rank
+2024-07-15 18:27:11,078 - log_requests - line:53 - INFO - rid=0O8HKS completed_in=472.49ms status_code=200
+INFO:     127.0.0.1:47998 - "POST /apis/rank HTTP/1.0" 200 OK
+2024-07-15 18:27:12,068 - log_requests - line:46 - INFO - rid=UOPLRX start request path=/apis/rank
+2024-07-15 18:27:12,543 - log_requests - line:53 - INFO - rid=UOPLRX completed_in=474.31ms status_code=200
+INFO:     127.0.0.1:48012 - "POST /apis/rank HTTP/1.0" 200 OK
+2024-07-15 18:27:14,111 - log_requests - line:46 - INFO - rid=0Q6FBK start request path=/apis/getNovel/
+2024-07-15 18:27:14,111 - log_requests - line:53 - INFO - rid=0Q6FBK completed_in=0.56ms status_code=307
+INFO:     127.0.0.1:59108 - "POST /apis/getNovel/ HTTP/1.0" 307 Temporary Redirect
+2024-07-15 18:27:14,448 - log_requests - line:46 - INFO - rid=M0XUDB start request path=/apis/getNovel
+2024-07-15 18:27:15,184 - log_requests - line:53 - INFO - rid=M0XUDB completed_in=735.19ms status_code=200
+INFO:     127.0.0.1:59112 - "POST /apis/getNovel HTTP/1.0" 200 OK
+2024-07-15 18:27:17,797 - log_requests - line:46 - INFO - rid=9KVW5U start request path=/apis/rank
+2024-07-15 18:27:18,266 - log_requests - line:53 - INFO - rid=9KVW5U completed_in=468.56ms status_code=200
+INFO:     127.0.0.1:59128 - "POST /apis/rank HTTP/1.0" 200 OK
+2024-07-15 18:27:20,777 - log_requests - line:46 - INFO - rid=8D7V68 start request path=/apis/rank
+2024-07-15 18:27:21,247 - log_requests - line:53 - INFO - rid=8D7V68 completed_in=469.68ms status_code=200
+INFO:     127.0.0.1:59132 - "POST /apis/rank HTTP/1.0" 200 OK
+2024-07-15 18:27:25,506 - log_requests - line:46 - INFO - rid=H8J5HY start request path=/apis/getNovel/
+2024-07-15 18:27:25,507 - log_requests - line:53 - INFO - rid=H8J5HY completed_in=0.55ms status_code=307
+INFO:     127.0.0.1:45434 - "POST /apis/getNovel/ HTTP/1.0" 307 Temporary Redirect
+2024-07-15 18:27:26,085 - log_requests - line:46 - INFO - rid=59AM68 start request path=/apis/getNovel
+2024-07-15 18:27:26,851 - log_requests - line:53 - INFO - rid=59AM68 completed_in=765.63ms status_code=200
+INFO:     127.0.0.1:45442 - "POST /apis/getNovel HTTP/1.0" 200 OK
+2024-07-15 18:27:29,267 - log_requests - line:46 - INFO - rid=TFSDD7 start request path=/apis/rank
+2024-07-15 18:27:29,739 - log_requests - line:53 - INFO - rid=TFSDD7 completed_in=472.20ms status_code=200
+INFO:     127.0.0.1:45456 - "POST /apis/rank HTTP/1.0" 200 OK
+2024-07-15 18:27:30,696 - log_requests - line:46 - INFO - rid=9SZY7F start request path=/apis/rank
+2024-07-15 18:27:31,199 - log_requests - line:53 - INFO - rid=9SZY7F completed_in=502.77ms status_code=200
+INFO:     127.0.0.1:45460 - "POST /apis/rank HTTP/1.0" 200 OK
+2024-07-15 18:27:31,989 - log_requests - line:46 - INFO - rid=F0JRZC start request path=/apis/rank
+2024-07-15 18:27:32,421 - log_requests - line:53 - INFO - rid=F0JRZC completed_in=431.79ms status_code=200
+INFO:     127.0.0.1:45476 - "POST /apis/rank HTTP/1.0" 200 OK
+2024-07-15 18:27:33,356 - log_requests - line:46 - INFO - rid=40Q9T8 start request path=/apis/rank
+2024-07-15 18:27:33,811 - log_requests - line:53 - INFO - rid=40Q9T8 completed_in=455.03ms status_code=200
+INFO:     127.0.0.1:45480 - "POST /apis/rank HTTP/1.0" 200 OK
+2024-07-15 18:27:36,505 - log_requests - line:46 - INFO - rid=SFG68R start request path=/apis/rank
+2024-07-15 18:27:36,938 - log_requests - line:53 - INFO - rid=SFG68R completed_in=432.66ms status_code=200
+INFO:     127.0.0.1:48852 - "POST /apis/rank HTTP/1.0" 200 OK
+2024-07-15 18:27:37,916 - log_requests - line:46 - INFO - rid=LXBZLD start request path=/apis/rank
+2024-07-15 18:27:38,361 - log_requests - line:53 - INFO - rid=LXBZLD completed_in=444.57ms status_code=200
+INFO:     127.0.0.1:48864 - "POST /apis/rank HTTP/1.0" 200 OK
+2024-07-15 18:27:39,099 - log_requests - line:46 - INFO - rid=I57M5E start request path=/apis/rank
+2024-07-15 18:27:39,552 - log_requests - line:53 - INFO - rid=I57M5E completed_in=452.74ms status_code=200
+INFO:     127.0.0.1:48866 - "POST /apis/rank HTTP/1.0" 200 OK
+2024-07-15 18:28:39,439 - log_requests - line:46 - INFO - rid=UGMEMV start request path=/apis/rank
+2024-07-15 18:28:39,929 - log_requests - line:53 - INFO - rid=UGMEMV completed_in=490.18ms status_code=200
+INFO:     127.0.0.1:43466 - "POST /apis/rank HTTP/1.0" 200 OK
+2024-07-15 18:28:40,953 - log_requests - line:46 - INFO - rid=REX13P start request path=/apis/rank
+2024-07-15 18:28:41,383 - log_requests - line:53 - INFO - rid=REX13P completed_in=429.63ms status_code=200
+INFO:     127.0.0.1:43474 - "POST /apis/rank HTTP/1.0" 200 OK
+2024-07-15 18:28:43,625 - log_requests - line:46 - INFO - rid=BAVQ49 start request path=/apis/getNovel/
+2024-07-15 18:28:43,626 - log_requests - line:53 - INFO - rid=BAVQ49 completed_in=0.58ms status_code=307
+INFO:     127.0.0.1:46704 - "POST /apis/getNovel/ HTTP/1.0" 307 Temporary Redirect
+2024-07-15 18:28:43,974 - log_requests - line:46 - INFO - rid=JUX0WE start request path=/apis/getNovel
+2024-07-15 18:28:44,715 - log_requests - line:53 - INFO - rid=JUX0WE completed_in=740.38ms status_code=200
+INFO:     127.0.0.1:46716 - "POST /apis/getNovel HTTP/1.0" 200 OK
+2024-07-15 18:28:46,679 - log_requests - line:46 - INFO - rid=NRKBPT start request path=/apis/rank
+2024-07-15 18:28:47,145 - log_requests - line:53 - INFO - rid=NRKBPT completed_in=465.40ms status_code=200
+INFO:     127.0.0.1:46732 - "POST /apis/rank HTTP/1.0" 200 OK
+2024-07-15 18:28:48,203 - log_requests - line:46 - INFO - rid=6Z7QEJ start request path=/apis/rank
+2024-07-15 18:28:48,708 - log_requests - line:53 - INFO - rid=6Z7QEJ completed_in=504.53ms status_code=200
+INFO:     127.0.0.1:46738 - "POST /apis/rank HTTP/1.0" 200 OK
+2024-07-15 18:28:49,617 - log_requests - line:46 - INFO - rid=ER5UYP start request path=/apis/rank
+2024-07-15 18:28:50,079 - log_requests - line:53 - INFO - rid=ER5UYP completed_in=461.76ms status_code=200
+INFO:     127.0.0.1:46740 - "POST /apis/rank HTTP/1.0" 200 OK
+2024-07-15 18:28:51,277 - log_requests - line:46 - INFO - rid=SM2Q10 start request path=/apis/rank
+2024-07-15 18:28:51,715 - log_requests - line:53 - INFO - rid=SM2Q10 completed_in=437.51ms status_code=200
+INFO:     127.0.0.1:46752 - "POST /apis/rank HTTP/1.0" 200 OK
+2024-07-15 18:28:53,742 - log_requests - line:46 - INFO - rid=NA2GVT start request path=/apis/rank
+2024-07-15 18:28:54,183 - log_requests - line:53 - INFO - rid=NA2GVT completed_in=441.26ms status_code=200
+INFO:     127.0.0.1:36106 - "POST /apis/rank HTTP/1.0" 200 OK
+2024-07-15 18:28:55,265 - log_requests - line:46 - INFO - rid=U7QOF0 start request path=/apis/rank
+2024-07-15 18:28:55,736 - log_requests - line:53 - INFO - rid=U7QOF0 completed_in=470.59ms status_code=200
+INFO:     127.0.0.1:36122 - "POST /apis/rank HTTP/1.0" 200 OK
+2024-07-15 18:28:56,592 - log_requests - line:46 - INFO - rid=NUU3W9 start request path=/apis/rank
+2024-07-15 18:28:57,074 - log_requests - line:53 - INFO - rid=NUU3W9 completed_in=481.58ms status_code=200
+INFO:     127.0.0.1:36134 - "POST /apis/rank HTTP/1.0" 200 OK
+2024-07-15 18:29:58,141 - log_requests - line:46 - INFO - rid=P00JUV start request path=/apis/user/ownInfo
+2024-07-15 18:29:58,793 - getOwnInfo - line:231 - DEBUG - ((15, 'Delicat', 'Zcj1234', 0),)
+2024-07-15 18:29:58,794 - log_requests - line:53 - INFO - rid=P00JUV completed_in=653.26ms status_code=200
+INFO:     127.0.0.1:35880 - "POST /apis/user/ownInfo HTTP/1.0" 200 OK
+2024-07-15 18:29:59,624 - log_requests - line:46 - INFO - rid=15UFYX start request path=/apis/user/ownInfo
+2024-07-15 18:30:00,284 - getOwnInfo - line:231 - DEBUG - ((15, 'Delicat', 'Zcj1234', 0),)
+2024-07-15 18:30:00,286 - log_requests - line:53 - INFO - rid=15UFYX completed_in=661.45ms status_code=200
+INFO:     127.0.0.1:35892 - "POST /apis/user/ownInfo HTTP/1.0" 200 OK
+2024-07-15 18:30:03,524 - log_requests - line:46 - INFO - rid=N8A1IY start request path=/apis/rank
+2024-07-15 18:30:03,987 - log_requests - line:53 - INFO - rid=N8A1IY completed_in=462.80ms status_code=200
+INFO:     127.0.0.1:35906 - "POST /apis/rank HTTP/1.0" 200 OK
+2024-07-15 18:30:19,768 - log_requests - line:46 - INFO - rid=5BQXSK start request path=/apis/rank
+2024-07-15 18:30:20,240 - log_requests - line:53 - INFO - rid=5BQXSK completed_in=471.58ms status_code=200
+INFO:     127.0.0.1:36348 - "POST /apis/rank HTTP/1.0" 200 OK
+2024-07-15 18:30:21,914 - log_requests - line:46 - INFO - rid=BU8LJQ start request path=/apis/rank
+2024-07-15 18:30:22,387 - log_requests - line:53 - INFO - rid=BU8LJQ completed_in=472.79ms status_code=200
+INFO:     127.0.0.1:36354 - "POST /apis/rank HTTP/1.0" 200 OK
+2024-07-15 18:30:23,792 - log_requests - line:46 - INFO - rid=MOMK68 start request path=/apis/rank
+2024-07-15 18:30:24,281 - log_requests - line:53 - INFO - rid=MOMK68 completed_in=488.64ms status_code=200
+INFO:     127.0.0.1:47262 - "POST /apis/rank HTTP/1.0" 200 OK
+2024-07-15 18:30:25,634 - log_requests - line:46 - INFO - rid=4CMQ5J start request path=/apis/getNovel/
+2024-07-15 18:30:25,635 - log_requests - line:53 - INFO - rid=4CMQ5J completed_in=0.55ms status_code=307
+INFO:     127.0.0.1:47274 - "POST /apis/getNovel/ HTTP/1.0" 307 Temporary Redirect
+2024-07-15 18:30:25,976 - log_requests - line:46 - INFO - rid=T1XDJN start request path=/apis/getNovel
+2024-07-15 18:30:26,745 - log_requests - line:53 - INFO - rid=T1XDJN completed_in=768.14ms status_code=200
+INFO:     127.0.0.1:47276 - "POST /apis/getNovel HTTP/1.0" 200 OK
+2024-07-15 18:30:33,643 - log_requests - line:46 - INFO - rid=NH8L16 start request path=/apis/getNovel/
+2024-07-15 18:30:33,644 - log_requests - line:53 - INFO - rid=NH8L16 completed_in=0.58ms status_code=307
+INFO:     127.0.0.1:49124 - "POST /apis/getNovel/ HTTP/1.0" 307 Temporary Redirect
+2024-07-15 18:30:33,986 - log_requests - line:46 - INFO - rid=YWXEML start request path=/apis/getNovel
+2024-07-15 18:30:34,851 - log_requests - line:53 - INFO - rid=YWXEML completed_in=864.26ms status_code=200
+INFO:     127.0.0.1:49128 - "POST /apis/getNovel HTTP/1.0" 200 OK
+2024-07-15 18:30:38,821 - log_requests - line:46 - INFO - rid=57KE9L start request path=/apis/rank
+2024-07-15 18:30:39,276 - log_requests - line:53 - INFO - rid=57KE9L completed_in=454.55ms status_code=200
+INFO:     127.0.0.1:49134 - "POST /apis/rank HTTP/1.0" 200 OK
+2024-07-15 18:30:42,222 - log_requests - line:46 - INFO - rid=K4BZYW start request path=/apis/rank
+2024-07-15 18:30:42,650 - log_requests - line:53 - INFO - rid=K4BZYW completed_in=428.38ms status_code=200
+INFO:     127.0.0.1:49138 - "POST /apis/rank HTTP/1.0" 200 OK
+2024-07-15 18:30:46,455 - log_requests - line:46 - INFO - rid=7KC8KR start request path=/apis/getNovel/
+2024-07-15 18:30:46,455 - log_requests - line:53 - INFO - rid=7KC8KR completed_in=0.54ms status_code=307
+INFO:     127.0.0.1:58926 - "POST /apis/getNovel/ HTTP/1.0" 307 Temporary Redirect
+2024-07-15 18:30:46,812 - log_requests - line:46 - INFO - rid=YTUSD1 start request path=/apis/getNovel
+2024-07-15 18:30:47,604 - log_requests - line:53 - INFO - rid=YTUSD1 completed_in=791.15ms status_code=200
+INFO:     127.0.0.1:58928 - "POST /apis/getNovel HTTP/1.0" 200 OK
+2024-07-15 18:30:49,903 - log_requests - line:46 - INFO - rid=LZ7PYP start request path=/apis/rank
+2024-07-15 18:30:50,323 - log_requests - line:53 - INFO - rid=LZ7PYP completed_in=420.08ms status_code=200
+INFO:     127.0.0.1:58942 - "POST /apis/rank HTTP/1.0" 200 OK
