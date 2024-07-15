@@ -9,7 +9,7 @@
   </div>
 </template>
 
-<script>
+<script scoped>
 import axios from 'axios';
 import { MessageBox } from 'element-ui';
 
@@ -119,24 +119,12 @@ select.rounded-select {
   font-size: 15px;
 }
 
-
-
-
-h2 {
-  font-size: 1.5em;
-  /* 调整字体大小 */
-  margin-bottom: 20px;
-  /* 调整下边距 */
-  color: #007bff;
-  /* 设置字体颜色 */
-}
-
 h2.link1 {
   font-size: 1.5em;
   /* 调整字体大小 */
   margin-bottom: 20px;
   /* 调整下边距 */
-  color: #000000;
+  color: #fff;
   /* 设置字体颜色 */
 }
 
