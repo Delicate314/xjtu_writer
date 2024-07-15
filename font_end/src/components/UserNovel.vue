@@ -17,7 +17,9 @@
                         <td>{{ novel.novel_viewcount }}</td>
                         <td>{{ novel.UpdatedAt }}</td>
                         <td>
-                            <button @click="readNovel(novel.novel_id)" class="button read">阅读</button>
+                            <router-link :to="`/Novel?id=${novel.novel_id}`" class="item-link">
+                                <button @click="readNovel(novel.novel_id)" class="button read">阅读</button>
+                            </router-link>
                             <button @click="editNovel(novel.novel_id)" class="button edit">修改</button>
                             <button @click="deleteNovel(novel.novel_id, novel.novel_title)"
                                 class="button delete">删除</button>
