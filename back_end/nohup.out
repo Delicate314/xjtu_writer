@@ -15616,3 +15616,303 @@ INFO:     Finished server process [28426]
 INFO:     Started server process [28909]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
+2024-07-15 10:39:33,613 - log_requests - line:46 - INFO - rid=M706NG start request path=/apis/novel/releaseNovel
+2024-07-15 10:39:33,615 - callback - line:626 - DEBUG - Calling on_part_begin with no data
+2024-07-15 10:39:33,615 - callback - line:623 - DEBUG - Calling on_header_field with data[42:61]
+2024-07-15 10:39:33,615 - callback - line:623 - DEBUG - Calling on_header_value with data[63:86]
+2024-07-15 10:39:33,615 - callback - line:626 - DEBUG - Calling on_header_end with no data
+2024-07-15 10:39:33,616 - callback - line:626 - DEBUG - Calling on_headers_finished with no data
+2024-07-15 10:39:33,616 - callback - line:623 - DEBUG - Calling on_part_data with data[90:2527]
+2024-07-15 10:39:33,616 - callback - line:626 - DEBUG - Calling on_part_end with no data
+2024-07-15 10:39:33,616 - callback - line:626 - DEBUG - Calling on_part_begin with no data
+2024-07-15 10:39:33,617 - callback - line:623 - DEBUG - Calling on_header_field with data[2571:2590]
+2024-07-15 10:39:33,617 - callback - line:623 - DEBUG - Calling on_header_value with data[2592:2621]
+2024-07-15 10:39:33,617 - callback - line:626 - DEBUG - Calling on_header_end with no data
+2024-07-15 10:39:33,617 - callback - line:626 - DEBUG - Calling on_headers_finished with no data
+2024-07-15 10:39:33,617 - callback - line:623 - DEBUG - Calling on_part_data with data[2625:2637]
+2024-07-15 10:39:33,617 - callback - line:626 - DEBUG - Calling on_part_end with no data
+2024-07-15 10:39:33,618 - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-15 10:39:34,150 - log_requests - line:53 - INFO - rid=M706NG completed_in=536.07ms status_code=200
+INFO:     127.0.0.1:57800 - "POST /apis/novel/releaseNovel HTTP/1.0" 200 OK
+2024-07-15 10:39:35,848 - log_requests - line:46 - INFO - rid=E8LOKK start request path=/apis/user/ownInfo
+2024-07-15 10:39:36,598 - getOwnInfo - line:231 - DEBUG - ((37, 'pjj', '123456Ab', 0),)
+2024-07-15 10:39:36,599 - log_requests - line:53 - INFO - rid=E8LOKK completed_in=750.47ms status_code=200
+2024-07-15 10:39:36,599 - log_requests - line:46 - INFO - rid=X0Y4PV start request path=/apis/user/ownInfo
+INFO:     127.0.0.1:57816 - "POST /apis/user/ownInfo HTTP/1.0" 200 OK
+2024-07-15 10:39:37,325 - getOwnInfo - line:231 - DEBUG - ((37, 'pjj', '123456Ab', 0),)
+2024-07-15 10:39:37,326 - log_requests - line:53 - INFO - rid=X0Y4PV completed_in=726.37ms status_code=200
+INFO:     127.0.0.1:57824 - "POST /apis/user/ownInfo HTTP/1.0" 200 OK
+2024-07-15 10:39:43,916 - log_requests - line:46 - INFO - rid=5U98OE start request path=/apis/uploadfile
+2024-07-15 10:39:43,917 - callback - line:626 - DEBUG - Calling on_part_begin with no data
+2024-07-15 10:39:43,917 - callback - line:623 - DEBUG - Calling on_header_field with data[42:61]
+2024-07-15 10:39:43,917 - callback - line:623 - DEBUG - Calling on_header_value with data[63:108]
+2024-07-15 10:39:43,918 - callback - line:626 - DEBUG - Calling on_header_end with no data
+2024-07-15 10:39:43,918 - callback - line:623 - DEBUG - Calling on_header_field with data[110:122]
+2024-07-15 10:39:43,918 - callback - line:623 - DEBUG - Calling on_header_value with data[124:134]
+2024-07-15 10:39:43,919 - callback - line:626 - DEBUG - Calling on_header_end with no data
+2024-07-15 10:39:43,919 - callback - line:626 - DEBUG - Calling on_headers_finished with no data
+2024-07-15 10:39:43,919 - callback - line:623 - DEBUG - Calling on_part_data with data[138:1510]
+2024-07-15 10:39:43,920 - callback - line:626 - DEBUG - Calling on_part_end with no data
+2024-07-15 10:39:43,920 - callback - line:626 - DEBUG - Calling on_part_begin with no data
+2024-07-15 10:39:43,921 - callback - line:623 - DEBUG - Calling on_header_field with data[1554:1573]
+2024-07-15 10:39:43,921 - callback - line:623 - DEBUG - Calling on_header_value with data[1575:1604]
+2024-07-15 10:39:43,921 - callback - line:626 - DEBUG - Calling on_header_end with no data
+2024-07-15 10:39:43,922 - callback - line:626 - DEBUG - Calling on_headers_finished with no data
+2024-07-15 10:39:43,922 - callback - line:623 - DEBUG - Calling on_part_data with data[1608:1618]
+2024-07-15 10:39:43,922 - callback - line:626 - DEBUG - Calling on_part_end with no data
+2024-07-15 10:39:43,923 - callback - line:626 - DEBUG - Calling on_part_begin with no data
+2024-07-15 10:39:43,923 - callback - line:623 - DEBUG - Calling on_header_field with data[1662:1681]
+2024-07-15 10:39:43,923 - callback - line:623 - DEBUG - Calling on_header_value with data[1683:1708]
+2024-07-15 10:39:43,924 - callback - line:626 - DEBUG - Calling on_header_end with no data
+2024-07-15 10:39:43,924 - callback - line:626 - DEBUG - Calling on_headers_finished with no data
+2024-07-15 10:39:43,924 - callback - line:623 - DEBUG - Calling on_part_data with data[1712:1713]
+2024-07-15 10:39:43,925 - callback - line:626 - DEBUG - Calling on_part_end with no data
+2024-07-15 10:39:43,925 - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-15 10:39:44,460 - log_requests - line:53 - INFO - rid=5U98OE completed_in=544.13ms status_code=200
+INFO:     127.0.0.1:37024 - "POST /apis/uploadfile HTTP/1.0" 200 OK
+2024-07-15 10:39:49,793 - log_requests - line:46 - INFO - rid=KX85WW start request path=/apis/user/ownInfo
+2024-07-15 10:39:50,449 - getOwnInfo - line:231 - DEBUG - ((33, 'wzc', 'Mar624', 0),)
+2024-07-15 10:39:50,450 - log_requests - line:53 - INFO - rid=KX85WW completed_in=656.97ms status_code=200
+2024-07-15 10:39:50,451 - log_requests - line:46 - INFO - rid=9B1QMN start request path=/apis/user/ownInfo
+INFO:     127.0.0.1:37032 - "POST /apis/user/ownInfo HTTP/1.0" 200 OK
+2024-07-15 10:39:51,175 - getOwnInfo - line:231 - DEBUG - ((33, 'wzc', 'Mar624', 0),)
+2024-07-15 10:39:51,176 - log_requests - line:46 - INFO - rid=XX5O2U start request path=/apis/getNovel/
+2024-07-15 10:39:51,178 - log_requests - line:53 - INFO - rid=9B1QMN completed_in=727.06ms status_code=200
+INFO:     127.0.0.1:37038 - "POST /apis/user/ownInfo HTTP/1.0" 200 OK
+2024-07-15 10:39:51,179 - log_requests - line:53 - INFO - rid=XX5O2U completed_in=2.02ms status_code=307
+INFO:     127.0.0.1:37044 - "POST /apis/getNovel/ HTTP/1.0" 307 Temporary Redirect
+2024-07-15 10:39:51,685 - log_requests - line:46 - INFO - rid=1GKO1P start request path=/apis/getNovel
+2024-07-15 10:39:52,520 - log_requests - line:53 - INFO - rid=1GKO1P completed_in=834.64ms status_code=200
+INFO:     127.0.0.1:37060 - "POST /apis/getNovel HTTP/1.0" 200 OK
+2024-07-15 10:39:55,746 - log_requests - line:46 - INFO - rid=NOA0Q6 start request path=/apis/rank
+2024-07-15 10:39:56,186 - log_requests - line:53 - INFO - rid=NOA0Q6 completed_in=440.05ms status_code=200
+INFO:     127.0.0.1:49638 - "POST /apis/rank HTTP/1.0" 200 OK
+2024-07-15 10:39:56,913 - log_requests - line:46 - INFO - rid=53FQQN start request path=/apis/getNovel/
+2024-07-15 10:39:56,913 - log_requests - line:53 - INFO - rid=53FQQN completed_in=0.56ms status_code=307
+INFO:     127.0.0.1:49654 - "POST /apis/getNovel/ HTTP/1.0" 307 Temporary Redirect
+2024-07-15 10:39:56,965 - log_requests - line:46 - INFO - rid=972249 start request path=/apis/getNovel
+2024-07-15 10:39:57,707 - log_requests - line:53 - INFO - rid=972249 completed_in=741.20ms status_code=200
+INFO:     127.0.0.1:49658 - "POST /apis/getNovel HTTP/1.0" 200 OK
+2024-07-15 10:39:57,785 - log_requests - line:46 - INFO - rid=9XZVCO start request path=/apis/user/ownInfo
+2024-07-15 10:39:58,444 - getOwnInfo - line:231 - DEBUG - ((37, 'pjj', '123456Ab', 0),)
+2024-07-15 10:39:58,446 - log_requests - line:46 - INFO - rid=0QTYI4 start request path=/apis/user/ownInfo
+2024-07-15 10:39:58,446 - log_requests - line:53 - INFO - rid=9XZVCO completed_in=660.86ms status_code=200
+2024-07-15 10:39:59,132 - getOwnInfo - line:231 - DEBUG - ((37, 'pjj', '123456Ab', 0),)
+INFO:     127.0.0.1:49672 - "POST /apis/user/ownInfo HTTP/1.0" 200 OK
+2024-07-15 10:39:59,134 - log_requests - line:53 - INFO - rid=0QTYI4 completed_in=687.62ms status_code=200
+2024-07-15 10:39:59,134 - log_requests - line:46 - INFO - rid=XWBHGB start request path=/apis/user/ownInfo
+INFO:     127.0.0.1:49688 - "POST /apis/user/ownInfo HTTP/1.0" 200 OK
+2024-07-15 10:39:59,816 - getOwnInfo - line:231 - DEBUG - ((33, 'wzc', 'Mar624', 0),)
+2024-07-15 10:39:59,817 - log_requests - line:46 - INFO - rid=5AUK07 start request path=/apis/user/ownInfo
+2024-07-15 10:40:00,568 - getOwnInfo - line:231 - DEBUG - ((33, 'wzc', 'Mar624', 0),)
+2024-07-15 10:40:00,569 - log_requests - line:53 - INFO - rid=XWBHGB completed_in=1434.52ms status_code=200
+INFO:     127.0.0.1:49698 - "POST /apis/user/ownInfo HTTP/1.0" 200 OK
+2024-07-15 10:40:00,570 - log_requests - line:53 - INFO - rid=5AUK07 completed_in=753.06ms status_code=200
+INFO:     127.0.0.1:49708 - "POST /apis/user/ownInfo HTTP/1.0" 200 OK
+2024-07-15 10:40:00,667 - log_requests - line:46 - INFO - rid=HQEHPU start request path=/apis/rank
+2024-07-15 10:40:01,124 - log_requests - line:53 - INFO - rid=HQEHPU completed_in=456.58ms status_code=200
+INFO:     127.0.0.1:49724 - "POST /apis/rank HTTP/1.0" 200 OK
+2024-07-15 10:40:02,664 - log_requests - line:46 - INFO - rid=3PNHBN start request path=/apis/rank
+2024-07-15 10:40:03,146 - log_requests - line:53 - INFO - rid=3PNHBN completed_in=481.51ms status_code=200
+INFO:     127.0.0.1:49736 - "POST /apis/rank HTTP/1.0" 200 OK
+2024-07-15 10:40:04,360 - log_requests - line:46 - INFO - rid=AWK74D start request path=/apis/user/ownInfo
+2024-07-15 10:40:05,080 - getOwnInfo - line:231 - DEBUG - ((37, 'pjj', '123456Ab', 0),)
+2024-07-15 10:40:05,081 - log_requests - line:46 - INFO - rid=U5BMEE start request path=/apis/user/ownInfo
+2024-07-15 10:40:05,081 - log_requests - line:53 - INFO - rid=AWK74D completed_in=721.30ms status_code=200
+2024-07-15 10:40:05,763 - getOwnInfo - line:231 - DEBUG - ((37, 'pjj', '123456Ab', 0),)
+INFO:     127.0.0.1:40796 - "POST /apis/user/ownInfo HTTP/1.0" 200 OK
+2024-07-15 10:40:05,764 - log_requests - line:53 - INFO - rid=U5BMEE completed_in=682.69ms status_code=200
+INFO:     127.0.0.1:40804 - "POST /apis/user/ownInfo HTTP/1.0" 200 OK
+2024-07-15 10:40:07,868 - log_requests - line:46 - INFO - rid=9OOLB3 start request path=/apis/user/ownInfo
+2024-07-15 10:40:07,869 - log_requests - line:53 - INFO - rid=9OOLB3 completed_in=0.30ms status_code=200
+INFO:     127.0.0.1:40806 - "OPTIONS /apis/user/ownInfo HTTP/1.0" 200 OK
+2024-07-15 10:40:08,248 - log_requests - line:46 - INFO - rid=U7YZSP start request path=/apis/user/ownInfo
+2024-07-15 10:40:08,995 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 10:40:08,996 - log_requests - line:53 - INFO - rid=U7YZSP completed_in=747.52ms status_code=200
+2024-07-15 10:40:08,996 - log_requests - line:46 - INFO - rid=DOI6J8 start request path=/apis/user/ownInfo
+INFO:     127.0.0.1:40810 - "POST /apis/user/ownInfo HTTP/1.0" 200 OK
+2024-07-15 10:40:08,997 - log_requests - line:53 - INFO - rid=DOI6J8 completed_in=0.69ms status_code=200
+INFO:     127.0.0.1:40820 - "OPTIONS /apis/user/ownInfo HTTP/1.0" 200 OK
+2024-07-15 10:40:09,386 - log_requests - line:46 - INFO - rid=06OLOL start request path=/apis/user/ownInfo
+2024-07-15 10:40:10,077 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 10:40:10,078 - log_requests - line:53 - INFO - rid=06OLOL completed_in=691.70ms status_code=200
+2024-07-15 10:40:10,078 - log_requests - line:46 - INFO - rid=R9SRK9 start request path=/apis/rank
+INFO:     127.0.0.1:40822 - "POST /apis/user/ownInfo HTTP/1.0" 200 OK
+2024-07-15 10:40:10,523 - log_requests - line:53 - INFO - rid=R9SRK9 completed_in=444.79ms status_code=200
+INFO:     127.0.0.1:40824 - "POST /apis/rank HTTP/1.0" 200 OK
+2024-07-15 10:40:13,708 - log_requests - line:46 - INFO - rid=VPTHSA start request path=/apis/user/ownInfo
+2024-07-15 10:40:14,419 - getOwnInfo - line:231 - DEBUG - ((37, 'pjj', '123456Ab', 0),)
+2024-07-15 10:40:14,420 - log_requests - line:46 - INFO - rid=3T4KC3 start request path=/apis/user/ownInfo
+2024-07-15 10:40:14,420 - log_requests - line:53 - INFO - rid=VPTHSA completed_in=712.08ms status_code=200
+2024-07-15 10:40:15,156 - getOwnInfo - line:231 - DEBUG - ((37, 'pjj', '123456Ab', 0),)
+INFO:     127.0.0.1:59150 - "POST /apis/user/ownInfo HTTP/1.0" 200 OK
+2024-07-15 10:40:15,158 - log_requests - line:53 - INFO - rid=3T4KC3 completed_in=737.68ms status_code=200
+INFO:     127.0.0.1:59160 - "POST /apis/user/ownInfo HTTP/1.0" 200 OK
+2024-07-15 10:40:16,958 - log_requests - line:46 - INFO - rid=AYJCKZ start request path=/apis/user/ownInfo
+2024-07-15 10:40:17,619 - getOwnInfo - line:231 - DEBUG - ((37, 'pjj', '123456Ab', 0),)
+2024-07-15 10:40:17,620 - log_requests - line:46 - INFO - rid=QCJUR0 start request path=/apis/user/ownInfo
+2024-07-15 10:40:17,620 - log_requests - line:53 - INFO - rid=AYJCKZ completed_in=662.24ms status_code=200
+2024-07-15 10:40:18,320 - getOwnInfo - line:231 - DEBUG - ((37, 'pjj', '123456Ab', 0),)
+INFO:     127.0.0.1:59164 - "POST /apis/user/ownInfo HTTP/1.0" 200 OK
+2024-07-15 10:40:18,322 - log_requests - line:53 - INFO - rid=QCJUR0 completed_in=701.90ms status_code=200
+2024-07-15 10:40:18,323 - log_requests - line:46 - INFO - rid=0LLOIE start request path=/apis/rank
+INFO:     127.0.0.1:59176 - "POST /apis/user/ownInfo HTTP/1.0" 200 OK
+2024-07-15 10:40:18,767 - log_requests - line:53 - INFO - rid=0LLOIE completed_in=443.47ms status_code=200
+INFO:     127.0.0.1:59178 - "POST /apis/rank HTTP/1.0" 200 OK
+2024-07-15 10:40:19,566 - log_requests - line:46 - INFO - rid=VLCTHJ start request path=/apis/user/ownInfo
+2024-07-15 10:40:20,261 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 10:40:20,262 - log_requests - line:53 - INFO - rid=VLCTHJ completed_in=695.86ms status_code=200
+2024-07-15 10:40:20,263 - log_requests - line:46 - INFO - rid=P317LY start request path=/apis/user/ownInfo
+INFO:     127.0.0.1:59184 - "POST /apis/user/ownInfo HTTP/1.0" 200 OK
+2024-07-15 10:40:20,926 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 10:40:20,927 - log_requests - line:53 - INFO - rid=P317LY completed_in=663.92ms status_code=200
+INFO:     127.0.0.1:59194 - "POST /apis/user/ownInfo HTTP/1.0" 200 OK
+2024-07-15 10:40:23,178 - log_requests - line:46 - INFO - rid=WU157D start request path=/apis/user/ownInfo
+2024-07-15 10:40:23,904 - getOwnInfo - line:231 - DEBUG - ((37, 'pjj', '123456Ab', 0),)
+2024-07-15 10:40:23,906 - log_requests - line:53 - INFO - rid=WU157D completed_in=727.28ms status_code=200
+2024-07-15 10:40:23,906 - log_requests - line:46 - INFO - rid=YX439C start request path=/apis/user/ownInfo
+INFO:     127.0.0.1:59206 - "POST /apis/user/ownInfo HTTP/1.0" 200 OK
+2024-07-15 10:40:24,562 - getOwnInfo - line:231 - DEBUG - ((37, 'pjj', '123456Ab', 0),)
+2024-07-15 10:40:24,563 - log_requests - line:53 - INFO - rid=YX439C completed_in=656.94ms status_code=200
+INFO:     127.0.0.1:59216 - "POST /apis/user/ownInfo HTTP/1.0" 200 OK
+2024-07-15 10:40:26,832 - log_requests - line:46 - INFO - rid=DTPBOY start request path=/apis/getNovel/
+2024-07-15 10:40:26,832 - log_requests - line:53 - INFO - rid=DTPBOY completed_in=0.59ms status_code=307
+INFO:     127.0.0.1:33528 - "POST /apis/getNovel/ HTTP/1.0" 307 Temporary Redirect
+2024-07-15 10:40:26,869 - log_requests - line:46 - INFO - rid=P17QN1 start request path=/apis/getNovel
+2024-07-15 10:40:27,694 - log_requests - line:53 - INFO - rid=P17QN1 completed_in=824.26ms status_code=200
+INFO:     127.0.0.1:33530 - "POST /apis/getNovel HTTP/1.0" 200 OK
+2024-07-15 10:40:36,946 - log_requests - line:46 - INFO - rid=Z24RWF start request path=/apis/user/ownInfo
+2024-07-15 10:40:37,654 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 10:40:37,655 - log_requests - line:53 - INFO - rid=Z24RWF completed_in=709.03ms status_code=200
+2024-07-15 10:40:37,656 - log_requests - line:46 - INFO - rid=RHPWT8 start request path=/apis/user/ownInfo
+INFO:     127.0.0.1:60614 - "POST /apis/user/ownInfo HTTP/1.0" 200 OK
+2024-07-15 10:40:38,327 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 10:40:38,329 - log_requests - line:53 - INFO - rid=RHPWT8 completed_in=672.34ms status_code=200
+INFO:     127.0.0.1:60624 - "POST /apis/user/ownInfo HTTP/1.0" 200 OK
+2024-07-15 10:40:38,545 - log_requests - line:46 - INFO - rid=AZUHSU start request path=/apis/rank
+2024-07-15 10:40:39,010 - log_requests - line:53 - INFO - rid=AZUHSU completed_in=464.67ms status_code=200
+INFO:     127.0.0.1:60634 - "POST /apis/rank HTTP/1.0" 200 OK
+2024-07-15 10:40:39,339 - log_requests - line:46 - INFO - rid=AVS5G9 start request path=/apis/user/ownInfo
+2024-07-15 10:40:40,098 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 10:40:40,099 - log_requests - line:53 - INFO - rid=AVS5G9 completed_in=759.55ms status_code=200
+2024-07-15 10:40:40,100 - log_requests - line:46 - INFO - rid=QJG329 start request path=/apis/user/ownInfo
+INFO:     127.0.0.1:60642 - "POST /apis/user/ownInfo HTTP/1.0" 200 OK
+2024-07-15 10:40:40,781 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 10:40:40,783 - log_requests - line:53 - INFO - rid=QJG329 completed_in=682.36ms status_code=200
+INFO:     127.0.0.1:60650 - "POST /apis/user/ownInfo HTTP/1.0" 200 OK
+2024-07-15 10:40:41,558 - log_requests - line:46 - INFO - rid=SEE9Q1 start request path=/apis/answer_request
+2024-07-15 10:40:41,560 - _handle_request - line:285 - DEBUG - Request body: {'model': 'qwen-turbo', 'parameters': {'result_format': 'message'}, 'input': {'messages': [{'role': 'system', 'content': 'You are a professional assistant.'}, {'role': 'user', 'content': '\n    现在需要你阅读一篇文章并回答问题。请阅读以下文章并回答问题。如果你不知道答案，请回答“我不知道”。\n    问题: 总结 \n    文章: 在那座熙熙攘攘的大学城中，学生们的生活节奏如同日夜交替，而食堂，无疑是他们生活的重要组成部分。然而，最近的一次事件却让这个看似平静的角落变得异常紧张。\n\n那天，阳光透过窗户洒在餐桌上，学生们正享受着午餐。突然，一个女生尖叫起来，她手中的筷子颤抖着指向盘中的食物。她的脸上满是惊恐，手指着的是一颗清晰可见的小鼠头，镶嵌在一堆油腻腻的饭菜之中。食堂里瞬间炸开了锅，学生们纷纷放下手中的碗筷，不敢置信地盯着那骇人的画面。\n\n校方闻讯后，迅速组织了调查小组，他们坚称那并非鼠头，而是某种相似形状的食品——鸭脖。他们拿出实物样品，声称这是他们食堂常见的小吃，绝无可能混入饭菜中。为了打消学生的疑虑，他们甚至请来了专业的食品安全检测机构进行检验。\n\n然而，学生们并不买账。他们质疑校方的解释，认为这无法解释为何鼠头会出现在同一盘子的食物中，而且食堂的卫生记录也让人存疑。消息在网络上迅速发酵，引起了社会的广泛关注，学校的声誉受到了前所未有的挑战。\n\n面对舆论的压力，学校决定公开透明处理此事。他们邀请媒体和公众参观食堂的后厨，展示每日的食材采购、清洗和烹饪流程，以证明他们的食品安全措施。同时，他们承诺将对食堂员工进行更严格的培训，确保此类事件不再发生。\n\n在这场风波中，学生们的态度也开始转变。他们开始关注起自己的饮食安全，同时也对学校的管理产生了新的期待。校方意识到，只有真正解决食品安全问题，才能重新赢得学生的信任。\n\n经过一系列的努力，学校最终查清了真相，那确实是被误认的鸭脖。但是，这次事件让他们深刻认识到，食品安全不仅仅关乎学生的健康，更是学校形象和社会责任的体现。从此，他们更加重视食品安全，食堂的环境也得到了显著改善，学生们的生活又恢复了往日的平静。\n\n而这场风波，也在学生们的记忆中留下了深刻的烙印，让他们明白，每一个看似微小的问题，都可能影响到生活的方方面面。他们学会了如何更好地保护自己，也学会了如何对待生活中的意外和挑战。 \n    '}]}}
+2024-07-15 10:40:41,562 - _new_conn - line:1051 - DEBUG - Starting new HTTPS connection (1): dashscope.aliyuncs.com:443
+2024-07-15 10:40:46,088 - _make_request - line:546 - DEBUG - https://dashscope.aliyuncs.com:443 "POST /api/v1/services/aigc/text-generation/generation HTTP/11" 200 None
+2024-07-15 10:40:46,089 - _handle_response - line:250 - DEBUG - Response: {'output': {'choices': [{'finish_reason': 'stop', 'message': {'role': 'assistant', 'content': '文章讲述了大学食堂出现疑似鼠头食物引发恐慌，校方起初否认但随后被迫公开透明处理，通过邀请媒体和公众参观后厨、加强食品安全措施来解决争议。这次事件让学生们关注饮食安全，反思学校管理，学校也认识到了食品安全的重要性，并进行了改进。风波最终平息，但也给学生留下深刻教训，学会自我保护和应对挑战。'}}]}, 'usage': {'total_tokens': 609, 'output_tokens': 80, 'input_tokens': 529}, 'request_id': '7696fda8-f5e4-9adf-bda1-5ddb6f84ac20'}
+2024-07-15 10:40:46,090 - log_requests - line:53 - INFO - rid=SEE9Q1 completed_in=4532.05ms status_code=200
+INFO:     127.0.0.1:60652 - "POST /apis/answer_request HTTP/1.0" 200 OK
+2024-07-15 10:40:53,657 - log_requests - line:46 - INFO - rid=M3O62C start request path=/apis/getNovel/
+2024-07-15 10:40:53,658 - log_requests - line:53 - INFO - rid=M3O62C completed_in=0.57ms status_code=307
+INFO:     127.0.0.1:35946 - "POST /apis/getNovel/ HTTP/1.0" 307 Temporary Redirect
+2024-07-15 10:40:53,696 - log_requests - line:46 - INFO - rid=X0YIVO start request path=/apis/getNovel
+2024-07-15 10:40:54,455 - log_requests - line:53 - INFO - rid=X0YIVO completed_in=757.94ms status_code=200
+INFO:     127.0.0.1:35958 - "POST /apis/getNovel HTTP/1.0" 200 OK
+2024-07-15 10:40:54,844 - log_requests - line:46 - INFO - rid=GVKBC3 start request path=/apis/getNovel/
+2024-07-15 10:40:54,845 - log_requests - line:53 - INFO - rid=GVKBC3 completed_in=0.56ms status_code=307
+INFO:     127.0.0.1:35962 - "POST /apis/getNovel/ HTTP/1.0" 307 Temporary Redirect
+2024-07-15 10:40:54,881 - log_requests - line:46 - INFO - rid=H244C6 start request path=/apis/getNovel
+2024-07-15 10:40:55,710 - log_requests - line:53 - INFO - rid=H244C6 completed_in=829.39ms status_code=200
+INFO:     127.0.0.1:35968 - "POST /apis/getNovel HTTP/1.0" 200 OK
+2024-07-15 10:40:56,319 - log_requests - line:46 - INFO - rid=JYLMNN start request path=/apis/getNovel/
+2024-07-15 10:40:56,320 - log_requests - line:53 - INFO - rid=JYLMNN completed_in=0.57ms status_code=307
+INFO:     127.0.0.1:35970 - "POST /apis/getNovel/ HTTP/1.0" 307 Temporary Redirect
+2024-07-15 10:40:56,359 - log_requests - line:46 - INFO - rid=4WHEF9 start request path=/apis/getNovel
+2024-07-15 10:40:57,113 - log_requests - line:53 - INFO - rid=4WHEF9 completed_in=753.76ms status_code=200
+INFO:     127.0.0.1:35978 - "POST /apis/getNovel HTTP/1.0" 200 OK
+2024-07-15 10:40:57,315 - log_requests - line:46 - INFO - rid=CSYG1C start request path=/apis/getNovel/
+2024-07-15 10:40:57,316 - log_requests - line:53 - INFO - rid=CSYG1C completed_in=0.57ms status_code=307
+INFO:     127.0.0.1:35982 - "POST /apis/getNovel/ HTTP/1.0" 307 Temporary Redirect
+2024-07-15 10:40:57,352 - log_requests - line:46 - INFO - rid=3MHTF0 start request path=/apis/getNovel
+2024-07-15 10:40:58,126 - log_requests - line:53 - INFO - rid=3MHTF0 completed_in=773.51ms status_code=200
+INFO:     127.0.0.1:35984 - "POST /apis/getNovel HTTP/1.0" 200 OK
+2024-07-15 10:40:58,291 - log_requests - line:46 - INFO - rid=9LDHR5 start request path=/apis/getNovel/
+2024-07-15 10:40:58,292 - log_requests - line:53 - INFO - rid=9LDHR5 completed_in=0.59ms status_code=307
+INFO:     127.0.0.1:35996 - "POST /apis/getNovel/ HTTP/1.0" 307 Temporary Redirect
+2024-07-15 10:40:58,326 - log_requests - line:46 - INFO - rid=TZK80Y start request path=/apis/getNovel
+2024-07-15 10:40:59,056 - log_requests - line:53 - INFO - rid=TZK80Y completed_in=729.69ms status_code=200
+2024-07-15 10:40:59,057 - log_requests - line:46 - INFO - rid=P4C6QA start request path=/apis/getNovel/
+INFO:     127.0.0.1:36004 - "POST /apis/getNovel HTTP/1.0" 200 OK
+2024-07-15 10:40:59,058 - log_requests - line:53 - INFO - rid=P4C6QA completed_in=1.36ms status_code=307
+INFO:     127.0.0.1:36018 - "POST /apis/getNovel/ HTTP/1.0" 307 Temporary Redirect
+2024-07-15 10:40:59,096 - log_requests - line:46 - INFO - rid=KFJ8CS start request path=/apis/getNovel
+2024-07-15 10:40:59,833 - log_requests - line:53 - INFO - rid=KFJ8CS completed_in=736.10ms status_code=200
+INFO:     127.0.0.1:36032 - "POST /apis/getNovel HTTP/1.0" 200 OK
+2024-07-15 10:41:00,499 - log_requests - line:46 - INFO - rid=Z4GVHS start request path=/apis/getNovel/
+2024-07-15 10:41:00,500 - log_requests - line:53 - INFO - rid=Z4GVHS completed_in=0.57ms status_code=307
+INFO:     127.0.0.1:36048 - "POST /apis/getNovel/ HTTP/1.0" 307 Temporary Redirect
+2024-07-15 10:41:00,541 - log_requests - line:46 - INFO - rid=NMSTUN start request path=/apis/getNovel
+2024-07-15 10:41:01,271 - log_requests - line:53 - INFO - rid=NMSTUN completed_in=729.85ms status_code=200
+INFO:     127.0.0.1:36054 - "POST /apis/getNovel HTTP/1.0" 200 OK
+2024-07-15 10:41:01,283 - log_requests - line:46 - INFO - rid=C6DP9S start request path=/apis/getNovel/
+2024-07-15 10:41:01,284 - log_requests - line:53 - INFO - rid=C6DP9S completed_in=0.58ms status_code=307
+INFO:     127.0.0.1:36060 - "POST /apis/getNovel/ HTTP/1.0" 307 Temporary Redirect
+2024-07-15 10:41:01,317 - log_requests - line:46 - INFO - rid=DQPQLK start request path=/apis/getNovel
+2024-07-15 10:41:02,069 - log_requests - line:53 - INFO - rid=DQPQLK completed_in=752.00ms status_code=200
+INFO:     127.0.0.1:36062 - "POST /apis/getNovel HTTP/1.0" 200 OK
+2024-07-15 10:41:03,755 - log_requests - line:46 - INFO - rid=NOBO99 start request path=/apis/getNovel/
+2024-07-15 10:41:03,756 - log_requests - line:53 - INFO - rid=NOBO99 completed_in=0.58ms status_code=307
+INFO:     127.0.0.1:36698 - "POST /apis/getNovel/ HTTP/1.0" 307 Temporary Redirect
+2024-07-15 10:41:03,789 - log_requests - line:46 - INFO - rid=KZZVRQ start request path=/apis/getNovel
+2024-07-15 10:41:04,640 - log_requests - line:53 - INFO - rid=KZZVRQ completed_in=850.09ms status_code=200
+INFO:     127.0.0.1:36714 - "POST /apis/getNovel HTTP/1.0" 200 OK
+2024-07-15 10:41:12,306 - log_requests - line:46 - INFO - rid=ZTAU1C start request path=/apis/getNovel/
+2024-07-15 10:41:12,307 - log_requests - line:53 - INFO - rid=ZTAU1C completed_in=0.56ms status_code=307
+INFO:     127.0.0.1:36724 - "POST /apis/getNovel/ HTTP/1.0" 307 Temporary Redirect
+2024-07-15 10:41:12,345 - log_requests - line:46 - INFO - rid=5548LP start request path=/apis/getNovel
+2024-07-15 10:41:13,211 - log_requests - line:53 - INFO - rid=5548LP completed_in=865.47ms status_code=200
+INFO:     127.0.0.1:36728 - "POST /apis/getNovel HTTP/1.0" 200 OK
+2024-07-15 10:41:13,627 - log_requests - line:46 - INFO - rid=GQPES9 start request path=/apis/getNovel/
+2024-07-15 10:41:13,628 - log_requests - line:53 - INFO - rid=GQPES9 completed_in=0.57ms status_code=307
+INFO:     127.0.0.1:34822 - "POST /apis/getNovel/ HTTP/1.0" 307 Temporary Redirect
+2024-07-15 10:41:13,801 - log_requests - line:46 - INFO - rid=JVE6VJ start request path=/apis/getNovel
+2024-07-15 10:41:14,564 - log_requests - line:53 - INFO - rid=JVE6VJ completed_in=762.85ms status_code=200
+INFO:     127.0.0.1:34828 - "POST /apis/getNovel HTTP/1.0" 200 OK
+2024-07-15 10:41:15,013 - log_requests - line:46 - INFO - rid=V2WC9B start request path=/apis/getNovel/
+2024-07-15 10:41:15,014 - log_requests - line:53 - INFO - rid=V2WC9B completed_in=0.55ms status_code=307
+INFO:     127.0.0.1:34844 - "POST /apis/getNovel/ HTTP/1.0" 307 Temporary Redirect
+2024-07-15 10:41:15,047 - log_requests - line:46 - INFO - rid=M5OHAO start request path=/apis/getNovel
+2024-07-15 10:41:15,800 - log_requests - line:53 - INFO - rid=M5OHAO completed_in=752.58ms status_code=200
+INFO:     127.0.0.1:34848 - "POST /apis/getNovel HTTP/1.0" 200 OK
+2024-07-15 10:41:16,741 - log_requests - line:46 - INFO - rid=PZKTH0 start request path=/apis/getNovel/
+2024-07-15 10:41:16,742 - log_requests - line:53 - INFO - rid=PZKTH0 completed_in=0.57ms status_code=307
+INFO:     127.0.0.1:34858 - "POST /apis/getNovel/ HTTP/1.0" 307 Temporary Redirect
+2024-07-15 10:41:16,833 - log_requests - line:46 - INFO - rid=ZBNS6L start request path=/apis/getNovel
+2024-07-15 10:41:17,612 - log_requests - line:53 - INFO - rid=ZBNS6L completed_in=777.96ms status_code=200
+INFO:     127.0.0.1:34866 - "POST /apis/getNovel HTTP/1.0" 200 OK
+2024-07-15 10:41:21,670 - log_requests - line:46 - INFO - rid=XB5OEE start request path=/apis/getNovel/
+2024-07-15 10:41:21,671 - log_requests - line:53 - INFO - rid=XB5OEE completed_in=0.57ms status_code=307
+INFO:     127.0.0.1:34882 - "POST /apis/getNovel/ HTTP/1.0" 307 Temporary Redirect
+2024-07-15 10:41:21,706 - log_requests - line:46 - INFO - rid=4MFK17 start request path=/apis/getNovel
+2024-07-15 10:41:22,475 - log_requests - line:53 - INFO - rid=4MFK17 completed_in=768.68ms status_code=200
+INFO:     127.0.0.1:34896 - "POST /apis/getNovel HTTP/1.0" 200 OK
+2024-07-15 10:41:26,830 - log_requests - line:46 - INFO - rid=K65VJS start request path=/apis/getNovel/
+2024-07-15 10:41:26,831 - log_requests - line:53 - INFO - rid=K65VJS completed_in=0.55ms status_code=307
+INFO:     127.0.0.1:58562 - "POST /apis/getNovel/ HTTP/1.0" 307 Temporary Redirect
+2024-07-15 10:41:26,868 - log_requests - line:46 - INFO - rid=TJP0T5 start request path=/apis/getNovel
+2024-07-15 10:41:27,671 - log_requests - line:53 - INFO - rid=TJP0T5 completed_in=803.42ms status_code=200
+INFO:     127.0.0.1:58566 - "POST /apis/getNovel HTTP/1.0" 200 OK
+2024-07-15 10:41:29,797 - log_requests - line:46 - INFO - rid=RQE01J start request path=/apis/user/ownInfo
+2024-07-15 10:41:30,456 - getOwnInfo - line:231 - DEBUG - ((37, 'pjj', '123456Ab', 0),)
+2024-07-15 10:41:30,457 - log_requests - line:53 - INFO - rid=RQE01J completed_in=660.06ms status_code=200
+2024-07-15 10:41:30,458 - log_requests - line:46 - INFO - rid=LW3P7P start request path=/apis/user/ownInfo
+INFO:     127.0.0.1:58580 - "POST /apis/user/ownInfo HTTP/1.0" 200 OK
+2024-07-15 10:41:31,182 - getOwnInfo - line:231 - DEBUG - ((37, 'pjj', '123456Ab', 0),)
+2024-07-15 10:41:31,183 - log_requests - line:53 - INFO - rid=LW3P7P completed_in=724.94ms status_code=200
+INFO:     127.0.0.1:58586 - "POST /apis/user/ownInfo HTTP/1.0" 200 OK
+2024-07-15 10:41:31,252 - log_requests - line:46 - INFO - rid=LT3R5U start request path=/apis/rank
+2024-07-15 10:41:31,715 - log_requests - line:53 - INFO - rid=LT3R5U completed_in=463.12ms status_code=200
+INFO:     127.0.0.1:58596 - "POST /apis/rank HTTP/1.0" 200 OK
+2024-07-15 10:41:52,718 - log_requests - line:46 - INFO - rid=EE1JBY start request path=/apis/user/ownInfo
+2024-07-15 10:41:53,467 - getOwnInfo - line:231 - DEBUG - ((15, 'Delicat', 'Zcj1234', 0),)
+2024-07-15 10:41:53,469 - log_requests - line:46 - INFO - rid=T5LC5K start request path=/apis/user/ownInfo
+2024-07-15 10:41:54,256 - getOwnInfo - line:231 - DEBUG - ((15, 'Delicat', 'Zcj1234', 0),)
+2024-07-15 10:41:54,258 - log_requests - line:53 - INFO - rid=EE1JBY completed_in=1539.01ms status_code=200
+INFO:     127.0.0.1:59806 - "POST /apis/user/ownInfo HTTP/1.0" 200 OK
+2024-07-15 10:41:54,258 - log_requests - line:53 - INFO - rid=T5LC5K completed_in=789.33ms status_code=200
+INFO:     127.0.0.1:59812 - "POST /apis/user/ownInfo HTTP/1.0" 200 OK
