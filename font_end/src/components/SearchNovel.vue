@@ -230,7 +230,7 @@ h2.link1 {
   /* 调整字体大小 */
   margin-bottom: 20px;
   /* 调整下边距 */
-  color: #0a0a0a;
+  color: #fff;
   /* 设置字体颜色 */
 }
 

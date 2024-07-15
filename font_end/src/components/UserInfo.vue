@@ -78,6 +78,7 @@ export default {
 }
 
 .user-profile {
+  margin-top: 20px;
   padding: 10px;
   background-color: #f5f5f5;
   border-radius: 10px;
@@ -150,7 +151,7 @@ export default {
 }
 
 .novel {
-  margin: 10px;
+  margin: 0px;
   width: 100%;
   align-self: flex-start;
   /* 也可以直接在子元素上设置 */

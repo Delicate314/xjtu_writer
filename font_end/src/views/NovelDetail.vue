@@ -132,7 +132,7 @@ body {
 }
 
 .novel-detail-container {
-    display: flex;
+    display: block;
     justify-content: center;
     margin: 30px;
     background: #fff;

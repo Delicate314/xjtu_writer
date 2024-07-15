@@ -2,7 +2,6 @@
   <div class="home-container">
     <StarryBackground />
     <Guide />
-    <RankTable />
     <UserInfo />
     <!-- <UserNovel /> -->
   </div>

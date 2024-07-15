@@ -13,7 +13,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .starry-background {
   position: fixed;
   top: 0;

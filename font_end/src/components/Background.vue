@@ -10,7 +10,7 @@
   };
   </script>
   
-  <style>
+  <style scoped>
   .background {
     position: fixed;
     top: 0;

@@ -13,7 +13,7 @@ export default {
 
 </script>
 
-<style>
+<style scoped>
 .link {
   font-size: 20px;
   text-decoration: none;
