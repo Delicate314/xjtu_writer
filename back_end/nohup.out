@@ -24591,3 +24591,11 @@ INFO:     127.0.0.1:58548 - "POST /apis/user/ownInfo HTTP/1.0" 200 OK
 2024-07-15 18:45:22,526 - log_requests - line:46 - INFO - rid=K8L96S start request path=//apis/user/is_admin
 2024-07-15 18:45:22,527 - log_requests - line:53 - INFO - rid=K8L96S completed_in=0.70ms status_code=404
 INFO:     127.0.0.1:58564 - "POST //apis/user/is_admin HTTP/1.0" 404 Not Found
+WARNING:  WatchFiles detected changes in 'sql_app/main.py', 'sql_app/log_set.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [15475]
+INFO:     Started server process [16016]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.

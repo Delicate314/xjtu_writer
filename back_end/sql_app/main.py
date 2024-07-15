@@ -215,8 +215,7 @@ async def search_novel(input : novel_option.SearchNovel ,user:str=Depends(get_cu
 class rank_input(BaseModel):
     index : int
 
-@app.post("/apis/rank", tags=["获取排行榜"], summary="获取排行榜，输入参数index", description="index为1表示排行1-10，为2表示排行11-20，以此类推")
-#async def rank(index: int, user: str = Depends(get_current_user)):
+@app.post("/apis/rank", tags=["获取小说热度排行榜"], summary="获取排行榜，输入参数index", description="index为1表示排行1-10，为2表示排行11-20，以此类推")
 async def rank(input: rank_input ,user:str=Depends(get_current_user)):
 
     index = input.index
@@ -240,6 +239,55 @@ async def rank(input: rank_input ,user:str=Depends(get_current_user)):
     cursor.close()
     db.close()
     return result
+
+@app.post("/apis/rank2", tags=["获取作者热度排行榜"], summary="获取排行榜，输入参数index", description="index为1表示排行1-10，为2表示排行11-20，以此类推")
+async def rank(input: rank_input, user: str = Depends(get_current_user)):
+    index = input.index
+    db = get_db()
+    cursor = db.cursor(pymysql.cursors.DictCursor)  # 使用字典游标
+    select_rank_sql = """
+    SELECT
+        user_info.user_id,
+        user_info.user_name,
+        SUM(novel_info.novel_viewcount) as total_viewcount,
+        COUNT(novel_info.novel_id) as novel_count
+    FROM 
+        user_info LEFT JOIN novel_info ON user_info.user_id = novel_info.user_id
+    GROUP BY user_info.user_id, user_info.user_name
+    ORDER BY total_viewcount DESC
+    LIMIT %s, 10
+    """
+    offset = (index - 1) * 10
+    cursor.execute(select_rank_sql, (offset,))
+    result = cursor.fetchall()
+    cursor.close()
+    db.close()
+    return result
+
+@app.post("/apis/rank3", tags=["获取作者作品数排行榜"], summary="获取排行榜，输入参数index", description="index为1表示排行1-10，为2表示排行11-20，以此类推")
+async def rank(input: rank_input, user: str = Depends(get_current_user)):
+    index = input.index
+    db = get_db()
+    cursor = db.cursor(pymysql.cursors.DictCursor)  # 使用字典游标
+    select_rank_sql = """
+    SELECT
+        user_info.user_id,
+        user_info.user_name,
+        SUM(novel_info.novel_viewcount) as total_viewcount,
+        COUNT(novel_info.novel_id) as novel_count
+    FROM 
+        user_info LEFT JOIN novel_info ON user_info.user_id = novel_info.user_id
+    GROUP BY user_info.user_id, user_info.user_name
+    ORDER BY novel_count DESC
+    LIMIT %s, 10
+    """
+    offset = (index - 1) * 10
+    cursor.execute(select_rank_sql, (offset,))
+    result = cursor.fetchall()
+    cursor.close()
+    db.close()
+    return result
+
 
 @app.post("/apis/user/ownInfo", tags=["获取个人信息"], summary="获取个人信息和所有小说", description="获取个人信息和所有小说")
 async def getOwnInfo(user_id : str=Depends(get_current_user_id)):
