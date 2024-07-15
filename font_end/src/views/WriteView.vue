@@ -59,6 +59,10 @@ export default {
   },
   methods: {
     async write() {
+      if (this.content.trim() === '') {
+        alert('输入不能为空');
+        return;
+      }
       console.log('提交', this.content);
       this.write_isLoading = true;
       try {

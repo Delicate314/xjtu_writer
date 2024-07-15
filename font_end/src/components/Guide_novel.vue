@@ -14,13 +14,17 @@ export default {
 </script>
 
 <style scoped>
+.position{
+  margin-top: 20px;
+}
+
 .link {
   font-size: 20px;
   text-decoration: none;
   color: #fff;
   margin: 0 35px;
   padding: 5px 20px;
-  border: 3px solid #2271ad;
+  border: 3px solid #fff;
   border-radius: 15px;
   display: inline-block;
   transition: all 0.3s ease;

@@ -5,11 +5,18 @@
     <div v-if="selectedFile" class="file-info">
       <p>已选择文件：{{ selectedFile.name }}</p>
     </div>
-    <button @click="uploadFile" class="rounded-button">上传文件</button>
+    <button @click="startUpload" class="rounded-button">上传文件</button>
+    <el-dialog :visible.sync="dialogVisible" title="请输入小说标题">
+      <el-input v-model="novelTitle" placeholder="请输入小说标题" />
+      <span slot="footer" class="dialog-footer">
+        <el-button @click="dialogVisible = false">取 消</el-button>
+        <el-button type="primary" @click="uploadFile">确 定</el-button>
+      </span>
+    </el-dialog>
   </div>
 </template>
 
-<script scoped>
+<script>
 import axios from 'axios';
 import { MessageBox } from 'element-ui';
 
@@ -20,6 +27,7 @@ export default {
       selectedFile: null,
       novelTitle: '',
       userId: '', // 可以根据需要进行处理，如使用 localStorage.getItem('token') 获取用户 ID
+      dialogVisible: false,
     };
   },
   methods: {
@@ -29,9 +37,26 @@ export default {
         this.novelTitle = this.selectedFile.name;
       }
     },
+    startUpload() {
+      if (!this.selectedFile) {
+        console.error('没有选择文件');
+        return;
+      }
+      this.dialogVisible = true; // 打开输入小说标题的对话框
+    },
     async uploadFile() {
       if (!this.selectedFile) {
         console.error('没有选择文件');
+        this.dialogVisible = false; // 关闭对话框
+        return;
+      }
+
+      if (!this.novelTitle) {
+        console.error('小说标题为空');
+        MessageBox.alert('小说标题不能为空', '错误', {
+          confirmButtonText: '确定',
+          type: 'error',
+        });
         return;
       }
 
@@ -49,12 +74,14 @@ export default {
         console.log('文件上传成功', response.data);
         this.$message.success('文件上传成功');
         // 这里可以添加上传成功后的逻辑
+        this.dialogVisible = false; // 关闭对话框
       } catch (error) {
         console.error('文件上传失败', error);
         MessageBox.alert(`文件上传失败`, '错误', {
           confirmButtonText: '确定',
           type: 'error',
         });
+        this.dialogVisible = false; // 关闭对话框
       }
     }
   }

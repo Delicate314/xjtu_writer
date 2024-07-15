@@ -10,7 +10,7 @@
                     <h2 class="head">标题：{{ novel.novel_title }}</h2>
                     <h3 class="footer">作者：{{ novel.writer_name }}</h3>
                     <p class="footer">点击量：{{ novel.view_count }}</p>
-                    <textarea class="main" :value="formattedContent"></textarea>
+                    <textarea ref="novelTestarea" class="main" :value="formattedContent"></textarea>
                 </div>
                 <div class="pagination">
                     <button @click="prevPage" :disabled="page === 1">上一页</button>
@@ -24,7 +24,10 @@
             </div>
             <div class="novel-detail-right" v-if="showAISection">
                 <textarea placeholder="针对文章内容向AI提问" v-model="question" class="footer_ask"></textarea>
-                <button @click="ask" class='footer_commit'>提问</button>
+                <button @click="ask" class="footer_commit">提问</button>
+                <p v-if="answer_isLoading" class="loading-text">
+                    请耐心等待... >.< <span class="loading-spinner"></span>
+                </p>
                 <textarea class="footer_answer" v-model="answer" readonly placeholder="生成的回答将在此显示"></textarea>
             </div>
         </div>
@@ -50,8 +53,9 @@ export default {
             question: '',
             answer: '',
             page: 1,
-            pageSize: 50,
-            showAISection: false
+            pageSize: 15,
+            showAISection: true,
+            answer_isLoading: false, // Track loading state
         };
     },
     mounted() {
@@ -66,6 +70,7 @@ export default {
         async ask() {
             console.log('提问', this.question);
             this.answer_isLoading = true;
+            this.answer = ''; // Clear previous answer
             try {
                 const requestData = {
                     question: this.question,
@@ -83,8 +88,12 @@ export default {
                     console.error("Response Data:", error.response.data);
                     console.error("Response Status:", error.response.status);
                     console.error("Response Headers:", error.response.headers);
+                    alert("网络错误，请重试");
                 }
-                alert("网络出错，请稍后再试。");
+                alert("输入文本太大,请尝试减小每页显示的字数再提问。QAQ");
+            }
+            finally {
+                this.answer_isLoading = false;
             }
         },
         async getnovel() {
@@ -98,6 +107,7 @@ export default {
                 const response = await this.$axios.post('http://121.36.55.149:80/apis/getNovel/', params);
                 this.novel = response.data;
                 console.log('Novel:', this.novel);
+                this.resetScrollbars();
             } catch (error) {
                 console.error('Error fetching novel data:', error);
             }
@@ -118,6 +128,11 @@ export default {
         },
         toggleAISection() {
             this.showAISection = !this.showAISection;
+        },
+        resetScrollbars() {
+            if (this.$refs.novelTestarea) {
+                this.$refs.novelTestarea.scrollTop = 0;
+            }
         }
     }
 }
@@ -151,17 +166,13 @@ body {
     flex: 3;
     margin-right: 20px;
     transition: margin-right 0.3s ease;
-    /* 添加过渡效果 */
 }
 
 .novel-detail-right {
     flex: 1;
     transition: opacity 0.3s ease;
-    /* 添加过渡效果 */
     opacity: 0;
-    /* 默认隐藏 */
     pointer-events: none;
-    /* 默认不可交互 */
 }
 
 .novel-detail-container.shifted .novel-detail-left {
@@ -170,9 +181,7 @@ body {
 
 .novel-detail-container.shifted .novel-detail-right {
     opacity: 1;
-    /* 显示AI部分 */
     pointer-events: auto;
-    /* 可交互 */
 }
 
 .info {
@@ -282,5 +291,46 @@ body {
 
 .toggle-button:hover {
     background-color: #e3a704;
+}
+
+.loading-text {
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    margin-top: 10px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-shadow: 1px 1px 2px #888888;
+}
+
+.loading-spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-top: 4px solid #ffffff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Ensure the spinner is positioned properly within the loading text */
+.loading-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 </style>

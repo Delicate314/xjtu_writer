@@ -316,7 +316,7 @@ def is_valid_password(password: str) -> bool:
           description='需要旧密码和新密码，仅能修改超级用户的密码')
 async def admin_change_password(user_password: str, user_newpassword: str):
     # 调用数据库方法获取管理员信息
-    Admin = db_method.get_user_info(0, 'admin')
+    Admin = db_method.get_user_info(4)
     if not Admin:
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,

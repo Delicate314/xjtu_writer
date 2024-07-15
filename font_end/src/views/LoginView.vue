@@ -19,7 +19,6 @@
           <el-form-item>
             <el-button type="primary" @click="login">登录</el-button>
           </el-form-item>
-          <el-divider>或</el-divider>
           <el-form-item>
             <el-button type="success" @click="register">注册</el-button>
           </el-form-item>
@@ -70,7 +69,7 @@ export default {
 
             console.log("response: ", response.data);
             window.sessionStorage.setItem('token', response.data.access_token);
-            window.sessionStorage.setItem('passport',this.$message.success)
+            window.sessionStorage.setItem('passport', this.$message.success)
             const token = `Bearer ${response.data.access_token}`;
             window.sessionStorage.setItem('token', token);
             if (response.data.is_admin == 1) {

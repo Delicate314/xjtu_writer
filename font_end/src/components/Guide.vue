@@ -24,7 +24,7 @@ export default {
   margin: 0 35px;
   padding: 5px 20px;
   border-radius: 15px;
-  border: 2px solid #eeeeee;
+  border: 3px solid #eeeeee;
   display: inline-block;
   transition: all 0.3s ease;
   position: relative;
