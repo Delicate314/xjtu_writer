@@ -69,6 +69,8 @@ export default {
             const response = await axios.post('http://121.36.55.149/apis/login/', params);
 
             console.log("response: ", response.data);
+            window.sessionStorage.setItem('token', response.data.access_token);
+            window.sessionStorage.setItem('passport',this.$message.success)
             const token = `Bearer ${response.data.access_token}`;
             window.sessionStorage.setItem('token', token);
             if (response.data.is_admin == 1) {
