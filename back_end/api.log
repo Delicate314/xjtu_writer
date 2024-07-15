@@ -1,180 +1,666 @@
-2024-07-15 09:24:27,461 - log_requests - line:46 - INFO - rid=JA7ZN8 start request path=/apis/rank
-2024-07-15 09:24:27,463 - log_requests - line:46 - INFO - rid=BTJ8S8 start request path=/apis/user/ownInfo
-2024-07-15 09:24:28,202 - getOwnInfo - line:231 - DEBUG - ((15, 'Delicat', 'Zcj1234', 0),)
-2024-07-15 09:24:28,697 - log_requests - line:53 - INFO - rid=BTJ8S8 completed_in=1234.42ms status_code=200
-2024-07-15 09:24:28,698 - log_requests - line:46 - INFO - rid=AV59TW start request path=/apis/rank
-2024-07-15 09:24:28,699 - log_requests - line:46 - INFO - rid=9M5KAN start request path=/apis/user/ownInfo
-2024-07-15 09:24:28,700 - log_requests - line:53 - INFO - rid=JA7ZN8 completed_in=1237.86ms status_code=200
-2024-07-15 09:24:29,438 - getOwnInfo - line:231 - DEBUG - ((15, 'Delicat', 'Zcj1234', 0),)
-2024-07-15 09:24:29,440 - log_requests - line:53 - INFO - rid=9M5KAN completed_in=740.56ms status_code=200
-2024-07-15 09:24:29,897 - log_requests - line:53 - INFO - rid=AV59TW completed_in=1198.40ms status_code=200
-2024-07-15 09:24:35,131 - log_requests - line:46 - INFO - rid=Q19KHX start request path=/apis/getNovel/
-2024-07-15 09:24:35,132 - log_requests - line:53 - INFO - rid=Q19KHX completed_in=0.66ms status_code=307
-2024-07-15 09:24:35,467 - log_requests - line:46 - INFO - rid=XIVX6U start request path=/apis/getNovel
-2024-07-15 09:24:36,228 - log_requests - line:53 - INFO - rid=XIVX6U completed_in=761.18ms status_code=200
-2024-07-15 09:24:37,840 - log_requests - line:46 - INFO - rid=6E8ZTJ start request path=/apis/user/ownInfo
-2024-07-15 09:24:38,517 - getOwnInfo - line:231 - DEBUG - ((15, 'Delicat', 'Zcj1234', 0),)
-2024-07-15 09:24:38,519 - log_requests - line:53 - INFO - rid=6E8ZTJ completed_in=678.67ms status_code=200
-2024-07-15 09:24:38,519 - log_requests - line:46 - INFO - rid=P3R7AD start request path=/apis/user/ownInfo
-2024-07-15 09:24:39,190 - getOwnInfo - line:231 - DEBUG - ((15, 'Delicat', 'Zcj1234', 0),)
-2024-07-15 09:24:39,192 - log_requests - line:53 - INFO - rid=P3R7AD completed_in=672.76ms status_code=200
-2024-07-15 09:24:39,193 - log_requests - line:46 - INFO - rid=9NI1VZ start request path=/apis/rank
-2024-07-15 09:24:39,619 - log_requests - line:53 - INFO - rid=9NI1VZ completed_in=426.62ms status_code=200
-2024-07-15 09:24:41,995 - log_requests - line:46 - INFO - rid=ERAUY7 start request path=/apis/getNovel/
-2024-07-15 09:24:41,996 - log_requests - line:53 - INFO - rid=ERAUY7 completed_in=0.57ms status_code=307
-2024-07-15 09:24:42,347 - log_requests - line:46 - INFO - rid=2ZJYL0 start request path=/apis/getNovel
-2024-07-15 09:24:43,149 - log_requests - line:53 - INFO - rid=2ZJYL0 completed_in=801.95ms status_code=200
-2024-07-15 09:24:45,145 - log_requests - line:46 - INFO - rid=SR97GQ start request path=/apis/user/ownInfo
-2024-07-15 09:24:45,858 - getOwnInfo - line:231 - DEBUG - ((15, 'Delicat', 'Zcj1234', 0),)
-2024-07-15 09:24:45,860 - log_requests - line:53 - INFO - rid=SR97GQ completed_in=714.39ms status_code=200
-2024-07-15 09:24:45,860 - log_requests - line:46 - INFO - rid=PX0NQT start request path=/apis/rank
-2024-07-15 09:24:45,861 - log_requests - line:46 - INFO - rid=K4HMET start request path=/apis/user/ownInfo
-2024-07-15 09:24:46,601 - getOwnInfo - line:231 - DEBUG - ((15, 'Delicat', 'Zcj1234', 0),)
-2024-07-15 09:24:46,603 - log_requests - line:53 - INFO - rid=K4HMET completed_in=741.42ms status_code=200
-2024-07-15 09:24:47,056 - log_requests - line:53 - INFO - rid=PX0NQT completed_in=1195.38ms status_code=200
-2024-07-15 09:24:57,334 - log_requests - line:46 - INFO - rid=V15BRK start request path=/apis/login/
-2024-07-15 09:24:57,334 - log_requests - line:53 - INFO - rid=V15BRK completed_in=0.55ms status_code=307
-2024-07-15 09:24:57,697 - log_requests - line:46 - INFO - rid=KAQ256 start request path=/apis/login
-2024-07-15 09:24:57,698 - callback - line:626 - DEBUG - Calling on_field_start with no data
-2024-07-15 09:24:57,698 - callback - line:623 - DEBUG - Calling on_field_name with data[0:8]
-2024-07-15 09:24:57,698 - callback - line:623 - DEBUG - Calling on_field_data with data[9:14]
-2024-07-15 09:24:57,698 - callback - line:626 - DEBUG - Calling on_field_end with no data
-2024-07-15 09:24:57,699 - callback - line:626 - DEBUG - Calling on_field_start with no data
-2024-07-15 09:24:57,699 - callback - line:623 - DEBUG - Calling on_field_name with data[15:23]
-2024-07-15 09:24:57,699 - callback - line:623 - DEBUG - Calling on_field_data with data[24:29]
-2024-07-15 09:24:57,699 - callback - line:626 - DEBUG - Calling on_field_end with no data
-2024-07-15 09:24:57,699 - callback - line:626 - DEBUG - Calling on_end with no data
-2024-07-15 09:24:57,998 - log_requests - line:53 - INFO - rid=KAQ256 completed_in=300.69ms status_code=200
-2024-07-15 09:25:01,915 - log_requests - line:46 - INFO - rid=U30VRZ start request path=/apis/admin/getNovel
-2024-07-15 09:25:02,366 - log_requests - line:53 - INFO - rid=U30VRZ completed_in=450.66ms status_code=200
-2024-07-15 09:25:05,796 - log_requests - line:46 - INFO - rid=TJADSS start request path=/apis/getNovel
-2024-07-15 09:25:06,553 - log_requests - line:53 - INFO - rid=TJADSS completed_in=756.72ms status_code=200
-2024-07-15 09:25:20,368 - log_requests - line:46 - INFO - rid=ZEGDBH start request path=/apis/user/ownInfo
-2024-07-15 09:25:21,019 - getOwnInfo - line:231 - DEBUG - ((21, 'hou', 'hou', 0),)
-2024-07-15 09:25:21,020 - log_requests - line:46 - INFO - rid=VIYG3N start request path=/apis/user/ownInfo
-2024-07-15 09:25:21,021 - log_requests - line:53 - INFO - rid=ZEGDBH completed_in=652.49ms status_code=200
-2024-07-15 09:25:21,714 - getOwnInfo - line:231 - DEBUG - ((21, 'hou', 'hou', 0),)
-2024-07-15 09:25:21,714 - log_requests - line:46 - INFO - rid=V9TAEY start request path=/apis/rank
-2024-07-15 09:25:21,716 - log_requests - line:53 - INFO - rid=VIYG3N completed_in=695.24ms status_code=200
-2024-07-15 09:25:22,185 - log_requests - line:53 - INFO - rid=V9TAEY completed_in=470.42ms status_code=200
-2024-07-15 09:25:27,766 - log_requests - line:46 - INFO - rid=SQIA8U start request path=/apis/rank
-2024-07-15 09:25:28,225 - log_requests - line:53 - INFO - rid=SQIA8U completed_in=459.04ms status_code=200
-2024-07-15 09:25:30,945 - log_requests - line:46 - INFO - rid=P0O7I5 start request path=/apis/user/ownInfo
-2024-07-15 09:25:31,666 - getOwnInfo - line:231 - DEBUG - ((21, 'hou', 'hou', 0),)
-2024-07-15 09:25:31,667 - log_requests - line:53 - INFO - rid=P0O7I5 completed_in=721.15ms status_code=200
-2024-07-15 09:25:31,667 - log_requests - line:46 - INFO - rid=KM2S5P start request path=/apis/rank
-2024-07-15 09:25:31,668 - log_requests - line:46 - INFO - rid=LDIPVO start request path=/apis/user/ownInfo
-2024-07-15 09:25:32,373 - getOwnInfo - line:231 - DEBUG - ((21, 'hou', 'hou', 0),)
-2024-07-15 09:25:32,374 - log_requests - line:53 - INFO - rid=LDIPVO completed_in=705.47ms status_code=200
-2024-07-15 09:25:32,845 - log_requests - line:53 - INFO - rid=KM2S5P completed_in=1177.74ms status_code=200
-2024-07-15 09:25:50,698 - log_requests - line:46 - INFO - rid=4QR5QT start request path=/apis/rank
-2024-07-15 09:25:51,143 - log_requests - line:53 - INFO - rid=4QR5QT completed_in=445.22ms status_code=200
-2024-07-15 09:25:55,591 - log_requests - line:46 - INFO - rid=T78QT5 start request path=/apis/user/ownInfo
-2024-07-15 09:25:56,310 - getOwnInfo - line:231 - DEBUG - ((15, 'Delicat', 'Zcj1234', 0),)
-2024-07-15 09:25:56,311 - log_requests - line:53 - INFO - rid=T78QT5 completed_in=720.63ms status_code=200
-2024-07-15 09:25:56,312 - log_requests - line:46 - INFO - rid=NGV396 start request path=/apis/rank
-2024-07-15 09:25:56,793 - log_requests - line:53 - INFO - rid=NGV396 completed_in=480.50ms status_code=200
-2024-07-15 09:25:56,793 - log_requests - line:46 - INFO - rid=SNXO48 start request path=/apis/user/ownInfo
-2024-07-15 09:25:57,510 - getOwnInfo - line:231 - DEBUG - ((15, 'Delicat', 'Zcj1234', 0),)
-2024-07-15 09:25:57,512 - log_requests - line:53 - INFO - rid=SNXO48 completed_in=718.19ms status_code=200
-2024-07-15 09:25:59,021 - log_requests - line:46 - INFO - rid=45IHMR start request path=/apis/getNovel/
-2024-07-15 09:25:59,022 - log_requests - line:53 - INFO - rid=45IHMR completed_in=0.55ms status_code=307
-2024-07-15 09:25:59,378 - log_requests - line:46 - INFO - rid=29SEDN start request path=/apis/getNovel
-2024-07-15 09:26:00,180 - log_requests - line:53 - INFO - rid=29SEDN completed_in=800.83ms status_code=200
-2024-07-15 09:26:00,180 - log_requests - line:46 - INFO - rid=V4QGCQ start request path=/apis/getNovel/
-2024-07-15 09:26:00,181 - log_requests - line:53 - INFO - rid=V4QGCQ completed_in=0.80ms status_code=200
-2024-07-15 09:26:00,686 - log_requests - line:46 - INFO - rid=IC7IDU start request path=/apis/getNovel/
-2024-07-15 09:26:00,687 - log_requests - line:53 - INFO - rid=IC7IDU completed_in=0.54ms status_code=307
-2024-07-15 09:26:01,247 - log_requests - line:46 - INFO - rid=27P5V9 start request path=/apis/getNovel
-2024-07-15 09:26:01,247 - log_requests - line:53 - INFO - rid=27P5V9 completed_in=0.31ms status_code=200
-2024-07-15 09:26:02,022 - log_requests - line:46 - INFO - rid=4KL73F start request path=/apis/getNovel
-2024-07-15 09:26:02,873 - log_requests - line:53 - INFO - rid=4KL73F completed_in=850.67ms status_code=200
-2024-07-15 09:26:03,183 - log_requests - line:46 - INFO - rid=ZZJOVL start request path=/apis/rank
-2024-07-15 09:26:03,621 - log_requests - line:53 - INFO - rid=ZZJOVL completed_in=437.93ms status_code=200
-2024-07-15 09:26:04,370 - log_requests - line:46 - INFO - rid=2I9HNE start request path=/apis/rank
-2024-07-15 09:26:04,830 - log_requests - line:53 - INFO - rid=2I9HNE completed_in=459.62ms status_code=200
-2024-07-15 09:26:07,741 - log_requests - line:46 - INFO - rid=NBZWB2 start request path=/apis/user/ownInfo
-2024-07-15 09:26:07,742 - log_requests - line:53 - INFO - rid=NBZWB2 completed_in=0.32ms status_code=200
-2024-07-15 09:26:07,745 - log_requests - line:46 - INFO - rid=7D07XX start request path=/apis/rank
-2024-07-15 09:26:08,206 - log_requests - line:53 - INFO - rid=7D07XX completed_in=461.42ms status_code=200
-2024-07-15 09:26:08,207 - log_requests - line:46 - INFO - rid=3MIFME start request path=/apis/user/ownInfo
-2024-07-15 09:26:08,208 - log_requests - line:46 - INFO - rid=FHI2QZ start request path=/apis/user/ownInfo
-2024-07-15 09:26:08,906 - getOwnInfo - line:231 - DEBUG - ((15, 'Delicat', 'Zcj1234', 0),)
-2024-07-15 09:26:08,908 - log_requests - line:46 - INFO - rid=J9FPEE start request path=/apis/rank
-2024-07-15 09:26:08,909 - log_requests - line:53 - INFO - rid=3MIFME completed_in=702.11ms status_code=200
-2024-07-15 09:26:08,910 - log_requests - line:46 - INFO - rid=MIQMIT start request path=/apis/user/ownInfo
-2024-07-15 09:26:08,911 - log_requests - line:53 - INFO - rid=FHI2QZ completed_in=703.28ms status_code=200
-2024-07-15 09:26:09,570 - getOwnInfo - line:231 - DEBUG - ((15, 'Delicat', 'Zcj1234', 0),)
-2024-07-15 09:26:09,572 - log_requests - line:46 - INFO - rid=5RB8DA start request path=/apis/user/ownInfo
-2024-07-15 09:26:10,255 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
-2024-07-15 09:26:10,256 - log_requests - line:53 - INFO - rid=MIQMIT completed_in=1346.27ms status_code=200
-2024-07-15 09:26:10,762 - log_requests - line:53 - INFO - rid=5RB8DA completed_in=1189.42ms status_code=200
-2024-07-15 09:26:10,762 - log_requests - line:46 - INFO - rid=K0JU3B start request path=/apis/rank
-2024-07-15 09:26:10,764 - log_requests - line:53 - INFO - rid=J9FPEE completed_in=1855.57ms status_code=200
-2024-07-15 09:26:11,254 - log_requests - line:53 - INFO - rid=K0JU3B completed_in=491.73ms status_code=200
-2024-07-15 09:26:11,255 - log_requests - line:46 - INFO - rid=DY4NY3 start request path=/apis/user/ownInfo
-2024-07-15 09:26:11,938 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
-2024-07-15 09:26:11,939 - log_requests - line:53 - INFO - rid=DY4NY3 completed_in=684.04ms status_code=200
-2024-07-15 09:26:27,182 - log_requests - line:46 - INFO - rid=VVMZEC start request path=/apis/rank
-2024-07-15 09:26:27,643 - log_requests - line:53 - INFO - rid=VVMZEC completed_in=460.72ms status_code=200
-2024-07-15 09:26:31,011 - log_requests - line:46 - INFO - rid=6KYVBE start request path=/apis/getNovel/
-2024-07-15 09:26:31,012 - log_requests - line:53 - INFO - rid=6KYVBE completed_in=0.57ms status_code=307
-2024-07-15 09:26:31,373 - log_requests - line:46 - INFO - rid=65OCOB start request path=/apis/getNovel
-2024-07-15 09:26:32,159 - log_requests - line:53 - INFO - rid=65OCOB completed_in=785.90ms status_code=200
-2024-07-15 09:26:38,699 - log_requests - line:46 - INFO - rid=CLZ9RL start request path=/apis/rank
-2024-07-15 09:26:39,165 - log_requests - line:53 - INFO - rid=CLZ9RL completed_in=465.12ms status_code=200
-2024-07-15 09:26:56,432 - log_requests - line:46 - INFO - rid=JAE6GY start request path=/apis/getNovel/
-2024-07-15 09:26:56,433 - log_requests - line:53 - INFO - rid=JAE6GY completed_in=0.57ms status_code=307
-2024-07-15 09:26:56,808 - log_requests - line:46 - INFO - rid=6O8GQQ start request path=/apis/getNovel
-2024-07-15 09:26:57,575 - log_requests - line:53 - INFO - rid=6O8GQQ completed_in=766.26ms status_code=200
-2024-07-15 09:28:48,858 - log_requests - line:46 - INFO - rid=BAZMHG start request path=/apis/register/
-2024-07-15 09:28:48,859 - log_requests - line:53 - INFO - rid=BAZMHG completed_in=0.55ms status_code=307
-2024-07-15 09:28:49,794 - log_requests - line:46 - INFO - rid=RP1O0L start request path=/apis/register
-2024-07-15 09:28:50,110 - log_requests - line:53 - INFO - rid=RP1O0L completed_in=315.20ms status_code=200
-2024-07-15 09:29:20,336 - log_requests - line:46 - INFO - rid=SRTIJX start request path=/apis/login/
-2024-07-15 09:29:20,337 - log_requests - line:53 - INFO - rid=SRTIJX completed_in=0.55ms status_code=307
-2024-07-15 09:29:20,399 - log_requests - line:46 - INFO - rid=8KTD4Z start request path=/apis/login
-2024-07-15 09:29:20,400 - callback - line:626 - DEBUG - Calling on_field_start with no data
-2024-07-15 09:29:20,400 - callback - line:623 - DEBUG - Calling on_field_name with data[0:8]
-2024-07-15 09:29:20,400 - callback - line:623 - DEBUG - Calling on_field_data with data[9:12]
-2024-07-15 09:29:20,400 - callback - line:626 - DEBUG - Calling on_field_end with no data
-2024-07-15 09:29:20,400 - callback - line:626 - DEBUG - Calling on_field_start with no data
-2024-07-15 09:29:20,400 - callback - line:623 - DEBUG - Calling on_field_name with data[13:21]
-2024-07-15 09:29:20,401 - callback - line:623 - DEBUG - Calling on_field_data with data[22:25]
-2024-07-15 09:29:20,401 - callback - line:626 - DEBUG - Calling on_field_end with no data
-2024-07-15 09:29:20,401 - callback - line:626 - DEBUG - Calling on_end with no data
-2024-07-15 09:29:20,704 - log_requests - line:53 - INFO - rid=8KTD4Z completed_in=304.58ms status_code=200
-2024-07-15 09:29:20,790 - log_requests - line:46 - INFO - rid=Z84THR start request path=/apis/user/ownInfo
-2024-07-15 09:29:20,791 - log_requests - line:53 - INFO - rid=Z84THR completed_in=0.29ms status_code=200
-2024-07-15 09:29:20,797 - log_requests - line:46 - INFO - rid=6BWSPR start request path=/apis/user/ownInfo
-2024-07-15 09:29:20,797 - log_requests - line:46 - INFO - rid=BMFYDF start request path=/apis/rank
-2024-07-15 09:29:20,798 - log_requests - line:53 - INFO - rid=6BWSPR completed_in=0.79ms status_code=200
-2024-07-15 09:29:20,798 - log_requests - line:53 - INFO - rid=BMFYDF completed_in=0.81ms status_code=200
-2024-07-15 09:29:20,850 - log_requests - line:46 - INFO - rid=AG00Z7 start request path=/apis/user/ownInfo
-2024-07-15 09:29:21,581 - getOwnInfo - line:231 - DEBUG - ((21, 'hou', 'hou', 0),)
-2024-07-15 09:29:21,582 - log_requests - line:53 - INFO - rid=AG00Z7 completed_in=731.93ms status_code=200
-2024-07-15 09:29:21,583 - log_requests - line:46 - INFO - rid=58BFR4 start request path=/apis/rank
-2024-07-15 09:29:21,584 - log_requests - line:46 - INFO - rid=Z1T3KX start request path=/apis/user/ownInfo
-2024-07-15 09:29:22,294 - getOwnInfo - line:231 - DEBUG - ((21, 'hou', 'hou', 0),)
-2024-07-15 09:29:22,295 - log_requests - line:53 - INFO - rid=Z1T3KX completed_in=711.22ms status_code=200
-2024-07-15 09:29:22,817 - log_requests - line:53 - INFO - rid=58BFR4 completed_in=1233.85ms status_code=200
-2024-07-15 09:29:24,151 - log_requests - line:46 - INFO - rid=E9PQL8 start request path=/apis/getNovel/
-2024-07-15 09:29:24,152 - log_requests - line:53 - INFO - rid=E9PQL8 completed_in=0.30ms status_code=200
-2024-07-15 09:29:24,207 - log_requests - line:46 - INFO - rid=WUS5ST start request path=/apis/getNovel/
-2024-07-15 09:29:24,208 - log_requests - line:53 - INFO - rid=WUS5ST completed_in=0.56ms status_code=307
-2024-07-15 09:29:24,271 - log_requests - line:46 - INFO - rid=WDBIBP start request path=/apis/getNovel
-2024-07-15 09:29:24,272 - log_requests - line:53 - INFO - rid=WDBIBP completed_in=0.31ms status_code=200
-2024-07-15 09:29:24,327 - log_requests - line:46 - INFO - rid=NS2WHP start request path=/apis/getNovel
-2024-07-15 09:29:25,107 - log_requests - line:53 - INFO - rid=NS2WHP completed_in=779.88ms status_code=200
-2024-07-15 09:29:28,792 - log_requests - line:46 - INFO - rid=V1VL2R start request path=/apis/user/ownInfo
-2024-07-15 09:29:29,471 - getOwnInfo - line:231 - DEBUG - ((21, 'hou', 'hou', 0),)
-2024-07-15 09:29:29,472 - log_requests - line:53 - INFO - rid=V1VL2R completed_in=680.03ms status_code=200
-2024-07-15 09:29:29,473 - log_requests - line:46 - INFO - rid=0ZNDLF start request path=/apis/rank
-2024-07-15 09:29:29,474 - log_requests - line:46 - INFO - rid=2D47R7 start request path=/apis/user/ownInfo
-2024-07-15 09:29:30,240 - getOwnInfo - line:231 - DEBUG - ((21, 'hou', 'hou', 0),)
-2024-07-15 09:29:30,241 - log_requests - line:53 - INFO - rid=2D47R7 completed_in=767.55ms status_code=200
-2024-07-15 09:29:30,714 - log_requests - line:53 - INFO - rid=0ZNDLF completed_in=1241.37ms status_code=200
-2024-07-15 09:29:32,360 - log_requests - line:46 - INFO - rid=T3WGOB start request path=/apis/getNovel/
-2024-07-15 09:29:32,360 - log_requests - line:53 - INFO - rid=T3WGOB completed_in=0.57ms status_code=307
-2024-07-15 09:29:32,430 - log_requests - line:46 - INFO - rid=3PQOKA start request path=/apis/getNovel
-2024-07-15 09:29:33,275 - log_requests - line:53 - INFO - rid=3PQOKA completed_in=844.79ms status_code=200
+2024-07-15 09:55:05,807 - log_requests - line:53 - INFO - rid=GPC21Q completed_in=1437.78ms status_code=200
+2024-07-15 09:55:05,808 - log_requests - line:53 - INFO - rid=F82URN completed_in=690.90ms status_code=200
+2024-07-15 09:55:05,809 - log_requests - line:46 - INFO - rid=XY91EF start request path=/apis/rank
+2024-07-15 09:55:06,306 - log_requests - line:53 - INFO - rid=XY91EF completed_in=497.16ms status_code=200
+2024-07-15 09:55:10,326 - log_requests - line:46 - INFO - rid=N004II start request path=/apis/rank
+2024-07-15 09:55:10,327 - log_requests - line:53 - INFO - rid=N004II completed_in=0.30ms status_code=200
+2024-07-15 09:55:10,389 - log_requests - line:46 - INFO - rid=KV5YMN start request path=/apis/rank
+2024-07-15 09:55:10,846 - log_requests - line:53 - INFO - rid=KV5YMN completed_in=456.51ms status_code=200
+2024-07-15 09:55:11,854 - log_requests - line:46 - INFO - rid=OSBC7I start request path=/apis/getNovel/
+2024-07-15 09:55:11,855 - log_requests - line:53 - INFO - rid=OSBC7I completed_in=0.30ms status_code=200
+2024-07-15 09:55:11,925 - log_requests - line:46 - INFO - rid=6OKXXL start request path=/apis/getNovel/
+2024-07-15 09:55:11,925 - log_requests - line:53 - INFO - rid=6OKXXL completed_in=0.54ms status_code=307
+2024-07-15 09:55:11,978 - log_requests - line:46 - INFO - rid=CSPCZ7 start request path=/apis/getNovel
+2024-07-15 09:55:11,979 - log_requests - line:53 - INFO - rid=CSPCZ7 completed_in=0.30ms status_code=200
+2024-07-15 09:55:12,035 - log_requests - line:46 - INFO - rid=8UJAQH start request path=/apis/getNovel
+2024-07-15 09:55:12,810 - log_requests - line:53 - INFO - rid=8UJAQH completed_in=774.97ms status_code=200
+2024-07-15 09:55:22,407 - log_requests - line:46 - INFO - rid=W5LNXP start request path=/apis/rank
+2024-07-15 09:55:22,408 - log_requests - line:53 - INFO - rid=W5LNXP completed_in=0.32ms status_code=200
+2024-07-15 09:55:22,467 - log_requests - line:46 - INFO - rid=MN4A4G start request path=/apis/rank
+2024-07-15 09:55:22,919 - log_requests - line:53 - INFO - rid=MN4A4G completed_in=451.69ms status_code=200
+2024-07-15 09:55:24,133 - log_requests - line:46 - INFO - rid=X0MH32 start request path=/apis/rank
+2024-07-15 09:55:24,134 - log_requests - line:53 - INFO - rid=X0MH32 completed_in=0.29ms status_code=200
+2024-07-15 09:55:25,237 - log_requests - line:46 - INFO - rid=LLH3U2 start request path=/apis/rank
+2024-07-15 09:55:25,715 - log_requests - line:53 - INFO - rid=LLH3U2 completed_in=478.34ms status_code=200
+2024-07-15 09:55:25,902 - log_requests - line:46 - INFO - rid=F3ME9P start request path=/apis/user/ownInfo
+2024-07-15 09:55:26,612 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 09:55:26,614 - log_requests - line:53 - INFO - rid=F3ME9P completed_in=711.29ms status_code=200
+2024-07-15 09:55:26,614 - log_requests - line:46 - INFO - rid=RQITU1 start request path=/apis/user/ownInfo
+2024-07-15 09:55:27,286 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 09:55:27,287 - log_requests - line:53 - INFO - rid=RQITU1 completed_in=673.08ms status_code=200
+2024-07-15 09:55:32,212 - log_requests - line:46 - INFO - rid=F65LCJ start request path=/apis/user/ownInfo
+2024-07-15 09:55:32,213 - log_requests - line:53 - INFO - rid=F65LCJ completed_in=0.31ms status_code=200
+2024-07-15 09:55:32,216 - log_requests - line:46 - INFO - rid=77971Q start request path=/apis/user/ownInfo
+2024-07-15 09:55:32,217 - log_requests - line:53 - INFO - rid=77971Q completed_in=0.27ms status_code=200
+2024-07-15 09:55:32,274 - log_requests - line:46 - INFO - rid=X5S5OB start request path=/apis/user/ownInfo
+2024-07-15 09:55:32,977 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 09:55:32,978 - log_requests - line:53 - INFO - rid=X5S5OB completed_in=703.66ms status_code=200
+2024-07-15 09:55:32,979 - log_requests - line:46 - INFO - rid=R01QW8 start request path=/apis/user/ownInfo
+2024-07-15 09:55:33,732 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 09:55:33,733 - log_requests - line:53 - INFO - rid=R01QW8 completed_in=754.00ms status_code=200
+2024-07-15 09:55:38,366 - log_requests - line:46 - INFO - rid=5PGW3N start request path=/apis/rank
+2024-07-15 09:55:38,849 - log_requests - line:53 - INFO - rid=5PGW3N completed_in=482.84ms status_code=200
+2024-07-15 09:55:38,850 - log_requests - line:46 - INFO - rid=4VFG9P start request path=/apis/login/
+2024-07-15 09:55:38,851 - log_requests - line:53 - INFO - rid=4VFG9P completed_in=0.72ms status_code=200
+2024-07-15 09:55:39,035 - log_requests - line:46 - INFO - rid=X1O3VS start request path=/apis/login/
+2024-07-15 09:55:39,036 - log_requests - line:53 - INFO - rid=X1O3VS completed_in=0.56ms status_code=307
+2024-07-15 09:55:39,094 - log_requests - line:46 - INFO - rid=5CHBGV start request path=/apis/login
+2024-07-15 09:55:39,095 - log_requests - line:53 - INFO - rid=5CHBGV completed_in=0.30ms status_code=200
+2024-07-15 09:55:39,126 - log_requests - line:46 - INFO - rid=I17IZP start request path=/apis/login
+2024-07-15 09:55:39,127 - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-15 09:55:39,127 - callback - line:623 - DEBUG - Calling on_field_name with data[0:8]
+2024-07-15 09:55:39,127 - callback - line:623 - DEBUG - Calling on_field_data with data[9:12]
+2024-07-15 09:55:39,127 - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-15 09:55:39,127 - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-15 09:55:39,127 - callback - line:623 - DEBUG - Calling on_field_name with data[13:21]
+2024-07-15 09:55:39,128 - callback - line:623 - DEBUG - Calling on_field_data with data[22:28]
+2024-07-15 09:55:39,128 - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-15 09:55:39,128 - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-15 09:55:39,431 - log_requests - line:53 - INFO - rid=I17IZP completed_in=304.64ms status_code=200
+2024-07-15 09:55:39,515 - log_requests - line:46 - INFO - rid=0VLGAX start request path=/apis/rank
+2024-07-15 09:55:40,008 - log_requests - line:53 - INFO - rid=0VLGAX completed_in=493.05ms status_code=200
+2024-07-15 09:55:40,009 - log_requests - line:46 - INFO - rid=GHGO4C start request path=/apis/user/ownInfo
+2024-07-15 09:55:40,749 - getOwnInfo - line:231 - DEBUG - ((7, 'GZQ', 'Gzq123', 0),)
+2024-07-15 09:55:40,750 - log_requests - line:46 - INFO - rid=8SNBNA start request path=/apis/user/ownInfo
+2024-07-15 09:55:41,457 - getOwnInfo - line:231 - DEBUG - ((7, 'GZQ', 'Gzq123', 0),)
+2024-07-15 09:55:41,457 - log_requests - line:53 - INFO - rid=GHGO4C completed_in=1448.52ms status_code=200
+2024-07-15 09:55:41,458 - log_requests - line:53 - INFO - rid=8SNBNA completed_in=708.08ms status_code=200
+2024-07-15 09:55:41,861 - log_requests - line:46 - INFO - rid=TKCTL5 start request path=/apis/user/ownInfo
+2024-07-15 09:55:42,557 - getOwnInfo - line:231 - DEBUG - ((15, 'Delicat', 'Zcj1234', 0),)
+2024-07-15 09:55:42,559 - log_requests - line:53 - INFO - rid=TKCTL5 completed_in=697.05ms status_code=200
+2024-07-15 09:55:42,559 - log_requests - line:46 - INFO - rid=0RQUZC start request path=/apis/user/ownInfo
+2024-07-15 09:55:43,296 - getOwnInfo - line:231 - DEBUG - ((15, 'Delicat', 'Zcj1234', 0),)
+2024-07-15 09:55:43,297 - log_requests - line:53 - INFO - rid=0RQUZC completed_in=738.01ms status_code=200
+2024-07-15 09:55:45,071 - log_requests - line:46 - INFO - rid=BAIG29 start request path=/apis/user/ownInfo
+2024-07-15 09:55:45,748 - getOwnInfo - line:231 - DEBUG - ((15, 'Delicat', 'Zcj1234', 0),)
+2024-07-15 09:55:45,749 - log_requests - line:53 - INFO - rid=BAIG29 completed_in=677.95ms status_code=200
+2024-07-15 09:55:45,750 - log_requests - line:46 - INFO - rid=E47ZRN start request path=/apis/user/ownInfo
+2024-07-15 09:55:46,467 - getOwnInfo - line:231 - DEBUG - ((15, 'Delicat', 'Zcj1234', 0),)
+2024-07-15 09:55:46,468 - log_requests - line:53 - INFO - rid=E47ZRN completed_in=718.42ms status_code=200
+2024-07-15 09:55:56,669 - log_requests - line:46 - INFO - rid=MWWAQN start request path=/apis/user/ownInfo
+2024-07-15 09:55:57,413 - getOwnInfo - line:231 - DEBUG - ((15, 'Delicat', 'Zcj1234', 0),)
+2024-07-15 09:55:57,415 - log_requests - line:53 - INFO - rid=MWWAQN completed_in=745.09ms status_code=200
+2024-07-15 09:55:57,415 - log_requests - line:46 - INFO - rid=CDP8H5 start request path=/apis/user/ownInfo
+2024-07-15 09:55:58,170 - getOwnInfo - line:231 - DEBUG - ((15, 'Delicat', 'Zcj1234', 0),)
+2024-07-15 09:55:58,172 - log_requests - line:53 - INFO - rid=CDP8H5 completed_in=756.14ms status_code=200
+2024-07-15 09:56:34,111 - log_requests - line:46 - INFO - rid=GC7BME start request path=/apis/rank
+2024-07-15 09:56:34,571 - log_requests - line:53 - INFO - rid=GC7BME completed_in=459.83ms status_code=200
+2024-07-15 09:56:42,374 - log_requests - line:46 - INFO - rid=8TXXMS start request path=/apis/user/ownInfo
+2024-07-15 09:56:43,059 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 09:56:43,060 - log_requests - line:53 - INFO - rid=8TXXMS completed_in=685.49ms status_code=200
+2024-07-15 09:56:43,061 - log_requests - line:46 - INFO - rid=KTI1KZ start request path=/apis/user/ownInfo
+2024-07-15 09:56:43,725 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 09:56:43,727 - log_requests - line:53 - INFO - rid=KTI1KZ completed_in=666.04ms status_code=200
+2024-07-15 09:56:45,886 - log_requests - line:46 - INFO - rid=V1Q7HJ start request path=/apis/user/ownInfo
+2024-07-15 09:56:46,571 - getOwnInfo - line:231 - DEBUG - ((21, 'hou', 'hou', 0),)
+2024-07-15 09:56:46,572 - log_requests - line:46 - INFO - rid=Y7EC2U start request path=/apis/user/ownInfo
+2024-07-15 09:56:46,573 - log_requests - line:53 - INFO - rid=V1Q7HJ completed_in=686.32ms status_code=200
+2024-07-15 09:56:47,274 - getOwnInfo - line:231 - DEBUG - ((21, 'hou', 'hou', 0),)
+2024-07-15 09:56:47,276 - log_requests - line:53 - INFO - rid=Y7EC2U completed_in=702.93ms status_code=200
+2024-07-15 09:56:47,276 - log_requests - line:46 - INFO - rid=M9FPX3 start request path=/docs
+2024-07-15 09:56:47,277 - log_requests - line:53 - INFO - rid=M9FPX3 completed_in=1.05ms status_code=200
+2024-07-15 09:56:47,402 - log_requests - line:46 - INFO - rid=T5YLRZ start request path=/openapi.json
+2024-07-15 09:56:47,431 - log_requests - line:53 - INFO - rid=T5YLRZ completed_in=28.80ms status_code=200
+2024-07-15 09:56:48,545 - log_requests - line:46 - INFO - rid=P0D9XG start request path=/apis/user/ownInfo
+2024-07-15 09:56:49,218 - getOwnInfo - line:231 - DEBUG - ((15, 'Delicat', 'Zcj1234', 0),)
+2024-07-15 09:56:49,220 - log_requests - line:53 - INFO - rid=P0D9XG completed_in=674.84ms status_code=200
+2024-07-15 09:56:49,220 - log_requests - line:46 - INFO - rid=5YB8JM start request path=/apis/user/ownInfo
+2024-07-15 09:56:50,009 - getOwnInfo - line:231 - DEBUG - ((15, 'Delicat', 'Zcj1234', 0),)
+2024-07-15 09:56:50,012 - log_requests - line:53 - INFO - rid=5YB8JM completed_in=791.99ms status_code=200
+2024-07-15 09:56:59,790 - log_requests - line:46 - INFO - rid=2GXDIH start request path=/apis/search
+2024-07-15 09:57:00,283 - log_requests - line:53 - INFO - rid=2GXDIH completed_in=492.59ms status_code=200
+2024-07-15 09:57:14,095 - log_requests - line:46 - INFO - rid=9PC4VT start request path=/apis/user/ownInfo
+2024-07-15 09:57:14,784 - getOwnInfo - line:231 - DEBUG - ((15, 'Delicat', 'Zcj1234', 0),)
+2024-07-15 09:57:14,786 - log_requests - line:53 - INFO - rid=9PC4VT completed_in=690.17ms status_code=200
+2024-07-15 09:57:14,786 - log_requests - line:46 - INFO - rid=PZPWYK start request path=/apis/user/ownInfo
+2024-07-15 09:57:15,484 - getOwnInfo - line:231 - DEBUG - ((15, 'Delicat', 'Zcj1234', 0),)
+2024-07-15 09:57:15,486 - log_requests - line:53 - INFO - rid=PZPWYK completed_in=699.69ms status_code=200
+2024-07-15 09:57:28,941 - log_requests - line:46 - INFO - rid=KZ48J5 start request path=/apis/user/ownInfo
+2024-07-15 09:57:28,941 - log_requests - line:53 - INFO - rid=KZ48J5 completed_in=0.33ms status_code=200
+2024-07-15 09:57:28,943 - log_requests - line:46 - INFO - rid=BZHESK start request path=/apis/user/ownInfo
+2024-07-15 09:57:28,943 - log_requests - line:53 - INFO - rid=BZHESK completed_in=0.25ms status_code=200
+2024-07-15 09:57:29,037 - log_requests - line:46 - INFO - rid=D0WP4O start request path=/apis/user/ownInfo
+2024-07-15 09:57:29,765 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 09:57:29,766 - log_requests - line:46 - INFO - rid=HP1JWD start request path=/apis/user/ownInfo
+2024-07-15 09:57:29,767 - log_requests - line:53 - INFO - rid=D0WP4O completed_in=729.38ms status_code=200
+2024-07-15 09:57:30,488 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 09:57:30,489 - log_requests - line:53 - INFO - rid=HP1JWD completed_in=722.58ms status_code=200
+2024-07-15 09:57:43,126 - log_requests - line:46 - INFO - rid=X79V9Y start request path=/apis/user/ownInfo
+2024-07-15 09:57:43,127 - log_requests - line:53 - INFO - rid=X79V9Y completed_in=0.34ms status_code=200
+2024-07-15 09:57:43,129 - log_requests - line:46 - INFO - rid=1XRRO7 start request path=/apis/user/ownInfo
+2024-07-15 09:57:43,129 - log_requests - line:53 - INFO - rid=1XRRO7 completed_in=0.27ms status_code=200
+2024-07-15 09:57:43,238 - log_requests - line:46 - INFO - rid=918J3X start request path=/apis/user/ownInfo
+2024-07-15 09:57:43,925 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 09:57:43,930 - log_requests - line:46 - INFO - rid=BO5FZJ start request path=/apis/user/ownInfo
+2024-07-15 09:57:44,619 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 09:57:44,620 - log_requests - line:53 - INFO - rid=918J3X completed_in=1381.49ms status_code=200
+2024-07-15 09:57:44,621 - log_requests - line:53 - INFO - rid=BO5FZJ completed_in=690.56ms status_code=200
+2024-07-15 09:57:44,621 - log_requests - line:46 - INFO - rid=44E887 start request path=/apis/search
+2024-07-15 09:57:45,138 - log_requests - line:53 - INFO - rid=44E887 completed_in=516.98ms status_code=200
+2024-07-15 09:57:45,168 - log_requests - line:46 - INFO - rid=R0A3U6 start request path=/apis/search
+2024-07-15 09:57:45,707 - log_requests - line:53 - INFO - rid=R0A3U6 completed_in=538.38ms status_code=200
+2024-07-15 09:57:49,322 - log_requests - line:46 - INFO - rid=9XQ26X start request path=/apis/rank
+2024-07-15 09:57:49,322 - log_requests - line:53 - INFO - rid=9XQ26X completed_in=0.31ms status_code=200
+2024-07-15 09:57:49,501 - log_requests - line:46 - INFO - rid=93FIOO start request path=/apis/rank
+2024-07-15 09:57:49,961 - log_requests - line:53 - INFO - rid=93FIOO completed_in=459.94ms status_code=200
+2024-07-15 09:57:50,846 - log_requests - line:46 - INFO - rid=4RQPM2 start request path=/apis/user/ownInfo
+2024-07-15 09:57:50,847 - log_requests - line:46 - INFO - rid=55ARE9 start request path=/apis/user/ownInfo
+2024-07-15 09:57:50,847 - log_requests - line:53 - INFO - rid=4RQPM2 completed_in=0.86ms status_code=200
+2024-07-15 09:57:50,848 - log_requests - line:53 - INFO - rid=55ARE9 completed_in=0.80ms status_code=200
+2024-07-15 09:57:51,014 - log_requests - line:46 - INFO - rid=FF6YD7 start request path=/apis/user/ownInfo
+2024-07-15 09:57:51,716 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 09:57:51,717 - log_requests - line:53 - INFO - rid=FF6YD7 completed_in=703.10ms status_code=200
+2024-07-15 09:57:51,718 - log_requests - line:46 - INFO - rid=LEZSAZ start request path=/apis/user/ownInfo
+2024-07-15 09:57:52,391 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 09:57:52,392 - log_requests - line:53 - INFO - rid=LEZSAZ completed_in=674.13ms status_code=200
+2024-07-15 09:57:56,404 - log_requests - line:46 - INFO - rid=JH6W68 start request path=/apis/search
+2024-07-15 09:57:56,924 - log_requests - line:53 - INFO - rid=JH6W68 completed_in=519.95ms status_code=200
+2024-07-15 09:57:59,976 - log_requests - line:46 - INFO - rid=N5HK6J start request path=/apis/search
+2024-07-15 09:58:00,513 - log_requests - line:53 - INFO - rid=N5HK6J completed_in=535.91ms status_code=200
+2024-07-15 09:58:04,739 - log_requests - line:46 - INFO - rid=41RQW0 start request path=/apis/user/ownInfo
+2024-07-15 09:58:05,425 - getOwnInfo - line:231 - DEBUG - ((15, 'Delicat', 'Zcj1234', 0),)
+2024-07-15 09:58:05,427 - log_requests - line:53 - INFO - rid=41RQW0 completed_in=686.78ms status_code=200
+2024-07-15 09:58:05,427 - log_requests - line:46 - INFO - rid=7VC2B8 start request path=/apis/user/ownInfo
+2024-07-15 09:58:06,138 - getOwnInfo - line:231 - DEBUG - ((15, 'Delicat', 'Zcj1234', 0),)
+2024-07-15 09:58:06,140 - log_requests - line:53 - INFO - rid=7VC2B8 completed_in=713.22ms status_code=200
+2024-07-15 09:58:19,851 - log_requests - line:46 - INFO - rid=CZCYYH start request path=/apis/rank
+2024-07-15 09:58:20,385 - log_requests - line:53 - INFO - rid=CZCYYH completed_in=533.19ms status_code=200
+2024-07-15 09:58:25,226 - log_requests - line:46 - INFO - rid=M54Y9K start request path=/apis/user/ownInfo
+2024-07-15 09:58:25,226 - log_requests - line:53 - INFO - rid=M54Y9K completed_in=0.30ms status_code=200
+2024-07-15 09:58:25,969 - log_requests - line:46 - INFO - rid=K3J6LB start request path=/apis/user/ownInfo
+2024-07-15 09:58:26,711 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 09:58:26,712 - log_requests - line:53 - INFO - rid=K3J6LB completed_in=742.49ms status_code=200
+2024-07-15 09:58:35,692 - log_requests - line:46 - INFO - rid=9YMFOD start request path=/apis/user/ownInfo
+2024-07-15 09:58:36,356 - getOwnInfo - line:231 - DEBUG - ((15, 'Delicat', 'Zcj1234', 0),)
+2024-07-15 09:58:36,358 - log_requests - line:53 - INFO - rid=9YMFOD completed_in=665.17ms status_code=200
+2024-07-15 09:58:36,358 - log_requests - line:46 - INFO - rid=T55P0X start request path=/apis/user/ownInfo
+2024-07-15 09:58:37,092 - getOwnInfo - line:231 - DEBUG - ((15, 'Delicat', 'Zcj1234', 0),)
+2024-07-15 09:58:37,094 - log_requests - line:53 - INFO - rid=T55P0X completed_in=735.53ms status_code=200
+2024-07-15 09:58:37,095 - log_requests - line:46 - INFO - rid=UWXGWP start request path=/apis/user/ownInfo
+2024-07-15 09:58:37,807 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 09:58:37,809 - log_requests - line:53 - INFO - rid=UWXGWP completed_in=713.83ms status_code=200
+2024-07-15 09:58:37,809 - log_requests - line:46 - INFO - rid=UV2J68 start request path=/apis/user/ownInfo
+2024-07-15 09:58:38,534 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 09:58:38,535 - log_requests - line:53 - INFO - rid=UV2J68 completed_in=725.49ms status_code=200
+2024-07-15 09:58:39,622 - log_requests - line:46 - INFO - rid=IRK2QQ start request path=/apis/rank
+2024-07-15 09:58:40,100 - log_requests - line:53 - INFO - rid=IRK2QQ completed_in=477.22ms status_code=200
+2024-07-15 09:58:40,590 - log_requests - line:46 - INFO - rid=EPRJ9G start request path=/apis/user/ownInfo
+2024-07-15 09:58:41,301 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 09:58:41,303 - log_requests - line:53 - INFO - rid=EPRJ9G completed_in=711.79ms status_code=200
+2024-07-15 09:58:41,303 - log_requests - line:46 - INFO - rid=DJT3WH start request path=/apis/user/ownInfo
+2024-07-15 09:58:41,957 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 09:58:41,958 - log_requests - line:53 - INFO - rid=DJT3WH completed_in=654.66ms status_code=200
+2024-07-15 09:58:50,882 - log_requests - line:46 - INFO - rid=JHAQKU start request path=/apis/rank
+2024-07-15 09:58:51,388 - log_requests - line:53 - INFO - rid=JHAQKU completed_in=505.51ms status_code=200
+2024-07-15 09:58:51,429 - log_requests - line:46 - INFO - rid=UDTP49 start request path=/apis/user/ownInfo
+2024-07-15 09:58:52,179 - getOwnInfo - line:231 - DEBUG - ((15, 'Delicat', 'Zcj1234', 0),)
+2024-07-15 09:58:52,181 - log_requests - line:53 - INFO - rid=UDTP49 completed_in=751.65ms status_code=200
+2024-07-15 09:58:52,181 - log_requests - line:46 - INFO - rid=MSNT5L start request path=/apis/user/ownInfo
+2024-07-15 09:58:52,870 - getOwnInfo - line:231 - DEBUG - ((15, 'Delicat', 'Zcj1234', 0),)
+2024-07-15 09:58:52,871 - log_requests - line:46 - INFO - rid=QHZ54R start request path=/apis/user/ownInfo
+2024-07-15 09:58:53,583 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 09:58:53,584 - log_requests - line:46 - INFO - rid=3ZCHH4 start request path=/apis/user/ownInfo
+2024-07-15 09:58:53,584 - log_requests - line:53 - INFO - rid=MSNT5L completed_in=1402.84ms status_code=200
+2024-07-15 09:58:54,326 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 09:58:54,327 - log_requests - line:53 - INFO - rid=QHZ54R completed_in=1455.40ms status_code=200
+2024-07-15 09:58:54,328 - log_requests - line:53 - INFO - rid=3ZCHH4 completed_in=744.09ms status_code=200
+2024-07-15 10:04:30,910 - log_requests - line:46 - INFO - rid=0IRZVH start request path=/apis/login/
+2024-07-15 10:04:30,911 - log_requests - line:53 - INFO - rid=0IRZVH completed_in=0.97ms status_code=307
+2024-07-15 10:04:30,952 - log_requests - line:46 - INFO - rid=3QFRCG start request path=/apis/login
+2024-07-15 10:04:30,953 - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-15 10:04:30,954 - callback - line:623 - DEBUG - Calling on_field_name with data[0:8]
+2024-07-15 10:04:30,954 - callback - line:623 - DEBUG - Calling on_field_data with data[9:12]
+2024-07-15 10:04:30,954 - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-15 10:04:30,955 - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-15 10:04:30,955 - callback - line:623 - DEBUG - Calling on_field_name with data[13:21]
+2024-07-15 10:04:30,955 - callback - line:623 - DEBUG - Calling on_field_data with data[22:28]
+2024-07-15 10:04:30,955 - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-15 10:04:30,955 - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-15 10:04:31,294 - log_requests - line:53 - INFO - rid=3QFRCG completed_in=341.62ms status_code=200
+2024-07-15 10:04:31,354 - log_requests - line:46 - INFO - rid=5L78UJ start request path=/apis/rank
+2024-07-15 10:04:31,355 - log_requests - line:53 - INFO - rid=5L78UJ completed_in=0.30ms status_code=200
+2024-07-15 10:04:31,382 - log_requests - line:46 - INFO - rid=CH7FPO start request path=/apis/user/ownInfo
+2024-07-15 10:04:31,382 - log_requests - line:46 - INFO - rid=9WTLFF start request path=/apis/user/ownInfo
+2024-07-15 10:04:31,383 - log_requests - line:53 - INFO - rid=CH7FPO completed_in=1.02ms status_code=200
+2024-07-15 10:04:31,384 - log_requests - line:53 - INFO - rid=9WTLFF completed_in=1.10ms status_code=200
+2024-07-15 10:04:31,401 - log_requests - line:46 - INFO - rid=OTH5V5 start request path=/apis/rank
+2024-07-15 10:04:31,908 - log_requests - line:53 - INFO - rid=OTH5V5 completed_in=506.31ms status_code=200
+2024-07-15 10:04:31,908 - log_requests - line:46 - INFO - rid=7WSUWU start request path=/apis/user/ownInfo
+2024-07-15 10:04:32,607 - getOwnInfo - line:231 - DEBUG - ((7, 'GZQ', 'Gzq123', 0),)
+2024-07-15 10:04:32,607 - log_requests - line:46 - INFO - rid=QRDR53 start request path=/apis/user/ownInfo
+2024-07-15 10:04:33,286 - getOwnInfo - line:231 - DEBUG - ((7, 'GZQ', 'Gzq123', 0),)
+2024-07-15 10:04:33,288 - log_requests - line:53 - INFO - rid=7WSUWU completed_in=1379.06ms status_code=200
+2024-07-15 10:04:33,289 - log_requests - line:53 - INFO - rid=QRDR53 completed_in=680.96ms status_code=200
+2024-07-15 10:04:40,018 - log_requests - line:46 - INFO - rid=B1RY6O start request path=/docs
+2024-07-15 10:04:40,018 - log_requests - line:53 - INFO - rid=B1RY6O completed_in=0.46ms status_code=200
+2024-07-15 10:04:40,314 - log_requests - line:46 - INFO - rid=QY2U0K start request path=/openapi.json
+2024-07-15 10:04:40,343 - log_requests - line:53 - INFO - rid=QY2U0K completed_in=29.19ms status_code=200
+2024-07-15 10:04:45,436 - log_requests - line:46 - INFO - rid=ICXMSG start request path=/docs
+2024-07-15 10:04:45,437 - log_requests - line:53 - INFO - rid=ICXMSG completed_in=0.45ms status_code=200
+2024-07-15 10:04:45,635 - log_requests - line:46 - INFO - rid=804ZE9 start request path=/openapi.json
+2024-07-15 10:04:45,636 - log_requests - line:53 - INFO - rid=804ZE9 completed_in=1.00ms status_code=200
+2024-07-15 10:04:48,393 - log_requests - line:46 - INFO - rid=EEKCUN start request path=/docs
+2024-07-15 10:04:48,393 - log_requests - line:53 - INFO - rid=EEKCUN completed_in=0.45ms status_code=200
+2024-07-15 10:04:48,871 - log_requests - line:46 - INFO - rid=TSAM37 start request path=/openapi.json
+2024-07-15 10:04:48,873 - log_requests - line:53 - INFO - rid=TSAM37 completed_in=0.99ms status_code=200
+2024-07-15 10:04:48,968 - log_requests - line:46 - INFO - rid=Y30MJM start request path=/apis/login/
+2024-07-15 10:04:48,969 - log_requests - line:53 - INFO - rid=Y30MJM completed_in=0.54ms status_code=307
+2024-07-15 10:04:49,024 - log_requests - line:46 - INFO - rid=SWUMEC start request path=/apis/login
+2024-07-15 10:04:49,025 - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-15 10:04:49,026 - callback - line:623 - DEBUG - Calling on_field_name with data[0:8]
+2024-07-15 10:04:49,026 - callback - line:623 - DEBUG - Calling on_field_data with data[9:13]
+2024-07-15 10:04:49,027 - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-15 10:04:49,027 - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-15 10:04:49,027 - callback - line:623 - DEBUG - Calling on_field_name with data[14:22]
+2024-07-15 10:04:49,028 - callback - line:623 - DEBUG - Calling on_field_data with data[23:31]
+2024-07-15 10:04:49,028 - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-15 10:04:49,028 - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-15 10:04:49,319 - log_requests - line:53 - INFO - rid=SWUMEC completed_in=294.47ms status_code=200
+2024-07-15 10:04:49,398 - log_requests - line:46 - INFO - rid=HX514D start request path=/apis/user/ownInfo
+2024-07-15 10:04:49,399 - log_requests - line:53 - INFO - rid=HX514D completed_in=0.30ms status_code=200
+2024-07-15 10:04:49,401 - log_requests - line:46 - INFO - rid=D3T6L5 start request path=/apis/rank
+2024-07-15 10:04:49,401 - log_requests - line:53 - INFO - rid=D3T6L5 completed_in=0.29ms status_code=200
+2024-07-15 10:04:49,405 - log_requests - line:46 - INFO - rid=EKCGTK start request path=/apis/user/ownInfo
+2024-07-15 10:04:49,405 - log_requests - line:53 - INFO - rid=EKCGTK completed_in=0.26ms status_code=200
+2024-07-15 10:04:49,464 - log_requests - line:46 - INFO - rid=RNEUXB start request path=/apis/rank
+2024-07-15 10:04:49,968 - log_requests - line:53 - INFO - rid=RNEUXB completed_in=504.17ms status_code=200
+2024-07-15 10:04:49,969 - log_requests - line:46 - INFO - rid=GIGLD7 start request path=/apis/user/ownInfo
+2024-07-15 10:04:50,648 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 10:04:50,650 - log_requests - line:46 - INFO - rid=ZS6CIJ start request path=/apis/user/ownInfo
+2024-07-15 10:04:51,310 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 10:04:51,311 - log_requests - line:53 - INFO - rid=GIGLD7 completed_in=1341.85ms status_code=200
+2024-07-15 10:04:51,311 - log_requests - line:46 - INFO - rid=SV2ZNR start request path=/apis/admin/changepwd
+2024-07-15 10:04:51,312 - log_requests - line:53 - INFO - rid=ZS6CIJ completed_in=662.15ms status_code=200
+2024-07-15 10:04:53,221 - log_requests - line:46 - INFO - rid=KS1M2L start request path=/apis/rank
+2024-07-15 10:04:53,708 - log_requests - line:53 - INFO - rid=KS1M2L completed_in=486.13ms status_code=200
+2024-07-15 10:04:53,854 - log_requests - line:46 - INFO - rid=BQOQCC start request path=/apis/write_request
+2024-07-15 10:04:53,857 - _handle_request - line:285 - DEBUG - Request body: {'model': 'qwen-turbo', 'parameters': {'result_format': 'message'}, 'input': {'messages': [{'role': 'system', 'content': 'You are a professional novel writer.'}, {'role': 'user', 'content': '续写小说,字数越多越好:小明今天去扔垃圾，但摔在了水坑里'}]}}
+2024-07-15 10:04:53,859 - _new_conn - line:1051 - DEBUG - Starting new HTTPS connection (1): dashscope.aliyuncs.com:443
+2024-07-15 10:05:08,497 - _make_request - line:546 - DEBUG - https://dashscope.aliyuncs.com:443 "POST /api/v1/services/aigc/text-generation/generation HTTP/11" 200 None
+2024-07-15 10:05:08,498 - _handle_response - line:250 - DEBUG - Response: {'output': {'choices': [{'finish_reason': 'stop', 'message': {'role': 'assistant', 'content': '小明今天的心情本就有些烦躁，因为昨晚熬夜赶完了一篇报告，早晨出门时太阳还未完全升起，空气中弥漫着淡淡的湿气。他手里紧紧握着一袋满满的垃圾，匆匆忙忙地往小区的垃圾箱走去。\n\n小区里的清晨格外宁静，只有偶尔几声鸟鸣和远处传来的汽车轰鸣声打破这份静谧。小明走着走着，目光被一个未被清理的水坑吸引过去。这个水坑位于路边，由于昨夜的雨水，水面微微泛着亮光，像一面镜子映照着天空。\n\n他并未在意，继续往前走，试图绕过那个水坑。然而，或许是疲惫让他脚步略显踉跄，也可能是心中对报告的焦虑让他分心，小明竟没留意到脚下突然出现的一块松动的石头。脚下的平衡瞬间被打破，他的身体向前倾斜，手中的垃圾袋也随之滑落。\n\n“啊！”一声惊呼，小明的身体重重地摔进了那个水坑中。冰冷的水瞬间包裹了他的全身，湿透的衣服紧贴在肌肤上，冷得他牙齿打颤。他挣扎着想要爬起来，但水太深，加上垃圾袋里的液体洒出，更是增加了重量。\n\n周围的人被这突如其来的声响吸引了过来，看到小明狼狈的样子，都忍不住笑出声。一位热心的大妈连忙上前帮忙，一边拉他起来一边安慰道：“小明，小心点儿，这水坑可不好惹。”其他人也纷纷递来纸巾和衣物，帮他擦拭身上的水。\n\n小明尴尬地笑着，接过纸巾擦拭自己，心中暗自庆幸还好没有把垃圾丢进水坑里，否则那污水肯定更麻烦。他感激地向大家道谢，然后决定回家换身衣服，再去处理那些垃圾。\n\n这次意外的经历让小明意识到，生活中的小事也可能带来意想不到的困扰，但他也明白，有时候，正是这些小插曲，让人学会更加谨慎和珍惜。他决定以后出门要更加留心脚下，不再让类似的意外发生。\n\n回到家中，小明洗了个热水澡，换上干净的衣服，重新整理好垃圾，这次他小心翼翼地避开那个水坑，顺利地完成了任务。而这件事也成了他生活中的一段小插曲，每当提起，都会引起一阵笑声，但也提醒他无论何时何地，都要保持警惕，生活中的小教训往往能带来大智慧。'}}]}, 'usage': {'total_tokens': 556, 'output_tokens': 513, 'input_tokens': 43}, 'request_id': 'e4b4624e-35de-907a-85f4-e46be60f7fc5'}
+2024-07-15 10:05:08,499 - log_requests - line:53 - INFO - rid=BQOQCC completed_in=14644.66ms status_code=200
+2024-07-15 10:05:08,500 - log_requests - line:46 - INFO - rid=RD0EH2 start request path=/apis/user/ownInfo
+2024-07-15 10:05:09,236 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 10:05:09,237 - log_requests - line:46 - INFO - rid=0SWRNS start request path=/apis/rank
+2024-07-15 10:05:09,238 - log_requests - line:46 - INFO - rid=S09VD5 start request path=/apis/user/ownInfo
+2024-07-15 10:05:09,238 - log_requests - line:53 - INFO - rid=RD0EH2 completed_in=738.50ms status_code=200
+2024-07-15 10:05:09,996 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 10:05:09,997 - log_requests - line:46 - INFO - rid=NRQWJE start request path=/apis/login/
+2024-07-15 10:05:09,999 - log_requests - line:46 - INFO - rid=I4MKBM start request path=/apis/user/ownInfo
+2024-07-15 10:05:10,000 - log_requests - line:53 - INFO - rid=S09VD5 completed_in=762.02ms status_code=200
+2024-07-15 10:05:10,668 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 10:05:10,669 - log_requests - line:46 - INFO - rid=35IOMV start request path=/apis/rank
+2024-07-15 10:05:11,136 - log_requests - line:53 - INFO - rid=NRQWJE completed_in=1137.83ms status_code=307
+2024-07-15 10:05:11,137 - log_requests - line:46 - INFO - rid=G5HX89 start request path=/apis/user/ownInfo
+2024-07-15 10:05:11,138 - log_requests - line:53 - INFO - rid=I4MKBM completed_in=1138.32ms status_code=200
+2024-07-15 10:05:11,846 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 10:05:11,847 - log_requests - line:46 - INFO - rid=OURE5L start request path=/apis/login/
+2024-07-15 10:05:11,848 - log_requests - line:53 - INFO - rid=0SWRNS completed_in=2610.78ms status_code=200
+2024-07-15 10:05:11,849 - log_requests - line:46 - INFO - rid=UHVFZU start request path=/apis/user/ownInfo
+2024-07-15 10:05:11,850 - log_requests - line:53 - INFO - rid=G5HX89 completed_in=713.20ms status_code=200
+2024-07-15 10:05:12,519 - getOwnInfo - line:231 - DEBUG - ((21, 'hou', 'hou', 0),)
+2024-07-15 10:05:12,520 - log_requests - line:46 - INFO - rid=UR3OC6 start request path=/apis/user/ownInfo
+2024-07-15 10:05:13,020 - log_requests - line:53 - INFO - rid=OURE5L completed_in=1172.38ms status_code=307
+2024-07-15 10:05:13,668 - getOwnInfo - line:231 - DEBUG - ((21, 'hou', 'hou', 0),)
+2024-07-15 10:05:13,669 - log_requests - line:46 - INFO - rid=PNFMJJ start request path=/apis/admin/getusers
+2024-07-15 10:05:13,670 - log_requests - line:53 - INFO - rid=UHVFZU completed_in=1820.46ms status_code=200
+2024-07-15 10:05:14,114 - log_requests - line:53 - INFO - rid=35IOMV completed_in=3444.11ms status_code=200
+2024-07-15 10:05:14,114 - log_requests - line:53 - INFO - rid=UR3OC6 completed_in=1593.92ms status_code=200
+2024-07-15 10:05:14,115 - log_requests - line:46 - INFO - rid=HVUYRS start request path=/apis/rank
+2024-07-15 10:05:14,116 - log_requests - line:53 - INFO - rid=PNFMJJ completed_in=446.91ms status_code=200
+2024-07-15 10:05:14,117 - log_requests - line:46 - INFO - rid=T0J3GL start request path=/apis/user/ownInfo
+2024-07-15 10:05:14,784 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 10:05:14,785 - log_requests - line:46 - INFO - rid=FQBS2X start request path=/apis/user/ownInfo
+2024-07-15 10:05:15,483 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 10:05:15,484 - log_requests - line:46 - INFO - rid=0NCZIU start request path=/apis/rank
+2024-07-15 10:05:15,485 - log_requests - line:53 - INFO - rid=T0J3GL completed_in=1367.46ms status_code=200
+2024-07-15 10:05:15,485 - log_requests - line:46 - INFO - rid=PHHAWZ start request path=/apis/rank
+2024-07-15 10:05:15,922 - log_requests - line:53 - INFO - rid=FQBS2X completed_in=1137.59ms status_code=200
+2024-07-15 10:05:15,924 - log_requests - line:46 - INFO - rid=Y2NIKL start request path=/apis/user/ownInfo
+2024-07-15 10:05:16,645 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 10:05:16,646 - log_requests - line:46 - INFO - rid=5BQ59R start request path=/apis/write_request
+2024-07-15 10:05:16,647 - log_requests - line:53 - INFO - rid=HVUYRS completed_in=2531.78ms status_code=200
+2024-07-15 10:05:17,095 - log_requests - line:53 - INFO - rid=Y2NIKL completed_in=1171.40ms status_code=200
+2024-07-15 10:05:17,555 - log_requests - line:53 - INFO - rid=5BQ59R completed_in=908.36ms status_code=200
+2024-07-15 10:05:17,556 - log_requests - line:53 - INFO - rid=0NCZIU completed_in=2072.16ms status_code=200
+2024-07-15 10:05:17,557 - log_requests - line:46 - INFO - rid=JJBCTW start request path=/apis/user/ownInfo
+2024-07-15 10:05:17,558 - log_requests - line:53 - INFO - rid=PHHAWZ completed_in=2072.31ms status_code=200
+2024-07-15 10:05:18,298 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 10:05:18,300 - log_requests - line:53 - INFO - rid=JJBCTW completed_in=742.69ms status_code=200
+2024-07-15 10:05:18,335 - log_requests - line:46 - INFO - rid=77V7CI start request path=/apis/write_request
+2024-07-15 10:05:18,337 - _handle_request - line:285 - DEBUG - Request body: {'model': 'qwen-turbo', 'parameters': {'result_format': 'message'}, 'input': {'messages': [{'role': 'system', 'content': 'You are a professional novel writer.'}, {'role': 'user', 'content': '续写小说,字数越多越好:故事发生在一个充满“斗气”的大陆上，讲述了名为萧炎的少年，年少时被视为废物（无法修炼斗气），接着奋起抗争，展开冒险（修炼）之旅，凭借自身努力、高人指导、奇珍异宝的帮助，不断收集“异火”（一种威力极大的火焰），持续提升丹药炼制水平（成为顶级炼药师）和斗气（战斗能量）修炼水平，战斗能力逐步加强。最后，主角萧炎不仅洗刷当年的耻辱，还一跃成为斗气大陆上的最强者——“斗帝”，成为该世界秩序守护者和最高权力拥有者。'}]}}
+2024-07-15 10:05:18,338 - _new_conn - line:1051 - DEBUG - Starting new HTTPS connection (1): dashscope.aliyuncs.com:443
+2024-07-15 10:05:36,250 - _make_request - line:546 - DEBUG - https://dashscope.aliyuncs.com:443 "POST /api/v1/services/aigc/text-generation/generation HTTP/11" 200 None
+2024-07-15 10:05:36,251 - _handle_response - line:250 - DEBUG - Response: {'output': {'choices': [{'finish_reason': 'stop', 'message': {'role': 'assistant', 'content': '在那个名叫斗气大陆的世界，萧炎出生在一个普通的家族，他的父亲曾是闻名遐迩的斗皇强者，但不幸在萧炎五岁那年，因一场意外陨落。从此，萧炎便被族人视为废物，因为他的体内，竟然没有一丝斗气的痕迹，仿佛是斗气大陆上的一个异类。\n\n然而，萧炎并未因此沉沦，他心中燃烧着一股不服输的火焰，暗自发誓要证明自己的价值。在家族的废弃仓库中，他找到了一本残破的古籍，那是关于斗气修炼的秘籍，虽然内容残缺，却足以点燃他的希望。\n\n在一位神秘老人的帮助下，萧炎开始了艰苦的修炼之旅。他日以继夜地研读古籍，试图从那破碎的文字中寻找修炼的线索。而他那坚韧不拔的精神，也吸引了一位隐居山林的丹药大师，他看中了萧炎的毅力，决定收他为徒，传授他炼药之术。\n\n萧炎在丹药大师的指导下，开始尝试炼制各种丹药，提升自己的体质。他发现，尽管无法修炼斗气，但他的灵魂力量异常强大，这使得他在炼药上展现出惊人的天赋。他炼制出的丹药，甚至能辅助他人修炼，提高他们的斗气。\n\n随着实力的提升，萧炎开始踏上了寻找异火的旅程。异火，是斗气大陆上最为强大的火焰，拥有着无与伦比的炼药效果。萧炎历经千辛万苦，终于在一次偶然的机会下，得到了第一朵异火——青莲地心火。\n\n每一次的挑战，都让萧炎更加坚定了自己的信念。他不断地挑战自我，突破极限，斗气虽弱，但他的智慧和勇气弥补了这一切。他炼制出的丹药，不仅帮助自己提升实力，也帮助了许多人，赢得了他们的尊敬和支持。\n\n经过无数个日夜的努力，萧炎的丹药炼制水平达到了前所未有的高度，他成为了斗气大陆上有史以来最年轻的顶级炼药师。他的名字，如同璀璨的星辰，照亮了整个大陆。\n\n最终，萧炎凭借对异火的掌控，成功唤醒了自己的斗气潜能，斗气如潮水般涌动，他从废物一跃成为斗气大陆上的最强者——“斗帝”。他的存在，成为了维护秩序的力量，人们尊称他为“斗帝守护者”。\n\n斗帝萧炎，他的故事传遍了斗气大陆的每一个角落，他的名字，成为了勇气与毅力的象征。他用事实证明，只要有决心，任何人都可以打破命运的枷锁，成为世界的主宰。'}}]}, 'usage': {'total_tokens': 732, 'output_tokens': 567, 'input_tokens': 165}, 'request_id': 'f857e73a-3764-9cc1-acdf-b2015b7df9c7'}
+2024-07-15 10:05:36,252 - log_requests - line:53 - INFO - rid=77V7CI completed_in=17916.90ms status_code=200
+2024-07-15 10:05:36,253 - log_requests - line:46 - INFO - rid=SQCA09 start request path=/apis/login/
+2024-07-15 10:05:36,254 - log_requests - line:46 - INFO - rid=AXHPFS start request path=/apis/admin/getNovel
+2024-07-15 10:05:36,706 - log_requests - line:46 - INFO - rid=GAY15Y start request path=/apis/admin/getusernovel
+2024-07-15 10:05:36,707 - log_requests - line:53 - INFO - rid=SQCA09 completed_in=453.62ms status_code=200
+2024-07-15 10:05:36,967 - log_requests - line:53 - INFO - rid=AXHPFS completed_in=713.53ms status_code=200
+2024-07-15 10:05:36,968 - log_requests - line:53 - INFO - rid=GAY15Y completed_in=261.96ms status_code=200
+2024-07-15 10:05:37,027 - log_requests - line:46 - INFO - rid=LCSNN5 start request path=/apis/login/
+2024-07-15 10:05:37,028 - log_requests - line:53 - INFO - rid=LCSNN5 completed_in=0.58ms status_code=307
+2024-07-15 10:05:37,093 - log_requests - line:46 - INFO - rid=F15NKA start request path=/apis/login
+2024-07-15 10:05:37,094 - log_requests - line:53 - INFO - rid=F15NKA completed_in=0.30ms status_code=200
+2024-07-15 10:05:37,159 - log_requests - line:46 - INFO - rid=MXWJ7E start request path=/apis/login
+2024-07-15 10:05:37,160 - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-15 10:05:37,160 - callback - line:623 - DEBUG - Calling on_field_name with data[0:8]
+2024-07-15 10:05:37,161 - callback - line:623 - DEBUG - Calling on_field_data with data[9:13]
+2024-07-15 10:05:37,161 - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-15 10:05:37,161 - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-15 10:05:37,161 - callback - line:623 - DEBUG - Calling on_field_name with data[14:22]
+2024-07-15 10:05:37,161 - callback - line:623 - DEBUG - Calling on_field_data with data[23:31]
+2024-07-15 10:05:37,161 - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-15 10:05:37,161 - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-15 10:05:37,476 - log_requests - line:53 - INFO - rid=MXWJ7E completed_in=316.66ms status_code=200
+2024-07-15 10:05:37,554 - log_requests - line:46 - INFO - rid=OKJKHI start request path=/apis/user/ownInfo
+2024-07-15 10:05:38,299 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 10:05:38,300 - log_requests - line:46 - INFO - rid=ZE9F7O start request path=/apis/user/ownInfo
+2024-07-15 10:05:38,301 - log_requests - line:53 - INFO - rid=OKJKHI completed_in=747.02ms status_code=200
+2024-07-15 10:05:39,020 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 10:05:39,021 - log_requests - line:46 - INFO - rid=1YWDFD start request path=/apis/rank
+2024-07-15 10:05:39,022 - log_requests - line:46 - INFO - rid=PDBEAY start request path=/apis/admin/getNovel
+2024-07-15 10:05:39,023 - log_requests - line:53 - INFO - rid=ZE9F7O completed_in=722.26ms status_code=200
+2024-07-15 10:05:39,529 - log_requests - line:53 - INFO - rid=PDBEAY completed_in=505.72ms status_code=200
+2024-07-15 10:05:39,955 - log_requests - line:53 - INFO - rid=1YWDFD completed_in=934.34ms status_code=200
+2024-07-15 10:05:44,256 - log_requests - line:46 - INFO - rid=7GOUEM start request path=/apis/admin/getusers
+2024-07-15 10:05:44,761 - log_requests - line:53 - INFO - rid=7GOUEM completed_in=505.21ms status_code=200
+2024-07-15 10:05:44,762 - log_requests - line:46 - INFO - rid=IU739B start request path=/apis/admin/getusernovel
+2024-07-15 10:05:44,992 - log_requests - line:53 - INFO - rid=IU739B completed_in=229.74ms status_code=200
+2024-07-15 10:05:46,044 - log_requests - line:46 - INFO - rid=RBWQOV start request path=/apis/admin/getNovel
+2024-07-15 10:05:46,520 - log_requests - line:53 - INFO - rid=RBWQOV completed_in=475.74ms status_code=200
+2024-07-15 10:05:47,171 - log_requests - line:46 - INFO - rid=X3AZ37 start request path=/docs
+2024-07-15 10:05:47,172 - log_requests - line:53 - INFO - rid=X3AZ37 completed_in=0.45ms status_code=200
+2024-07-15 10:05:47,662 - log_requests - line:46 - INFO - rid=FNSU3Y start request path=/openapi.json
+2024-07-15 10:05:47,663 - log_requests - line:53 - INFO - rid=FNSU3Y completed_in=0.98ms status_code=200
+2024-07-15 10:05:55,323 - log_requests - line:46 - INFO - rid=ES51H3 start request path=/apis/getNovel/
+2024-07-15 10:05:55,323 - log_requests - line:53 - INFO - rid=ES51H3 completed_in=0.31ms status_code=200
+2024-07-15 10:05:55,384 - log_requests - line:46 - INFO - rid=9FQO5F start request path=/apis/getNovel/
+2024-07-15 10:05:55,385 - log_requests - line:53 - INFO - rid=9FQO5F completed_in=0.55ms status_code=307
+2024-07-15 10:05:55,441 - log_requests - line:46 - INFO - rid=GACKR7 start request path=/apis/getNovel
+2024-07-15 10:05:55,442 - log_requests - line:53 - INFO - rid=GACKR7 completed_in=0.30ms status_code=200
+2024-07-15 10:05:55,502 - log_requests - line:46 - INFO - rid=8Y8JSD start request path=/apis/getNovel
+2024-07-15 10:05:56,260 - log_requests - line:53 - INFO - rid=8Y8JSD completed_in=758.04ms status_code=200
+2024-07-15 10:05:57,147 - log_requests - line:46 - INFO - rid=JGUAR3 start request path=/apis/login/
+2024-07-15 10:05:57,148 - log_requests - line:53 - INFO - rid=JGUAR3 completed_in=0.54ms status_code=307
+2024-07-15 10:05:57,226 - log_requests - line:46 - INFO - rid=RSP095 start request path=/apis/login
+2024-07-15 10:05:57,227 - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-15 10:05:57,227 - callback - line:623 - DEBUG - Calling on_field_name with data[0:8]
+2024-07-15 10:05:57,228 - callback - line:623 - DEBUG - Calling on_field_data with data[9:13]
+2024-07-15 10:05:57,228 - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-15 10:05:57,228 - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-15 10:05:57,229 - callback - line:623 - DEBUG - Calling on_field_name with data[14:22]
+2024-07-15 10:05:57,229 - callback - line:623 - DEBUG - Calling on_field_data with data[23:31]
+2024-07-15 10:05:57,229 - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-15 10:05:57,230 - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-15 10:05:57,583 - log_requests - line:53 - INFO - rid=RSP095 completed_in=356.65ms status_code=200
+2024-07-15 10:05:58,314 - log_requests - line:46 - INFO - rid=NQ2JBI start request path=/apis/login
+2024-07-15 10:05:58,315 - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-15 10:05:58,316 - callback - line:623 - DEBUG - Calling on_field_name with data[0:10]
+2024-07-15 10:05:58,316 - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-15 10:05:58,316 - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-15 10:05:58,317 - callback - line:623 - DEBUG - Calling on_field_name with data[12:20]
+2024-07-15 10:05:58,317 - callback - line:623 - DEBUG - Calling on_field_data with data[21:28]
+2024-07-15 10:05:58,317 - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-15 10:05:58,318 - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-15 10:05:58,318 - callback - line:623 - DEBUG - Calling on_field_name with data[29:37]
+2024-07-15 10:05:58,318 - callback - line:623 - DEBUG - Calling on_field_data with data[38:45]
+2024-07-15 10:05:58,319 - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-15 10:05:58,319 - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-15 10:05:58,319 - callback - line:623 - DEBUG - Calling on_field_name with data[46:51]
+2024-07-15 10:05:58,320 - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-15 10:05:58,320 - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-15 10:05:58,320 - callback - line:623 - DEBUG - Calling on_field_name with data[53:62]
+2024-07-15 10:05:58,321 - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-15 10:05:58,321 - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-15 10:05:58,321 - callback - line:623 - DEBUG - Calling on_field_name with data[64:77]
+2024-07-15 10:05:58,321 - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-15 10:05:58,322 - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-15 10:05:58,604 - log_requests - line:53 - INFO - rid=NQ2JBI completed_in=289.71ms status_code=200
+2024-07-15 10:05:58,943 - log_requests - line:46 - INFO - rid=KZ1EN5 start request path=/apis/user/ownInfo
+2024-07-15 10:05:59,649 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 10:05:59,650 - log_requests - line:53 - INFO - rid=KZ1EN5 completed_in=706.88ms status_code=200
+2024-07-15 10:05:59,651 - log_requests - line:46 - INFO - rid=7AQ572 start request path=/apis/user/ownInfo
+2024-07-15 10:06:00,299 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 10:06:00,299 - log_requests - line:46 - INFO - rid=U1FF81 start request path=/apis/rank
+2024-07-15 10:06:00,301 - log_requests - line:53 - INFO - rid=7AQ572 completed_in=649.75ms status_code=200
+2024-07-15 10:06:00,763 - log_requests - line:53 - INFO - rid=U1FF81 completed_in=463.42ms status_code=200
+2024-07-15 10:06:12,350 - log_requests - line:46 - INFO - rid=1HXEYS start request path=/apis/login/
+2024-07-15 10:06:12,351 - log_requests - line:53 - INFO - rid=1HXEYS completed_in=0.55ms status_code=307
+2024-07-15 10:06:12,726 - log_requests - line:46 - INFO - rid=QD6005 start request path=/apis/login
+2024-07-15 10:06:12,727 - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-15 10:06:12,727 - callback - line:623 - DEBUG - Calling on_field_name with data[0:8]
+2024-07-15 10:06:12,728 - callback - line:623 - DEBUG - Calling on_field_data with data[9:16]
+2024-07-15 10:06:12,728 - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-15 10:06:12,728 - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-15 10:06:12,728 - callback - line:623 - DEBUG - Calling on_field_name with data[17:25]
+2024-07-15 10:06:12,728 - callback - line:623 - DEBUG - Calling on_field_data with data[26:33]
+2024-07-15 10:06:12,729 - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-15 10:06:12,729 - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-15 10:06:13,058 - log_requests - line:53 - INFO - rid=QD6005 completed_in=332.17ms status_code=200
+2024-07-15 10:06:13,851 - log_requests - line:46 - INFO - rid=YHDCZ6 start request path=/apis/user/ownInfo
+2024-07-15 10:06:14,588 - getOwnInfo - line:231 - DEBUG - ((15, 'Delicat', 'Zcj1234', 0),)
+2024-07-15 10:06:14,590 - log_requests - line:53 - INFO - rid=YHDCZ6 completed_in=738.68ms status_code=200
+2024-07-15 10:06:14,591 - log_requests - line:46 - INFO - rid=ZYKLTI start request path=/apis/user/ownInfo
+2024-07-15 10:06:15,316 - getOwnInfo - line:231 - DEBUG - ((15, 'Delicat', 'Zcj1234', 0),)
+2024-07-15 10:06:15,318 - log_requests - line:53 - INFO - rid=ZYKLTI completed_in=726.72ms status_code=200
+2024-07-15 10:06:16,062 - log_requests - line:46 - INFO - rid=R5LNQP start request path=/apis/uploadfile
+2024-07-15 10:06:16,063 - callback - line:626 - DEBUG - Calling on_part_begin with no data
+2024-07-15 10:06:16,063 - callback - line:623 - DEBUG - Calling on_header_field with data[42:61]
+2024-07-15 10:06:16,064 - callback - line:623 - DEBUG - Calling on_header_value with data[63:130]
+2024-07-15 10:06:16,064 - callback - line:626 - DEBUG - Calling on_header_end with no data
+2024-07-15 10:06:16,064 - callback - line:623 - DEBUG - Calling on_header_field with data[132:144]
+2024-07-15 10:06:16,064 - callback - line:623 - DEBUG - Calling on_header_value with data[146:217]
+2024-07-15 10:06:16,064 - callback - line:626 - DEBUG - Calling on_header_end with no data
+2024-07-15 10:06:16,064 - callback - line:626 - DEBUG - Calling on_headers_finished with no data
+2024-07-15 10:06:16,065 - callback - line:623 - DEBUG - Calling on_part_data with data[221:15083]
+2024-07-15 10:06:16,065 - callback - line:626 - DEBUG - Calling on_part_end with no data
+2024-07-15 10:06:16,065 - callback - line:626 - DEBUG - Calling on_part_begin with no data
+2024-07-15 10:06:16,066 - callback - line:623 - DEBUG - Calling on_header_field with data[15127:15146]
+2024-07-15 10:06:16,066 - callback - line:623 - DEBUG - Calling on_header_value with data[15148:15177]
+2024-07-15 10:06:16,066 - callback - line:626 - DEBUG - Calling on_header_end with no data
+2024-07-15 10:06:16,066 - callback - line:626 - DEBUG - Calling on_headers_finished with no data
+2024-07-15 10:06:16,066 - callback - line:623 - DEBUG - Calling on_part_data with data[15181:15213]
+2024-07-15 10:06:16,067 - callback - line:626 - DEBUG - Calling on_part_end with no data
+2024-07-15 10:06:16,067 - callback - line:626 - DEBUG - Calling on_part_begin with no data
+2024-07-15 10:06:16,067 - callback - line:623 - DEBUG - Calling on_header_field with data[15257:15276]
+2024-07-15 10:06:16,067 - callback - line:623 - DEBUG - Calling on_header_value with data[15278:15303]
+2024-07-15 10:06:16,067 - callback - line:626 - DEBUG - Calling on_header_end with no data
+2024-07-15 10:06:16,067 - callback - line:626 - DEBUG - Calling on_headers_finished with no data
+2024-07-15 10:06:16,067 - callback - line:623 - DEBUG - Calling on_part_data with data[15307:15308]
+2024-07-15 10:06:16,068 - callback - line:626 - DEBUG - Calling on_part_end with no data
+2024-07-15 10:06:16,068 - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-15 10:06:16,286 - log_requests - line:53 - INFO - rid=R5LNQP completed_in=223.34ms status_code=400
+2024-07-15 10:06:18,880 - log_requests - line:46 - INFO - rid=ECU7SG start request path=/apis/uploadfile
+2024-07-15 10:06:18,881 - callback - line:626 - DEBUG - Calling on_part_begin with no data
+2024-07-15 10:06:18,881 - callback - line:623 - DEBUG - Calling on_header_field with data[42:61]
+2024-07-15 10:06:18,881 - callback - line:623 - DEBUG - Calling on_header_value with data[63:130]
+2024-07-15 10:06:18,881 - callback - line:626 - DEBUG - Calling on_header_end with no data
+2024-07-15 10:06:18,882 - callback - line:623 - DEBUG - Calling on_header_field with data[132:144]
+2024-07-15 10:06:18,882 - callback - line:623 - DEBUG - Calling on_header_value with data[146:217]
+2024-07-15 10:06:18,882 - callback - line:626 - DEBUG - Calling on_header_end with no data
+2024-07-15 10:06:18,882 - callback - line:626 - DEBUG - Calling on_headers_finished with no data
+2024-07-15 10:06:18,883 - callback - line:623 - DEBUG - Calling on_part_data with data[221:15083]
+2024-07-15 10:06:18,883 - callback - line:626 - DEBUG - Calling on_part_end with no data
+2024-07-15 10:06:18,883 - callback - line:626 - DEBUG - Calling on_part_begin with no data
+2024-07-15 10:06:18,883 - callback - line:623 - DEBUG - Calling on_header_field with data[15127:15146]
+2024-07-15 10:06:18,884 - callback - line:623 - DEBUG - Calling on_header_value with data[15148:15177]
+2024-07-15 10:06:18,884 - callback - line:626 - DEBUG - Calling on_header_end with no data
+2024-07-15 10:06:18,884 - callback - line:626 - DEBUG - Calling on_headers_finished with no data
+2024-07-15 10:06:18,884 - callback - line:623 - DEBUG - Calling on_part_data with data[15181:15213]
+2024-07-15 10:06:18,884 - callback - line:626 - DEBUG - Calling on_part_end with no data
+2024-07-15 10:06:18,884 - callback - line:626 - DEBUG - Calling on_part_begin with no data
+2024-07-15 10:06:18,885 - callback - line:623 - DEBUG - Calling on_header_field with data[15257:15276]
+2024-07-15 10:06:18,885 - callback - line:623 - DEBUG - Calling on_header_value with data[15278:15303]
+2024-07-15 10:06:18,885 - callback - line:626 - DEBUG - Calling on_header_end with no data
+2024-07-15 10:06:18,885 - callback - line:626 - DEBUG - Calling on_headers_finished with no data
+2024-07-15 10:06:18,885 - callback - line:623 - DEBUG - Calling on_part_data with data[15307:15308]
+2024-07-15 10:06:18,886 - callback - line:626 - DEBUG - Calling on_part_end with no data
+2024-07-15 10:06:18,886 - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-15 10:06:19,125 - log_requests - line:53 - INFO - rid=ECU7SG completed_in=244.55ms status_code=400
+2024-07-15 10:06:21,873 - log_requests - line:46 - INFO - rid=UEQ1PD start request path=/apis/rank
+2024-07-15 10:06:22,367 - log_requests - line:53 - INFO - rid=UEQ1PD completed_in=493.88ms status_code=200
+2024-07-15 10:06:26,325 - log_requests - line:46 - INFO - rid=F2RNPY start request path=/apis/search
+2024-07-15 10:06:26,857 - log_requests - line:53 - INFO - rid=F2RNPY completed_in=531.18ms status_code=200
+2024-07-15 10:06:29,651 - log_requests - line:46 - INFO - rid=J2KUNT start request path=/apis/rank
+2024-07-15 10:06:30,106 - log_requests - line:53 - INFO - rid=J2KUNT completed_in=454.65ms status_code=200
+2024-07-15 10:06:30,850 - log_requests - line:46 - INFO - rid=DBTEKL start request path=/apis/getNovel/
+2024-07-15 10:06:30,851 - log_requests - line:53 - INFO - rid=DBTEKL completed_in=0.56ms status_code=307
+2024-07-15 10:06:30,917 - log_requests - line:46 - INFO - rid=OIDJLL start request path=/apis/getNovel
+2024-07-15 10:06:31,741 - log_requests - line:53 - INFO - rid=OIDJLL completed_in=823.28ms status_code=200
+2024-07-15 10:06:32,182 - log_requests - line:46 - INFO - rid=54PTJQ start request path=/apis/user/ownInfo
+2024-07-15 10:06:32,895 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 10:06:32,896 - log_requests - line:53 - INFO - rid=54PTJQ completed_in=713.74ms status_code=200
+2024-07-15 10:06:39,879 - log_requests - line:46 - INFO - rid=GDM4MR start request path=/apis/getNovel/
+2024-07-15 10:06:39,880 - log_requests - line:53 - INFO - rid=GDM4MR completed_in=0.59ms status_code=307
+2024-07-15 10:06:39,944 - log_requests - line:46 - INFO - rid=MHC394 start request path=/apis/getNovel
+2024-07-15 10:06:40,727 - log_requests - line:53 - INFO - rid=MHC394 completed_in=783.33ms status_code=200
+2024-07-15 10:06:44,770 - log_requests - line:46 - INFO - rid=U83M9B start request path=/apis/admin/changepwd
+2024-07-15 10:07:03,736 - log_requests - line:46 - INFO - rid=H8W7AO start request path=/apis/novel/releaseNovel
+2024-07-15 10:07:03,736 - log_requests - line:53 - INFO - rid=H8W7AO completed_in=0.31ms status_code=200
+2024-07-15 10:07:03,839 - log_requests - line:46 - INFO - rid=DEHZT3 start request path=/apis/novel/releaseNovel
+2024-07-15 10:07:03,841 - callback - line:626 - DEBUG - Calling on_part_begin with no data
+2024-07-15 10:07:03,841 - callback - line:623 - DEBUG - Calling on_header_field with data[42:61]
+2024-07-15 10:07:03,841 - callback - line:623 - DEBUG - Calling on_header_value with data[63:86]
+2024-07-15 10:07:03,842 - callback - line:626 - DEBUG - Calling on_header_end with no data
+2024-07-15 10:07:03,842 - callback - line:626 - DEBUG - Calling on_headers_finished with no data
+2024-07-15 10:07:03,843 - callback - line:623 - DEBUG - Calling on_part_data with data[90:2609]
+2024-07-15 10:07:03,843 - callback - line:626 - DEBUG - Calling on_part_end with no data
+2024-07-15 10:07:03,843 - callback - line:626 - DEBUG - Calling on_part_begin with no data
+2024-07-15 10:07:03,844 - callback - line:623 - DEBUG - Calling on_header_field with data[2653:2672]
+2024-07-15 10:07:03,844 - callback - line:623 - DEBUG - Calling on_header_value with data[2674:2703]
+2024-07-15 10:07:03,845 - callback - line:626 - DEBUG - Calling on_header_end with no data
+2024-07-15 10:07:03,845 - callback - line:626 - DEBUG - Calling on_headers_finished with no data
+2024-07-15 10:07:03,845 - callback - line:623 - DEBUG - Calling on_part_data with data[2707:2719]
+2024-07-15 10:07:03,846 - callback - line:626 - DEBUG - Calling on_part_end with no data
+2024-07-15 10:07:03,846 - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-15 10:07:04,331 - log_requests - line:53 - INFO - rid=DEHZT3 completed_in=491.80ms status_code=200
+2024-07-15 10:07:07,761 - log_requests - line:46 - INFO - rid=QV7YU5 start request path=/apis/rank
+2024-07-15 10:07:08,205 - log_requests - line:53 - INFO - rid=QV7YU5 completed_in=443.97ms status_code=200
+2024-07-15 10:07:10,598 - log_requests - line:46 - INFO - rid=F4BMUS start request path=/apis/rank
+2024-07-15 10:07:11,065 - log_requests - line:53 - INFO - rid=F4BMUS completed_in=467.15ms status_code=200
+2024-07-15 10:07:16,404 - log_requests - line:46 - INFO - rid=W5YFCM start request path=/apis/getNovel/
+2024-07-15 10:07:16,404 - log_requests - line:53 - INFO - rid=W5YFCM completed_in=0.30ms status_code=200
+2024-07-15 10:07:16,444 - log_requests - line:46 - INFO - rid=HWGVYM start request path=/apis/getNovel/
+2024-07-15 10:07:16,444 - log_requests - line:53 - INFO - rid=HWGVYM completed_in=0.59ms status_code=307
+2024-07-15 10:07:16,510 - log_requests - line:46 - INFO - rid=IUI742 start request path=/apis/getNovel
+2024-07-15 10:07:16,510 - log_requests - line:53 - INFO - rid=IUI742 completed_in=0.31ms status_code=200
+2024-07-15 10:07:16,550 - log_requests - line:46 - INFO - rid=QQIQCY start request path=/apis/getNovel
+2024-07-15 10:07:17,330 - log_requests - line:53 - INFO - rid=QQIQCY completed_in=780.08ms status_code=200
+2024-07-15 10:07:23,220 - log_requests - line:46 - INFO - rid=ZTEF08 start request path=/apis/rank
+2024-07-15 10:07:23,681 - log_requests - line:53 - INFO - rid=ZTEF08 completed_in=461.27ms status_code=200
+2024-07-15 10:07:24,937 - log_requests - line:46 - INFO - rid=MB7QWP start request path=/apis/rank
+2024-07-15 10:07:25,462 - log_requests - line:53 - INFO - rid=MB7QWP completed_in=524.87ms status_code=200
+2024-07-15 10:07:25,688 - log_requests - line:46 - INFO - rid=JOKCQL start request path=/apis/rank
+2024-07-15 10:07:26,187 - log_requests - line:53 - INFO - rid=JOKCQL completed_in=498.51ms status_code=200
+2024-07-15 10:07:27,133 - log_requests - line:46 - INFO - rid=I7R0PE start request path=/apis/rank
+2024-07-15 10:07:27,619 - log_requests - line:53 - INFO - rid=I7R0PE completed_in=485.92ms status_code=200
+2024-07-15 10:07:29,557 - log_requests - line:46 - INFO - rid=RWOAE5 start request path=/apis/rank
+2024-07-15 10:07:30,025 - log_requests - line:53 - INFO - rid=RWOAE5 completed_in=467.29ms status_code=200
+2024-07-15 10:07:31,120 - log_requests - line:46 - INFO - rid=GEQ8TS start request path=/apis/rank
+2024-07-15 10:07:31,549 - log_requests - line:53 - INFO - rid=GEQ8TS completed_in=429.22ms status_code=200
+2024-07-15 10:07:32,704 - log_requests - line:46 - INFO - rid=2RP7AG start request path=/apis/getNovel/
+2024-07-15 10:07:32,704 - log_requests - line:53 - INFO - rid=2RP7AG completed_in=0.60ms status_code=307
+2024-07-15 10:07:32,767 - log_requests - line:46 - INFO - rid=VV9K12 start request path=/apis/getNovel
+2024-07-15 10:07:33,591 - log_requests - line:53 - INFO - rid=VV9K12 completed_in=822.87ms status_code=200
+2024-07-15 10:07:37,080 - log_requests - line:46 - INFO - rid=HX6M5D start request path=/apis/rank
+2024-07-15 10:07:37,546 - log_requests - line:53 - INFO - rid=HX6M5D completed_in=464.99ms status_code=200
+2024-07-15 10:07:39,732 - log_requests - line:46 - INFO - rid=L2GIMM start request path=/apis/rank
+2024-07-15 10:07:40,232 - log_requests - line:53 - INFO - rid=L2GIMM completed_in=499.64ms status_code=200
+2024-07-15 10:07:41,271 - log_requests - line:46 - INFO - rid=5Q6P8Z start request path=/apis/getNovel/
+2024-07-15 10:07:41,272 - log_requests - line:53 - INFO - rid=5Q6P8Z completed_in=0.59ms status_code=307
+2024-07-15 10:07:41,313 - log_requests - line:46 - INFO - rid=ZZUKWH start request path=/apis/getNovel
+2024-07-15 10:07:42,101 - log_requests - line:53 - INFO - rid=ZZUKWH completed_in=787.18ms status_code=200
+2024-07-15 10:07:43,518 - log_requests - line:46 - INFO - rid=SDBMDS start request path=/apis/rank
+2024-07-15 10:07:44,041 - log_requests - line:53 - INFO - rid=SDBMDS completed_in=522.76ms status_code=200
+2024-07-15 10:07:44,922 - log_requests - line:46 - INFO - rid=WF6OVR start request path=/apis/user/ownInfo
+2024-07-15 10:07:45,655 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 10:07:45,656 - log_requests - line:53 - INFO - rid=WF6OVR completed_in=733.73ms status_code=200
+2024-07-15 10:07:46,421 - log_requests - line:46 - INFO - rid=STQXSJ start request path=/apis/getNovel/
+2024-07-15 10:07:46,422 - log_requests - line:53 - INFO - rid=STQXSJ completed_in=0.57ms status_code=307
+2024-07-15 10:07:46,453 - log_requests - line:46 - INFO - rid=QEOCXA start request path=/apis/user/ownInfo
+2024-07-15 10:07:47,214 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 10:07:47,215 - log_requests - line:53 - INFO - rid=QEOCXA completed_in=761.69ms status_code=200
+2024-07-15 10:07:47,215 - log_requests - line:46 - INFO - rid=P7NOXD start request path=/apis/getNovel
+2024-07-15 10:07:48,015 - log_requests - line:53 - INFO - rid=P7NOXD completed_in=799.99ms status_code=200
+2024-07-15 10:07:48,016 - log_requests - line:46 - INFO - rid=JXMKZB start request path=/apis/user/ownInfo
+2024-07-15 10:07:48,699 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 10:07:48,701 - log_requests - line:53 - INFO - rid=JXMKZB completed_in=684.48ms status_code=200
+2024-07-15 10:07:50,932 - log_requests - line:46 - INFO - rid=Y4AZIN start request path=/apis/rank
+2024-07-15 10:07:51,418 - log_requests - line:53 - INFO - rid=Y4AZIN completed_in=486.03ms status_code=200
+2024-07-15 10:07:53,846 - log_requests - line:46 - INFO - rid=NDS1VU start request path=/apis/getNovel/
+2024-07-15 10:07:53,847 - log_requests - line:53 - INFO - rid=NDS1VU completed_in=0.56ms status_code=307
+2024-07-15 10:07:53,890 - log_requests - line:46 - INFO - rid=O3PQDC start request path=/apis/getNovel
+2024-07-15 10:07:54,664 - log_requests - line:53 - INFO - rid=O3PQDC completed_in=774.19ms status_code=200
+2024-07-15 10:07:56,025 - log_requests - line:46 - INFO - rid=5UZ1NR start request path=/apis/rank
+2024-07-15 10:07:56,539 - log_requests - line:53 - INFO - rid=5UZ1NR completed_in=513.61ms status_code=200
+2024-07-15 10:07:59,271 - log_requests - line:46 - INFO - rid=AI84BZ start request path=/apis/getNovel/
+2024-07-15 10:07:59,273 - log_requests - line:53 - INFO - rid=AI84BZ completed_in=0.60ms status_code=307
+2024-07-15 10:07:59,306 - log_requests - line:46 - INFO - rid=V7706M start request path=/apis/getNovel
+2024-07-15 10:08:00,042 - log_requests - line:53 - INFO - rid=V7706M completed_in=735.42ms status_code=200
+2024-07-15 10:08:01,241 - log_requests - line:46 - INFO - rid=EJHBWP start request path=/apis/rank
+2024-07-15 10:08:01,715 - log_requests - line:53 - INFO - rid=EJHBWP completed_in=474.40ms status_code=200
+2024-07-15 10:08:03,056 - log_requests - line:46 - INFO - rid=CYZDP9 start request path=/apis/getNovel/
+2024-07-15 10:08:03,057 - log_requests - line:53 - INFO - rid=CYZDP9 completed_in=0.57ms status_code=307
+2024-07-15 10:08:03,090 - log_requests - line:46 - INFO - rid=IPDJ9N start request path=/apis/getNovel
+2024-07-15 10:08:03,850 - log_requests - line:53 - INFO - rid=IPDJ9N completed_in=759.54ms status_code=200
+2024-07-15 10:08:05,957 - log_requests - line:46 - INFO - rid=2OZQ2S start request path=/apis/rank
+2024-07-15 10:08:06,417 - log_requests - line:53 - INFO - rid=2OZQ2S completed_in=459.70ms status_code=200
+2024-07-15 10:08:10,464 - log_requests - line:46 - INFO - rid=Y0KX8U start request path=/apis/getNovel/
+2024-07-15 10:08:10,464 - log_requests - line:53 - INFO - rid=Y0KX8U completed_in=0.59ms status_code=307
+2024-07-15 10:08:10,506 - log_requests - line:46 - INFO - rid=SPFU8F start request path=/apis/getNovel
+2024-07-15 10:08:11,222 - log_requests - line:53 - INFO - rid=SPFU8F completed_in=716.18ms status_code=200
+2024-07-15 10:08:15,673 - log_requests - line:46 - INFO - rid=1HJ5HU start request path=/apis/rank
+2024-07-15 10:08:15,674 - log_requests - line:46 - INFO - rid=AZ996D start request path=/apis/user/ownInfo
+2024-07-15 10:08:16,328 - getOwnInfo - line:231 - DEBUG - ((7, 'GZQ', 'Gzq123', 0),)
+2024-07-15 10:08:16,833 - log_requests - line:53 - INFO - rid=AZ996D completed_in=1158.63ms status_code=200
+2024-07-15 10:08:16,834 - log_requests - line:46 - INFO - rid=RX28VX start request path=/apis/user/ownInfo
+2024-07-15 10:08:17,505 - getOwnInfo - line:231 - DEBUG - ((7, 'GZQ', 'Gzq123', 0),)
+2024-07-15 10:08:17,505 - log_requests - line:53 - INFO - rid=1HJ5HU completed_in=1831.77ms status_code=200
+2024-07-15 10:08:17,506 - log_requests - line:53 - INFO - rid=RX28VX completed_in=672.29ms status_code=200
+2024-07-15 10:08:18,433 - log_requests - line:46 - INFO - rid=31546V start request path=/apis/user/ownInfo
+2024-07-15 10:08:19,162 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 10:08:19,162 - log_requests - line:53 - INFO - rid=31546V completed_in=728.62ms status_code=200
+2024-07-15 10:08:19,994 - log_requests - line:46 - INFO - rid=03GSIP start request path=/apis/user/ownInfo
+2024-07-15 10:08:20,746 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 10:08:20,747 - log_requests - line:53 - INFO - rid=03GSIP completed_in=752.33ms status_code=200
+2024-07-15 10:08:24,755 - log_requests - line:46 - INFO - rid=OTZVNU start request path=/apis/user/ownInfo
+2024-07-15 10:08:25,446 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 10:08:25,446 - log_requests - line:53 - INFO - rid=OTZVNU completed_in=691.34ms status_code=200
+2024-07-15 10:08:26,154 - log_requests - line:46 - INFO - rid=Y37Z4I start request path=/apis/user/ownInfo
+2024-07-15 10:08:26,155 - log_requests - line:53 - INFO - rid=Y37Z4I completed_in=0.31ms status_code=200
+2024-07-15 10:08:26,750 - log_requests - line:46 - INFO - rid=N5REZ1 start request path=/apis/user/ownInfo
+2024-07-15 10:08:27,421 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 10:08:27,422 - log_requests - line:53 - INFO - rid=N5REZ1 completed_in=672.19ms status_code=200
+2024-07-15 10:08:28,837 - log_requests - line:46 - INFO - rid=V8H1YL start request path=/apis/user/ownInfo
+2024-07-15 10:08:29,591 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 10:08:29,592 - log_requests - line:53 - INFO - rid=V8H1YL completed_in=754.62ms status_code=200
+2024-07-15 10:08:31,778 - log_requests - line:46 - INFO - rid=WHDSWT start request path=/apis/user/ownInfo
+2024-07-15 10:08:32,459 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 10:08:32,460 - log_requests - line:53 - INFO - rid=WHDSWT completed_in=681.57ms status_code=200
+2024-07-15 10:08:33,738 - log_requests - line:46 - INFO - rid=M1SOB9 start request path=/apis/user/ownInfo
+2024-07-15 10:08:34,473 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 10:08:34,474 - log_requests - line:53 - INFO - rid=M1SOB9 completed_in=736.36ms status_code=200
+2024-07-15 10:08:38,895 - log_requests - line:46 - INFO - rid=89MYZO start request path=/apis/user/ownInfo
+2024-07-15 10:08:39,666 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 10:08:39,667 - log_requests - line:53 - INFO - rid=89MYZO completed_in=772.18ms status_code=200
+2024-07-15 10:08:40,502 - log_requests - line:46 - INFO - rid=Y3GC8M start request path=/apis/user/ownInfo
+2024-07-15 10:08:41,197 - getOwnInfo - line:231 - DEBUG - ((15, 'Delicat', 'Zcj1234', 0),)
+2024-07-15 10:08:41,199 - log_requests - line:53 - INFO - rid=Y3GC8M completed_in=696.54ms status_code=200
+2024-07-15 10:08:41,199 - log_requests - line:46 - INFO - rid=UJTZ05 start request path=/apis/user/ownInfo
+2024-07-15 10:08:41,926 - getOwnInfo - line:231 - DEBUG - ((15, 'Delicat', 'Zcj1234', 0),)
+2024-07-15 10:08:41,927 - log_requests - line:53 - INFO - rid=UJTZ05 completed_in=727.73ms status_code=200
+2024-07-15 10:08:42,977 - log_requests - line:46 - INFO - rid=7WJT7W start request path=/apis/user/ownInfo
+2024-07-15 10:08:43,693 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 10:08:43,694 - log_requests - line:53 - INFO - rid=7WJT7W completed_in=716.14ms status_code=200
+2024-07-15 10:08:49,041 - log_requests - line:46 - INFO - rid=9LSIL6 start request path=/apis/user/ownInfo
+2024-07-15 10:08:49,708 - getOwnInfo - line:231 - DEBUG - ((15, 'Delicat', 'Zcj1234', 0),)
+2024-07-15 10:08:49,710 - log_requests - line:53 - INFO - rid=9LSIL6 completed_in=668.42ms status_code=200
+2024-07-15 10:08:49,711 - log_requests - line:46 - INFO - rid=ZN9KKN start request path=/apis/user/ownInfo
+2024-07-15 10:08:50,491 - getOwnInfo - line:231 - DEBUG - ((15, 'Delicat', 'Zcj1234', 0),)
+2024-07-15 10:08:50,493 - log_requests - line:53 - INFO - rid=ZN9KKN completed_in=781.56ms status_code=200
+2024-07-15 10:09:17,751 - log_requests - line:46 - INFO - rid=GJE5JD start request path=/apis/rank
+2024-07-15 10:09:17,751 - log_requests - line:53 - INFO - rid=GJE5JD completed_in=0.31ms status_code=200
+2024-07-15 10:09:18,172 - log_requests - line:46 - INFO - rid=9KLFPJ start request path=/apis/rank
+2024-07-15 10:09:18,650 - log_requests - line:53 - INFO - rid=9KLFPJ completed_in=477.77ms status_code=200

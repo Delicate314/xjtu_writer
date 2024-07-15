@@ -19,7 +19,7 @@
                         <td>
                             <button @click="readNovel(novel.novel_id)" class="button read">阅读</button>
                             <button @click="editNovel(novel.novel_id)" class="button edit">修改</button>
-                            <button @click="deleteNovel(novel.novel_id, novel.novel_title)"
+                            <button @click="confirmDelete(novel.novel_id, novel.novel_title)"
                                 class="button delete">删除</button>
                         </td>
                     </tr>
@@ -60,13 +60,21 @@ export default {
             // 修改小说的逻辑
             console.log(`修改小说: ${novelId}`);
         },
+        confirmDelete(novel_id, novel_title) {
+            const confirmed = confirm(`确定要删除小说 "${novel_title}" 吗？`);
+            if (confirmed) {
+                this.deleteNovel(novel_id, novel_title);
+            }
+        },
         async deleteNovel(novel_id, novel_title) {
             try {
                 let response = await this.$axios.delete(`http://121.36.55.149:80/apis/user/deleteNovel?novel_id=${novel_id}&novel_title=${novel_title}`);
+                alert("小说删除成功！");
                 console.log("返回信息：", response);
                 this.fetchUserInfo();
             } catch (error) {
                 console.error('删除小说时出错:', error);
+                alert("删除小说时出错，请稍后再试。");
             }
         },
     },
@@ -75,6 +83,7 @@ export default {
 
 <style scoped>
 .novels {
+    margin: 30px auto;
     background-color: #f5f5f5;
     padding: 20px;
     border-radius: 8px;

@@ -57,16 +57,17 @@ def change_pwd(user_id:int, user_name:str, new_password:str):
         # 执行更新操作
         cursor.execute(sql_update_query, (new_password, user_name))
         # 提交事务
-        db.commit()
-    except pymysql.Error as error:
+        cursor.connection.commit()
+        return (True, f"修改管理员密码成功")
+    except Exception as e:
         print("f")
-        return (False, error)
-
+        return (False, f"发生错误{e}")
     finally:
         print("t")
         cursor.close()
         db.close()
-        return (True,"success")
+
+    return (True,"success")
 
 
 def get_all_novel_info(one_length=0, offset=-1, order_by='novel_id', order_way='asc', search_target='all'):
@@ -112,7 +113,7 @@ def get_user_count(search_target='all'):
             search_params = [f"%{search_target}%"]
     db=get_db()
     cursor = get_cursor(db)
-    sql = f"SELECT count(*) FROM user_info WHERE user_name<>'Admin' {search}"
+    sql = f"SELECT count(*) FROM user_info WHERE user_name<>'admin' {search}"
     cursor.execute(sql, search_params)
     rows = cursor.fetchall()[0]
     return rows

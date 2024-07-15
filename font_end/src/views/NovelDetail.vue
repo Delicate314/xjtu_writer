@@ -10,7 +10,7 @@
                     <h2 class="head">标题：{{ novel.novel_title }}</h2>
                     <h3 class="footer">作者：{{ novel.writer_name }}</h3>
                     <p class="footer">点击量：{{ novel.view_count }}</p>
-                    <textarea class="main" v-html="formattedContent"></textarea>
+                    <textarea class="main" :value="formattedContent"></textarea>
                 </div>
                 <div class="pagination">
                     <button @click="prevPage" :disabled="page === 1">上一页</button>
@@ -59,7 +59,7 @@ export default {
     },
     computed: {
         formattedContent() {
-            return this.novel.content.replace(/\n/g, '<br/>');
+            return this.novel.content.replace(/<br\s*\/?>/gi, '\n');
         }
     },
     methods: {
@@ -122,6 +122,7 @@ export default {
     }
 }
 </script>
+
 <style scoped>
 body {
     font-family: 'Arial', sans-serif;

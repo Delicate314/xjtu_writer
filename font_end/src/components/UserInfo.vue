@@ -78,6 +78,7 @@ export default {
 }
 
 .user-profile {
+  margin-top: 30px;
   padding: 10px;
   background-color: #f5f5f5;
   border-radius: 10px;
@@ -154,5 +155,47 @@ export default {
   width: 100%;
   align-self: flex-start;
   /* 也可以直接在子元素上设置 */
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+  }
+
+  .user-panel {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .toggle-button {
+    width: auto;
+    margin: 5px 0;
+  }
+
+  .user-info {
+    width: 100%;
+    transition: height 0.3s ease;
+  }
+
+  .info-visible {
+    width: 100%;
+    height: auto;
+  }
+
+  .info-hidden {
+    width: 100%;
+    height: 0;
+  }
+
+  .info {
+    padding: 10px;
+  }
+
+  .novel {
+    width: 100%;
+  }
 }
 </style>

@@ -208,7 +208,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .button {
   max-width: 80px;
   margin-left: 10px;

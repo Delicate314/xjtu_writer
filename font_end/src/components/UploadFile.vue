@@ -61,7 +61,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .upload-component {
   margin: 20px;
   padding: 20px;

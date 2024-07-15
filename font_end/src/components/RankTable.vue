@@ -151,4 +151,42 @@ th {
 .pagination span {
   padding: 10px;
 }
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+  .rank-container {
+    width: 100%;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: none;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  table,
+  th,
+  td {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .rank-top,
+  .rank-bottom {
+    border-radius: 0;
+  }
+
+  .pagination {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .pagination button,
+  .pagination span {
+    width: 100%;
+    text-align: center;
+  }
+}
 </style>
