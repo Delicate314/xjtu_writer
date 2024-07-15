@@ -5,9 +5,9 @@ import SearchView from '@/views/SearchView.vue';
 import WriteView from '@/views/WriteView.vue';
 import LoginView from '@/views/LoginView.vue';
 import RegisterView from '@/views/RegisterView.vue';
-import RankView from '@/views/RankView.vue'
-import NovelDetail from '@/views/NovelDetail.vue'
-import Admin from '@/views/backend_views/admin_home.vue'
+import RankView from '@/views/RankView.vue';
+import NovelDetail from '@/views/NovelDetail.vue';
+import Admin from '@/views/backend_views/admin_home.vue';
 
 Vue.use(Router);
 
@@ -71,7 +71,7 @@ const router = new Router({
             },
         },
         {
-            path: '/Rank',
+            path: '/rank',
             component: RankView,
             meta: {
                 name: '排行榜',

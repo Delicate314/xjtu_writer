@@ -203,7 +203,7 @@ select.rounded-select {
   border: 3px solid #112d4e;
   font-family: '微软雅黑';
   font-size: 15px;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 button.rounded-button {
@@ -230,7 +230,7 @@ h2.link1 {
   /* 调整字体大小 */
   margin-bottom: 20px;
   /* 调整下边距 */
-  color: #0a0a0a;
+  color: #fff;
   /* 设置字体颜色 */
 }
 
