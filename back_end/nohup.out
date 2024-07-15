@@ -23709,3 +23709,885 @@ INFO:     127.0.0.1:58928 - "POST /apis/getNovel HTTP/1.0" 200 OK
 2024-07-15 18:30:49,903 - log_requests - line:46 - INFO - rid=LZ7PYP start request path=/apis/rank
 2024-07-15 18:30:50,323 - log_requests - line:53 - INFO - rid=LZ7PYP completed_in=420.08ms status_code=200
 INFO:     127.0.0.1:58942 - "POST /apis/rank HTTP/1.0" 200 OK
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [31609]
+INFO:     Started server process [15107]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [15107]
+INFO:     Started server process [15112]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [15112]
+INFO:     Started server process [15139]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [15139]
+INFO:     Started server process [15144]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [15144]
+INFO:     Started server process [15160]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [15160]
+INFO:     Started server process [15168]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [15168]
+INFO:     Started server process [15173]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [15173]
+INFO:     Started server process [15199]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [15199]
+INFO:     Started server process [15204]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [15204]
+INFO:     Started server process [15208]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [15208]
+INFO:     Started server process [15213]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [15213]
+INFO:     Started server process [15219]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [15219]
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+INFO:     Started server process [15229]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [15229]
+INFO:     Started server process [15251]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [15251]
+INFO:     Started server process [15256]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [15256]
+INFO:     Started server process [15262]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [15262]
+INFO:     Started server process [15267]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [15267]
+INFO:     Started server process [15275]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [15275]
+Process SpawnProcess-29:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/local/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/_subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/server.py", line 60, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/local/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "uvloop/loop.pyx", line 1517, in uvloop.loop.Loop.run_until_complete
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/server.py", line 67, in serve
+    config.load()
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/config.py", line 477, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/importer.py", line 21, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/xjtu_writer_2/xjtu_writer/back_end/./sql_app/main.py", line 286
+    except Exception as e:
+    ^^^^^^
+IndentationError: expected an indented block after 'try' statement on line 282
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+INFO:     Started server process [15282]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [15282]
+Process SpawnProcess-31:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/local/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/_subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/server.py", line 60, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/local/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "uvloop/loop.pyx", line 1517, in uvloop.loop.Loop.run_until_complete
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/server.py", line 67, in serve
+    config.load()
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/config.py", line 477, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/importer.py", line 21, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/xjtu_writer_2/xjtu_writer/back_end/./sql_app/main.py", line 286
+    except Exception as e:
+    ^^^^^^
+IndentationError: expected an indented block after 'try' statement on line 282
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+Process SpawnProcess-32:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/local/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/_subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/server.py", line 60, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/local/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "uvloop/loop.pyx", line 1517, in uvloop.loop.Loop.run_until_complete
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/server.py", line 67, in serve
+    config.load()
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/config.py", line 477, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/importer.py", line 21, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/xjtu_writer_2/xjtu_writer/back_end/./sql_app/main.py", line 284
+    @app.delete("/apis/user/deleteNovel", tags=["删除个人小说"])
+    ^
+IndentationError: expected an indented block after function definition on line 281
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+Process SpawnProcess-33:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/local/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/_subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/server.py", line 60, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/local/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "uvloop/loop.pyx", line 1517, in uvloop.loop.Loop.run_until_complete
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/server.py", line 67, in serve
+    config.load()
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/config.py", line 477, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/importer.py", line 21, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/xjtu_writer_2/xjtu_writer/back_end/./sql_app/main.py", line 282
+    if
+      ^
+SyntaxError: invalid syntax
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+Process SpawnProcess-34:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/local/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/_subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/server.py", line 60, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/local/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "uvloop/loop.pyx", line 1517, in uvloop.loop.Loop.run_until_complete
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/server.py", line 67, in serve
+    config.load()
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/config.py", line 477, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/importer.py", line 21, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/xjtu_writer_2/xjtu_writer/back_end/./sql_app/main.py", line 282
+    if()
+        ^
+SyntaxError: expected ':'
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+Process SpawnProcess-35:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/local/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/_subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/server.py", line 60, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/local/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "uvloop/loop.pyx", line 1517, in uvloop.loop.Loop.run_until_complete
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/server.py", line 67, in serve
+    config.load()
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/config.py", line 477, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/importer.py", line 21, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/xjtu_writer_2/xjtu_writer/back_end/./sql_app/main.py", line 282
+    if(user_isadmin == )
+                       ^
+SyntaxError: invalid syntax
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+Process SpawnProcess-36:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/local/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/_subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/server.py", line 60, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/local/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "uvloop/loop.pyx", line 1517, in uvloop.loop.Loop.run_until_complete
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/server.py", line 67, in serve
+    config.load()
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/config.py", line 477, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/importer.py", line 21, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/xjtu_writer_2/xjtu_writer/back_end/./sql_app/main.py", line 282
+    if(user_isadmin == 0)
+                         ^
+SyntaxError: expected ':'
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+Process SpawnProcess-37:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/local/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/_subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/server.py", line 60, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/local/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "uvloop/loop.pyx", line 1517, in uvloop.loop.Loop.run_until_complete
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/server.py", line 67, in serve
+    config.load()
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/config.py", line 477, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/importer.py", line 21, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/xjtu_writer_2/xjtu_writer/back_end/./sql_app/main.py", line 282
+    if(user_isadmin == 0)
+                         ^
+SyntaxError: expected ':'
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+Process SpawnProcess-38:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/local/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/_subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/server.py", line 60, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/local/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "uvloop/loop.pyx", line 1517, in uvloop.loop.Loop.run_until_complete
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/server.py", line 67, in serve
+    config.load()
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/config.py", line 477, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/importer.py", line 21, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/xjtu_writer_2/xjtu_writer/back_end/./sql_app/main.py", line 282
+    if(user_isadmin == 0)
+                         ^
+SyntaxError: expected ':'
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+Process SpawnProcess-39:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/local/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/_subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/server.py", line 60, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/local/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "uvloop/loop.pyx", line 1517, in uvloop.loop.Loop.run_until_complete
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/server.py", line 67, in serve
+    config.load()
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/config.py", line 477, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/importer.py", line 21, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/xjtu_writer_2/xjtu_writer/back_end/./sql_app/main.py", line 282
+    if(user_isadmin == 0)
+                         ^
+SyntaxError: expected ':'
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+Process SpawnProcess-40:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/local/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/_subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/server.py", line 60, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/local/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "uvloop/loop.pyx", line 1517, in uvloop.loop.Loop.run_until_complete
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/server.py", line 67, in serve
+    config.load()
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/config.py", line 477, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/importer.py", line 21, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/xjtu_writer_2/xjtu_writer/back_end/./sql_app/main.py", line 282
+    if(user_isadmin == 0)
+                         ^
+SyntaxError: expected ':'
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+Process SpawnProcess-41:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/local/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/_subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/server.py", line 60, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/local/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "uvloop/loop.pyx", line 1517, in uvloop.loop.Loop.run_until_complete
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/server.py", line 67, in serve
+    config.load()
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/config.py", line 477, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/importer.py", line 21, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/xjtu_writer_2/xjtu_writer/back_end/./sql_app/main.py", line 282
+    if(user_isadmin == 0:
+                        ^
+SyntaxError: invalid syntax
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+INFO:     Started server process [15352]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [15352]
+Process SpawnProcess-43:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/local/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/_subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/server.py", line 60, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/local/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "uvloop/loop.pyx", line 1517, in uvloop.loop.Loop.run_until_complete
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/server.py", line 67, in serve
+    config.load()
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/config.py", line 477, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/importer.py", line 21, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/xjtu_writer_2/xjtu_writer/back_end/./sql_app/main.py", line 284
+    else 
+         ^
+SyntaxError: expected ':'
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+Process SpawnProcess-44:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/local/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/_subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/server.py", line 60, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/local/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "uvloop/loop.pyx", line 1517, in uvloop.loop.Loop.run_until_complete
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/server.py", line 67, in serve
+    config.load()
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/config.py", line 477, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/importer.py", line 21, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/xjtu_writer_2/xjtu_writer/back_end/./sql_app/main.py", line 284
+    else 
+         ^
+SyntaxError: expected ':'
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+Process SpawnProcess-45:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/local/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/_subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/server.py", line 60, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/local/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "uvloop/loop.pyx", line 1517, in uvloop.loop.Loop.run_until_complete
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/server.py", line 67, in serve
+    config.load()
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/config.py", line 477, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/importer.py", line 21, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/xjtu_writer_2/xjtu_writer/back_end/./sql_app/main.py", line 284
+    else 
+         ^
+SyntaxError: expected ':'
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+Process SpawnProcess-46:
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/usr/local/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/_subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/server.py", line 60, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/local/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "uvloop/loop.pyx", line 1517, in uvloop.loop.Loop.run_until_complete
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/server.py", line 67, in serve
+    config.load()
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/config.py", line 477, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/home/venv/lib/python3.10/site-packages/uvicorn/importer.py", line 21, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1017, in get_code
+  File "<frozen importlib._bootstrap_external>", line 947, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/xjtu_writer_2/xjtu_writer/back_end/./sql_app/main.py", line 284
+    else 
+         ^
+SyntaxError: expected ':'
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+INFO:     Started server process [15392]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+2024-07-15 18:38:43,806 - log_requests - line:46 - INFO - rid=DR5PFZ start request path=/docs
+2024-07-15 18:38:43,808 - log_requests - line:53 - INFO - rid=DR5PFZ completed_in=0.77ms status_code=200
+INFO:     127.0.0.1:37548 - "GET /docs HTTP/1.0" 200 OK
+2024-07-15 18:38:44,552 - log_requests - line:46 - INFO - rid=EUEONS start request path=/openapi.json
+2024-07-15 18:38:44,581 - log_requests - line:53 - INFO - rid=EUEONS completed_in=29.03ms status_code=200
+INFO:     127.0.0.1:37552 - "GET /openapi.json HTTP/1.0" 200 OK
+2024-07-15 18:38:49,215 - log_requests - line:46 - INFO - rid=1ZEST5 start request path=/apis/user/is_admin
+2024-07-15 18:38:49,216 - log_requests - line:53 - INFO - rid=1ZEST5 completed_in=0.67ms status_code=401
+INFO:     127.0.0.1:37556 - "POST /apis/user/is_admin HTTP/1.0" 401 Unauthorized
+2024-07-15 18:38:56,924 - log_requests - line:46 - INFO - rid=IXB2V0 start request path=/apis/login
+2024-07-15 18:38:56,925 - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-15 18:38:56,925 - callback - line:623 - DEBUG - Calling on_field_name with data[0:10]
+2024-07-15 18:38:56,925 - callback - line:623 - DEBUG - Calling on_field_data with data[11:19]
+2024-07-15 18:38:56,925 - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-15 18:38:56,926 - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-15 18:38:56,926 - callback - line:623 - DEBUG - Calling on_field_name with data[20:28]
+2024-07-15 18:38:56,926 - callback - line:623 - DEBUG - Calling on_field_data with data[29:36]
+2024-07-15 18:38:56,926 - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-15 18:38:56,927 - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-15 18:38:56,927 - callback - line:623 - DEBUG - Calling on_field_name with data[37:45]
+2024-07-15 18:38:56,927 - callback - line:623 - DEBUG - Calling on_field_data with data[46:53]
+2024-07-15 18:38:56,927 - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-15 18:38:56,928 - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-15 18:38:57,181 - log_requests - line:53 - INFO - rid=IXB2V0 completed_in=257.32ms status_code=200
+{'sub': 'Delicat'}
+{'sub': 'Delicat', 'exp': datetime.datetime(2024, 7, 15, 12, 18, 57, 181233, tzinfo=datetime.timezone.utc)}
+INFO:     127.0.0.1:47454 - "POST /apis/login HTTP/1.0" 200 OK
+2024-07-15 18:39:00,453 - log_requests - line:46 - INFO - rid=RCEUQZ start request path=/apis/user/is_admin
+2024-07-15 18:39:00,676 - log_requests - line:53 - INFO - rid=RCEUQZ completed_in=222.73ms status_code=200
+INFO:     127.0.0.1:47458 - "POST /apis/user/is_admin HTTP/1.0" 200 OK
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [15392]
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+INFO:     Started server process [15428]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [15428]
+INFO:     Started server process [15435]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [15435]
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+INFO:     Started server process [15461]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+2024-07-15 18:39:50,141 - log_requests - line:46 - INFO - rid=9HLMPE start request path=/docs
+2024-07-15 18:39:50,142 - log_requests - line:53 - INFO - rid=9HLMPE completed_in=0.76ms status_code=200
+INFO:     127.0.0.1:60740 - "GET /docs HTTP/1.0" 200 OK
+2024-07-15 18:39:50,873 - log_requests - line:46 - INFO - rid=TID1NN start request path=/openapi.json
+2024-07-15 18:39:50,902 - log_requests - line:53 - INFO - rid=TID1NN completed_in=29.20ms status_code=200
+INFO:     127.0.0.1:60756 - "GET /openapi.json HTTP/1.0" 200 OK
+2024-07-15 18:39:58,849 - log_requests - line:46 - INFO - rid=R9V2DU start request path=/apis/login
+2024-07-15 18:39:58,850 - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-15 18:39:58,850 - callback - line:623 - DEBUG - Calling on_field_name with data[0:10]
+2024-07-15 18:39:58,850 - callback - line:623 - DEBUG - Calling on_field_data with data[11:19]
+2024-07-15 18:39:58,851 - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-15 18:39:58,851 - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-15 18:39:58,851 - callback - line:623 - DEBUG - Calling on_field_name with data[20:28]
+2024-07-15 18:39:58,851 - callback - line:623 - DEBUG - Calling on_field_data with data[29:36]
+2024-07-15 18:39:58,851 - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-15 18:39:58,852 - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-15 18:39:58,852 - callback - line:623 - DEBUG - Calling on_field_name with data[37:45]
+2024-07-15 18:39:58,852 - callback - line:623 - DEBUG - Calling on_field_data with data[46:53]
+2024-07-15 18:39:58,852 - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-15 18:39:58,853 - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-15 18:39:59,140 - log_requests - line:53 - INFO - rid=R9V2DU completed_in=291.22ms status_code=200
+{'sub': 'Delicat'}
+{'sub': 'Delicat', 'exp': datetime.datetime(2024, 7, 15, 12, 19, 59, 140208, tzinfo=datetime.timezone.utc)}
+INFO:     127.0.0.1:47876 - "POST /apis/login HTTP/1.0" 200 OK
+2024-07-15 18:40:04,685 - log_requests - line:46 - INFO - rid=6PMZDE start request path=/apis/user/is_admin
+2024-07-15 18:40:04,905 - log_requests - line:53 - INFO - rid=6PMZDE completed_in=219.51ms status_code=200
+INFO:     127.0.0.1:38202 - "POST /apis/user/is_admin HTTP/1.0" 200 OK
+WARNING:  WatchFiles detected changes in 'sql_app/main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [15461]
+INFO:     Started server process [15475]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+2024-07-15 18:40:31,345 - log_requests - line:46 - INFO - rid=SSNBX0 start request path=/docs
+2024-07-15 18:40:31,346 - log_requests - line:53 - INFO - rid=SSNBX0 completed_in=0.77ms status_code=200
+INFO:     127.0.0.1:55334 - "GET /docs HTTP/1.0" 200 OK
+2024-07-15 18:40:32,728 - log_requests - line:46 - INFO - rid=BYN60J start request path=/openapi.json
+2024-07-15 18:40:32,757 - log_requests - line:53 - INFO - rid=BYN60J completed_in=29.04ms status_code=200
+INFO:     127.0.0.1:55346 - "GET /openapi.json HTTP/1.0" 200 OK
+2024-07-15 18:40:42,035 - log_requests - line:46 - INFO - rid=SLPY8J start request path=/apis/login
+2024-07-15 18:40:42,036 - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-15 18:40:42,036 - callback - line:623 - DEBUG - Calling on_field_name with data[0:10]
+2024-07-15 18:40:42,036 - callback - line:623 - DEBUG - Calling on_field_data with data[11:19]
+2024-07-15 18:40:42,036 - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-15 18:40:42,037 - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-15 18:40:42,037 - callback - line:623 - DEBUG - Calling on_field_name with data[20:28]
+2024-07-15 18:40:42,037 - callback - line:623 - DEBUG - Calling on_field_data with data[29:36]
+2024-07-15 18:40:42,037 - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-15 18:40:42,037 - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-15 18:40:42,037 - callback - line:623 - DEBUG - Calling on_field_name with data[37:45]
+2024-07-15 18:40:42,037 - callback - line:623 - DEBUG - Calling on_field_data with data[46:53]
+2024-07-15 18:40:42,037 - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-15 18:40:42,038 - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-15 18:40:42,336 - log_requests - line:53 - INFO - rid=SLPY8J completed_in=300.30ms status_code=200
+{'sub': 'Delicat'}
+{'sub': 'Delicat', 'exp': datetime.datetime(2024, 7, 15, 12, 20, 42, 335583, tzinfo=datetime.timezone.utc)}
+INFO:     127.0.0.1:51684 - "POST /apis/login HTTP/1.0" 200 OK
+2024-07-15 18:40:45,473 - log_requests - line:46 - INFO - rid=PMFO3H start request path=/apis/user/is_admin
+2024-07-15 18:40:45,703 - log_requests - line:53 - INFO - rid=PMFO3H completed_in=229.67ms status_code=200
+INFO:     127.0.0.1:46942 - "POST /apis/user/is_admin HTTP/1.0" 200 OK
+2024-07-15 18:44:57,535 - log_requests - line:46 - INFO - rid=ZGDVC0 start request path=/apis/login/
+2024-07-15 18:44:57,536 - log_requests - line:53 - INFO - rid=ZGDVC0 completed_in=0.56ms status_code=307
+INFO:     127.0.0.1:41524 - "POST /apis/login/ HTTP/1.0" 307 Temporary Redirect
+2024-07-15 18:44:58,055 - log_requests - line:46 - INFO - rid=09ODQH start request path=/apis/login
+2024-07-15 18:44:58,056 - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-15 18:44:58,056 - callback - line:623 - DEBUG - Calling on_field_name with data[0:8]
+2024-07-15 18:44:58,056 - callback - line:623 - DEBUG - Calling on_field_data with data[9:14]
+2024-07-15 18:44:58,057 - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-15 18:44:58,057 - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-15 18:44:58,057 - callback - line:623 - DEBUG - Calling on_field_name with data[15:23]
+2024-07-15 18:44:58,057 - callback - line:623 - DEBUG - Calling on_field_data with data[24:29]
+2024-07-15 18:44:58,058 - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-15 18:44:58,058 - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-15 18:44:58,390 - log_requests - line:53 - INFO - rid=09ODQH completed_in=335.04ms status_code=200
+{'sub': 'admin'}
+{'sub': 'admin', 'exp': datetime.datetime(2024, 7, 15, 12, 24, 58, 390205, tzinfo=datetime.timezone.utc)}
+INFO:     127.0.0.1:41532 - "POST /apis/login HTTP/1.0" 200 OK
+2024-07-15 18:45:01,552 - log_requests - line:46 - INFO - rid=OQDDR0 start request path=/apis/admin/getusernovel
+2024-07-15 18:45:01,796 - log_requests - line:53 - INFO - rid=OQDDR0 completed_in=243.88ms status_code=200
+2024-07-15 18:45:01,797 - log_requests - line:46 - INFO - rid=XIN0EX start request path=/apis/admin/getusers
+INFO:     127.0.0.1:41538 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
+2024-07-15 18:45:02,331 - log_requests - line:53 - INFO - rid=XIN0EX completed_in=534.33ms status_code=200
+INFO:     127.0.0.1:41542 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-15 18:45:14,252 - log_requests - line:46 - INFO - rid=UFODZS start request path=/apis/login/
+2024-07-15 18:45:14,252 - log_requests - line:53 - INFO - rid=UFODZS completed_in=0.59ms status_code=307
+INFO:     127.0.0.1:58524 - "POST /apis/login/ HTTP/1.0" 307 Temporary Redirect
+2024-07-15 18:45:14,715 - log_requests - line:46 - INFO - rid=0DDGCP start request path=/apis/login
+2024-07-15 18:45:14,716 - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-15 18:45:14,716 - callback - line:623 - DEBUG - Calling on_field_name with data[0:8]
+2024-07-15 18:45:14,716 - callback - line:623 - DEBUG - Calling on_field_data with data[9:16]
+2024-07-15 18:45:14,716 - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-15 18:45:14,716 - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-15 18:45:14,716 - callback - line:623 - DEBUG - Calling on_field_name with data[17:25]
+2024-07-15 18:45:14,717 - callback - line:623 - DEBUG - Calling on_field_data with data[26:33]
+2024-07-15 18:45:14,717 - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-15 18:45:14,717 - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-15 18:45:14,990 - log_requests - line:53 - INFO - rid=0DDGCP completed_in=274.87ms status_code=200
+{'sub': 'Delicat'}
+{'sub': 'Delicat', 'exp': datetime.datetime(2024, 7, 15, 12, 25, 14, 989827, tzinfo=datetime.timezone.utc)}
+INFO:     127.0.0.1:58528 - "POST /apis/login HTTP/1.0" 200 OK
+2024-07-15 18:45:15,486 - log_requests - line:46 - INFO - rid=SHHCA1 start request path=/apis/user/ownInfo
+2024-07-15 18:45:16,214 - getOwnInfo - line:265 - DEBUG - ((15, 'Delicat', 'Zcj1234', 0),)
+2024-07-15 18:45:16,215 - log_requests - line:53 - INFO - rid=SHHCA1 completed_in=728.58ms status_code=200
+2024-07-15 18:45:16,216 - log_requests - line:46 - INFO - rid=P6RD4K start request path=/apis/user/ownInfo
+INFO:     127.0.0.1:58538 - "POST /apis/user/ownInfo HTTP/1.0" 200 OK
+2024-07-15 18:45:16,936 - getOwnInfo - line:265 - DEBUG - ((15, 'Delicat', 'Zcj1234', 0),)
+2024-07-15 18:45:16,938 - log_requests - line:53 - INFO - rid=P6RD4K completed_in=721.41ms status_code=200
+INFO:     127.0.0.1:58548 - "POST /apis/user/ownInfo HTTP/1.0" 200 OK
+2024-07-15 18:45:22,526 - log_requests - line:46 - INFO - rid=K8L96S start request path=//apis/user/is_admin
+2024-07-15 18:45:22,527 - log_requests - line:53 - INFO - rid=K8L96S completed_in=0.70ms status_code=404
+INFO:     127.0.0.1:58564 - "POST //apis/user/is_admin HTTP/1.0" 404 Not Found

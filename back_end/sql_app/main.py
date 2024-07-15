@@ -131,6 +131,40 @@ async def get_current_user_id(token: str = Depends(oauth2_scheme)):
     return user_id
 
 
+async def get_current_user_isadmin(token: str = Depends(oauth2_scheme)):    
+    credentials_exception = HTTPException(
+        status_code=status.HTTP_401_UNAUTHORIZED,
+        detail="Could not validate credentials",
+        headers={"WWW-Authenticate": "Bearer"},
+    )
+    try:
+        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        username: str = payload.get("sub")
+        if username is None:
+            raise credentials_exception
+    except InvalidTokenError:
+        raise credentials_exception
+    
+    db = get_db()
+    
+    cursor = db.cursor()
+    sql_select = "SELECT * FROM user_info WHERE user_name = %s;"
+    value = (username,)
+    cursor.execute(sql_select, value)
+    
+    user_info = cursor.fetchone()  # 获取查询结果
+    
+    cursor.close()  # 关闭游标
+    db.close()  # 关闭数据库连接
+    
+    if user_info is None:
+        raise credentials_exception
+    
+    # 假设你想获取 user_info 中的某个字段，比如 user_id
+    user_isadmin = str(user_info[3])  # 使用列名访问字段
+    
+    return user_isadmin
+
 @app.post("/apis/register",tags=["用户注册"],summary="用户注册")
 async def register(user_register: models.UserRegister):
     message = login_and_rigister.register(user_register)
@@ -242,7 +276,11 @@ async def getOwnInfo(user_id : str=Depends(get_current_user_id)):
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail=f"An error occurred while fetching novel information: {str(e)}"
         )
-
+        
+@app.post("/apis/user/is_admin", tags=["获取个人信息"], summary="获取个人是否是管理员", description="获取个人是否是管理员")
+async def getOwnInfo(user_isadmin : int=Depends(get_current_user_isadmin)):
+    return {"user_isadmin": f'{user_isadmin}'}
+    
 @app.delete("/apis/user/deleteNovel", tags=["删除个人小说"])
 async def deleteOwnNovel(novel_id: int, novel_title: str, user_id : str = Depends(get_current_user_id)):
     (s, msg) = novel_option.delete_novel(novel_id, novel_title)
