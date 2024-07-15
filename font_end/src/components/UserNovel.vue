@@ -21,7 +21,7 @@
                                 <button @click="readNovel(novel.novel_id)" class="button read">阅读</button>
                             </router-link>
                             <!-- <button @click="editNovel(novel.novel_id)" class="button edit">修改</button> -->
-                            <button @click="deleteNovel(novel.novel_id, novel.novel_title)"
+                            <button @click="confirmDelete(novel.novel_id, novel.novel_title)"
                                 class="button delete">删除</button>
                         </td>
                     </tr>
@@ -100,29 +100,52 @@ export default {
 }
 
 .novel-list {
-    overflow-x: auto;
-    /* 水平滚动 */
+    /* 设置整个表格的最大高度 */
+    overflow: hidden;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 15px;
 }
 
-th,
-td {
+thead th {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    position: sticky;
+    top: 0;
+}
+
+tbody {
+    height: 350px;
+    display: block;
+    /*max-height: calc(7 * 50px);*/
+    /* 设置 tbody 的最大高度，假设每行高度约为50px */
+    overflow-y: auto;
+    /* 启用垂直滚动 */
+}
+
+tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+thead,
+tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+tbody td {
     padding: 10px;
     text-align: left;
     border-bottom: 1px solid #ddd;
 }
 
-th {
-    background-color: #007bff;
-    color: #fff;
-}
-
-tr:hover {
+tbody tr:hover {
     background-color: #f2f2f2;
 }
 
