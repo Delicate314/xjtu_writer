@@ -6,7 +6,7 @@ ch = logging.StreamHandler()
 
 fh = logging.handlers.RotatingFileHandler("api.log",mode="a",maxBytes = 100*1024, backupCount = 3)
 formatter = logging.Formatter(
-    "%(asctime)s - %(funcName)s - line:%(lineno)d - %(levelname)s - %(message)s"
+    "%(asctime)s - %(filename)s - %(funcName)s - line:%(lineno)d - %(levelname)s - %(message)s"
 )
 
 ch.setFormatter(formatter)

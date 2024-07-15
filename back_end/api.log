@@ -718,3 +718,64 @@
 2024-07-15 10:10:30,641 - callback - line:626 - DEBUG - Calling on_part_end with no data
 2024-07-15 10:10:30,641 - callback - line:626 - DEBUG - Calling on_end with no data
 2024-07-15 10:10:30,905 - log_requests - line:53 - INFO - rid=VYVORC completed_in=268.89ms status_code=400
+2024-07-15 15:02:57,753 - log_requests - line:46 - INFO - rid=HBVK7S start request path=/docs
+2024-07-15 15:02:57,758 - log_requests - line:53 - INFO - rid=HBVK7S completed_in=0.00ms status_code=200
+2024-07-15 15:03:01,284 - log_requests - line:46 - INFO - rid=DVO16S start request path=/openapi.json
+2024-07-15 15:03:01,304 - log_requests - line:53 - INFO - rid=DVO16S completed_in=19.65ms status_code=200
+2024-07-15 15:03:16,508 - log_requests - line:46 - INFO - rid=XDVUJV start request path=/apis/login
+2024-07-15 15:03:16,508 - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-15 15:03:16,508 - callback - line:623 - DEBUG - Calling on_field_name with data[0:10]
+2024-07-15 15:03:16,524 - callback - line:623 - DEBUG - Calling on_field_data with data[11:19]
+2024-07-15 15:03:16,524 - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-15 15:03:16,524 - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-15 15:03:16,524 - callback - line:623 - DEBUG - Calling on_field_name with data[20:28]
+2024-07-15 15:03:16,524 - callback - line:623 - DEBUG - Calling on_field_data with data[29:32]
+2024-07-15 15:03:16,524 - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-15 15:03:16,524 - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-15 15:03:16,524 - callback - line:623 - DEBUG - Calling on_field_name with data[33:41]
+2024-07-15 15:03:16,524 - callback - line:623 - DEBUG - Calling on_field_data with data[42:45]
+2024-07-15 15:03:16,524 - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-15 15:03:16,524 - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-15 15:03:17,228 - log_requests - line:53 - INFO - rid=XDVUJV completed_in=720.26ms status_code=200
+2024-07-15 15:03:31,816 - log_requests - line:46 - INFO - rid=5N8373 start request path=/apis/rank2
+2024-07-15 15:06:41,282 - log_requests - line:46 - INFO - rid=2P5ZDD start request path=/apis/rank
+2024-07-15 15:06:42,211 - log_requests - line:53 - INFO - rid=2P5ZDD completed_in=928.86ms status_code=200
+2024-07-15 15:17:00,865 - log_requests - line:46 - INFO - rid=O8KQN4 start request path=/apis/rank2
+2024-07-15 15:19:26,301 - log_requests - line:46 - INFO - rid=9OTHRO start request path=/apis/rank2
+2024-07-15 15:19:26,862 - log_requests - line:53 - INFO - rid=9OTHRO completed_in=545.55ms status_code=200
+2024-07-15 15:22:34,642 - log_requests - line:46 - INFO - rid=AA9VXO start request path=/apis/rank2
+2024-07-15 15:22:35,147 - log_requests - line:53 - INFO - rid=AA9VXO completed_in=505.25ms status_code=200
+2024-07-15 15:24:09,448 - log_requests - line:46 - INFO - rid=VVUC15 start request path=/apis/rank2
+2024-07-15 15:24:10,399 - log_requests - line:53 - INFO - rid=VVUC15 completed_in=951.15ms status_code=200
+2024-07-15 15:25:08,551 - log_requests - line:46 - INFO - rid=5CR9M9 start request path=/apis/rank2
+2024-07-15 15:25:09,535 - log_requests - line:53 - INFO - rid=5CR9M9 completed_in=983.90ms status_code=200
+2024-07-15 15:27:19,603 - log_requests - line:46 - INFO - rid=OJHX0J start request path=/apis/rank2
+2024-07-15 15:27:28,613 - log_requests - line:46 - INFO - rid=I5HVYZ start request path=/apis/rank2
+2024-07-15 15:27:29,232 - log_requests - line:53 - INFO - rid=I5HVYZ completed_in=618.63ms status_code=200
+2024-07-15 15:29:38,144 - log_requests - line:46 - INFO - rid=Q8CD00 start request path=/apis/rank2
+2024-07-15 15:29:38,720 - log_requests - line:53 - INFO - rid=Q8CD00 completed_in=575.97ms status_code=200
+2024-07-15 15:30:40,371 - log_requests - line:46 - INFO - rid=0PJK1J start request path=/docs
+2024-07-15 15:30:40,371 - log_requests - line:53 - INFO - rid=0PJK1J completed_in=0.00ms status_code=200
+2024-07-15 15:30:40,461 - log_requests - line:46 - INFO - rid=Y9H4V3 start request path=/openapi.json
+2024-07-15 15:30:40,485 - log_requests - line:53 - INFO - rid=Y9H4V3 completed_in=23.56ms status_code=200
+2024-07-15 15:30:48,888 - log_requests - line:46 - INFO - rid=EKKQHK start request path=/apis/login
+2024-07-15 15:30:48,892 - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-15 15:30:48,892 - callback - line:623 - DEBUG - Calling on_field_name with data[0:10]
+2024-07-15 15:30:48,892 - callback - line:623 - DEBUG - Calling on_field_data with data[11:19]
+2024-07-15 15:30:48,892 - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-15 15:30:48,892 - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-15 15:30:48,892 - callback - line:623 - DEBUG - Calling on_field_name with data[20:28]
+2024-07-15 15:30:48,892 - callback - line:623 - DEBUG - Calling on_field_data with data[29:32]
+2024-07-15 15:30:48,892 - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-15 15:30:48,892 - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-15 15:30:48,892 - callback - line:623 - DEBUG - Calling on_field_name with data[33:41]
+2024-07-15 15:30:48,892 - callback - line:623 - DEBUG - Calling on_field_data with data[42:45]
+2024-07-15 15:30:48,892 - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-15 15:30:48,892 - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-15 15:30:49,537 - log_requests - line:53 - INFO - rid=EKKQHK completed_in=644.64ms status_code=200
+2024-07-15 15:31:08,826 - log_requests - line:46 - INFO - rid=R2DAF8 start request path=/apis/rank3
+2024-07-15 15:31:09,490 - log_requests - line:53 - INFO - rid=R2DAF8 completed_in=663.87ms status_code=200
+2024-07-15 15:38:44,860 - main.py - log_requests - line:46 - INFO - rid=7A4TS1 start request path=/docs
+2024-07-15 15:38:44,875 - main.py - log_requests - line:53 - INFO - rid=7A4TS1 completed_in=15.64ms status_code=200
+2024-07-15 15:38:44,920 - main.py - log_requests - line:46 - INFO - rid=LAQ5PR start request path=/openapi.json
+2024-07-15 15:38:44,930 - main.py - log_requests - line:53 - INFO - rid=LAQ5PR completed_in=9.87ms status_code=200
