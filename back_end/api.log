@@ -44,3 +44,63 @@
 2024-07-15 09:08:46,497 - log_requests - line:53 - INFO - rid=TREFM7 completed_in=901.11ms status_code=200
 2024-07-15 09:08:49,444 - log_requests - line:46 - INFO - rid=HN9G0Y start request path=/apis/rank
 2024-07-15 09:08:49,904 - log_requests - line:53 - INFO - rid=HN9G0Y completed_in=459.56ms status_code=200
+2024-07-15 09:08:52,113 - log_requests - line:46 - INFO - rid=MA2887 start request path=/apis/user/ownInfo
+2024-07-15 09:08:52,850 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 09:08:52,851 - log_requests - line:46 - INFO - rid=DIQ9IT start request path=/apis/user/ownInfo
+2024-07-15 09:08:53,592 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 09:08:53,593 - log_requests - line:46 - INFO - rid=C2BFRT start request path=/apis/rank
+2024-07-15 09:08:53,594 - log_requests - line:53 - INFO - rid=MA2887 completed_in=1480.25ms status_code=200
+2024-07-15 09:08:53,595 - log_requests - line:53 - INFO - rid=DIQ9IT completed_in=743.33ms status_code=200
+2024-07-15 09:08:53,595 - log_requests - line:46 - INFO - rid=MYEXSH start request path=/apis/getNovel/
+2024-07-15 09:08:54,107 - log_requests - line:53 - INFO - rid=MYEXSH completed_in=511.80ms status_code=307
+2024-07-15 09:08:54,108 - log_requests - line:53 - INFO - rid=C2BFRT completed_in=514.93ms status_code=200
+2024-07-15 09:08:54,226 - log_requests - line:46 - INFO - rid=TM4IYU start request path=/apis/getNovel
+2024-07-15 09:08:55,070 - log_requests - line:53 - INFO - rid=TM4IYU completed_in=843.52ms status_code=200
+2024-07-15 09:08:57,727 - log_requests - line:46 - INFO - rid=93WZDZ start request path=/apis/getNovel/
+2024-07-15 09:08:57,728 - log_requests - line:53 - INFO - rid=93WZDZ completed_in=0.55ms status_code=307
+2024-07-15 09:08:57,806 - log_requests - line:46 - INFO - rid=1O9JZL start request path=/apis/getNovel
+2024-07-15 09:08:58,601 - log_requests - line:53 - INFO - rid=1O9JZL completed_in=794.79ms status_code=200
+2024-07-15 09:09:02,011 - log_requests - line:46 - INFO - rid=07DZC3 start request path=/apis/getNovel/
+2024-07-15 09:09:02,012 - log_requests - line:53 - INFO - rid=07DZC3 completed_in=0.57ms status_code=307
+2024-07-15 09:09:02,214 - log_requests - line:46 - INFO - rid=50RRMX start request path=/apis/getNovel
+2024-07-15 09:09:03,069 - log_requests - line:53 - INFO - rid=50RRMX completed_in=855.55ms status_code=200
+2024-07-15 09:09:11,061 - log_requests - line:46 - INFO - rid=HXCGFV start request path=/apis/rank
+2024-07-15 09:09:11,516 - log_requests - line:53 - INFO - rid=HXCGFV completed_in=454.55ms status_code=200
+2024-07-15 09:09:12,484 - log_requests - line:46 - INFO - rid=Q6U71Y start request path=/apis/rank
+2024-07-15 09:09:12,486 - log_requests - line:46 - INFO - rid=7SKC0N start request path=/apis/user/ownInfo
+2024-07-15 09:09:13,206 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 09:09:13,207 - log_requests - line:46 - INFO - rid=6BXGVO start request path=/apis/user/ownInfo
+2024-07-15 09:09:13,914 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 09:09:14,393 - log_requests - line:53 - INFO - rid=7SKC0N completed_in=1907.03ms status_code=200
+2024-07-15 09:09:14,393 - log_requests - line:53 - INFO - rid=6BXGVO completed_in=1186.44ms status_code=200
+2024-07-15 09:09:14,394 - log_requests - line:53 - INFO - rid=Q6U71Y completed_in=1909.18ms status_code=200
+2024-07-15 09:09:17,367 - log_requests - line:46 - INFO - rid=I4B0N9 start request path=/apis/answer_request
+2024-07-15 09:09:17,368 - _handle_request - line:285 - DEBUG - Request body: {'model': 'qwen-turbo', 'parameters': {'result_format': 'message'}, 'input': {'messages': [{'role': 'system', 'content': 'You are a professional assistant.'}, {'role': 'user', 'content': '\n    现在需要你阅读一篇文章并回答问题。请阅读以下文章并回答问题。如果你不知道答案，请回答“我不知道”。\n    问题: 请问小说的主角是谁 \n    文章: \n------------\n\n正文\n\n\n------------\n\n第一章 林动\n\n\ufeff“唔。”\n\n    当林动费尽所有的力气睁开那有些沉重的眼皮时，简陋而整洁的房间顿时出现在眼中，熟悉的一幕让得他愣了愣，旋即连忙转头，果然是见到，在那房中，一男一女两道身影正坐在桌旁。\n\n    “爹，娘……”\n\n    望着那两道身影，林动赶忙提起精神，小声的道。\n\n    “动儿，你醒了？”\n\n    听到叫声，那女子率先转过头来，见到睁开眼的林动，顿时欣喜的道。\n\n    女子身着略有些朴素，年龄看上去约莫三十左右，其脸颊略显秀美，给人一种温婉柔和的感觉，而她则正是林动的母亲，柳妍。\n\n    “学艺不精，便与人争斗，自讨苦吃。”\n\n    坐在女子身旁的，是一位看上去约莫三四十左右的男子，他的身体有些单薄，眉宇间依稀可见些许凌厉，只不过他好像有伤在身，脸庞略显苍白，将那凌厉遮掩了大半，他便是林动的父亲，林啸。\n\n    对于这位素来严厉的父亲，林动显然是有些惧怕，缩了缩脖子，旋即又有些不服气的道：“谁让那些家伙在我面前骂爹是废物……”\n\n    说着话时，林动摸了摸依旧犯疼的胸口，不由得恨恨的咬了咬牙，本来今日是林家中的一个测试，而他也是去小测了下，因为才开始修炼了半年多时间的缘故，所以成绩倒也只能说一般，而对于这个，他也没太往心里去，给他相同的修炼时间与条件，他相信自己不会比别人弱到哪里去。\n\n    而在测试结束，林动正准备打道回府时，却是遇见了几个平日关系并不好的家伙，原本他是不想理会，但却忍不住对方的故意挑衅，愤怒之余，年少的林动自然是忍不住的出手，而结果也很明显，他直接被胖揍了一顿，还被打昏了过去……\n\n    “林山，你给我记住了，下次不把你打成猪头，我就不信林！”\n\n    林动磨了磨牙，那林山便是此事的作俑者，也是林动现在心中的头号敌人，因为双方父亲彼此关系极为恶劣的缘故，那林山也是经常的找林动麻烦，而这一次，也是其中之一。\n\n    狠狠的咬了咬牙，但紧接着林动又是突然垂头丧气了起来，那林山虽然可恶至极，但不管怎么样，现在那家伙都已经是淬体第四重了，这个成绩，在林家小辈中，可是相当靠前，比起他这个淬体二重的实力来说，的确是强了不少。\n\n    修炼一道，炼体为先，一切的起始，都是源于己身，人体，本就是天地间最为玄奥莫测的东西。\n\n    所谓淬体，简单来说就是修炼身体，让得自己的身体逐渐的强化，并且最后由外至内，当体内筋骨骨髓强化到一定层次时，便是会衍生出一丝元力种子，只而有当人体自然出现元力种子时，他方才能够真正的成为一名修炼者。\n\n    淬体分九重，前三重效果并非很大，不外乎便是使得身体素质与体格变强一些，唯有当淬体修炼到第四重炼皮时，方才会逐渐的将修炼的好处展现出来，到了这一层次，人体皮肤，会慢慢的变得宛如木石般坚硬，不论力气还是速度，都是会有着不小的提升。\n\n    而那林山，便是处于这个层次，林动的淬体二重，显然不会是其对手。\n\n    不过两者年龄相仿，会有着如此巨大的差距，倒并非是什么天赋缘故，淬体这一层次，对所谓天赋倒并非是极其看重，甚至可以说这层次，人人都能够修炼，但至于究竟能够炼到第几重，就得看各自的本钱与机缘了。\n\n \n    '}]}}
+2024-07-15 09:09:17,370 - _new_conn - line:1051 - DEBUG - Starting new HTTPS connection (1): dashscope.aliyuncs.com:443
+2024-07-15 09:09:18,027 - _make_request - line:546 - DEBUG - https://dashscope.aliyuncs.com:443 "POST /api/v1/services/aigc/text-generation/generation HTTP/11" 200 None
+2024-07-15 09:09:18,028 - _handle_response - line:250 - DEBUG - Response: {'output': {'choices': [{'finish_reason': 'stop', 'message': {'role': 'assistant', 'content': '小说的主角是林动。'}}]}, 'usage': {'total_tokens': 969, 'output_tokens': 7, 'input_tokens': 962}, 'request_id': '7a1244f0-cab0-9596-8797-2c5264be1292'}
+2024-07-15 09:09:18,029 - log_requests - line:53 - INFO - rid=I4B0N9 completed_in=661.34ms status_code=200
+2024-07-15 09:09:19,429 - log_requests - line:46 - INFO - rid=GH02TY start request path=/apis/answer_request
+2024-07-15 09:09:19,430 - _handle_request - line:285 - DEBUG - Request body: {'model': 'qwen-turbo', 'parameters': {'result_format': 'message'}, 'input': {'messages': [{'role': 'system', 'content': 'You are a professional assistant.'}, {'role': 'user', 'content': '\n    现在需要你阅读一篇文章并回答问题。请阅读以下文章并回答问题。如果你不知道答案，请回答“我不知道”。\n    问题: 请问小说的主角是谁 \n    文章: \n------------\n\n正文\n\n\n------------\n\n第一章 林动\n\n\ufeff“唔。”\n\n    当林动费尽所有的力气睁开那有些沉重的眼皮时，简陋而整洁的房间顿时出现在眼中，熟悉的一幕让得他愣了愣，旋即连忙转头，果然是见到，在那房中，一男一女两道身影正坐在桌旁。\n\n    “爹，娘……”\n\n    望着那两道身影，林动赶忙提起精神，小声的道。\n\n    “动儿，你醒了？”\n\n    听到叫声，那女子率先转过头来，见到睁开眼的林动，顿时欣喜的道。\n\n    女子身着略有些朴素，年龄看上去约莫三十左右，其脸颊略显秀美，给人一种温婉柔和的感觉，而她则正是林动的母亲，柳妍。\n\n    “学艺不精，便与人争斗，自讨苦吃。”\n\n    坐在女子身旁的，是一位看上去约莫三四十左右的男子，他的身体有些单薄，眉宇间依稀可见些许凌厉，只不过他好像有伤在身，脸庞略显苍白，将那凌厉遮掩了大半，他便是林动的父亲，林啸。\n\n    对于这位素来严厉的父亲，林动显然是有些惧怕，缩了缩脖子，旋即又有些不服气的道：“谁让那些家伙在我面前骂爹是废物……”\n\n    说着话时，林动摸了摸依旧犯疼的胸口，不由得恨恨的咬了咬牙，本来今日是林家中的一个测试，而他也是去小测了下，因为才开始修炼了半年多时间的缘故，所以成绩倒也只能说一般，而对于这个，他也没太往心里去，给他相同的修炼时间与条件，他相信自己不会比别人弱到哪里去。\n\n    而在测试结束，林动正准备打道回府时，却是遇见了几个平日关系并不好的家伙，原本他是不想理会，但却忍不住对方的故意挑衅，愤怒之余，年少的林动自然是忍不住的出手，而结果也很明显，他直接被胖揍了一顿，还被打昏了过去……\n\n    “林山，你给我记住了，下次不把你打成猪头，我就不信林！”\n\n    林动磨了磨牙，那林山便是此事的作俑者，也是林动现在心中的头号敌人，因为双方父亲彼此关系极为恶劣的缘故，那林山也是经常的找林动麻烦，而这一次，也是其中之一。\n\n    狠狠的咬了咬牙，但紧接着林动又是突然垂头丧气了起来，那林山虽然可恶至极，但不管怎么样，现在那家伙都已经是淬体第四重了，这个成绩，在林家小辈中，可是相当靠前，比起他这个淬体二重的实力来说，的确是强了不少。\n\n    修炼一道，炼体为先，一切的起始，都是源于己身，人体，本就是天地间最为玄奥莫测的东西。\n\n    所谓淬体，简单来说就是修炼身体，让得自己的身体逐渐的强化，并且最后由外至内，当体内筋骨骨髓强化到一定层次时，便是会衍生出一丝元力种子，只而有当人体自然出现元力种子时，他方才能够真正的成为一名修炼者。\n\n    淬体分九重，前三重效果并非很大，不外乎便是使得身体素质与体格变强一些，唯有当淬体修炼到第四重炼皮时，方才会逐渐的将修炼的好处展现出来，到了这一层次，人体皮肤，会慢慢的变得宛如木石般坚硬，不论力气还是速度，都是会有着不小的提升。\n\n    而那林山，便是处于这个层次，林动的淬体二重，显然不会是其对手。\n\n    不过两者年龄相仿，会有着如此巨大的差距，倒并非是什么天赋缘故，淬体这一层次，对所谓天赋倒并非是极其看重，甚至可以说这层次，人人都能够修炼，但至于究竟能够炼到第几重，就得看各自的本钱与机缘了。\n\n \n    '}]}}
+2024-07-15 09:09:19,432 - _new_conn - line:1051 - DEBUG - Starting new HTTPS connection (1): dashscope.aliyuncs.com:443
+2024-07-15 09:09:20,199 - _make_request - line:546 - DEBUG - https://dashscope.aliyuncs.com:443 "POST /api/v1/services/aigc/text-generation/generation HTTP/11" 200 None
+2024-07-15 09:09:20,199 - _handle_response - line:250 - DEBUG - Response: {'output': {'choices': [{'finish_reason': 'stop', 'message': {'role': 'assistant', 'content': '小说的主角是林动。'}}]}, 'usage': {'total_tokens': 969, 'output_tokens': 7, 'input_tokens': 962}, 'request_id': '8318e0c4-df17-99f1-990a-e98e5cc8aa6e'}
+2024-07-15 09:09:20,200 - log_requests - line:53 - INFO - rid=GH02TY completed_in=771.01ms status_code=200
+2024-07-15 09:09:30,746 - log_requests - line:46 - INFO - rid=KQ2A87 start request path=/apis/rank
+2024-07-15 09:09:31,202 - log_requests - line:53 - INFO - rid=KQ2A87 completed_in=456.09ms status_code=200
+2024-07-15 09:09:34,037 - log_requests - line:46 - INFO - rid=88JXYW start request path=/apis/answer_request
+2024-07-15 09:09:34,038 - _handle_request - line:285 - DEBUG - Request body: {'model': 'qwen-turbo', 'parameters': {'result_format': 'message'}, 'input': {'messages': [{'role': 'system', 'content': 'You are a professional assistant.'}, {'role': 'user', 'content': '\n    现在需要你阅读一篇文章并回答问题。请阅读以下文章并回答问题。如果你不知道答案，请回答“我不知道”。\n    问题: 林动有什么特点 \n    文章: \n------------\n\n正文\n\n\n------------\n\n第一章 林动\n\n\ufeff“唔。”\n\n    当林动费尽所有的力气睁开那有些沉重的眼皮时，简陋而整洁的房间顿时出现在眼中，熟悉的一幕让得他愣了愣，旋即连忙转头，果然是见到，在那房中，一男一女两道身影正坐在桌旁。\n\n    “爹，娘……”\n\n    望着那两道身影，林动赶忙提起精神，小声的道。\n\n    “动儿，你醒了？”\n\n    听到叫声，那女子率先转过头来，见到睁开眼的林动，顿时欣喜的道。\n\n    女子身着略有些朴素，年龄看上去约莫三十左右，其脸颊略显秀美，给人一种温婉柔和的感觉，而她则正是林动的母亲，柳妍。\n\n    “学艺不精，便与人争斗，自讨苦吃。”\n\n    坐在女子身旁的，是一位看上去约莫三四十左右的男子，他的身体有些单薄，眉宇间依稀可见些许凌厉，只不过他好像有伤在身，脸庞略显苍白，将那凌厉遮掩了大半，他便是林动的父亲，林啸。\n\n    对于这位素来严厉的父亲，林动显然是有些惧怕，缩了缩脖子，旋即又有些不服气的道：“谁让那些家伙在我面前骂爹是废物……”\n\n    说着话时，林动摸了摸依旧犯疼的胸口，不由得恨恨的咬了咬牙，本来今日是林家中的一个测试，而他也是去小测了下，因为才开始修炼了半年多时间的缘故，所以成绩倒也只能说一般，而对于这个，他也没太往心里去，给他相同的修炼时间与条件，他相信自己不会比别人弱到哪里去。\n\n    而在测试结束，林动正准备打道回府时，却是遇见了几个平日关系并不好的家伙，原本他是不想理会，但却忍不住对方的故意挑衅，愤怒之余，年少的林动自然是忍不住的出手，而结果也很明显，他直接被胖揍了一顿，还被打昏了过去……\n\n    “林山，你给我记住了，下次不把你打成猪头，我就不信林！”\n\n    林动磨了磨牙，那林山便是此事的作俑者，也是林动现在心中的头号敌人，因为双方父亲彼此关系极为恶劣的缘故，那林山也是经常的找林动麻烦，而这一次，也是其中之一。\n\n    狠狠的咬了咬牙，但紧接着林动又是突然垂头丧气了起来，那林山虽然可恶至极，但不管怎么样，现在那家伙都已经是淬体第四重了，这个成绩，在林家小辈中，可是相当靠前，比起他这个淬体二重的实力来说，的确是强了不少。\n\n    修炼一道，炼体为先，一切的起始，都是源于己身，人体，本就是天地间最为玄奥莫测的东西。\n\n    所谓淬体，简单来说就是修炼身体，让得自己的身体逐渐的强化，并且最后由外至内，当体内筋骨骨髓强化到一定层次时，便是会衍生出一丝元力种子，只而有当人体自然出现元力种子时，他方才能够真正的成为一名修炼者。\n\n    淬体分九重，前三重效果并非很大，不外乎便是使得身体素质与体格变强一些，唯有当淬体修炼到第四重炼皮时，方才会逐渐的将修炼的好处展现出来，到了这一层次，人体皮肤，会慢慢的变得宛如木石般坚硬，不论力气还是速度，都是会有着不小的提升。\n\n    而那林山，便是处于这个层次，林动的淬体二重，显然不会是其对手。\n\n    不过两者年龄相仿，会有着如此巨大的差距，倒并非是什么天赋缘故，淬体这一层次，对所谓天赋倒并非是极其看重，甚至可以说这层次，人人都能够修炼，但至于究竟能够炼到第几重，就得看各自的本钱与机缘了。\n\n \n    '}]}}
+2024-07-15 09:09:34,040 - _new_conn - line:1051 - DEBUG - Starting new HTTPS connection (1): dashscope.aliyuncs.com:443
+2024-07-15 09:09:37,966 - _make_request - line:546 - DEBUG - https://dashscope.aliyuncs.com:443 "POST /api/v1/services/aigc/text-generation/generation HTTP/11" 200 None
+2024-07-15 09:09:37,967 - _handle_response - line:250 - DEBUG - Response: {'output': {'choices': [{'finish_reason': 'stop', 'message': {'role': 'assistant', 'content': '林动的特点包括：他是一个少年，有些惧怕严厉的父亲林啸；他对自己的修炼能力有信心，相信经过相同的时间和条件，不会比别人差；他性格冲动，因为别人的挑衅而愤怒出手，导致被揍；他对林山怀有敌意，因为林山经常找他麻烦，且实力比他强；他明白修炼以炼体为主，淬体前三重效果不大，而第四重炼皮后才能真正展现优势。林动的修为不如林山，处于淬体二重，而林山已经到了淬体第四重。'}}]}, 'usage': {'total_tokens': 1082, 'output_tokens': 121, 'input_tokens': 961}, 'request_id': 'bff41b0d-0740-99ef-84db-ede608f9670e'}
+2024-07-15 09:09:37,967 - log_requests - line:53 - INFO - rid=88JXYW completed_in=3930.26ms status_code=200
+2024-07-15 09:09:52,974 - log_requests - line:46 - INFO - rid=HBCXU7 start request path=/apis/rank
+2024-07-15 09:09:53,468 - log_requests - line:53 - INFO - rid=HBCXU7 completed_in=493.31ms status_code=200
+2024-07-15 09:09:53,587 - log_requests - line:46 - INFO - rid=ZRPHAL start request path=/apis/rank
+2024-07-15 09:09:54,075 - log_requests - line:53 - INFO - rid=ZRPHAL completed_in=487.06ms status_code=200
+2024-07-15 09:09:54,075 - log_requests - line:46 - INFO - rid=JSJACO start request path=/apis/user/ownInfo
+2024-07-15 09:09:54,776 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 09:09:54,776 - log_requests - line:46 - INFO - rid=AOEKJ7 start request path=/apis/user/ownInfo
+2024-07-15 09:09:55,497 - getOwnInfo - line:231 - DEBUG - ((1, 'test', '123456Ab', 0),)
+2024-07-15 09:09:55,498 - log_requests - line:53 - INFO - rid=JSJACO completed_in=1422.62ms status_code=200
+2024-07-15 09:09:55,499 - log_requests - line:53 - INFO - rid=AOEKJ7 completed_in=722.09ms status_code=200
