@@ -77,12 +77,11 @@ export default {
 .rank-container {
   width: 600px;
   height: 600px;
-  margin: 10px;
+  margin: 30px auto;
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  align-self: center;
 }
 
 .title {
