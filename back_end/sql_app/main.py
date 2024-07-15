@@ -243,7 +243,7 @@ async def getOwnInfo(user_id : str=Depends(get_current_user_id)):
             detail=f"An error occurred while fetching novel information: {str(e)}"
         )
 
-@app.post("/apis/user/deleteNovel", tags=["删除个人小说"])
+@app.delete("/apis/user/deleteNovel", tags=["删除个人小说"])
 async def deleteOwnNovel(novel_id: int, novel_title: str, user_id : str = Depends(get_current_user_id)):
     (s, msg) = novel_option.delete_novel(novel_id, novel_title)
     if s == 0:
