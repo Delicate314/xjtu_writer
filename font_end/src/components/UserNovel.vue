@@ -5,10 +5,10 @@
             <table>
                 <thead>
                     <tr>
-                        <th>小说标题</th>
+                        <th class="rank-top">小说标题</th>
                         <th>浏览次数</th>
                         <th>更新时间</th>
-                        <th>操作</th>
+                        <th class="rank-bottom">操作</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -21,8 +21,7 @@
                                 <button @click="readNovel(novel.novel_id)" class="button read">阅读</button>
                             </router-link>
                             <!-- <button @click="editNovel(novel.novel_id)" class="button edit">修改</button> -->
-                            <button @click="confirmDelete(novel.novel_id, novel.novel_title)"
-                                class="button delete">删除</button>
+                            <button @click="deleteNovel(novel.novel_id, novel.novel_title)" class="button delete">删除</button>
                         </td>
                     </tr>
                 </tbody>
@@ -31,7 +30,7 @@
     </div>
 </template>
 
-<script>
+<script >
 export default {
     data() {
         return {
@@ -86,7 +85,7 @@ export default {
 <style scoped>
 .novels {
     background-color: #f5f5f5;
-    padding: 20px;
+    padding: 10px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -101,6 +100,16 @@ export default {
 .novel-list {
     overflow-x: auto;
     /* 水平滚动 */
+}
+
+.rank-top {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.rank-bottom {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 table {
