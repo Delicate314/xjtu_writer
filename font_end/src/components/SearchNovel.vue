@@ -10,7 +10,7 @@
       <button class="rounded-button" @click="search">Search</button>
     </div>
 
-    <div class="result-box">
+    <div class="result-box" v-loading="loading">
       <div v-if="response.result.length > 0" class="result-list">
         <table>
           <thead>
@@ -22,7 +22,9 @@
           </thead>
           <tbody>
             <tr v-for="item in response.result" :key="item.novel_id">
-              <td>{{ item.novel_title }}</td>
+              <router-link :to="`/Novel?id=${item.novel_id}`" class="item-link">
+                <td>{{ item.novel_title }}</td>
+              </router-link>
               <td>{{ item.user_name }}</td>
               <td><button class="download-button"
                   @click="downloadNovel(item.novel_id, item.novel_title)">download</button></td>
@@ -44,6 +46,7 @@ export default {
   name: 'SearchNovel',
   data() {
     return {
+      loading: false,
       query: '',
       queryType: '0',
       response: {
@@ -59,6 +62,7 @@ export default {
   },
   methods: {
     async search() {
+      this.loading = true;
       event.preventDefault();
       console.log('Searching for', this.query, 'with type', this.queryType);
       const requestBody = {
@@ -69,6 +73,7 @@ export default {
         const response = await axios.post('http://121.36.55.149/apis/search', requestBody);
         console.log("response:", response);
         this.response = response.data;
+        this.loading = false;
       } catch (error) {
         console.error("Error fetching data:", error);
       }

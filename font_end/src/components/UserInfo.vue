@@ -4,7 +4,7 @@
       <div class="user-panel">
         <button @click="toggleUserInfoVisibility" class="toggle-button">我的信息</button>
         <div class="user-info" :class="{ 'info-visible': userInfoVisible, 'info-hidden': !userInfoVisible }">
-          <div class="info">
+          <div class="info" v-loading="loading">
             <p><strong>用户名：</strong>{{ user_name }}</p>
             <!-- <p><strong>密码：</strong><span v-if="showPassword">{{ user_password }}</span><span v-else>******</span></p>
             <button @click="togglePasswordVisibility" class="button">{{ showPassword ? '隐藏密码' : '显示密码' }}</button> -->
@@ -26,6 +26,7 @@ export default {
   },
   data() {
     return {
+      loading: true,
       user_id: null,
       user_name: null,
       user_password: null,
@@ -38,11 +39,13 @@ export default {
   },
   methods: {
     async fetchUserInfo() {
+      this.loading = true;
       try {
         const { data } = await this.$axios.post("http://121.36.55.149:80/apis/user/ownInfo");
         this.user_id = data.user_info.user_id;
         this.user_name = data.user_info.user_name;
         this.user_password = data.user_info.user_password;
+        this.loading = false;
       } catch (error) {
         console.error('An error occurred while fetching user information:', error);
       }
@@ -78,7 +81,7 @@ export default {
 }
 
 .user-profile {
-  margin:65px auto;
+  margin: 65px auto;
   width: 70%;
   height: 500px;
   padding: 10px;

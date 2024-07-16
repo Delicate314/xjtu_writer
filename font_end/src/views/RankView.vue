@@ -4,7 +4,7 @@
 
     <Guide />
     <RankTable />
-    <RankOfWriter />
+    <!-- <RankOfWriter /> -->
   </div>
 </template>
 
@@ -12,7 +12,7 @@
 import StarryBackground from '@/components/StarryBackground.vue';
 import Guide from '@/components/Guide.vue';
 import RankTable from '@/components/RankTable.vue';
-import RankOfWriter from '../components/RankOfWriter.vue';
+// import RankOfWriter from '../components/RankOfWriter.vue';
 import Background from '@/components/Background.vue';
 
 export default {
@@ -21,7 +21,7 @@ export default {
     StarryBackground,
     Guide,
     RankTable,
-    RankOfWriter,
+    // RankOfWriter,
     Background,
   },
   mounted() {

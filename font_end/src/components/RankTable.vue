@@ -10,7 +10,7 @@
           <th class="rank-bottom">热度</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody v-loading="loading">
         <tr v-for="(item, index) in novels" :key="index" class="rank-item">
           <td>{{ index + 1 + (currentPage - 1) * itemsPerPage }}</td>
           <td>
@@ -39,6 +39,7 @@ export default {
   name: 'RankTable',
   data() {
     return {
+      loading: true,
       novels: [],
       currentPage: 1,
       itemsPerPage: 10,
@@ -50,6 +51,7 @@ export default {
   methods: {
     async getRank() {
       // console.log('Fetching novel rank...');
+      this.loading = true;
       try {
         const params = {
           index: this.currentPage,
@@ -61,6 +63,7 @@ export default {
           rating: Math.min(Math.floor(novel.novel_viewcount / 200 * 10) / 10, 5), // 将计算结果保留一位小数，并限制最大为 5
         }));
         console.log('Novels:', this.novels);
+        this.loading = false;
       } catch (error) {
         console.error('Error fetching novel rank:', error);
       }
@@ -82,7 +85,7 @@ export default {
 <style scoped>
 .rank-container {
   width: 80%;
-  height: 600px;
+  height: 640px;
   margin: 20px auto;
   background-color: #fff;
   padding: 20px;

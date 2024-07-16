@@ -10,7 +10,7 @@
       <el-input v-model="novelTitle" placeholder="请输入小说标题" />
       <span slot="footer" class="dialog-footer">
         <el-button @click="dialogVisible = false">取 消</el-button>
-        <el-button type="primary" @click="confirmUpload">确 定</el-button>
+        <el-button type="primary" @click="confirmUpload" v-loading="loading">确 定</el-button>
       </span>
     </el-dialog>
   </div>
@@ -23,6 +23,7 @@ export default {
   name: 'UploadComponent',
   data() {
     return {
+      loading: false,
       selectedFile: null,
       novelTitle: '',
       userId: '', // 可以根据需要进行处理，如使用 localStorage.getItem('token') 获取用户 ID
@@ -57,7 +58,7 @@ export default {
       const formData = new FormData();
       formData.append('file', this.selectedFile);
       formData.append('novel_title', this.novelTitle);
-
+      this.loading = true;
       try {
         const response = await axios.post('http://121.36.55.149/apis/uploadfile', formData, {
           headers: {
@@ -67,6 +68,7 @@ export default {
         console.log('文件上传成功', response.data);
         this.$message.success('文件上传成功');
         // 这里可以添加上传成功后的逻辑
+        this.loading = false;
         this.dialogVisible = false; // 关闭对话框
       } catch (error) {
         console.error('文件上传失败', error);

@@ -6,7 +6,7 @@
         </div>
         <div class="novel-detail-container" :class="{ 'shifted': showAISection }">
             <div class="novel-detail-left">
-                <div class="info">
+                <div class="info" v-loading="novelLoading">
                     <h2 class="head">标题：{{ novel.novel_title }}</h2>
                     <h3 class="footer">作者：{{ novel.writer_name }}</h3>
                     <h3>热度</h3>
@@ -31,7 +31,7 @@
                     请耐心等待... >.< <span class="loading-spinner"></span>
                 </p>
                 <textarea class="footer_answer" v-model="answer" readonly placeholder="生成的回答将在此显示"></textarea>
-                <div class="comments-section">
+                <div class="comments-section" v-loading="commentLoading">
                     <h3>评论</h3>
                     <el-input v-model="newComment" placeholder="输入评论" class="comment"></el-input>
                     <el-button @click="submitComment" class="footer_commit">评论</el-button>
@@ -66,6 +66,8 @@ export default {
     },
     data() {
         return {
+            novelLoading: true,
+            commentLoading: true,
             novel: {},
             question: '',
             answer: '',
@@ -126,6 +128,7 @@ export default {
             }
         },
         async getNovel() {
+            this.novelLoading = true;
             console.log('Fetching novel data...');
             try {
                 const params = {
@@ -139,12 +142,14 @@ export default {
 
                 // Calculate rating based on view count
                 this.rating = Math.min(Math.floor(this.novel.view_count / 200 * 10) / 10, 5); // 将计算结果保留一位小数，并限制最大为 5
+                this.novelLoading = false;
             } catch (error) {
                 console.error('Error fetching novel data:', error);
             }
         },
 
         async getComment() {
+            this.commentLoading = true;
             console.log('Fetching novel comments...');
             const formData = new FormData();
             console.log(formData);
@@ -160,6 +165,7 @@ export default {
                 console.log('comments', response2.data);
                 this.comments = response2.data.comments;
                 // 这里可以添加上传成功后的逻辑
+                this.commentLoading = false;
             } catch (error) {
                 console.error('文件上传失败', error);
             }

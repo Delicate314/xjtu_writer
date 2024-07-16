@@ -1,5 +1,5 @@
 <template>
-    <div class="novels">
+    <div class="novels" v-loading="loading">
         <h2>我的小说</h2>
         <div v-if="novel_count === 0" class="no-novels-message">
             你还没有小说哦，去搜索页面上传或者写小说页面创作后发布吧ヽ(・∀・)ﾉ！！！
@@ -51,6 +51,7 @@ export default {
             user_id: null,
             novels: [],
             novel_count: null,
+            loading: true,
         };
     },
     mounted() {
@@ -59,6 +60,7 @@ export default {
     methods: {
         async fetchUserInfo() {
             try {
+                this.loading = true;
                 const { data } = await this.$axios.post("http://121.36.55.149:80/apis/user/ownInfo");
                 this.novel_count = data.count;
                 this.novels = data.novel.map(novel => ({
@@ -66,6 +68,7 @@ export default {
                     rating: Math.min(Math.floor(novel.novel_viewcount / 200 * 10) / 10, 5)
                 }));
                 this.user_id = data.user_info.user_id;
+                this.loading = false;
             } catch (error) {
                 console.error('An error occurred while fetching user information:', error);
             }
@@ -76,6 +79,7 @@ export default {
         },
         async deleteNovel(novel_id, novel_title) {
             try {
+                this.loading = true;
                 let response = await this.$axios.delete(`http://121.36.55.149:80/apis/user/deleteNovel?novel_id=${novel_id}&novel_title=${novel_title}`);
                 alert("小说删除成功！");
                 console.log("返回信息：", response);
