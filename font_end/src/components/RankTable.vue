@@ -81,13 +81,15 @@ export default {
 
 <style scoped>
 .rank-container {
-  width: 600px;
+  width: 80%;
   height: 600px;
-  margin: 30px auto;
+  margin: 20px auto;
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  /* Ensure padding and border are included in the element's total width and height */
 }
 
 .title {

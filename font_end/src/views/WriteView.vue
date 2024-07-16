@@ -184,7 +184,7 @@ textarea {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   font-size: 16px;
   resize: none;
-  margin: 20px;
+  margin: 20px auto;
   background-color: rgba(255, 255, 255, 0.9);
 }
 

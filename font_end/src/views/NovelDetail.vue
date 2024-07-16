@@ -287,7 +287,7 @@ body {
 .footer_answer,
 .comments-section textarea {
     width: 99%;
-    margin: 10px 0;
+    margin: 10px auto;
     padding: 10px;
     border-radius: 8px;
     border: 1px solid #ccc;
@@ -452,5 +452,19 @@ body {
     align-items: center;
     justify-content: center;
     gap: 10px;
+}
+
+/* Add media query for smaller screens */
+@media (max-width: 768px) {
+
+    .main,
+    .footer_ask,
+    .footer_answer,
+    .comments-section textarea {
+        margin-left: 10px;
+        /* Adjust the left margin as per your design */
+        margin-right: 20px;
+        /* Adjust the right margin as per your design */
+    }
 }
 </style>
