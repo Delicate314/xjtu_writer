@@ -46,7 +46,7 @@ export default {
   },
   methods: {
     async getRank() {
-      console.log('Fetching novel rank...');
+      // console.log('Fetching novel rank...');
       try {
         const params = {
           index: this.currentPage,
@@ -54,7 +54,7 @@ export default {
         };
         const response = await this.$axios.post('http://121.36.55.149:80/apis/rank', params);
         this.novels = response.data;
-        console.log('Novels:', this.novels);
+        // console.log('Novels:', this.novels);
       } catch (error) {
         console.error('Error fetching novel rank:', error);
       }

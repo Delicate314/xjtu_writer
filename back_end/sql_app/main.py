@@ -225,10 +225,14 @@ async def rank(input: rank_input, user: str = Depends(get_current_user)):
     """
     offset = (index - 1) * 10
     cursor.execute(select_rank_sql, (offset,))
-    result = cursor.fetchall()
+    results = cursor.fetchall()
     cursor.close()
     db.close()
-    return result
+    response = []
+    for result in results:
+        if result['novel_count'] != 0:
+            response.append(result)
+    return response
 
 @app.post("/apis/rank3", tags=["获取作者作品数排行榜"], summary="获取排行榜，输入参数index", description="index为1表示排行1-10，为2表示排行11-20，以此类推")
 async def rank(input: rank_input, user: str = Depends(get_current_user)):
@@ -249,10 +253,14 @@ async def rank(input: rank_input, user: str = Depends(get_current_user)):
     """
     offset = (index - 1) * 10
     cursor.execute(select_rank_sql, (offset,))
-    result = cursor.fetchall()
+    results = cursor.fetchall()
     cursor.close()
     db.close()
-    return result
+    response = []
+    for result in results:
+        if result['novel_count'] != 0:
+            response.append(result)
+    return response
 
 
 @app.post("/apis/user/ownInfo", tags=["获取个人信息"], summary="获取个人信息和所有小说", description="获取个人信息和所有小说")

@@ -70,7 +70,7 @@ export default {
 
             console.log("response: ", response.data);
             window.sessionStorage.setItem('token', response.data.access_token);
-            window.sessionStorage.setItem('passport',this.$message.success)
+            window.sessionStorage.setItem('passport', this.$message.success)
             const token = `Bearer ${response.data.access_token}`;
             window.sessionStorage.setItem('token', token);
             if (response.data.is_admin == 1) {
