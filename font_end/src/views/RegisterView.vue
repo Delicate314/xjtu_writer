@@ -1,5 +1,9 @@
 <template>
   <div class="register-container">
+    <StarryBackground />
+    <div class="header-title">
+      <h1 class="main-title">XJTU AI-Writer</h1>
+    </div>
     <el-card class="register-card" shadow="hover">
       <div class="title-container">
         <h2 class="register-title">用户注册</h2>
@@ -28,9 +32,13 @@
 <script>
 import axios from 'axios';
 import { MessageBox } from 'element-ui';
+import StarryBackground from '@/components/StarryBackground.vue';
 
 export default {
   name: 'RegisterView',
+  components: {
+    StarryBackground,
+  },
   data() {
     return {
       form: {
@@ -112,13 +120,28 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.header-title {
+  position: absolute;
+  top: 5%;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+}
+
+.main-title {
+  font-size: 48px;
+  background: -webkit-linear-gradient(135deg, #3f87a6, #ebf8e1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
 .register-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(135deg, #2c3e50, #3498db);
   position: relative;
   overflow: hidden;
 }

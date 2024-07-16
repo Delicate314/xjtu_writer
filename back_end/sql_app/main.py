@@ -10,7 +10,7 @@ import re
 
 from .search_novel import *
 from .log_set import logger
-
+from jwt import InvalidTokenError
 
 class Write_request(BaseModel):
     contents: str
@@ -18,7 +18,11 @@ class Answer_request(BaseModel):
     question: str
     context: str
 
-
+class Comment_upload(BaseModel):
+    comment_content: str
+    novel_id: int
+class Cooment_get(BaseModel):
+    novel_id: int
 
 SECRET_KEY = "09d25e094faa6ca2556c818166b7a9563b93f7099f6f0f4caa6cf63b88e8d3e7"     #密钥
 ALGORITHM = "HS256"
@@ -131,6 +135,40 @@ async def get_current_user_id(token: str = Depends(oauth2_scheme)):
     return user_id
 
 
+async def get_current_user_isadmin(token: str = Depends(oauth2_scheme)):    
+    credentials_exception = HTTPException(
+        status_code=status.HTTP_401_UNAUTHORIZED,
+        detail="Could not validate credentials",
+        headers={"WWW-Authenticate": "Bearer"},
+    )
+    try:
+        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        username: str = payload.get("sub")
+        if username is None:
+            raise credentials_exception
+    except InvalidTokenError:
+        raise credentials_exception
+    
+    db = get_db()
+    
+    cursor = db.cursor()
+    sql_select = "SELECT * FROM user_info WHERE user_name = %s;"
+    value = (username,)
+    cursor.execute(sql_select, value)
+    
+    user_info = cursor.fetchone()  # 获取查询结果
+    
+    cursor.close()  # 关闭游标
+    db.close()  # 关闭数据库连接
+    
+    if user_info is None:
+        raise credentials_exception
+    
+    # 假设你想获取 user_info 中的某个字段，比如 user_id
+    user_isadmin = str(user_info[3])  # 使用列名访问字段
+    
+    return user_isadmin
+
 @app.post("/apis/register",tags=["用户注册"],summary="用户注册")
 async def register(user_register: models.UserRegister):
     message = login_and_rigister.register(user_register)
@@ -153,6 +191,37 @@ async def upload_file(
 ):
     return await novel_option.upload_file(file, novel_title, user_id)
 
+@app.post(path="/apis/comment/uploadcomment", tags=["评论"], summary="把用户的评论上传到服务器", description="把用户的评论上传到服务器")
+async def upload_comment(
+    comment_content: str = Form(...),
+    user_name: str = Depends(get_current_user),
+    novel_id: int = Form(...),
+):
+    return await novel_option.upload_comment(comment_content, user_name, novel_id)
+
+@app.post("/apis/comment/getcomments", tags=["评论"], summary="获取小说的评论信息", description="获取小说的评论信息")
+async def get_novel_comment(novel_id : int= Form(...)):
+    try:
+        rows = db_method.get_novel_comment(novel_id)
+        data = []
+        for row in rows:
+            row_data = {
+                'comment_id': row[0],
+                'comment_content': row[1],
+                'username': row[2],
+                'novel_id': row[3],
+                'UpdatedAt': row[4],
+            }
+            data.append(row_data)
+
+        return {"comments": data}
+
+    except Exception as e:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"An error occurred while fetching novel information: {str(e)}"
+        )
+        
 @app.post(path="/apis/downloadfile", tags=["下载文件"], summary="下载小说文件")
 async def download_file(input: novel_option.Novel, user:str=Depends(get_current_user)):
     return await novel_option.download_file(input)
@@ -298,7 +367,11 @@ async def getOwnInfo(user_id : str=Depends(get_current_user_id)):
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail=f"An error occurred while fetching novel information: {str(e)}"
         )
-
+        
+@app.post("/apis/user/is_admin", tags=["获取个人信息"], summary="获取个人是否是管理员", description="获取个人是否是管理员")
+async def getOwnInfo(user_isadmin : int=Depends(get_current_user_isadmin)):
+    return {"user_isadmin": f'{user_isadmin}'}
+    
 @app.delete("/apis/user/deleteNovel", tags=["删除个人小说"])
 async def deleteOwnNovel(novel_id: int, novel_title: str, user_id : str = Depends(get_current_user_id)):
     (s, msg) = novel_option.delete_novel(novel_id, novel_title)
@@ -372,7 +445,7 @@ def is_valid_password(password: str) -> bool:
           description='需要旧密码和新密码，仅能修改超级用户的密码')
 async def admin_change_password(user_password: str, user_newpassword: str):
     # 调用数据库方法获取管理员信息
-    Admin = db_method.get_user_info(0, 'admin')
+    Admin = db_method.get_user_info(49)
     if not Admin:
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,

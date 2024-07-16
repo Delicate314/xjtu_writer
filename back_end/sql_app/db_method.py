@@ -226,3 +226,13 @@ def get_user_novel(user_id:int):
     cursor.close()
     db.close()
     return novels
+
+def get_novel_comment(novel_id:int):
+    db = get_db()
+    cursor = get_cursor(db)
+    query = "SELECT * FROM comment WHERE novel_id = %s"
+    cursor.execute(query, (novel_id,))
+    comments = cursor.fetchall()
+    cursor.close()
+    db.close()
+    return comments

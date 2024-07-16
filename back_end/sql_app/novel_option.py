@@ -43,7 +43,29 @@ def insert_novel_to_sql(user_id, novel_title, novel_path, novel_description = No
         cursor.close()
         db.close()
         return novel_id
-    
+
+def insert_comment_to_sql(comment_content,user_name,novel_id):
+    sql = """
+    INSERT INTO comment (comment_content,user_name,novel_id)
+    VALUES (%s, %s, %s);
+    """
+    db = get_db()
+    comment_id = None
+    try:
+        cursor = db.cursor()
+        values = (comment_content, user_name, novel_id)
+        cursor.execute(sql, values)
+        db.commit()
+        comment_id = cursor.lastrowid
+    except pymysql.Error as err:
+        raise HTTPException(status_code=400, detail=f"Insert failed, the novel id is none {err}")
+        db.rollback()
+        return None
+    finally:
+        cursor.close()
+        db.close()
+        return comment_id
+
 DIR = "/home/xjtu_writer/xjtu_writer/novel"
 
 async def upload_file(
@@ -76,6 +98,18 @@ async def upload_file(
         shutil.copyfileobj(file.file, f)
     
     return {"file_path": file_path, "novel_id": novel_id}
+
+async def upload_comment(
+    comment_content: str = Form(...),
+    user_name: str = Form(...),
+    novel_id: str = Form(...),
+):
+    # 将评论插入数据库，并获取评论id
+    comment_id = insert_comment_to_sql(comment_content=comment_content, user_name=user_name, novel_id=novel_id)
+    if comment_id is None:
+        raise HTTPException(status_code=400, detail="Insert failed, the comment id is none111")
+    return {"status": 1, "comment_id": comment_id}
+
 
 async def import_file(
     file: UploadFile = File(...),

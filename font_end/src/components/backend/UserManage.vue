@@ -78,7 +78,6 @@ export default {
 }
 
 .table-container {
-  display: flex;
   justify-content: center;
   /* 水平居中 */
   height: 100%;

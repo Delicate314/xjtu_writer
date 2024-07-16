@@ -20,6 +20,7 @@ const router = new Router({
                 name: '首页',
                 isShow: true,
                 requiresAuth: true, // 添加需要认证的标记
+                background: 'writing-background.jpg',
             },
         },
         {
@@ -103,21 +104,21 @@ const router = new Router({
 });
 
 router.beforeEach((to, from, next) => {
-    
+
     const isAuthenticated = window.sessionStorage.getItem('passport'); // 检查用户是否已登录
-    
+
     if (to.matched.some(record => record.meta.requiresAuth)) {
         // 如果目标路由需要认证并且用户没有登录
         if (!isAuthenticated) {
             next({
-                path: '/',  replace: true ,
-                 
+                path: '/', replace: true,
+
             });
         } else {
-            next(); 
+            next();
         }
     } else {
-        next(); 
+        next();
     }
 });
 
