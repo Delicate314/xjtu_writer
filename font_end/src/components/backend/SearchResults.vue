@@ -1,7 +1,7 @@
 <template>
   <div>
     <my-dialog :visible.sync="dialogVisible" :detailData="selectedDetail"></my-dialog>
-    <el-table :data="tableData" style="width: 160vh" max-height="640px"
+    <el-table :data="tableData" style="width: 100%" max-height="640px"
       :default-sort="{ prop: 'user_id', order: 'ascending' }" @sort-change="handleSortChange">
       <el-table-column fixed sortable prop="user_id" label="用户id" width="200"></el-table-column>
       <el-table-column sortable prop="user_name" label="用户名" width="200"></el-table-column>

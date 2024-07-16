@@ -1,6 +1,6 @@
 <template>
   <div class="home-container">
-    <StarryBackground />
+    <Background />
     <Guide />
     <UserInfo />
     <!-- <UserNovel /> -->
@@ -10,16 +10,16 @@
 <script>
 import StarryBackground from '../components/StarryBackground.vue';
 import Guide from '../components/Guide.vue';
-
+import Background from '@/components/Background.vue';
 import UserInfo from '@/components/UserInfo.vue';
 import UserNovel from '@/components/UserNovel.vue';
 
 export default {
   name: 'Home',
   components: {
-    StarryBackground,
     Guide,
     UserInfo,
+    Background
     //UserNovel,
   },
 };

@@ -19,7 +19,10 @@
             </router-link>
           </td>
           <td>{{ item.user_name }}</td>
-          <td>{{ item.novel_viewcount }}</td>
+          <td>
+            <el-rate v-model="item.rating" disabled show-score text-color="#ff9900" :score-template="`{value}`">
+            </el-rate>
+          </td>
         </tr>
       </tbody>
     </table>
@@ -31,7 +34,7 @@
   </div>
 </template>
 
-<script scoped>
+<script>
 export default {
   name: 'RankTable',
   data() {
@@ -50,10 +53,13 @@ export default {
       try {
         const params = {
           index: this.currentPage,
-          itemsPerPage: this.itemsPerPage
+          itemsPerPage: this.itemsPerPage,
         };
         const response = await this.$axios.post('http://121.36.55.149:80/apis/rank', params);
-        this.novels = response.data;
+        this.novels = response.data.map((novel) => ({
+          ...novel,
+          rating: Math.min(Math.floor(novel.novel_viewcount / 200 * 10) / 10, 5), // 将计算结果保留一位小数，并限制最大为 5
+        }));
         console.log('Novels:', this.novels);
       } catch (error) {
         console.error('Error fetching novel rank:', error);
@@ -68,8 +74,8 @@ export default {
     nextPage() {
       this.currentPage++;
       this.getRank();
-    }
-  }
+    },
+  },
 };
 </script>
 

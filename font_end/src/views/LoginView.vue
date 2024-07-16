@@ -1,5 +1,6 @@
 <template>
   <div class="login-background">
+    <StarryBackground />
     <div class="header-title">
       <h1 class="main-title">XJTU AI-Writer</h1>
     </div>
@@ -34,9 +35,14 @@
 <script>
 import axios from 'axios';
 import { MessageBox } from 'element-ui';
+import StarryBackground from '@/components/StarryBackground.vue';
 
 export default {
   name: 'LoginView',
+  components: {
+    StarryBackground,
+  },
+
   data() {
     return {
       form: {
@@ -106,11 +112,9 @@ export default {
 <style scoped>
 .login-background {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   height: 100vh;
-  background: linear-gradient(135deg, #2c3e50, #3498db);
   position: relative;
   overflow: hidden;
 }

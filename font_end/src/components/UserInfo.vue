@@ -6,8 +6,8 @@
         <div class="user-info" :class="{ 'info-visible': userInfoVisible, 'info-hidden': !userInfoVisible }">
           <div class="info">
             <p><strong>用户名：</strong>{{ user_name }}</p>
-            <p><strong>密码：</strong><span v-if="showPassword">{{ user_password }}</span><span v-else>******</span></p>
-            <button @click="togglePasswordVisibility" class="button">{{ showPassword ? '隐藏密码' : '显示密码' }}</button>
+            <!-- <p><strong>密码：</strong><span v-if="showPassword">{{ user_password }}</span><span v-else>******</span></p>
+            <button @click="togglePasswordVisibility" class="button">{{ showPassword ? '隐藏密码' : '显示密码' }}</button> -->
           </div>
         </div>
       </div>
@@ -63,7 +63,7 @@ export default {
   /* 调整按钮高度 */
   width: 25px;
   /* 调整按钮宽度 */
-  margin: 10px;
+  margin: 0px 10px;
   padding: 5px 5px;
   font-size: 14px;
   color: #fff;
@@ -78,7 +78,9 @@ export default {
 }
 
 .user-profile {
-  margin-top: 20px;
+  margin:65px auto;
+  width: 70%;
+  height: 500px;
   padding: 10px;
   background-color: #f5f5f5;
   border-radius: 10px;
@@ -86,7 +88,7 @@ export default {
 }
 
 .container {
-  height: 600px;
+  height: 500px;
   display: flex;
   justify-content: space-between;
   align-items: center;

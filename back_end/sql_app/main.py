@@ -10,7 +10,7 @@ import re
 
 from .search_novel import *
 from .log_set import logger
-
+from jwt import InvalidTokenError
 
 class Write_request(BaseModel):
     contents: str
@@ -18,7 +18,11 @@ class Answer_request(BaseModel):
     question: str
     context: str
 
-
+class Comment_upload(BaseModel):
+    comment_content: str
+    novel_id: int
+class Cooment_get(BaseModel):
+    novel_id: int
 
 SECRET_KEY = "09d25e094faa6ca2556c818166b7a9563b93f7099f6f0f4caa6cf63b88e8d3e7"     #密钥
 ALGORITHM = "HS256"
@@ -187,6 +191,37 @@ async def upload_file(
 ):
     return await novel_option.upload_file(file, novel_title, user_id)
 
+@app.post(path="/apis/comment/uploadcomment", tags=["评论"], summary="把用户的评论上传到服务器", description="把用户的评论上传到服务器")
+async def upload_comment(
+    comment_content: str = Form(...),
+    user_name: str = Depends(get_current_user),
+    novel_id: int = Form(...),
+):
+    return await novel_option.upload_comment(comment_content, user_name, novel_id)
+
+@app.post("/apis/comment/getcomments", tags=["评论"], summary="获取小说的评论信息", description="获取小说的评论信息")
+async def get_novel_comment(novel_id : int= Form(...)):
+    try:
+        rows = db_method.get_novel_comment(novel_id)
+        data = []
+        for row in rows:
+            row_data = {
+                'comment_id': row[0],
+                'comment_content': row[1],
+                'username': row[2],
+                'novel_id': row[3],
+                'UpdatedAt': row[4],
+            }
+            data.append(row_data)
+
+        return {"comments": data}
+
+    except Exception as e:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"An error occurred while fetching novel information: {str(e)}"
+        )
+        
 @app.post(path="/apis/downloadfile", tags=["下载文件"], summary="下载小说文件")
 async def download_file(input: novel_option.Novel, user:str=Depends(get_current_user)):
     return await novel_option.download_file(input)
@@ -402,7 +437,7 @@ def is_valid_password(password: str) -> bool:
           description='需要旧密码和新密码，仅能修改超级用户的密码')
 async def admin_change_password(user_password: str, user_newpassword: str):
     # 调用数据库方法获取管理员信息
-    Admin = db_method.get_user_info(4)
+    Admin = db_method.get_user_info(49)
     if not Admin:
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,

@@ -1,30 +1,31 @@
 <template>
-    <div class="position">
-      <router-link  :key="index" :to="item.path" v-for="(item,index) in $router.options.routes"   >
+  <div class="position">
+    <router-link :key="index" :to="item.path" v-for="(item, index) in $router.options.routes">
       <span class="link" v-if="item.meta.isShow">{{ item.meta.name }}</span>
     </router-link>
-    </div>
+  </div>
 </template>
 
 <script>
 export default {
-    name: 'Guide_nevel',
+  name: 'Guide_nevel',
 };
 
 </script>
 
 <style scoped>
-.position{
+.position {
   margin-top: 20px;
 }
 
 .link {
   font-size: 20px;
   text-decoration: none;
-  color: #fff;
+  font-weight: bold;
+  color: #14668193;
   margin: 0 35px;
   padding: 5px 20px;
-  border: 3px solid #fff;
+  border: 3px solid #14668193;
   border-radius: 15px;
   display: inline-block;
   transition: all 0.3s ease;
@@ -42,22 +43,22 @@ export default {
 
 @keyframes jelly {
 
-0%,
-100% {
-  transform: scale(1, 1);
-}
+  0%,
+  100% {
+    transform: scale(1, 1);
+  }
 
-25% {
-  transform: scale(0.9, 1.1);
-}
+  25% {
+    transform: scale(0.9, 1.1);
+  }
 
-50% {
-  transform: scale(1.1, 0.9);
-}
+  50% {
+    transform: scale(1.1, 0.9);
+  }
 
-75% {
-  transform: scale(0.95, 1.05);
-}
+  75% {
+    transform: scale(0.95, 1.05);
+  }
 
 }
 </style>

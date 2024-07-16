@@ -13,7 +13,7 @@
       <button @click="import_novel">导入本地文章</button>
       <input type="file" ref="fileInput" @change="handleFileChange" style="display: none;">
       <p v-if="write_isLoading" class="loading-text">
-        请耐心等待... >.< <span class="loading-spinner"></span>
+        AI努力创作中,请耐心等待... >.< <span class="loading-spinner"></span>
       </p>
     </div>
     <div>
@@ -60,7 +60,7 @@ export default {
   methods: {
     async write() {
       if (this.content.trim() === '') {
-        alert('输入不能为空');
+        this.$message.error('输入不能为空');
         return;
       }
       console.log('提交', this.content);
@@ -179,7 +179,7 @@ textarea {
   height: 150px;
   padding: 10px;
   margin-top: 10px;
-  border: 2px solid #007bff;
+  border: 2px solid #14668193;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   font-size: 16px;
@@ -197,7 +197,7 @@ textarea.question-box {
   width: 1200px;
   height: 20px;
   padding: 10px;
-  border: 2px solid #007bff;
+  border: 2px solid #14668193;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   font-size: 20px;

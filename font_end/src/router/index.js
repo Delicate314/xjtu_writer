@@ -20,6 +20,7 @@ const router = new Router({
                 name: '首页',
                 isShow: true,
                 requiresAuth: true, // 添加需要认证的标记
+                background: 'writing-background.jpg',
             },
         },
         {

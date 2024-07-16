@@ -1,6 +1,7 @@
 <template>
   <div>
-    <StarryBackground />
+    <Background />
+
     <Guide />
     <RankTable />
   </div>
@@ -10,6 +11,7 @@
 import StarryBackground from '@/components/StarryBackground.vue';
 import Guide from '@/components/Guide.vue';
 import RankTable from '@/components/RankTable.vue';
+import Background from '@/components/Background.vue';
 
 export default {
   name: 'RankView',
@@ -17,6 +19,7 @@ export default {
     StarryBackground,
     Guide,
     RankTable,
+    Background,
   },
   mounted() {
     this.checkOrientation();

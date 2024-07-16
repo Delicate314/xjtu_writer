@@ -1,6 +1,6 @@
 <template>
   <div class="position">
-    <h1 class="gradient-text">Welcome to XJTU AI-Writer! :)</h1>
+    <h1 class="gradient-text">Welcome to XJTU AI-Writer! (｡◕ ∀ ◕｡)</h1>
     <router-link :key="index" :to="item.path" v-for="(item, index) in $router.options.routes">
       <span class="link" v-if="item.meta.isShow">{{ item.meta.name }}</span>
     </router-link>
@@ -19,12 +19,12 @@ export default {
   font-size: 20px;
   font-weight: bold;
   text-decoration: none;
-  color: #fff;
+  color: #14668193;
   box-shadow: 0 4px 8px rgba(6, 0, 125, 0.1);
   margin: 0 35px;
   padding: 5px 20px;
   border-radius: 15px;
-  border: 3px solid #eeeeee;
+  border: 3px solid #14668193;
   display: inline-block;
   transition: all 0.3s ease;
   position: relative;
