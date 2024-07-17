@@ -125,24 +125,8 @@ export default {
   /* 底边距 */
 }
 
-.result-box {
-  width: 100%;
-  /* 宽度占满父容器 */
-  max-height: 300px;
-  /* 最大高度 */
-  overflow-y: auto;
-  /* 垂直滚动 */
-  background-color: rgba(255, 255, 255, 0.8);
-  /* 背景颜色及透明度 */
-  border-radius: 10px;
-  /* 圆角 */
-  padding: 10px;
-  /* 内边距 */
-}
 
 .result-list table {
-  width: 100%;
-  /* 表格宽度占满父容器 */
   border-collapse: collapse;
   /* 边框合并 */
 }
@@ -240,6 +224,8 @@ h2.link1 {
 }
 
 .result-box {
+  overflow: auto;
+  max-height: 300px;
   background-color: rgba(255, 255, 255, 0.8);
   /* 设置背景颜色并添加透明度 */
   border-radius: 10px;
@@ -250,7 +236,7 @@ h2.link1 {
   /* 设置上边距 */
   text-align: left;
   /* 左对齐 */
-  width: 300px;
+  width: 400px;
   /* 设置较小的宽度 */
   margin: 0 auto;
   /* 使元素水平居中 */
@@ -282,6 +268,11 @@ h2.link1 {
   /* 调整字体大小 */
   color: #333;
   /* 设置字体颜色 */
+}
+
+.item-link {
+  color: #3498db;
+  text-decoration: none;
 }
 
 @media (max-width: 768px) {

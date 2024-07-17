@@ -20,7 +20,7 @@
                     <label for="pageSize">每页显示:</label>
                     <input type="number" v-model.number="pageSize" @change="updatePageSize" min="1" id="pageSize" />
                     <button @click="toggleAISection" class="toggle-button">
-                        {{ showAISection ? '隐藏提问框' : '显示提问框' }}
+                        {{ showAISection ? '隐藏提问和评论框' : '显示提问和评论框' }}
                     </button>
                 </div>
             </div>
