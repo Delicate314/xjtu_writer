@@ -129,7 +129,7 @@ export default {
           console.error("Response Status:", error.response.status);
           console.error("Response Headers:", error.response.headers);
         }
-        alert("网络出错，请稍后再试。");
+        this.$message.error("网络出错，请稍后再试。");
       }
     },
     showUploadDialog() {
@@ -300,7 +300,7 @@ button:hover {
 }
 
 .make-title {
-  width: 50%;
+  width: 80%;
   margin: 0 auto;
   /* 设置左右外边距为auto，将元素居中 */
 }

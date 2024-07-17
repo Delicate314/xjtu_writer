@@ -6,7 +6,7 @@
       <i class="el-icon-upload"></i>
       <div class="el-upload__text">将文件拖到此处，或<em>点击上传</em></div>
     </el-upload>
-    <el-dialog :visible.sync="dialogVisible" title="请输入小说标题" width="30%">
+    <el-dialog :visible.sync="dialogVisible" title="请输入小说标题" class="input_title">
       <el-input v-model="novelTitle" placeholder="请输入小说标题" />
       <span slot="footer" class="dialog-footer">
         <el-button @click="dialogVisible = false">取 消</el-button>
@@ -124,6 +124,11 @@ h2.link1 {
   margin: 0 auto;
 }
 
+.input_title {
+  margin: 0px auto;
+  width: 80%;
+}
+
 @media (max-width: 768px) {
   .upload-component {
     width: 90%;
@@ -134,6 +139,10 @@ h2.link1 {
   .el-upload__text {
     width: 100%;
     /* Full width for text in mobile */
+  }
+
+  .input_title {
+    width: 80%;
   }
 }
 </style>

@@ -124,6 +124,7 @@ export default {
       this.loading = false; // 设置 loading 为 false
     },
     async fetchNovels(search_target) {
+      this.loading = true; // 设置 loading 为 true
       const { prop, order } = this.defaultSort;
       const offset = (this.currentPage - 1) * this.pageSize;
       const row_count = this.pageSize;
@@ -162,6 +163,7 @@ export default {
           duration: 3000
         });
       }
+      this.loading = false; // 设置 loading 为 false
     },
     async deletenovel({ uid, uname }) {
       try {
