@@ -10590,3 +10590,11 @@ INFO:     127.0.0.1:60250 - "POST /apis/user/ownInfo HTTP/1.0" 200 OK
 2024-07-17 10:15:48,218 - main.py - getOwnInfo - line:356 - DEBUG - ((21, 'hou', 'hou', 0),)
 2024-07-17 10:15:48,220 - main.py - log_requests - line:57 - INFO - rid=52P08B completed_in=664.99ms status_code=200
 INFO:     127.0.0.1:60254 - "POST /apis/user/ownInfo HTTP/1.0" 200 OK
+WARNING:  WatchFiles detected changes in 'sql_app/models.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [30969]
+INFO:     Started server process [6667]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
