@@ -10,11 +10,12 @@ class UserRegister(BaseModel):  # 继承BaseModel类，方便正则表达式检�
 
     @field_validator("user_name")  # 检查用户名
     def user_name_must(cls, value):
-        r = '^[a-zA-Z\d]{1,20}$'
-        result = re.match(r, value)
-        if result is None:
-            raise ValueError('要求为1-20位字母、数字的组合！')
-        return value
+        if len(value)<=20:
+            return value
+        else :
+            raise HTTPException(status_code=200,detail="最长为20个汉字或字符！")
+
+
 
     @field_validator("user_pwd")  # 检查密码
     def user_pwd_must(cls, value):
