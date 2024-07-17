@@ -82,7 +82,7 @@ export default {
             try {
                 this.loading = true;
                 let response = await this.$axios.delete(`http://121.36.55.149:80/apis/user/deleteNovel?novel_id=${novel_id}&novel_title=${novel_title}`);
-                this.$message.success('文件上传成功');
+                this.$message.success('删除小说成功');
                 console.log("返回信息：", response);
                 this.fetchUserInfo();
             } catch (error) {
