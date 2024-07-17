@@ -45,6 +45,7 @@
 </template>
 
 <script>
+import { MessageBox } from 'element-ui';
 export default {
     data() {
         return {
@@ -81,12 +82,15 @@ export default {
             try {
                 this.loading = true;
                 let response = await this.$axios.delete(`http://121.36.55.149:80/apis/user/deleteNovel?novel_id=${novel_id}&novel_title=${novel_title}`);
-                alert("小说删除成功！");
+                this.$message.success('文件上传成功');
                 console.log("返回信息：", response);
                 this.fetchUserInfo();
             } catch (error) {
                 console.error('删除小说时出错:', error);
-                alert("删除小说时出错，请稍后再试。");
+                MessageBox.alert(`删除小说时出错，请稍后再试>.<`, '错误', {
+                    confirmButtonText: '确定',
+                    type: 'error',
+                });
             }
         },
     },

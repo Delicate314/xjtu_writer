@@ -7,9 +7,8 @@
     <textarea class="input-box" placeholder="演绎你的故事(๑•́ ₃ •̀๑)ｴｰ,如:小明今天去扔垃圾,结果摔在了水坑里/一个勇者斗恶龙的故事"
       v-model="content"></textarea>
     <div>
-      <button @click="clear">清空</button>
-      <button @click="write">创作</button>
-      <button @click="upload">发布到社区</button>
+      <button @click="clear">清空输入</button>
+      <button @click="write">AI创作</button>
       <button @click="import_novel">导入本地文章</button>
       <input type="file" ref="fileInput" @change="handleFileChange" style="display: none;">
       <p v-if="write_isLoading" class="loading-text">
@@ -22,6 +21,8 @@
     <div>
       <textarea class="question-box" placeholder="针对上面的文章，输入你的问题~" v-model="question"></textarea>
       <div>
+        <button @click="mergeInputToGenerated">合并续写文章</button>
+        <button @click="showUploadDialog">发布到社区</button>
         <button @click="answer">提问</button>
         <button @click="transit">将生成文本转至输入</button>
         <p v-if="answer_isLoading" class="loading-text">
@@ -32,6 +33,15 @@
     <div>
       <textarea class="output-box" v-model="answerContent" readonly placeholder="生成的回答将在此显示(o´∀`o)"></textarea>
     </div>
+
+    <!-- Element UI Dialog for Title Input -->
+    <el-dialog title="给文章起一个标题吧٩(๑`^´๑)۶" :visible.sync="dialogVisible" width="30%" @close="handleClose">
+      <el-input v-model="novel_title" placeholder="请输入标题"></el-input>
+      <span slot="footer" class="dialog-footer">
+        <el-button @click="dialogVisible = false">取消</el-button>
+        <el-button type="primary" @click="upload">确认</el-button>
+      </span>
+    </el-dialog>
   </div>
 </template>
 
@@ -55,6 +65,7 @@ export default {
       write_isLoading: false,
       answer_isLoading: false,
       novel_title: '',
+      dialogVisible: false,
     };
   },
   methods: {
@@ -113,17 +124,17 @@ export default {
         alert("网络出错，请稍后再试。");
       }
     },
+    showUploadDialog() {
+      this.dialogVisible = true;
+    },
+    handleClose() {
+      this.dialogVisible = false;
+      this.novel_title = '';
+    },
     async upload() {
-      try {
-        this.novel_title = prompt("给文章起一个标题吧٩(๑`^´๑)۶：");
-        if (this.novel_title == '') {
-          console.error('未输入小说标题');
-          return;
-        }
-        console.log(this.novel_title);
-      }
-      catch (error) {
-        console.error('标题输入失败');
+      if (!this.novel_title.trim()) {
+        this.$message.error('标题不能为空');
+        return;
       }
       console.log('发布');
       const formData = new FormData();
@@ -135,16 +146,15 @@ export default {
             'Content-Type': 'multipart/form-data'
           }
         })
-        // 这里可以添加上传成功后的逻辑*
+        // 这里可以添加上传成功后的逻辑
         this.$message.success('发布成功');
+        this.dialogVisible = false;
       }
       catch (error) {
         console.error('发布失败', error);
-        console.log('response')
         alert('发布失败，请重试');
       }
     },
-
     transit() {
       this.content = this.generatedContent;
       this.generatedContent = '';
@@ -164,6 +174,13 @@ export default {
         };
         reader.readAsText(file);
       }
+    },
+    mergeInputToGenerated() {
+      if (this.content.trim() === '') {
+        return;
+      }
+      this.generatedContent = this.content + '\n\n' + this.generatedContent;
+      this.content = ''; // Clear input after merging
     }
   },
 };

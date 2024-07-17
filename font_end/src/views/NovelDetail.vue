@@ -86,7 +86,12 @@ export default {
     },
     computed: {
         formattedContent() {
-            return this.novel.content.replace(/<br\s*\/?>/gi, '\n');
+            if (this.novel.content) {
+                return this.novel.content.replace(/<br\s*\/?>/gi, '\n');
+            }
+            else {
+                return this.novel.content;
+            }
         },
         formattedComments() {
             return this.comments.map(comment => {
@@ -193,11 +198,17 @@ export default {
         nextPage() {
             this.page++;
             this.getNovel();
+            this.$nextTick(() => {
+                this.$refs.novelTestarea.scrollTop = 0;
+            });
         },
         prevPage() {
             if (this.page > 1) {
                 this.page--;
                 this.getNovel();
+                this.$nextTick(() => {
+                    this.$refs.novelTestarea.scrollTop = 0;
+                });
             }
         },
         updatePageSize() {
@@ -292,6 +303,7 @@ body {
 .footer_ask,
 .footer_answer,
 .comments-section textarea {
+    font-size: 18px;
     width: 99%;
     margin: 10px auto;
     padding: 10px;
@@ -303,9 +315,12 @@ body {
 
 .footer_commit {
     display: block;
-    width: 100%;
+    width: 20%;
     padding: 10px;
     margin: 10px 0;
+    margin-left: auto;
+    margin-right: 0px;
+    /* 添加这行 */
     border: none;
     border-radius: 8px;
     background-color: #007bff;
@@ -409,6 +424,7 @@ body {
     padding: 10px 0;
     min-height: 40px;
     resize: vertical;
+    font-size: 18px;
 }
 
 
@@ -441,7 +457,7 @@ body {
 
 .comment-content {
     width: 100%;
-    min-height: 40px;
+    min-height: 100px;
     /* Adjust minimum height as needed */
     margin-top: 5px;
     /* Adjust margin top as needed */
