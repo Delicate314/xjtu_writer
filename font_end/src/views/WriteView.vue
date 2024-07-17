@@ -177,6 +177,11 @@ export default {
     },
     mergeInputToGenerated() {
       if (this.content.trim() === '') {
+        this.$message.error('输入文本框为空');
+        return;
+      }
+      else if (this.generatedContent === '') {
+        this.$message.error('生成文本框为空');
         return;
       }
       this.generatedContent = this.content + '\n\n' + this.generatedContent;

@@ -200,3 +200,275 @@
 2024-07-17 10:15:47,554 - main.py - log_requests - line:50 - INFO - rid=52P08B start request path=/apis/user/ownInfo
 2024-07-17 10:15:48,218 - main.py - getOwnInfo - line:356 - DEBUG - ((21, 'hou', 'hou', 0),)
 2024-07-17 10:15:48,220 - main.py - log_requests - line:57 - INFO - rid=52P08B completed_in=664.99ms status_code=200
+2024-07-17 10:19:04,802 - main.py - log_requests - line:50 - INFO - rid=5KETN8 start request path=/apis/login/
+2024-07-17 10:19:04,803 - main.py - log_requests - line:57 - INFO - rid=5KETN8 completed_in=0.79ms status_code=307
+2024-07-17 10:19:04,839 - main.py - log_requests - line:50 - INFO - rid=T4T38L start request path=/apis/login
+2024-07-17 10:19:04,840 - multipart.py - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-17 10:19:04,841 - multipart.py - callback - line:623 - DEBUG - Calling on_field_name with data[0:8]
+2024-07-17 10:19:04,841 - multipart.py - callback - line:623 - DEBUG - Calling on_field_data with data[9:54]
+2024-07-17 10:19:04,841 - multipart.py - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-17 10:19:04,841 - multipart.py - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-17 10:19:04,841 - multipart.py - callback - line:623 - DEBUG - Calling on_field_name with data[55:63]
+2024-07-17 10:19:04,841 - multipart.py - callback - line:623 - DEBUG - Calling on_field_data with data[64:76]
+2024-07-17 10:19:04,842 - multipart.py - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-17 10:19:04,842 - multipart.py - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-17 10:19:05,212 - main.py - log_requests - line:57 - INFO - rid=T4T38L completed_in=372.69ms status_code=200
+2024-07-17 10:19:05,314 - main.py - log_requests - line:50 - INFO - rid=NF86NG start request path=/apis/user/ownInfo
+2024-07-17 10:19:06,028 - main.py - getOwnInfo - line:356 - DEBUG - ((57, '李万中文版', '123456Lwyyds', 0),)
+2024-07-17 10:19:06,030 - main.py - log_requests - line:57 - INFO - rid=NF86NG completed_in=715.74ms status_code=200
+2024-07-17 10:19:06,030 - main.py - log_requests - line:50 - INFO - rid=ZHQOW1 start request path=/apis/user/ownInfo
+2024-07-17 10:19:06,726 - main.py - getOwnInfo - line:356 - DEBUG - ((57, '李万中文版', '123456Lwyyds', 0),)
+2024-07-17 10:19:06,727 - main.py - log_requests - line:57 - INFO - rid=ZHQOW1 completed_in=696.34ms status_code=200
+2024-07-17 10:19:15,617 - main.py - log_requests - line:50 - INFO - rid=7S94UE start request path=/apis/getNovel/
+2024-07-17 10:19:15,618 - main.py - log_requests - line:50 - INFO - rid=P6I1C8 start request path=/apis/comment/getcomments
+2024-07-17 10:19:15,620 - main.py - log_requests - line:57 - INFO - rid=7S94UE completed_in=1.91ms status_code=307
+2024-07-17 10:19:15,621 - multipart.py - callback - line:626 - DEBUG - Calling on_part_begin with no data
+2024-07-17 10:19:15,621 - multipart.py - callback - line:623 - DEBUG - Calling on_header_field with data[42:61]
+2024-07-17 10:19:15,621 - multipart.py - callback - line:623 - DEBUG - Calling on_header_value with data[63:89]
+2024-07-17 10:19:15,621 - multipart.py - callback - line:626 - DEBUG - Calling on_header_end with no data
+2024-07-17 10:19:15,622 - multipart.py - callback - line:626 - DEBUG - Calling on_headers_finished with no data
+2024-07-17 10:19:15,622 - multipart.py - callback - line:623 - DEBUG - Calling on_part_data with data[93:96]
+2024-07-17 10:19:15,622 - multipart.py - callback - line:626 - DEBUG - Calling on_part_end with no data
+2024-07-17 10:19:15,622 - multipart.py - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-17 10:19:15,866 - main.py - log_requests - line:57 - INFO - rid=P6I1C8 completed_in=247.66ms status_code=200
+2024-07-17 10:19:15,867 - main.py - log_requests - line:50 - INFO - rid=K0L4KB start request path=/apis/getNovel
+2024-07-17 10:19:16,647 - main.py - log_requests - line:57 - INFO - rid=K0L4KB completed_in=779.22ms status_code=200
+2024-07-17 10:19:33,814 - main.py - log_requests - line:50 - INFO - rid=0D72VW start request path=/apis/write_request
+2024-07-17 10:19:33,816 - http_request.py - _handle_request - line:285 - DEBUG - Request body: {'model': 'qwen-turbo', 'parameters': {'result_format': 'message'}, 'input': {'messages': [{'role': 'system', 'content': 'You are a professional novel writer.'}, {'role': 'user', 'content': '续写小说,字数越多越好:写一篇关于李万的自我介绍小说，浮夸一点'}]}}
+2024-07-17 10:19:33,818 - connectionpool.py - _new_conn - line:1051 - DEBUG - Starting new HTTPS connection (1): dashscope.aliyuncs.com:443
+2024-07-17 10:19:50,961 - connectionpool.py - _make_request - line:546 - DEBUG - https://dashscope.aliyuncs.com:443 "POST /api/v1/services/aigc/text-generation/generation HTTP/11" 200 None
+2024-07-17 10:19:50,962 - http_request.py - _handle_response - line:250 - DEBUG - Response: {'output': {'choices': [{'finish_reason': 'stop', 'message': {'role': 'assistant', 'content': '标题：《璀璨星辰下的李万：一段华丽的自我演绎》\n\n在繁华世界的边缘，有一位宛如星辰般璀璨的人物，他的名字，如同夜空中最亮的那颗星，照亮了所有人的目光——他，便是李万。李万，一个名字，一段传奇，一种生活艺术的极致诠释。\n\n李万，这个名字本身就是一部未完的小说，每一个音节都充满了韵律与力量。他的眼神，犹如深邃的宇宙，藏着无尽的故事和智慧。他的笑容，如同夏日阳光，瞬间驱散所有的阴霾，让人感到温暖与希望。他的身高，虽非巨人，却如同一座不可逾越的文化高峰，散发出独特的魅力。\n\n他的言谈举止，皆是精心设计的艺术表演。他的每一句话，都是经过精心打磨的诗句，富有哲理，让人沉醉。他的衣着，总是那么得体，仿佛每一件衣物都在诉说着他的品味和对生活的热爱。他的手腕上，那枚古董怀表，不只是时间的记录者，更是他生活哲学的象征。\n\n李万，是一位精通十八般武艺的多面手，他的笔下，流淌的是诗意的散文，他的画布上，跃动的是生动的色彩，他的音乐，更是触动人心的旋律。他的世界，是一个充满创新与灵感的实验室，每一次尝试，都是一次对未知的探索。\n\n他的成功并非偶然，而是源自他对生活的热爱和对梦想的执着追求。他的每一天，都像是一部精心编排的舞台剧，每一幕都充满了戏剧性和惊喜。他的故事，激励着无数人去追寻他们的梦想，去拥抱生活中的每一刻。\n\n然而，李万并非只活在舞台上，他的真实，如同他的名字一样，深沉而真实。他懂得生活中的点滴美好，他知道如何在平凡中找到非凡，如何在喧嚣中保持内心的宁静。他是那个在人群中，总能轻易吸引众人目光的李万，他的存在，就是一道光，照亮了我们每个人的生活。\n\n总的来说，李万，就是那颗独一无二的星辰，他的光芒，无论何时何地，都能穿透云层，照亮我们的世界。他的故事，将永远在我们的记忆中熠熠生辉，成为永恒的经典。'}}]}, 'usage': {'total_tokens': 513, 'output_tokens': 471, 'input_tokens': 42}, 'request_id': 'a1835332-a44b-936e-b744-9ae15b95da76'}
+2024-07-17 10:19:50,963 - main.py - log_requests - line:57 - INFO - rid=0D72VW completed_in=17149.12ms status_code=200
+2024-07-17 10:19:50,964 - main.py - log_requests - line:50 - INFO - rid=VRUCCB start request path=/apis/user/ownInfo
+2024-07-17 10:19:51,685 - main.py - getOwnInfo - line:356 - DEBUG - ((21, 'hou', 'hou', 0),)
+2024-07-17 10:19:51,686 - main.py - log_requests - line:50 - INFO - rid=6TD3F7 start request path=/apis/user/ownInfo
+2024-07-17 10:19:52,318 - main.py - getOwnInfo - line:356 - DEBUG - ((21, 'hou', 'hou', 0),)
+2024-07-17 10:19:52,319 - main.py - log_requests - line:57 - INFO - rid=VRUCCB completed_in=1355.50ms status_code=200
+2024-07-17 10:19:52,320 - main.py - log_requests - line:50 - INFO - rid=AJTW1E start request path=/apis/rank
+2024-07-17 10:19:52,321 - main.py - log_requests - line:57 - INFO - rid=6TD3F7 completed_in=634.22ms status_code=200
+2024-07-17 10:19:52,792 - main.py - log_requests - line:57 - INFO - rid=AJTW1E completed_in=471.23ms status_code=200
+2024-07-17 10:19:53,386 - main.py - log_requests - line:50 - INFO - rid=L96AST start request path=/apis/rank
+2024-07-17 10:19:53,835 - main.py - log_requests - line:57 - INFO - rid=L96AST completed_in=448.60ms status_code=200
+2024-07-17 10:19:54,279 - main.py - log_requests - line:50 - INFO - rid=4XNW2D start request path=/apis/rank
+2024-07-17 10:19:54,733 - main.py - log_requests - line:57 - INFO - rid=4XNW2D completed_in=454.29ms status_code=200
+2024-07-17 10:19:55,804 - main.py - log_requests - line:50 - INFO - rid=5C2YG2 start request path=/apis/rank
+2024-07-17 10:19:56,280 - main.py - log_requests - line:57 - INFO - rid=5C2YG2 completed_in=474.95ms status_code=200
+2024-07-17 10:19:57,075 - main.py - log_requests - line:50 - INFO - rid=TIT82O start request path=/apis/rank
+2024-07-17 10:19:57,550 - main.py - log_requests - line:57 - INFO - rid=TIT82O completed_in=474.34ms status_code=200
+2024-07-17 10:19:58,068 - main.py - log_requests - line:50 - INFO - rid=YYTDPI start request path=/apis/rank
+2024-07-17 10:19:58,534 - main.py - log_requests - line:57 - INFO - rid=YYTDPI completed_in=465.25ms status_code=200
+2024-07-17 10:19:59,008 - main.py - log_requests - line:50 - INFO - rid=8KOFYM start request path=/apis/rank
+2024-07-17 10:19:59,469 - main.py - log_requests - line:57 - INFO - rid=8KOFYM completed_in=460.62ms status_code=200
+2024-07-17 10:20:00,231 - main.py - log_requests - line:50 - INFO - rid=IXGPBB start request path=/apis/rank
+2024-07-17 10:20:00,660 - main.py - log_requests - line:57 - INFO - rid=IXGPBB completed_in=429.43ms status_code=200
+2024-07-17 10:20:01,759 - main.py - log_requests - line:50 - INFO - rid=GGYCN2 start request path=/apis/rank
+2024-07-17 10:20:02,227 - main.py - log_requests - line:57 - INFO - rid=GGYCN2 completed_in=467.71ms status_code=200
+2024-07-17 10:20:03,175 - main.py - log_requests - line:50 - INFO - rid=WW6FC9 start request path=/apis/getNovel/
+2024-07-17 10:20:03,176 - main.py - log_requests - line:57 - INFO - rid=WW6FC9 completed_in=0.66ms status_code=307
+2024-07-17 10:20:03,228 - main.py - log_requests - line:50 - INFO - rid=CHHPUV start request path=/apis/comment/getcomments
+2024-07-17 10:20:03,229 - multipart.py - callback - line:626 - DEBUG - Calling on_part_begin with no data
+2024-07-17 10:20:03,229 - multipart.py - callback - line:623 - DEBUG - Calling on_header_field with data[42:61]
+2024-07-17 10:20:03,230 - multipart.py - callback - line:623 - DEBUG - Calling on_header_value with data[63:89]
+2024-07-17 10:20:03,230 - multipart.py - callback - line:626 - DEBUG - Calling on_header_end with no data
+2024-07-17 10:20:03,230 - multipart.py - callback - line:626 - DEBUG - Calling on_headers_finished with no data
+2024-07-17 10:20:03,230 - multipart.py - callback - line:623 - DEBUG - Calling on_part_data with data[93:95]
+2024-07-17 10:20:03,231 - multipart.py - callback - line:626 - DEBUG - Calling on_part_end with no data
+2024-07-17 10:20:03,231 - multipart.py - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-17 10:20:03,455 - main.py - log_requests - line:57 - INFO - rid=CHHPUV completed_in=226.91ms status_code=200
+2024-07-17 10:20:03,456 - main.py - log_requests - line:50 - INFO - rid=BOQZM9 start request path=/apis/getNovel
+2024-07-17 10:20:04,259 - main.py - log_requests - line:57 - INFO - rid=BOQZM9 completed_in=803.59ms status_code=200
+2024-07-17 10:20:22,651 - main.py - log_requests - line:50 - INFO - rid=WQKSJP start request path=/apis/user/ownInfo
+2024-07-17 10:20:23,388 - main.py - getOwnInfo - line:356 - DEBUG - ((57, '李万中文版', '123456Lwyyds', 0),)
+2024-07-17 10:20:23,390 - main.py - log_requests - line:57 - INFO - rid=WQKSJP completed_in=737.87ms status_code=200
+2024-07-17 10:20:23,390 - main.py - log_requests - line:50 - INFO - rid=C6OQTS start request path=/apis/user/ownInfo
+2024-07-17 10:20:24,112 - main.py - getOwnInfo - line:356 - DEBUG - ((57, '李万中文版', '123456Lwyyds', 0),)
+2024-07-17 10:20:24,113 - main.py - log_requests - line:57 - INFO - rid=C6OQTS completed_in=722.19ms status_code=200
+2024-07-17 10:20:28,702 - main.py - log_requests - line:50 - INFO - rid=Y0QZXT start request path=/apis/write_request
+2024-07-17 10:20:28,704 - http_request.py - _handle_request - line:285 - DEBUG - Request body: {'model': 'qwen-turbo', 'parameters': {'result_format': 'message'}, 'input': {'messages': [{'role': 'system', 'content': 'You are a professional novel writer.'}, {'role': 'user', 'content': '续写小说,字数越多越好:小明'}]}}
+2024-07-17 10:20:28,705 - connectionpool.py - _new_conn - line:1051 - DEBUG - Starting new HTTPS connection (1): dashscope.aliyuncs.com:443
+2024-07-17 10:20:47,347 - connectionpool.py - _make_request - line:546 - DEBUG - https://dashscope.aliyuncs.com:443 "POST /api/v1/services/aigc/text-generation/generation HTTP/11" 200 None
+2024-07-17 10:20:47,348 - http_request.py - _handle_response - line:250 - DEBUG - Response: {'output': {'choices': [{'finish_reason': 'stop', 'message': {'role': 'assistant', 'content': '小明，这个名字在小镇上并不特别，却有着一个充满梦想和决心的灵魂。他的生活在一个宁静的乡村，父母是朴实的农民，他们用勤劳的双手为他创造了温暖的家。小明从小就对世界充满了好奇，他常常在田野边的破旧书摊上寻找那些描绘远方世界的书籍，那是他的梦想海洋。\n\n有一天，他在一本古老的冒险小说中读到了一位勇敢的船长，驾驶着一艘名叫“希望号”的帆船，穿越风暴，寻找传说中的神秘宝藏。这个故事深深吸引了小明，他决定要成为那个船长，去探索未知的世界，寻找自己的宝藏。\n\n于是，小明开始了他的自学之旅，白天在田间劳作，夜晚则在昏黄的灯光下研读地理、航海和历史。他的学习成绩并不出色，但他坚信知识的力量，那是一种比任何物质都珍贵的宝藏。他把每一次挫折都看作是风浪，他告诉自己，只有经历过风雨，才能抵达彼岸。\n\n小镇的人们开始注意到这个沉默寡言的少年，他的梦想和坚韧让他们感到惊讶。他们开始支持他，给他筹集资金，帮助他修复了一艘破旧的小船，那是他的“希望号”。小明心中充满了感激，他知道，这是他的起点，也是他的挑战。\n\n终于，一个晴朗的日子，小明站在船头，望着无尽的大海，心中充满了期待和恐惧。他挥舞着船桨，驾驶着“希望号”驶向了未知的远方。他的旅程充满了困难和危险，但他从未放弃，因为他知道，每一个挑战都是他向梦想前进的阶梯。\n\n在这个过程中，小明不仅找到了地理上的宝藏，更找到了内心的勇气和智慧。他学会了如何面对生活的起伏，如何在困境中坚持，如何在孤独中找到自我。他的故事激励了小镇的每一个人，他们的生活也因此而变得更加丰富多彩。\n\n小明的故事并未结束，他的“希望号”还在海上航行，他的梦想仍在继续。他知道，前方还有更多的未知等待着他，但他坚信，只要有梦想，有勇气，就一定能找到属于自己的宝藏，成为自己心中的那个英勇船长。'}}]}, 'usage': {'total_tokens': 478, 'output_tokens': 447, 'input_tokens': 31}, 'request_id': 'a93227ca-5225-98c3-9d88-fb27f65bbb9c'}
+2024-07-17 10:20:47,349 - main.py - log_requests - line:57 - INFO - rid=Y0QZXT completed_in=18646.05ms status_code=200
+2024-07-17 10:21:04,182 - main.py - log_requests - line:50 - INFO - rid=9RQ01Z start request path=/apis/comment/uploadcomment
+2024-07-17 10:21:04,183 - multipart.py - callback - line:626 - DEBUG - Calling on_part_begin with no data
+2024-07-17 10:21:04,183 - multipart.py - callback - line:623 - DEBUG - Calling on_header_field with data[42:61]
+2024-07-17 10:21:04,183 - multipart.py - callback - line:623 - DEBUG - Calling on_header_value with data[63:89]
+2024-07-17 10:21:04,183 - multipart.py - callback - line:626 - DEBUG - Calling on_header_end with no data
+2024-07-17 10:21:04,184 - multipart.py - callback - line:626 - DEBUG - Calling on_headers_finished with no data
+2024-07-17 10:21:04,184 - multipart.py - callback - line:623 - DEBUG - Calling on_part_data with data[93:95]
+2024-07-17 10:21:04,184 - multipart.py - callback - line:626 - DEBUG - Calling on_part_end with no data
+2024-07-17 10:21:04,184 - multipart.py - callback - line:626 - DEBUG - Calling on_part_begin with no data
+2024-07-17 10:21:04,184 - multipart.py - callback - line:623 - DEBUG - Calling on_header_field with data[139:158]
+2024-07-17 10:21:04,185 - multipart.py - callback - line:623 - DEBUG - Calling on_header_value with data[160:193]
+2024-07-17 10:21:04,185 - multipart.py - callback - line:626 - DEBUG - Calling on_header_end with no data
+2024-07-17 10:21:04,185 - multipart.py - callback - line:626 - DEBUG - Calling on_headers_finished with no data
+2024-07-17 10:21:04,185 - multipart.py - callback - line:623 - DEBUG - Calling on_part_data with data[197:242]
+2024-07-17 10:21:04,185 - multipart.py - callback - line:626 - DEBUG - Calling on_part_end with no data
+2024-07-17 10:21:04,186 - multipart.py - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-17 10:21:04,698 - main.py - log_requests - line:57 - INFO - rid=9RQ01Z completed_in=515.86ms status_code=200
+2024-07-17 10:21:04,775 - main.py - log_requests - line:50 - INFO - rid=R798EO start request path=/apis/comment/getcomments
+2024-07-17 10:21:04,776 - multipart.py - callback - line:626 - DEBUG - Calling on_part_begin with no data
+2024-07-17 10:21:04,776 - multipart.py - callback - line:623 - DEBUG - Calling on_header_field with data[42:61]
+2024-07-17 10:21:04,777 - multipart.py - callback - line:623 - DEBUG - Calling on_header_value with data[63:89]
+2024-07-17 10:21:04,777 - multipart.py - callback - line:626 - DEBUG - Calling on_header_end with no data
+2024-07-17 10:21:04,777 - multipart.py - callback - line:626 - DEBUG - Calling on_headers_finished with no data
+2024-07-17 10:21:04,777 - multipart.py - callback - line:623 - DEBUG - Calling on_part_data with data[93:95]
+2024-07-17 10:21:04,777 - multipart.py - callback - line:626 - DEBUG - Calling on_part_end with no data
+2024-07-17 10:21:04,778 - multipart.py - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-17 10:21:05,013 - main.py - log_requests - line:57 - INFO - rid=R798EO completed_in=238.05ms status_code=200
+2024-07-17 10:21:47,854 - main.py - log_requests - line:50 - INFO - rid=APSXFF start request path=/apis/rank
+2024-07-17 10:21:48,370 - main.py - log_requests - line:57 - INFO - rid=APSXFF completed_in=515.08ms status_code=200
+2024-07-17 10:21:49,504 - main.py - log_requests - line:50 - INFO - rid=BIV7SE start request path=/apis/getNovel/
+2024-07-17 10:21:49,505 - main.py - log_requests - line:57 - INFO - rid=BIV7SE completed_in=0.63ms status_code=307
+2024-07-17 10:21:49,506 - main.py - log_requests - line:50 - INFO - rid=I0979R start request path=/apis/comment/getcomments
+2024-07-17 10:21:49,507 - multipart.py - callback - line:626 - DEBUG - Calling on_part_begin with no data
+2024-07-17 10:21:49,508 - multipart.py - callback - line:623 - DEBUG - Calling on_header_field with data[42:61]
+2024-07-17 10:21:49,508 - multipart.py - callback - line:623 - DEBUG - Calling on_header_value with data[63:89]
+2024-07-17 10:21:49,508 - multipart.py - callback - line:626 - DEBUG - Calling on_header_end with no data
+2024-07-17 10:21:49,509 - multipart.py - callback - line:626 - DEBUG - Calling on_headers_finished with no data
+2024-07-17 10:21:49,509 - multipart.py - callback - line:623 - DEBUG - Calling on_part_data with data[93:96]
+2024-07-17 10:21:49,509 - multipart.py - callback - line:626 - DEBUG - Calling on_part_end with no data
+2024-07-17 10:21:49,510 - multipart.py - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-17 10:21:49,773 - main.py - log_requests - line:57 - INFO - rid=I0979R completed_in=266.13ms status_code=200
+2024-07-17 10:21:49,774 - main.py - log_requests - line:50 - INFO - rid=7E79H3 start request path=/apis/getNovel
+2024-07-17 10:21:50,521 - main.py - log_requests - line:57 - INFO - rid=7E79H3 completed_in=747.05ms status_code=200
+2024-07-17 10:21:53,522 - main.py - log_requests - line:50 - INFO - rid=8BKX57 start request path=/apis/comment/getcomments
+2024-07-17 10:21:53,523 - multipart.py - callback - line:626 - DEBUG - Calling on_part_begin with no data
+2024-07-17 10:21:53,523 - multipart.py - callback - line:623 - DEBUG - Calling on_header_field with data[42:61]
+2024-07-17 10:21:53,524 - multipart.py - callback - line:623 - DEBUG - Calling on_header_value with data[63:89]
+2024-07-17 10:21:53,524 - multipart.py - callback - line:626 - DEBUG - Calling on_header_end with no data
+2024-07-17 10:21:53,525 - multipart.py - callback - line:626 - DEBUG - Calling on_headers_finished with no data
+2024-07-17 10:21:53,525 - multipart.py - callback - line:623 - DEBUG - Calling on_part_data with data[93:96]
+2024-07-17 10:21:53,526 - multipart.py - callback - line:626 - DEBUG - Calling on_part_end with no data
+2024-07-17 10:21:53,526 - multipart.py - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-17 10:21:53,768 - main.py - log_requests - line:57 - INFO - rid=8BKX57 completed_in=246.49ms status_code=200
+2024-07-17 10:21:53,769 - main.py - log_requests - line:50 - INFO - rid=23XSTY start request path=/apis/getNovel/
+2024-07-17 10:21:53,771 - main.py - log_requests - line:57 - INFO - rid=23XSTY completed_in=1.12ms status_code=307
+2024-07-17 10:21:53,839 - main.py - log_requests - line:50 - INFO - rid=ZXK92U start request path=/apis/getNovel
+2024-07-17 10:21:54,560 - main.py - log_requests - line:57 - INFO - rid=ZXK92U completed_in=721.03ms status_code=200
+2024-07-17 10:21:54,832 - main.py - log_requests - line:50 - INFO - rid=2QZUQS start request path=/apis/user/ownInfo
+2024-07-17 10:21:55,516 - main.py - getOwnInfo - line:356 - DEBUG - ((21, 'hou', 'hou', 0),)
+2024-07-17 10:21:55,517 - main.py - log_requests - line:50 - INFO - rid=XR3C1B start request path=/apis/user/ownInfo
+2024-07-17 10:21:55,518 - main.py - log_requests - line:57 - INFO - rid=2QZUQS completed_in=685.19ms status_code=200
+2024-07-17 10:21:56,284 - main.py - getOwnInfo - line:356 - DEBUG - ((21, 'hou', 'hou', 0),)
+2024-07-17 10:21:56,286 - main.py - log_requests - line:57 - INFO - rid=XR3C1B completed_in=768.05ms status_code=200
+2024-07-17 10:22:37,685 - main.py - log_requests - line:50 - INFO - rid=86TZZ8 start request path=/apis/login/
+2024-07-17 10:22:37,685 - main.py - log_requests - line:57 - INFO - rid=86TZZ8 completed_in=0.59ms status_code=307
+2024-07-17 10:22:37,718 - main.py - log_requests - line:50 - INFO - rid=3IQB6C start request path=/apis/login
+2024-07-17 10:22:37,719 - multipart.py - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-17 10:22:37,719 - multipart.py - callback - line:623 - DEBUG - Calling on_field_name with data[0:8]
+2024-07-17 10:22:37,720 - multipart.py - callback - line:623 - DEBUG - Calling on_field_data with data[9:54]
+2024-07-17 10:22:37,720 - multipart.py - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-17 10:22:37,720 - multipart.py - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-17 10:22:37,720 - multipart.py - callback - line:623 - DEBUG - Calling on_field_name with data[55:63]
+2024-07-17 10:22:37,720 - multipart.py - callback - line:623 - DEBUG - Calling on_field_data with data[64:76]
+2024-07-17 10:22:37,720 - multipart.py - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-17 10:22:37,720 - multipart.py - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-17 10:22:38,047 - main.py - log_requests - line:57 - INFO - rid=3IQB6C completed_in=328.31ms status_code=200
+2024-07-17 10:22:38,155 - main.py - log_requests - line:50 - INFO - rid=8YWMM5 start request path=/apis/user/ownInfo
+2024-07-17 10:22:38,891 - main.py - getOwnInfo - line:356 - DEBUG - ((57, '李万中文版', '123456Lwyyds', 0),)
+2024-07-17 10:22:38,892 - main.py - log_requests - line:57 - INFO - rid=8YWMM5 completed_in=736.31ms status_code=200
+2024-07-17 10:22:38,893 - main.py - log_requests - line:50 - INFO - rid=EE3G9M start request path=/apis/user/ownInfo
+2024-07-17 10:22:39,576 - main.py - getOwnInfo - line:356 - DEBUG - ((57, '李万中文版', '123456Lwyyds', 0),)
+2024-07-17 10:22:39,577 - main.py - log_requests - line:57 - INFO - rid=EE3G9M completed_in=684.53ms status_code=200
+2024-07-17 10:22:44,748 - main.py - log_requests - line:50 - INFO - rid=3T438G start request path=/apis/user/ownInfo
+2024-07-17 10:22:45,409 - main.py - getOwnInfo - line:356 - DEBUG - ((57, '李万中文版', '123456Lwyyds', 0),)
+2024-07-17 10:22:45,410 - main.py - log_requests - line:57 - INFO - rid=3T438G completed_in=661.92ms status_code=200
+2024-07-17 10:22:45,410 - main.py - log_requests - line:50 - INFO - rid=R07MZW start request path=/apis/user/ownInfo
+2024-07-17 10:22:46,116 - main.py - getOwnInfo - line:356 - DEBUG - ((57, '李万中文版', '123456Lwyyds', 0),)
+2024-07-17 10:22:46,117 - main.py - log_requests - line:57 - INFO - rid=R07MZW completed_in=706.71ms status_code=200
+2024-07-17 10:22:47,006 - main.py - log_requests - line:50 - INFO - rid=A6NI9A start request path=/apis/rank
+2024-07-17 10:22:47,469 - main.py - log_requests - line:57 - INFO - rid=A6NI9A completed_in=462.47ms status_code=200
+2024-07-17 10:22:52,168 - main.py - log_requests - line:50 - INFO - rid=1LUBOU start request path=/apis/login/
+2024-07-17 10:22:52,168 - main.py - log_requests - line:57 - INFO - rid=1LUBOU completed_in=0.60ms status_code=307
+2024-07-17 10:22:52,201 - main.py - log_requests - line:50 - INFO - rid=NFHJML start request path=/apis/login
+2024-07-17 10:22:52,202 - multipart.py - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-17 10:22:52,202 - multipart.py - callback - line:623 - DEBUG - Calling on_field_name with data[0:8]
+2024-07-17 10:22:52,202 - multipart.py - callback - line:623 - DEBUG - Calling on_field_data with data[9:54]
+2024-07-17 10:22:52,202 - multipart.py - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-17 10:22:52,202 - multipart.py - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-17 10:22:52,202 - multipart.py - callback - line:623 - DEBUG - Calling on_field_name with data[55:63]
+2024-07-17 10:22:52,202 - multipart.py - callback - line:623 - DEBUG - Calling on_field_data with data[64:76]
+2024-07-17 10:22:52,203 - multipart.py - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-17 10:22:52,203 - multipart.py - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-17 10:22:52,517 - main.py - log_requests - line:57 - INFO - rid=NFHJML completed_in=315.75ms status_code=200
+2024-07-17 10:22:52,657 - main.py - log_requests - line:50 - INFO - rid=59TPU9 start request path=/apis/user/ownInfo
+2024-07-17 10:22:53,356 - main.py - getOwnInfo - line:356 - DEBUG - ((57, '李万中文版', '123456Lwyyds', 0),)
+2024-07-17 10:22:53,357 - main.py - log_requests - line:57 - INFO - rid=59TPU9 completed_in=699.40ms status_code=200
+2024-07-17 10:22:53,357 - main.py - log_requests - line:50 - INFO - rid=43ED04 start request path=/apis/user/ownInfo
+2024-07-17 10:22:54,048 - main.py - getOwnInfo - line:356 - DEBUG - ((57, '李万中文版', '123456Lwyyds', 0),)
+2024-07-17 10:22:54,050 - main.py - log_requests - line:57 - INFO - rid=43ED04 completed_in=692.39ms status_code=200
+2024-07-17 10:22:57,516 - main.py - log_requests - line:50 - INFO - rid=64GEB8 start request path=/apis/rank
+2024-07-17 10:22:58,047 - main.py - log_requests - line:57 - INFO - rid=64GEB8 completed_in=531.05ms status_code=200
+2024-07-17 10:22:58,167 - main.py - log_requests - line:50 - INFO - rid=Z9XJ2L start request path=/apis/rank
+2024-07-17 10:22:58,642 - main.py - log_requests - line:57 - INFO - rid=Z9XJ2L completed_in=475.33ms status_code=200
+2024-07-17 10:22:58,949 - main.py - log_requests - line:50 - INFO - rid=XD2EXR start request path=/apis/getNovel/
+2024-07-17 10:22:58,950 - main.py - log_requests - line:57 - INFO - rid=XD2EXR completed_in=0.61ms status_code=307
+2024-07-17 10:22:58,959 - main.py - log_requests - line:50 - INFO - rid=G2WD5C start request path=/apis/comment/getcomments
+2024-07-17 10:22:58,960 - multipart.py - callback - line:626 - DEBUG - Calling on_part_begin with no data
+2024-07-17 10:22:58,961 - multipart.py - callback - line:623 - DEBUG - Calling on_header_field with data[42:61]
+2024-07-17 10:22:58,961 - multipart.py - callback - line:623 - DEBUG - Calling on_header_value with data[63:89]
+2024-07-17 10:22:58,961 - multipart.py - callback - line:626 - DEBUG - Calling on_header_end with no data
+2024-07-17 10:22:58,962 - multipart.py - callback - line:626 - DEBUG - Calling on_headers_finished with no data
+2024-07-17 10:22:58,962 - multipart.py - callback - line:623 - DEBUG - Calling on_part_data with data[93:96]
+2024-07-17 10:22:58,962 - multipart.py - callback - line:626 - DEBUG - Calling on_part_end with no data
+2024-07-17 10:22:58,963 - multipart.py - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-17 10:22:59,233 - main.py - log_requests - line:57 - INFO - rid=G2WD5C completed_in=273.28ms status_code=200
+2024-07-17 10:22:59,233 - main.py - log_requests - line:50 - INFO - rid=UGOLZW start request path=/apis/getNovel
+2024-07-17 10:23:00,016 - main.py - log_requests - line:57 - INFO - rid=UGOLZW completed_in=782.79ms status_code=200
+2024-07-17 10:23:00,017 - main.py - log_requests - line:50 - INFO - rid=WNXYCT start request path=/apis/user/ownInfo
+2024-07-17 10:23:00,713 - main.py - getOwnInfo - line:356 - DEBUG - ((57, '李万中文版', '123456Lwyyds', 0),)
+2024-07-17 10:23:00,714 - main.py - log_requests - line:50 - INFO - rid=DZKA6G start request path=/apis/user/ownInfo
+2024-07-17 10:23:01,415 - main.py - getOwnInfo - line:356 - DEBUG - ((57, '李万中文版', '123456Lwyyds', 0),)
+2024-07-17 10:23:01,416 - main.py - log_requests - line:57 - INFO - rid=WNXYCT completed_in=1398.92ms status_code=200
+2024-07-17 10:23:01,417 - main.py - log_requests - line:57 - INFO - rid=DZKA6G completed_in=702.80ms status_code=200
+2024-07-17 10:23:01,539 - main.py - log_requests - line:50 - INFO - rid=0WWKFO start request path=/apis/rank
+2024-07-17 10:23:01,991 - main.py - log_requests - line:57 - INFO - rid=0WWKFO completed_in=450.68ms status_code=200
+2024-07-17 10:23:02,706 - main.py - log_requests - line:50 - INFO - rid=85T9CG start request path=/apis/rank
+2024-07-17 10:23:03,152 - main.py - log_requests - line:57 - INFO - rid=85T9CG completed_in=445.17ms status_code=200
+2024-07-17 10:23:04,065 - main.py - log_requests - line:50 - INFO - rid=SA4CQ7 start request path=/apis/rank
+2024-07-17 10:23:04,497 - main.py - log_requests - line:57 - INFO - rid=SA4CQ7 completed_in=432.20ms status_code=200
+2024-07-17 10:23:05,606 - main.py - log_requests - line:50 - INFO - rid=91XRV4 start request path=/apis/rank
+2024-07-17 10:23:06,090 - main.py - log_requests - line:57 - INFO - rid=91XRV4 completed_in=484.40ms status_code=200
+2024-07-17 10:23:07,423 - main.py - log_requests - line:50 - INFO - rid=PSFEGW start request path=/apis/rank
+2024-07-17 10:23:07,889 - main.py - log_requests - line:57 - INFO - rid=PSFEGW completed_in=465.53ms status_code=200
+2024-07-17 10:23:09,374 - main.py - log_requests - line:50 - INFO - rid=FORQVP start request path=/apis/getNovel/
+2024-07-17 10:23:09,375 - main.py - log_requests - line:57 - INFO - rid=FORQVP completed_in=0.62ms status_code=307
+2024-07-17 10:23:09,377 - main.py - log_requests - line:50 - INFO - rid=G1EK2B start request path=/apis/comment/getcomments
+2024-07-17 10:23:09,378 - multipart.py - callback - line:626 - DEBUG - Calling on_part_begin with no data
+2024-07-17 10:23:09,378 - multipart.py - callback - line:623 - DEBUG - Calling on_header_field with data[42:61]
+2024-07-17 10:23:09,378 - multipart.py - callback - line:623 - DEBUG - Calling on_header_value with data[63:89]
+2024-07-17 10:23:09,378 - multipart.py - callback - line:626 - DEBUG - Calling on_header_end with no data
+2024-07-17 10:23:09,378 - multipart.py - callback - line:626 - DEBUG - Calling on_headers_finished with no data
+2024-07-17 10:23:09,379 - multipart.py - callback - line:623 - DEBUG - Calling on_part_data with data[93:96]
+2024-07-17 10:23:09,379 - multipart.py - callback - line:626 - DEBUG - Calling on_part_end with no data
+2024-07-17 10:23:09,379 - multipart.py - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-17 10:23:09,612 - main.py - log_requests - line:57 - INFO - rid=G1EK2B completed_in=235.35ms status_code=200
+2024-07-17 10:23:09,613 - main.py - log_requests - line:50 - INFO - rid=GCEDNM start request path=/apis/getNovel
+2024-07-17 10:23:10,391 - main.py - log_requests - line:57 - INFO - rid=GCEDNM completed_in=777.32ms status_code=200
+2024-07-17 10:23:13,418 - main.py - log_requests - line:50 - INFO - rid=CMC1C4 start request path=/apis/write_request
+2024-07-17 10:23:13,420 - http_request.py - _handle_request - line:285 - DEBUG - Request body: {'model': 'qwen-turbo', 'parameters': {'result_format': 'message'}, 'input': {'messages': [{'role': 'system', 'content': 'You are a professional novel writer.'}, {'role': 'user', 'content': '续写小说,字数越多越好:1213'}]}}
+2024-07-17 10:23:13,421 - connectionpool.py - _new_conn - line:1051 - DEBUG - Starting new HTTPS connection (1): dashscope.aliyuncs.com:443
+2024-07-17 10:23:31,595 - connectionpool.py - _make_request - line:546 - DEBUG - https://dashscope.aliyuncs.com:443 "POST /api/v1/services/aigc/text-generation/generation HTTP/11" 200 None
+2024-07-17 10:23:31,596 - http_request.py - _handle_response - line:250 - DEBUG - Response: {'output': {'choices': [{'finish_reason': 'stop', 'message': {'role': 'assistant', 'content': '在那个被星辰照亮的夜晚，故事的主角，艾丽莎，站在她家族古老的图书馆前，心中充满了决定命运的重大抉择。她手中的古老卷轴，揭示了家族隐藏的秘密——一本传说中的魔法书，据说能赋予持有者无比强大的力量。然而，这力量也伴随着巨大的风险，一旦失控，后果不堪设想。\n\n艾丽莎的内心挣扎着，她知道，她不能让这个秘密永远埋藏下去，家族的命运或许就掌握在她的手中。于是，她深吸一口气，将卷轴紧紧握在胸前，决定勇敢面对未知的挑战。\n\n第二天，艾丽莎开始了艰苦的学习，她日以继夜地研读魔法书，试图理解其中深奥的符文和咒语。她的智慧与毅力逐渐显现，她不仅掌握了基础的元素魔法，还能操控风、火、水、土四种元素。\n\n然而，当她即将掌握更高级的魔法时，一个黑暗势力察觉到了她的存在。他们是那些渴望权力，试图夺取魔法书的人。他们派出了一支由邪恶巫师组成的队伍，潜入了艾丽莎的家乡，意图破坏她的计划。\n\n艾丽莎面临着严峻的考验，她必须保护魔法书，同时也要保护她的家人和朋友们。她召集了家族的勇士们，他们的忠诚与勇气成为了对抗黑暗势力的坚实壁垒。艾丽莎决定，她不仅要守护魔法，更要守护她所爱的一切。\n\n在一场激烈的战斗中，艾丽莎运用她的魔法技巧，巧妙地击败了一个又一个敌人。她的智慧和勇气激发了团队的力量，他们团结一致，共同对抗黑暗的侵袭。每一次胜利都让艾丽莎更加坚定，她明白，真正的力量并非来自于魔法，而是来自于内心的勇气和爱。\n\n最终，艾丽莎成功地抵挡住了黑暗势力的进攻，她将魔法书封印在一个安全的地方，防止落入恶人之手。她的英勇事迹被世人传颂，家族的荣耀得以延续，而艾丽莎，也从一个普通的少女，成长为了一名真正的英雄。\n\n然而，生活并未因此而平静。艾丽莎知道，只有继续学习，不断提升自己，才能确保魔法书的安全，保护她的世界免受威胁。她决定，未来的路还很长，但她愿意带着家族的使命，继续前行，书写属于自己的传奇篇章。\n\n从此，艾丽莎的名字成为了勇气与智慧的象征，她的故事在每个孩子的心中燃起梦想的火焰，激励他们去追求正义，去勇敢面对生活的挑战。而那本古老的魔法书，静静地躺在图书馆的深处，等待着下一个有缘人的唤醒，继续书写新的冒险篇章。'}}]}, 'usage': {'total_tokens': 584, 'output_tokens': 551, 'input_tokens': 33}, 'request_id': '5029d4e7-27a9-93b4-9142-72286887103a'}
+2024-07-17 10:23:31,597 - main.py - log_requests - line:57 - INFO - rid=CMC1C4 completed_in=18178.42ms status_code=200
+2024-07-17 10:23:36,976 - main.py - log_requests - line:50 - INFO - rid=CYCM3P start request path=/apis/getNovel/
+2024-07-17 10:23:36,977 - main.py - log_requests - line:50 - INFO - rid=HS5WCD start request path=/apis/comment/getcomments
+2024-07-17 10:23:36,977 - main.py - log_requests - line:57 - INFO - rid=CYCM3P completed_in=1.20ms status_code=307
+2024-07-17 10:23:36,978 - multipart.py - callback - line:626 - DEBUG - Calling on_part_begin with no data
+2024-07-17 10:23:36,979 - multipart.py - callback - line:623 - DEBUG - Calling on_header_field with data[42:61]
+2024-07-17 10:23:36,979 - multipart.py - callback - line:623 - DEBUG - Calling on_header_value with data[63:89]
+2024-07-17 10:23:36,984 - multipart.py - callback - line:626 - DEBUG - Calling on_header_end with no data
+2024-07-17 10:23:36,984 - multipart.py - callback - line:626 - DEBUG - Calling on_headers_finished with no data
+2024-07-17 10:23:36,984 - multipart.py - callback - line:623 - DEBUG - Calling on_part_data with data[93:96]
+2024-07-17 10:23:36,985 - multipart.py - callback - line:626 - DEBUG - Calling on_part_end with no data
+2024-07-17 10:23:36,985 - multipart.py - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-17 10:23:37,214 - main.py - log_requests - line:57 - INFO - rid=HS5WCD completed_in=236.78ms status_code=200
+2024-07-17 10:23:37,214 - main.py - log_requests - line:50 - INFO - rid=BEHN5A start request path=/apis/getNovel
+2024-07-17 10:23:37,937 - main.py - log_requests - line:57 - INFO - rid=BEHN5A completed_in=722.16ms status_code=200
+2024-07-17 10:23:41,016 - main.py - log_requests - line:50 - INFO - rid=4K0WH5 start request path=/apis/answer_request
+2024-07-17 10:23:41,017 - http_request.py - _handle_request - line:285 - DEBUG - Request body: {'model': 'qwen-turbo', 'parameters': {'result_format': 'message'}, 'input': {'messages': [{'role': 'system', 'content': 'You are a professional assistant.'}, {'role': 'user', 'content': '\n    现在需要你阅读一篇文章并回答问题。请阅读以下文章并回答问题。如果你不知道答案，请回答“我不知道”。\n    问题: 对这个小说生成一段评论 \n    文章: 标题：《龙脉之子：李万的传奇》\n\n在古老的华夏大地上，有一个名叫李万的年轻人，他并非出身显赫，却有着一双看透世事的眼睛和一颗坚韧不拔的心。李万，这个名字在江湖上并不显眼，但他却承载着一个惊人的秘密——他是龙脉之子，传说中能唤醒沉睡巨龙，改变国家命运的人。\n\n李万自幼生活在小山村，父母早逝，他的生活简单而艰辛。然而，他并不甘于平凡，他坚信自己的命运并非如此。他喜欢阅读古籍，研究历史，对那些关于龙脉的神秘传说深感好奇。他相信，每个人都有可能成为自己命运的主人，关键在于能否发掘并驾驭自身的潜力。\n\n一次偶然的机会，他在一本尘封的古书中发现了一幅地图，图上标注着龙脉的所在。李万决定追寻这个线索，他希望能找到答案，证明自己的身份，也希望能够借助龙的力量，为苦难的百姓带来福祉。\n\n他的旅程充满了挑战，从险恶的山川到诡异的古墓，从狡猾的敌人到忠诚的朋友，李万经历了一次次生死考验。他学会了剑术，修炼内功，更在磨砺中逐渐明白了龙脉的力量并非用来争霸天下，而是守护和平，引导人们走向繁荣。\n\n在寻找龙脉的过程中，李万结识了美丽善良的女侠柳如烟，两人一同面对困难，共同成长。他们的爱情如同龙脉的力量，温暖而强大，成为了李万前行的动力。\n\n经过无数个日夜的努力，李万终于找到了龙脉，但龙并未苏醒，反而陷入沉睡。李万明白，真正的力量并不在于唤醒龙，而在于人心。他决定用龙脉的力量去唤醒人们的良知，让每个人都成为自己的龙。\n\n回到村庄，李万用龙脉的力量帮助村民改善生活，驱散疾病，他们过上了安居乐业的生活。李万的故事传遍四方，他不再是那个默默无闻的山村少年，而是被人们尊称为“龙脉守护者”。\n \n    '}]}}
+2024-07-17 10:23:41,019 - connectionpool.py - _new_conn - line:1051 - DEBUG - Starting new HTTPS connection (1): dashscope.aliyuncs.com:443
+2024-07-17 10:23:46,592 - connectionpool.py - _make_request - line:546 - DEBUG - https://dashscope.aliyuncs.com:443 "POST /api/v1/services/aigc/text-generation/generation HTTP/11" 200 None
+2024-07-17 10:23:46,593 - http_request.py - _handle_response - line:250 - DEBUG - Response: {'output': {'choices': [{'finish_reason': 'stop', 'message': {'role': 'assistant', 'content': '《龙脉之子：李万的传奇》是一部富有深度和感人故事的小说。主角李万出身贫寒，但凭借坚韧不拔的精神和对自身命运的探索，展开了一场寻找龙脉的冒险之旅。在这个过程中，他不仅历练了自我，也发现了真正的力量并非来自外在的神秘力量，而是源自内心的善良和人们对和平的渴望。李万与柳如烟的爱情线增添了温馨的色彩，他们的成长和互动推动了情节的发展。小说以龙脉象征希望和责任，最终李万选择用这种力量服务大众，成为人们的守护者。这部作品传递出积极向上的主题，具有强烈的鼓舞人心的力量。'}}]}, 'usage': {'total_tokens': 649, 'output_tokens': 142, 'input_tokens': 507}, 'request_id': 'e39d38e1-c110-99dc-9bd9-e9da6f83f822'}
+2024-07-17 10:23:46,594 - main.py - log_requests - line:57 - INFO - rid=4K0WH5 completed_in=5577.67ms status_code=200
