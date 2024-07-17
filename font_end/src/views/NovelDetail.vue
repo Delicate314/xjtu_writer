@@ -178,6 +178,17 @@ export default {
         async submitComment() {
             console.log('Submitting comment...');
             try {
+                // Sensitive words filter
+                const sensitiveWords = ['傻逼', 'fuck', 'FUCK', '草你妈', '色情', '毒品', '自杀']; // Add your sensitive words here
+
+                // Check if newComment contains sensitive words
+                for (let word of sensitiveWords) {
+                    if (this.newComment.includes(word)) {
+                        this.$message.error('评论包含敏感词汇，请修改后重新提交');
+                        return; // Prevent comment submission
+                    }
+                }
+
                 const formData = new FormData();
                 formData.append('novel_id', Number(this.$route.query.id));
                 formData.append('comment_content', this.newComment);
