@@ -35,7 +35,7 @@
     </div>
 
     <!-- Element UI Dialog for Title Input -->
-    <el-dialog title="给文章起一个标题吧٩(๑`^´๑)۶" :visible.sync="dialogVisible" width="30%" @close="handleClose">
+    <el-dialog title="给文章起一个标题吧٩(๑`^´๑)۶" :visible.sync="dialogVisible" class="make-title" @close="handleClose">
       <el-input v-model="novel_title" placeholder="请输入标题"></el-input>
       <span slot="footer" class="dialog-footer">
         <el-button @click="dialogVisible = false">取消</el-button>
@@ -101,6 +101,14 @@ export default {
     },
     async answer() {
       console.log('提问', this.question);
+      if (this.question === '') {
+        this.$message.error('输入问题为空');
+        return;
+      }
+      else if (this.generatedContent === '') {
+        this.$message.error('生成的文章为空');
+        return;
+      }
       this.answer_isLoading = true;
       try {
         const requestData = {
@@ -125,6 +133,10 @@ export default {
       }
     },
     showUploadDialog() {
+      if (this.generatedContent === '') {
+        this.$message.error('文章不能为空');
+        return;
+      }
       this.dialogVisible = true;
     },
     handleClose() {
@@ -156,6 +168,9 @@ export default {
       }
     },
     transit() {
+      if (this.generatedContent === '') {
+        this.$message.error('生成文本为空');
+      }
       this.content = this.generatedContent;
       this.generatedContent = '';
     },
@@ -282,6 +297,12 @@ button:hover {
   top: 0%;
   left: 100%;
   transform: translate(-50%, -50%);
+}
+
+.make-title {
+  width: 50%;
+  margin: 0 auto;
+  /* 设置左右外边距为auto，将元素居中 */
 }
 
 @keyframes spin {
