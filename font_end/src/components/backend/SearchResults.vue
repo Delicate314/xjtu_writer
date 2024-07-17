@@ -125,9 +125,16 @@ export default {
 
         const response = await fetch(url);
         const data = await response.json();
-
+        console.log(data);
         if (data.users) {
           this.tableData = data.users;
+        }
+        else {
+          Message.error({
+            message: `没有相关用户`,
+            duration: 3000
+          });
+          return;
         }
         if (data.count) {
           this.row_count = data.count[0];

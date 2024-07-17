@@ -18780,3 +18780,1141 @@ INFO:     127.0.0.1:36134 - "GET /apis/admin/getusernovel?user_id=undefined HTTP
 2024-07-17 14:45:38,256 - main.py - log_requests - line:57 - INFO - rid=WKH9RL completed_in=500.51ms status_code=500
 INFO:     127.0.0.1:53954 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending&search_target=%E4%B8%80 HTTP/1.0" 500 Internal Server Error
 2024-07-17 14:45:41,215 - main.py - log_requests - line:50 - INFO - rid=XCLHXL start request path=/apis/rank
+2024-07-17 14:45:41,682 - main.py - log_requests - line:57 - INFO - rid=XCLHXL completed_in=467.03ms status_code=200
+INFO:     127.0.0.1:53964 - "POST /apis/rank HTTP/1.0" 200 OK
+2024-07-17 14:45:45,212 - main.py - log_requests - line:50 - INFO - rid=OWJW3Y start request path=/apis/getNovel/
+2024-07-17 14:45:45,213 - main.py - log_requests - line:57 - INFO - rid=OWJW3Y completed_in=0.62ms status_code=307
+INFO:     127.0.0.1:37724 - "POST /apis/getNovel/ HTTP/1.0" 307 Temporary Redirect
+2024-07-17 14:45:45,255 - main.py - log_requests - line:50 - INFO - rid=D9X862 start request path=/apis/getNovel
+2024-07-17 14:45:46,007 - main.py - log_requests - line:57 - INFO - rid=D9X862 completed_in=751.31ms status_code=200
+INFO:     127.0.0.1:37730 - "POST /apis/getNovel HTTP/1.0" 200 OK
+2024-07-17 14:45:52,581 - main.py - log_requests - line:50 - INFO - rid=32HEHB start request path=/apis/admin/getNovel
+2024-07-17 14:45:53,015 - main.py - log_requests - line:57 - INFO - rid=32HEHB completed_in=433.10ms status_code=200
+INFO:     127.0.0.1:37736 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=descending HTTP/1.0" 200 OK
+2024-07-17 14:45:53,304 - main.py - log_requests - line:50 - INFO - rid=2XWC4P start request path=/apis/admin/getNovel
+2024-07-17 14:45:53,752 - main.py - log_requests - line:57 - INFO - rid=2XWC4P completed_in=446.23ms status_code=200
+INFO:     127.0.0.1:37752 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=null HTTP/1.0" 200 OK
+2024-07-17 14:45:54,061 - main.py - log_requests - line:50 - INFO - rid=GPUK3J start request path=/apis/admin/getNovel
+2024-07-17 14:45:54,552 - main.py - log_requests - line:57 - INFO - rid=GPUK3J completed_in=491.09ms status_code=200
+INFO:     127.0.0.1:58536 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=descending HTTP/1.0" 200 OK
+2024-07-17 14:45:55,813 - main.py - log_requests - line:50 - INFO - rid=ANQPMT start request path=/apis/admin/getNovel
+2024-07-17 14:45:56,307 - main.py - log_requests - line:57 - INFO - rid=ANQPMT completed_in=493.72ms status_code=200
+INFO:     127.0.0.1:58548 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_title&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:45:57,023 - main.py - log_requests - line:50 - INFO - rid=OWYUT8 start request path=/apis/admin/getNovel
+2024-07-17 14:45:57,475 - main.py - log_requests - line:57 - INFO - rid=OWYUT8 completed_in=451.25ms status_code=200
+INFO:     127.0.0.1:58554 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_title&order_way=null HTTP/1.0" 200 OK
+2024-07-17 14:45:58,159 - main.py - log_requests - line:50 - INFO - rid=JXHO6T start request path=/apis/admin/getNovel
+2024-07-17 14:45:58,649 - main.py - log_requests - line:57 - INFO - rid=JXHO6T completed_in=490.32ms status_code=200
+2024-07-17 14:45:58,650 - main.py - log_requests - line:50 - INFO - rid=5JXW8M start request path=/apis/register/
+INFO:     127.0.0.1:58558 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_title&order_way=descending HTTP/1.0" 200 OK
+2024-07-17 14:45:58,651 - main.py - log_requests - line:57 - INFO - rid=5JXW8M completed_in=0.98ms status_code=307
+INFO:     127.0.0.1:58568 - "POST /apis/register/ HTTP/1.0" 307 Temporary Redirect
+2024-07-17 14:45:58,893 - main.py - log_requests - line:50 - INFO - rid=L65XGA start request path=/apis/register
+2024-07-17 14:45:59,184 - main.py - log_requests - line:57 - INFO - rid=L65XGA completed_in=291.37ms status_code=200
+INFO:     127.0.0.1:58582 - "POST /apis/register HTTP/1.0" 200 OK
+2024-07-17 14:45:59,820 - main.py - log_requests - line:50 - INFO - rid=LBCGZO start request path=/apis/admin/getNovel
+2024-07-17 14:46:00,308 - main.py - log_requests - line:57 - INFO - rid=LBCGZO completed_in=487.42ms status_code=200
+INFO:     127.0.0.1:58592 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_title&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:46:02,372 - main.py - log_requests - line:50 - INFO - rid=A0NV8W start request path=/apis/rank
+2024-07-17 14:46:02,840 - main.py - log_requests - line:57 - INFO - rid=A0NV8W completed_in=468.24ms status_code=200
+INFO:     127.0.0.1:58596 - "POST /apis/rank HTTP/1.0" 200 OK
+2024-07-17 14:46:02,925 - main.py - log_requests - line:50 - INFO - rid=739H5H start request path=/apis/login/
+2024-07-17 14:46:02,926 - main.py - log_requests - line:57 - INFO - rid=739H5H completed_in=0.57ms status_code=307
+INFO:     127.0.0.1:58610 - "POST /apis/login/ HTTP/1.0" 307 Temporary Redirect
+2024-07-17 14:46:02,976 - main.py - log_requests - line:50 - INFO - rid=378QQ6 start request path=/apis/login
+2024-07-17 14:46:02,977 - multipart.py - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-17 14:46:02,977 - multipart.py - callback - line:623 - DEBUG - Calling on_field_name with data[0:8]
+2024-07-17 14:46:02,978 - multipart.py - callback - line:623 - DEBUG - Calling on_field_data with data[9:15]
+2024-07-17 14:46:02,978 - multipart.py - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-17 14:46:02,978 - multipart.py - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-17 14:46:02,979 - multipart.py - callback - line:623 - DEBUG - Calling on_field_name with data[16:24]
+2024-07-17 14:46:02,979 - multipart.py - callback - line:623 - DEBUG - Calling on_field_data with data[25:31]
+2024-07-17 14:46:02,979 - multipart.py - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-17 14:46:02,980 - multipart.py - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-17 14:46:03,318 - main.py - log_requests - line:57 - INFO - rid=378QQ6 completed_in=341.59ms status_code=200
+2024-07-17 14:46:03,318 - main.py - log_requests - line:50 - INFO - rid=U2NUSZ start request path=/apis/admin/getNovel
+{'sub': 'liwan9'}
+{'sub': 'liwan9', 'exp': datetime.datetime(2024, 7, 17, 8, 26, 3, 317532, tzinfo=datetime.timezone.utc)}
+INFO:     127.0.0.1:58622 - "POST /apis/login HTTP/1.0" 200 OK
+2024-07-17 14:46:03,777 - main.py - log_requests - line:57 - INFO - rid=U2NUSZ completed_in=458.60ms status_code=200
+INFO:     127.0.0.1:58626 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=descending HTTP/1.0" 200 OK
+2024-07-17 14:46:03,928 - main.py - log_requests - line:50 - INFO - rid=XJ5WCM start request path=/apis/user/ownInfo
+2024-07-17 14:46:04,541 - main.py - getOwnInfo - line:356 - DEBUG - ((72, 'liwan9', 'Liwan9', 0),)
+2024-07-17 14:46:04,542 - main.py - log_requests - line:57 - INFO - rid=XJ5WCM completed_in=613.83ms status_code=200
+2024-07-17 14:46:04,543 - main.py - log_requests - line:50 - INFO - rid=D89KJE start request path=/apis/user/ownInfo
+INFO:     127.0.0.1:59838 - "POST /apis/user/ownInfo HTTP/1.0" 200 OK
+2024-07-17 14:46:05,247 - main.py - getOwnInfo - line:356 - DEBUG - ((72, 'liwan9', 'Liwan9', 0),)
+2024-07-17 14:46:05,249 - main.py - log_requests - line:50 - INFO - rid=X7MDCI start request path=/apis/comment/getcomments
+2024-07-17 14:46:05,251 - main.py - log_requests - line:57 - INFO - rid=D89KJE completed_in=708.35ms status_code=200
+2024-07-17 14:46:05,252 - main.py - log_requests - line:50 - INFO - rid=HEI4SN start request path=/apis/comment/getcomments
+INFO:     127.0.0.1:59842 - "POST /apis/user/ownInfo HTTP/1.0" 200 OK
+2024-07-17 14:46:05,254 - main.py - log_requests - line:50 - INFO - rid=EM92FS start request path=/apis/getNovel/
+2024-07-17 14:46:05,255 - multipart.py - callback - line:626 - DEBUG - Calling on_part_begin with no data
+2024-07-17 14:46:05,256 - multipart.py - callback - line:623 - DEBUG - Calling on_header_field with data[42:61]
+2024-07-17 14:46:05,257 - multipart.py - callback - line:623 - DEBUG - Calling on_header_value with data[63:89]
+2024-07-17 14:46:05,257 - multipart.py - callback - line:626 - DEBUG - Calling on_header_end with no data
+2024-07-17 14:46:05,257 - multipart.py - callback - line:626 - DEBUG - Calling on_headers_finished with no data
+2024-07-17 14:46:05,258 - multipart.py - callback - line:623 - DEBUG - Calling on_part_data with data[93:96]
+2024-07-17 14:46:05,259 - multipart.py - callback - line:626 - DEBUG - Calling on_part_end with no data
+2024-07-17 14:46:05,259 - multipart.py - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-17 14:46:05,507 - main.py - log_requests - line:57 - INFO - rid=EM92FS completed_in=252.17ms status_code=307
+2024-07-17 14:46:05,508 - main.py - log_requests - line:57 - INFO - rid=X7MDCI completed_in=258.06ms status_code=200
+2024-07-17 14:46:05,509 - multipart.py - callback - line:626 - DEBUG - Calling on_part_begin with no data
+2024-07-17 14:46:05,509 - multipart.py - callback - line:623 - DEBUG - Calling on_header_field with data[42:61]
+2024-07-17 14:46:05,510 - multipart.py - callback - line:623 - DEBUG - Calling on_header_value with data[63:89]
+2024-07-17 14:46:05,511 - multipart.py - callback - line:626 - DEBUG - Calling on_header_end with no data
+2024-07-17 14:46:05,511 - multipart.py - callback - line:626 - DEBUG - Calling on_headers_finished with no data
+2024-07-17 14:46:05,512 - multipart.py - callback - line:623 - DEBUG - Calling on_part_data with data[93:96]
+2024-07-17 14:46:05,513 - multipart.py - callback - line:626 - DEBUG - Calling on_part_end with no data
+2024-07-17 14:46:05,514 - multipart.py - callback - line:626 - DEBUG - Calling on_end with no data
+INFO:     127.0.0.1:59882 - "POST /apis/getNovel/ HTTP/1.0" 307 Temporary Redirect
+INFO:     127.0.0.1:59852 - "POST /apis/comment/getcomments HTTP/1.0" 200 OK
+2024-07-17 14:46:05,740 - main.py - log_requests - line:57 - INFO - rid=HEI4SN completed_in=487.67ms status_code=200
+INFO:     127.0.0.1:59868 - "POST /apis/comment/getcomments HTTP/1.0" 200 OK
+2024-07-17 14:46:05,777 - main.py - log_requests - line:50 - INFO - rid=2AJ9WD start request path=/apis/getNovel
+2024-07-17 14:46:06,559 - main.py - log_requests - line:57 - INFO - rid=2AJ9WD completed_in=781.45ms status_code=200
+2024-07-17 14:46:06,560 - main.py - log_requests - line:50 - INFO - rid=56A3T2 start request path=/apis/rank
+INFO:     127.0.0.1:59896 - "POST /apis/getNovel HTTP/1.0" 200 OK
+2024-07-17 14:46:07,030 - main.py - log_requests - line:57 - INFO - rid=56A3T2 completed_in=469.34ms status_code=200
+INFO:     127.0.0.1:59912 - "POST /apis/rank HTTP/1.0" 200 OK
+2024-07-17 14:46:07,865 - main.py - log_requests - line:50 - INFO - rid=GRTIVM start request path=/apis/comment/getcomments
+2024-07-17 14:46:07,867 - multipart.py - callback - line:626 - DEBUG - Calling on_part_begin with no data
+2024-07-17 14:46:07,867 - multipart.py - callback - line:623 - DEBUG - Calling on_header_field with data[42:61]
+2024-07-17 14:46:07,868 - multipart.py - callback - line:623 - DEBUG - Calling on_header_value with data[63:89]
+2024-07-17 14:46:07,869 - multipart.py - callback - line:626 - DEBUG - Calling on_header_end with no data
+2024-07-17 14:46:07,869 - multipart.py - callback - line:626 - DEBUG - Calling on_headers_finished with no data
+2024-07-17 14:46:07,870 - multipart.py - callback - line:623 - DEBUG - Calling on_part_data with data[93:96]
+2024-07-17 14:46:07,870 - multipart.py - callback - line:626 - DEBUG - Calling on_part_end with no data
+2024-07-17 14:46:07,871 - multipart.py - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-17 14:46:08,103 - main.py - log_requests - line:57 - INFO - rid=GRTIVM completed_in=237.26ms status_code=200
+2024-07-17 14:46:08,104 - main.py - log_requests - line:50 - INFO - rid=6UVWGA start request path=/apis/getNovel/
+INFO:     127.0.0.1:59918 - "POST /apis/comment/getcomments HTTP/1.0" 200 OK
+2024-07-17 14:46:08,106 - main.py - log_requests - line:57 - INFO - rid=6UVWGA completed_in=1.24ms status_code=307
+INFO:     127.0.0.1:59934 - "POST /apis/getNovel/ HTTP/1.0" 307 Temporary Redirect
+2024-07-17 14:46:08,309 - main.py - log_requests - line:50 - INFO - rid=G72D57 start request path=/apis/getNovel
+2024-07-17 14:46:09,105 - main.py - log_requests - line:57 - INFO - rid=G72D57 completed_in=795.08ms status_code=200
+INFO:     127.0.0.1:59938 - "POST /apis/getNovel HTTP/1.0" 200 OK
+2024-07-17 14:46:10,178 - main.py - log_requests - line:50 - INFO - rid=MPJP8D start request path=/apis/admin/getNovel
+2024-07-17 14:46:10,680 - main.py - log_requests - line:57 - INFO - rid=MPJP8D completed_in=502.12ms status_code=200
+INFO:     127.0.0.1:59948 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:46:13,013 - main.py - log_requests - line:50 - INFO - rid=3VZUSJ start request path=/apis/admin/getNovel
+2024-07-17 14:46:13,467 - main.py - log_requests - line:57 - INFO - rid=3VZUSJ completed_in=453.13ms status_code=200
+2024-07-17 14:46:13,467 - main.py - log_requests - line:50 - INFO - rid=ZPJQB2 start request path=/apis/comment/uploadcomment
+INFO:     127.0.0.1:59952 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=descending HTTP/1.0" 200 OK
+2024-07-17 14:46:13,469 - multipart.py - callback - line:626 - DEBUG - Calling on_part_begin with no data
+2024-07-17 14:46:13,469 - multipart.py - callback - line:623 - DEBUG - Calling on_header_field with data[42:61]
+2024-07-17 14:46:13,469 - multipart.py - callback - line:623 - DEBUG - Calling on_header_value with data[63:89]
+2024-07-17 14:46:13,469 - multipart.py - callback - line:626 - DEBUG - Calling on_header_end with no data
+2024-07-17 14:46:13,469 - multipart.py - callback - line:626 - DEBUG - Calling on_headers_finished with no data
+2024-07-17 14:46:13,470 - multipart.py - callback - line:623 - DEBUG - Calling on_part_data with data[93:96]
+2024-07-17 14:46:13,470 - multipart.py - callback - line:626 - DEBUG - Calling on_part_end with no data
+2024-07-17 14:46:13,470 - multipart.py - callback - line:626 - DEBUG - Calling on_part_begin with no data
+2024-07-17 14:46:13,470 - multipart.py - callback - line:623 - DEBUG - Calling on_header_field with data[140:159]
+2024-07-17 14:46:13,470 - multipart.py - callback - line:623 - DEBUG - Calling on_header_value with data[161:194]
+2024-07-17 14:46:13,471 - multipart.py - callback - line:626 - DEBUG - Calling on_header_end with no data
+2024-07-17 14:46:13,471 - multipart.py - callback - line:626 - DEBUG - Calling on_headers_finished with no data
+2024-07-17 14:46:13,471 - multipart.py - callback - line:623 - DEBUG - Calling on_part_data with data[198:282]
+2024-07-17 14:46:13,471 - multipart.py - callback - line:626 - DEBUG - Calling on_part_end with no data
+2024-07-17 14:46:13,471 - multipart.py - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-17 14:46:13,942 - main.py - log_requests - line:57 - INFO - rid=ZPJQB2 completed_in=474.14ms status_code=200
+INFO:     127.0.0.1:59962 - "POST /apis/comment/uploadcomment HTTP/1.0" 200 OK
+2024-07-17 14:46:14,254 - main.py - log_requests - line:50 - INFO - rid=EPVY45 start request path=/apis/comment/getcomments
+2024-07-17 14:46:14,255 - multipart.py - callback - line:626 - DEBUG - Calling on_part_begin with no data
+2024-07-17 14:46:14,256 - multipart.py - callback - line:623 - DEBUG - Calling on_header_field with data[42:61]
+2024-07-17 14:46:14,256 - multipart.py - callback - line:623 - DEBUG - Calling on_header_value with data[63:89]
+2024-07-17 14:46:14,256 - multipart.py - callback - line:626 - DEBUG - Calling on_header_end with no data
+2024-07-17 14:46:14,256 - multipart.py - callback - line:626 - DEBUG - Calling on_headers_finished with no data
+2024-07-17 14:46:14,256 - multipart.py - callback - line:623 - DEBUG - Calling on_part_data with data[93:96]
+2024-07-17 14:46:14,257 - multipart.py - callback - line:626 - DEBUG - Calling on_part_end with no data
+2024-07-17 14:46:14,257 - multipart.py - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-17 14:46:14,492 - main.py - log_requests - line:57 - INFO - rid=EPVY45 completed_in=237.86ms status_code=200
+INFO:     127.0.0.1:33986 - "POST /apis/comment/getcomments HTTP/1.0" 200 OK
+2024-07-17 14:46:17,790 - main.py - log_requests - line:50 - INFO - rid=400E48 start request path=/apis/admin/getNovel
+2024-07-17 14:46:18,228 - main.py - log_requests - line:57 - INFO - rid=400E48 completed_in=437.06ms status_code=200
+INFO:     127.0.0.1:33988 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:46:20,150 - main.py - log_requests - line:50 - INFO - rid=6G5ZQA start request path=/apis/admin/getNovel
+2024-07-17 14:46:20,605 - main.py - log_requests - line:57 - INFO - rid=6G5ZQA completed_in=454.43ms status_code=200
+INFO:     127.0.0.1:34002 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:46:22,971 - main.py - log_requests - line:50 - INFO - rid=1Z5LCO start request path=/apis/user/ownInfo
+2024-07-17 14:46:23,604 - main.py - getOwnInfo - line:356 - DEBUG - ((72, 'liwan9', 'Liwan9', 0),)
+2024-07-17 14:46:23,606 - main.py - log_requests - line:57 - INFO - rid=1Z5LCO completed_in=633.83ms status_code=200
+2024-07-17 14:46:23,606 - main.py - log_requests - line:50 - INFO - rid=JHJAWP start request path=/apis/user/ownInfo
+INFO:     127.0.0.1:34004 - "POST /apis/user/ownInfo HTTP/1.0" 200 OK
+2024-07-17 14:46:24,371 - main.py - getOwnInfo - line:356 - DEBUG - ((72, 'liwan9', 'Liwan9', 0),)
+2024-07-17 14:46:24,371 - main.py - log_requests - line:50 - INFO - rid=XS6EKW start request path=/apis/admin/getNovel
+2024-07-17 14:46:24,915 - main.py - log_requests - line:57 - INFO - rid=JHJAWP completed_in=1307.89ms status_code=200
+INFO:     127.0.0.1:34020 - "POST /apis/user/ownInfo HTTP/1.0" 200 OK
+2024-07-17 14:46:24,916 - main.py - log_requests - line:57 - INFO - rid=XS6EKW completed_in=544.58ms status_code=200
+INFO:     127.0.0.1:34024 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=user_id&order_way=descending HTTP/1.0" 200 OK
+2024-07-17 14:46:25,017 - main.py - log_requests - line:50 - INFO - rid=LB1ZNX start request path=/apis/admin/getNovel
+2024-07-17 14:46:25,496 - main.py - log_requests - line:57 - INFO - rid=LB1ZNX completed_in=478.40ms status_code=200
+INFO:     127.0.0.1:48966 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:46:26,256 - main.py - log_requests - line:50 - INFO - rid=TDWXJQ start request path=/apis/admin/getNovel
+2024-07-17 14:46:26,706 - main.py - log_requests - line:57 - INFO - rid=TDWXJQ completed_in=448.73ms status_code=200
+INFO:     127.0.0.1:48968 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=user_id&order_way=descending HTTP/1.0" 200 OK
+2024-07-17 14:46:27,407 - main.py - log_requests - line:50 - INFO - rid=TPGO4T start request path=/apis/admin/getNovel
+2024-07-17 14:46:27,882 - main.py - log_requests - line:57 - INFO - rid=TPGO4T completed_in=472.64ms status_code=200
+INFO:     127.0.0.1:48970 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:46:28,991 - main.py - log_requests - line:50 - INFO - rid=YUIJ6Z start request path=/apis/admin/getNovel
+2024-07-17 14:46:29,472 - main.py - log_requests - line:57 - INFO - rid=YUIJ6Z completed_in=480.06ms status_code=200
+INFO:     127.0.0.1:48978 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=user_id&order_way=descending HTTP/1.0" 200 OK
+2024-07-17 14:46:30,178 - main.py - log_requests - line:50 - INFO - rid=MKTLU0 start request path=/apis/admin/getNovel
+2024-07-17 14:46:30,622 - main.py - log_requests - line:57 - INFO - rid=MKTLU0 completed_in=442.96ms status_code=200
+INFO:     127.0.0.1:48984 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:46:35,196 - main.py - log_requests - line:50 - INFO - rid=GVTSFP start request path=/apis/admin/getNovel
+2024-07-17 14:46:35,674 - main.py - log_requests - line:57 - INFO - rid=GVTSFP completed_in=476.92ms status_code=200
+INFO:     127.0.0.1:47304 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_title&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:46:36,549 - main.py - log_requests - line:50 - INFO - rid=7BFQYJ start request path=/apis/admin/getNovel
+2024-07-17 14:46:37,074 - main.py - log_requests - line:57 - INFO - rid=7BFQYJ completed_in=525.12ms status_code=200
+INFO:     127.0.0.1:47308 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_title&order_way=null HTTP/1.0" 200 OK
+2024-07-17 14:46:37,702 - main.py - log_requests - line:50 - INFO - rid=8MSFI0 start request path=/apis/admin/getNovel
+2024-07-17 14:46:38,214 - main.py - log_requests - line:57 - INFO - rid=8MSFI0 completed_in=510.58ms status_code=200
+INFO:     127.0.0.1:47322 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_title&order_way=descending HTTP/1.0" 200 OK
+2024-07-17 14:46:44,939 - main.py - log_requests - line:50 - INFO - rid=PB2QVY start request path=/apis/rank
+2024-07-17 14:46:45,370 - main.py - log_requests - line:57 - INFO - rid=PB2QVY completed_in=430.58ms status_code=200
+INFO:     127.0.0.1:43706 - "POST /apis/rank HTTP/1.0" 200 OK
+2024-07-17 14:46:45,683 - main.py - log_requests - line:50 - INFO - rid=5332VY start request path=/apis/admin/getNovel
+2024-07-17 14:46:46,135 - main.py - log_requests - line:57 - INFO - rid=5332VY completed_in=452.48ms status_code=200
+INFO:     127.0.0.1:43708 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=descending HTTP/1.0" 200 OK
+2024-07-17 14:46:46,863 - main.py - log_requests - line:50 - INFO - rid=8BUI3S start request path=/apis/admin/getNovel
+2024-07-17 14:46:47,400 - main.py - log_requests - line:57 - INFO - rid=8BUI3S completed_in=535.73ms status_code=200
+INFO:     127.0.0.1:43722 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:46:47,438 - main.py - log_requests - line:50 - INFO - rid=ESVFOD start request path=/apis/rank
+2024-07-17 14:46:47,945 - main.py - log_requests - line:57 - INFO - rid=ESVFOD completed_in=506.77ms status_code=200
+INFO:     127.0.0.1:43732 - "POST /apis/rank HTTP/1.0" 200 OK
+2024-07-17 14:46:49,893 - main.py - log_requests - line:50 - INFO - rid=4KYREZ start request path=/apis/rank
+2024-07-17 14:46:50,343 - main.py - log_requests - line:57 - INFO - rid=4KYREZ completed_in=449.70ms status_code=200
+INFO:     127.0.0.1:43740 - "POST /apis/rank HTTP/1.0" 200 OK
+2024-07-17 14:46:51,308 - main.py - log_requests - line:50 - INFO - rid=CUQCRB start request path=/apis/admin/getNovel
+2024-07-17 14:46:51,764 - main.py - log_requests - line:57 - INFO - rid=CUQCRB completed_in=455.13ms status_code=200
+INFO:     127.0.0.1:43750 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=descending HTTP/1.0" 200 OK
+2024-07-17 14:46:51,955 - main.py - log_requests - line:50 - INFO - rid=782J9J start request path=/apis/rank
+2024-07-17 14:46:52,410 - main.py - log_requests - line:57 - INFO - rid=782J9J completed_in=453.11ms status_code=200
+INFO:     127.0.0.1:43766 - "POST /apis/rank HTTP/1.0" 200 OK
+2024-07-17 14:46:52,685 - main.py - log_requests - line:50 - INFO - rid=IUOSPG start request path=/apis/admin/getNovel
+2024-07-17 14:46:53,194 - main.py - log_requests - line:57 - INFO - rid=IUOSPG completed_in=508.98ms status_code=200
+INFO:     127.0.0.1:43778 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:46:54,074 - main.py - log_requests - line:50 - INFO - rid=4VCLNE start request path=/apis/admin/getNovel
+2024-07-17 14:46:54,580 - main.py - log_requests - line:57 - INFO - rid=4VCLNE completed_in=506.16ms status_code=200
+INFO:     127.0.0.1:34542 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=descending HTTP/1.0" 200 OK
+2024-07-17 14:46:56,036 - main.py - log_requests - line:50 - INFO - rid=OML6F7 start request path=/apis/admin/getNovel
+2024-07-17 14:46:56,536 - main.py - log_requests - line:57 - INFO - rid=OML6F7 completed_in=499.02ms status_code=200
+2024-07-17 14:46:56,537 - main.py - log_requests - line:50 - INFO - rid=RS7TJL start request path=/apis/getNovel/
+INFO:     127.0.0.1:34546 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:46:56,539 - main.py - log_requests - line:57 - INFO - rid=RS7TJL completed_in=1.80ms status_code=307
+INFO:     127.0.0.1:34550 - "POST /apis/getNovel/ HTTP/1.0" 307 Temporary Redirect
+2024-07-17 14:46:57,092 - main.py - log_requests - line:50 - INFO - rid=UJX5D5 start request path=/apis/getNovel
+2024-07-17 14:46:57,897 - main.py - log_requests - line:57 - INFO - rid=UJX5D5 completed_in=804.81ms status_code=200
+2024-07-17 14:46:57,898 - main.py - log_requests - line:50 - INFO - rid=4K68YP start request path=/apis/comment/getcomments
+INFO:     127.0.0.1:34564 - "POST /apis/getNovel HTTP/1.0" 200 OK
+2024-07-17 14:46:57,901 - multipart.py - callback - line:626 - DEBUG - Calling on_part_begin with no data
+2024-07-17 14:46:57,901 - multipart.py - callback - line:623 - DEBUG - Calling on_header_field with data[42:61]
+2024-07-17 14:46:57,902 - multipart.py - callback - line:623 - DEBUG - Calling on_header_value with data[63:89]
+2024-07-17 14:46:57,902 - multipart.py - callback - line:626 - DEBUG - Calling on_header_end with no data
+2024-07-17 14:46:57,903 - multipart.py - callback - line:626 - DEBUG - Calling on_headers_finished with no data
+2024-07-17 14:46:57,904 - multipart.py - callback - line:623 - DEBUG - Calling on_part_data with data[93:95]
+2024-07-17 14:46:57,904 - multipart.py - callback - line:626 - DEBUG - Calling on_part_end with no data
+2024-07-17 14:46:57,905 - multipart.py - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-17 14:46:58,145 - main.py - log_requests - line:57 - INFO - rid=4K68YP completed_in=246.09ms status_code=200
+INFO:     127.0.0.1:34572 - "POST /apis/comment/getcomments HTTP/1.0" 200 OK
+2024-07-17 14:47:02,047 - main.py - log_requests - line:50 - INFO - rid=E0FCD9 start request path=/apis/admin/getNovel
+2024-07-17 14:47:02,549 - main.py - log_requests - line:57 - INFO - rid=E0FCD9 completed_in=501.46ms status_code=200
+INFO:     127.0.0.1:34576 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=descending HTTP/1.0" 200 OK
+2024-07-17 14:47:06,497 - main.py - log_requests - line:50 - INFO - rid=2BSAX5 start request path=/apis/admin/getNovel
+2024-07-17 14:47:06,952 - main.py - log_requests - line:57 - INFO - rid=2BSAX5 completed_in=454.17ms status_code=200
+INFO:     127.0.0.1:50190 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:47:08,365 - main.py - log_requests - line:50 - INFO - rid=E39DZ9 start request path=/apis/admin/getNovel
+2024-07-17 14:47:08,793 - main.py - log_requests - line:57 - INFO - rid=E39DZ9 completed_in=427.93ms status_code=200
+INFO:     127.0.0.1:50198 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=descending HTTP/1.0" 200 OK
+2024-07-17 14:47:23,556 - main.py - log_requests - line:50 - INFO - rid=S5AYCB start request path=/apis/admin/getNovel
+2024-07-17 14:47:24,023 - main.py - log_requests - line:57 - INFO - rid=S5AYCB completed_in=465.32ms status_code=200
+INFO:     127.0.0.1:49100 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=null HTTP/1.0" 200 OK
+2024-07-17 14:47:25,135 - main.py - log_requests - line:50 - INFO - rid=CL89NJ start request path=/apis/user/is_admin
+2024-07-17 14:47:25,360 - main.py - log_requests - line:57 - INFO - rid=CL89NJ completed_in=225.12ms status_code=200
+INFO:     127.0.0.1:49114 - "POST /apis/user/is_admin HTTP/1.0" 200 OK
+2024-07-17 14:47:25,646 - main.py - log_requests - line:50 - INFO - rid=3K7GR8 start request path=/apis/admin/getNovel
+2024-07-17 14:47:26,080 - main.py - log_requests - line:57 - INFO - rid=3K7GR8 completed_in=433.29ms status_code=200
+2024-07-17 14:47:26,080 - main.py - log_requests - line:50 - INFO - rid=Y42Y0S start request path=/apis/admin/getusers
+INFO:     127.0.0.1:49128 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=descending HTTP/1.0" 200 OK
+2024-07-17 14:47:26,556 - main.py - log_requests - line:50 - INFO - rid=ICOCDI start request path=/apis/admin/getusernovel
+2024-07-17 14:47:26,802 - main.py - log_requests - line:57 - INFO - rid=Y42Y0S completed_in=720.62ms status_code=200
+INFO:     127.0.0.1:49144 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:47:26,803 - main.py - log_requests - line:57 - INFO - rid=ICOCDI completed_in=246.22ms status_code=200
+INFO:     127.0.0.1:49154 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
+2024-07-17 14:47:28,874 - main.py - log_requests - line:50 - INFO - rid=SYEKOG start request path=/apis/admin/getNovel
+2024-07-17 14:47:29,336 - main.py - log_requests - line:57 - INFO - rid=SYEKOG completed_in=462.27ms status_code=200
+INFO:     127.0.0.1:49168 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:47:29,467 - main.py - log_requests - line:50 - INFO - rid=00EEB3 start request path=/apis/admin/getusers
+2024-07-17 14:47:29,916 - main.py - log_requests - line:57 - INFO - rid=00EEB3 completed_in=448.06ms status_code=500
+INFO:     127.0.0.1:49170 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending&search_target=%E4%B8%80 HTTP/1.0" 500 Internal Server Error
+2024-07-17 14:47:30,506 - main.py - log_requests - line:50 - INFO - rid=M5UNUW start request path=/apis/admin/getNovel
+2024-07-17 14:47:30,967 - main.py - log_requests - line:57 - INFO - rid=M5UNUW completed_in=460.43ms status_code=200
+INFO:     127.0.0.1:49174 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=descending HTTP/1.0" 200 OK
+2024-07-17 14:47:32,355 - main.py - log_requests - line:50 - INFO - rid=KTRLNN start request path=/apis/admin/getNovel
+2024-07-17 14:47:32,831 - main.py - log_requests - line:57 - INFO - rid=KTRLNN completed_in=475.35ms status_code=200
+INFO:     127.0.0.1:49176 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:47:33,415 - main.py - log_requests - line:50 - INFO - rid=M92UWL start request path=/apis/admin/getusers
+2024-07-17 14:47:33,881 - main.py - log_requests - line:57 - INFO - rid=M92UWL completed_in=465.89ms status_code=200
+INFO:     127.0.0.1:49180 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:47:33,980 - main.py - log_requests - line:50 - INFO - rid=J5RFBB start request path=/apis/admin/getNovel
+2024-07-17 14:47:34,411 - main.py - log_requests - line:57 - INFO - rid=J5RFBB completed_in=430.59ms status_code=200
+INFO:     127.0.0.1:36472 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=descending HTTP/1.0" 200 OK
+2024-07-17 14:47:35,564 - main.py - log_requests - line:50 - INFO - rid=8HDNA0 start request path=/apis/admin/getNovel
+2024-07-17 14:47:36,059 - main.py - log_requests - line:57 - INFO - rid=8HDNA0 completed_in=494.09ms status_code=200
+INFO:     127.0.0.1:36484 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:47:37,135 - main.py - log_requests - line:50 - INFO - rid=RC26E8 start request path=/apis/admin/getusers
+2024-07-17 14:47:37,642 - main.py - log_requests - line:57 - INFO - rid=RC26E8 completed_in=506.89ms status_code=200
+2024-07-17 14:47:37,642 - main.py - log_requests - line:50 - INFO - rid=GSSXK2 start request path=/apis/admin/getNovel
+INFO:     127.0.0.1:36494 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending&search_target=i HTTP/1.0" 200 OK
+2024-07-17 14:47:38,137 - main.py - log_requests - line:57 - INFO - rid=GSSXK2 completed_in=494.71ms status_code=200
+INFO:     127.0.0.1:36506 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=descending HTTP/1.0" 200 OK
+2024-07-17 14:47:38,982 - main.py - log_requests - line:50 - INFO - rid=9PPZJH start request path=/apis/admin/getNovel
+2024-07-17 14:47:39,463 - main.py - log_requests - line:57 - INFO - rid=9PPZJH completed_in=480.74ms status_code=200
+INFO:     127.0.0.1:36512 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:47:44,775 - main.py - log_requests - line:50 - INFO - rid=STP1E8 start request path=/apis/admin/getusers
+2024-07-17 14:47:45,243 - main.py - log_requests - line:57 - INFO - rid=STP1E8 completed_in=468.11ms status_code=200
+INFO:     127.0.0.1:39578 - "GET /apis/admin/getusers?offset=10&row_count=10&order_by=user_id&order_way=ascending&search_target=i HTTP/1.0" 200 OK
+2024-07-17 14:47:47,001 - main.py - log_requests - line:50 - INFO - rid=E09O4X start request path=/apis/user/ownInfo
+2024-07-17 14:47:47,672 - main.py - getOwnInfo - line:356 - DEBUG - ((38, 'Qianqiuer', '123456Aa', 0),)
+2024-07-17 14:47:47,673 - main.py - log_requests - line:57 - INFO - rid=E09O4X completed_in=671.22ms status_code=200
+2024-07-17 14:47:47,674 - main.py - log_requests - line:50 - INFO - rid=4AY215 start request path=/apis/user/ownInfo
+INFO:     127.0.0.1:39590 - "POST /apis/user/ownInfo HTTP/1.0" 200 OK
+2024-07-17 14:47:48,336 - main.py - getOwnInfo - line:356 - DEBUG - ((38, 'Qianqiuer', '123456Aa', 0),)
+2024-07-17 14:47:48,338 - main.py - log_requests - line:50 - INFO - rid=IQEY3W start request path=/apis/admin/getusers
+2024-07-17 14:47:48,860 - main.py - log_requests - line:57 - INFO - rid=4AY215 completed_in=1186.21ms status_code=200
+2024-07-17 14:47:48,861 - main.py - log_requests - line:50 - INFO - rid=Z1R6LV start request path=/apis/admin/getNovel
+INFO:     127.0.0.1:39600 - "POST /apis/user/ownInfo HTTP/1.0" 200 OK
+2024-07-17 14:47:48,861 - main.py - log_requests - line:57 - INFO - rid=IQEY3W completed_in=523.27ms status_code=200
+INFO:     127.0.0.1:39604 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending&search_target=i HTTP/1.0" 200 OK
+2024-07-17 14:47:49,372 - main.py - log_requests - line:57 - INFO - rid=Z1R6LV completed_in=510.41ms status_code=200
+INFO:     127.0.0.1:39608 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_title&order_way=descending HTTP/1.0" 200 OK
+2024-07-17 14:47:50,237 - main.py - log_requests - line:50 - INFO - rid=PY91IZ start request path=/apis/admin/getNovel
+2024-07-17 14:47:50,721 - main.py - log_requests - line:57 - INFO - rid=PY91IZ completed_in=483.46ms status_code=200
+INFO:     127.0.0.1:39618 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_title&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:47:51,195 - main.py - log_requests - line:50 - INFO - rid=CKNK4V start request path=/apis/admin/getusers
+2024-07-17 14:47:51,664 - main.py - log_requests - line:57 - INFO - rid=CKNK4V completed_in=469.56ms status_code=200
+2024-07-17 14:47:51,666 - main.py - log_requests - line:50 - INFO - rid=S4QJ8J start request path=/apis/admin/getusers
+INFO:     127.0.0.1:39620 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending&search_target=4 HTTP/1.0" 200 OK
+2024-07-17 14:47:52,144 - main.py - log_requests - line:50 - INFO - rid=CAQ67F start request path=/apis/admin/getusernovel
+2024-07-17 14:47:52,369 - main.py - log_requests - line:57 - INFO - rid=S4QJ8J completed_in=703.28ms status_code=200
+INFO:     127.0.0.1:39630 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:47:52,370 - main.py - log_requests - line:57 - INFO - rid=CAQ67F completed_in=226.54ms status_code=200
+INFO:     127.0.0.1:39644 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
+2024-07-17 14:47:53,578 - main.py - log_requests - line:50 - INFO - rid=LM3N0T start request path=/apis/admin/getusers
+2024-07-17 14:47:54,057 - main.py - log_requests - line:57 - INFO - rid=LM3N0T completed_in=479.29ms status_code=200
+INFO:     127.0.0.1:60476 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=descending HTTP/1.0" 200 OK
+2024-07-17 14:47:54,810 - main.py - log_requests - line:50 - INFO - rid=QC9U9P start request path=/apis/admin/getusers
+2024-07-17 14:47:55,310 - main.py - log_requests - line:57 - INFO - rid=QC9U9P completed_in=499.42ms status_code=200
+INFO:     127.0.0.1:60478 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:47:55,327 - main.py - log_requests - line:50 - INFO - rid=9D5E35 start request path=/apis/admin/getusers
+2024-07-17 14:47:55,784 - main.py - log_requests - line:57 - INFO - rid=9D5E35 completed_in=456.81ms status_code=500
+INFO:     127.0.0.1:60490 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending&search_target=ii HTTP/1.0" 500 Internal Server Error
+2024-07-17 14:47:56,201 - main.py - log_requests - line:50 - INFO - rid=IFICWI start request path=/apis/admin/getusers
+2024-07-17 14:47:56,668 - main.py - log_requests - line:57 - INFO - rid=IFICWI completed_in=466.43ms status_code=200
+INFO:     127.0.0.1:60500 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_name&order_way=descending HTTP/1.0" 200 OK
+2024-07-17 14:47:57,226 - main.py - log_requests - line:50 - INFO - rid=RQYAG9 start request path=/apis/admin/getusers
+2024-07-17 14:47:57,663 - main.py - log_requests - line:57 - INFO - rid=RQYAG9 completed_in=437.53ms status_code=200
+INFO:     127.0.0.1:60504 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_name&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:47:57,675 - main.py - log_requests - line:50 - INFO - rid=NPU5P8 start request path=/apis/admin/getusers
+2024-07-17 14:47:58,138 - main.py - log_requests - line:57 - INFO - rid=NPU5P8 completed_in=462.59ms status_code=200
+INFO:     127.0.0.1:60518 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending&search_target=i HTTP/1.0" 200 OK
+2024-07-17 14:47:58,386 - main.py - log_requests - line:50 - INFO - rid=AD2TQW start request path=/apis/admin/getusers
+2024-07-17 14:47:58,837 - main.py - log_requests - line:57 - INFO - rid=AD2TQW completed_in=449.86ms status_code=200
+INFO:     127.0.0.1:60522 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_name&order_way=descending HTTP/1.0" 200 OK
+2024-07-17 14:48:00,435 - main.py - log_requests - line:50 - INFO - rid=P915V3 start request path=/apis/admin/getusers
+2024-07-17 14:48:00,872 - main.py - log_requests - line:57 - INFO - rid=P915V3 completed_in=436.29ms status_code=200
+2024-07-17 14:48:00,872 - main.py - log_requests - line:50 - INFO - rid=1ZHXQM start request path=/apis/admin/getusers
+INFO:     127.0.0.1:60528 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:48:01,365 - main.py - log_requests - line:57 - INFO - rid=1ZHXQM completed_in=492.47ms status_code=200
+2024-07-17 14:48:01,366 - main.py - log_requests - line:50 - INFO - rid=H7URPZ start request path=/apis/rank
+INFO:     127.0.0.1:60530 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_name&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:48:01,865 - main.py - log_requests - line:57 - INFO - rid=H7URPZ completed_in=498.79ms status_code=200
+INFO:     127.0.0.1:60532 - "POST /apis/rank HTTP/1.0" 200 OK
+2024-07-17 14:48:02,179 - main.py - log_requests - line:50 - INFO - rid=VXVMLP start request path=/apis/admin/getusers
+2024-07-17 14:48:02,648 - main.py - log_requests - line:57 - INFO - rid=VXVMLP completed_in=467.88ms status_code=200
+INFO:     127.0.0.1:60540 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:48:03,451 - main.py - log_requests - line:50 - INFO - rid=YYOYPL start request path=/apis/admin/getusers
+2024-07-17 14:48:03,885 - main.py - log_requests - line:57 - INFO - rid=YYOYPL completed_in=433.34ms status_code=200
+INFO:     127.0.0.1:60544 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=descending HTTP/1.0" 200 OK
+2024-07-17 14:48:04,688 - main.py - log_requests - line:50 - INFO - rid=XB29LY start request path=/apis/rank
+2024-07-17 14:48:05,152 - main.py - log_requests - line:57 - INFO - rid=XB29LY completed_in=463.38ms status_code=200
+INFO:     127.0.0.1:41200 - "POST /apis/rank HTTP/1.0" 200 OK
+2024-07-17 14:48:05,158 - main.py - log_requests - line:50 - INFO - rid=MR7G3Z start request path=/apis/admin/getNovel
+2024-07-17 14:48:05,659 - main.py - log_requests - line:57 - INFO - rid=MR7G3Z completed_in=501.16ms status_code=200
+2024-07-17 14:48:05,660 - main.py - log_requests - line:50 - INFO - rid=94X4A8 start request path=/apis/admin/getNovel
+INFO:     127.0.0.1:41216 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:48:06,119 - main.py - log_requests - line:57 - INFO - rid=94X4A8 completed_in=458.81ms status_code=200
+INFO:     127.0.0.1:41230 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:48:07,392 - main.py - log_requests - line:50 - INFO - rid=RI68U4 start request path=/apis/rank
+2024-07-17 14:48:07,872 - main.py - log_requests - line:57 - INFO - rid=RI68U4 completed_in=479.21ms status_code=200
+INFO:     127.0.0.1:41238 - "POST /apis/rank HTTP/1.0" 200 OK
+2024-07-17 14:48:08,574 - main.py - log_requests - line:50 - INFO - rid=N8MOIB start request path=/apis/admin/getNovel
+2024-07-17 14:48:09,030 - main.py - log_requests - line:57 - INFO - rid=N8MOIB completed_in=455.49ms status_code=200
+2024-07-17 14:48:09,031 - main.py - log_requests - line:50 - INFO - rid=P2A8BH start request path=/apis/rank
+INFO:     127.0.0.1:41252 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=descending HTTP/1.0" 200 OK
+2024-07-17 14:48:09,522 - main.py - log_requests - line:57 - INFO - rid=P2A8BH completed_in=490.08ms status_code=200
+INFO:     127.0.0.1:41254 - "POST /apis/rank HTTP/1.0" 200 OK
+2024-07-17 14:48:10,498 - main.py - log_requests - line:50 - INFO - rid=R35BGH start request path=/apis/admin/getNovel
+2024-07-17 14:48:10,956 - main.py - log_requests - line:57 - INFO - rid=R35BGH completed_in=457.71ms status_code=200
+2024-07-17 14:48:10,957 - main.py - log_requests - line:50 - INFO - rid=8GRFP4 start request path=/apis/user/is_admin
+INFO:     127.0.0.1:41266 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:48:11,180 - main.py - log_requests - line:57 - INFO - rid=8GRFP4 completed_in=222.64ms status_code=200
+INFO:     127.0.0.1:41268 - "POST /apis/user/is_admin HTTP/1.0" 200 OK
+2024-07-17 14:48:12,159 - main.py - log_requests - line:50 - INFO - rid=2NH18V start request path=/apis/admin/getusers
+2024-07-17 14:48:12,611 - main.py - log_requests - line:57 - INFO - rid=2NH18V completed_in=452.38ms status_code=200
+2024-07-17 14:48:12,612 - main.py - log_requests - line:50 - INFO - rid=6PTRC9 start request path=/apis/admin/getusernovel
+INFO:     127.0.0.1:41282 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:48:12,850 - main.py - log_requests - line:50 - INFO - rid=18DGQN start request path=/apis/admin/getNovel
+2024-07-17 14:48:13,304 - main.py - log_requests - line:57 - INFO - rid=6PTRC9 completed_in=691.92ms status_code=200
+INFO:     127.0.0.1:41290 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
+2024-07-17 14:48:13,305 - main.py - log_requests - line:57 - INFO - rid=18DGQN completed_in=455.19ms status_code=200
+INFO:     127.0.0.1:41304 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=user_id&order_way=descending HTTP/1.0" 200 OK
+2024-07-17 14:48:14,213 - main.py - log_requests - line:50 - INFO - rid=KS50B7 start request path=/apis/admin/getNovel
+2024-07-17 14:48:14,672 - main.py - log_requests - line:57 - INFO - rid=KS50B7 completed_in=458.12ms status_code=200
+INFO:     127.0.0.1:40518 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:48:15,379 - main.py - log_requests - line:50 - INFO - rid=D2AXFM start request path=/apis/admin/getNovel
+2024-07-17 14:48:15,889 - main.py - log_requests - line:57 - INFO - rid=D2AXFM completed_in=509.07ms status_code=200
+INFO:     127.0.0.1:40534 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=descending HTTP/1.0" 200 OK
+2024-07-17 14:48:16,924 - main.py - log_requests - line:50 - INFO - rid=WH7ERW start request path=/apis/admin/getNovel
+2024-07-17 14:48:17,398 - main.py - log_requests - line:57 - INFO - rid=WH7ERW completed_in=473.53ms status_code=200
+INFO:     127.0.0.1:40542 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:48:17,599 - main.py - log_requests - line:50 - INFO - rid=TLP82O start request path=/apis/admin/getusers
+2024-07-17 14:48:18,093 - main.py - log_requests - line:57 - INFO - rid=TLP82O completed_in=491.94ms status_code=200
+INFO:     127.0.0.1:40550 - "GET /apis/admin/getusers?offset=10&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:48:19,178 - main.py - log_requests - line:50 - INFO - rid=MRHO31 start request path=/apis/admin/getusers
+2024-07-17 14:48:19,669 - main.py - log_requests - line:57 - INFO - rid=MRHO31 completed_in=491.05ms status_code=200
+INFO:     127.0.0.1:40566 - "GET /apis/admin/getusers?offset=20&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:48:22,872 - main.py - log_requests - line:50 - INFO - rid=YA5XRA start request path=/apis/admin/getusers
+2024-07-17 14:48:23,332 - main.py - log_requests - line:57 - INFO - rid=YA5XRA completed_in=459.39ms status_code=200
+INFO:     127.0.0.1:40582 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:48:26,442 - main.py - log_requests - line:50 - INFO - rid=KCZQE3 start request path=/apis/admin/getusers
+2024-07-17 14:48:26,936 - main.py - log_requests - line:57 - INFO - rid=KCZQE3 completed_in=494.18ms status_code=200
+INFO:     127.0.0.1:51984 - "GET /apis/admin/getusers?offset=10&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:48:29,382 - main.py - log_requests - line:50 - INFO - rid=3IEM5K start request path=/apis/admin/getusers
+2024-07-17 14:48:29,815 - main.py - log_requests - line:57 - INFO - rid=3IEM5K completed_in=432.72ms status_code=200
+INFO:     127.0.0.1:51988 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:48:30,186 - main.py - log_requests - line:50 - INFO - rid=IXTSKQ start request path=/apis/admin/getusers
+2024-07-17 14:48:30,653 - main.py - log_requests - line:57 - INFO - rid=IXTSKQ completed_in=467.13ms status_code=200
+INFO:     127.0.0.1:52000 - "GET /apis/admin/getusers?offset=20&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:48:31,120 - main.py - log_requests - line:50 - INFO - rid=KSV19U start request path=/apis/admin/getusers
+2024-07-17 14:48:31,615 - main.py - log_requests - line:57 - INFO - rid=KSV19U completed_in=494.29ms status_code=200
+INFO:     127.0.0.1:52004 - "GET /apis/admin/getusers?offset=30&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:48:36,168 - main.py - log_requests - line:50 - INFO - rid=6ZQBZN start request path=/apis/admin/deleteuser
+2024-07-17 14:48:36,667 - main.py - log_requests - line:57 - INFO - rid=6ZQBZN completed_in=497.70ms status_code=200
+INFO:     127.0.0.1:57440 - "DELETE /apis/admin/deleteuser?user_id=57&user_name=%E6%9D%8E%E4%B8%87%E4%B8%AD%E6%96%87%E7%89%88 HTTP/1.0" 200 OK
+2024-07-17 14:48:36,701 - main.py - log_requests - line:50 - INFO - rid=L75O4J start request path=/apis/admin/getusers
+2024-07-17 14:48:37,162 - main.py - log_requests - line:57 - INFO - rid=L75O4J completed_in=460.48ms status_code=200
+INFO:     127.0.0.1:57446 - "GET /apis/admin/getusers?offset=30&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:48:51,693 - main.py - log_requests - line:50 - INFO - rid=YJ12CW start request path=/apis/login/
+2024-07-17 14:48:51,695 - main.py - log_requests - line:57 - INFO - rid=YJ12CW completed_in=0.61ms status_code=307
+INFO:     127.0.0.1:44428 - "POST /apis/login/ HTTP/1.0" 307 Temporary Redirect
+2024-07-17 14:48:51,732 - main.py - log_requests - line:50 - INFO - rid=6ANRHK start request path=/apis/login
+2024-07-17 14:48:51,733 - multipart.py - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-17 14:48:51,734 - multipart.py - callback - line:623 - DEBUG - Calling on_field_name with data[0:8]
+2024-07-17 14:48:51,734 - multipart.py - callback - line:623 - DEBUG - Calling on_field_data with data[9:12]
+2024-07-17 14:48:51,735 - multipart.py - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-17 14:48:51,735 - multipart.py - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-17 14:48:51,735 - multipart.py - callback - line:623 - DEBUG - Calling on_field_name with data[13:21]
+2024-07-17 14:48:51,736 - multipart.py - callback - line:623 - DEBUG - Calling on_field_data with data[22:31]
+2024-07-17 14:48:51,736 - multipart.py - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-17 14:48:51,737 - multipart.py - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-17 14:48:52,049 - main.py - log_requests - line:57 - INFO - rid=6ANRHK completed_in=315.77ms status_code=200
+{'sub': 'zjx'}
+{'sub': 'zjx', 'exp': datetime.datetime(2024, 7, 17, 8, 28, 52, 48537, tzinfo=datetime.timezone.utc)}
+INFO:     127.0.0.1:44432 - "POST /apis/login HTTP/1.0" 200 OK
+2024-07-17 14:48:52,110 - main.py - log_requests - line:50 - INFO - rid=ZEYT2A start request path=/apis/user/ownInfo
+2024-07-17 14:48:52,816 - main.py - getOwnInfo - line:356 - DEBUG - ((48, 'zjx', '123456Zjx', 0),)
+2024-07-17 14:48:52,817 - main.py - log_requests - line:57 - INFO - rid=ZEYT2A completed_in=706.73ms status_code=200
+INFO:     127.0.0.1:44448 - "POST /apis/user/ownInfo HTTP/1.0" 200 OK
+2024-07-17 14:49:05,427 - main.py - log_requests - line:50 - INFO - rid=C850DH start request path=/apis/search
+2024-07-17 14:49:05,920 - main.py - log_requests - line:57 - INFO - rid=C850DH completed_in=492.67ms status_code=200
+INFO:     127.0.0.1:40192 - "POST /apis/search HTTP/1.0" 200 OK
+2024-07-17 14:49:07,844 - main.py - log_requests - line:50 - INFO - rid=9WT8X2 start request path=/apis/getNovel/
+2024-07-17 14:49:07,845 - main.py - log_requests - line:57 - INFO - rid=9WT8X2 completed_in=0.62ms status_code=307
+INFO:     127.0.0.1:40204 - "POST /apis/getNovel/ HTTP/1.0" 307 Temporary Redirect
+2024-07-17 14:49:07,848 - main.py - log_requests - line:50 - INFO - rid=XYX861 start request path=/apis/comment/getcomments
+2024-07-17 14:49:07,849 - multipart.py - callback - line:626 - DEBUG - Calling on_part_begin with no data
+2024-07-17 14:49:07,850 - multipart.py - callback - line:623 - DEBUG - Calling on_header_field with data[42:61]
+2024-07-17 14:49:07,850 - multipart.py - callback - line:623 - DEBUG - Calling on_header_value with data[63:89]
+2024-07-17 14:49:07,851 - multipart.py - callback - line:626 - DEBUG - Calling on_header_end with no data
+2024-07-17 14:49:07,852 - multipart.py - callback - line:626 - DEBUG - Calling on_headers_finished with no data
+2024-07-17 14:49:07,852 - multipart.py - callback - line:623 - DEBUG - Calling on_part_data with data[93:96]
+2024-07-17 14:49:07,853 - multipart.py - callback - line:626 - DEBUG - Calling on_part_end with no data
+2024-07-17 14:49:07,853 - multipart.py - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-17 14:49:08,117 - main.py - log_requests - line:57 - INFO - rid=XYX861 completed_in=268.88ms status_code=200
+2024-07-17 14:49:08,119 - main.py - log_requests - line:50 - INFO - rid=MKI0XK start request path=/apis/getNovel
+INFO:     127.0.0.1:40212 - "POST /apis/comment/getcomments HTTP/1.0" 200 OK
+2024-07-17 14:49:08,843 - main.py - log_requests - line:57 - INFO - rid=MKI0XK completed_in=724.05ms status_code=200
+INFO:     127.0.0.1:40226 - "POST /apis/getNovel HTTP/1.0" 200 OK
+2024-07-17 14:49:13,724 - main.py - log_requests - line:50 - INFO - rid=A3NRYB start request path=/apis/user/ownInfo
+2024-07-17 14:49:14,429 - main.py - getOwnInfo - line:356 - DEBUG - ((48, 'zjx', '123456Zjx', 0),)
+2024-07-17 14:49:14,430 - main.py - log_requests - line:57 - INFO - rid=A3NRYB completed_in=705.58ms status_code=200
+INFO:     127.0.0.1:42570 - "POST /apis/user/ownInfo HTTP/1.0" 200 OK
+2024-07-17 14:49:51,138 - main.py - log_requests - line:50 - INFO - rid=0WOJJ0 start request path=/apis/admin/getNovel
+2024-07-17 14:49:51,633 - main.py - log_requests - line:57 - INFO - rid=0WOJJ0 completed_in=494.68ms status_code=200
+INFO:     127.0.0.1:57934 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending&search_target=3 HTTP/1.0" 200 OK
+2024-07-17 14:49:54,049 - main.py - log_requests - line:50 - INFO - rid=JCZC1V start request path=/apis/admin/getNovel
+2024-07-17 14:49:54,511 - main.py - log_requests - line:57 - INFO - rid=JCZC1V completed_in=461.17ms status_code=200
+INFO:     127.0.0.1:38678 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending&search_target=4 HTTP/1.0" 200 OK
+2024-07-17 14:49:56,745 - main.py - log_requests - line:50 - INFO - rid=024EY3 start request path=/apis/admin/getNovel
+2024-07-17 14:49:57,203 - main.py - log_requests - line:57 - INFO - rid=024EY3 completed_in=457.09ms status_code=200
+INFO:     127.0.0.1:38684 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending&search_target=7 HTTP/1.0" 200 OK
+2024-07-17 14:49:58,926 - main.py - log_requests - line:50 - INFO - rid=VOUIJM start request path=/apis/admin/getNovel
+2024-07-17 14:49:59,376 - main.py - log_requests - line:57 - INFO - rid=VOUIJM completed_in=450.22ms status_code=500
+INFO:     127.0.0.1:38694 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending&search_target=777 HTTP/1.0" 500 Internal Server Error
+2024-07-17 14:50:14,380 - main.py - log_requests - line:50 - INFO - rid=IX0CH6 start request path=/apis/admin/getNovel
+2024-07-17 14:50:14,849 - main.py - log_requests - line:57 - INFO - rid=IX0CH6 completed_in=468.95ms status_code=200
+INFO:     127.0.0.1:33332 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:50:16,756 - main.py - log_requests - line:50 - INFO - rid=L815RP start request path=/apis/admin/getNovel
+2024-07-17 14:50:17,231 - main.py - log_requests - line:57 - INFO - rid=L815RP completed_in=474.84ms status_code=200
+INFO:     127.0.0.1:33338 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=descending HTTP/1.0" 200 OK
+2024-07-17 14:50:21,305 - main.py - log_requests - line:50 - INFO - rid=SBN6AJ start request path=/apis/admin/getNovel
+2024-07-17 14:50:21,814 - main.py - log_requests - line:57 - INFO - rid=SBN6AJ completed_in=508.22ms status_code=200
+INFO:     127.0.0.1:33346 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=descending&search_target=136 HTTP/1.0" 200 OK
+2024-07-17 14:50:26,872 - main.py - log_requests - line:50 - INFO - rid=51VGQS start request path=/apis/admin/getNovel
+2024-07-17 14:50:27,366 - main.py - log_requests - line:57 - INFO - rid=51VGQS completed_in=493.59ms status_code=500
+INFO:     127.0.0.1:43888 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=descending&search_target=137 HTTP/1.0" 500 Internal Server Error
+2024-07-17 14:50:37,856 - main.py - log_requests - line:50 - INFO - rid=E9TZ42 start request path=/apis/admin/getNovel
+2024-07-17 14:50:38,291 - main.py - log_requests - line:57 - INFO - rid=E9TZ42 completed_in=434.84ms status_code=500
+INFO:     127.0.0.1:35748 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=null&search_target=137 HTTP/1.0" 500 Internal Server Error
+2024-07-17 14:50:39,843 - main.py - log_requests - line:50 - INFO - rid=KKIU3T start request path=/apis/login/
+2024-07-17 14:50:39,844 - main.py - log_requests - line:57 - INFO - rid=KKIU3T completed_in=0.58ms status_code=307
+INFO:     127.0.0.1:35758 - "POST /apis/login/ HTTP/1.0" 307 Temporary Redirect
+2024-07-17 14:50:39,909 - main.py - log_requests - line:50 - INFO - rid=XMY7HH start request path=/apis/login
+2024-07-17 14:50:39,910 - multipart.py - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-17 14:50:39,910 - multipart.py - callback - line:623 - DEBUG - Calling on_field_name with data[0:8]
+2024-07-17 14:50:39,911 - multipart.py - callback - line:623 - DEBUG - Calling on_field_data with data[9:14]
+2024-07-17 14:50:39,911 - multipart.py - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-17 14:50:39,911 - multipart.py - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-17 14:50:39,912 - multipart.py - callback - line:623 - DEBUG - Calling on_field_name with data[15:23]
+2024-07-17 14:50:39,912 - multipart.py - callback - line:623 - DEBUG - Calling on_field_data with data[24:29]
+2024-07-17 14:50:39,913 - multipart.py - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-17 14:50:39,913 - multipart.py - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-17 14:50:40,174 - main.py - log_requests - line:57 - INFO - rid=XMY7HH completed_in=265.32ms status_code=200
+{'sub': 'admin'}
+{'sub': 'admin', 'exp': datetime.datetime(2024, 7, 17, 8, 30, 40, 174268, tzinfo=datetime.timezone.utc)}
+INFO:     127.0.0.1:35760 - "POST /apis/login HTTP/1.0" 200 OK
+2024-07-17 14:50:40,317 - main.py - log_requests - line:50 - INFO - rid=FXX2R9 start request path=/apis/user/is_admin
+2024-07-17 14:50:40,585 - main.py - log_requests - line:57 - INFO - rid=FXX2R9 completed_in=266.61ms status_code=200
+2024-07-17 14:50:40,586 - main.py - log_requests - line:50 - INFO - rid=ZJNMWN start request path=/apis/admin/getNovel
+INFO:     127.0.0.1:35772 - "POST /apis/user/is_admin HTTP/1.0" 200 OK
+2024-07-17 14:50:41,077 - main.py - log_requests - line:57 - INFO - rid=ZJNMWN completed_in=490.97ms status_code=200
+INFO:     127.0.0.1:35778 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=null HTTP/1.0" 200 OK
+2024-07-17 14:50:41,695 - main.py - log_requests - line:50 - INFO - rid=576K64 start request path=/apis/admin/getusers
+2024-07-17 14:50:42,119 - main.py - log_requests - line:50 - INFO - rid=UTULLT start request path=/apis/admin/getusernovel
+2024-07-17 14:50:42,120 - main.py - log_requests - line:57 - INFO - rid=576K64 completed_in=424.56ms status_code=200
+INFO:     127.0.0.1:35780 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:50:42,367 - main.py - log_requests - line:57 - INFO - rid=UTULLT completed_in=246.62ms status_code=200
+INFO:     127.0.0.1:35782 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
+2024-07-17 14:50:43,635 - main.py - log_requests - line:50 - INFO - rid=JSHVJC start request path=/apis/admin/getNovel
+2024-07-17 14:50:44,074 - main.py - log_requests - line:57 - INFO - rid=JSHVJC completed_in=437.66ms status_code=500
+INFO:     127.0.0.1:40900 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=null&search_target=1 HTTP/1.0" 500 Internal Server Error
+2024-07-17 14:50:44,306 - main.py - log_requests - line:50 - INFO - rid=I7UNIO start request path=/apis/admin/getusers
+2024-07-17 14:50:44,806 - main.py - log_requests - line:57 - INFO - rid=I7UNIO completed_in=499.79ms status_code=200
+INFO:     127.0.0.1:40912 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=descending HTTP/1.0" 200 OK
+2024-07-17 14:50:45,880 - main.py - log_requests - line:50 - INFO - rid=1B85PC start request path=/apis/admin/getusers
+2024-07-17 14:50:46,365 - main.py - log_requests - line:57 - INFO - rid=1B85PC completed_in=485.02ms status_code=200
+INFO:     127.0.0.1:40914 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:50:47,432 - main.py - log_requests - line:50 - INFO - rid=LUEI4O start request path=/apis/admin/getusers
+2024-07-17 14:50:47,933 - main.py - log_requests - line:57 - INFO - rid=LUEI4O completed_in=500.32ms status_code=200
+INFO:     127.0.0.1:40918 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=descending HTTP/1.0" 200 OK
+2024-07-17 14:50:48,915 - main.py - log_requests - line:50 - INFO - rid=OOJHZ1 start request path=/apis/admin/getusers
+2024-07-17 14:50:49,353 - main.py - log_requests - line:57 - INFO - rid=OOJHZ1 completed_in=437.97ms status_code=200
+INFO:     127.0.0.1:40934 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:51:33,973 - main.py - log_requests - line:50 - INFO - rid=YKVCTF start request path=/apis/admin/getusers
+2024-07-17 14:51:34,429 - main.py - log_requests - line:57 - INFO - rid=YKVCTF completed_in=455.70ms status_code=200
+INFO:     127.0.0.1:45484 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=descending HTTP/1.0" 200 OK
+2024-07-17 14:51:35,303 - main.py - log_requests - line:50 - INFO - rid=DIR44F start request path=/apis/admin/getusers
+2024-07-17 14:51:35,817 - main.py - log_requests - line:57 - INFO - rid=DIR44F completed_in=513.55ms status_code=200
+INFO:     127.0.0.1:45490 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_name&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:51:36,442 - main.py - log_requests - line:50 - INFO - rid=SNW09J start request path=/apis/admin/getusers
+2024-07-17 14:51:36,944 - main.py - log_requests - line:57 - INFO - rid=SNW09J completed_in=501.83ms status_code=200
+INFO:     127.0.0.1:45502 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_name&order_way=descending HTTP/1.0" 200 OK
+2024-07-17 14:51:37,601 - main.py - log_requests - line:50 - INFO - rid=VTFXB7 start request path=/apis/admin/getusers
+2024-07-17 14:51:38,104 - main.py - log_requests - line:57 - INFO - rid=VTFXB7 completed_in=502.65ms status_code=200
+INFO:     127.0.0.1:45506 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_name&order_way=null HTTP/1.0" 200 OK
+2024-07-17 14:51:38,375 - main.py - log_requests - line:50 - INFO - rid=8QMK4P start request path=/apis/admin/getusers
+2024-07-17 14:51:38,825 - main.py - log_requests - line:57 - INFO - rid=8QMK4P completed_in=449.32ms status_code=200
+2024-07-17 14:51:38,825 - main.py - log_requests - line:50 - INFO - rid=C1KTA5 start request path=/apis/admin/getusers
+INFO:     127.0.0.1:45510 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_name&order_way=descending HTTP/1.0" 200 OK
+2024-07-17 14:51:39,305 - main.py - log_requests - line:57 - INFO - rid=C1KTA5 completed_in=479.45ms status_code=200
+INFO:     127.0.0.1:45524 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_name&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:51:40,534 - main.py - log_requests - line:50 - INFO - rid=YRVZ8Y start request path=/apis/admin/getusers
+2024-07-17 14:51:40,991 - main.py - log_requests - line:57 - INFO - rid=YRVZ8Y completed_in=457.05ms status_code=200
+INFO:     127.0.0.1:45526 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:51:41,523 - main.py - log_requests - line:50 - INFO - rid=Y7AZSI start request path=/apis/write_request
+2024-07-17 14:51:41,524 - http_request.py - _handle_request - line:285 - DEBUG - Request body: {'model': 'qwen-turbo', 'parameters': {'result_format': 'message'}, 'input': {'messages': [{'role': 'system', 'content': 'You are a professional novel writer.'}, {'role': 'user', 'content': '续写小说,字数越多越好:李万是一个帅气的大学高材生，今天，他路过宠物店看到一条狗很可爱，把她买了下来并取名为刘颖。'}]}}
+2024-07-17 14:51:41,526 - connectionpool.py - _new_conn - line:1051 - DEBUG - Starting new HTTPS connection (1): dashscope.aliyuncs.com:443
+2024-07-17 14:51:56,410 - connectionpool.py - _make_request - line:546 - DEBUG - https://dashscope.aliyuncs.com:443 "POST /api/v1/services/aigc/text-generation/generation HTTP/11" 200 None
+2024-07-17 14:51:56,412 - http_request.py - _handle_response - line:250 - DEBUG - Response: {'output': {'choices': [{'finish_reason': 'stop', 'message': {'role': 'assistant', 'content': '李万，一个阳光帅气的大学高材生，总是带着一股书卷气与独特的魅力。他的学业优秀，深受老师和同学们的喜爱，然而他的生活却并不乏味。在忙碌的学习之余，他一直渴望着生活的色彩与温度。\n\n这天，他如同往常一样漫步在熙熙攘攘的街道上，目光被一家新开的宠物店吸引。店里的小动物们活泼可爱，其中一条小狗尤为引人注目，那是一只毛色如雪，眼睛晶莹剔透的小家伙，仿佛是冬日里的一抹暖阳，让人忍不住想要靠近。\n\n李万走近一看，小狗怯生生地望着他，眼神中充满了好奇与依赖。他心中一动，决定给这只小狗一个家。他询问了店主关于小狗的品种和习性，得知它是一只拉布拉多，聪明温顺，非常适合做为陪伴。于是，他毫不犹豫地掏出了钱包，将她带回了家。\n\n他为小狗取名“刘颖”，寓意着希望她能像星星一样璀璨，像钻石一样珍贵。回到宿舍，李万精心为刘颖准备了一个舒适的窝，还买来了各种玩具和狗粮。看着刘颖兴奋地在房间里跑来跑去，他的脸上洋溢着满足的笑容。\n\n从此，李万的生活变得更加丰富多彩。每天清晨，他会带着刘颖去学校的公园散步，让新鲜的空气和阳光唤醒新的一天。学习累了，他会和刘颖一起玩耍，她的欢叫声总能驱散他的疲惫。周末，他们会一起去湖边嬉戏，或者在校园的图书馆度过宁静的午后。\n\n刘颖的出现，让李万的生活不再只是书本和考试，她带给他的是无尽的欢乐和温暖。他们之间的默契和互动，仿佛是一首无声的诗，让他的世界更加生动和有趣。而李万也明白，拥有一只宠物，不仅仅是陪伴，更是一种责任和成长。\n\n就这样，李万与刘颖的故事在大学校园里悄然展开，他们的生活因为彼此而变得更加精彩。他们的故事，就像一部未完的小说，每一天都在书写新的篇章，充满了未知和期待。'}}]}, 'usage': {'total_tokens': 511, 'output_tokens': 451, 'input_tokens': 60}, 'request_id': '54dbece1-a61f-96c0-ad1a-0f9448434d6d'}
+2024-07-17 14:51:56,413 - main.py - log_requests - line:57 - INFO - rid=Y7AZSI completed_in=14889.72ms status_code=200
+2024-07-17 14:51:56,413 - main.py - log_requests - line:50 - INFO - rid=QK3MEK start request path=/apis/login/
+INFO:     127.0.0.1:45534 - "POST /apis/write_request HTTP/1.0" 200 OK
+2024-07-17 14:51:56,415 - main.py - log_requests - line:50 - INFO - rid=QEHBQ4 start request path=/apis/login/
+2024-07-17 14:51:56,416 - main.py - log_requests - line:50 - INFO - rid=ZXZ1Q4 start request path=/apis/admin/getusers
+2024-07-17 14:51:56,417 - main.py - log_requests - line:57 - INFO - rid=QK3MEK completed_in=2.96ms status_code=307
+2024-07-17 14:51:56,876 - main.py - log_requests - line:50 - INFO - rid=JSD596 start request path=/apis/login/
+2024-07-17 14:51:56,877 - main.py - log_requests - line:57 - INFO - rid=QEHBQ4 completed_in=461.83ms status_code=307
+2024-07-17 14:51:56,878 - main.py - log_requests - line:57 - INFO - rid=ZXZ1Q4 completed_in=461.88ms status_code=200
+INFO:     127.0.0.1:44056 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending&search_target=1 HTTP/1.0" 200 OK
+2024-07-17 14:51:56,880 - main.py - log_requests - line:57 - INFO - rid=JSD596 completed_in=2.70ms status_code=307
+INFO:     127.0.0.1:53420 - "POST /apis/login/ HTTP/1.0" 307 Temporary Redirect
+2024-07-17 14:51:56,936 - main.py - log_requests - line:50 - INFO - rid=CXNE9C start request path=/apis/login/
+2024-07-17 14:51:56,937 - main.py - log_requests - line:57 - INFO - rid=CXNE9C completed_in=0.58ms status_code=307
+INFO:     127.0.0.1:53428 - "POST /apis/login/ HTTP/1.0" 307 Temporary Redirect
+2024-07-17 14:51:56,939 - main.py - log_requests - line:50 - INFO - rid=5F50W4 start request path=/apis/login
+2024-07-17 14:51:56,940 - multipart.py - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-17 14:51:56,941 - multipart.py - callback - line:623 - DEBUG - Calling on_field_name with data[0:8]
+2024-07-17 14:51:56,942 - multipart.py - callback - line:623 - DEBUG - Calling on_field_data with data[9:12]
+2024-07-17 14:51:56,942 - multipart.py - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-17 14:51:56,943 - multipart.py - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-17 14:51:56,943 - multipart.py - callback - line:623 - DEBUG - Calling on_field_name with data[13:21]
+2024-07-17 14:51:56,944 - multipart.py - callback - line:623 - DEBUG - Calling on_field_data with data[22:30]
+2024-07-17 14:51:56,944 - multipart.py - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-17 14:51:56,945 - multipart.py - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-17 14:51:57,252 - main.py - log_requests - line:57 - INFO - rid=5F50W4 completed_in=312.31ms status_code=200
+2024-07-17 14:51:57,253 - main.py - log_requests - line:50 - INFO - rid=WG717P start request path=/apis/login
+{'sub': 'pjj'}
+{'sub': 'pjj', 'exp': datetime.datetime(2024, 7, 17, 8, 31, 57, 251749, tzinfo=datetime.timezone.utc)}
+INFO:     127.0.0.1:53436 - "POST /apis/login HTTP/1.0" 200 OK
+2024-07-17 14:51:57,255 - multipart.py - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-17 14:51:57,255 - multipart.py - callback - line:623 - DEBUG - Calling on_field_name with data[0:8]
+2024-07-17 14:51:57,256 - multipart.py - callback - line:623 - DEBUG - Calling on_field_data with data[9:12]
+2024-07-17 14:51:57,256 - multipart.py - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-17 14:51:57,257 - multipart.py - callback - line:626 - DEBUG - Calling on_field_start with no data
+2024-07-17 14:51:57,257 - multipart.py - callback - line:623 - DEBUG - Calling on_field_name with data[13:21]
+2024-07-17 14:51:57,258 - multipart.py - callback - line:623 - DEBUG - Calling on_field_data with data[22:30]
+2024-07-17 14:51:57,258 - multipart.py - callback - line:626 - DEBUG - Calling on_field_end with no data
+2024-07-17 14:51:57,259 - multipart.py - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-17 14:51:57,551 - main.py - log_requests - line:57 - INFO - rid=WG717P completed_in=297.80ms status_code=200
+2024-07-17 14:51:57,552 - main.py - log_requests - line:50 - INFO - rid=EJ5IVM start request path=/apis/user/ownInfo
+{'sub': 'pjj'}
+{'sub': 'pjj', 'exp': datetime.datetime(2024, 7, 17, 8, 31, 57, 551035, tzinfo=datetime.timezone.utc)}
+INFO:     127.0.0.1:53452 - "POST /apis/login HTTP/1.0" 200 OK
+2024-07-17 14:51:58,239 - main.py - getOwnInfo - line:356 - DEBUG - ((37, 'pjj', '123456Ab', 0),)
+2024-07-17 14:51:58,241 - main.py - log_requests - line:50 - INFO - rid=8YVWJT start request path=/apis/user/ownInfo
+2024-07-17 14:51:58,967 - main.py - getOwnInfo - line:356 - DEBUG - ((37, 'pjj', '123456Ab', 0),)
+2024-07-17 14:51:58,969 - main.py - log_requests - line:57 - INFO - rid=EJ5IVM completed_in=1415.63ms status_code=200
+INFO:     127.0.0.1:53468 - "POST /apis/user/ownInfo HTTP/1.0" 200 OK
+2024-07-17 14:51:58,970 - main.py - log_requests - line:57 - INFO - rid=8YVWJT completed_in=728.75ms status_code=200
+2024-07-17 14:51:58,971 - main.py - log_requests - line:50 - INFO - rid=FAGRGJ start request path=/apis/rank
+INFO:     127.0.0.1:53474 - "POST /apis/user/ownInfo HTTP/1.0" 200 OK
+2024-07-17 14:51:59,419 - main.py - log_requests - line:57 - INFO - rid=FAGRGJ completed_in=447.55ms status_code=200
+2024-07-17 14:51:59,420 - main.py - log_requests - line:50 - INFO - rid=ZPE7DT start request path=/apis/user/ownInfo
+INFO:     127.0.0.1:53488 - "POST /apis/rank HTTP/1.0" 200 OK
+2024-07-17 14:52:00,161 - main.py - getOwnInfo - line:356 - DEBUG - ((37, 'pjj', '123456Ab', 0),)
+2024-07-17 14:52:00,163 - main.py - log_requests - line:50 - INFO - rid=LN42DP start request path=/apis/user/ownInfo
+2024-07-17 14:52:00,876 - main.py - getOwnInfo - line:356 - DEBUG - ((37, 'pjj', '123456Ab', 0),)
+2024-07-17 14:52:00,878 - main.py - log_requests - line:57 - INFO - rid=ZPE7DT completed_in=1458.01ms status_code=200
+INFO:     127.0.0.1:53502 - "POST /apis/user/ownInfo HTTP/1.0" 200 OK
+2024-07-17 14:52:00,879 - main.py - log_requests - line:57 - INFO - rid=LN42DP completed_in=716.10ms status_code=200
+INFO:     127.0.0.1:53512 - "POST /apis/user/ownInfo HTTP/1.0" 200 OK
+2024-07-17 14:52:02,401 - main.py - log_requests - line:50 - INFO - rid=VKM8ZE start request path=/apis/rank
+2024-07-17 14:52:02,860 - main.py - log_requests - line:57 - INFO - rid=VKM8ZE completed_in=458.51ms status_code=200
+INFO:     127.0.0.1:53520 - "POST /apis/rank HTTP/1.0" 200 OK
+2024-07-17 14:52:04,219 - main.py - log_requests - line:50 - INFO - rid=EMELT8 start request path=/apis/comment/getcomments
+2024-07-17 14:52:04,221 - multipart.py - callback - line:626 - DEBUG - Calling on_part_begin with no data
+2024-07-17 14:52:04,221 - multipart.py - callback - line:623 - DEBUG - Calling on_header_field with data[42:61]
+2024-07-17 14:52:04,221 - multipart.py - callback - line:623 - DEBUG - Calling on_header_value with data[63:89]
+2024-07-17 14:52:04,222 - multipart.py - callback - line:626 - DEBUG - Calling on_header_end with no data
+2024-07-17 14:52:04,222 - multipart.py - callback - line:626 - DEBUG - Calling on_headers_finished with no data
+2024-07-17 14:52:04,223 - multipart.py - callback - line:623 - DEBUG - Calling on_part_data with data[93:96]
+2024-07-17 14:52:04,224 - multipart.py - callback - line:626 - DEBUG - Calling on_part_end with no data
+2024-07-17 14:52:04,224 - multipart.py - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-17 14:52:04,461 - main.py - log_requests - line:57 - INFO - rid=EMELT8 completed_in=241.19ms status_code=200
+2024-07-17 14:52:04,462 - main.py - log_requests - line:50 - INFO - rid=YNJ0NR start request path=/apis/getNovel/
+INFO:     127.0.0.1:39532 - "POST /apis/comment/getcomments HTTP/1.0" 200 OK
+2024-07-17 14:52:04,464 - main.py - log_requests - line:57 - INFO - rid=YNJ0NR completed_in=1.22ms status_code=307
+INFO:     127.0.0.1:39538 - "POST /apis/getNovel/ HTTP/1.0" 307 Temporary Redirect
+2024-07-17 14:52:04,654 - main.py - log_requests - line:50 - INFO - rid=KDR5BJ start request path=/apis/getNovel
+2024-07-17 14:52:05,352 - main.py - log_requests - line:57 - INFO - rid=KDR5BJ completed_in=697.28ms status_code=200
+INFO:     127.0.0.1:39546 - "POST /apis/getNovel HTTP/1.0" 200 OK
+2024-07-17 14:52:05,818 - main.py - log_requests - line:50 - INFO - rid=O6SVP4 start request path=/apis/admin/getusers
+2024-07-17 14:52:06,267 - main.py - log_requests - line:57 - INFO - rid=O6SVP4 completed_in=449.35ms status_code=500
+INFO:     127.0.0.1:39548 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending&search_target=2%3D10000 HTTP/1.0" 500 Internal Server Error
+2024-07-17 14:52:14,412 - main.py - log_requests - line:50 - INFO - rid=5JCOWI start request path=/apis/admin/getNovel
+2024-07-17 14:52:14,860 - main.py - log_requests - line:57 - INFO - rid=5JCOWI completed_in=447.46ms status_code=200
+INFO:     127.0.0.1:42868 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_viewcount&order_way=descending HTTP/1.0" 200 OK
+2024-07-17 14:52:23,136 - main.py - log_requests - line:50 - INFO - rid=WK77JL start request path=/apis/rank
+2024-07-17 14:52:23,586 - main.py - log_requests - line:57 - INFO - rid=WK77JL completed_in=450.28ms status_code=200
+INFO:     127.0.0.1:42876 - "POST /apis/rank HTTP/1.0" 200 OK
+2024-07-17 14:52:23,637 - main.py - log_requests - line:50 - INFO - rid=VNUXO6 start request path=/apis/admin/getNovel
+2024-07-17 14:52:24,107 - main.py - log_requests - line:57 - INFO - rid=VNUXO6 completed_in=468.78ms status_code=500
+INFO:     127.0.0.1:53596 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_title&order_way=ascending&search_target=1 HTTP/1.0" 500 Internal Server Error
+2024-07-17 14:52:25,054 - main.py - log_requests - line:50 - INFO - rid=CDSYFX start request path=/apis/admin/getNovel
+2024-07-17 14:52:25,519 - main.py - log_requests - line:57 - INFO - rid=CDSYFX completed_in=465.57ms status_code=500
+INFO:     127.0.0.1:53598 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_title&order_way=descending&search_target=1 HTTP/1.0" 500 Internal Server Error
+2024-07-17 14:52:26,343 - main.py - log_requests - line:50 - INFO - rid=IUJD99 start request path=/apis/admin/getNovel
+2024-07-17 14:52:26,840 - main.py - log_requests - line:57 - INFO - rid=IUJD99 completed_in=495.92ms status_code=500
+INFO:     127.0.0.1:53606 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_title&order_way=null&search_target=1 HTTP/1.0" 500 Internal Server Error
+2024-07-17 14:52:27,060 - main.py - log_requests - line:50 - INFO - rid=CU8ROU start request path=/apis/rank
+2024-07-17 14:52:27,539 - main.py - log_requests - line:57 - INFO - rid=CU8ROU completed_in=478.20ms status_code=200
+2024-07-17 14:52:27,539 - main.py - log_requests - line:50 - INFO - rid=NR6R81 start request path=/apis/admin/getNovel
+INFO:     127.0.0.1:53608 - "POST /apis/rank HTTP/1.0" 200 OK
+2024-07-17 14:52:28,037 - main.py - log_requests - line:57 - INFO - rid=NR6R81 completed_in=497.49ms status_code=500
+2024-07-17 14:52:28,038 - main.py - log_requests - line:50 - INFO - rid=0YE76Y start request path=/apis/admin/getNovel
+INFO:     127.0.0.1:53612 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_title&order_way=descending&search_target=1 HTTP/1.0" 500 Internal Server Error
+2024-07-17 14:52:28,500 - main.py - log_requests - line:57 - INFO - rid=0YE76Y completed_in=462.33ms status_code=500
+INFO:     127.0.0.1:53616 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_title&order_way=ascending&search_target=1 HTTP/1.0" 500 Internal Server Error
+2024-07-17 14:52:34,638 - main.py - log_requests - line:50 - INFO - rid=EJP7KG start request path=/apis/admin/getNovel
+2024-07-17 14:52:35,130 - main.py - log_requests - line:57 - INFO - rid=EJP7KG completed_in=491.86ms status_code=500
+INFO:     127.0.0.1:33966 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_title&order_way=descending&search_target=1 HTTP/1.0" 500 Internal Server Error
+2024-07-17 14:52:35,830 - main.py - log_requests - line:50 - INFO - rid=JSCLJG start request path=/apis/admin/getNovel
+2024-07-17 14:52:36,343 - main.py - log_requests - line:57 - INFO - rid=JSCLJG completed_in=513.00ms status_code=500
+INFO:     127.0.0.1:33974 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_title&order_way=null&search_target=1 HTTP/1.0" 500 Internal Server Error
+2024-07-17 14:52:36,573 - main.py - log_requests - line:50 - INFO - rid=462OG8 start request path=/apis/admin/getusers
+2024-07-17 14:52:37,087 - main.py - log_requests - line:50 - INFO - rid=Q6FHE6 start request path=/apis/admin/getusernovel
+2024-07-17 14:52:37,088 - main.py - log_requests - line:57 - INFO - rid=462OG8 completed_in=514.32ms status_code=200
+INFO:     127.0.0.1:33984 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:52:37,304 - main.py - log_requests - line:57 - INFO - rid=Q6FHE6 completed_in=216.17ms status_code=200
+INFO:     127.0.0.1:33988 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
+2024-07-17 14:52:40,207 - main.py - log_requests - line:50 - INFO - rid=0DXB77 start request path=/apis/admin/getusernovel
+2024-07-17 14:52:40,438 - main.py - log_requests - line:57 - INFO - rid=0DXB77 completed_in=230.53ms status_code=200
+INFO:     127.0.0.1:34000 - "GET /apis/admin/getusernovel?user_id=2 HTTP/1.0" 200 OK
+2024-07-17 14:52:47,007 - main.py - log_requests - line:50 - INFO - rid=PQPU98 start request path=/apis/admin/getusers
+2024-07-17 14:52:47,488 - main.py - log_requests - line:57 - INFO - rid=PQPU98 completed_in=480.97ms status_code=200
+INFO:     127.0.0.1:55534 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=descending HTTP/1.0" 200 OK
+2024-07-17 14:52:48,528 - main.py - log_requests - line:50 - INFO - rid=Y8CSC4 start request path=/apis/admin/getNovel
+2024-07-17 14:52:49,010 - main.py - log_requests - line:57 - INFO - rid=Y8CSC4 completed_in=481.52ms status_code=200
+INFO:     127.0.0.1:55544 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:53:25,074 - main.py - log_requests - line:50 - INFO - rid=2I3U1C start request path=/apis/getNovel/
+2024-07-17 14:53:25,075 - main.py - log_requests - line:57 - INFO - rid=2I3U1C completed_in=0.65ms status_code=307
+INFO:     127.0.0.1:33482 - "POST /apis/getNovel/ HTTP/1.0" 307 Temporary Redirect
+2024-07-17 14:53:25,179 - main.py - log_requests - line:50 - INFO - rid=VRD8JL start request path=/apis/getNovel
+2024-07-17 14:53:26,027 - main.py - log_requests - line:57 - INFO - rid=VRD8JL completed_in=847.98ms status_code=200
+INFO:     127.0.0.1:33494 - "POST /apis/getNovel HTTP/1.0" 200 OK
+2024-07-17 14:53:42,342 - main.py - log_requests - line:50 - INFO - rid=LWQFK0 start request path=/apis/admin/getNovel
+2024-07-17 14:53:42,825 - main.py - log_requests - line:57 - INFO - rid=LWQFK0 completed_in=483.00ms status_code=200
+INFO:     127.0.0.1:57430 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:53:44,323 - main.py - log_requests - line:50 - INFO - rid=EB6JEY start request path=/apis/comment/getcomments
+2024-07-17 14:53:44,324 - multipart.py - callback - line:626 - DEBUG - Calling on_part_begin with no data
+2024-07-17 14:53:44,324 - multipart.py - callback - line:623 - DEBUG - Calling on_header_field with data[42:61]
+2024-07-17 14:53:44,324 - multipart.py - callback - line:623 - DEBUG - Calling on_header_value with data[63:89]
+2024-07-17 14:53:44,324 - multipart.py - callback - line:626 - DEBUG - Calling on_header_end with no data
+2024-07-17 14:53:44,325 - multipart.py - callback - line:626 - DEBUG - Calling on_headers_finished with no data
+2024-07-17 14:53:44,325 - multipart.py - callback - line:623 - DEBUG - Calling on_part_data with data[93:95]
+2024-07-17 14:53:44,325 - multipart.py - callback - line:626 - DEBUG - Calling on_part_end with no data
+2024-07-17 14:53:44,325 - multipart.py - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-17 14:53:44,608 - main.py - log_requests - line:57 - INFO - rid=EB6JEY completed_in=284.51ms status_code=200
+INFO:     127.0.0.1:46828 - "POST /apis/comment/getcomments HTTP/1.0" 200 OK
+2024-07-17 14:53:44,609 - main.py - log_requests - line:50 - INFO - rid=RX2II1 start request path=/apis/getNovel
+2024-07-17 14:53:45,502 - main.py - log_requests - line:57 - INFO - rid=RX2II1 completed_in=892.38ms status_code=200
+INFO:     127.0.0.1:46836 - "POST /apis/getNovel HTTP/1.0" 200 OK
+2024-07-17 14:53:53,384 - main.py - log_requests - line:50 - INFO - rid=5FXQAD start request path=/apis/getNovel
+2024-07-17 14:53:54,246 - main.py - log_requests - line:57 - INFO - rid=5FXQAD completed_in=861.77ms status_code=200
+INFO:     127.0.0.1:46852 - "POST /apis/getNovel HTTP/1.0" 200 OK
+2024-07-17 14:54:01,323 - main.py - log_requests - line:50 - INFO - rid=MBF1S1 start request path=/apis/admin/getNovel
+2024-07-17 14:54:01,808 - main.py - log_requests - line:57 - INFO - rid=MBF1S1 completed_in=484.17ms status_code=200
+INFO:     127.0.0.1:35116 - "GET /apis/admin/getNovel?offset=10&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:54:02,125 - main.py - log_requests - line:50 - INFO - rid=2L26RW start request path=/apis/user/ownInfo
+2024-07-17 14:54:02,819 - main.py - getOwnInfo - line:356 - DEBUG - ((31, 'liwan3', '20030704Liwan', 0),)
+2024-07-17 14:54:02,821 - main.py - log_requests - line:57 - INFO - rid=2L26RW completed_in=695.99ms status_code=200
+2024-07-17 14:54:02,822 - main.py - log_requests - line:50 - INFO - rid=C17KRK start request path=/apis/user/ownInfo
+INFO:     127.0.0.1:35130 - "POST /apis/user/ownInfo HTTP/1.0" 200 OK
+2024-07-17 14:54:03,534 - main.py - getOwnInfo - line:356 - DEBUG - ((31, 'liwan3', '20030704Liwan', 0),)
+2024-07-17 14:54:03,535 - main.py - log_requests - line:57 - INFO - rid=C17KRK completed_in=712.86ms status_code=200
+INFO:     127.0.0.1:35134 - "POST /apis/user/ownInfo HTTP/1.0" 200 OK
+2024-07-17 14:54:03,758 - main.py - log_requests - line:50 - INFO - rid=7RKP0B start request path=/apis/getNovel
+2024-07-17 14:54:04,542 - main.py - log_requests - line:57 - INFO - rid=7RKP0B completed_in=782.72ms status_code=200
+INFO:     127.0.0.1:40014 - "POST /apis/getNovel HTTP/1.0" 200 OK
+2024-07-17 14:54:13,759 - main.py - log_requests - line:50 - INFO - rid=6DXCRM start request path=/apis/admin/getNovel
+2024-07-17 14:54:14,200 - main.py - log_requests - line:57 - INFO - rid=6DXCRM completed_in=440.54ms status_code=200
+2024-07-17 14:54:14,201 - main.py - log_requests - line:50 - INFO - rid=9ZKK3K start request path=/apis/user/ownInfo
+INFO:     127.0.0.1:55758 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:54:14,945 - main.py - getOwnInfo - line:356 - DEBUG - ((31, 'liwan3', '20030704Liwan', 0),)
+2024-07-17 14:54:14,946 - main.py - log_requests - line:50 - INFO - rid=VUCPSV start request path=/apis/user/ownInfo
+2024-07-17 14:54:15,669 - main.py - getOwnInfo - line:356 - DEBUG - ((31, 'liwan3', '20030704Liwan', 0),)
+2024-07-17 14:54:15,671 - main.py - log_requests - line:57 - INFO - rid=9ZKK3K completed_in=1469.67ms status_code=200
+INFO:     127.0.0.1:55762 - "POST /apis/user/ownInfo HTTP/1.0" 200 OK
+2024-07-17 14:54:15,673 - main.py - log_requests - line:57 - INFO - rid=VUCPSV completed_in=726.48ms status_code=200
+INFO:     127.0.0.1:55772 - "POST /apis/user/ownInfo HTTP/1.0" 200 OK
+2024-07-17 14:54:51,959 - main.py - log_requests - line:50 - INFO - rid=5MFPQI start request path=/apis/write_request
+2024-07-17 14:54:51,960 - http_request.py - _handle_request - line:285 - DEBUG - Request body: {'model': 'qwen-turbo', 'parameters': {'result_format': 'message'}, 'input': {'messages': [{'role': 'system', 'content': 'You are a professional novel writer.'}, {'role': 'user', 'content': '续写小说,字数越多越好:雨巷\n撑着油纸伞，独自\n彷徨在悠长，悠长\n又寂寥的雨巷，\n我希望逢着\n一个丁香一样地1\n结着愁怨的姑娘。\n她是有\n丁香一样的颜色，\n丁香一样的芬芳，\n丁香一样的忧愁，\n在雨中哀怨，\n哀怨又彷徨；\n她彷徨在这寂寥的雨巷，\n撑着油纸伞\n像我一样，\n像我一样地\n默默彳亍2着，\n冷漠，凄清，又惆怅。\n她静默地走近\n走近，又投出\n太息3一般的眼光，\n她飘过\n像梦一般的，\n像梦一般的凄婉迷茫。\n像梦中飘过\n一枝丁香的，\n我身旁飘过这女郎；\n她静默地远了，远了，\n到了颓圮4的篱墙，\n走尽这雨巷。\n在雨的哀曲里，\n消了她的颜色，\n散了她的芬芳\n消散了，甚至她的\n太息般的眼光，\n丁香般的惆怅。\n撑着油纸伞，独自\n彷徨在悠长，悠长\n又寂寥的雨巷，\n我希望飘过\n一个丁香一样地\n结着愁怨的姑娘'}]}}
+2024-07-17 14:54:51,962 - connectionpool.py - _new_conn - line:1051 - DEBUG - Starting new HTTPS connection (1): dashscope.aliyuncs.com:443
+2024-07-17 14:55:06,098 - connectionpool.py - _make_request - line:546 - DEBUG - https://dashscope.aliyuncs.com:443 "POST /api/v1/services/aigc/text-generation/generation HTTP/11" 200 None
+2024-07-17 14:55:06,099 - http_request.py - _handle_response - line:250 - DEBUG - Response: {'output': {'choices': [{'finish_reason': 'stop', 'message': {'role': 'assistant', 'content': '雨滴敲打着油纸伞面，发出轻盈而沉闷的回响，仿佛是那逝去时光的低吟。我在雨巷的尽头，心中满是对未知的期待和对过去的怀念。每一个转角，每一道雨线，都可能隐藏着那个丁香般的身影。\n\n忽然，一阵微风拂过，带来一阵熟悉的香气，那淡淡的丁香气息，像是久违的朋友，又或是前世的记忆。我抬眼望去，只见一抹淡紫色的身影在雨雾中若隐若现，她就是我一直在寻找的女子吗？\n\n她缓缓靠近，步履轻盈，如同梦中的仙子，裙摆随着步伐摇曳，犹如丁香花瓣在风中舞蹈。她的脸庞被雨打湿，却更加楚楚动人，那双眼睛，深邃如星河，流露出无尽的忧郁与哀愁。\n\n她轻轻开口，声音如丝如缕，像是低吟的诗篇：“你也在寻觅失落的诗篇，还是我就是你心中的那一抹忧郁？”我愣住了，一时竟无法言语，只是静静地看着她，任由雨丝打湿我的衣襟。\n\n她叹息一声，目光中带着无奈和期盼：“这雨巷，是否也承载了你的过往？我们都是在这寂寞的雨中，寻找那一份属于自己的慰藉。”我点点头，心中的情感交织成一幅画卷，那是我对过去的追忆，也是对未来的渴望。\n\n她转身离去，渐行渐远，直到消失在雨巷的尽头，只留下那丁香般的影子和那太息般的回声。我站在原地，任凭雨水淋湿我的脸颊，心中满是对她的思念和对未来的期许。\n\n“或许，我只是在寻找一个能懂我心的人，一个能与我共度风雨的丁香。”我低声自语，再次撑起油纸伞，继续在这悠长又寂寥的雨巷中徘徊，期待着下一次的相遇，期待着那份丁香般的遇见。\n\n雨巷的故事还在继续，每一滴雨，每一阵风，都在诉说着一段段未完的篇章。我愿在这无尽的雨中，寻觅那个结着愁怨的丁香姑娘，直到永恒。'}}]}, 'usage': {'total_tokens': 775, 'output_tokens': 476, 'input_tokens': 299}, 'request_id': 'e0bf1347-1141-91c3-b79a-cd81043e46ea'}
+2024-07-17 14:55:06,099 - main.py - log_requests - line:57 - INFO - rid=5MFPQI completed_in=14140.23ms status_code=200
+INFO:     127.0.0.1:56904 - "POST /apis/write_request HTTP/1.0" 200 OK
+2024-07-17 14:55:07,019 - main.py - log_requests - line:50 - INFO - rid=2YKVJM start request path=/apis/user/is_admin
+2024-07-17 14:55:07,288 - main.py - log_requests - line:57 - INFO - rid=2YKVJM completed_in=268.71ms status_code=200
+INFO:     127.0.0.1:55406 - "POST /apis/user/is_admin HTTP/1.0" 200 OK
+2024-07-17 14:55:07,574 - main.py - log_requests - line:50 - INFO - rid=44RR3J start request path=/apis/admin/getNovel
+2024-07-17 14:55:08,057 - main.py - log_requests - line:57 - INFO - rid=44RR3J completed_in=483.00ms status_code=200
+INFO:     127.0.0.1:55408 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:55:09,094 - main.py - log_requests - line:50 - INFO - rid=8Q3Z8R start request path=/apis/admin/getNovel
+2024-07-17 14:55:09,577 - main.py - log_requests - line:57 - INFO - rid=8Q3Z8R completed_in=482.49ms status_code=200
+INFO:     127.0.0.1:55420 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_viewcount&order_way=descending HTTP/1.0" 200 OK
+2024-07-17 14:55:20,670 - main.py - log_requests - line:50 - INFO - rid=BP5ZA2 start request path=/apis/write_request
+2024-07-17 14:55:20,672 - http_request.py - _handle_request - line:285 - DEBUG - Request body: {'model': 'qwen-turbo', 'parameters': {'result_format': 'message'}, 'input': {'messages': [{'role': 'system', 'content': 'You are a professional novel writer.'}, {'role': 'user', 'content': '续写小说,字数越多越好:雨滴敲打着油纸伞面，发出轻盈而沉闷的回响，仿佛是那逝去时光的低吟。我在雨巷的尽头，心中满是对未知的期待和对过去的怀念。每一个转角，每一道雨线，都可能隐藏着那个丁香般的身影。\n\n忽然，一阵微风拂过，带来一阵熟悉的香气，那淡淡的丁香气息，像是久违的朋友，又或是前世的记忆。我抬眼望去，只见一抹淡紫色的身影在雨雾中若隐若现，她就是我一直在寻找的女子吗？\n\n她缓缓靠近，步履轻盈，如同梦中的仙子，裙摆随着步伐摇曳，犹如丁香花瓣在风中舞蹈。她的脸庞被雨打湿，却更加楚楚动人，那双眼睛，深邃如星河，流露出无尽的忧郁与哀愁。\n\n她轻轻开口，声音如丝如缕，像是低吟的诗篇：“你也在寻觅失落的诗篇，还是我就是你心中的那一抹忧郁？”我愣住了，一时竟无法言语，只是静静地看着她，任由雨丝打湿我的衣襟。\n\n她叹息一声，目光中带着无奈和期盼：“这雨巷，是否也承载了你的过往？我们都是在这寂寞的雨中，寻找那一份属于自己的慰藉。”我点点头，心中的情感交织成一幅画卷，那是我对过去的追忆，也是对未来的渴望。\n\n她转身离去，渐行渐远，直到消失在雨巷的尽头，只留下那丁香般的影子和那太息般的回声。我站在原地，任凭雨水淋湿我的脸颊，心中满是对她的思念和对未来的期许。\n\n“或许，我只是在寻找一个能懂我心的人，一个能与我共度风雨的丁香。”我低声自语，再次撑起油纸伞，继续在这悠长又寂寥的雨巷中徘徊，期待着下一次的相遇，期待着那份丁香般的遇见。\n\n雨巷的故事还在继续，每一滴雨，每一阵风，都在诉说着一段段未完的篇章。我愿在这无尽的雨中，寻觅那个结着愁怨的丁香姑娘，直到永恒。'}]}}
+2024-07-17 14:55:20,674 - connectionpool.py - _new_conn - line:1051 - DEBUG - Starting new HTTPS connection (1): dashscope.aliyuncs.com:443
+2024-07-17 14:55:34,870 - connectionpool.py - _make_request - line:546 - DEBUG - https://dashscope.aliyuncs.com:443 "POST /api/v1/services/aigc/text-generation/generation HTTP/11" 200 None
+2024-07-17 14:55:34,871 - http_request.py - _handle_response - line:250 - DEBUG - Response: {'output': {'choices': [{'finish_reason': 'stop', 'message': {'role': 'assistant', 'content': '日子一天天过去，雨巷的每一处都留下了我深深的足迹，我开始在每个角落刻下她的名字，用雨水和时间编织成一首无声的诗。丁香的气息始终萦绕在我身边，成为我生活中最美好的记忆。\n\n我开始频繁地写下关于她的诗篇，那些文字如同雨滴，落在纸上，又落在心底。我试图捕捉她的影子，将她的笑容、眼神、步伐，甚至那微风中的一丝幽香，都化作笔下的字符，让它们在纸上跳跃，诉说我们的故事。\n\n然而，丁香姑娘仿佛人间蒸发，我再也找不到她的踪迹。雨巷依旧寂静，只有雨滴和我心中的思念相伴。我开始怀疑，她是否真的存在，或者，我只是在一场梦境中遇见了她。\n\n某日，我在一本古旧的诗集中发现了一首未署名的诗，诗中描绘的场景，正是我心中的雨巷，那熟悉的丁香气息，让我心头一震。我追寻着诗的线索，来到了一座古老的庭院，那里，丁香花开得正盛，如同她曾经的笑容。\n\n我站在花海中，闭上眼睛，仿佛听见她在耳边低语：“我一直在你身边，只是以另一种方式存在。”我睁开眼，看见一朵丁香花随风飘落，落在我的手心，就像她曾在我掌心留下的温度。\n\n原来，她并没有离开，只是选择了以诗歌的方式，陪伴我度过这段漫长的雨巷。我明白了，每个人的心中都有一座雨巷，有人在其中寻找自我，有人在其中寻找爱。而我，找到了我的丁香，她就在我每一次的诗行中，每一次的雨滴中，每一次的期待中。\n\n从此，我更加珍视手中的诗篇，因为我知道，那是我和她的约定，是我们共同的记忆。雨巷的故事仍在继续，而我，愿意在每一个雨天，继续寻找那份属于我们的丁香约定。'}}]}, 'usage': {'total_tokens': 917, 'output_tokens': 412, 'input_tokens': 505}, 'request_id': '64f504bb-16c2-9a84-88a6-48a42233c559'}
+2024-07-17 14:55:34,872 - main.py - log_requests - line:57 - INFO - rid=BP5ZA2 completed_in=14200.64ms status_code=200
+INFO:     127.0.0.1:33090 - "POST /apis/write_request HTTP/1.0" 200 OK
+2024-07-17 14:55:44,059 - main.py - log_requests - line:50 - INFO - rid=U7QCS8 start request path=/apis/user/is_admin
+2024-07-17 14:55:44,270 - main.py - log_requests - line:57 - INFO - rid=U7QCS8 completed_in=210.76ms status_code=200
+INFO:     127.0.0.1:38052 - "POST /apis/user/is_admin HTTP/1.0" 200 OK
+2024-07-17 14:55:45,254 - main.py - log_requests - line:50 - INFO - rid=0GU2W4 start request path=/apis/admin/getusernovel
+2024-07-17 14:55:45,504 - main.py - log_requests - line:50 - INFO - rid=4KSSL3 start request path=/apis/admin/getusers
+2024-07-17 14:55:45,505 - main.py - log_requests - line:57 - INFO - rid=0GU2W4 completed_in=249.56ms status_code=200
+INFO:     127.0.0.1:38064 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
+2024-07-17 14:55:46,016 - main.py - log_requests - line:57 - INFO - rid=4KSSL3 completed_in=510.92ms status_code=200
+INFO:     127.0.0.1:38070 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:55:58,887 - main.py - log_requests - line:50 - INFO - rid=57274I start request path=/apis/admin/getusers
+2024-07-17 14:55:59,355 - main.py - log_requests - line:57 - INFO - rid=57274I completed_in=466.98ms status_code=500
+INFO:     127.0.0.1:43478 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending&search_target=12312312%3D%3D HTTP/1.0" 500 Internal Server Error
+2024-07-17 14:56:03,755 - main.py - log_requests - line:50 - INFO - rid=736VOT start request path=/apis/novel/releaseNovel
+2024-07-17 14:56:03,756 - multipart.py - callback - line:626 - DEBUG - Calling on_part_begin with no data
+2024-07-17 14:56:03,757 - multipart.py - callback - line:623 - DEBUG - Calling on_header_field with data[42:61]
+2024-07-17 14:56:03,757 - multipart.py - callback - line:623 - DEBUG - Calling on_header_value with data[63:86]
+2024-07-17 14:56:03,757 - multipart.py - callback - line:626 - DEBUG - Calling on_header_end with no data
+2024-07-17 14:56:03,757 - multipart.py - callback - line:626 - DEBUG - Calling on_headers_finished with no data
+2024-07-17 14:56:03,758 - multipart.py - callback - line:623 - DEBUG - Calling on_part_data with data[90:3965]
+2024-07-17 14:56:03,758 - multipart.py - callback - line:626 - DEBUG - Calling on_part_end with no data
+2024-07-17 14:56:03,759 - multipart.py - callback - line:626 - DEBUG - Calling on_part_begin with no data
+2024-07-17 14:56:03,759 - multipart.py - callback - line:623 - DEBUG - Calling on_header_field with data[4009:4028]
+2024-07-17 14:56:03,760 - multipart.py - callback - line:623 - DEBUG - Calling on_header_value with data[4030:4059]
+2024-07-17 14:56:03,760 - multipart.py - callback - line:626 - DEBUG - Calling on_header_end with no data
+2024-07-17 14:56:03,761 - multipart.py - callback - line:626 - DEBUG - Calling on_headers_finished with no data
+2024-07-17 14:56:03,762 - multipart.py - callback - line:623 - DEBUG - Calling on_part_data with data[4063:4084]
+2024-07-17 14:56:03,762 - multipart.py - callback - line:626 - DEBUG - Calling on_part_end with no data
+2024-07-17 14:56:03,763 - multipart.py - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-17 14:56:04,302 - main.py - log_requests - line:57 - INFO - rid=736VOT completed_in=546.36ms status_code=200
+INFO:     127.0.0.1:54832 - "POST /apis/novel/releaseNovel HTTP/1.0" 200 OK
+2024-07-17 14:56:38,446 - main.py - log_requests - line:50 - INFO - rid=U8V1Y4 start request path=/apis/getNovel
+2024-07-17 14:56:39,255 - main.py - log_requests - line:57 - INFO - rid=U8V1Y4 completed_in=808.30ms status_code=200
+INFO:     127.0.0.1:54366 - "POST /apis/getNovel HTTP/1.0" 200 OK
+2024-07-17 14:56:43,262 - main.py - log_requests - line:50 - INFO - rid=P1T2TW start request path=/apis/downloadfile
+2024-07-17 14:56:43,714 - main.py - log_requests - line:57 - INFO - rid=P1T2TW completed_in=450.93ms status_code=200
+INFO:     127.0.0.1:54372 - "POST /apis/downloadfile HTTP/1.0" 200 OK
+2024-07-17 14:56:55,111 - main.py - log_requests - line:50 - INFO - rid=RX31HQ start request path=/apis/admin/getusers
+2024-07-17 14:56:55,616 - main.py - log_requests - line:57 - INFO - rid=RX31HQ completed_in=503.87ms status_code=200
+INFO:     127.0.0.1:41566 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending&search_target=1 HTTP/1.0" 200 OK
+2024-07-17 14:57:05,504 - main.py - log_requests - line:50 - INFO - rid=TX8MFG start request path=/apis/admin/getusers
+2024-07-17 14:57:05,959 - main.py - log_requests - line:57 - INFO - rid=TX8MFG completed_in=454.12ms status_code=200
+2024-07-17 14:57:05,960 - main.py - log_requests - line:50 - INFO - rid=WP5H5N start request path=/apis/admin/getusernovel
+INFO:     127.0.0.1:49312 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:57:06,177 - main.py - log_requests - line:57 - INFO - rid=WP5H5N completed_in=216.53ms status_code=200
+INFO:     127.0.0.1:49328 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
+2024-07-17 14:57:30,767 - main.py - log_requests - line:50 - INFO - rid=FE7XSL start request path=/apis/user/is_admin
+2024-07-17 14:57:30,991 - main.py - log_requests - line:57 - INFO - rid=FE7XSL completed_in=223.27ms status_code=200
+INFO:     127.0.0.1:50520 - "POST /apis/user/is_admin HTTP/1.0" 200 OK
+2024-07-17 14:57:32,176 - main.py - log_requests - line:50 - INFO - rid=91EK3W start request path=/apis/admin/getusers
+2024-07-17 14:57:32,687 - main.py - log_requests - line:50 - INFO - rid=PESHY7 start request path=/apis/admin/getusernovel
+2024-07-17 14:57:32,688 - main.py - log_requests - line:57 - INFO - rid=91EK3W completed_in=511.24ms status_code=200
+INFO:     127.0.0.1:50532 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:57:32,916 - main.py - log_requests - line:57 - INFO - rid=PESHY7 completed_in=227.80ms status_code=200
+INFO:     127.0.0.1:50544 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
+2024-07-17 14:57:36,683 - main.py - log_requests - line:50 - INFO - rid=6RFLGW start request path=/apis/admin/getusernovel
+2024-07-17 14:57:36,924 - main.py - log_requests - line:57 - INFO - rid=6RFLGW completed_in=240.87ms status_code=200
+INFO:     127.0.0.1:54446 - "GET /apis/admin/getusernovel?user_id=7 HTTP/1.0" 200 OK
+2024-07-17 14:57:42,728 - main.py - log_requests - line:50 - INFO - rid=9O4ZDE start request path=/apis/admin/getusers
+2024-07-17 14:57:43,211 - main.py - log_requests - line:57 - INFO - rid=9O4ZDE completed_in=482.73ms status_code=200
+INFO:     127.0.0.1:54462 - "GET /apis/admin/getusers?offset=10&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:57:44,665 - main.py - log_requests - line:50 - INFO - rid=LW3VE1 start request path=/apis/admin/getusernovel
+2024-07-17 14:57:44,928 - main.py - log_requests - line:57 - INFO - rid=LW3VE1 completed_in=261.84ms status_code=200
+INFO:     127.0.0.1:39828 - "GET /apis/admin/getusernovel?user_id=2 HTTP/1.0" 200 OK
+2024-07-17 14:57:46,855 - main.py - log_requests - line:50 - INFO - rid=ZSBA7P start request path=/apis/admin/getusernovel
+2024-07-17 14:57:47,073 - main.py - log_requests - line:57 - INFO - rid=ZSBA7P completed_in=217.49ms status_code=200
+INFO:     127.0.0.1:39840 - "GET /apis/admin/getusernovel?user_id=16 HTTP/1.0" 200 OK
+2024-07-17 14:57:50,501 - main.py - log_requests - line:50 - INFO - rid=2O4ZBF start request path=/apis/admin/getusernovel
+2024-07-17 14:57:50,736 - main.py - log_requests - line:57 - INFO - rid=2O4ZBF completed_in=233.52ms status_code=200
+INFO:     127.0.0.1:39850 - "GET /apis/admin/getusernovel?user_id=16 HTTP/1.0" 200 OK
+2024-07-17 14:57:53,653 - main.py - log_requests - line:50 - INFO - rid=O1MCYF start request path=/apis/admin/getusers
+2024-07-17 14:57:54,095 - main.py - log_requests - line:57 - INFO - rid=O1MCYF completed_in=441.18ms status_code=200
+INFO:     127.0.0.1:45330 - "GET /apis/admin/getusers?offset=20&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:57:56,688 - main.py - log_requests - line:50 - INFO - rid=DDXF84 start request path=/apis/admin/getusers
+2024-07-17 14:57:57,138 - main.py - log_requests - line:57 - INFO - rid=DDXF84 completed_in=449.00ms status_code=500
+INFO:     127.0.0.1:45346 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending&search_target=%E8%BE%BE%E7%93%A6%E8%BE%BE%E7%93%A6%E5%90%B4%E5%A4%A7%E7%BB%B4 HTTP/1.0" 500 Internal Server Error
+2024-07-17 14:57:57,171 - main.py - log_requests - line:50 - INFO - rid=Q1L3D3 start request path=/apis/admin/getusernovel
+2024-07-17 14:57:57,411 - main.py - log_requests - line:57 - INFO - rid=Q1L3D3 completed_in=238.86ms status_code=200
+INFO:     127.0.0.1:45358 - "GET /apis/admin/getusernovel?user_id=51 HTTP/1.0" 200 OK
+2024-07-17 14:58:01,669 - main.py - log_requests - line:50 - INFO - rid=2AN7GT start request path=/apis/admin/getNovel
+2024-07-17 14:58:02,133 - main.py - log_requests - line:57 - INFO - rid=2AN7GT completed_in=464.01ms status_code=200
+INFO:     127.0.0.1:45368 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:58:18,498 - main.py - log_requests - line:50 - INFO - rid=V55H7R start request path=/apis/admin/getusers
+2024-07-17 14:58:18,948 - main.py - log_requests - line:57 - INFO - rid=V55H7R completed_in=450.19ms status_code=200
+2024-07-17 14:58:18,949 - main.py - log_requests - line:50 - INFO - rid=SPA3EX start request path=/apis/admin/getusernovel
+INFO:     127.0.0.1:39870 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:58:19,176 - main.py - log_requests - line:57 - INFO - rid=SPA3EX completed_in=227.02ms status_code=200
+INFO:     127.0.0.1:39884 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
+2024-07-17 14:58:19,262 - main.py - log_requests - line:50 - INFO - rid=N4HX9H start request path=/apis/admin/getNovel
+2024-07-17 14:58:19,770 - main.py - log_requests - line:57 - INFO - rid=N4HX9H completed_in=507.24ms status_code=200
+INFO:     127.0.0.1:39886 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:58:20,765 - main.py - log_requests - line:50 - INFO - rid=HKOMB2 start request path=/apis/admin/getusernovel
+2024-07-17 14:58:20,997 - main.py - log_requests - line:57 - INFO - rid=HKOMB2 completed_in=231.51ms status_code=200
+2024-07-17 14:58:20,998 - main.py - log_requests - line:50 - INFO - rid=JRVC4R start request path=/apis/admin/getusers
+INFO:     127.0.0.1:39890 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
+2024-07-17 14:58:21,486 - main.py - log_requests - line:57 - INFO - rid=JRVC4R completed_in=486.73ms status_code=200
+INFO:     127.0.0.1:39896 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:59:27,196 - main.py - log_requests - line:50 - INFO - rid=Q76E4O start request path=/apis/user/is_admin
+2024-07-17 14:59:27,426 - main.py - log_requests - line:57 - INFO - rid=Q76E4O completed_in=229.66ms status_code=200
+INFO:     127.0.0.1:35376 - "POST /apis/user/is_admin HTTP/1.0" 200 OK
+2024-07-17 14:59:29,514 - main.py - log_requests - line:50 - INFO - rid=4HDDF5 start request path=/apis/admin/getusers
+2024-07-17 14:59:30,001 - main.py - log_requests - line:50 - INFO - rid=GTFYQI start request path=/apis/admin/getusernovel
+2024-07-17 14:59:30,230 - main.py - log_requests - line:57 - INFO - rid=4HDDF5 completed_in=715.56ms status_code=200
+INFO:     127.0.0.1:35384 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:59:30,231 - main.py - log_requests - line:57 - INFO - rid=GTFYQI completed_in=228.15ms status_code=200
+INFO:     127.0.0.1:35390 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
+2024-07-17 14:59:31,010 - main.py - log_requests - line:50 - INFO - rid=U7QE2V start request path=/apis/admin/getNovel
+2024-07-17 14:59:31,483 - main.py - log_requests - line:57 - INFO - rid=U7QE2V completed_in=472.07ms status_code=200
+INFO:     127.0.0.1:35392 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:59:39,438 - main.py - log_requests - line:50 - INFO - rid=3GU3S0 start request path=/apis/user/is_admin
+2024-07-17 14:59:39,439 - main.py - log_requests - line:57 - INFO - rid=3GU3S0 completed_in=0.30ms status_code=200
+INFO:     127.0.0.1:37500 - "OPTIONS /apis/user/is_admin HTTP/1.0" 200 OK
+2024-07-17 14:59:39,759 - main.py - log_requests - line:50 - INFO - rid=YBYXKW start request path=/apis/user/is_admin
+2024-07-17 14:59:39,991 - main.py - log_requests - line:57 - INFO - rid=YBYXKW completed_in=231.56ms status_code=200
+INFO:     127.0.0.1:37516 - "POST /apis/user/is_admin HTTP/1.0" 200 OK
+2024-07-17 14:59:40,062 - main.py - log_requests - line:50 - INFO - rid=SZTWTS start request path=/apis/admin/getNovel
+2024-07-17 14:59:40,523 - main.py - log_requests - line:57 - INFO - rid=SZTWTS completed_in=461.00ms status_code=200
+INFO:     127.0.0.1:37526 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:59:47,553 - main.py - log_requests - line:50 - INFO - rid=QQRH3B start request path=/apis/admin/getusers
+2024-07-17 14:59:48,028 - main.py - log_requests - line:57 - INFO - rid=QQRH3B completed_in=474.52ms status_code=200
+2024-07-17 14:59:48,029 - main.py - log_requests - line:50 - INFO - rid=V9JT9Y start request path=/apis/admin/getusernovel
+INFO:     127.0.0.1:51066 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:59:48,279 - main.py - log_requests - line:57 - INFO - rid=V9JT9Y completed_in=249.56ms status_code=200
+INFO:     127.0.0.1:51076 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
+2024-07-17 14:59:49,086 - main.py - log_requests - line:50 - INFO - rid=267QPL start request path=/apis/admin/getNovel
+2024-07-17 14:59:49,540 - main.py - log_requests - line:57 - INFO - rid=267QPL completed_in=453.23ms status_code=200
+INFO:     127.0.0.1:51088 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:59:49,696 - main.py - log_requests - line:50 - INFO - rid=V88ZZZ start request path=/apis/admin/getNovel
+2024-07-17 14:59:50,186 - main.py - log_requests - line:57 - INFO - rid=V88ZZZ completed_in=489.11ms status_code=200
+INFO:     127.0.0.1:51092 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_viewcount&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 14:59:51,967 - main.py - log_requests - line:50 - INFO - rid=TXX9VP start request path=/apis/admin/getNovel
+2024-07-17 14:59:52,496 - main.py - log_requests - line:57 - INFO - rid=TXX9VP completed_in=528.28ms status_code=200
+INFO:     127.0.0.1:51102 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_viewcount&order_way=descending HTTP/1.0" 200 OK
+2024-07-17 15:00:04,855 - main.py - log_requests - line:50 - INFO - rid=V9XEA2 start request path=/apis/admin/getusers
+2024-07-17 15:00:05,338 - main.py - log_requests - line:57 - INFO - rid=V9XEA2 completed_in=483.32ms status_code=200
+2024-07-17 15:00:05,341 - main.py - log_requests - line:50 - INFO - rid=5B7QKY start request path=/apis/admin/getusernovel
+INFO:     127.0.0.1:50578 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 15:00:05,560 - main.py - log_requests - line:57 - INFO - rid=5B7QKY completed_in=218.01ms status_code=200
+INFO:     127.0.0.1:50588 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
+2024-07-17 15:00:07,246 - main.py - log_requests - line:50 - INFO - rid=U4B7NO start request path=/apis/admin/getNovel
+2024-07-17 15:00:07,765 - main.py - log_requests - line:57 - INFO - rid=U4B7NO completed_in=518.56ms status_code=200
+INFO:     127.0.0.1:50602 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 15:00:08,663 - main.py - log_requests - line:50 - INFO - rid=OCK68M start request path=/apis/admin/getusers
+2024-07-17 15:00:09,171 - main.py - log_requests - line:50 - INFO - rid=SLTZL5 start request path=/apis/admin/getusernovel
+2024-07-17 15:00:09,408 - main.py - log_requests - line:57 - INFO - rid=OCK68M completed_in=744.67ms status_code=200
+INFO:     127.0.0.1:50612 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 15:00:09,410 - main.py - log_requests - line:57 - INFO - rid=SLTZL5 completed_in=238.15ms status_code=200
+INFO:     127.0.0.1:50614 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
+2024-07-17 15:00:11,600 - main.py - log_requests - line:50 - INFO - rid=2556Y1 start request path=/apis/admin/getNovel
+2024-07-17 15:00:12,056 - main.py - log_requests - line:57 - INFO - rid=2556Y1 completed_in=454.75ms status_code=200
+INFO:     127.0.0.1:50626 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 15:00:18,790 - main.py - log_requests - line:50 - INFO - rid=Z2MXUQ start request path=/apis/admin/getNovel
+2024-07-17 15:00:19,252 - main.py - log_requests - line:57 - INFO - rid=Z2MXUQ completed_in=461.71ms status_code=500
+INFO:     127.0.0.1:42022 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending&search_target=12312312%3D%3D%3D HTTP/1.0" 500 Internal Server Error
+2024-07-17 15:00:21,164 - main.py - log_requests - line:50 - INFO - rid=XJYXTN start request path=/apis/user/is_admin
+2024-07-17 15:00:21,441 - main.py - log_requests - line:57 - INFO - rid=XJYXTN completed_in=276.51ms status_code=200
+INFO:     127.0.0.1:42028 - "POST /apis/user/is_admin HTTP/1.0" 200 OK
+2024-07-17 15:00:21,539 - main.py - log_requests - line:50 - INFO - rid=EUVCG2 start request path=/apis/admin/getNovel
+2024-07-17 15:00:22,025 - main.py - log_requests - line:57 - INFO - rid=EUVCG2 completed_in=485.59ms status_code=200
+INFO:     127.0.0.1:42032 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 15:00:23,179 - main.py - log_requests - line:50 - INFO - rid=0MRPYQ start request path=/apis/admin/getNovel
+2024-07-17 15:00:23,602 - main.py - log_requests - line:57 - INFO - rid=0MRPYQ completed_in=422.02ms status_code=200
+INFO:     127.0.0.1:42046 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_viewcount&order_way=descending HTTP/1.0" 200 OK
+2024-07-17 15:00:25,538 - main.py - log_requests - line:50 - INFO - rid=8O2H9V start request path=/apis/user/is_admin
+2024-07-17 15:00:25,753 - main.py - log_requests - line:57 - INFO - rid=8O2H9V completed_in=214.30ms status_code=200
+INFO:     127.0.0.1:37352 - "POST /apis/user/is_admin HTTP/1.0" 200 OK
+2024-07-17 15:00:50,297 - main.py - log_requests - line:50 - INFO - rid=73PACD start request path=/apis/getNovel/
+2024-07-17 15:00:50,298 - main.py - log_requests - line:57 - INFO - rid=73PACD completed_in=0.65ms status_code=307
+INFO:     127.0.0.1:33296 - "POST /apis/getNovel/ HTTP/1.0" 307 Temporary Redirect
+2024-07-17 15:00:50,299 - main.py - log_requests - line:50 - INFO - rid=EMDTKD start request path=/apis/comment/getcomments
+2024-07-17 15:00:50,303 - multipart.py - callback - line:626 - DEBUG - Calling on_part_begin with no data
+2024-07-17 15:00:50,304 - multipart.py - callback - line:623 - DEBUG - Calling on_header_field with data[42:61]
+2024-07-17 15:00:50,305 - multipart.py - callback - line:623 - DEBUG - Calling on_header_value with data[63:89]
+2024-07-17 15:00:50,306 - multipart.py - callback - line:626 - DEBUG - Calling on_header_end with no data
+2024-07-17 15:00:50,307 - multipart.py - callback - line:626 - DEBUG - Calling on_headers_finished with no data
+2024-07-17 15:00:50,308 - multipart.py - callback - line:623 - DEBUG - Calling on_part_data with data[93:96]
+2024-07-17 15:00:50,309 - multipart.py - callback - line:626 - DEBUG - Calling on_part_end with no data
+2024-07-17 15:00:50,310 - multipart.py - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-17 15:00:50,549 - main.py - log_requests - line:57 - INFO - rid=EMDTKD completed_in=249.51ms status_code=200
+2024-07-17 15:00:50,550 - main.py - log_requests - line:50 - INFO - rid=WV8U9G start request path=/apis/getNovel
+INFO:     127.0.0.1:33302 - "POST /apis/comment/getcomments HTTP/1.0" 200 OK
+2024-07-17 15:00:51,327 - main.py - log_requests - line:57 - INFO - rid=WV8U9G completed_in=777.14ms status_code=200
+INFO:     127.0.0.1:33314 - "POST /apis/getNovel HTTP/1.0" 200 OK
+2024-07-17 15:01:03,541 - main.py - log_requests - line:50 - INFO - rid=31T3Z9 start request path=/apis/admin/getNovel
+2024-07-17 15:01:03,989 - main.py - log_requests - line:57 - INFO - rid=31T3Z9 completed_in=446.44ms status_code=200
+INFO:     127.0.0.1:33010 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 15:01:12,142 - main.py - log_requests - line:50 - INFO - rid=EI8UXF start request path=/apis/comment/uploadcomment
+2024-07-17 15:01:12,143 - multipart.py - callback - line:626 - DEBUG - Calling on_part_begin with no data
+2024-07-17 15:01:12,143 - multipart.py - callback - line:623 - DEBUG - Calling on_header_field with data[42:61]
+2024-07-17 15:01:12,144 - multipart.py - callback - line:623 - DEBUG - Calling on_header_value with data[63:89]
+2024-07-17 15:01:12,144 - multipart.py - callback - line:626 - DEBUG - Calling on_header_end with no data
+2024-07-17 15:01:12,144 - multipart.py - callback - line:626 - DEBUG - Calling on_headers_finished with no data
+2024-07-17 15:01:12,144 - multipart.py - callback - line:623 - DEBUG - Calling on_part_data with data[93:96]
+2024-07-17 15:01:12,144 - multipart.py - callback - line:626 - DEBUG - Calling on_part_end with no data
+2024-07-17 15:01:12,144 - multipart.py - callback - line:626 - DEBUG - Calling on_part_begin with no data
+2024-07-17 15:01:12,145 - multipart.py - callback - line:623 - DEBUG - Calling on_header_field with data[140:159]
+2024-07-17 15:01:12,145 - multipart.py - callback - line:623 - DEBUG - Calling on_header_value with data[161:194]
+2024-07-17 15:01:12,145 - multipart.py - callback - line:626 - DEBUG - Calling on_header_end with no data
+2024-07-17 15:01:12,145 - multipart.py - callback - line:626 - DEBUG - Calling on_headers_finished with no data
+2024-07-17 15:01:12,145 - multipart.py - callback - line:623 - DEBUG - Calling on_part_data with data[198:204]
+2024-07-17 15:01:12,145 - multipart.py - callback - line:626 - DEBUG - Calling on_part_end with no data
+2024-07-17 15:01:12,146 - multipart.py - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-17 15:01:12,719 - main.py - log_requests - line:57 - INFO - rid=EI8UXF completed_in=576.80ms status_code=200
+INFO:     127.0.0.1:49302 - "POST /apis/comment/uploadcomment HTTP/1.0" 200 OK
+2024-07-17 15:01:12,857 - main.py - log_requests - line:50 - INFO - rid=PJ9I4J start request path=/apis/comment/getcomments
+2024-07-17 15:01:12,858 - multipart.py - callback - line:626 - DEBUG - Calling on_part_begin with no data
+2024-07-17 15:01:12,859 - multipart.py - callback - line:623 - DEBUG - Calling on_header_field with data[42:61]
+2024-07-17 15:01:12,859 - multipart.py - callback - line:623 - DEBUG - Calling on_header_value with data[63:89]
+2024-07-17 15:01:12,860 - multipart.py - callback - line:626 - DEBUG - Calling on_header_end with no data
+2024-07-17 15:01:12,860 - multipart.py - callback - line:626 - DEBUG - Calling on_headers_finished with no data
+2024-07-17 15:01:12,860 - multipart.py - callback - line:623 - DEBUG - Calling on_part_data with data[93:96]
+2024-07-17 15:01:12,861 - multipart.py - callback - line:626 - DEBUG - Calling on_part_end with no data
+2024-07-17 15:01:12,861 - multipart.py - callback - line:626 - DEBUG - Calling on_end with no data
+2024-07-17 15:01:13,118 - main.py - log_requests - line:57 - INFO - rid=PJ9I4J completed_in=260.76ms status_code=200
+INFO:     127.0.0.1:49306 - "POST /apis/comment/getcomments HTTP/1.0" 200 OK
+2024-07-17 15:01:19,456 - main.py - log_requests - line:50 - INFO - rid=0Y9RKA start request path=/apis/user/is_admin
+2024-07-17 15:01:19,693 - main.py - log_requests - line:57 - INFO - rid=0Y9RKA completed_in=236.56ms status_code=200
+INFO:     127.0.0.1:49916 - "POST /apis/user/is_admin HTTP/1.0" 200 OK
+2024-07-17 15:01:21,801 - main.py - log_requests - line:50 - INFO - rid=0ISY7U start request path=/apis/user/is_admin
+2024-07-17 15:01:22,027 - main.py - log_requests - line:57 - INFO - rid=0ISY7U completed_in=224.96ms status_code=200
+INFO:     127.0.0.1:49924 - "POST /apis/user/is_admin HTTP/1.0" 200 OK
+2024-07-17 15:01:23,467 - main.py - log_requests - line:50 - INFO - rid=I1C7UJ start request path=/apis/admin/getNovel
+2024-07-17 15:01:23,940 - main.py - log_requests - line:57 - INFO - rid=I1C7UJ completed_in=472.13ms status_code=200
+INFO:     127.0.0.1:49938 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 15:01:25,038 - main.py - log_requests - line:50 - INFO - rid=949OUQ start request path=/apis/admin/getusers
+2024-07-17 15:01:25,508 - main.py - log_requests - line:50 - INFO - rid=PBM4SM start request path=/apis/admin/getusernovel
+2024-07-17 15:01:25,509 - main.py - log_requests - line:57 - INFO - rid=949OUQ completed_in=470.14ms status_code=200
+INFO:     127.0.0.1:37810 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 15:01:25,747 - main.py - log_requests - line:57 - INFO - rid=PBM4SM completed_in=238.29ms status_code=200
+INFO:     127.0.0.1:37820 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
+2024-07-17 15:01:26,377 - main.py - log_requests - line:50 - INFO - rid=NRO3LX start request path=/apis/admin/getusers
+2024-07-17 15:01:26,850 - main.py - log_requests - line:57 - INFO - rid=NRO3LX completed_in=471.98ms status_code=200
+INFO:     127.0.0.1:37822 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=descending HTTP/1.0" 200 OK
+2024-07-17 15:01:27,323 - main.py - log_requests - line:50 - INFO - rid=38MH6T start request path=/apis/admin/getusers
+2024-07-17 15:01:27,800 - main.py - log_requests - line:57 - INFO - rid=38MH6T completed_in=476.56ms status_code=200
+INFO:     127.0.0.1:37824 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=null HTTP/1.0" 200 OK
+2024-07-17 15:01:28,593 - main.py - log_requests - line:50 - INFO - rid=U248TP start request path=/apis/admin/getusers
+2024-07-17 15:01:29,072 - main.py - log_requests - line:57 - INFO - rid=U248TP completed_in=478.38ms status_code=200
+INFO:     127.0.0.1:37838 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 15:01:29,561 - main.py - log_requests - line:50 - INFO - rid=928Q89 start request path=/apis/admin/getusers
+2024-07-17 15:01:30,011 - main.py - log_requests - line:57 - INFO - rid=928Q89 completed_in=449.93ms status_code=200
+INFO:     127.0.0.1:37850 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=descending HTTP/1.0" 200 OK
+2024-07-17 15:01:30,533 - main.py - log_requests - line:50 - INFO - rid=98ORFW start request path=/apis/admin/getusers
+2024-07-17 15:01:31,041 - main.py - log_requests - line:57 - INFO - rid=98ORFW completed_in=507.00ms status_code=200
+INFO:     127.0.0.1:37862 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=null HTTP/1.0" 200 OK
+2024-07-17 15:01:31,197 - main.py - log_requests - line:50 - INFO - rid=R15X2Z start request path=/apis/admin/getusers
+2024-07-17 15:01:31,637 - main.py - log_requests - line:57 - INFO - rid=R15X2Z completed_in=439.96ms status_code=200
+INFO:     127.0.0.1:37868 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 15:02:01,178 - main.py - log_requests - line:50 - INFO - rid=X2FBZ7 start request path=/apis/user/is_admin
+2024-07-17 15:02:01,407 - main.py - log_requests - line:57 - INFO - rid=X2FBZ7 completed_in=228.23ms status_code=200
+INFO:     127.0.0.1:33710 - "POST /apis/user/is_admin HTTP/1.0" 200 OK
+2024-07-17 15:02:02,505 - main.py - log_requests - line:50 - INFO - rid=ZOLBBZ start request path=/apis/admin/getNovel
+2024-07-17 15:02:02,972 - main.py - log_requests - line:57 - INFO - rid=ZOLBBZ completed_in=467.07ms status_code=200
+INFO:     127.0.0.1:33714 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 15:02:09,570 - main.py - log_requests - line:50 - INFO - rid=70H3LS start request path=/apis/admin/getNovel
+2024-07-17 15:02:10,011 - main.py - log_requests - line:57 - INFO - rid=70H3LS completed_in=440.51ms status_code=500
+INFO:     127.0.0.1:47310 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending&search_target=12312312%3D%3D%3D HTTP/1.0" 500 Internal Server Error
+2024-07-17 15:03:09,100 - main.py - log_requests - line:50 - INFO - rid=5TYCAF start request path=/apis/user/is_admin
+2024-07-17 15:03:09,334 - main.py - log_requests - line:57 - INFO - rid=5TYCAF completed_in=234.48ms status_code=200
+INFO:     127.0.0.1:55706 - "POST /apis/user/is_admin HTTP/1.0" 200 OK
+2024-07-17 15:03:09,915 - main.py - log_requests - line:50 - INFO - rid=HY17CW start request path=/apis/admin/getNovel
+2024-07-17 15:03:10,389 - main.py - log_requests - line:57 - INFO - rid=HY17CW completed_in=470.08ms status_code=200
+INFO:     127.0.0.1:55720 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 15:03:12,874 - main.py - log_requests - line:50 - INFO - rid=D1N9OZ start request path=/apis/admin/getNovel
+2024-07-17 15:03:13,330 - main.py - log_requests - line:57 - INFO - rid=D1N9OZ completed_in=456.26ms status_code=500
+INFO:     127.0.0.1:55722 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending&search_target=123123%3D%3D%3D HTTP/1.0" 500 Internal Server Error
+2024-07-17 15:03:39,300 - main.py - log_requests - line:50 - INFO - rid=P4BBDU start request path=/apis/user/is_admin
+2024-07-17 15:03:39,533 - main.py - log_requests - line:57 - INFO - rid=P4BBDU completed_in=232.55ms status_code=200
+INFO:     127.0.0.1:34842 - "POST /apis/user/is_admin HTTP/1.0" 200 OK
+2024-07-17 15:03:40,463 - main.py - log_requests - line:50 - INFO - rid=11FGCU start request path=/apis/admin/getNovel
+2024-07-17 15:03:40,923 - main.py - log_requests - line:57 - INFO - rid=11FGCU completed_in=459.97ms status_code=200
+INFO:     127.0.0.1:34856 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 15:03:43,329 - main.py - log_requests - line:50 - INFO - rid=IPJR1I start request path=/apis/admin/getNovel
+2024-07-17 15:03:43,781 - main.py - log_requests - line:57 - INFO - rid=IPJR1I completed_in=451.33ms status_code=500
+INFO:     127.0.0.1:34860 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending&search_target=12312312%3D%3D%3D%3D HTTP/1.0" 500 Internal Server Error
+2024-07-17 15:03:47,088 - main.py - log_requests - line:50 - INFO - rid=741RQQ start request path=/apis/admin/getusers
+2024-07-17 15:03:47,547 - main.py - log_requests - line:50 - INFO - rid=JZPNIF start request path=/apis/admin/getusernovel
+2024-07-17 15:03:47,548 - main.py - log_requests - line:57 - INFO - rid=741RQQ completed_in=458.59ms status_code=200
+INFO:     127.0.0.1:43058 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 15:03:47,753 - main.py - log_requests - line:57 - INFO - rid=JZPNIF completed_in=205.29ms status_code=200
+INFO:     127.0.0.1:43066 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
+2024-07-17 15:04:29,613 - main.py - log_requests - line:50 - INFO - rid=FO7AAU start request path=/apis/admin/getusers
+2024-07-17 15:04:30,055 - main.py - log_requests - line:57 - INFO - rid=FO7AAU completed_in=441.34ms status_code=500
+INFO:     127.0.0.1:52474 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending&search_target=123123%3D%3D%3D HTTP/1.0" 500 Internal Server Error
+2024-07-17 15:04:34,588 - main.py - log_requests - line:50 - INFO - rid=L1I5B6 start request path=/apis/user/is_admin
+2024-07-17 15:04:34,814 - main.py - log_requests - line:57 - INFO - rid=L1I5B6 completed_in=225.83ms status_code=200
+INFO:     127.0.0.1:60294 - "POST /apis/user/is_admin HTTP/1.0" 200 OK
+2024-07-17 15:04:35,448 - main.py - log_requests - line:50 - INFO - rid=SXG5SO start request path=/apis/admin/getusers
+2024-07-17 15:04:35,937 - main.py - log_requests - line:57 - INFO - rid=SXG5SO completed_in=487.72ms status_code=200
+2024-07-17 15:04:35,937 - main.py - log_requests - line:50 - INFO - rid=CQ26AH start request path=/apis/admin/getusernovel
+INFO:     127.0.0.1:60296 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 15:04:36,206 - main.py - log_requests - line:57 - INFO - rid=CQ26AH completed_in=268.48ms status_code=200
+INFO:     127.0.0.1:60298 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
+2024-07-17 15:04:38,880 - main.py - log_requests - line:50 - INFO - rid=FPZ2FA start request path=/apis/admin/getusers
+2024-07-17 15:04:39,363 - main.py - log_requests - line:57 - INFO - rid=FPZ2FA completed_in=482.32ms status_code=500
+INFO:     127.0.0.1:60310 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending&search_target=1231%3D%3D%3D HTTP/1.0" 500 Internal Server Error
+2024-07-17 15:04:44,337 - main.py - log_requests - line:50 - INFO - rid=25MEAR start request path=/apis/admin/getusers
+2024-07-17 15:04:44,816 - main.py - log_requests - line:57 - INFO - rid=25MEAR completed_in=478.60ms status_code=200
+INFO:     127.0.0.1:43096 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_name&order_way=descending HTTP/1.0" 200 OK
+2024-07-17 15:04:45,501 - main.py - log_requests - line:50 - INFO - rid=L96WVH start request path=/apis/admin/getusers
+2024-07-17 15:04:45,969 - main.py - log_requests - line:57 - INFO - rid=L96WVH completed_in=467.52ms status_code=200
+INFO:     127.0.0.1:43102 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_name&order_way=null HTTP/1.0" 200 OK
+2024-07-17 15:04:47,113 - main.py - log_requests - line:50 - INFO - rid=TSQFQG start request path=/apis/admin/getusers
+2024-07-17 15:04:47,571 - main.py - log_requests - line:57 - INFO - rid=TSQFQG completed_in=457.90ms status_code=200
+INFO:     127.0.0.1:43110 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_name&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 15:04:49,228 - main.py - log_requests - line:50 - INFO - rid=B1F9B6 start request path=/apis/admin/getusers
+2024-07-17 15:04:49,704 - main.py - log_requests - line:57 - INFO - rid=B1F9B6 completed_in=475.58ms status_code=200
+INFO:     127.0.0.1:43116 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_name&order_way=descending HTTP/1.0" 200 OK
+2024-07-17 15:04:52,136 - main.py - log_requests - line:50 - INFO - rid=ZGF0MT start request path=/apis/admin/getusers
+2024-07-17 15:04:52,607 - main.py - log_requests - line:57 - INFO - rid=ZGF0MT completed_in=470.87ms status_code=200
+INFO:     127.0.0.1:43120 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 15:04:54,910 - main.py - log_requests - line:50 - INFO - rid=NI1CTK start request path=/apis/admin/getusers
+2024-07-17 15:04:55,373 - main.py - log_requests - line:57 - INFO - rid=NI1CTK completed_in=463.30ms status_code=200
+INFO:     127.0.0.1:53320 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=descending HTTP/1.0" 200 OK
+2024-07-17 15:04:57,156 - main.py - log_requests - line:50 - INFO - rid=W2JYFC start request path=/apis/admin/getusers
+2024-07-17 15:04:57,675 - main.py - log_requests - line:57 - INFO - rid=W2JYFC completed_in=518.86ms status_code=200
+INFO:     127.0.0.1:53322 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 15:05:00,010 - main.py - log_requests - line:50 - INFO - rid=GIFCSA start request path=/apis/admin/getusers
+2024-07-17 15:05:00,478 - main.py - log_requests - line:57 - INFO - rid=GIFCSA completed_in=467.32ms status_code=200
+INFO:     127.0.0.1:53324 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=descending HTTP/1.0" 200 OK
+2024-07-17 15:05:00,910 - main.py - log_requests - line:50 - INFO - rid=QOWZJN start request path=/apis/admin/getusers
+2024-07-17 15:05:01,392 - main.py - log_requests - line:57 - INFO - rid=QOWZJN completed_in=481.69ms status_code=200
+INFO:     127.0.0.1:53326 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 15:05:07,180 - main.py - log_requests - line:50 - INFO - rid=8VPGDR start request path=/apis/user/is_admin
+2024-07-17 15:05:07,423 - main.py - log_requests - line:57 - INFO - rid=8VPGDR completed_in=242.52ms status_code=200
+INFO:     127.0.0.1:52572 - "POST /apis/user/is_admin HTTP/1.0" 200 OK
+2024-07-17 15:05:09,643 - main.py - log_requests - line:50 - INFO - rid=ILIUVN start request path=/apis/admin/getusers
+2024-07-17 15:05:10,125 - main.py - log_requests - line:57 - INFO - rid=ILIUVN completed_in=482.26ms status_code=200
+2024-07-17 15:05:10,126 - main.py - log_requests - line:50 - INFO - rid=1KSQB1 start request path=/apis/admin/getusernovel
+INFO:     127.0.0.1:52580 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 15:05:10,368 - main.py - log_requests - line:57 - INFO - rid=1KSQB1 completed_in=241.38ms status_code=200
+INFO:     127.0.0.1:52590 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
+2024-07-17 15:05:12,354 - main.py - log_requests - line:50 - INFO - rid=6O5UAJ start request path=/apis/admin/getusers
+2024-07-17 15:05:12,789 - main.py - log_requests - line:57 - INFO - rid=6O5UAJ completed_in=434.59ms status_code=500
+INFO:     127.0.0.1:52600 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending&search_target=1231312%3D%3D%3D%3D HTTP/1.0" 500 Internal Server Error
+2024-07-17 15:05:44,923 - main.py - log_requests - line:50 - INFO - rid=BMBR7D start request path=/apis/user/is_admin
+2024-07-17 15:05:45,147 - main.py - log_requests - line:57 - INFO - rid=BMBR7D completed_in=223.08ms status_code=200
+INFO:     127.0.0.1:32978 - "POST /apis/user/is_admin HTTP/1.0" 200 OK
+2024-07-17 15:05:45,879 - main.py - log_requests - line:50 - INFO - rid=19RS3J start request path=/apis/admin/getusernovel
+2024-07-17 15:05:46,105 - main.py - log_requests - line:57 - INFO - rid=19RS3J completed_in=226.00ms status_code=200
+2024-07-17 15:05:46,106 - main.py - log_requests - line:50 - INFO - rid=ZYXKZ9 start request path=/apis/admin/getusers
+INFO:     127.0.0.1:32982 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
+2024-07-17 15:05:46,580 - main.py - log_requests - line:57 - INFO - rid=ZYXKZ9 completed_in=474.06ms status_code=200
+INFO:     127.0.0.1:32990 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 15:05:48,400 - main.py - log_requests - line:50 - INFO - rid=AQEQWX start request path=/apis/admin/getusers
+2024-07-17 15:05:48,847 - main.py - log_requests - line:57 - INFO - rid=AQEQWX completed_in=446.45ms status_code=500
+INFO:     127.0.0.1:33006 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending&search_target=12123%3D%3D%3D HTTP/1.0" 500 Internal Server Error
+2024-07-17 15:05:52,701 - main.py - log_requests - line:50 - INFO - rid=UE0SZP start request path=/apis/admin/getusers
+2024-07-17 15:05:53,152 - main.py - log_requests - line:57 - INFO - rid=UE0SZP completed_in=450.75ms status_code=200
+INFO:     127.0.0.1:33012 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending&search_target=1 HTTP/1.0" 200 OK
+2024-07-17 15:05:55,224 - main.py - log_requests - line:50 - INFO - rid=767KW4 start request path=/apis/admin/getNovel
+2024-07-17 15:05:55,655 - main.py - log_requests - line:57 - INFO - rid=767KW4 completed_in=430.44ms status_code=200
+INFO:     127.0.0.1:36630 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 15:05:57,983 - main.py - log_requests - line:50 - INFO - rid=34NB4T start request path=/apis/admin/getNovel
+2024-07-17 15:05:58,432 - main.py - log_requests - line:57 - INFO - rid=34NB4T completed_in=448.89ms status_code=500
+INFO:     127.0.0.1:36644 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending&search_target=1231%3D%3D%3D HTTP/1.0" 500 Internal Server Error
+2024-07-17 15:06:01,110 - main.py - log_requests - line:50 - INFO - rid=UVQWNL start request path=/apis/admin/getNovel
+2024-07-17 15:06:01,564 - main.py - log_requests - line:57 - INFO - rid=UVQWNL completed_in=453.26ms status_code=500
+INFO:     127.0.0.1:36656 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending&search_target=1 HTTP/1.0" 500 Internal Server Error
+2024-07-17 15:06:10,030 - main.py - log_requests - line:50 - INFO - rid=5Z532H start request path=/apis/admin/getNovel
+2024-07-17 15:06:10,540 - main.py - log_requests - line:57 - INFO - rid=5Z532H completed_in=509.76ms status_code=200
+INFO:     127.0.0.1:42344 - "GET /apis/admin/getNovel?offset=0&row_count=10&order_by=novel_id&order_way=ascending&search_target=2 HTTP/1.0" 200 OK
+2024-07-17 15:06:19,338 - main.py - log_requests - line:50 - INFO - rid=OCDCQ2 start request path=/apis/admin/getusers
+2024-07-17 15:06:19,857 - main.py - log_requests - line:50 - INFO - rid=WX694Z start request path=/apis/admin/getusernovel
+2024-07-17 15:06:19,858 - main.py - log_requests - line:57 - INFO - rid=OCDCQ2 completed_in=519.69ms status_code=200
+INFO:     127.0.0.1:33438 - "GET /apis/admin/getusers?offset=0&row_count=10&order_by=user_id&order_way=ascending HTTP/1.0" 200 OK
+2024-07-17 15:06:20,094 - main.py - log_requests - line:57 - INFO - rid=WX694Z completed_in=235.49ms status_code=200
+INFO:     127.0.0.1:33450 - "GET /apis/admin/getusernovel?user_id=undefined HTTP/1.0" 200 OK
