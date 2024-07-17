@@ -506,9 +506,11 @@ async def admin_get_all_novel(offset: int, row_count: int, order_by='novel_id', 
         novel_links = []
 
         for row in response:
+            users = db_method.get_user_info(user_id=row[1])
+            user_name = users[0][1]
             row_data = {
                 'novel_id': row[0],
-                'user_id': row[1],
+                'user_id': user_name,
                 'novel_title': row[2],
                 'novel_description': row[3],
                 'UpdatedAt': '-' if len(row) < 7 else row[6],
@@ -656,3 +658,42 @@ async def admin_get_user_novel(user_id: str):
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail=f"An error occurred while fetching novel information: {str(e)}"
         )
+
+
+
+@app.get("/apis/admin/getnovelcomment", tags=['超级用户权限'], summary='查找某个小说的所有评论', description="""
+参数说明: 
+    novel_id
+返回:评论内容""")
+def admin_get_novel_comment(novel_id: int):
+    try:
+        comments = db_method.get_novel_comment_admin(novel_id)
+        if not comments:
+            raise HTTPException(status_code=404, detail="没有找到评论")
+        return comments
+    except HTTPException as e:
+        raise e
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"服务器内部错误: {str(e)}")
+
+
+@app.delete("/apis/admin/deletecomment", tags=['超级用户权限'], summary='删除评论', description="""
+参数说明:\n
+    --comment_id:需要删除的小说id\n
+""")
+async def admin_delete_novel(comment_id: int):
+    (s, msg) = db_method.delete_comment(comment_id)
+    if s == 0:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=msg
+        )
+    if s == 1:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=msg
+        )
+    return {'message': msg}
+
+
+

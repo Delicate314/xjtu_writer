@@ -236,3 +236,47 @@ def get_novel_comment(novel_id:int):
     cursor.close()
     db.close()
     return comments
+
+
+
+def get_novel_comment_admin(novel_id: int):
+    db = get_db()
+    cursor = get_cursor(db)
+    query = "SELECT * FROM comment WHERE novel_id = %s"
+    cursor.execute(query, (novel_id,))
+    result = cursor.fetchall()
+    comments = [
+        {
+            "comment_id": row[0],
+            "comment_content": row[1],
+            "user_id": row[2],
+            "novel_id": row[3],
+            "updateAt": row[4].isoformat()
+        }
+        for row in result
+    ]
+    cursor.close()
+    return {'data': comments}
+
+def delete_comment(comment_id:int):
+    try:
+        db = get_db()
+        cursor = get_cursor(db)  # 获取数据库游标
+        # 执行删除操作
+        delete_sql = "DELETE FROM comment WHERE comment_id = %s"
+        cursor.execute(delete_sql, (comment_id,))
+        # 检查是否成功删除
+        if not cursor.rowcount:
+            return (0, '评论未找到或不存在')
+        # 提交事务
+        cursor.connection.commit()
+
+    except Exception as e:
+        cursor.connection.rollback()  # 回滚事务
+        return (1, f"An error occurred while deleting the comment: {str(e)}")
+
+    finally:
+        cursor.close()  # 确保关闭游标
+        db.close()
+
+    return (2, "评论删除成功")
