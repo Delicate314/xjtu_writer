@@ -179,7 +179,23 @@ export default {
             console.log('Submitting comment...');
             try {
                 // Sensitive words filter
-                const sensitiveWords = ['傻逼', 'fuck', 'FUCK', '草你妈', '色情', '毒品', '自杀']; // Add your sensitive words here
+                const sensitiveWords = [
+                    '傻逼', 'fuck', 'FUCK', '草你妈', '色情', '毒品', '自杀',
+                    '笨蛋', '白痴', '混蛋', '傻瓜', '蠢货', '垃圾', '废物',
+                    '贱人', '王八蛋', '死全家', '操你妈', '妈的', 'shit',
+                    'bitch', 'damn', 'idiot', 'moron', 'retard', 'asshole',
+                    'jerk', 'pervert', 'rape', 'kill', 'murder', 'terrorist',
+                    '恐怖分子', '卖淫', '强奸', '虐待', '吸毒', '走私', '贩毒',
+                    '卖毒', '吸毒者', '酒驾', '嗑药', '淫秽', '裸聊', '网络诈骗',
+                    '邪教', '暴力', '黄赌毒', '肮脏', '嫖娼', '赌博', '开房',
+                    '下流', '恶心', '垃圾人', '搞基', '台独', '港独',
+                    '暴徒', '造反', '反动', '乱伦', '色情狂', '猥亵', '骚扰',
+                    '袭击', '拐卖', '绑架', '毒枭', '毒贩', '黑帮', '黑社会',
+                    '魔鬼', '死亡', '毁灭', '灾难', '瘟疫', '感染', '病毒',
+                    '细菌', '侵略', '侵略者', '破坏', '破坏者', '战犯', '战争',
+                    '爆炸', '核弹', '核武器', '核战争', '自残', '割腕', '跳楼',
+                    '卧轨', '枪击', '枪支', '刀具', '武器', '弓箭', '炸弹'
+                ];
 
                 // Check if newComment contains sensitive words
                 for (let word of sensitiveWords) {
